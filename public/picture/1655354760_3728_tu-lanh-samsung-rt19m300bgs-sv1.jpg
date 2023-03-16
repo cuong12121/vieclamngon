@@ -1,0 +1,342 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Trang thông báo lỗi 404 của website</title>
+    <link href="/css/new_style.css?v=42" rel="stylesheet"/>
+    <link href="/css/quydinhbaomat.css?v=42" rel="stylesheet"/>
+    <script src="/js/jquery-1.8.3.min.js"></script>
+    
+</head>
+<body>
+<div class="remove_tb"></div>
+<header id="new_header">
+  <div class="logo_header">
+    <a href="/"><img src="/images/New_images/new_logo_header.png" width="137px" height="29px" alt="Tìm việc làm nhanh & Tuyển dụng hiệu quả"></a>
+    <a class="mobi-sel" id="mobi-sel"></a>
+  </div>
+
+      <div class="box_header">
+      <div id="mobi">
+        <div class="mobi-from">
+          <div class="box_dangnhap box_dangky top-34" id="box_dangky">
+            <a href="/dang-ky.html"><span class="register">Đăng ký</span></a>
+          </div>
+          <div class="mid_span"><p>/</p></div>
+          <div class="box_dangnhap box_dangnhap_2" id="box_dangnhap">
+            <a href="/dang-nhap.html"><span class="login active">Đăng nhập</span></a>
+          </div>
+        </div>
+      </div>
+      <div class="menu_item">
+        <li class="sub_domain">
+          <img class="sub_domain_ul" src="/images/banner/sub_icon2.png?v=1" alt="Cẩm nang tìm việc">
+          <ul class="box_sub hidden">
+            <li><a href="/bang-gia-dich-vu.html" rel="nofollow">Bảng giá</a></li>
+            <li><a href="/tim-ung-vien-quanh-day.html">Tìm ứng viên quanh đây</a></li>
+            <li><a href="/tim-viec-lam-quanh-day.html">Tìm việc làm quanh đây</a></li>
+            <li><a href="/cong-tac-vien.html">Cộng tác viên</a></li>
+            <li><a class="menu_email" href="/mail365/">Email365</a></li>
+            <li><a class="menu_vltg"  href="https://vieclamtheogio.timviec365.vn/" target="_blank">Việc làm theo giờ</a></li>
+            <li><a href="https://timviec365.vn/ssl/so-sanh-luong.html" target="_blank">Tra cứu lương</a></li>
+            <li><a href="https://nhatro.timviec365.vn" target="_blank">Nhà trọ</a></li>
+            <li><a href="https://giasu.timviec365.vn" target="_blank">Gia sư</a></li>
+            <li><a rel="nofollow" href="https://tinhluong.timviec365.vn" target="_blank">Tính lương</a></li>
+            <li><a href="https://timviec365.vn/trang-vang-doanh-nghiep.html" target="_blank">Trang vàng</a></li>
+            <li><a class="menu_freedt" href="/dang-tin-tuyen-dung-mien-phi.html" target="_blank">Đăng tin tuyển dụng miễn phí</a></li>
+          </ul>
+        </li>
+      </div>
+      <div class="menu_item">
+        <li class="sub_domain1"><a href="https://quanlychung.timviec365.vn/" target="_blank">Chuyển đổi số</a></li>
+      </div>
+      <div class="menu_item"><a class="btn_show" href="/blog">Cẩm nang</a></div>
+      <div class="menu_item"><a class="btn_show" href="/nguoi-tim-viec.html">Ứng viên</a></div>
+      <div class="menu_item"> <a class="btn_show" href="/cv-xin-viec">CV xin việc</a></div>
+    </div>
+    <div class="mobi_sh_ul" style="display: none;">
+  <div id="mobi_ul">
+    <div class="mobi-from">
+       
+        <div class="avt_mobi">
+          <img class="lazyload" src="/images/load.gif" data-src="/images/New_images/no_avatar.png" alt="Timviec365.vn">
+        </div>
+        <div class="box_dk_dn">
+          <div class="dn_box">
+            <a href="/dang-nhap.html" class="btn_dn_box"><span>Đăng nhập</span></a>
+          </div>
+          <div class="dk_box">
+            <a href="/dang-ky.html" class="btn_dk_box"><span>Đăng ký</span></a>          
+          </div>            
+        </div>
+      
+
+      <ul class="ul_menu">  
+                <li>
+          <a href="/cv-xin-viec"><p>
+            <img class="lazyload" src="/images/load.gif" data-src="/images/icons/ic_menu7.png" alt="CV xin việc"><span>CV xin việc</span>
+          </p></a>                  
+        </li> 
+        <li>
+          <a href="/nguoi-tim-viec.html"><p><img class="lazyload" src="/images/load.gif" data-src="/images/icons/ic_menu8.png" alt="Tìm ứng viên"><span>Ứng viên</span></p></a>   
+        </li>
+                  <li>
+            <a href="https://timviec365.vn/"><p><img class="lazyload" src="/images/load.gif" data-src="/images/icons/ic_menu20.png" alt="tìm việc làm"><span>Tìm việc làm</span></p></a>                   
+          </li>
+        
+        <li>
+          <a href="/mail365/"><p><img class="lazyload" src="/images/load.gif" data-src="/images/icons/ic_menu18.png" alt="mail 365"><span>Mail 365</span></p></a>                   
+        </li> 
+
+
+        <li>
+          <a href="/tim-viec-lam-quanh-day.html"><p><img class="lazyload" src="/images/load.gif" data-src="/images/icons/ic_menu6.png" alt="việc làm quanh đây"><span>Việc làm quanh đây</span></p></a>                   
+        </li> 
+
+        <li>
+          <a href="/tim-ung-vien-quanh-day.html"><p><img class="lazyload" src="/images/load.gif" data-src="/images/icons/ic_menu9.png" alt="ứng viên quanh đây"><span>Ứng viên quanh đây</span></p></a>                   
+        </li>
+
+        <li>
+          <a href="https://timviec365.vn/ssl/so-sanh-luong.html"><p><img class="lazyload" src="/images/load.gif" data-src="/images/icons/ic_menu16.png" alt="tìm việc làm"><span>Tra cứu lương</span></p></a>                   
+        </li> 
+
+        <li>
+          <a href="/blog"><p><img class="lazyload" src="/images/load.gif" data-src="/images/icons/ic_menu1.png" alt="Cẩm nang tìm việc"><span>Cẩm nang tìm việc</span></p></a>                   
+        </li> 
+
+        <li>
+          <a href="https://chamcong.timviec365.vn/" target="_blank"><p><img class="lazyload" src="/images/load.gif" data-src="/images/icons/ic_menu10.png" alt="App chấm công"><span>App chấm công</span></p></a>                   
+        </li> 
+
+        <li>
+          <a href="/bang-gia-dich-vu.html" rel="nofollow"><p><img class="lazyload" src="/images/load.gif" data-src="/images/icons/ic_menu17.png" alt="Bảng giá"><span>Bảng giá</span></p></a>                
+        </li>
+
+        <li>
+          <a href="https://vieclamtheogio.timviec365.vn/" rel="nofollow"><p><img class="lazyload" src="/images/load.gif" data-src="/images/icons/ic_menu2.png" alt="việc làm theo giờ"><span>Việc làm theo giờ</span></p></a>                   
+        </li> 
+        <li>
+          <a href="https://nhatro.timviec365.vn/" rel="nofollow"><p><img class="lazyload" src="/images/load.gif" data-src="/images/icons/ic_menu19.png" alt="nhà trọ"><span>Nhà trọ</span></p></a>                   
+        </li> 
+        <li>
+          <a href="https://giasu.timviec365.vn/" rel="nofollow"><p><img class="lazyload" src="/images/load.gif" data-src="/images/icons/ic_menu19.png" alt="nhà trọ"><span>Gia sư</span></p></a>                   
+        </li> 
+        <li>
+          <a href="/cong-tac-vien.html" rel="nofollow"><p><img class="lazyload" src="/images/load.gif" data-src="/images/icons/ic_menu11.png" alt="cộng tác viên"><span>Cộng tác viên</span></p></a>                   
+        </li>
+        <li class="sub_domain_mb"><a href="https://quanlychung.timviec365.vn/" target="_blank">
+          <p><img class="lazyload" src="/images/load.gif" data-src="/images/icons/ic_menu11.png" alt="Chuyển đổi số"><span>Chuyển đổi số</span></p></a>
+        </li>
+              <li>
+        <a href="/dang-tin-tuyen-dung-mien-phi.html" rel="nofollow"><p><img class="lazyload" src="/images/load.gif" data-src="/images/icons/ic_menu_freedt.png" alt="Đăng tin tuyển dụng miễn phí"><span>Đăng tin tuyển dụng miễn phí</span></p></a>                   
+      </li>
+          </ul>
+  </div>
+</div>
+</div>
+
+
+
+  </header><div class="container-error">
+    <div class="error">
+        <div class="error-text">
+            <span>
+                Xin lỗi, có thể trang bạn đang tìm kiếm đã bị xóa bỏ hoặc lỗi URL
+            </span>
+        </div>
+        <div class="error-btn">
+            <a href="/">Quay về trang chủ</a>
+        </div>
+    </div>
+</div>
+<div class="footer foot">
+ <div class="vieclam_container">
+  <div class="footer-left">
+   <ul class="foot-cod foot-hid">
+    <li><span>Đơn vị chủ quản :</span><br> Công ty Cổ phần Thanh toán Hưng Hà</li>
+    <li>VP1: <a href="https://goo.gl/maps/stYYuH5Ln5U2" rel="nofollow" target="_blank">Tầng 4, B50, Lô 6, KĐT Định Công - Hoàng Mai - Hà Nội</a></li>
+    <li>VP2: Thôn Thanh Miếu, Xã Việt Hưng, Huyện Văn Lâm, Tỉnh Hưng Yên</li>
+    <li>VP3: Tầng 2, Số 1 đường Trần Nguyên Đán, Khu Đô Thị Định Công, Hoàng Mai, Hà Nội</li>
+    
+    <li><span>Hotline:</span> 0982.079.209</li>
+    <li>
+     <span>Email hỗ trợ:</span> timviec365.vn@gmail.com
+   </li>
+ </ul>
+ <ul class="foot-cod foot-show">
+  <li><a rel="nofollow" href="/gioi-thieu-chung.html" >Giới thiệu chung</a></li>
+  <li><a rel="nofollow" href="/thong-tin-can-biet.html" >Thông tin cần biết</a></li>
+  <li><a rel="nofollow" href="/thoa-thuan-su-dung.html" >Thỏa thuận sử dụng</a></li>
+      <li><a rel="nofollow" href="/so-do-trang-web.html" >Sơ đồ website</a></li>
+      </ul>
+  <ul class="foot-cod foot-show" >
+    <li><a rel="nofollow" href="/quy-dinh-bao-mat.html" >Quy định bảo mật</a></li>
+    <li><a rel="nofollow" href="/giai-quyet-tranh-chap.html" >Quy trình giải quyết tranh chấp</a></li>
+            <li class="dmca_icon">
+         <p class="bct_icon">
+          <a rel="nofollow" href="http://online.gov.vn/Home/WebDetails/35979?AspxAutoDetectCookieSupport=1">
+            <img alt="Đã đăng ký bộ công thương" class="lazyload" src="/images/load.gif" data-src="/images/bct.png"/></a>
+            <a  rel="nofollow" href="//www.dmca.com/Protection/Status.aspx?ID=5b1070f1-e6fb-4ba4-8283-84c7da8f8398" title="DMCA.com Protection Status" class="dmca-badge"> 
+              <img class="lazyload" src="/images/load.gif" data-src="/images/dmca.png" alt="DMCA.com Protection Status"/></a>
+            </p>
+          </li>
+              </ul>
+    </div>
+    <div class="footer-right">
+     <div class="footer-right-left">
+      <div class="footer-right-top">
+       <p>Tải app để tìm việc làm siêu tốc</p>
+       <p>Tạo CV đẹp với 365+ mẫu CV xin việc</p>
+     </div>
+     <div class="qr_cv">
+       <img class="lazyload" src="/images/load.gif" data-src="/images/New_images/new_qr_ft.png" alt="App Timviec365 UV">
+       <p>App Timviec365 UV</p>
+     </div>
+     <div class="qr_cv">
+       <img class="lazyload" src="/images/load.gif" data-src="/images/New_images/new_qr_ft1.png" alt="App Timviec365 NTD">
+       <p>App Timviec365 NTD</p>
+     </div>
+     <div class="qr_timviec">
+       <img class="lazyload" src="/images/load.gif" data-src="/images/New_images/new_qr_ft2.png" alt="App CV365">
+       <p>App CV365</p>
+     </div>
+     <div class="footer-right-bot">
+      <div class="bot_btn_tv"><a href="https://play.google.com/store/apps/details?id=timviec365vn.timviec365_vn" ios-href="https://apps.apple.com/vn/app/t%C3%ACm-vi%E1%BB%87c-365-t%C3%ACm-vi%E1%BB%87c-online/id1597712953?l=vi" class="ios_check" rel="nofollow" target="_blank">Tải app Timviec365 UV</a></div>
+      <div class="bot_btn_tv_uv"><a href="https://play.google.com/store/apps/details?id=vn.timviec365.company" ios-href="https://apps.apple.com/vn/app/nh%C3%A0-tuy%E1%BB%83n-d%E1%BB%A5ng-timviec365-vn/id1606069668" rel="nofollow" class="ios_check" target="_blank">Tải app Timviec365 NTD</a></div>
+      <div class="bot_btn_app"><a href="https://play.google.com/store/apps/details?id=com.hungha.appcv365" class="ios_check" ios-href="https://apps.apple.com/vn/app/cv365-t%E1%BA%A1o-cv-online-%C4%91%E1%BA%B9p/id1502348768" rel="nofollow" target="_blank">Tải app CV365</a></div>
+    </div>
+  </div>
+</div>
+<div class="foot-bot">
+ <div class="bot-from">
+  <p>Top ngành nghề: </p>
+  <ul>
+    <li><a href="/viec-lam-it-phan-mem-c13v0" rel="dofollow" target="_blank">Tìm việc làm it</a></li>
+    <li><a href="/viec-lam-ban-hang-c10v0" rel="dofollow" target="_blank">Tìm việc làm bán hàng</a></li>
+    <li><a href="/viec-lam-du-lich-c34v0" rel="dofollow" target="_blank">Tìm việc làm du lịch</a></li>
+    <li><a href="/viec-lam-quan-ly-dieu-hanh-c61v0" rel="dofollow" target="_blank">Tìm việc làm quản lý điều hành</a></li>
+    <li><a href="/viec-lam-khach-san-nha-hang-c8v0" rel="dofollow" target="_blank">Tìm việc làm khách sạn nhà hàng</a></li>
+    <li><a href="/tim-viec-lam-php-t11394.html" rel="dofollow" target="_blank">Tìm việc làm PHP</a></li>
+  </ul>
+</div>
+</div>
+<div class="link_mxh">
+ <p>Theo dõi chúng tôi trên mạng xã hội:</p>
+ <div class="mxh"><a href="https://twitter.com/timviec365vn" rel="nofollow" target="_blank"><img alt="twitter" src="/images/New_images/icn_twitter.png" width="30px" height="30px" /></a></div>
+ <div class="mxh"><a href="https://www.facebook.com/Timviec365.Vn/" rel="nofollow" target="_blank"><img alt="facebook" src="/images/New_images/icn_facebook.png" width="30px" height="30px" /></a></div>
+ <div class="mxh"><a href="https://www.youtube.com/channel/UCI6_mZYL8exLuvmtipBFrkg/videos" rel="nofollow" target="_blank"><img alt="youtube" src="/images/New_images/icn_youtube.png" width="30px" height="30px" /></a></div>
+</div>
+<!--Start of Tawk.to Script-->
+<div id="load_tawk"></div>
+<!--End of Tawk.to Script-->
+</div>
+</div>
+<div id="btn-top"></div>
+<a rel="nofollow" href="https://zalo.me/0982079209" id="sky_icon" ><img alt="Liên hệ qua zalo" src="/images/zalo.png" width="47px" height="47px" /></a>
+<a rel="nofollow" href="tel:0982079209" id="call_icon" ><img alt="Liên hệ qua skype" src="/images/call_icon.png" width="47px" height="47px" /></a>
+
+
+<script>
+  $(document).ready(function() {
+    $('#btn-top').click(function() {
+      $('body,html').animate({
+        scrollTop: 0
+      }, 800);
+    });
+
+    $('.right_avatar').on('click', function() {
+      if ($('.mobi-sel').is(':hidden')) {
+        $('.mobi-ful').toggle();
+      }
+    });
+
+    $(window).click(function() {
+      if ($("#mobi_ul").hasClass('displayblock') == true) {
+        $("#mobi_ul").toggle().removeClass('displayblock');
+      }
+    });
+
+    $(".mobi-sel").click(function() {
+      if ($("#mobi_ul").hasClass('displayblock') == true) {
+        $(".mobi_sh_ul").removeAttr("style");
+        $("#mobi_ul").toggle().removeClass('displayblock')
+        event.stopPropagation();
+      } else {
+        $(".mobi_sh_ul").attr('style', 'display: block');
+        $("#mobi_ul").toggle().addClass('displayblock')
+        event.stopPropagation();
+      }
+    });
+
+    $(".mobi_sh_ul").click(function() {
+      $(".mobi_sh_ul").removeAttr("style");
+    });
+
+    $("#mobi").click(function() {
+      $("#mobi, .mobi-bac, .mobi-ful").toggle();
+      $(".mobi-from").removeClass('mobi-from-login');
+      $('.box_dangky').removeClass('hidden');
+      $('.box_dangnhap_2').removeClass('hidden');
+      $('.box_dangky').removeClass('top-34');
+    });
+
+    $(".mobi-from").click(function(e) {
+      e.stopPropagation();
+    });
+
+  });
+
+  jQuery(window).scroll(function(){
+    if(jQuery(this).scrollTop()>300){
+      jQuery('#btn-top').fadeIn(800);
+    }else{
+      jQuery('#btn-top').fadeOut(800);
+    }
+
+
+    if(jQuery(this).scrollTop()>200){
+        if($('#load_tawk').hasClass('tawk_add') == false){
+            $('#load_tawk').append("<script>var Tawk_API=Tawk_API||{}, Tawk_LoadStart=new Date();(function(){var s1=document.createElement('script'),s0=document.getElementsByTagName('script')[0];s1.async=true;s1.src='https://embed.tawk.to/597813875dfc8255d623ef26/default';s1.charset='UTF-8';s1.setAttribute('crossorigin','*');s0.parentNode.insertBefore(s1,s0);})();<\/script>");
+            $('#load_tawk').addClass('tawk_add');
+        }
+   }
+ });
+  $(".sub_domain_ul").click(function(){
+    $(".box_sub").toggle();
+  });
+
+function iOS() {
+  return [
+    'iPad Simulator',
+    'iPhone Simulator',
+    'iPod Simulator',
+    'iPad',
+    'iPhone',
+    'iPod'
+  ].includes(navigator.platform)
+  // iPad on iOS 13 detection
+  || (navigator.userAgent.includes("Mac") && "ontouchend" in document)
+}
+if (iOS()) {
+  $('.ios_check').each(function( index ) {
+    var rl_href = $(this).attr('ios-href');
+    if (rl_href != '') {
+      $(this).attr('href',rl_href).removeAttr('target');
+    }
+  });
+}
+
+</script>
+<!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-158369192-1"></script>
+<script>
+ window.dataLayer = window.dataLayer || [];
+ function gtag(){dataLayer.push(arguments);}
+ gtag('js', new Date());
+ gtag('config', 'UA-158369192-1');
+</script>
+<script async src="/js/lazysizes.min.js"></script>   
+</body>
+</html>

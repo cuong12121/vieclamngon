@@ -1,0 +1,205 @@
+.adsbygoogle {
+  text-align: center;
+}
+.sidebar-sticky {
+  position: sticky;
+  top: 30px;
+}
+.footer-container .social-group a:nth-child(1) {
+  background: #3c5b9b;
+}
+.footer-container .social-group a:nth-child(2) {
+  background: #359bed;
+}
+.footer-container .social-group a:nth-child(3) {
+  background: #0073b1;
+}
+.footer-container .social-group a:nth-child(4) {
+  background: linear-gradient(-25deg, #014cc2 10%, #d01c5f 70%, #f64b14 100%);
+}
+.footer-container .social-group a:nth-child(5) {
+  background: #f03434;
+}
+
+.services-container .services-group .col-4:nth-child(1) .service-item {
+  background-color: #ffe53b;
+  background-image: linear-gradient(147deg, #ffe53b 0%, #ff2525 74%);
+}
+.services-container .services-group .col-4:nth-child(5) .service-item {
+  background-color: #fa8bff;
+  background-image: linear-gradient(45deg, #fa8bff 0%, #2bd2ff 52%, #2bff88 90%);
+}
+.services-container .services-group .col-4:nth-child(6) .service-item {
+  background-color: #ff9a8b;
+  background-image: linear-gradient(90deg, #ff9a8b 0%, #ff6a88 55%, #ff99ac 100%);
+}
+.grecaptcha-badge {
+  bottom: 74px !important;
+  z-index: 9999999 !important;
+}
+.glink {
+  margin-left: 2px;
+  margin-right: 2px;
+}
+
+#goog-gt-tt {
+  display: none !important;
+}
+
+.goog-te-banner-frame {
+  display: none !important;
+}
+
+.goog-te-menu-value:hover {
+  text-decoration: none !important;
+}
+
+.goog-text-highlight {
+  background-color: transparent !important;
+  box-shadow: none !important;
+}
+
+#google_translate_element2 {
+  display: none !important;
+}
+body {
+  top: 0 !important;
+}
+.form input, .form textarea {
+    border: 1px solid #f1f1f1;
+}
+.col-header {
+  display: flex;
+  justify-content: flex-end;
+}
+.search-container {
+  display: flex;
+  align-items: center;
+  position: relative;
+}
+.search-container span {
+  color: #fff;
+  padding-left: 20px;
+  cursor: pointer;
+}
+.search-container .input-search {
+  position: absolute;
+  display: none;
+  z-index: 9999;
+  right: 0;
+  top: 10px;
+  border: none;
+  width: 250px;
+  outline: none;
+  font-size: 14px;
+  box-shadow: 0 1rem 3rem rgba(0, 0, 0, 0.175);
+}
+.search-container .btnSearch {
+  position: absolute;
+  display: none;
+  z-index: 99999;
+  right: 0;
+  top: 6px;
+  color: #222;
+  padding: 10px;
+  cursor: pointer;
+}
+
+.info span ul, .info span ul li {
+    display: inline-block;
+}
+.single-post-content ul.post-categories {
+  margin-left: 0px;  
+}
+
+
+ 
+  .header-top {
+    background: #fff;
+    color: #333;
+	    padding: 6px 0;
+  font-size: 12px;
+}
+   .header-top  a {
+      color: #333;
+     
+     
+}
+	      .header-top  a:hover {
+        color: #c00000;
+        text-decoration: none;
+}
+
+body {
+    padding-top: 0 !important;
+}
+ .header-container {
+   position: static;
+}
+.info span {
+    min-width: 140px;
+}
+
+
+.single-page-content h3, .single-post-content h3 {
+    font-size: 18px !important;
+}
+.single-page-content img.imgcontent, .single-post-content img.imgcontent {
+	width: 100% !important;
+}
+.aligncenter {
+    display: block !important;
+    margin-right: auto !important;
+    margin-left: auto !important;
+}
+
+ .alignright {
+    float:right !important;
+}
+
+.alignright {
+    float: left !important;
+}
+
+.post-content table {
+	margin-bottom: 20px;
+}
+
+.post-content table tr td {
+	padding: 8px;
+	border: 1px solid #ccc;    text-align: left;
+}
+
+
+@media (min-width: 993px) {
+   .header-container .nav-group .header-menu {
+        display: flex !important;
+    }
+}
+ 
+  @media (max-width: 992px){
+      body {
+          overflow-x: hidden !important;
+      }
+  }
+ @media (max-width: 767px){
+     .footer-container .nav-group {
+         width: auto;
+     }
+     .fb_iframe_widget, .fb_iframe_widget span,  .fb_iframe_widget iframe {
+         width: 100% !important;
+     }
+     .fb-like, .fb-share-button {
+    width: 90px !important;
+}
+     .wp-pagenavi {
+         text-align: center;
+     }
+     .wp-pagenavi a.page.smaller, .wp-pagenavi a.page.larger, .wp-pagenavi span.extend {
+	    display: none;
+    }
+    body .news-group {
+        padding-left: 0 !important;
+        padding-right: 0 !important;
+    }
+ }
