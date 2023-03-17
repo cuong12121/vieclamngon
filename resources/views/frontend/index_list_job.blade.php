@@ -829,6 +829,29 @@
             function windowsPhone(){
                     return /windows phone/i.test(navigator.userAgent)
             }
+
+            function saveJob(id){
+                job =  JSON.parse(window.localStorage.getItem('job'));
+
+                if(job==null){
+                    job = [];
+                }
+
+                job.push(id);
+
+                job = unique_arr(job);
+
+                job = JSON.stringify(job);
+
+                window.localStorage.setItem('job', job);
+
+                 // localStorage.clear();
+
+                alert('save thành  công');
+
+
+            }
+            console.log(JSON.parse(window.localStorage.getItem('job')));
         </script>
         <script type="text/javascript" src="{{ asset('download/js/jquery.fancybox-1.3.4.js')}}"></script>
         <script type="text/javascript" src="{{ asset('download/js/jquery.validate.js')}}"></script>
