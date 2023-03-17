@@ -124,7 +124,7 @@ Route::group(['prefix' => 'employer','middleware' => 'Checkemploy'], function() 
 
 Route::get('user/user-dashboard', 'userController@dashBoard')->middleware('checklogin')->name('user-dashboard');
 
-Route::post('user', 'Backend\UserLoginController@registerUser')->name('register');
+Route::post('users', 'Backend\UserLoginController@registerUser')->name('register');
 
 Route::post('user/login', 'Backend\UserLoginController@loginUser')->name('login-user');
 

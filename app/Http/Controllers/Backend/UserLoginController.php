@@ -18,8 +18,6 @@ class UserLoginController extends Controller
     public function registerUser(Request $request)
     {
         
-
-
         $request->session()->put('keys', 'register');
 
          $messages = [
