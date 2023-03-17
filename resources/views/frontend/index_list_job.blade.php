@@ -521,9 +521,9 @@
                                         </div> -->
 
                                         @if (Auth::check()) 
-                                        <div class="top-icon"> <span class="top apply-job" onclick="apply('{{ $value->id }}')">Apply</span> </div>
+                                        <div class="top-icon"> <span class="top apply-job btn btn-info" onclick="apply('{{ $value->id }}')">Apply</span> </div>
 
-                                        <div class="saves-icon"> <span class="top save-job" onclick="saveJob('{{ $value->id }}')">Save</span> </div>
+                                        <div class="saves-icon"> <span class="top save-job btn btn-info" onclick="saveJob('{{ $value->id }}')">Save</span> </div>
                                         @endif
                                     </div>
                                 </div>
