@@ -839,15 +839,15 @@
 
                 job.push(id);
 
-                job = unique_arr(job);
+                job =   [...new Set(job)];
 
                 job = JSON.stringify(job);
 
                 window.localStorage.setItem('job', job);
 
-                 // localStorage.clear();
+                 localStorage.clear();
 
-                alert('save thành  công');
+                alert('lưu job thành công');
 
 
             }
@@ -857,7 +857,7 @@
         <script type="text/javascript" src="{{ asset('download/js/jquery.validate.js')}}"></script>
         <script type="text/javascript" src="{{ asset('download/js/additional-methods.js')}}"></script>
         <!-- <script type="text/javascript" src="{{ asset('download/js/tn-validate-methods.js')}}"></script> -->
-        <script type="text/javascript" src="{{ asset('download/js/common.js?27062018')}}"></script>
-        <script type="text/javascript" src="{{ asset('download/js/common_premium.js?v=1')}}"></script>
+       <!--  <script type="text/javascript" src="{{ asset('download/js/common.js?27062018')}}"></script>
+        <script type="text/javascript" src="{{ asset('download/js/common_premium.js?v=1')}}"></script> -->
     </body>
 </html>
