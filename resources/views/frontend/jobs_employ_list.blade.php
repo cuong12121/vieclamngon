@@ -44,7 +44,7 @@
         <div class="main-tabslet">
             <ul class="tabslet-tab">
                 <li class="active">
-                    <a href="https://careerbuilder.vn/vi/employers/hrcentral/posting/user_id/chiensi26045.1652405352">
+                    <a href="javascript:void(0)">
                     Việc Làm Đang Đăng
                     </a>
                 </li>
@@ -180,10 +180,7 @@
                             </table>
                         </div>
                     </div>
-                    <div class="main-button-sticky">
-                        <div class="button-prev disabled"><em class="mdi mdi-chevron-left"></em></div>
-                        <div class="button-next"><em class="mdi mdi-chevron-right"></em></div>
-                    </div>
+                   
                 </div>
             </div>
 

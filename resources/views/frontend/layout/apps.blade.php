@@ -113,29 +113,7 @@
                 <div class="button-hambuger"><span class="mdi mdi-menu"></span></div>
                                 <div class="logo"><a href="http://vieclamngon.vn/" title="homepage-employers">
                     <img src="{{ asset('images/template/logo/logo.png') }}" alt="vieclamngon.vn" title="https://images.careerbuilder.vn/logo/logo_1482896879_1489026739.png" /></a></div>
-                <div class="main-menu">
-                    <ul class="menu">
-                        <li class=""><a href="https://careerbuilder.vn/vi/employers" alt="Trang chủ" title="Trang chủ">Trang Chủ</a></li>
-                        <li class="dropdown "><a href="https://careerbuilder.vn/vi/employers/products-and-services">Sản Phẩm và Dịch Vụ</a>
-                            <div class="dropdown-menu">
-                                <ul><li><a href="https://careerbuilder.vn/vi/employers/products-and-services/dang-tuyen-dung/3">Đăng Tuyển Dụng</a></li><li><a href="https://careerbuilder.vn/vi/employers/products-and-services/tim-ho-so-ung-vien/8">Tìm Hồ Sơ Ứng Viên</a></li><li><a href="https://careerbuilder.vn/vi/employers/products-and-services/talent-solution/">Talent Solution</a></li><li><a href="https://careerbuilder.vn/vi/employers/products-and-services/quang-cao-tuyen-dung/9">Quảng Cáo Tuyển Dụng</a></li><li><a href="https://careerbuilder.vn/vi/employers/products-and-services/talent-driver/14">Talent Driver</a></li><li><a href="https://careerbuilder.vn/vi/employers/products-and-services/targeted-email-marketing/">Targeted Email Marketing</a></li><li><a href="https://careerbuilder.vn/vi/employers/products-and-services/talent-referral/">Talent Referral</a></li><li><a href="https://careerbuilder.vn/vi/employers/products-and-services/dang-tuyen-dung-va-tim-ho-so-quoc-te/10">Đăng Tuyển Dụng và Tìm Hồ Sơ Quốc tế</a></li><li><a href="https://careerbuilder.vn/vi/employers/products-and-services">Xem tất cả sản phẩm / dịch vụ</a></li></ul>
-                            </div>
-                        </li>
-                        <li class="dropdown active "><a href="https://careerbuilder.vn/vi/employers/dashboard">HR Central</a>
-                            <div class="dropdown-menu">
-                                <ul>
-                                    <li><a href="https://careerbuilder.vn/vi/employers/dashboard">Dashboard</a></li>
-                                    <li><a href="https://careerbuilder.vn/vi/employers/postjobs">Đăng Tuyển Dụng</a></li>
-                                    <li><a href="https://careerbuilder.vn/vi/resume-search.html">Tìm Hồ Sơ</a></li>
-
-                                    <li><a href="https://careerbuilder.vn/vi/employers/careerbuilder-rewards">CareerBuilder Rewards</a></li>
-                                                                                                            </ul>
-                            </div>
-                        </li>
-                        <li class=""><a href="https://careerbuilder.vn/vi/hiringsite">Cẩm Nang Tuyển Dụng</a></li>
-                        <li class=""><a href="https://careerbuilder.vn/vi/employers/services/contact">Liên hệ</a></li>
-                    </ul>
-                </div>
+                
             </div>
             <div class="right-wrap">
                                 <div class="main-login dropdown logged"><a href="javascript:void(0)" title="cuong"> </a>
@@ -147,7 +125,7 @@
                     </div>
                 </div>
                                 <div class="main-noti" style="display: none"><a href="javascript:void(0);"> <span class="mdi mdi-cart"></span></a></div>
-                <div class="main-language dropdown">
+                <!-- <div class="main-language dropdown">
                     <div class="dropdown-toggle">
                         <p>VI<em class="mdi mdi-chevron-down"></em></p>
                     </div>
@@ -159,7 +137,7 @@
                             <a class="dropdown-item" href="https://careerbuilder.vn/en/employers/postjobs" title="Change language">EN</a>
                         </div>
                     </div>
-                </div>
+                </div> -->
                 <div class="main-candidates"><a href="{{ route('registerClientUser') }}"><em class="fa fa-external-link"></em>
                         <h4>Dành cho Ứng Viên</h4></a></div>
             </div>
@@ -1335,102 +1313,71 @@ function checkWebsite(str){var re=/^[\w-]+([\w-]+\.)+[a-z0-9]+([\-\.]{1}[a-z0-9]
         </script>
     
                            </main>
-            <footer class="for-customers">
-    <div class="container">
-        <section class="top-footer cb-section cb-section-border-bottom">
-            <div class="row">
-                <div class="col-lg-3 col-sm-6">
-                    <div class="logo"><img src="./img/logo-w.png" alt=""></div>
-                    <address>
-                        <ul>
-                            <li><span class="lnr lnr-map-marker"></span>Trụ sở chính: Tầng 6, Tòa nhà Pasteur, 139 Pasteur, Phường 6, Quận 3, TP. Hồ Chí Minh</li>
-                            <li><span class="lnr lnr-map-marker"></span>Văn phòng Hà Nội: Tầng 17, Tòa nhà VIT, 519 Kim Mã, Quận Ba Đình, Hà Nội </li>
-                            <li><span class="lnr lnr-phone-handset"></span>Tel: (84.28) 3822 6060</li>
-                            <li><span class="lnr lnr-phone-handset"></span>Tel: (84.24) 7305 6060</li>
-                            <li><span class="lnr lnr-envelope"></span>Email: contact@careerbuilder.vn</li>
-                        </ul>
-                    </address>
-                </div>
-                <div class="col-lg-2 col-sm-6">
-                    <div class="footer-links">
-                        <h3>Careerbuilder.vn</h3>
-                        <ul>
-                            <li><a href="https://careerbuilder.vn/vi/jobseekers/about" target="_blank">Về CareerBuilder.vn</a></li>
-                            <li><a href="https://careerbuilder.vn/vi/jobseekers/leadership" target="_blank">Ban lãnh đạo</a></li>
-                            <li><a href="https://careerbuilder.vn/vi/jobseekers/culture" target="_blank">Văn hóa CareerBuilder</a></li>
-                            <li><a href="https://careerbuilder.vn/vi/nha-tuyen-dung/careerbuilder.35A4E9A9.html" target="_blank">Cơ hội nghề nghiệp</a></li>
-                            <li><a href="https://careerbuilder.vn/vi/employers/services/contact" target="_blank">Liên Hệ</a></li>
-
-                        </ul>
-                    </div>
-                </div>
-                <div class="col-lg-2 col-sm-6">
-                    <div class="footer-links">
-                        <h3>HR CENTRAL</h3>
-                        <ul>
-                            <li><a target="_blank" href="https://careerbuilder.vn/vi/employers/hrcentral" rel="nofollow">Quản Lý Tuyển Dụng</a></li>
-                            <li><a target="_blank" href="https://careerbuilder.vn/vi/employers/hrcentral/manageresume" rel="nofollow">Quản Lý Hồ Sơ</a></li>
-                            <li><a target="_blank" href="https://careerbuilder.vn/vi/employers/hrcentral/notifymail" rel="nofollow">Thông Báo Ứng Viên</a></li>
-                            <li><a target="_blank" href="https://careerbuilder.vn/vi/employers/postjobs" rel="nofollow">Đăng Tuyển Dụng</a></li>
-                            <li><a target="_blank" href="https://careerbuilder.vn/vi/employers/search_resume" rel="nofollow">Tìm Hồ Sơ</a></li>
-                            <li><a target="_blank" href="https://careerbuilder.vn/vi/hiringsite">Cẩm Nang Tuyển Dụng</a></li>
-                            <li><a target="_blank" href="https://careerbuilder.vn/mobile" target="_blank">Ứng dụng di động</a></li>
-                        </ul>
-                    </div>
-                </div>
-                <div class="col-lg-2 col-sm-6">
-                    <div class="footer-links">
-                        <h3>HỖ TRỢ</h3>
-                        <ul>
-                            <li><a href="https://careerbuilder.vn/vi/employers/faq" target="_blank">Trợ Giúp</a></li>
-                            <li><a href="https://careerbuilder.vn/vi/employers/use" target="_blank">Thỏa Thuận Sử Dụng</a></li>
-                            <li><a href="https://careerbuilder.vn/vi/jobseekers/security" target="_blank">Quy Định Bảo Mật</a></li>
-                            <li><a href="https://careerbuilder.vn/vi/jobseekers/regulations" target="_blank">Chính sách BV thông tin cá nhân</a></li>
-                            <li><a href="https://images.careerbuilder.vn/regulations.pdf" rel="nofollow">Quy Chế Sàn Giao Dịch</a></li>
-                            <li><a href="https://careerbuilder.vn/vi/jobseekers/process" target="_blank">Quy trình giải quyết tranh chấp</a></li>
-                            <li><a href="https://advertising.careerbuilder.vn/html/customer/cbvn/GDPR.PDF" target="_blank">Chính sách GDPR</a></li>
-                        </ul>
-                    </div>
-                </div>
-                <div class="col-lg-3 col-12">
-                    <div class="footer-app-links">
-                        <h3>TÌM KIẾM MỌI LÚC MỌI NƠI</h3>
-                        <div class="app-links">
-                            <a rel="nofollow,noreferrer" target="_blank" href="https://play.google.com/store/apps/details?id=vn.careerbuilder.android.app">
-                                <img src="./img/android.png" alt="Android App">
-                            </a>
-                            <a rel="nofollow,noreferrer" target="_blank" href="https://apps.apple.com/vn/app/careerbuilder-vn-job-search/id882391884?l=vi">
-                                <img src="./img/apple.png" alt="IOS App">
-                            </a>
+            <footer>
+            <div class="container">
+                <section class="top-footer cb-section cb-section-border-bottom">
+                    <div class="row">
+                        <div class="col-lg-12 logo"><img class="lazy-bg" data-src="{{ asset('images/template/logo/logo.png') }}" src="{{ asset('images/template/logo/logo.png') }}" alt="Tuyển dụng &amp; Tìm kiếm việc làm nhanh"></div>
+                        <div class="col-lg-3 col-sm-6">
+                            <div class="footer-links">
+                                <h3>Dành Cho Ứng Viên</h3>
+                                <ul>
+                                    <li><a href="javascript:void(0)" title="Việc làm mới nhất">Việc làm mới nhất</a></li>
+                                    <li><a href="javascript:void(0)" title="CV Hay">CV Hay</a></li>
+                                    <li><a href="javascript:void(0)" title="VietnamSalary">VietnamSalary</a></li>
+             
+                                    <li><a href="javascript:void(0)" title="Cẩm Nang">Cẩm Nang</a></li>
+                                    <li><a href="javascript:void(0)" title="IT Blogs">IT Blogs</a></li>
+                                    <li><a href="javascript:void(0)" title="Ứng Dụng Di Động">Ứng Dụng Di Động</a></li>
+                                    <li><a href="javascript:void(0)" title="Sơ Đồ Trang Web">Sơ Đồ Trang Web</a></li>
+                                </ul>
+                            </div>
                         </div>
+                        <div class="col-lg-3 col-sm-6">
+                            <div class="footer-links">
+                                <h3>Nhà Tuyển Dụng</h3>
+                                <ul>
+                                    <li><a href="javascript:void(0)" title="Đăng Tuyển Dụng">Đăng Tuyển Dụng</a></li>
+                                    <li><a href="javascript:void(0)" title="Tìm Hồ Sơ">Tìm Hồ Sơ</a></li>
+                                    <li><a href="javascript:void(0)">Giải Pháp Talent Solution</a></li>
+                                    <li><a href="javascript:void(0)" title="Sản Phẩm Dịch Vụ">Sản Phẩm Dịch Vụ</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="col-lg-3 col-sm-6">
+                            <div class="footer-links">
+                                <h3>Trung tâm trợ giúp</h3>
+                                <ul>
+                                  
+                                    <li><a href="javascript:void(0)" title="Chính Sách BV Thông Tin">Chính Sách BV Thông Tin</a></li>
+                                    <li><a href="javascript:void(0)" title="Chính sách GDPR">Chính sách GDPR</a></li>
+                                    <li><a href="javascript:void(0)" title="Quy chế sàn giao dịch">Quy chế sàn giao dịch</a></li>
+                                    <li><a href="javascript:void(0)" title="Thỏa thuận sử dụng">Thỏa thuận sử dụng</a></li>
+                                    <li><a href="javascript:void(0)" title="Quy định bảo mật">Quy định bảo mật</a></li>
+                                    <li><a href="javascript:void(0)" title="QT Giải Quyết Tranh Chấp">QT Giải Quyết Tranh Chấp</a></li>
+                                    <li><a href="javascript:void(0)" title="Trợ giúp">Trợ giúp</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="col-lg-3 col-sm-6">
+                            <div class="footer-links">
+                                <h3>Website Đối Tác</h3>
+                                <ul>
+                                    <li><a href="javascript:void(0)">Vieclam.Tuoitre.vn</a></li>
+                                    <li><a href="javascript:void(0)">Vieclam.Vietnamnet.vn</a></li>
+                                    <li><a href="javascript:void(0)">Vieclam.Thanhnien.vn</a></li>
+                                    <li><a href="javascript:void(0)">VieclamIT.vn</a></li>
+                                    <li><a href="javascript:void(0)">Liên Hệ</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                        
                     </div>
-                    <div class="footer-social-links">
-                        <h3>KẾT NỐI VỚI CAREERBUILDER.VN</h3>
-                        <ul>
-                            <li><a rel="nofollow,noreferrer" target="_blank" href="https://www.facebook.com/pages/CareerBuilder-Vietnam/265321726945679?ref=tn_tnmn"> <span class="fa fa-facebook"></span></a></li>
-                            <li><a rel="nofollow,noreferrer" target="_blank" href="https://www.linkedin.com/company/careerbuilder-vietnam"> <span class="fa fa-linkedin"></span></a></li>
-                            <li><a rel="nofollow,noreferrer" target="_blank" href="https://www.youtube.com/user/CareerBuilderVietnam"> <span class="fa fa-youtube-play"></span></a></li>
-                        </ul>
-                    </div>
-                </div>
+                </section>
+               
             </div>
-        </section>
-        <section class="bottom-footer">
-            <div class="left-bottom-footer">
-                <p>Copyright © CareerBuilder Vietnam.</p>
-            </div>
-            <div class="right-bottom-footer">
-                <a target="_blank" rel="nofollow,noreferrer" href="https://online.gov.vn/HomePage/WebsiteDisplay.aspx?DocId=22262">
-                    <img src="./img/dk.png" alt="">
-                </a>
-                <div class="back-to-top" id="back-to-top">
-                    <em class="lnr lnr-arrow-up"></em>
-                </div>
-            </div>
-        </section>
-    </div>
-</footer>
-<a class="feedback-btn" data-fancybox="" data-type="ajax" data-src="https://careerbuilder.vn/vi/jobseekers/index/sendfeedback?from=employer&newlayout=1" title="Feedback" href="javascript:void(0);"><span>Feedback</span></a><script>/*employer-common.js*/
+        </footer>
+<script>/*employer-common.js*/
 
 function backToTop(){$("#back-to-top").on('click',function(){$("html, body").animate({scrollTop:0,},1000);});};function toggleNav(){let buttonNav=$('.employer-navbar-2-1 .category-nav')
 let menuNav=$('.employer-navbar-2-1 .main-wrap')
@@ -1809,20 +1756,7 @@ window.location=ulr;}
 </script>
 
 
-<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start': new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src='https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);})(window,document,'script','dataLayer','GTM-KTKWM2');</script>
-<!-- End Google Tag Manager -->
-<script type="text/javascript">
-    var Tawk_API=Tawk_API||{}, Tawk_LoadStart=new Date();
-    (function(){
-    var s1=document.createElement("script"),s0=document.getElementsByTagName("script")[0];
-    s1.async=true;
-    s1.src='https://embed.tawk.to/584f5b7ff9976a1964d1c920/default';
-    s1.charset='UTF-8';
-    s1.setAttribute('crossorigin','*');
-    s0.parentNode.insertBefore(s1,s0);
-    })();
 
-</script>
 <script>$(document).ready(function() {$("img.lazy-new").lazy();});$.fancybox.defaults.hash=false;$.fancybox.defaults.backFocus=false;</script>
 <div class="page-loader" id="page-loading"><div class="lds-roller">
     <div>
