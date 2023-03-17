@@ -845,7 +845,7 @@
 
                 window.localStorage.setItem('job', job);
 
-                 localStorage.clear();
+                 // localStorage.clear();
 
                 alert('lưu công việc thành công');
 

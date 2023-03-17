@@ -12,7 +12,7 @@
 
     $slMarritial =['Độc thân', 'Đã kết hôn'];
 
-    $checkTitle = App\Models\application::where('users_id', Auth::user()->id)->first();
+    $checkTitle = App\Models\application::where('users_id', Auth::user()->id)->first();                                    
 
     if(!empty(json_decode($checkTitle->title)) &&!empty(json_decode($checkTitle->experience))&&!empty(json_decode($checkTitle->objective)) && !empty(json_decode($checkTitle->info)) && !empty(json_decode($checkTitle->education))&&!empty(json_decode($checkTitle->experience_details))){
         $checksucess = true;
@@ -20,8 +20,6 @@
     else{
         $checksucess = false;
     }
-
-
 
     ?>
     <link rel="stylesheet" type="text/css" href="{{ asset('css/employ/index.css') }}">
@@ -232,6 +230,16 @@
                                         <div class="figcaption">
                                             <h3>Mức lương mong muốn </h3>
 
+                                             @if(!empty(json_decode($checkTitle->desired_salary)))
+                                            <div class="status success">
+                                                <p>Đã hoàn thành</p>
+                                            </div>
+                                            @else
+                                            <div class="status error">
+                                                <p>Chưa hoàn thành</p>
+                                            </div>
+                                            @endif
+
                                         </div>
                                     </div>
                                     <div class="right-action">
@@ -251,6 +259,8 @@
                             <div class="widget-body">
                                 <div class="no-content">
                                     <p>Mức lương mong muốn</p>
+
+
                                     <a href="javascript:void(0)" onclick="openTipSlide('desired-salary');"><span>Chỉnh sửa</span></a>
                                 </div>
                                 <input type="hidden" id="title_hidden_value" value="">
@@ -267,6 +277,16 @@
                                         <div class="image"><img src="./img/dash-board/i14.png" alt=""></div>
                                         <div class="figcaption">
                                             <h3>Công việc gần đây </h3>
+
+                                             @if(!empty(json_decode($checkTitle->workrc)))
+                                            <div class="status success">
+                                                <p>Đã hoàn thành</p>
+                                            </div>
+                                            @else
+                                            <div class="status error">
+                                                <p>Chưa hoàn thành</p>
+                                            </div>
+                                            @endif
 
                                         </div>
                                     </div>
@@ -548,7 +568,9 @@
                                         <div class="figcaption">
                                             <h3>Kinh nghiệm làm việc *</h3>
 
-                                           @if(!empty(json_decode($checkTitle->experience)))
+
+
+                                           @if(!empty(json_decode($checkTitle->experience_details)))
                                             <div class="status success">
                                                 <p>Đã hoàn thành</p>
                                             </div>
@@ -705,302 +727,7 @@
                                 </div>
                             </div>
                         </div>
-                        <!-- <div class="widget widget-16" id="certificate-section">
-                            <div class="widget-head">
-                                <div class="cb-title-h3">
-                                    <div class="figure">
-                                        <div class="image"><img src="./img/dash-board/i10.png" alt=""></div>
-                                        <div class="figcaption">
-                                            <h3>Chứng chỉ khác</h3>
-                                            <div class="status">
-                                                <p>Không bắt buộc</p>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="right-action">
-                                        <div class="tips p1" onclick="openTipSlide('tip-certificate')">
-                                            <div class="icon">
-                                                <em class="mdi mdi-lightbulb"></em>
-                                            </div>
-                                            <p>Tips</p>
-                                        </div>
-                                        <div class="link-add"><a href="javascript:void(0)" onclick="editResumeCertificate(0);"> <em class="material-icons">add</em><span>Thêm mới</span></a></div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="widget-body">
-                                <div class="no-content">
-                                    <p>Vui lòng nhập chứng chỉ</p>
-                                    <a href="javascript:void(0)" onclick="editResumeCertificate(0);"><em class="mdi mdi-plus-circle"></em><span>Thêm mới</span></a>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="widget widget-22 widget-17" id="language-section">
-                            <div class="widget-head">
-                                <div class="cb-title-h3">
-                                    <div class="figure">
-                                        <div class="image icon-translate"><span class="material-icons">translate</span></div>
-                                        <div class="figcaption">
-                                            <h3>Ngôn ngữ </h3>
-                                            <div class="status">
-                                                <p>Không bắt buộc</p>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="right-action">
-                                        <div class="tips p1" onclick="openTipSlide('tip-language')">
-                                            <div class="icon">
-                                                <em class="mdi mdi-lightbulb"></em>
-                                            </div>
-                                            <p>Tips</p>
-                                        </div>
-                                        <div class="link-add-lang"><a href="javascript:void(0)" onclick="editResumeLanguage(0);"> <em class="material-icons">add</em><span>Thêm mới</span></a></div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="widget-body">
-                                <div class="list-progress">
-                                    <table>
-                                        <thead>
-                                            <tr>
-                                                <th>Trình độ ngoại ngữ</th>
-                                                <th>Trình độ</th>
-                                                <th>Chứng chỉ ngoại ngữ</th>
-                                                <th> </th>
-                                            </tr>
-                                        </thead>
-                                        <tbody>
-                                            <tr>
-                                                <td>
-                                                    <div class="title">
-                                                        <h4>Việt Nam</h4>
-                                                    </div>
-                                                </td>
-                                                <td>
-                                                    <div class="progress">
-                                                        <progress class="progress-main" max="5" value="1"></progress>
-                                                        <div class="lavel">Bản ngữ</div>
-                                                        <div class="progress-row">
-                                                            <div class="line success"></div>
-                                                            <div class="line success"></div>
-                                                            <div class="line success"></div>
-                                                            <div class="line success"></div>
-                                                        </div>
-                                                    </div>
-                                                </td>
-                                                <td>
-                                                    <span></span>
-                                                </td>
-                                                <td>
-                                                    <ul class="list-action">
-                                                        <li class="edit-link"><a href="javascript:void(0)" onclick="editResumeLanguage(191018);"> <em class="material-icons">create</em><span>Chỉnh sửa</span></a></li>
-                                                        <li class="delete"><a href="javascript:void(0)" onclick="deleteResumeLanguageProfile(191018);"> <em class="material-icons">highlight_off</em><span>Xoá</span></a></li>
-                                                    </ul>
-                                                </td>
-                                            </tr>
-                                        </tbody>
-                                    </table>
-                                </div>
-                            </div>
-                            <script>
-                                $('#language-section .widget-body > .list-action .view-more a').on('click', function () {
-                                    $('#language-section .widget-body .list-progress').addClass('active')
-                                    $('#language-section .widget-body > .list-action .view-less').css('display', 'block')
-                                    $('#language-section .widget-body > .list-action .view-more').css('display', 'none')
-                                })
-                                $('#language-section .widget-body > .list-action .view-less a').on('click', function () {
-                                    $('#language-section .widget-body .list-progress').removeClass('active')
-                                    $('#language-section .widget-body > .list-action .view-less').css('display', 'none')
-                                    $('#language-section .widget-body > .list-action .view-more').css('display', 'block')
-                                })
-                            </script>
-                        </div>
-                        <div class="widget widget-17" id="widget-17">
-                            <div class="widget-head">
-                                <div class="cb-title-h3">
-                                    <div class="figure">
-                                        <div class="image"><img src="./img/dash-board/i9.png" alt=""></div>
-                                        <div class="figcaption">
-                                            <h3>Kỹ năng chuyên môn *</h3>
-                                            <div class="status error">
-                                                <p>Chưa hoàn thành</p>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="right-action">
-                                        <div class="tips p1" onclick="openTipSlide('tip-skill')">
-                                            <div class="icon">
-                                                <em class="mdi mdi-lightbulb"></em>
-                                            </div>
-                                            <p>Tips</p>
-                                        </div>
-                                        <div class="link-add"><a href="javascript:void(0);" onclick="show_frmSkill(0);"> <em class="material-icons">add</em><span>Thêm mới</span></a></div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="widget-body">
-                                <div class="list-progress" id="list-progress-skill">
-                                    <table>
-                                        <thead>
-                                            <tr>
-                                                <th>Skill </th>
-                                                <th>Mức độ</th>
-                                                <th> </th>
-                                            </tr>
-                                        </thead>
-                                        <tbody>
-                                        </tbody>
-                                    </table>
-                                </div>
-                            </div>
-                            <script>
-                                $(document).ready(function() {
-                                    $(".lst-action-skill .view-more").on('click', function(){
-                                        $("#list-progress-skill tr").show();
-                                        $(this).hide();
-                                        $(this).next('li').show();
-                                    });
-                                    $(".lst-action-skill .view-less").on('click', function(){
-                                        $("#list-progress-skill tr").hide();
-                                        $("#list-progress-skill tr:nth-child(-n+3)").show();
-                                        $("html, body").animate({scrollTop: $("#widget-17").offset().top-$('header').innerHeight()-40},1000);
-                                        $(this).hide();
-                                        $(this).prev('li').show();
-                                    });
-                                });
-                            </script>
-                        </div>
-                        <div class="widget widget-19" id="widget-19">
-                            <div class="widget-head">
-                                <div class="cb-title-h3">
-                                    <div class="figure">
-                                        <div class="image"><img src="./img/dash-board/i6.png" alt=""></div>
-                                        <div class="figcaption">
-                                            <h3>Thành tích nổi bật</h3>
-                                            <div class="status default">
-                                                <p>Không bắt buộc</p>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="right-action">
-                                        <div class="tips p1" onclick="openTipSlide('tip-award')">
-                                            <div class="icon">
-                                                <em class="mdi mdi-lightbulb"></em>
-                                            </div>
-                                            <p>Tips</p>
-                                        </div>
-                                        <div class="link-edit"><a href="javascript:void(0);" onclick="editResumeAdditioninfo();"> <em class="material-icons">create</em><span>Thêm mới</span></a></div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="widget-body" id="no-content" >
-                                <div class="no-content">
-                                    <p>Vui lòng thêm Thành tích nổi bật của bạn</p>
-                                    <a href="javascript:void(0);" onclick="editResumeAdditioninfo();"><em class="mdi mdi-plus-circle"></em><span>Thêm mới</span></a> 
-                                </div>
-                            </div>
-                            <div class="widget-body">
-                                <div class="content" id="content">     Chưa cập nhật
-                                </div>
-                            </div>
-                            <script type="text/javascript">
-                                $('.widget-19 .widget-body .list-action .view-more a').on('click', function () {
-                                  $('.widget-19 .widget-body .content').addClass('active');
-                                  $('.widget-19 .widget-body .list-action .view-less').css('display', 'block');
-                                  $('.widget-19 .widget-body .list-action .view-more').css('display', 'none');
-                                });
-                                $('.widget-19 .widget-body .list-action .view-less a').on('click', function () {
-                                  $('.widget-19 .widget-body .content').removeClass('active');
-                                  $('.widget-19 .widget-body .list-action .view-less').css('display', 'none');
-                                  $('.widget-19 .widget-body .list-action .view-more').css('display', 'block');
-                                });
-                            </script>
-                        </div>
-                        <div class="widget widget-23 widget-15" id="other-activity-section">
-                            <div class="widget-head">
-                                <div class="cb-title-h3">
-                                    <div class="figure">
-                                        <div class="image"><img src="./img/dash-board/i13.png" alt=""></div>
-                                        <div class="figcaption">
-                                            <h3>Hoạt động khác</h3>
-                                            <div class="status">
-                                                <p>Không bắt buộc</p>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="right-action">
-                                        <div class="tips p1" onclick="openTipSlide('tip-other-activity')">
-                                            <div class="icon">
-                                                <em class="mdi mdi-lightbulb"></em>
-                                            </div>
-                                            <p>Tips</p>
-                                        </div>
-                                        <div class="link-add"><a href="javascript:void(0)" onclick="editResumeActivity(0);"> <em class="material-icons">add</em><span>Thêm mới</span></a></div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="widget-body">
-                                <div class="no-content">
-                                    <p>Mô tả hoạt động</p>
-                                    <a href="javascript:void(0)" onclick="editResumeActivity(0);"><em class="mdi mdi-plus-circle"></em><span>Thêm mới</span></a>
-                                </div>
-                            </div>
-                            <script type="text/javascript">
-                                $(document).ready(function(){
-                                    widgetActivityToggle();
-                                });
-                            </script>
-                        </div>
-                        <div class="widget widget-20" id="widget-20">
-                            <div class="widget-head">
-                                <div class="cb-title-h3">
-                                    <div class="figure">
-                                        <div class="image"><img src="./img/dash-board/i8.png" alt=""></div>
-                                        <div class="figcaption">
-                                            <h3>Người tham khảo</h3>
-                                            <div class="status default">
-                                                <p>Không bắt buộc</p>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="right-action">
-                                        <div class="tips p1" onclick="openTipSlide('tip-references')">
-                                            <div class="icon">
-                                                <em class="mdi mdi-lightbulb"></em>
-                                            </div>
-                                            <p>Tips</p>
-                                        </div>
-                                        <div class="link-add"><a href="javascript:void(0);" onclick="show_frmRefer(0);"> <em class="material-icons">add</em><span>Thêm mới</span></a></div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="widget-body">
-                                <div class="no-content">
-                                    <p>Vui lòng thêm thông tin người tham khảo</p>
-                                    <a href="javascript:void(0);" onclick="show_frmRefer(0);"><em class="mdi mdi-plus-circle"></em><span>Thêm mới</span></a> 
-                                </div>
-                            </div>
-                        </div> -->
-                    </div>
-                    <!-- <div class="col-lg-4 col-xl-3 main-menu">
-                        <div class="menu-shortchut">
-                            <div class="list-button">
-                                <ul>
-                                    <li><a class="share-profile" href="javascript:void(0);"><em class="mdi mdi-share"></em><span>Chia sẻ hồ sơ</span> <span class="new-label"> New </span> </a></li>
-                                    <li> <a href="https://careerbuilder.vn/vi/jobseekers/mykiemviec/changetemplate"> <em class="material-icons">edit</em><span>Chỉnh Mẫu Hồ Sơ</span></a></li>
-                                    <li> <a href="{{ route('viewCv', Auth::user()->id) }}" id="btn_view_cbprofile"> <em class="material-icons">remove_red_eye</em><span>Xem CV </span></a></li>
-                                    <li id="btn_download" style="display:none"> <a href="javascript:void(0);" onclick="downloadCvProfile(16167824)" > <em class="material-icons">get_app</em><span>Tải hồ sơ</span></a>
-                                    </li>
-                                    <li><a class="hidden-info" href="javascript:void(0);" onclick="showHideInfor();"><em class="fa fa-eye-slash"></em><span>Ẩn thông tin</span></a></li>
-                                </ul>
-                            </div>
-                            <div class="head-menu">
-                                <div class="name-shortchut"><a class="active" href="javascript:void(0);">Careerbuilder Profile</a></div>
-                                <div class="toggle-menu"><em class="material-icons">list</em></div>
-                            </div>
-                           
-                        </div>
-                    </div> -->
+                       
                 </div>
             </div>
             <div class="hidden-edit-modal edit-modal-dashboard" style="display: none">
@@ -1251,10 +978,12 @@
                                 <div class="col-lg-4">
                                     <label for="">Công việc gần đây<span>*</span></label>
                                 </div>
+
+
                                
                                 <div class="col-lg-8">
                                     <div class="input-group">
-                                        <input type="text"  name="resume_title" id="resume_title" maxlength="400" value="{{ @json_decode($checkTitle->title)->workrc }}">
+                                        <input type="text"  name="workrc" id="resume_title" maxlength="400" value="{{ @json_decode($checkTitle->workrc)->workrc }}">
                                     </div>
                                     <div class="form-error"><span class="err_resume_title"></span></div>
                                 </div>
@@ -1286,10 +1015,11 @@
                                 <div class="col-lg-4">
                                     <label for="">Mức lương mong muốn<span>*</span></label>
                                 </div>
-                               
+
+
                                 <div class="col-lg-8">
                                     <div class="input-group">
-                                        <input type="text"  name="resume_title" id="resume_title" maxlength="400" value="{{ @json_decode($checkTitle->title)->desired_salary }}">
+                                        <input type="text"  name="desired_salary" id="resume_title" maxlength="400" value="{{ @json_decode($checkTitle->desired_salary)->desired_salary }}">
                                     </div>
                                     <div class="form-error"><span class="err_resume_title"></span></div>
                                 </div>
