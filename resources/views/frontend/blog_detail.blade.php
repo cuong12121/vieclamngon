@@ -167,13 +167,13 @@
                         </ul>
                     </div>
                    
-                    <div class="share-this-news">
+                    <!-- <div class="share-this-news">
                         <span>Chia sẻ bài viết:</span>
                         <a href="https://api.addthis.com/oexchange/0.8/forward/facebook/offer?url=https://careerbuilder.vn/vi/talentcommunity/bi-kip-tao-an-tuong-dau-tien-tuyet-voi.35A51ECA.html&amp;pubid=ra-559220ee7f9c15d6&amp;title=Bí kíp tạo ấn tượng đầu tiên tuyệt vời&amp;ct=1&amp;pco=tbxnj-1.0" target="_blank" title="Facebook"><span class="fa fa-facebook"></span></a>
                         <a href="https://api.addthis.com/oexchange/0.8/forward/linkedin/offer?url=https://careerbuilder.vn/vi/talentcommunity/bi-kip-tao-an-tuong-dau-tien-tuyet-voi.35A51ECA.html&amp;pubid=ra-559220ee7f9c15d6&amp;title=Bí kíp tạo ấn tượng đầu tiên tuyệt vời&amp;ct=1&amp;pco=tbxnj-1.0" target="_blank" title="Linkedin"><span class="fa fa-linkedin"></span></a>
                         <a href="https://api.addthis.com/oexchange/0.8/forward/gmail/offer?url=https://careerbuilder.vn/vi/talentcommunity/bi-kip-tao-an-tuong-dau-tien-tuyet-voi.35A51ECA.html&amp;pubid=ra-559220ee7f9c15d6&amp;title=Bí kíp tạo ấn tượng đầu tiên tuyệt vời&amp;ct=1&amp;pco=tbxnj-1.0" target="_blank" title="Gmail"><span class="fa fa-envelope"></span></a>
                         <div class="zalo-share-button" data-href="" data-oaid="579745863508352884" data-layout="2" data-color="white" data-customize="false" style="position: relative; display: inline-block; width: 20px; height: 20px;"><iframe id="1e18a978-b0c6-4732-94da-62f7eded2e9f" name="1e18a978-b0c6-4732-94da-62f7eded2e9f" frameborder="0" allowfullscreen="" scrolling="no" width="20px" height="20px" src="https://button-share.zalo.me/share_inline?id=1e18a978-b0c6-4732-94da-62f7eded2e9f&amp;layout=2&amp;color=white&amp;customize=false&amp;width=20&amp;height=20&amp;isDesktop=true&amp;url=https%3A%2F%2Fcareerbuilder.vn%2Fvi%2Ftalentcommunity%2Fbi-kip-tao-an-tuong-dau-tien-tuyet-voi.35A51ECA.html&amp;d=eyJ1cmwiOiJodHRwczovL2NhcmVlcmJ1aWxkZXIudm4vdmkvdGFsZW50Y29tbXVuaXR5L2JpLWtpcC10YW8tYW4tdHVvbmctZGF1LXRpZW4tdHV5ZXQtdm9pLjM1QTUxRUNBLmh0bWwifQ%253D%253D&amp;shareType=0" style="position: absolute; z-index: 99; top: 0px; left: 0px;"></iframe></div>
-                    </div>
+                    </div> -->
                     <!-- <div class="similar-post">
                         <div class="cb-title">
                             <h2>Bài viết cùng chuyên mục</h2>
