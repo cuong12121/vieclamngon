@@ -358,7 +358,7 @@
                 <section class="top-footer cb-section cb-section-border-bottom">
                     <div class="row">
                         <div class="col-lg-12 logo"><img class="lazy-bg" data-src="{{ asset('images/template/logo/logo.png') }}" src="{{ asset('images/template/logo/logo.png') }}" alt="Tuyển dụng & Tìm kiếm việc làm nhanh"></div>
-                        <div class="col-lg-2 col-sm-6">
+                        <div class="col-lg-3 col-sm-6">
                             <div class="footer-links">
                                 <h3>Dành Cho Ứng Viên</h3>
                                 <ul>
@@ -373,7 +373,7 @@
                                 </ul>
                             </div>
                         </div>
-                        <div class="col-lg-2 col-sm-6">
+                        <div class="col-lg-3 col-sm-6">
                             <div class="footer-links">
                                 <h3>Nhà Tuyển Dụng</h3>
                                 <ul>
@@ -384,7 +384,7 @@
                                 </ul>
                             </div>
                         </div>
-                        <div class="col-lg-2 col-sm-6">
+                        <div class="col-lg-3 col-sm-6">
                             <div class="footer-links">
                                 <h3>Trung tâm trợ giúp</h3>
                                 <ul>
@@ -399,7 +399,7 @@
                                 </ul>
                             </div>
                         </div>
-                        <div class="col-lg-2 col-sm-6">
+                        <div class="col-lg-3 col-sm-6">
                             <div class="footer-links">
                                 <h3>Website Đối Tác</h3>
                                 <ul>
