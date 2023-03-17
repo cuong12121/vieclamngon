@@ -221,9 +221,9 @@
            
             <div id="photo-area">
                 <div class="texton">
-                    <div class="slogan">
+                   <!--  <div class="slogan">
                         <h1>CÙNG KIẾN TẠO MỘT SỰ NGHIỆP THÀNH CÔNG</h1>
-                    </div>
+                    </div> -->
                     <!-- <div class="join-talent-onclip"><a href="join-talent-network/vi" class="showDialogD">Gia nhập cùng Eurowindow</a></div> -->
                 </div>
                 <div id="banner-video">
