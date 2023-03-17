@@ -847,7 +847,7 @@
 
                  localStorage.clear();
 
-                alert('lưu job thành công');
+                alert('lưu công việc thành công');
 
 
             }
