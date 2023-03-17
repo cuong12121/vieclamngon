@@ -66,30 +66,8 @@
         <script type="text/javascript" src="{{ asset('download/js/jquery.multiselect.js')}}"></script>
         <script type="text/javascript" src="{{ asset('download/js/jquery.formatcurrency.js')}}"></script>
         <script language="javascript" src="{{ asset('download/js/jquery-confirm.min.js')}}"></script>
-        <script type="text/javascript">
-            var DOMAIN = 'career.eurowindow.biz';
-            var TN = 'https://career.eurowindow.biz';
-            var CKEDITOR_BASEPATH = 'https://static.talentnetwork.vn/talentnetwork/source//js/ckeditor/';
-            var LANGUAGE = 'vi';
-            var OWNER = 'eurowindow';
-            var IMAGES_TN = 'https://image.talentnetwork.vn/eurowindow/'; 
-            var STATIC_TN = 'https://static.talentnetwork.vn/talentnetwork/source/';
-            var FILESUPPORT = '*.doc, *.docx, *.pdf';
-                var FILESUPPORT = '*.doc, *.docx, *.pdf';
-            var Controller = 'index';
-            var Action = 'index';
-                var Layout_Template = 'P11';
-                var EMP_NAME = 'Công Ty Cổ Phần Eurowindow';
-                var LINK_FORGOT = 'quen-mat-khau/vi';
-            function checkIos(){
-                return /webOS|iPhone|iPad|iPod/i.test(navigator.userAgent)
-            }
-            function windowsPhone(){
-                    return /windows phone/i.test(navigator.userAgent)
-            }
-        </script>
-       <!--  <link href="https://static.talentnetwork.vn/talentnetwork/source/js/chosen/chosen.css" rel="stylesheet" type="text/css" />
-        <script src="https://static.talentnetwork.vn/talentnetwork/source/js/chosen/chosen.jquery.js?t=28042016')}}"></script> -->
+        
+       
         <script type="text/javascript">
             $( window ).load(function() {
               // Search
