@@ -207,7 +207,7 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="header-bottom-bottom">
+                        <!-- <div class="header-bottom-bottom">
                             <div class="authentication-links">
                                 <ul>
                                     <li class="My-CareerBuilder"><a href="javascript:void(0);"> <i class="mdi mdi-login-variant"></i>My CareerBuilder Center</a></li>
@@ -221,7 +221,7 @@
                                     <li><a href="https://careerbuilder.vn/en/jobseekers/dashboard" title="Change language"> <i class="mdi mdi-web"></i><span>English</span></a></li>
                                 </ul>
                             </div>
-                        </div>
+                        </div> -->
                     </div>
                 </div>
             </div>
