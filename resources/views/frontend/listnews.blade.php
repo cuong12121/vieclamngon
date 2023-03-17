@@ -131,11 +131,7 @@
                     <div class="col-12 col-lg-8">
                         <h1>Tin tức</h1>
 
-                        <?php 
-
-                            $post = App\Models\post::paginate(10);
-                        ?>
-
+    
                         @if(!empty($post))
 
                         @foreach($post as $posts)

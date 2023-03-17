@@ -16,6 +16,10 @@ Route::get('/', 'indexController@Home')->name('home');
 
 Route::get('/crawl', 'crawlController@getImageJobCrawl')->name('homes');
 
+Route::get('/kien-thuc/{slug}', 'listnewController@viewListCate')->name('view-List-Cate');
+
+Route::get('/kien-thuc', 'listnewController@viewList')->name('list-news');
+
 
 // Route::get('/job_details/{id}', 'Backend\employerController@index')->name('job_details'); 
 
@@ -59,13 +63,6 @@ Route::get('/quick-register-user', function () {
 })->name('regiter-fast-form'); 
 
 Route::get('blog-details/{link}', 'blogController@viewBlog')->name('blog_detail'); 
-
-Route::get('kien-thuc', function () {
-
-    return view('frontend.listnews');
-
-})->name('list-news');
-
 
 
 

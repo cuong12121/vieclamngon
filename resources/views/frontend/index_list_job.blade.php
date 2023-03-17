@@ -15,6 +15,8 @@
         <meta property="og:title" content="Tuyển dụng và tìm kiếm việc làm nhanh | Công Ty Cổ Phần Eurowindow"/>
         <meta property="og:url" content="vi"/>
         <meta property="og:image:type" content="image/jpeg"/>
+
+        <meta name="google-site-verification" content="5IKRqCwpFtP82JdyuTKfb9H8BsJdUm5ZRKTEfYbd0Bw" />
         
         <meta property="og:image:width" content="600"/>
         <meta property="og:image:height" content="315"/>
@@ -199,9 +201,9 @@
                             <li class=""><a href="javascript:void(0)" class="dropdown-toggle click-drop"  data-toggle="dropdown">Kiến thức </a>
 
                                 <ul class="dropdown-menu">
-                                  <li><a href="#">Kỹ năng công sở</a></li>
-                                  <li><a href="#">Chuyên ngành</a></li>
-                                  <li><a href="#">Chuyện công sở</a></li>
+                                  <li><a href="{{ route('view-List-Cate', 'ki-nang-cong-so') }}">Kỹ năng công sở</a></li>
+                                  <li><a href="{{ route('view-List-Cate', 'chuyen-nganh') }}">Chuyên ngành</a></li>
+                                  <li><a href="{{ route('view-List-Cate', 'chuyen-cong-so') }}">Chuyện công sở</a></li>
                                 </ul>
 
                             </li>
@@ -625,9 +627,9 @@
         <footer>
             <div class="container">
                 <section class="top-footer cb-section cb-section-border-bottom">
-                    <div class="row">
+                    <div class="">
                         <div class="col-lg-12 logo"><img class="lazy-bg" data-src="http://localhost:8000/images/template/logo/logo.png" src="http://localhost:8000/images/template/logo/logo.png" alt="Tuyển dụng &amp; Tìm kiếm việc làm nhanh"></div>
-                        <div class="col-lg-2 col-sm-6">
+                        <div class="col-lg-3 col-sm-6">
                             <div class="footer-links">
                                 <h3>Dành Cho Ứng Viên</h3>
                                 <ul>
@@ -642,7 +644,7 @@
                                 </ul>
                             </div>
                         </div>
-                        <div class="col-lg-2 col-sm-6">
+                        <div class="col-lg-3 col-sm-6">
                             <div class="footer-links">
                                 <h3>Nhà Tuyển Dụng</h3>
                                 <ul>
@@ -653,7 +655,7 @@
                                 </ul>
                             </div>
                         </div>
-                        <div class="col-lg-2 col-sm-6">
+                        <div class="col-lg-3 col-sm-6">
                             <div class="footer-links">
                                 <h3>Trung tâm trợ giúp</h3>
                                 <ul>
@@ -668,7 +670,7 @@
                                 </ul>
                             </div>
                         </div>
-                        <div class="col-lg-2 col-sm-6">
+                        <div class="col-lg-3 col-sm-6">
                             <div class="footer-links">
                                 <h3>Website Đối Tác</h3>
                                 <ul>
