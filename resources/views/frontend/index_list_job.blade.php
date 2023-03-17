@@ -635,7 +635,7 @@
             <div class="container">
                 <section class="top-footer cb-section cb-section-border-bottom">
                     <div class="">
-                        <div class="col-lg-12 logo"><img class="lazy-bg" data-src="http://localhost:8000/images/template/logo/logo.png" src="http://localhost:8000/images/template/logo/logo.png" alt="Tuyển dụng &amp; Tìm kiếm việc làm nhanh"></div>
+                        <div class="col-lg-12 logo"><img class="lazy-bg" data-src="{{ asset('images/template/logo/logo.png') }}" src="{{ asset('images/template/logo/logo.png') }}" alt="Tuyển dụng &amp; Tìm kiếm việc làm nhanh"></div>
                         <div class="col-lg-3 col-sm-6">
                             <div class="footer-links">
                                 <h3>Dành Cho Ứng Viên</h3>
