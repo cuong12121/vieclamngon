@@ -356,7 +356,7 @@
         <footer>
             <div class="container">
                 <section class="top-footer cb-section cb-section-border-bottom">
-                    <div>
+                    <div class="row">
                         <div class="col-lg-12 logo"><img class="lazy-bg" data-src="{{ asset('images/template/logo/logo.png') }}" src="{{ asset('images/template/logo/logo.png') }}" alt="Tuyển dụng & Tìm kiếm việc làm nhanh"></div>
                         <div class="col-lg-2 col-sm-6">
                             <div class="footer-links">
