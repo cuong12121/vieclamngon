@@ -153,19 +153,7 @@
                             {!!  str_replace('images/posts/','http://dienmaynguoiviet.vn/images/posts/', $data->content) !!}
                         </div>
                     </div>
-                    <div class="tags">
-                        <div class="title">
-                            <h6>Tags</h6>
-                        </div>
-                        <ul class="list-tags">
-                            <li><a href="https://careerbuilder.vn/vi/talentcommunity/search/tag/%E1%BA%A5n-t%C6%B0%E1%BB%A3ng-ban-%C4%91%E1%BA%A7u">ấn tượng ban đầu</a></li>
-                            <li><a href="https://careerbuilder.vn/vi/talentcommunity/search/tag/t%C3%ACnh-b%E1%BA%A1n-c%C3%B4ng-s%E1%BB%9F">tình bạn công sở</a></li>
-                            <li><a href="https://careerbuilder.vn/vi/talentcommunity/search/tag/%C4%91%E1%BB%93ng-nghi%E1%BB%87p">đồng nghiệp</a></li>
-                            <li><a href="https://careerbuilder.vn/vi/talentcommunity/search/tag/li%C3%AAn-h%E1%BB%87-ngh%E1%BB%81-nghi%E1%BB%87p">liên hệ nghề nghiệp</a></li>
-                            <li><a href="https://careerbuilder.vn/vi/talentcommunity/search/tag/quan-h%E1%BB%87-c%C3%B4ng-vi%E1%BB%87c">quan hệ công việc</a></li>
-                            <li><a href="https://careerbuilder.vn/vi/talentcommunity/search/tag/ph%E1%BB%8Fng-v%E1%BA%A5n">phỏng vấn</a></li>
-                        </ul>
-                    </div>
+                    
                    
                     <!-- <div class="share-this-news">
                         <span>Chia sẻ bài viết:</span>
