@@ -447,8 +447,8 @@
         <link rel="stylesheet" type="text/css" href="{{ asset('css/common.css') }}">
      
 
-        <!-- <script src="{{ asset('js/jskcommon.js') }}">/*jskcommon.js*/</script> -->
-        <a class="feedback-btn" data-fancybox data-type="ajax" data-src="https://careerbuilder.vn/vi/jobseekers/index/sendfeedback?from=jobseeker&newlayout=1" title="Feedback" href="javascript:void(0);"><span>Feedback</span></a>
+        <script src="{{ asset('js/jskcommon.js') }}">/*jskcommon.js*/</script>
+        <!-- <a class="feedback-btn" data-fancybox data-type="ajax" data-src="https://careerbuilder.vn/vi/jobseekers/index/sendfeedback?from=jobseeker&newlayout=1" title="Feedback" href="javascript:void(0);"><span>Feedback</span></a> -->
     </body>
 </html>
 <!--End New Layout CB -->
