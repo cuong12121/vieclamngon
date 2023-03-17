@@ -759,21 +759,21 @@
               return blob
             }
 
-            document.querySelector('.copy-button').addEventListener('click', async () => {
-              const src = 'https://png.pngtree.com/png-vector/20211220/ourlarge/pngtree-tree-and-roots-logo-png-image_4077826.png';
-              try {
-                const blob = await getImageBlobFromUrl(src)
-                await navigator.clipboard.write([
-                  new ClipboardItem({
-                    [blob.type]: blob
-                  })
-                ])
-                alert('Image copied to clipboard!')
-              } catch (err) {
-                console.error(err.name, err.message);
-                alert('There was an error while copying image to clipboard :/')
-              }
-            })
+            // document.querySelector('.copy-button').addEventListener('click', async () => {
+            //   const src = 'https://png.pngtree.com/png-vector/20211220/ourlarge/pngtree-tree-and-roots-logo-png-image_4077826.png';
+            //   try {
+            //     const blob = await getImageBlobFromUrl(src)
+            //     await navigator.clipboard.write([
+            //       new ClipboardItem({
+            //         [blob.type]: blob
+            //       })
+            //     ])
+            //     alert('Image copied to clipboard!')
+            //   } catch (err) {
+            //     console.error(err.name, err.message);
+            //     alert('There was an error while copying image to clipboard :/')
+            //   }
+            // })
 
 
 
