@@ -169,14 +169,7 @@
                                     <h3 class="detail-title">Quyền lợi được hưởng</h3>
                                     {!!str_replace('<h2>Quyền lợi được hưởng</h2>', '', $data->rights)!!}
                                 </div>
-                                <div class="share-this-job">
-                                    <span>Chia sẻ việc làm này:</span> 
-                                    <a target="_blank" href="https://api.addthis.com/oexchange/0.8/forward/facebook/offer?url=https://careerbuilder.vn/vi/tim-viec-lam/nhan-vien-tuyen-dung.35B9A7C0.html&pubid=ra-559220ee7f9c15d6&title=Nhân Viên Tuyển Dụng&ct=1&pco=tbxnj-1.0"> <i class="fa fa-facebook"></i> </a>
-                                    <a target="_blank" href="https://api.addthis.com/oexchange/0.8/forward/linkedin/offer?url=https://careerbuilder.vn/vi/tim-viec-lam/nhan-vien-tuyen-dung.35B9A7C0.html&pubid=ra-559220ee7f9c15d6&title=Nhân Viên Tuyển Dụng&ct=1&pco=tbxnj-1.0">  <i class="fa fa-linkedin"></i></a>
-                                    <a target="_blank" href="https://api.addthis.com/oexchange/0.8/forward/email/offer?url=https://careerbuilder.vn/vi/tim-viec-lam/nhan-vien-tuyen-dung.35B9A7C0.html&pubid=ra-559220ee7f9c15d6&title=Nhân Viên Tuyển Dụng&ct=1&pco=tbxnj-1.0">  <i class="fa fa-envelope"></i></a> 
-                                    <a target="_blank" href="https://api.addthis.com/oexchange/0.8/forward/gmail/offer?url=https://careerbuilder.vn/vi/tim-viec-lam/nhan-vien-tuyen-dung.35B9A7C0.html&pubid=ra-559220ee7f9c15d6&title=Nhân Viên Tuyển Dụng&ct=1&pco=tbxnj-1.0">  <i class="fa fa-google"></i></a>
-                                    <div class="zalo-share-button" data-href="" data-oaid="579745863508352884" data-layout="2" data-color="white" data-customize=false></div>
-                                </div>
+                                
                                 
                                 <input type="hidden" id="salary_taskbar" name="salary_taskbar" value="0" />
                                 <input type="hidden" id="industry_taskbar" name="industry_taskbar" value="22,39,3" />
