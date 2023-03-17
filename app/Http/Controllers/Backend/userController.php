@@ -82,6 +82,18 @@ class userController extends Controller
         return redirect()->back();
     }
 
+    public function viewLogin()
+    {
+        if(Auth::check()){
+
+            return redirect(route('user-dashboard'));
+
+        }
+        else{
+            return view('frontend.login_user');
+        }
+    }
+
 
     
      // Route::get('/my-profile', function () {

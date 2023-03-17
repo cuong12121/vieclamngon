@@ -99,8 +99,8 @@
                         <div class="col-md-6">
                             <div class="main-form">
                                 <ul class="list-tabs">
-                                    <li class="login-user"><a href="{{ route('login-user') }}" title="Đăng Nhập ">Đăng Nhập </a></li>
-                                    <li class="active register-user"> <a href="javascript:void(0)" title="Đăng ký">Đăng ký</a></li>
+                                    <li class="login-user"><a href="javascript:void(0)" title="Đăng Nhập ">Đăng Nhập </a></li>
+                                  
                                 </ul>
                                 <!-- <div class="choose-follow">
                                     <p>Đăng nhập bằng</p>
@@ -140,93 +140,7 @@
 
 
 
-                                 <div class="register-form">
-                                    <form name="frmRegister" id="frmRegister" method="POST" action="{{ route('register') }}" autocomplete="off">
-                                         @csrf
-                                        <div class="form-group form-text">
-                                            <input name="name" id="name" maxlength="15" type="text"  autocomplete="off" value="">
-                                            <label for="">* Tên</label>
-                                            <span class="error_firstname" style="display:none"></span>
-                                        </div>
-
-                                        <div class="form-group form-text">
-                                            <input name="surname" id="surname" maxlength="15" type="text"  autocomplete="off" value="">
-                                            <label for="">* Họ và tên đệm</label>
-                                            <span class="error_firstname" style="display:none"></span>
-                                        </div>
-
-                                        <div class="form-group form-text">
-
-                                           <div for="">* Giới tính</div>
-
-                                            <div style="text-align: center;">
-                                                <p> Nam</p>
-                                                <input type="radio" name="sex" value="0" checked> 
-                                            <div>
-
-                                            <div style="text-align: center;">
-                                                <p> Nữ</p>
-                                                <input type="radio" name="sex" value="1"> 
-                                            <div>
-                                            
-                                        </div>
-
-
-                                      
-                                        <div class="form-group form-text">
-                                           
-                                            <label for="">Quốc gia </label>
-
-                                            <br>
-
-                                            <input type="text" name="national">
-                                        </div>
-
-
-                                        <div class="form-group form-text">
-                                           
-                                            <label for="">Tỉnh thành </label>
-
-                                            <br>
-
-                                            <input type="text" name="province">
-                                        </div>
-
-                                        <div class="form-group form-text">
-                                           
-                                            <label for="">Vị trí mong muốn</label>
-
-                                            <br>
-
-                                            <input type="text" name="workplace">
-                                        </div>
-
-                                        <div class="form-group form-text">
-                                            <input name="email" id="email"  maxlength="50" type="text"   autocomplete="off" value="">
-                                            <label for="">* Email</label>
-                                            <span class="error_email" style="display:none" ></span>
-                                        </div>
-                                        <div class="form-group form-text">
-                                            <input type="password" name="password" id="password" maxlength="255"   autocomplete="off" value="">
-                                            <label for="">* Mật khẩu</label>
-                                            <span class="error_password" style="display:none"></span>
-                                        </div>
-                                        <div class="form-group form-text">
-                                            <input type="password" name="confirm_password" id="confirm_password" maxlength="255"   autocomplete="off" value="">
-                                            <label for="">* Xác nhận mật khẩu</label>
-                                            <span class="error_confirm_password" style="display:none"></span>
-                                        </div>
-                                        <div class="form-group form-checkbox">
-                                            <input type="checkbox" checked="checked" name="chkAgree" id="chkAgree" value="1">
-                                           
-                                            <span class="error_chkAgree" style="display:none"></span>
-                                        </div>
-                                        <button class="btn-gradient">Đăng ký</button>
-                                        
-                                    </form>
-                                </div> 
-
-                                <!--end  register-form -->
+                              
 
                             </div>
 
@@ -242,7 +156,7 @@
 
             $check_action = \Request::session()->pull('keys', 'default');
 
-
+          
             
         ?>
         <script language="javascript" >
@@ -268,27 +182,7 @@
 
             })    
 
-            @if(empty($check_action))
-            $('.login-form').hide();
-            @else
-                @if($check_action=='login')
-                     $('.register-user').removeClass('active');
-                    $('.login-form').show();    
-                    $('.register-form').hide();
-                    $('.login-user').addClass('active');
-                    $('.register-form').hide();
-
-                @else
-                     $('.login-user ').removeClass('active');
-                    $('.login-form').hide();
-                    $('.register-form').show();
-
-                    $('.login-form').hide();
-                    $('.register-user').addClass('active');
-
-                @endif
-            @endif
-
+           
 
 
 

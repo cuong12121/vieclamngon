@@ -21,3 +21,5 @@ Route::group(['middleware' => 'checklogin'], function() {
 });	
 Route::get('register-client-user', 'userController@registerUser')->name('registerClientUser');
 
+Route::get('user-login', 'userController@viewLogin')->name('login-user');
+

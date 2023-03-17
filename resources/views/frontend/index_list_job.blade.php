@@ -187,12 +187,57 @@
                             </li>
                         </ul>
                     </div>
-                    <!-- <div class="navbar-right">
+                    <div class="navbar-right">
+
                         <ul>
-                            <li><a href="dang-nhap/vi" class="showDialogD">Đăng nhập</a></li>
+                            <li><a href="{{ route('login-user') }}" class="showDialogD">Đăng nhập</a></li>
+
+                            <li><a href="{{ route('registerClientUser') }}">Đăng Ký</a></li>
+
+                            <li> 
+                               <a href="{{ route('form_recruit') }}">Dành cho nhà tuyển dụng</a>
+
+                                 
+
+                            </li>
                            
                         </ul>
-                    </div> -->
+
+                       
+
+
+                        <style type="text/css">
+                            
+                           .main-employer .dropdown-toggle {
+                                min-width: 190px;
+                                padding: 17.5px 20px;
+                            }
+
+                            .main-employer .dropdown-toggle {
+                                padding: 17.5px;
+                                background: #182642;
+                            }
+
+                            .main-employer .dropdown-toggle p {
+                                color: #999999;
+                                font-size: 14.5px;
+                                font-weight: 500;
+                            }
+
+                        </style>
+
+
+
+
+                        
+                    </div>
+
+
+
+
+
+
+
                 </div>
             </div>
         </div>
