@@ -147,20 +147,8 @@
                         <div class="cb-title">
                             <h1>{{ $data->title }}</h1>
                         </div>
-                        <div class="view-number">
-                            <p>Lượt xem: <span>11,655</span></p>
-                        </div>
-                        <div class="career-advice-detail-share-social">
-                            <ul>
-                                <li class="facebook"><a href="https://api.addthis.com/oexchange/0.8/forward/facebook/offer?url=https://careerbuilder.vn/vi/talentcommunity/bi-kip-tao-an-tuong-dau-tien-tuyet-voi.35A51ECA.html&amp;pubid=ra-559220ee7f9c15d6&amp;title=Bí kíp tạo ấn tượng đầu tiên tuyệt vời&amp;ct=1&amp;pco=tbxnj-1.0" target="_blank" title="Facebook"><em class="mdi mdi-facebook"></em></a></li>
-                                <li class="linkedin"><a href="https://api.addthis.com/oexchange/0.8/forward/linkedin/offer?url=https://careerbuilder.vn/vi/talentcommunity/bi-kip-tao-an-tuong-dau-tien-tuyet-voi.35A51ECA.html&amp;pubid=ra-559220ee7f9c15d6&amp;title=Bí kíp tạo ấn tượng đầu tiên tuyệt vời&amp;ct=1&amp;pco=tbxnj-1.0" target="_blank" title="Linkedin"><em class="mdi mdi-linkedin"></em></a></li>
-                                <li class="email"><a href="https://api.addthis.com/oexchange/0.8/forward/email/offer?url=https://careerbuilder.vn/vi/talentcommunity/bi-kip-tao-an-tuong-dau-tien-tuyet-voi.35A51ECA.html&amp;pubid=ra-559220ee7f9c15d6&amp;title=Bí kíp tạo ấn tượng đầu tiên tuyệt vời&amp;ct=1&amp;pco=tbxnj-1.0" target="_blank" title="Email"><em class="mdi mdi-email"></em></a></li>
-                                <li class="gmail"><a href="https://api.addthis.com/oexchange/0.8/forward/gmail/offer?url=https://careerbuilder.vn/vi/talentcommunity/bi-kip-tao-an-tuong-dau-tien-tuyet-voi.35A51ECA.html&amp;pubid=ra-559220ee7f9c15d6&amp;title=Bí kíp tạo ấn tượng đầu tiên tuyệt vời&amp;ct=1&amp;pco=tbxnj-1.0" target="_blank" title="Gmail"><em class="mdi mdi-gmail"></em></a></li>
-                                <li class="zalo">
-                                    <div class="zalo-share-button" data-href="" data-oaid="579745863508352884" data-layout="2" data-color="white" data-customize="false" style="position: relative; display: inline-block; width: 20px; height: 20px;"><iframe id="78108f0b-65e3-4d1c-8a4e-2ca223ae2275" name="78108f0b-65e3-4d1c-8a4e-2ca223ae2275" frameborder="0" allowfullscreen="" scrolling="no" width="20px" height="20px" src="https://button-share.zalo.me/share_inline?id=78108f0b-65e3-4d1c-8a4e-2ca223ae2275&amp;layout=2&amp;color=white&amp;customize=false&amp;width=20&amp;height=20&amp;isDesktop=true&amp;url=https%3A%2F%2Fcareerbuilder.vn%2Fvi%2Ftalentcommunity%2Fbi-kip-tao-an-tuong-dau-tien-tuyet-voi.35A51ECA.html&amp;d=eyJ1cmwiOiJodHRwczovL2NhcmVlcmJ1aWxkZXIudm4vdmkvdGFsZW50Y29tbXVuaXR5L2JpLWtpcC10YW8tYW4tdHVvbmctZGF1LXRpZW4tdHV5ZXQtdm9pLjM1QTUxRUNBLmh0bWwifQ%253D%253D&amp;shareType=0" style="position: absolute; z-index: 99; top: 0px; left: 0px;"></iframe></div>
-                                </li>
-                            </ul>
-                        </div>
+                        
+                        
                         <div class="full-content">
                             {!!  str_replace('images/posts/','http://dienmaynguoiviet.vn/images/posts/', $data->content) !!}
                         </div>
