@@ -145,15 +145,7 @@
                                 </ul>
                             </div>
                         </div>
-                        <div class="main-language dropdown">
-                            <div class="dropdown-toggle">
-                                <p>VI<em class="mdi mdi-chevron-down"></em></p>
-                            </div>
-                            <div class="dropdown-menu">
-                                <div class="item active"><a class="dropdown-item" href="javascript:;" title="Change language">VI</a></div>
-                                <div class="item"><a class="dropdown-item" href="https://careerbuilder.vn/en/jobseekers/dashboard" title="Change language">EN</a></div>
-                            </div>
-                        </div>
+                        
                        
                     </div>
                 </div>
@@ -207,21 +199,7 @@
                                 </div>
                             </div>
                         </div>
-                        <!-- <div class="header-bottom-bottom">
-                            <div class="authentication-links">
-                                <ul>
-                                    <li class="My-CareerBuilder"><a href="javascript:void(0);"> <i class="mdi mdi-login-variant"></i>My CareerBuilder Center</a></li>
-                                    <li><a href="https://careerbuilder.vn/vi/jobseekers/logout" rel="nofollow"> <i class="fa fa-sign-out"></i>Thoát</a></li>
-                                    <li><a href="https://careerbuilder.vn/vi/employers" title="Dành cho nhà tuyển dụng"> <i class="fa fa-building"></i>Dành cho nhà tuyển dụng</a></li>
-                                </ul>
-                            </div>
-                            <div class="header-alert">
-                                <ul>
-                                    <li><a href="https://careerbuilder.vn/thong-bao-viec-lam" title="Thông Báo Việc Làm"> <i class="mdi mdi-bell-outline"></i><span>Thông Báo Việc Làm</span></a></li>
-                                    <li><a href="https://careerbuilder.vn/en/jobseekers/dashboard" title="Change language"> <i class="mdi mdi-web"></i><span>English</span></a></li>
-                                </ul>
-                            </div>
-                        </div> -->
+                        
                     </div>
                 </div>
             </div>
