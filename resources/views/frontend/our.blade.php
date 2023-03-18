@@ -128,7 +128,7 @@
                 <div class="container">
                     <div class="cb-title cb-title-center">
                         <h2 class="en">
-                            Tại Việt Nam, CareerBuilder.vn đã và đang là lựa chọn của các doanh nghiệp hàng đầu với các ưu thế
+                            Tại Việt Nam, Vieclamngon.vn đã và đang là lựa chọn của các doanh nghiệp hàng đầu với các ưu thế
                         </h2>
                     </div>
                     <div class="row">
