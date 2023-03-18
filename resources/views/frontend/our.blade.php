@@ -209,7 +209,7 @@
                                     </div>
                                     <div class="content">
                                         <p>
-                                            Chúng tôi kết nối nhân tài với công việc lý tưởng, qua đó giúp bạn tìm thấy sự trọn vẹn và cân bằng cuộc sống. Với CareerBuilder.vn, tìm kiếm việc làm sẽ dễ dàng hơn!
+                                            Chúng tôi kết nối nhân tài với công việc lý tưởng, qua đó giúp bạn tìm thấy sự trọn vẹn và cân bằng cuộc sống. Với Vieclamngon.vn, tìm kiếm việc làm sẽ dễ dàng hơn!
                                         </p>
                                     </div>
                                 </div>
@@ -228,7 +228,7 @@
                                     </div>
                                     <div class="content">
                                         <p>
-                                            CareerBuilder.vn là website tuyển dụng hàng đầu đem đến giá trị tối ưu cho người sử dụng
+                                            Vieclamngon.vn là website tuyển dụng hàng đầu đem đến giá trị tối ưu cho người sử dụng
                                         </p>
                                     </div>
                                 </div>
