@@ -141,14 +141,7 @@
                                                 <p>{{ (json_decode($checkTitle->experience))->yearOfExperience.' năm'??'Chưa có kinh nghiệm' }}</p>
                                             </li>
                                             @endif
-                                           <!--  <li>
-                                                <em class="material-icons">person</em>
-                                                <p>Cấp bậc mong muốn: <span>Chưa cập nhật</span></p>
-                                            </li> -->
-                                            <!-- <li>
-                                                <em class="material-icons">attach_money</em>
-                                                <p>Mức lương mong muốn: <span>Chưa cập nhật</span></p>
-                                            </li> -->
+                                          
 
                                              @if($checksucess===true)
                                             <li style="position: relative;">
