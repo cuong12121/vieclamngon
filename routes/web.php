@@ -87,7 +87,7 @@ Route::get('ve-chung-toi', function () {
 
 
 
-Route::get('employers/register', 'Backend\employerController@index')->name('register_employer'); 
+Route::get('nha-tuyen-dung/dang-ky', 'Backend\employerController@index')->name('register_employer'); 
 
 
 Route::group(['prefix' => 'employer','middleware' => 'Checkemploy'], function() {
@@ -122,17 +122,17 @@ Route::group(['prefix' => 'employer','middleware' => 'Checkemploy'], function() 
 
 });
 
-Route::get('user/user-dashboard', 'userController@dashBoard')->middleware('checklogin')->name('user-dashboard');
+Route::get('ung-vien/user-dashboard', 'userController@dashBoard')->middleware('checklogin')->name('user-dashboard');
 
 Route::post('users', 'Backend\UserLoginController@registerUser')->name('register');
 
-Route::post('user/login', 'Backend\UserLoginController@loginUser')->name('login-user');
+Route::post('ung-vien/login', 'Backend\UserLoginController@loginUser')->name('login-user');
 
-Route::post('user/profice/{action}', 'Backend\applicationController@updateApplication')->name('postProfile');
+Route::post('ung-vien/profice/{action}', 'Backend\applicationController@updateApplication')->name('postProfile');
 
-Route::post('employer/login', 'Backend\employerController@postLoginEmployer')->name('loginEmployer');
+Route::post('nha-tuyen-dung/login', 'Backend\employerController@postLoginEmployer')->name('loginEmployer');
 
-Route::post('employer/postJob', 'Backend\employerController@postJob')->name('postJob');
+Route::post('nha-tuyen-dung/postJob', 'Backend\employerController@postJob')->name('postJob');
 
 
 

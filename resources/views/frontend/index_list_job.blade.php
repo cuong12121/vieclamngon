@@ -190,9 +190,16 @@
                     <div class="navbar-right">
 
                         <ul>
-                            <li><a href="{{ route('login-user') }}" class="showDialogD">Đăng nhập</a></li>
+
+                            @if(!Auth::check())
+                            <li><a href="{{ route('login-users') }}" class="showDialogD">Đăng nhập</a></li>
 
                             <li><a href="{{ route('registerClientUser') }}">Đăng Ký</a></li>
+
+                            @else
+
+                            <li><a href="{{ route('user-dashboard') }}" class="showDialogD">Xin chào {{ Auth::user()->name }}</a></li>
+                            @endif
 
                             <li> 
                                <a href="{{ route('form_recruit') }}">Dành cho nhà tuyển dụng</a>
@@ -226,17 +233,7 @@
 
                         </style>
 
-
-
-
-                        
                     </div>
-
-
-
-
-
-
 
                 </div>
             </div>

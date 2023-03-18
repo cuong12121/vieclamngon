@@ -16,10 +16,9 @@ Route::group(['middleware' => 'checklogin'], function() {
 
 	Route::get('cv/{id}', 'userController@viewCv')->name('viewCv');
 
-
 	Route::post('upload-cv-pdf', 'userController@upload_cv_pdf')->name('upload-cv-file');
 });	
-Route::get('register-client-user', 'userController@registerUser')->name('registerClientUser');
+Route::get('ung-vien/dang-ky', 'userController@registerUser')->name('registerClientUser');
 
-Route::get('user-login', 'userController@viewLogin')->name('login-user');
+Route::get('ung-vien/dang-nhap', 'userController@viewLogin')->name('login-users');
 
