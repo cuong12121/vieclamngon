@@ -4735,6 +4735,10 @@ header .main-login .login-wrapper .sign-in-by span, header .title-login .login-w
     margin-right:10px;
     font-size:13px;
 }
+
+header .main-language .dropdown-menu{
+    width: 200px;
+}
 header .main-login .login-wrapper .sign-in-by ul li, header .title-login .login-wrapper .sign-in-by ul li{
     display:inline-block;
     margin-left:5px;

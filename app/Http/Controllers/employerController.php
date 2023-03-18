@@ -66,4 +66,14 @@ class employerController extends Controller
     
 
     }
+
+    public function employesLogin($value='')
+    {
+        
+        if(Auth::guard('employer_register')->check()){
+
+            return redirect(route('index_employer'));
+        }
+        return view('frontend.employer_login');
+    }
 }

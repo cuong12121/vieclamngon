@@ -255,10 +255,24 @@
                                     <p>Xin chào {{ Auth::guard('employer_register')->user()->name_company }}</p>
                                 </div> 
                                 <div class="dropdown-menu">
+
+                                    <div class="item">
+                                       <a class="dropdown-item" href="{{ route('index_employer') }}" title="Change language">Dashboard</a>
+                                    </div>
                                     
+                                    <div class="item">
+                                       <a class="dropdown-item" href="{{ route('employer-logout') }}" title="Change language">Thông tin Doanh Nghiệp</a>
+                                    </div>
+                                    <div class="item">
+                                       <a class="dropdown-item" href="{{ route('employer-logout') }}" title="Change language">Quản lý doanh nghiệp</a>
+                                    </div>
+
+                                    
+
                                     <div class="item">
                                        <a class="dropdown-item" href="{{ route('employer-logout') }}" title="Change language">Logout</a>
                                     </div>
+
                                 </div>
                             </div>
 

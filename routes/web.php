@@ -66,17 +66,8 @@ Route::get('blog-details/{link}', 'blogController@viewBlog')->name('blog_detail'
 
 
 
-Route::get('employers-login', function () {
+Route::get('employers-login', 'employerController@employesLogin')->name('employers_login_fe'); 
 
-    return view('frontend.employer_login');
-
-})->name('employers_login_fe'); 
-
-Route::get('employers-login', function () {
-
-    return view('frontend.employer_login');
-
-})->name('employers_login_fe'); 
 
 
 Route::get('ve-chung-toi', function () {
