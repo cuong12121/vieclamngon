@@ -132,10 +132,9 @@
     <section class="cb-career-advice-detail-breakcrumb">
         <div class="container">
             <ul class="breakcrumb">
-                <li> <a href="https://careerbuilder.vn/vi/talentcommunity">Home</a></li>
-                <li><a href="https://careerbuilder.vn/vi/talentcommunity/tu-van-nghe-nghiep">Tư vấn nghề nghiệp</a></li>
-                <li><a href="https://careerbuilder.vn/vi/talentcommunity/phat-trien-su-nghiep">Phát triển sự nghiệp</a></li>
-                <li class="active"><a href="https://careerbuilder.vn/vi/talentcommunity/bi-kip-tao-an-tuong-dau-tien-tuyet-voi.35A51ECA.html">Bí kíp tạo ấn tượng đầu tiên tuyệt vời</a></li>
+                <li> <a href="/">Home</a></li>
+                <li><a href="/tin-tuc">Tin tức</a></li>
+                
             </ul>
         </div>
     </section>
