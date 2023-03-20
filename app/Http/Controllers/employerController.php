@@ -29,7 +29,7 @@ class employerController extends Controller
         $data = DB::table('job')->join('employ_info', 'employ_info.employ_id', '=', 'job.employer_id')->where('employ_info.id', $id_employ)->select('job.id','job.title', 'job.salary', 'job.link', 'employ_info.name', 'employ_info.links')->get();
        
 
-        return view('employer.employ-detail-job', compact('data', 'findID'));
+        return view('frontend.employ-detail-job', compact('data', 'findID'));
     }
 
     public function updatePassEmployer(Request $request)
