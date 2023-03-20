@@ -66,4 +66,9 @@ class ajaxController extends Controller
        
 
     }
+
+    public function uploadAvatar(Request $request)
+    {
+       
+    }
 }

@@ -119,6 +119,12 @@ Route::post('users', 'Backend\UserLoginController@registerUser')->name('register
 
 Route::post('ung-vien/login', 'Backend\UserLoginController@loginUser')->name('login-user');
 
+
+Route::post('uploadAvatar', 'ajaxController@uploadAvatar')->name('upload-avatar');
+
+
+
+
 Route::post('ung-vien/profice/{action}', 'Backend\applicationController@updateApplication')->name('postProfile');
 
 Route::post('nha-tuyen-dung/login', 'Backend\employerController@postLoginEmployer')->name('loginEmployer');

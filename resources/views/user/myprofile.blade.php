@@ -77,8 +77,16 @@
                                         <div class="action-profile">
                                             <ul>
                                                 <li class="edit-pro">
-                                                    <input class="hidden"  type="file" class="file" id="fileAvatar" name="fileAvatar">
-                                                    <a href="javascript:void(0);" onclick="choose_file();" id="upload-image"><span>Tải hình ảnh</span></a> 
+
+                                                    <form id="upForm" onsubmit="return up ();"> 
+                                                        <input type="file" accept="image/*" name="upFile" required> 
+                                                        <input type="submit" value="Upload"> 
+                                                    </form>
+
+
+
+                                                    <!-- <input class="hidden" onchange="return ajaxFileUpload();" type="file" class="file" id="fileAvatar" name="fileAvatar">
+                                                    <a href="javascript:void(0);" onclick="choose_file();" id="upload-image"><span>Tải hình ảnh</span></a> --> 
                                                 </li>
                                                 <!-- <li class="view-pro"><a href="javascript:void(0);" onclick="removeAvarta();"> <em class="material-icons">highlight_off</em><span>Xóa hình ảnh</span></a></li> -->
                                             </ul>
@@ -2123,6 +2131,18 @@ if($.isFunction(window.smartech)) smartech('dispatch', 'bt_begin_update_profile'
 
 
 <script type="text/javascript">
+
+
+    function up () { 
+        // (A) GET SELECTED IMAGE 
+        var data = new FormData (document.getElementById ("upForm")); 
+        // (B) AJAX UPLOAD 
+        fetch ("{{ route('upload-avatar') }}", { method:"POST", body:data }) 
+        .then (res => res.text ()) 
+        .then (txt => alert (txt)) 
+        .catch (err => console.error (err)); 
+        return false; 
+    };
     
     function choose_file() {
         var file_data = $('#fileAvatar').prop('files')[0];   
