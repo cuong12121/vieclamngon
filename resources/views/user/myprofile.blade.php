@@ -22,6 +22,13 @@
     }
 
     ?>
+
+    <style type="text/css">
+        .edit-db-infor .form-group.form-birthday:before{
+            display: none;
+        }
+
+    </style>
     <link rel="stylesheet" type="text/css" href="{{ asset('css/employ/index.css') }}">
     <link href="https://static.careerbuilder.vn/js/datetimepicker/DateTimePicker.css" rel="stylesheet"/>
     <script src="https://static.careerbuilder.vn/js/datetimepicker/DateTimePicker.js" type="text/javascript"></script>
