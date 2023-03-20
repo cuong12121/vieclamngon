@@ -29,12 +29,14 @@ class ajaxController extends Controller
 
         $job = $request->job;
 
-        $au_id = Auth::user()->id;
+       
 
-        if(empty($au_id)){
+        if(empty(Auth::check())){
 
             return response('chưa đăng nhập');
         }
+
+         $au_id = Auth::user()->id;
         
         $apply = new apply_job();
         $apply->job_id = $job;
