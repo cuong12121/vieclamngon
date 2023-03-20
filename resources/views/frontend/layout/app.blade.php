@@ -90,11 +90,11 @@
             <div class="container-fluid">
                 <div class="main-wrap">
                     <div class="left-wrap">
-                        
+
                         <div class="button-hambuger"><span class="mdi mdi-menu"></span></div>
                         <div class="logo"><a href="{{ route('home') }}" title="Tuyển dụng & Tìm kiếm việc làm nhanh" ><img src="{{ asset('images/template/logo/logo.png') }}" alt="Tuyển dụng & Tìm kiếm việc làm nhanh"></a></div>
                         <div class="main-menu">
-                            <ul class="menu">
+                            <!-- <ul class="menu">
                                 <li class="dropdown">
                                     <a href="javascript:void(0);" title="Tìm Việc Làm">Tìm Việc Làm</a>
                                     <div class="dropdown-menu">
@@ -109,12 +109,12 @@
                                         </ul>
                                     </div>
                                 </li>
-                                <!-- <li> <a href="javascript:void(0)" target="_blank" title="CV Hay">CV Hay</a></li>
+                                 <li> <a href="javascript:void(0)" target="_blank" title="CV Hay">CV Hay</a></li>
                                 <li> <a href="javascript:void(0)" target="_blank" title="VietnamSalary">VietnamSalary</a></li>
                                 <li> <a href="javascript:void(0)" target="_blank" title="CareerMap">CareerMap</a></li>
                                 <li> <a href="javascript:void(0)" title="Cẩm Nang">Cẩm Nang</a></li>
-                                <li> <a href="javascript:void(0)" title="Tính Lương">Tính Lương</a></li> -->
-                            </ul>
+                                <li> <a href="javascript:void(0)" title="Tính Lương">Tính Lương</a></li>
+                            </ul> -->
                         </div>
                     </div>
 
