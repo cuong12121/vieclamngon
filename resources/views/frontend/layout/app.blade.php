@@ -55,7 +55,7 @@
            
         </script>
         <script src='//cdnt.netcoresmartech.com/smartechclient.js'></script>
-        <script src='https://ads.careerbuilder.vn/www/delivery/spcjs.php?id=23'></script>
+        <!-- <script src='https://ads.careerbuilder.vn/www/delivery/spcjs.php?id=23'></script> -->
         <script>
             $.fancybox.defaults.hash=false;
             $.fancybox.defaults.backFocus=false;
