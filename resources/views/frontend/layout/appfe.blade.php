@@ -261,10 +261,10 @@
                                     </div>
                                     
                                     <div class="item">
-                                       <a class="dropdown-item" href="{{ route('employer-logout') }}" title="Change language">Thông tin Doanh Nghiệp</a>
+                                       <a class="dropdown-item" href="{{ route('employers_info') }}" title="Change language">Thông tin Doanh Nghiệp</a>
                                     </div>
                                     <div class="item">
-                                       <a class="dropdown-item" href="{{ route('employer-logout') }}" title="Change language">Quản lý doanh nghiệp</a>
+                                       <a class="dropdown-item" href="{{ route('employers-info-list') }}" title="Change language">Quản lý đăng tuyển</a>
                                     </div>
 
                                     
