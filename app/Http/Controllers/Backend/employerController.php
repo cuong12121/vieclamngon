@@ -17,7 +17,7 @@ class employerController extends Controller
     public function index()
     {
         if(!Auth::guard('employer_register')->check()){
-            return view('frontend.employer-register');
+            return view('employer.employer-register');
         }
         else{
 
@@ -34,7 +34,7 @@ class employerController extends Controller
     {
 
         if(!Auth::guard('employer_register')->check()){
-            return view('frontend.employer-register');
+            return view('employer.employer-register');
         }
         $id = Auth::guard('employer_register')->user()->id;
         $job = job::where('employer_id', $id)->get()->count();
@@ -237,7 +237,7 @@ class employerController extends Controller
     public function info_employer()
     {
          if(!Auth::guard('employer_register')->check()){
-            return view('frontend.employer-register');
+            return view('employer.employer-register');
         }
         else{
 
