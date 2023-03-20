@@ -30,11 +30,7 @@
     <script type="text/javascript" src="https://careerbuilder.vn/cv-hay/getdistricts"></script>
     <script type="text/javascript" src="https://careerbuilder.vn/cv-hay/init-cv-building"></script>
     <div class="page-content d-flex align-items-stretch">
-    <div class="default-sidebar sticky">
-
-        @include('frontend.layout.sidebar.sidebar1')
-
-    </div>
+   
     <div class="content-inner">
         <div class="container-fluid">
             <div class="db-my-profile">
