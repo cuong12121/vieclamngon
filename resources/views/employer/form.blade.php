@@ -711,7 +711,7 @@
         <div class="col-lg-3">
             <div class="form-group form-date">
                 <label>Hạn nhận hồ sơ <font style="color: red">*</font></label>
-                <input type="text" name="JOB_LASTDATE" id="JOB_LASTDATE" class="dates_cus_select_postjob required" value="" />
+                <input type="date" name="JOB_LASTDATE" id="JOB_LASTDATE" class="dates_cus_select_postjob required" value="" />
                 <div class="icon"><em class="material-icons">event</em></div>
                 <span class="form-error error_job_lastdate"></span>
             </div>
