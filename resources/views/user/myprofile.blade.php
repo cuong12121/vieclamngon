@@ -77,7 +77,7 @@
                                         <div class="action-profile">
                                             <ul>
                                                 <li class="edit-pro">
-                                                    <input class="hidden" onchange="return ajaxFileUpload();" type="file" class="file" id="fileAvatar" name="fileAvatar">
+                                                    <input class="hidden"  type="file" class="file" id="fileAvatar" name="fileAvatar">
                                                     <a href="javascript:void(0);" onclick="choose_file();" id="upload-image"><span>Tải hình ảnh</span></a> 
                                                 </li>
                                                 <!-- <li class="view-pro"><a href="javascript:void(0);" onclick="removeAvarta();"> <em class="material-icons">highlight_off</em><span>Xóa hình ảnh</span></a></li> -->
@@ -2125,23 +2125,23 @@ if($.isFunction(window.smartech)) smartech('dispatch', 'bt_begin_update_profile'
 <script type="text/javascript">
     
     function choose_file() {
-                    var file_data = $('#fileAvatar').prop('files')[0];   
-                    var form_data = new FormData();                  
-                    form_data.append('file', file_data);
-                    alert(form_data);                             
-                    // $.ajax({
-                    //     url: 'upload.php', // <-- point to server-side PHP script 
-                    //     dataType: 'text',  // <-- what to expect back from the PHP script, if anything
-                    //     cache: false,
-                    //     contentType: false,
-                    //     processData: false,
-                    //     data: form_data,                         
-                    //     type: 'post',
-                    //     success: function(php_script_response){
-                    //         alert(php_script_response); // <-- display response from the PHP script, if any
-                    //     }
-                    //  });
-                }
+        var file_data = $('#fileAvatar').prop('files')[0];   
+        var form_data = new FormData();                  
+        form_data.append('file', file_data);
+                                 
+        $.ajax({
+            url: 'upload.php', // <-- point to server-side PHP script 
+            dataType: 'text',  // <-- what to expect back from the PHP script, if anything
+            cache: false,
+            contentType: false,
+            processData: false,
+            data: form_data,                         
+            type: 'post',
+            success: function(result){
+                alert(result); // <-- display response from the PHP script, if any
+            }
+         });
+    }
 </script>
 
             <div class="back-drop"></div>
