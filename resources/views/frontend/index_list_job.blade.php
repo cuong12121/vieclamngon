@@ -7,7 +7,7 @@
         <!-- <base href="https://static.talentnetwork.vn/talentnetwork/source/eurowindow/"/> -->
         <!-- <link rel="shortcut icon" href="https://static.talentnetwork.vn/talentnetwork/source/favicon_eurowindow.ico?t=1"/> -->
         <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
-        <meta name="robots" content="index,follow" />
+        <meta name="robots" content="noindex" />
         <title>Tuyển dụng và tìm kiếm việc làm nhanh việc làm ngon</title>
         <!-- tag share 4 -->
         <meta property="og:type" content="website"/>
