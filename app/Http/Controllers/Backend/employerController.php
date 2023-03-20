@@ -197,7 +197,7 @@ class employerController extends Controller
         if(!empty($id)){
 
             $employ_info = employ_info::find($id->id);
-            $employ_info->name = $request->EMP_NAME;
+            $employ_info->name_company = $request->EMP_NAME;
             $employ_info->totalstaff = $request->EMP_TOTALSTAFF;
             $employ_info->company_type  = $request->Company_type;
             $employ_info->website = $request->EMP_WEBSITE ;
