@@ -1,6 +1,6 @@
 @extends('frontend.layout.app')
 @section('content')
-    <div>
+    <div class="content-inner">
 
 
 <?php
