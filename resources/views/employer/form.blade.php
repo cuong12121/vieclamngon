@@ -660,10 +660,7 @@
             </div>
         </div>
         <div class="col-lg-6 d-flex align-center salaryOnPostJob">
-            <div class="form-group form-checkbox mt-5">
-                <input type="checkbox" id="0-2" name="JOB_ISSECURITY" value="0" checked="checked">
-                <label for="0-2"><span>Hiển thị trên tin tuyển dụng để thu hút ứng viên hơn</span></label>
-            </div>
+           
             <div class="noti">
                 
                 <div class="toolip">
