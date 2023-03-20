@@ -1890,26 +1890,9 @@
             </div>
             <script>
 
-                function choose_file() {
-                    var file_data = $('#fileAvatar').prop('files')[0];   
-                    var form_data = new FormData();                  
-                    form_data.append('file', file_data);
-                    alert(form_data);                             
-                    // $.ajax({
-                    //     url: 'upload.php', // <-- point to server-side PHP script 
-                    //     dataType: 'text',  // <-- what to expect back from the PHP script, if anything
-                    //     cache: false,
-                    //     contentType: false,
-                    //     processData: false,
-                    //     data: form_data,                         
-                    //     type: 'post',
-                    //     success: function(php_script_response){
-                    //         alert(php_script_response); // <-- display response from the PHP script, if any
-                    //     }
-                    //  });
-                }
-
                 
+
+
                 function openTipSlide(idTip) {
 
 
@@ -2136,6 +2119,29 @@ if($.isFunction(window.smartech)) smartech('dispatch', 'bt_begin_update_profile'
 </script>
 
 <script src="{{ asset('js/employ/fancybox.js') }}">/*jquery.fancybox.js*/
+</script>
+
+
+<script type="text/javascript">
+    
+    function choose_file() {
+                    var file_data = $('#fileAvatar').prop('files')[0];   
+                    var form_data = new FormData();                  
+                    form_data.append('file', file_data);
+                    alert(form_data);                             
+                    // $.ajax({
+                    //     url: 'upload.php', // <-- point to server-side PHP script 
+                    //     dataType: 'text',  // <-- what to expect back from the PHP script, if anything
+                    //     cache: false,
+                    //     contentType: false,
+                    //     processData: false,
+                    //     data: form_data,                         
+                    //     type: 'post',
+                    //     success: function(php_script_response){
+                    //         alert(php_script_response); // <-- display response from the PHP script, if any
+                    //     }
+                    //  });
+                }
 </script>
 
             <div class="back-drop"></div>
