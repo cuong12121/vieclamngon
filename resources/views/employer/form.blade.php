@@ -113,9 +113,15 @@
             </div>
             <div class="right-wrap">
 
+                <?php 
+
+                    dd(Auth::guard('employer_register')->check());
+                ?>
+
+
                 @if(Auth::guard('employer_register')->check())
 
-                
+
                 <div class="main-login dropdown logged"><a href="{{ route('index_employer') }}" > Hi, <span class="name">{{ @Auth::guard('employer_register')->user()->name }}</span></a>
                     <div class="dropdown-menu">
                         <ul>
