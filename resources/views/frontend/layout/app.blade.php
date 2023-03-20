@@ -152,7 +152,7 @@
             </div>
             <div class="mobile-menu logged">
                 <div class="mobile-wrap">
-                    <div class="header-logo"><a href="https://careerbuilder.vn/vi/" title="Tuyển dụng & Tìm kiếm việc làm nhanh"><img class="lazy-bg" data-src="./img/logo.png" src="../kiemviecv32/images/graphics/blank.gif" alt="Tuyển dụng & Tìm kiếm việc làm nhanh"></a></div>
+                    <div class="header-logo"><a href="https://careerbuilder.vn/vi/" title="Tuyển dụng & Tìm kiếm việc làm nhanh"><img class="lazy-bg" data-src="{{ asset }}" src="../kiemviecv32/images/graphics/blank.gif" alt="Tuyển dụng & Tìm kiếm việc làm nhanh"></a></div>
                     <div class="header-bottom">
                         <div class="header-bottom-top">
                             <div class="profile">
@@ -360,7 +360,7 @@
             <div class="container">
                 <section class="top-footer cb-section cb-section-border-bottom">
                     <div class="row">
-                        <div class="col-lg-12 logo"><img class="lazy-bg" data-src="./img/logo.png" src="../kiemviecv32/images/graphics/blank.gif" alt="Tuyển dụng & Tìm kiếm việc làm nhanh"></div>
+                        
                         <div class="col-lg-2 col-sm-6">
                             <div class="footer-links">
                                 <h3>Dành Cho Ứng Viên</h3>
