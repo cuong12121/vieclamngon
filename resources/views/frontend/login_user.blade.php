@@ -32,7 +32,7 @@
                     </div>
                 @endif
                 <div class="cb-title cb-title-center">
-                    <h2>Tham gia ngay hôm nay</h2>
+                    <h2>Tham gia ngay hôm nay nhé</h2>
                 </div>
 
                  @foreach ($errors->all() as $error)
@@ -99,7 +99,7 @@
                         <div class="col-md-6">
                             <div class="main-form">
                                 <ul class="list-tabs">
-                                    <li class="login-user"><a href="javascript:void(0)" title="Đăng Nhập ">Đăng Nhậps </a></li>
+                                    <li class="login-user"><a href="javascript:void(0)" title="Đăng Nhập ">Đăng Nhập </a></li>
                                   
                                 </ul>
                                 <!-- <div class="choose-follow">
