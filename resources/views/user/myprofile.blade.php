@@ -53,9 +53,23 @@
                                 <div class="row">
                                     <div class="col-lg-4 col-xl-3">
                                         <div class="img-info">
+
+
+
+                                            <form method="post", action=""> 
+
+                                                <input type="file" accept="image/*" name="upFile" required> 
+                                                <input type="submit" value="Upload"> 
+
+                                            </form>
+
                                             <div class="figure">
-                                                <div class="image img-result hide"><img id="img_mem_avatar" class="cropped" src="./img/dash-board/1.png" alt=""></div>
+                                                <div class="image img-result hide">
+                                                    <img id="img_mem_avatar" class="cropped" src="./img/dash-board/1.png" alt=""></div>
                                             </div>
+
+
+
                                             <div class="mobile-show">
                                                 <div class="cb-name">
                                                     <h2>{{ Auth::user()->name }}</h2>
@@ -78,11 +92,7 @@
                                             <ul>
                                                 <li class="edit-pro">
 
-                                                    <form id="upForm" onsubmit="return up ();"> 
-                                                        <input type="file" accept="image/*" name="upFile" required> 
-                                                        <input type="submit" value="Upload"> 
-                                                    </form>
-
+                                                    
 
 
                                                     <!-- <input class="hidden" onchange="return ajaxFileUpload();" type="file" class="file" id="fileAvatar" name="fileAvatar">
