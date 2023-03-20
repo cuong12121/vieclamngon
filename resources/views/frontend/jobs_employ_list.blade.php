@@ -133,7 +133,7 @@
                                         <th width="10%" onclick="setTypeSort('posting', 'asc', 1)">Lượt Nộp</th>
                                        <!--  <th width="10%">CV Gợi Ý</th> -->
                                         <th width="15%">Nổi bật</th>
-                                        <th width="15%">Sửa</th>
+                                       
                                     </tr>
                                 </thead>
                                 <tbody>
@@ -164,10 +164,7 @@
                                             <a href="javascript:void(0)" onclick="updateActiveJob({{  $jobs->id }},  {{ $jobs->active==0?1:0  }})">{{ $jobs->active==0?'Tắt':'Bật'  }}</a>
                                         </td>
                                         
-                                        <td colspan="9" class="cb-text-center">
-
-                                            <a href="#">Sửa</a>
-                                        </td>
+                                       
                                     </tr>
                                     @endforeach
                                     @else
