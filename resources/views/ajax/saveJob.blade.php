@@ -26,12 +26,12 @@
     <td class="location">
         <p>Hà Nội</p>
     </td>
-    <td class="action">
+    <!-- <td class="action">
         <ul class="list-action">
             <li class="apply-now-btn"><a class="btn-gradient" href="javascript:void(0)" onclick="apply('{{ $jobs->id }}')">Ứng Tuyển</a></li>
             <li class="delete"><a href="javascript:void(0);" onclick="checkDeleteJobSaved({{ $jobs->id }});"> <em class="material-icons">highlight_off</em><span>Xóa</span></a></li>
         </ul>
-    </td>
+    </td> -->
 </tr>
 @endforeach
 @endif
