@@ -118,13 +118,7 @@
 
                 @if(Auth::guard('employer_register')->check())
 
-                <?php 
-
-                    dd(Auth::guard('employer_register')->user());
-                ?>
-
-
-                <div class="main-login dropdown logged"><a href="{{ route('index_employer') }}" > Hi, <span class="name">{{ @Auth::guard('employer_register')->user()->name }}</span></a>
+                <div class="main-login dropdown logged"><a href="{{ route('index_employer') }}" > Hi, <span class="name">{{ @Auth::guard('employer_register')->user()->name_company }}</span></a>
                     <div class="dropdown-menu">
                         <ul>
                             
