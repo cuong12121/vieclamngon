@@ -33,7 +33,7 @@
 ?>
 
 <div class="content-inner">
-    <div class="find-jobs-form">
+    <!-- <div class="find-jobs-form">
         <div class="container-fluid">
             <div class="main-form">
                 <div class="close-input-filter"><em class="lnr lnr-cross"></em></div>
@@ -75,7 +75,7 @@
                 </form>
             </div>
         </div>
-    </div>
+    </div> -->
     <div class="container-fluid">
         <div class="dash-board-wrap">
             <div class="row mergebox">
