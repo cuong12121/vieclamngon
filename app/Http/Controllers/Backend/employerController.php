@@ -41,7 +41,7 @@ class employerController extends Controller
 
 
 
-        return view('frontend.index_employer', compact('job'));
+        return view('employer.index_employer', compact('job'));
     }
 
     public function logout()
