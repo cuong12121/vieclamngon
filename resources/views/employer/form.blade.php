@@ -448,13 +448,7 @@
                     <div class="form-group form-select">
                         <label>
                             Nơi làm việc <font style="color: red">*</font>
-                            <a class="btn-add-location ml-5" href="javascript:void(0);" >
-                                + Thêm Địa Điểm
-                                <div class="toolip">
-                                    - Bổ sung thông tin địa điểm làm việc cho  vị trí đăng tuyển</br>
-                                    - Vị trí đăng tuyển của bạn sẽ được hiển thị trên bản đồ việc làm dành cho ứng viên trên thiết bị di động, qua đó gia tăng hiệu quả tuyển dụng
-                                </div>
-                            </a>
+                            
                         </label>
                         <select name="LOCATION_ID[]"  class="select_location" >
                             <option value="">Chọn</option>
