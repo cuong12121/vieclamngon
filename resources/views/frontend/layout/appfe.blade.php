@@ -112,7 +112,7 @@
                        
 
 
-                        @if(\Request::route()->getName()=='login-users'||\Request::route()->getName()=='registerClientUser')
+                        @if(\Request::route()->getName()=='login-users'||\Request::route()->getName()=='registerClientUser'||\Request::route()->getName()=='job_details')
                         <div class="main-login dropdown">
                           
 
