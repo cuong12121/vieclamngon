@@ -35,7 +35,7 @@
         <div class="container-fluid">
             <div class="db-my-profile">
                 <div class="row">
-                    <div class="col-lg-8 col-xl-9 main-widget">
+                    <div class="col-lg-12 col-xl-12 main-widget">
                         <div class="widget widget-2 widget-11" id="widget-11">
                             <div class="widget-head">
                                 <div class="cb-title-h3">
