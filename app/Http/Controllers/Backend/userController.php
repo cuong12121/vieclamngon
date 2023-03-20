@@ -24,7 +24,7 @@ class userController extends Controller
 
     public function myProFile()
     {
-        return view('user.list-board');
+        return view('user.myprofile');
     }
 
     public function workSave()
