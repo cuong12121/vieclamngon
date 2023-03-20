@@ -1,4 +1,4 @@
-@extends('frontend.layout.appfe')
+@extends('frontend.layout.app')
 @section('content')
     <main>
 
