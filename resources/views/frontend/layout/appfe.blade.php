@@ -440,7 +440,7 @@
 
                         if(result==='chưa đăng nhập'){
 
-                            window.location.href = {{ route('login-users')  }}
+                            window.location.href = '{{ route('login-users')  }}';
                         }
                         $('.btn-gradient').text('đã ứng tuyển');
                         alert('thanh cong')
