@@ -15,13 +15,13 @@ class employerInfoController extends Controller
         $id = Auth::guard('employer_register')->user()->id;
         $job = job::where('employer_id', $id)->orderBy('id','desc')->get();
 
-        return view('frontend.jobs_employ_list',compact('job'));
+        return view('employer.jobs_employ_list',compact('job'));
     }
     public function getInfoEmployer()
     {
 
         $infoEmployer = Auth::guard('employer_register')->user();
-        return view('frontend.info_employers_detail', compact('infoEmployer'));
+        return view('employer.info_employers_detail', compact('infoEmployer'));
 
     }
 }
