@@ -249,7 +249,7 @@ class employerController extends Controller
 
             $data_employ = employ_info::find($id->id);
 
-           return view('frontend.info_employer', compact('data_employ', 'infoEmployer'));
+           return view('employer.info_employer', compact('data_employ', 'infoEmployer'));
         }  
         
     }

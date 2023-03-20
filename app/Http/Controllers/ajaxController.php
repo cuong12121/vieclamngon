@@ -25,9 +25,17 @@ class ajaxController extends Controller
     }
 
     public function saveApply_job(Request $request){
-        $job = $request->job;
-        Auth::user()->id;
 
+
+        $job = $request->job;
+
+        $au_id = Auth::user()->id;
+
+        if(empty($au_id)){
+
+            return response('chưa đăng nhập');
+        }
+        
         $apply = new apply_job();
         $apply->job_id = $job;
         $apply->user_id = Auth::user()->id;
