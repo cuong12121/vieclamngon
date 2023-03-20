@@ -1146,7 +1146,7 @@
                                 <div class="col-md-6">
                                     <div class="form-group form-birthday">
                                         <label for="">* Ngày sinh</label>
-                                        <input type="text" data-field="date" name="date" value="{{ @json_decode($checkTitle->info)->date??'' }}">
+                                        <input type="date" data-field="date" name="date" value="{{ @json_decode($checkTitle->info)->date??'' }}">
                                         <div id="date_time_picker" class="dtpicker-overlay dtpicker-mobile">
                                             <div class="dtpicker-bg">
                                                 <div class="dtpicker-cont">
