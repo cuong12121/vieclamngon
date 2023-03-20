@@ -112,7 +112,7 @@
               
             </div>
             <div class="right-wrap">
-                                <div class="main-login dropdown logged"><a href="{{ route('index_employer') }}" title="cuong"> <span class="mdi mdi-account-circle"></span>Hi, <span class="name">cuong</span></a>
+                                <div class="main-login dropdown logged"><a href="{{ route('index_employer') }}" title="cuong"> Hi, <span class="name">cuong</span></a>
                     <div class="dropdown-menu">
                         <ul>
                             
@@ -121,20 +121,8 @@
                     </div>
                 </div>
                                 <div class="main-noti" style="display: none"><a href="javascript:void(0);"> <span class="mdi mdi-cart"></span></a></div>
-                <div class="main-language dropdown">
-                    <div class="dropdown-toggle">
-                        <p>VI<em class="mdi mdi-chevron-down"></em></p>
-                    </div>
-                    <div class="dropdown-menu">
-                        <div class="item active">
-                            <a class="dropdown-item" href="javascript:void(0);" title="Change language">VI</a>
-                        </div>
-                        <div class="item">
-                            <a class="dropdown-item" href="https://careerbuilder.vn/en/employers/postjobs" title="Change language">EN</a>
-                        </div>
-                    </div>
-                </div>
-                <div class="main-candidates"><a href="{{ route('registerClientUser') }}"><em class="fa fa-external-link"></em>
+               
+                <div class="main-candidates"><a href="{{ route('registerClientUser') }}">
                         <h4>Dành cho Ứng Viên</h4></a></div>
             </div>
         </div>
