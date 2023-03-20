@@ -144,7 +144,7 @@
                                            
                                         </td>
                                         <td >
-                                            <a href="{{ route('job_details', [$jobs->link, $jobs->id]) }}">{{ $jobs->title}}</a>
+                                            <a href="{{ route('job_details', [$jobs->link, $jobs->id]) }}" target="_blank">{{ $jobs->title}}</a>
                                         </td>
                                         <td >
                                             {{ $jobs->created_at}}
