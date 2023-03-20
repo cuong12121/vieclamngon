@@ -99,7 +99,7 @@
                         <div class="col-md-6">
                             <div class="main-form">
                                 <ul class="list-tabs">
-                                    <li class="login-user"><a href="{{ route('login-user') }}" title="Đăng Nhập ">Đăng Nhập </a></li>
+                                    <li class="login-user"><a href="javascript:void(0)" title="Đăng Nhập ">Đăng Nhập </a></li>
                                     <li class="active register-user"> <a href="javascript:void(0)" title="Đăng ký">Đăng ký</a></li>
                                 </ul>
                                 <!-- <div class="choose-follow">
