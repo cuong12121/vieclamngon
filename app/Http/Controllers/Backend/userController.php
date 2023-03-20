@@ -13,33 +13,33 @@ class userController extends Controller
 {
     public function register()
     {
-       return view('frontend.registerClientUser');
+       return view('user.registerClientUser');
     }
 
     public function dashBoard()
     {
         
-        return view('frontend.user-dashboard');
+        return view('user.user-dashboard');
     }
 
     public function myProFile()
     {
-        return view('frontend.list-board');
+        return view('user.list-board');
     }
 
     public function workSave()
     {
-         return view('frontend.work-save');
+         return view('user.work-save');
     }
 
     public function workApply()
     {
-         return view('frontend.work-apply');
+         return view('user.work-apply');
     }
 
     public function notification()
     {
-        return view('frontend.notification');
+        return view('user.notification');
     }
 
     public function registerUser()
@@ -51,7 +51,7 @@ class userController extends Controller
 
         }
         else{
-            return view('frontend.registerClientUser');
+            return view('user.registerClientUser');
         }
         
     }
@@ -90,7 +90,7 @@ class userController extends Controller
 
         }
         else{
-            return view('frontend.login_user');
+            return view('user.login_user');
         }
     }
 
