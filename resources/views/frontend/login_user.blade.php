@@ -32,7 +32,7 @@
                     </div>
                 @endif
                 <div class="cb-title cb-title-center">
-                    <h2>Tham gia ngay hôm nay nhé</h2>
+                    <h2>Tham gia ngay hôm nay</h2>
                 </div>
 
                  @foreach ($errors->all() as $error)
