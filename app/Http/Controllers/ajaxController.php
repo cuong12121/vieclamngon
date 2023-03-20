@@ -29,9 +29,7 @@ class ajaxController extends Controller
 
         $job = $request->job;
 
-       
-
-        if(empty(Auth::check())){
+        if(!Auth::check()){
 
             return response('chưa đăng nhập');
         }
