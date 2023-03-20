@@ -112,7 +112,9 @@
               
             </div>
             <div class="right-wrap">
-                                <div class="main-login dropdown logged"><a href="{{ route('index_employer') }}" title="cuong"> Hi, <span class="name">cuong</span></a>
+
+                @if(Auth::guard('employer_register')->check())
+                <div class="main-login dropdown logged"><a href="{{ route('index_employer') }}" > Hi, <span class="name">{{ @Auth::guard('employer_register')->user()->name }}</span></a>
                     <div class="dropdown-menu">
                         <ul>
                             
@@ -120,7 +122,11 @@
                         </ul>
                     </div>
                 </div>
-                                <div class="main-noti" style="display: none"><a href="javascript:void(0);"> <span class="mdi mdi-cart"></span></a></div>
+
+                @endif
+
+
+                <div class="main-noti" style="display: none"><a href="javascript:void(0);"> <span class="mdi mdi-cart"></span></a></div>
                
                 <div class="main-candidates"><a href="{{ route('registerClientUser') }}">
                         <h4>Dành cho Ứng Viên</h4></a></div>
