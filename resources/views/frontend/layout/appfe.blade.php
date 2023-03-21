@@ -9,7 +9,7 @@
         <meta name="theme-color" content="#1e5c8b"/>
 
        
-        <title>{{ $meta??'Tuyển dụng &amp; Tìm kiếm việc làm nhanh' }} </title>
+        <title>{{ $meta??'Tuyển dụng và Tìm kiếm việc làm nhanh' }} </title>
         <meta name="keywords" content="Việc làm, kiếm việc, tìm việc làm, tuyển dụng, ứng viên,  mạng tuyển dụng, việc làm online, HR, nghành nghề hot, công ty hàng đầu Việt Nam, việc làm bán thời gian" />
         <meta name="description" content="CareerBuilder Mạng Việc Làm &amp; Tuyển Dụng hàng đầu thế giới với hơn 300.000 cơ hội &quot;Việc Tốt - Lương Cao&quot;, được tin dùng bởi hơn 14.000 doanh nghiệp hàng đầu tại Việt Nam. Khám phá ngay!" />
         <link href="javascript:void(0)" hreflang="vi-vn" rel="alternate"/>
