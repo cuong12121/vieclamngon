@@ -32,6 +32,9 @@
             margin-bottom: 20px;
             margin-top: 20px;
         }
+        .success-line{
+            background: #39BA73 !important;
+        }
 
     </style>
     <link rel="stylesheet" type="text/css" href="{{ asset('css/employ/index.css') }}">
@@ -95,6 +98,12 @@
                                                 <div class="information">
 
                                                     @if($checksucess===true)
+                                                    <style type="text/css">
+                                                        
+                                                        .widget-2 .widget-body .progress-bar-status.incomplete .progress-bar .progress-row .line:last-child .success:before  , .widget-2 .widget-body .progress-bar-status.incomplete .progress-bar .progress-row .line:last-child .success:before
+                                                        }
+                                                    </style>
+
                                                     <div class="assistant">Đã cập nhật</div>
 
                                                     @else
@@ -150,14 +159,17 @@
                                                     <div class="progress">
                                                         <progress class="progress-main" max="7" value="0"></progress>
                                                     </div>
+
+
                                                     <div class="progress-row">
-                                                        <div class="line active"></div>
-                                                        <div class="line "></div>
-                                                        <div class="line "></div>
-                                                        <div class="line "></div>
-                                                        <div class="line "></div>
-                                                        <div class="line "></div>
-                                                        <div class="line "><span class="success"></span></div>
+                                                        <div class="line active {{  $checksucess===true?'success-line':'' }}"></div>
+                                                        <div class="line {{  $checksucess===true?'success-line':'' }}"></div>
+                                                        <div class="line {{  $checksucess===true?'success-line':'' }}"></div>
+                                                        <div class="line {{  $checksucess===true?'success-line':'' }}"></div>
+                                                        <div class="line {{  $checksucess===true?'success-line':'' }}"></div>
+                                                        <div class="line {{  $checksucess===true?'success-line':'' }}"></div>
+                                                        <div class="line {{  $checksucess===true?'success-line':'' }}">
+                                                        <span class="success"></span></div>
                                                     </div>
                                                 </div>
                                             </div>

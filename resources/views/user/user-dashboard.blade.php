@@ -284,11 +284,17 @@
                             </form>
 
                             @else
-                            <span>Đã tồn tại file cv </span>
+
+                            <div class="item-cvcht">
+                                <div class="col-sm-3">
+                                    <img src="img/dash-board/i2.png" alt="">
+                                </div>
+                            </div>
+                            <span><a href="{{ asset(Auth::user()->cv) }}">Tải cv xuống</a> </span>
 
                             @endif
                             
-                            <p>Ngoài hồ sơ, bạn có thể tạo hồ sơ đính kèm để ứng tuyển và  tìm kiếm bởi nhà tuyển dụng</p>
+                            
                         </div>
                        
                     </div>
