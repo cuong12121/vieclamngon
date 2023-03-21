@@ -28,6 +28,11 @@
             display: none;
         }
 
+        .profile-image{
+            margin-bottom: 20px;
+            margin-top: 20px;
+        }
+
     </style>
     <link rel="stylesheet" type="text/css" href="{{ asset('css/employ/index.css') }}">
     <link href="https://static.careerbuilder.vn/js/datetimepicker/DateTimePicker.css" rel="stylesheet"/>
@@ -68,7 +73,7 @@
 
                                             <form method="post", action="{{ route('upload-avatar') }}"> 
 
-                                                <div class="mb-2">
+                                                <div class="profile-image">
                                                     <input type="file" accept="image/*" name="upFile" required> 
 
                                                 </div>
