@@ -13,7 +13,7 @@
                 <div class="image"><img src="./img/about-us/1.png" alt=""></div>
                 <div class="cb-nav-about">
                     <div class="title-nav">
-                        <p>Về CareerBuilder.vn</p>
+                        <p>Về Vieclamngon.vn</p>
                         <em class="mdi mdi-chevron-down"></em>
                     </div>
                     <ul class="list-nav">
@@ -69,10 +69,10 @@
                                 <div class="figcaption">
                                     <div class="content">
                                         <p>
-                                            CareerBuilder hiện đang hoạt động tại Mỹ, Châu Âu, Canada, Châu Á, Nam Mỹ và có mặt tại hơn&nbsp;<span class="col_link">70 thị trường quốc tế</span>
+                                            Vieclamngon hiện đang hoạt động tại Mỹ, Châu Âu, Canada, Châu Á, Nam Mỹ và có mặt tại hơn&nbsp;<span class="col_link">70 thị trường quốc tế</span>
                                         </p>
                                         <p>
-                                            <span class="col_link"><span class="col_link">Hơn 49 triệu người</span>&nbsp;sử dụng dịch vụ CareerBuilder để được tư vấn nghề nghiệp và tìm kiếm cơ hội việc làm mỗi tháng</span>
+                                            <span class="col_link"><span class="col_link">Hơn 49 triệu người</span>&nbsp;sử dụng dịch vụ Vieclamngon để được tư vấn nghề nghiệp và tìm kiếm cơ hội việc làm mỗi tháng</span>
                                         </p>
                                     </div>
                                 </div>
@@ -100,7 +100,7 @@
                                 <div class="figcaption">
                                     <div class="content">
                                         <p>
-                                            <span class="col_link">Hơn 200 triệu ứng viên</span>&nbsp;trên toàn thế giới tham gia CareerBuilder
+                                            <span class="col_link">Hơn 200 triệu ứng viên</span>&nbsp;trên toàn thế giới tham gia Vieclamngon
                                         </p>
                                     </div>
                                 </div>
@@ -259,7 +259,7 @@
                                                 Ông cũng đảm trách quá trình đánh giá và phát triển liên tục các hoạt động đối nội và đối ngoại của công ty để đưa đến các báo cáo đầy đủ, kịp thời và chính xác. Với tinh thần doanh nhân, ông Bùi Ngọc Quốc Hưng đam mê xây dựng và phát triển doanh nghiệp ngay từ những giai đoạn khởi đầu.
                                             </p>
                                             <p>
-                                                Trước khi tham gia CareerBuilder Việt Nam, ông Bùi Ngọc Quốc Hưng đóng vai trò là Giám đốc Khu vực quản lý 8 văn phòng giao dịch thuộc hệ thống ngân hàng Maritime. Trong giai đoạn này, ông đặc biệt thành công khi tái cấu trúc nguồn lực và quy trình hoạt động, từ đó gia tăng 50% doanh số bán hàng. Trước đó, ông đảm nhận vị trí Giám đốc Chi nhánh Techcombank Sài Gòn. Tuyển dụng đội ngũ quản lý cấp cao, phát triển văn hóa doanh nghiệp, đào tạo nhân viên và đẩy mạnh hoạt động truyền thông nội bộ là các đóng góp nổi bật của ông trong giai đoạn này.
+                                                Trước khi tham gia Vieclamngon Việt Nam, ông Bùi Ngọc Quốc Hưng đóng vai trò là Giám đốc Khu vực quản lý 8 văn phòng giao dịch thuộc hệ thống ngân hàng Maritime. Trong giai đoạn này, ông đặc biệt thành công khi tái cấu trúc nguồn lực và quy trình hoạt động, từ đó gia tăng 50% doanh số bán hàng. Trước đó, ông đảm nhận vị trí Giám đốc Chi nhánh Techcombank Sài Gòn. Tuyển dụng đội ngũ quản lý cấp cao, phát triển văn hóa doanh nghiệp, đào tạo nhân viên và đẩy mạnh hoạt động truyền thông nội bộ là các đóng góp nổi bật của ông trong giai đoạn này.
                                             </p>
                                             <p>
                                                 Ông cũng đã từng nắm giữ chức vụ Giám đốc Phát triển Kinh doanh tại một công ty hàng đầu về tuyển dụng và là nhân tố quan trọng thúc đẩy doanh thu công ty tăng gấp 3 lần trong 3 năm liên tiếp.
@@ -286,7 +286,7 @@
                                     <div class="box-content">
                                         <div class="content">
                                             <p>
-                                                Ông có trên 20 năm kinh nghiệm trong lĩnh vực kế toán. Trước khi gia nhập công ty VON (tiền thân của CareerBuilder Việt Nam), ông giữ các vị trí kế toán cấp cao ở nhiều công ty tại Việt Nam như Giám đốc Tài chính công ty bánh kẹo Phạm Nguyên và Kế toán quản trị tại Unilever Việt Nam.
+                                                Ông có trên 20 năm kinh nghiệm trong lĩnh vực kế toán. Trước khi gia nhập công ty VON (tiền thân của Vieclamngon Việt Nam), ông giữ các vị trí kế toán cấp cao ở nhiều công ty tại Việt Nam như Giám đốc Tài chính công ty bánh kẹo Phạm Nguyên và Kế toán quản trị tại Unilever Việt Nam.
                                             </p>
                                             <p>
                                                 Ông Trương Đình Nam có bằng Cử nhân Kế toán của ĐH Kinh tế Thành phố Hồ Chí Minh.
@@ -307,7 +307,7 @@
                                     <div class="box-content">
                                         <div class="content">
                                             <p>
-                                                Trước khi gia nhập đội ngũ quản lý cấp cao của CareerBuilder Việt Nam, bà Nguyễn Trường Anh có 11 năm kinh nghiệm phát triển và lãnh đạo đội ngũ một công ty nhân sự tại Hà Nội. Bà cũng có kinh nghiệm trong lĩnh vực Thương mại Điện tử khi đã từng đảm đương chức vụ Giám đốc Kinh doanh của Nhommua.com
+                                                Trước khi gia nhập đội ngũ quản lý cấp cao của Vieclamngon Việt Nam, bà Nguyễn Trường Anh có 11 năm kinh nghiệm phát triển và lãnh đạo đội ngũ một công ty nhân sự tại Hà Nội. Bà cũng có kinh nghiệm trong lĩnh vực Thương mại Điện tử khi đã từng đảm đương chức vụ Giám đốc Kinh doanh của Nhommua.com
                                             </p>
                                             <p>
                                                 Bà tốt nghiệp Cử nhân Luật trường Đại học Luật Hà Nội.
