@@ -183,8 +183,8 @@
                                             @if(!empty(Auth::user()->cv))
                                             <div class="check-box">
                                                 <div class="form-group form-check-box job-alerts">
-                                                    <label for="cv_jobalert_16167824">Tải cv xuống
-                                                    <button><a href="{{ asset(Auth::user()->cv) }}">download</a></button>
+                                                    <label for="cv_jobalert_16167824">cv
+                                                    <button><a href="{{ asset(Auth::user()->cv) }}">Xem</a></button>
                                                 </div>
                                             </div>
 

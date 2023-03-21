@@ -273,7 +273,7 @@
                                 @csrf
                                 <div>
                                     
-                                    <input type="file" id="file" name="file" accept="image/png, pdf/jpeg">
+                                    <input type="file" id="file" name="file" accept="pdf">
 
                                 </div>
                                 
@@ -290,7 +290,7 @@
                                     <img src="img/dash-board/i2.png" alt="">
                                 </div>
                             </div>
-                            <span><a href="{{ asset(Auth::user()->cv) }}">Tải cv xuống</a> </span>
+                            <span><a href="{{ asset(Auth::user()->cv) }}">Xem cv</a> </span>
 
                             @endif
                             
