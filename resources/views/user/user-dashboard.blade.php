@@ -164,7 +164,7 @@
                                 <div class="col-lg-12">
 
                                     
-                                    @if($checksucess===true)
+                                    <!-- @if($checksucess===true)
 
                                     <div class="progress-bar-status incomplete">
                                         <div class="profile-strength">
@@ -196,7 +196,7 @@
                                             </div>
                                         </div>
                                     </div>
-                                    @endif
+                                    @endif -->
                                 </div>
                                 
                                 <div class="col-lg-12 function-bottom">
