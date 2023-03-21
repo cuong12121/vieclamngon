@@ -1745,7 +1745,7 @@
                                     <label for="">Tốt nghiệp</label>
                                 </div>
 
-                                @if(!empty(json_decode($checkTitle)->education))
+                                
                                 <div class="col-lg-8">
                                     <div class="select-graduating">
                                         <div class="select-group">
@@ -1781,7 +1781,7 @@
                                     </div>
                                     <div class="form-error"><span class="err_redu_month" style="display:block"></span></div>
                                 </div>
-                                @endif
+                                
                             </div>
                             <div class="form-group row">
                                 <div class="col-lg-4">
