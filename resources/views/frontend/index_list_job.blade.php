@@ -315,6 +315,7 @@
                 #bgvid, #bgvid1 {width: 100%;object-fit: cover;transform: translateY(-50%);top:50%;}
                 #bgvid1 { position: absolute; min-height:100%; height:auto; }
             </style>
+
             <div id="11974" class="section-page page-content-pre bg-odd" >
                 <header class="container-fluid">
                     <h2 class="section-title" >Giới thiệu</h2>
@@ -331,6 +332,7 @@
                     </div>
                 </div>
             </div>
+
             <div id="11975" class="section-page section-grid-career " >
                 <div class="container">
                     <header class="container-fluid">
@@ -424,7 +426,7 @@
                 </div>
             </div>
 
-            <div class="clearfix"></div>    
+           
             <div class="container">
 
                 <header class="container-fluid">
