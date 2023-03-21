@@ -297,7 +297,7 @@
 
                             <div class="widget-body">
                                 <div class="no-content">
-                                    <p>Mức lương mong muốn</p>
+                                    <p>Mức lương mong muốn {{ !empty(json_decode($checkTitle->desired_salary))?':'json_decode($checkTitle->desired_salary)->desired_salary }}</p>
 
 
                                     <a href="javascript:void(0)" onclick="openTipSlide('desired-salary');"><span>Chỉnh sửa</span></a>
