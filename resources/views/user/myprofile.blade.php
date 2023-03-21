@@ -100,7 +100,12 @@
                                                     @if($checksucess===true)
                                                     <style type="text/css">
                                                         
-                                                        .widget-2 .widget-body .progress-bar-status.incomplete .progress-bar .progress-row .line:last-child .success:before  , .widget-2 .widget-body .progress-bar-status.incomplete .progress-bar .progress-row .line:last-child .success:before
+                                                        .widget-2 .widget-body .progress-bar-status.incomplete .progress-bar .progress-row .line:last-child .success:before  , .widget-2 .widget-body .progress-bar-status.incomplete .progress-bar .progress-row .line:last-child .success:before, {
+                                                            background: #39BA73 !important;
+                                                        }
+
+                                                        .widget-2 .widget-body .progress-bar-status.incomplete .progress-bar .progress-row .line:last-child .success:before, .widget-2 .widget-body .progress-bar-status.incomplete .progress-bar .progress-row .line:last-child .success:after{
+                                                             background: #39BA73 !important;
                                                         }
                                                     </style>
 
