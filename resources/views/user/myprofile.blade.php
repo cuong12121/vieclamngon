@@ -52,9 +52,19 @@
                             <div class="widget-body">
                                 <div class="row">
                                     <div class="col-lg-4 col-xl-3">
+
+                                        <h3>Ảnh đại diện</h3>
+
                                         <div class="img-info">
 
+                                            @if(!empty(Auth::user()->logo)) 
 
+                                            <div class="figure">
+                                                <div class="image img-result hide">
+                                                    <img id="img_mem_avatar" class="cropped" src="{{ asset(Auth::user()->logo) }}" alt=""></div>
+                                            </div>
+
+                                            @else
 
                                             <form method="post", action="{{ route('upload-avatar') }}"> 
 
@@ -62,11 +72,7 @@
                                                 <input type="submit" value="Upload"> 
 
                                             </form>
-
-                                            <div class="figure">
-                                                <div class="image img-result hide">
-                                                    <img id="img_mem_avatar" class="cropped" src="./img/dash-board/1.png" alt=""></div>
-                                            </div>
+                                            @endif
 
 
 
