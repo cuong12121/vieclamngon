@@ -184,7 +184,7 @@
                                             <div class="check-box">
                                                 <div class="form-group form-check-box job-alerts">
                                                     <label for="cv_jobalert_16167824">CV đã tải lên
-                                                    <button><a href="{{ asset(Auth::user()->cv) }}">Xem</a></button>
+                                                    <button><a href="{{ asset(Auth::user()->cv) }}">Xem ngay</a></button>
                                                 </div>
                                             </div>
 
