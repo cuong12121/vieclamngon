@@ -68,7 +68,7 @@ class UserLoginController extends Controller
         $application->users_id =  $user->id;
         $application->save();
 
-        return redirect()->back()->with('success', 'Đăng ký thành công');
+        return redirect()->route('login-users')->with('success', 'Đăng ký thành công');
 
     }
 
