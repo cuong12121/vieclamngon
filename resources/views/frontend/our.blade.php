@@ -124,6 +124,9 @@
                 </div>
             </section>
 
+
+
+
             <section class="cb-competitive-advantages cb-section cb-sections section1" style="background-image: url(https://images.careerbuilder.vn/content/Product/bg-1.jpg)">
                 <div class="container">
                     <div class="cb-title cb-title-center">
@@ -131,7 +134,40 @@
                             Tại Việt Nam, Vieclamngon.vn đã và đang là lựa chọn của các doanh nghiệp hàng đầu với các ưu thế
                         </h2>
                     </div>
+
+
                     <div class="row">
+
+                        <?php 
+
+                            $about_vieclam = DB::table('posts1')->where('category', 6)->get();
+
+                            $opportunities = DB::table('posts1')->where('category', 8)->get();
+
+                            $leadership = DB::table('posts1')->where('category', 7)->get();
+                        ?>
+
+                        @if($about_vieclam->count()>3)
+
+                        @foreach($about_vieclam as $val)
+
+                        <div class="col-sm-6 col-xl-3">
+                            <div class="figure bg-trends">
+                                <div class="image">
+                                    <img alt="" src="{{ asset($val->image) }}" />
+                                </div>
+                                <div class="figcaption">
+                                    <div class="content">
+                                        <p>
+                                            {{  @$val->title }}
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        @endforeach
+
+                        @else
                         <div class="col-sm-6 col-xl-3">
                             <div class="figure bg-trends">
                                 <div class="image">
@@ -188,6 +224,8 @@
                                 </div>
                             </div>
                         </div>
+
+                        @endif
                     </div>
                 </div>
             </section>
@@ -196,6 +234,36 @@
             <section class="cb-about-our cb-section cb-sections section3">
                 <div class="container">
                     <div class="row">
+
+                        @if($opportunities->count()>1)
+
+                        @foreach($opportunities as $vals)
+
+                         <div class="col-sm-6">
+                            <div class="figure">
+                                <div class="image">
+                                    <img alt="" src="{{ asset($vals->image) }}">
+                                </div>
+                                <div class="figcaption">
+                                    <div class="title">
+                                        <h3>
+                                            {{ @$vals->title }}
+                                        </h3>
+                                    </div>
+                                    <div class="content">
+                                        <p>
+                                           {{ @$vals->shortcontent }}
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        @endforeach
+
+
+                        @else
+
+
                         <div class="col-sm-6">
                             <div class="figure">
                                 <div class="image">
@@ -234,6 +302,10 @@
                                 </div>
                             </div>
                         </div>
+
+                        @endif
+
+
                     </div>
                 </div>
             </section>
@@ -244,6 +316,37 @@
                     <div class="cb-title cb-title-center">
                         <h2>Dẫn Đầu Xu Hướng Thay Đổi Để Thành Công</h2>
                     </div>
+
+                    @if($leadership->count()>1)
+
+                    @foreach($leadership as $value)
+
+                    <div class="row justify-content-center">
+                        <div class="col-sm-6 col-lg-4">
+                            <div class="figure">
+                                <div class="image"><img class="lazy-bg" alt="Tổng Giám Đốc" src="https://images.careerbuilder.vn/content/leadership/11_1593423056.png" style=""></div>
+                                <div class="figcaption">
+                                    <div class="title">
+                                        <h3>{{ @$value->title }}</h3>
+                                        <p class="sub-title">{{ @$value->shortcontent }}</p>
+                                    </div>
+                                    <div class="box-content">
+                                        <div class="content">
+                                            <p>
+                                                {{  @$value->content }}
+                                            </p>
+                                           
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                       
+                    </div>
+
+                    @endforeach
+
+                    @else
                     <div class="row justify-content-center">
                         <div class="col-sm-6 col-lg-4">
                             <div class="figure">
@@ -275,49 +378,10 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="col-sm-6 col-lg-4">
-                            <div class="figure">
-                                <div class="image"><img class="lazy-bg" alt="Giám đốc Tài chính" src="https://images.careerbuilder.vn/content/leadership/cfo_mrnam_1593423068.jpg" style=""></div>
-                                <div class="figcaption">
-                                    <div class="title">
-                                        <h3>Ông Trương Đình Nam</h3>
-                                        <p class="sub-title">Giám đốc Tài chính</p>
-                                    </div>
-                                    <div class="box-content">
-                                        <div class="content">
-                                            <p>
-                                                Ông có trên 20 năm kinh nghiệm trong lĩnh vực kế toán. Trước khi gia nhập công ty VON (tiền thân của Vieclamngon Việt Nam), ông giữ các vị trí kế toán cấp cao ở nhiều công ty tại Việt Nam như Giám đốc Tài chính công ty bánh kẹo Phạm Nguyên và Kế toán quản trị tại Unilever Việt Nam.
-                                            </p>
-                                            <p>
-                                                Ông Trương Đình Nam có bằng Cử nhân Kế toán của ĐH Kinh tế Thành phố Hồ Chí Minh.
-                                            </p>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-sm-6 col-lg-4">
-                            <div class="figure">
-                                <div class="image"><img class="lazy-bg" alt="Giám đốc Chi nhánh Hà Nội" src="https://images.careerbuilder.vn/content/leadership/ms-truonganh_1592278654_1593423137.jpg" style=""></div>
-                                <div class="figcaption">
-                                    <div class="title">
-                                        <h3>Bà Nguyễn Trường Anh</h3>
-                                        <p class="sub-title">Giám đốc Chi nhánh Hà Nội</p>
-                                    </div>
-                                    <div class="box-content">
-                                        <div class="content">
-                                            <p>
-                                                Trước khi gia nhập đội ngũ quản lý cấp cao của Vieclamngon Việt Nam, bà Nguyễn Trường Anh có 11 năm kinh nghiệm phát triển và lãnh đạo đội ngũ một công ty nhân sự tại Hà Nội. Bà cũng có kinh nghiệm trong lĩnh vực Thương mại Điện tử khi đã từng đảm đương chức vụ Giám đốc Kinh doanh của Nhommua.com
-                                            </p>
-                                            <p>
-                                                Bà tốt nghiệp Cử nhân Luật trường Đại học Luật Hà Nội.
-                                            </p>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
+                       
                     </div>
+
+                    @endif
                 </div>
             </section>
 
