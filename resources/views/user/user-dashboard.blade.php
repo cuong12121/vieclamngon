@@ -91,19 +91,23 @@
                                 <div class="col-lg-4 col-xl-3">
                                     <div class="img-info">
                                         <div class="figure">
+
+                                            @if(!empty(Auth::user()->logo)) 
+                                            
                                             <div class="image img-result hide">
-                                                <input style="display: none;" onchange="return ajaxFileUpload();" type="file" class="file" id="fileAvatar" name="fileAvatar">
-                                                <img id="img_mem_avatar" src="./img/dash-board/1.png" alt="Dao Cuong">
+                                               
+                                                <img id="img_mem_avatar" src="{{ asset(Auth::user()->logo) }}">
                                             </div>
-                                            <div class="edit-image dropdown">
-                                                <em class="mdi mdi-image-edit"></em>
-                                                <div class="dropdown-menu">
-                                                    <ul>
-                                                        <li class="upload-pro"><a href="javascript:void(0);" onclick="choose_file();"> <em class="material-icons">add_photo_alternate</em><span>Tải hình ảnh</span></a></li>
-                                                        <li class="view-pro"><a href="javascript:void(0);" onclick="removeAvarta();"> <em class="material-icons">highlight_off</em><span>Xóa hình ảnh</span></a></li>
-                                                    </ul>
-                                                </div>
+
+                                            @else
+
+                                            <div class="image img-result hide">
+                                               
+                                                <img id="img_mem_avatar" src="./img/dash-board/1.png">
                                             </div>
+
+                                            @endif
+                                            
                                         </div>
                                         <div class="mobile-show">
                                             <div class="cb-name">
