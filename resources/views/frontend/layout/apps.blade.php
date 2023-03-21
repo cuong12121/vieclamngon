@@ -6,8 +6,8 @@
 <meta charset="UTF-8">
 <title>Tuyển dụng việc làm</title>
 <meta name="keywords" content="Kiem viec, tim viec lam, tuyen dung, viec lam, viec lam online, tim viec, mang tuyen dung, việc làm, tìm việc, kiếm việc, tuyển dụng, việc làm online" />
-<meta name="description" content="CareerBuilder.vn - Hơn 1,3 triệu ứng viên để lựa chọn, nhưng vẫn làm cho việc tuyển dụng dễ dàng và tiết kiệm nhờ các tính năng quản lý và nhắc nhở thông minh." />
-<link href="https://careerbuilder.vn/vi/employers/postjobs" rel="canonical" />
+<meta name="description" content="tìm kiếm  Hơn 1,3 triệu ứng viên để lựa chọn, nhưng vẫn làm cho việc tuyển dụng dễ dàng và tiết kiệm nhờ các tính năng quản lý và nhắc nhở thông minh." />
+
 <meta name="robots" content="index,follow">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <link rel="shortcut icon" href="https://careerbuilder.vn/favicon_careerbuilder_v2.ico" />
