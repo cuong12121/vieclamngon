@@ -71,7 +71,7 @@
 
                                             @else
 
-                                            <form method="post", action="{{ route('upload-avatar') }}"> 
+                                            <form method="post" action="{{ route('upload-avatar') }}" enctype="multipart/form-data"> 
                                                 @csrf
 
                                                 <div class="profile-image">
