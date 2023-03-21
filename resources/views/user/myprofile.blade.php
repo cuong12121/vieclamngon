@@ -72,6 +72,7 @@
                                             @else
 
                                             <form method="post", action="{{ route('upload-avatar') }}"> 
+                                                @csrf
 
                                                 <div class="profile-image">
                                                     <input type="file" accept="image/*" name="upFile" required> 
