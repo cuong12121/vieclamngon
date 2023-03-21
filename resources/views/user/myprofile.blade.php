@@ -51,7 +51,7 @@
                             </div>
                             <div class="widget-body">
                                 <div class="row">
-                                    <div class="col-lg-5 col-xl-3">
+                                    <div class="col-lg-5 col-xl-5">
 
                                         <h3>Ảnh đại diện</h3>
 
@@ -110,7 +110,7 @@
                                             </ul>
                                         </div>
                                     </div>
-                                    <div class="col-lg-7 col-xl-9">
+                                    <div class="col-lg-7 col-xl-7">
                                         <div class="cb-name">
                                             <h2 id="section_name">{{ Auth::user()->name }}</h2>
                                         </div>
