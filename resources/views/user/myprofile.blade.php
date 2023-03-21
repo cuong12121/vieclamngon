@@ -69,6 +69,8 @@
                                             <form method="post", action="{{ route('upload-avatar') }}"> 
 
                                                 <input type="file" accept="image/*" name="upFile" required> 
+
+                                                <br>
                                                 <input type="submit" value="Upload"> 
 
                                             </form>
