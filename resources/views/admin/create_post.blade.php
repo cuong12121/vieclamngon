@@ -99,6 +99,9 @@
                                 <option value="3">Kỹ năng công sở</option>
                                 <option value="4">Chuyên ngành</option>
                                 <option value="5">Chuyện công sở</option>
+                                <option value="6">Về việc làm ngon</option>
+                                <option value="7">Ban lãnh đạo</option>
+                                <option value="8">Cơ hội nghề nghiệp</option>
                                
                               
                             </select>

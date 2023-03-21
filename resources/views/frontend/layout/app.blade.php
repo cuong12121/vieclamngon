@@ -231,7 +231,7 @@
                     </div>
                     <div class="created">
                         <div class="attach">
-                            <a title="Hồ sơ đính kèm" href="https://careerbuilder.vn/vi/jobseekers/myresume/myattach">
+                            <a title="Hồ sơ đính kèm" href="javascript:void(0)">
                                 <div class="figure">
                                     <div class="image"><img src="./img/dash-board/2.png" alt=""></div>
                                     <div class="figcaption">
@@ -241,7 +241,7 @@
                             </a>
                         </div>
                         <div class="cv-hay">
-                            <a title="Hồ sơ chuyên nghiệp - CVHay" href="https://careerbuilder.vn/cv-hay/tao-cv">
+                            <a title="Hồ sơ chuyên nghiệp - CVHay" href="javascript:void(0)">
                                 <div class="figure">
                                     <div class="image"><img src="./img/dash-board/3.png" alt=""></div>
                                     <div class="figcaption">
