@@ -11,8 +11,8 @@
         <title>Tuyển dụng và tìm kiếm việc làm nhanh việc làm ngon</title>
         <!-- tag share 4 -->
         <meta property="og:type" content="website"/>
-        <meta property="og:site_name" content="Công Ty Cổ Phần Eurowindow"/>
-        <meta property="og:title" content="Tuyển dụng và tìm kiếm việc làm nhanh | Công Ty Cổ Phần Eurowindow"/>
+        <meta property="og:site_name" content=""/>
+        <meta property="og:title" content=""/>
         <meta property="og:url" content="vi"/>
         <meta property="og:image:type" content="image/jpeg"/>
 

@@ -269,7 +269,14 @@
                                         <div class="figcaption">
                                             <h3>Mức lương mong muốn </h3>
 
-                                             @if(!empty(json_decode($checkTitle->desired_salary)))
+                                            <?php 
+
+                                                $check_salary = json_decode($checkTitle->desired_salary);
+
+
+                                            ?>
+
+                                             @if(!empty($check_salary))
                                             <div class="status success">
                                                 <p>Đã hoàn thành</p>
                                             </div>
@@ -297,7 +304,9 @@
 
                             <div class="widget-body">
                                 <div class="no-content">
-                                    <p>Mức lương mong muốn {{ !empty(json_decode($checkTitle->desired_salary))?':'json_decode($checkTitle->desired_salary)->desired_salary }}</p>
+                                    <p>
+                                        Mức lương mong muốn {{  !empty($check_salary) && !empty($check_salary->desired_salary)?': '.$check_salary->desired_salary.'đ':''  }}
+                                    </p>
 
 
                                     <a href="javascript:void(0)" onclick="openTipSlide('desired-salary');"><span>Chỉnh sửa</span></a>
@@ -317,7 +326,12 @@
                                         <div class="figcaption">
                                             <h3>Công việc gần đây </h3>
 
-                                             @if(!empty(json_decode($checkTitle->workrc)))
+                                            <?php 
+
+                                                $check_workrc = json_decode($checkTitle->workrc);
+                                            ?>
+
+                                             @if(!empty($check_workrc))
                                             <div class="status success">
                                                 <p>Đã hoàn thành</p>
                                             </div>
@@ -366,7 +380,7 @@
 
                             <div class="widget-body">
                                 <div class="no-content">
-                                    <p>Công việc gần đây</p>
+                                    <p>Công việc gần đây {{ !empty($check_workrc)?': '.$check_workrc->workrc:'' }}</p>
                                     <a href="javascript:void(0)" onclick="openTipSlide('work-recent');"><span>Chỉnh sửa</span></a>
                                 </div>
                                 <input type="hidden" id="title_hidden_value" value="">
@@ -382,8 +396,16 @@
                                         <div class="figcaption">
                                             <h3>Tiêu đề hồ sơ *</h3>
 
+                                            <?php 
+
+                                                $checkTitleShow = json_decode($checkTitle->title);
+
+                                                
+                                                
+                                            ?>
+
                                            
-                                            @if(!empty(json_decode($checkTitle->title)))
+                                            @if(!empty($checkTitleShow))
                                             <div class="status success">
                                                 <p>Đã hoàn thành</p>
                                             </div>
@@ -407,7 +429,7 @@
                             </div>
                             <div class="widget-body">
                                 <div class="no-content">
-                                    <p>Tiêu đề hồ sơ</p>
+                                    <p>Tiêu đề hồ sơ {{ !empty($checkTitleShow)?': '.$checkTitleShow->resume_title:''  }}</p>
                                     <a href="javascript:void(0)" onclick="openTipSlide('tip-t-modal');"><span>Chỉnh sửa</span></a>
                                 </div>
                                 <input type="hidden" id="title_hidden_value" value="">
@@ -476,7 +498,9 @@
                                                     
                                                 ?>
                                                 <td>Tình trạng hôn nhân</td>
-                                                <td>{{ $mar?$slMarritial[$mar]:'' }}</td>
+
+
+                                                <td>{{ $mar==='0'?'Độc thân':'Đã kết hôn' }}</td>
                                             </tr>
                                             <tr>
                                                 <td>Quốc gia</td>
@@ -495,7 +519,15 @@
                                         <div class="figcaption">
                                             <h3>Mục tiêu nghề nghiệp</h3>
 
-                                            @if(!empty(json_decode($checkTitle->objective)))
+                                            <?php 
+
+                                                $objective = json_decode($checkTitle->objective);
+
+
+
+                                            ?>
+
+                                            @if(!empty($objective))
                                             <div class="status success">
                                                 <p>Đã hoàn thành  </p>
                                             </div>
@@ -519,8 +551,16 @@
                             </div>
                             <div class="widget-body">
                                 <div class="no-content">
+
+                                    @if(empty($objective))
                                     <p>Vui lòng thêm Mục tiêu nghề nghiệp</p>
                                     <a href="javascript:;" onclick="openTipSlide('tip-objective-modal');"><span>Thêm mới</span></a> 
+                                    @else
+                                    <p>{{  @$objective->objective }}</p>
+
+                                    <a href="javascript:;" onclick="openTipSlide('tip-objective-modal');"><span>Sửa</span></a> 
+
+                                    @endif
                                 </div>
                             </div>
                             <div class="widget-body">
@@ -625,7 +665,7 @@
                                             
                                             <p>Tips</p>
                                         </div>
-                                        <div class="link-add"><a href="javascript:void(0);" onclick="openTipSlide('tip-experience-modal')" title="Thêm mới"> <span>Thêm mới</span></a></div>
+                                        <div class="link-add"><a href="javascript:void(0);" onclick="openTipSlide('tip-experience-modals')" title="Thêm mới"> <span>Thêm mới</span></a></div>
                                     </div>
                                 </div>
                             </div>
@@ -836,7 +876,7 @@
 
 
 
-            <div class="edit-db-work-experience-1 edit-modal-dashboard" style="display:none">
+            <div class="edit-db-work-experience-1 edit-modal-dashboard" style="display:none" id="tip-experience-modals">
                 <div class="modal-title">
                     <h3>Kinh nghiệm làm việc</h3>
                 </div>
@@ -1022,7 +1062,7 @@
                                
                                 <div class="col-lg-8">
                                     <div class="input-group">
-                                        <input type="text"  name="workrc" id="resume_title" maxlength="400" value="{{ @json_decode($checkTitle->workrc)->workrc }}">
+                                        <textarea type="text"  name="workrc" id="resume_title" maxlength="400" value="{{ @json_decode($checkTitle->workrc)->workrc }}">{{ @json_decode($checkTitle->workrc)->workrc }}</textarea>
                                     </div>
                                     <div class="form-error"><span class="err_resume_title"></span></div>
                                 </div>
@@ -1717,9 +1757,9 @@
                                               
                                                 @for($i =1; $i <13; $i++)
 
-                                                @if(!empty(json_decode($checkTitle->education)) && !empty(json_decode($checkTitle->education)->redu_month))
-                                                <option value="{{ $i }}" {{ json_decode($checkTitle->education)->redu_month==$i?'selected':''}}>{{ $i }}</option>
-                                                @endif
+                                                
+                                                <option value="{{ $i }}" {{ (!empty(json_decode($checkTitle->education)&&json_decode($checkTitle->education)->redu_month==$i))?'selected':''}}>{{ $i }}</option>
+                                                
                                                 @endfor
                                                
                                                
