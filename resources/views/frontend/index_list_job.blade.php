@@ -20,11 +20,11 @@
         
         <meta property="og:image:width" content="600"/>
         <meta property="og:image:height" content="315"/>
-        <meta property="og:description" content="Tìm việc làm, tuyển dụng Eurowindow,viec lam tai Eurowindow, Eurowindow tuyển dụng"/>
+        <meta property="og:description" content=""/>
         <script type="text/javascript" src="{{ asset('download/js/jquery.min.js') }}"></script>
         <script type="text/javascript" src="{{ asset('download/js/hoverIntent.js')}}"></script>
         <meta name="keywords" content="_seo_index_index_keywords_" />
-        <meta name="description" content="Tìm việc làm, tuyển dụng Eurowindow,viec lam tai Eurowindow, Eurowindow tuyển dụng"/>
+        <meta name="description" content=""/>
         <meta name="viewport" content="width=device-width,initial-scale=1.0,maximum-scale=1.0">
         <link href="{{  asset('download/css/bootstrap.css')}}" rel="stylesheet" type="text/css" media="screen"/>
         <!--[if lt IE 9]>
