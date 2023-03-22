@@ -43,11 +43,11 @@
         </div> -->
         <div class="main-tabslet">
             <ul class="tabslet-tab">
-                <li class="active">
+                <!-- <li class="active">
                     <a href="javascript:void(0)">
                     Việc Làm Đang Đăng
                     </a>
-                </li>
+                </li> -->
                <!--  <li class="">
                     <a href="https://careerbuilder.vn/vi/employers/hrcentral/waitposting/user_id/chiensi26045.1652405352">
                     Việc Làm Chờ Đăng
