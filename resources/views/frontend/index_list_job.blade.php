@@ -324,9 +324,10 @@
                     <div class="col-xs-12">
                         <div class="content_fck text-intro">
                             <p style="text-align:justify">
-                                Vieclamngon.vn - Mạng Việc làm & Tuyển dụng lớn nhất Việt Nam. Với công nghệ tiên tiến, mạng lưới đối tác toàn cầu và dịch vụ khách hàng chuyên nghiệp, chúng tôi kết nối nhân tài với công việc mơ ước và giúp doanh nghiệp xây dựng đội ngũ nhân sự tài năng.
+                                <img src="{{ asset('images/1570440136_1568967007-20180619-01-1.jpg') }}" style="float:right; height:264px; margin-left:15px; margin-right:15px; width:450px" />Với những thành tích trong hoạt động sản xuất và kinh doanh, Eurowindow đã được Chủ tịch nước tặng thưởng Huân chương Lao động hạng Ba, Thủ tướng Chính phủ tặng Bằng khen và được công nhận là Thương hiệu Quốc gia. Sản phẩm và thương hiệu Eurowindow nhiều năm liền đạt Giải vàng chất lượng Việt Nam của Bộ Khoa học Công nghệ &amp; Môi trường, Top 10 doanh nghiệp đạt Giải thưởng Sao vàng đất Việt của Hội doanh nghiệp trẻ Việt Nam, Top 10 thương hiệu nổi tiếng Quốc gia, giải thưởng Rồng Vàng, Hàng Việt Nam chất lượng cao và nhiều giải thưởng uy tín khác.
                             </p>
-                           
+                            <p style="text-align:justify">Với chất lượng sản phẩm và phong cách phục vụ không ngừng được nâng cao, gắn lợi ích của doanh nghiệp với lợi ích chung của xã hội và góp phần bảo vệ môi trường, Eurowindow cam kết cung cấp cho khách hàng những sản phẩm có chất lượng tốt nhất.</p>
+                            <p style="text-align:justify">Sản phẩm chất lượng tốt, đội ngũ nhân viên có chuyên môn cao, phong cách phục vụ chuyên nghiệp, đó là các yếu tố quyết định sự thành công của thương hiệu Eurowindow.&nbsp;</p>
                         </div>
                     </div>
                 </div>
