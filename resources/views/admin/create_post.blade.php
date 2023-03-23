@@ -81,7 +81,7 @@
     </div> -->
     <div class="content px-3">
         <div class="card">
-            <form method="post" action="{{ !empty($data)?route('update-post/'.$data->id):route('create-posts') }}" accept-charset="UTF-8" enctype="multipart/form-data">
+            <form method="post" action="{{ !empty($data)?route('update-post', $data->id):route('create-posts') }}" accept-charset="UTF-8" enctype="multipart/form-data">
                
                 @csrf
                 <div class="card-body">

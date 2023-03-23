@@ -29,7 +29,7 @@ Route::group(['middleware' => 'checkad'], function() {
 
 	Route::get('post', 'adminController@listpost')->name('list-post'); 
 
-	Route::get('post/{id}', 'adminController@edit');
+	Route::get('post/{id}', 'adminController@edit')->name('post.edit');
 
 	Route::get('create-post', 'adminController@indexPost')->name('create-post'); 
 

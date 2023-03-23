@@ -61,12 +61,10 @@
                                         <input name="_method" type="hidden" value="DELETE">
                                         <input name="_token" type="hidden" value="6G67GQ6gb8e6hUuDNlQbDTg4qGdYvetfrnA3jYpf"> 
                                         <div class="btn-group"> 
-                                            <a href="http://localhost/pj5/gia-dieu-hoa-dang-re-the-hien-o-2-dieu-hoa-lg-12000-2-chieu-tot-nhat" class="btn btn-default btn-xs" target="_blank"> 
+                                            <a href="" class="btn btn-default btn-xs" target="_blank"> 
                                             <i class="far fa-eye"></i> </a> 
-                                            <a href="http://localhost/pj5/admins/posts/1830/edit" class="btn btn-default btn-xs hover-edit">sửa</a> 
-                                            <button type="submit" class="btn btn-danger btn-xs" onclick="return confirm('Are you sure?')">
-                                                <i class="far fa-trash-alt"></i>
-                                            </button> 
+                                            <a href="{{ route('post.edit',$posts->id ) }}" class="btn btn-default btn-xs hover-edit">sửa</a> 
+                                            
                                         </div>
                                     </form>
                                 </td>
