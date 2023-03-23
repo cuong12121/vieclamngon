@@ -194,7 +194,7 @@ class adminController extends Controller
     public function listpost()
     {   
 
-        $post = DB::table('posts1')->paginate(10);
+        $post = DB::table('posts1')->Orderby('id', 'desc')->paginate(10);
         return view('admin.list-post', compact('post'));
     }
 
