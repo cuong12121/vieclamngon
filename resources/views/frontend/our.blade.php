@@ -184,9 +184,7 @@
 
                          <div class="col-sm-6">
                             <div class="figure">
-                                <div class="image">
-                                    <img alt="" src="{{ asset($vals->image) }}">
-                                </div>
+                                
                                 <div class="figcaption">
                                     <div class="title">
                                         <h3>
