@@ -205,6 +205,18 @@ define('LIST_JOB', [
 	 "27"=>"Ngành khác",
 ]);
 
+
+define('CATEGORY', [
+
+    '3'=>'Kỹ năng công sở', 
+    '4'=>'chuyên ngành',
+    '5'=>'chuyện công sở',
+    '6'=>'về việc làm ngon',
+    '7'=>'Ban lãnh đạo',
+    '8'=>'cơ hội nghề nghiệp'
+
+]);
+
 define('SALARY', [
     'Dưới 3 triệu',
    '3 - 5 triệu',

@@ -12,6 +12,11 @@
             </div>
         </div>
     </section>
+
+    <?php 
+
+        $ar_category = CATEGORY;
+    ?>
     <div class="content px-3">
         <div class="clearfix"></div>
         <div class="card">
@@ -51,7 +56,7 @@
                             <tr>
                                 <td><img src="{{ asset($posts->image) }}" style="width:200px"></td>
                                 <td>{{ $posts->title }}</td>
-                                <td>Tư vấn điều hòa</td>
+                                <td>{{ $ar_category[$posts->category] }}</td>
                                 <td>{{ $posts->created_at }}</td>
                                 <td><a href="javascript:voi(0)" class="active-post" onclick="add_active('1830','0')"><b style="color:green">Hiển thị</b></a></td>
                                 
