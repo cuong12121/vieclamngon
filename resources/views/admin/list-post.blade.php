@@ -49,7 +49,7 @@
                             @foreach($post as $posts)
 
                             <tr>
-                                <td><img src="http://localhost/pj5/uploads/1677814789_top dieu hoa lg 12000 2 chieu gia re dang mua nhat.jpg" style="width:200px"></td>
+                                <td><img src="{{ asset($posts->image) }}" style="width:200px"></td>
                                 <td>{{ $posts->title }}</td>
                                 <td>Tư vấn điều hòa</td>
                                 <td>{{ $posts->created_at }}</td>
