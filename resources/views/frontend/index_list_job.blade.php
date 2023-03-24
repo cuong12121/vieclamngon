@@ -231,8 +231,9 @@
                                 font-weight: 500;
                             }
                             .bgimage{
-                                background-size :auto ;
+                                background-size :auto !important;
                                 
+
                             }
 
                         </style>
