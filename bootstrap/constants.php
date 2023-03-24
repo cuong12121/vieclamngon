@@ -213,7 +213,9 @@ define('CATEGORY', [
     '5'=>'chuyện công sở',
     '6'=>'về việc làm ngon',
     '7'=>'Ban lãnh đạo',
-    '8'=>'cơ hội nghề nghiệp'
+    '8'=>'cơ hội nghề nghiệp',
+    '9'=>'giới thiệu đầu trang chủ',
+    '10'=>'Dưới banner tìm việc trang chủ'
 
 ]);
 
