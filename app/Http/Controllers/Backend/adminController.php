@@ -265,7 +265,7 @@ class adminController extends Controller
 
         $insert = DB::table('posts1')->insert($input);
 
-        return redirect()->back();
+        return redirect()->route('list-post');
 
     }
 
