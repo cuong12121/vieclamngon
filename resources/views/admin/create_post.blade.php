@@ -311,12 +311,10 @@
                                 });
                                 
                                 editor = CKEDITOR.replace( 'content', {
-                                    filebrowserBrowseUrl: 'http://localhost/ckfinder.html',
-                                    filebrowserImageBrowseUrl: 'http://localhost/ckfinder.html?Type=Images',
-                                    filebrowserUploadUrl: 'http://localhost/js/core/connector/php/connector.php?command=QuickUpload&type=Files',
-                                    filebrowserImageUploadUrl: 'http://localhost/js/core/connector/php/connector.php?command=QuickUpload&type=Images',
-                                    filebrowserWindowWidth : '1000',
-                                    filebrowserWindowHeight : '700',
+                                    filebrowserImageBrowseUrl: '/laravel-filemanager?type=Images',
+                                    filebrowserImageUploadUrl: '/laravel-filemanager/upload?type=Images&_token='+document.querySelector('meta[name="csrf-token"]').getAttribute('content'),
+                                    filebrowserBrowseUrl: '/laravel-filemanager?type=Files',
+                                    filebrowserUploadUrl: '/laravel-filemanager/upload?type=Files&_token='+document.querySelector('meta[name="csrf-token"]').getAttribute('content'),
                                     on: {
                                         change: function( evt ) {
                                 
@@ -390,5 +388,7 @@
         </div>
     </div>
 </section>
+
+<script src="/vendor/unisharp/laravel-ckeditor/adapters/jquery.js"></script>
 
 @endsection
