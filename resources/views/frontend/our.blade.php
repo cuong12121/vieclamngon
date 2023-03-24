@@ -174,7 +174,7 @@
             </section>
 
 
-            <section class="cb-about-our cb-section cb-sections section3">
+            <section class="cb-about-our cb-section cb-sections hide section3">
                 <div class="container">
                     <div class="row">
 
