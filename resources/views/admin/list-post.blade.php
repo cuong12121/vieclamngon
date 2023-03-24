@@ -71,11 +71,18 @@
                             </tr>
                             @endforeach
                             @endif
+
+
+
+
+                            
                            
                             
                         </tbody>
                     </table>
+                    {!! $post->links() !!}
                 </div>
+
                 <script type="text/javascript"> function add_active(id, active){
                     $.ajax({
                     
