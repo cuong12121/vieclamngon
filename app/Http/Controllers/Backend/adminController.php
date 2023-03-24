@@ -291,7 +291,7 @@ class adminController extends Controller
 
         $input = $request->all();
 
-        $input['image'] = 'https://images.careerbuilder.vn/employer_folders/lot3/291743/67x67/103534logo_hongfa-003-4.png';
+       
 
         if ($request->hasFile('image')) {
 
