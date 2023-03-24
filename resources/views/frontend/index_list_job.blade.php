@@ -339,7 +339,7 @@
                         <div class="content_fck text-intro">
                             <p style="text-align:justify">
                                 <img src="{{ asset('images/1570440136_1568967007-20180619-01-1.jpg') }}" style="float:right; height:264px; margin-left:15px; margin-right:15px; width:450px" />
-                                {{  @$introduce_top->content }}
+                                {!!  @$introduce_top->content !!}
                             </p>
                             
                         </div>
