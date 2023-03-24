@@ -109,7 +109,7 @@
             </nav>
             <!-- Left side column. contains the logo and sidebar -->
             <aside class="main-sidebar sidebar-dark-primary elevation-4">
-                <a href="https://dienmaynguoiviet.vn" class="brand-link" target="_blank">
+                <a href="{{ route('home') }}" class="brand-link" target="_blank">
                 <img src="https://assets.infyom.com/logo/blue_logo_150x150.png"
                     alt="DIENMAYNGUOIVIET Logo"
                     class="brand-image img-circle elevation-3">
@@ -141,7 +141,7 @@
                                     class="nav-link " style="width: 68%;">
                                     <p>Ứng viên</p>
                                 </a>
-                                <span class="btn btn-link open" style="width: 12%;">+</span>
+                               
                             </li>
 
 
@@ -150,7 +150,7 @@
                                     class="nav-link " style="width: 68%;">
                                     <p>Nhà tuyển dụng</p>
                                 </a>
-                                <span class="btn btn-link open" style="width: 12%;">+</span>
+                               
                             </li>
 
                             <li class="nav-item" style="display: flex; height:44px;"  >
@@ -158,7 +158,7 @@
                                     class="nav-link " style="width: 68%;">
                                     <p>Bài viết</p>
                                 </a>
-                                <span class="btn btn-link open" style="width: 12%;">+</span>
+                               
                             </li>
                             
 
