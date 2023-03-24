@@ -315,11 +315,12 @@ class adminController extends Controller
 
         $input['date_post'] = Carbon::now();
 
+
         unset($input['_token']);
 
-        $update = DB::table('posts1')->update($input);
+        $update = DB::table('posts1')->where('id', $id)->update($input);
 
-        return redirect()->back();
+        return redirect()->route('list-post');
 
     }
 }

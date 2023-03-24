@@ -2,20 +2,12 @@
 @section('content') 
 
 <section class="content">
+    
     <section class="content-header">
         <div class="container-fluid">
             <div class="row mb-2">
                 <div class="col-sm-12">
-                    <h1>Edit Product</h1>
-                </div>
-            </div>
-        </div>
-    </section>
-    <section class="content-header">
-        <div class="container-fluid">
-            <div class="row mb-2">
-                <div class="col-sm-12">
-                    <h1>Edit Post</h1>
+                    <h1>{{ !empty($data)?'Edit':'Create' }} Post</h1>
                 </div>
             </div>
         </div>
@@ -95,14 +87,21 @@
                         <div class="form-group col-sm-6"> <label for="title">Title:</label> <input class="form-control ui-autocomplete-input" name="title" type="text" value="{{ @$data->title }}" id="title" autocomplete="off"> </div>
                         <div class="form-group col-sm-6">
                             <label for="category">category:</label> 
+
+                            <?php 
+
+                                $option = CATEGORY;
+
+                                $option_selected = $data->category??'';
+
+
+                            ?>     
                             <select id="category" class="form-control" name="category">
-                                <option value="3">Kỹ năng công sở</option>
-                                <option value="4">Chuyên ngành</option>
-                                <option value="5">Chuyện công sở</option>
-                                <option value="6">Về việc làm ngon</option>
-                                <option value="7">Ban lãnh đạo</option>
-                                <option value="8">Cơ hội nghề nghiệp</option>
-                               
+
+                                @foreach($option as $key =>$value)
+
+                                <option value="{{ $key }}"  {{ $option_selected==$key?'selected':''  }}>{{ $value }}</option>
+                                @endforeach
                               
                             </select>
                         </div>
