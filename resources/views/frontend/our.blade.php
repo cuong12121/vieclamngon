@@ -20,7 +20,7 @@
                         <li class="active" data-id="section1"><a href="javascript:void(0)" >Về Việc làm ngon</a></li>
                         <li data-id="section2"><a href="javascript:void(0)" >Ban Lãnh Đạo</a></li>
                         
-                        <li data-id="section3"><a href="javascript:void(0)"  >Cơ Hội Nghề Nghiệp</a></li>
+                        <li data-id="section3"><a href="javascript:void(0)"  >Văn hóa lãnh đạo</a></li>
                     </ul>
                 </div>
                <!--  <div class="content">
