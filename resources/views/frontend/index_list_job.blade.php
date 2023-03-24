@@ -100,9 +100,9 @@
     </head>
 
     <?php 
-        $introduce_banner = DB::table('posts1')->where('category', 10)->last();
+        $introduce_banner = DB::table('posts1')->where('category', 10)->get()->last();
 
-        $introduce_top = DB::table('posts1')->where('category', 9)->last();
+        $introduce_top = DB::table('posts1')->where('category', 9)->get()->last();
 
 
 
