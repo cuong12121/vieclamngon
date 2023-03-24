@@ -230,6 +230,10 @@
                                 font-size: 14.5px;
                                 font-weight: 500;
                             }
+                            .bgimage{
+                                background-size :auto ;
+                                
+                            }
 
                         </style>
 
@@ -378,16 +382,17 @@
             <div class="hidden-xs hidden-sm">
                 <div class="ads-pre slidebg" style="height:350px">
                     <div id="slidehr">
-                        <div class="bgimage" style="background-image:url({{ asset('images/banner1.jpg')}}"></div>
-                        <!-- <div class="bgimage" style="background-image:url({{ asset('images/banner_thang_9-04_1569921859_1570440395.jpg')}}"></div>
-                        <div class="bgimage" style="background-image:url({{ asset('images/banner_thang_9-05_1569921859_1570440395.jpg')}}"></div> -->
+                        <div class="bgimage" style="background-image:url({{ asset('images/banner1.jpg')}}">
+                            
+                        </div>
+                        
                     </div>
-                    <ul id="pager">
+                   <!--  <ul id="pager">
                         <li><a href="javascript:void(0);"></a></li>
                         <li><a href="javascript:void(0);"></a></li>
                         <li><a href="javascript:void(0);"></a></li>
                         <li><a href="javascript:void(0);"></a></li>
-                    </ul>
+                    </ul> -->
                     <script type="text/javascript">
                        
                         $(window).load(function(){
