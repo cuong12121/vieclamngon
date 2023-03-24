@@ -147,7 +147,7 @@
                             $leadership = DB::table('posts1')->where('category', 7)->get();
                         ?>
 
-                        @if($about_vieclam->count()>3)
+                        @if($about_vieclam->count()>0)
 
                         @foreach($about_vieclam as $val)
 
@@ -167,64 +167,7 @@
                         </div>
                         @endforeach
 
-                        @else
-                        <div class="col-sm-6 col-xl-3">
-                            <div class="figure bg-trends">
-                                <div class="image">
-                                    <img alt="" src="./img/about-us/7.png" />
-                                </div>
-                                <div class="figcaption">
-                                    <div class="content">
-                                        <p>
-                                            Nguồn dữ liệu phong phú với hơn 1,800,000 thành viên đăng ký
-                                        </p>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-sm-6 col-xl-3">
-                            <div class="figure bg-tips">
-                                <div class="image">
-                                    <img alt="" src="./img/about-us/8.png" />
-                                </div>
-                                <div class="figcaption">
-                                    <div class="content">
-                                        <p>
-                                            Hàng ngàn CV hoàn chỉnh và được cập nhật liên tục
-                                        </p>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-sm-6 col-xl-3">
-                            <div class="figure bg-trends">
-                                <div class="image">
-                                    <img alt="" src="./img/about-us/9.png" />
-                                </div>
-                                <div class="figcaption">
-                                    <div class="content">
-                                        <p>
-                                            Tiếp cận hiệu quả nhiều nguồn ứng viên tiềm năng hơn bất cứ trang tuyển dụng nào ở Việt Nam
-                                        </p>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-sm-6 col-xl-3">
-                            <div class="figure bg-self">
-                                <div class="image">
-                                    <img alt="" src="./img/about-us/10.png" />
-                                </div>
-                                <div class="figcaption">
-                                    <div class="content">
-                                        <p>
-                                            Hơn 13,000 doanh nghiệp hàng đầu hiện đang sử dụng CareerBulder.vn để tuyển chọn nhân tài và xây dựng đội ngũ nhân sự vững mạnh
-                                        </p>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-
+                        
                         @endif
                     </div>
                 </div>
@@ -235,7 +178,7 @@
                 <div class="container">
                     <div class="row">
 
-                        @if($opportunities->count()>1)
+                        @if($opportunities->count()>0)
 
                         @foreach($opportunities as $vals)
 
@@ -261,47 +204,7 @@
                         @endforeach
 
 
-                        @else
-
-
-                        <div class="col-sm-6">
-                            <div class="figure">
-                                <div class="image">
-                                    <img alt="" src="./img/about-us/14.png">
-                                </div>
-                                <div class="figcaption">
-                                    <div class="title">
-                                        <h3>
-                                            Sứ Mệnh
-                                        </h3>
-                                    </div>
-                                    <div class="content">
-                                        <p>
-                                            Chúng tôi kết nối nhân tài với công việc lý tưởng, qua đó giúp bạn tìm thấy sự trọn vẹn và cân bằng cuộc sống. Với Vieclamngon.vn, tìm kiếm việc làm sẽ dễ dàng hơn!
-                                        </p>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-sm-6">
-                            <div class="figure">
-                                <div class="image">
-                                    <img alt="" src="./img/about-us/15.png">
-                                </div>
-                                <div class="figcaption">
-                                    <div class="title">
-                                        <h3>
-                                            Tầm nhìn
-                                        </h3>
-                                    </div>
-                                    <div class="content">
-                                        <p>
-                                            Vieclamngon.vn là website tuyển dụng hàng đầu đem đến giá trị tối ưu cho người sử dụng
-                                        </p>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
+                      
 
                         @endif
 
@@ -345,41 +248,6 @@
                     </div>
 
                     @endforeach
-
-                    @else
-                    <div class="row justify-content-center">
-                        <div class="col-sm-6 col-lg-4">
-                            <div class="figure">
-                                <div class="image"><img class="lazy-bg" alt="Tổng Giám Đốc" src="https://images.careerbuilder.vn/content/leadership/11_1593423056.png" style=""></div>
-                                <div class="figcaption">
-                                    <div class="title">
-                                        <h3>Ông Bùi Ngọc Quốc Hưng</h3>
-                                        <p class="sub-title">Tổng Giám Đốc</p>
-                                    </div>
-                                    <div class="box-content">
-                                        <div class="content">
-                                            <p>
-                                                Ông cũng đảm trách quá trình đánh giá và phát triển liên tục các hoạt động đối nội và đối ngoại của công ty để đưa đến các báo cáo đầy đủ, kịp thời và chính xác. Với tinh thần doanh nhân, ông Bùi Ngọc Quốc Hưng đam mê xây dựng và phát triển doanh nghiệp ngay từ những giai đoạn khởi đầu.
-                                            </p>
-                                            <p>
-                                                Trước khi tham gia Vieclamngon Việt Nam, ông Bùi Ngọc Quốc Hưng đóng vai trò là Giám đốc Khu vực quản lý 8 văn phòng giao dịch thuộc hệ thống ngân hàng Maritime. Trong giai đoạn này, ông đặc biệt thành công khi tái cấu trúc nguồn lực và quy trình hoạt động, từ đó gia tăng 50% doanh số bán hàng. Trước đó, ông đảm nhận vị trí Giám đốc Chi nhánh Techcombank Sài Gòn. Tuyển dụng đội ngũ quản lý cấp cao, phát triển văn hóa doanh nghiệp, đào tạo nhân viên và đẩy mạnh hoạt động truyền thông nội bộ là các đóng góp nổi bật của ông trong giai đoạn này.
-                                            </p>
-                                            <p>
-                                                Ông cũng đã từng nắm giữ chức vụ Giám đốc Phát triển Kinh doanh tại một công ty hàng đầu về tuyển dụng và là nhân tố quan trọng thúc đẩy doanh thu công ty tăng gấp 3 lần trong 3 năm liên tiếp.
-                                            </p>
-                                            <p>
-                                                Ông là một diễn giả năng nổ ở các hoạt động hội thảo doanh nghiệp và thường xuyên xuất hiện ở các buổi tọa đàm doanh nhân.
-                                            </p>
-                                            <p>
-                                                Bùi Ngọc Quốc Hưng tốt nghiệp Cử nhân trường Đại học Ngoại thương Thành phố Hồ Chí Minh và được đào tạo chuyên sâu ở nước ngoài về các lĩnh vực Hành vi người tiêu dùng, Đàm phán cấp độ nâng cao và Kỹ năng giao tiếp.
-                                            </p>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                       
-                    </div>
 
                     @endif
                 </div>

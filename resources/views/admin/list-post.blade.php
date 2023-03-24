@@ -92,7 +92,7 @@
                     $.ajax({
                     
                     type: 'GET',
-                        url: "http://localhost/pj5/admins/add-active-post",
+                        url: "",
                         data: {
                             id: id,
                             active:active,
@@ -111,7 +111,7 @@
                     $.ajax({
                     
                     type: 'GET',
-                        url: "http://localhost/pj5/admins/add-hight-light-post",
+                        url: "",
                         data: {
                             id: id,
                             active:active,
