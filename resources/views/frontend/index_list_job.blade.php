@@ -100,6 +100,15 @@
     </head>
 
     <?php 
+        $introduce_banner = DB::table('posts1')->where('category', 10)->last();
+
+        $introduce_top = DB::table('posts1')->where('category', 9)->last();
+
+
+
+    ?>
+
+    <?php 
             $listDefineJob = LIST_JOB;
 
             $address = ADDRESS;
@@ -232,7 +241,7 @@
                             }
                             .bgimage{
                                 background-size :auto !important;
-                                
+
 
                             }
 
@@ -329,7 +338,8 @@
                     <div class="col-xs-12">
                         <div class="content_fck text-intro">
                             <p style="text-align:justify">
-                                <img src="{{ asset('images/1570440136_1568967007-20180619-01-1.jpg') }}" style="float:right; height:264px; margin-left:15px; margin-right:15px; width:450px" />Vieclamngon.vn - Mạng Việc làm & Tuyển dụng lớn nhất Việt Nam. Với công nghệ tiên tiến, mạng lưới đối tác toàn cầu và dịch vụ khách hàng chuyên nghiệp, chúng tôi kết nối nhân tài với công việc mơ ước và giúp doanh nghiệp xây dựng đội ngũ nhân sự tài năng.
+                                <img src="{{ asset('images/1570440136_1568967007-20180619-01-1.jpg') }}" style="float:right; height:264px; margin-left:15px; margin-right:15px; width:450px" />
+                                {{  @$introduce_top->content }}
                             </p>
                             
                         </div>
@@ -414,18 +424,10 @@
                 <div class="container">
                     <div class="col-xs-12">
                         <div class="content_fck text-intro">
-                            <p><span style="color:#0000FF"><strong>PHÁT TRIỂN NGHỀ NGHIỆP</strong></span></p>
-                            <p>80% cán bộ quản lý của Eurowindow được phát triển từ nội bộ. Công ty có chính sách xây dựng cho mỗi CBNV một lộ trình nghề nghiệp rõ ràng ngay từ những ngày đầu tiên làm việc. Gia nhập Eurowindow để cùng <strong>“Kiến tạo một sự nghiệp thành công”.</strong></p>
-                            <p><span style="color:#0000FF"><strong>ĐÀO TẠO VÀ PHÁT TRIỂN</strong></span></p>
-                            <p>Eurowindow quan niệm: Nhân tài là nguyên khí của doanh nghiệp. Ban lãnh đạo công ty luôn dành sự quan tâm đặc biệt và ngân sách lớn hàng năm cho công tác đào tạo, phát triển nguồn nhân lực. Tại Eurowindow, CBNV được “may đo” một bản đồ đào tạo cho riêng mình. Bạn sẽ được tham gia các chương trình đào tạo nội bộ, được công ty đài thọ 100% chi phí để tham dự các khóa đào tạo thuê ngoài của các chuyên gia nổi tiếng và các chương trình huấn luyện, kèm cặp và luân chuyển công việc để phát triển năng lực bản thân.</p>
-                            <p><span style="color:#0000FF"><strong>HOẠT ĐỘNG VĂN HÓA</strong></span></p>
-                            <p>Văn hóa doanh nghiệp là chất keo gắn kết người lao động với công ty. Tại Eurowindow, CBNV được sống trong ngôi nhà thứ 2 của mình thông qua các hoạt động văn hóa hàng ngày. Các chương trình Teambuilding, CLB Bóng đá, Bóng bàn, Yoga,... nhằm đem đến đời sống tinh thần phong phú và tâm lý thoải mái cho nhân viên sau những giờ làm việc căng thẳng.</p>
-                            <p><span style="color:#0000FF"><strong>MÔI TRƯỜNG LÀM VIỆC</strong></span></p>
-                            <p>Với 18 năm phát triển và đổi mới – Eurowindow đã vươn mình trở thành 1 trong 500 Tập đoàn, Doanh nghiệp tư nhân lớn nhất Việt Nam. Đồng thời liên tục từ năm 2016 – 2018 được công nhận TOP 100 Nơi làm việc tốt nhất Việt Nam. Ở Eurowindow, CBNV được làm việc trong môi trường năng động, sáng tạo, chuyên nghiệp và an toàn. Eurowindow luôn mở rộng cơ hội phát triển bản thân, phát triển nghề nghiệp cho toàn thể nhân viên.</p>
-                            <p><span style="color:#0000FF"><strong>LƯƠNG THƯỞNG VÀ PHÚC LỢI</strong></span></p>
-                            <p>Với mục tiêu thu hút và phát triên nhân tài, Eurowindow đánh giá lương, thưởng dựa theo năng lực của nhân viên. Nếu bạn khẳng định được giá trị bản thân, bạn sẽ được đãi ngộ thích đáng với các chính sách: Thưởng các ngày Lễ, Tết, thưởng thi đua, thưởng sáng kiến cải tiến, thưởng kinh doanh, thưởng cuối năm</p>
-                            <p>Bên cạnh đó, CBNV được hưởng các chế độ phúc lợi như chăm sóc sức khỏe định kỳ, thăm hỏi ốm đau, hiếu hỉ đối với người lao động và gia đình, chế độ BHXH, BHYT và du lịch thường niên…</p>
-                            <p>&nbsp;</p>
+
+                            
+
+                            {!!  @$introduce_banner->content  !!}
                         </div>
                     </div>
                 </div>
