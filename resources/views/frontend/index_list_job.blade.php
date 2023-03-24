@@ -378,7 +378,7 @@
             <div class="hidden-xs hidden-sm">
                 <div class="ads-pre slidebg" style="height:350px">
                     <div id="slidehr">
-                        <div class="bgimage" style="background-image:url({{ asset('images/banner_thang_9-03_1569921859_1570440395.jpg')}}"></div>
+                        <div class="bgimage" style="background-image:url({{ asset('images/banner1.jpg')}}"></div>
                         <!-- <div class="bgimage" style="background-image:url({{ asset('images/banner_thang_9-04_1569921859_1570440395.jpg')}}"></div>
                         <div class="bgimage" style="background-image:url({{ asset('images/banner_thang_9-05_1569921859_1570440395.jpg')}}"></div> -->
                     </div>
