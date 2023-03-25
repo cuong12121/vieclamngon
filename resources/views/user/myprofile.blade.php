@@ -665,8 +665,7 @@
                                             <h3>Kinh nghiệm làm việc *</h3>
 
 
-
-                                           @if(!empty(json_decode($checkTitle->experience_details)))
+                                           @if(!empty(json_decode($checkTitle->experience)))
                                             <div class="status success">
                                                 <p>Đã hoàn thành</p>
                                             </div>
@@ -1724,7 +1723,7 @@
             <div class="tips-modal" id="tip-education-modal" style="display: none">
                 <div class="add-db-education edit-modal-dashboard fancybox-content" style="">
                     <div class="modal-title">
-                        <h3>Quá Trình Học Tập</h3>
+                        <h3>Bằng cấp cao nhất</h3>
                     </div>
                     <div class="modal-body">
                         <form name="education-form" id="education-form" method="post" action="{{ route('postProfile', 'education') }}">
@@ -1786,10 +1785,15 @@
                                             <select name="redu_year" id="redu_year">
                                                 <option value="">Năm</option>
 
+                                                <?php
+
+                                                    $option_year = !empty(json_decode($checkTitle->education)) && !empty(json_decode($checkTitle->education)->redu_year)?json_decode($checkTitle->education)->redu_year:'';
+                                                ?>
+
                                                 @for($k = 1975; $k <2023; $k++)
-                                                @if(!empty(json_decode($checkTitle->education)) && !empty(json_decode($checkTitle->education)->redu_year))
-                                                <option value="{{ $k }}" {{ json_decode($checkTitle->education)->redu_year==$k?'selected':'' }}>{{ $k }}</option>
-                                                @endif
+                                               
+                                                <option value="{{ $k }}" {{ $option_year==$k?'selected':'' }}>{{ $k }}</option>
+                                               
                                                 @endfor
                                                
                                                 
