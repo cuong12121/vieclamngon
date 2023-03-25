@@ -11,6 +11,8 @@
 
         $address = ADDRESS;
 
+        $now = Carbon\Carbon::now()
+
 
     ?>
     <link rel="stylesheet" type="text/css" href="{{ asset('css/common-job-detail.css') }}">
@@ -46,7 +48,7 @@
                                 <li id="tabs-job-detail"><a href="javascript:void(0)" data-href="#tab-1">Chi tiết</a></li>
                                 <li id="tabs-job-company"><a href="javascript:void(0)" data-href="#tab-2">Tổng quan công ty</a></li>
                             </ul>
-                            <div class="job-detail-tool">
+                            <!-- <div class="job-detail-tool">
                                 <ol class="tabs-saved">
                                     <li>
                                         <a class="toollips save-job chk_save_35B9A7C0 " href="javascript:void(0);" data-id="35B9A7C0"  onclick="popuplogin()">
@@ -79,7 +81,7 @@
                                         </a>
                                     </li>
                                 </ol>
-                            </div>
+                            </div> -->
                         </nav>
                         <div class="tab-content" id="tab-1">
                             <section class="job-detail-content">
@@ -122,22 +124,22 @@
                                             <div class="detail-box has-background">
                                                 <ul>
                                                     <li>
-                                                        <strong><i class="fa fa-usd"></i>Lương</strong>
+                                                        <strong>Lương</strong>
                                                         {!! $data->salary   !!}
                                                     </li>
                                                     <li>
-                                                        <strong><i class="fa fa-briefcase"></i>Kinh nghiệm</strong>
+                                                        <strong>Kinh nghiệm</strong>
                                                         <p>
                                                             0 - 5 Năm
                                                         </p>
                                                     </li>
                                                     <li>
-                                                        <strong><i class="mdi mdi-account"></i>Cấp bậc</strong>
+                                                        <strong>Cấp bậc</strong>
                                                         <p>Nhân viên</p>
                                                     </li>
                                                     <li>
-                                                        <strong><i class="mdi mdi-calendar-check"></i>Hết hạn nộp</strong>
-                                                        <p>15/07/2022</p>
+                                                        <strong>Hết hạn nộp</strong>
+                                                        <p>{{ $data->deadline   }}</p>
                                                     </li>
                                                 </ul>
                                             </div>
@@ -254,12 +256,7 @@
                                                                         </a>
                                                                     </td>
                                                                 </tr>
-                                                                <tr>
-                                                                    <td>Kinh nghiệm</td>
-                                                                    <td>
-                                                                        0 - 5 Năm
-                                                                    </td>
-                                                                </tr>
+                                                               
                                                             </tbody>
                                                         </table>
                                                     </div>
@@ -611,9 +608,9 @@
                                             <div class="title"> <a class="job_link" href="{{ route('job_details', [$val->link, $val->id]) }}" target="_blank" title="{{ $val->title }}"> {{ $val->title }}</a> </div>
                                             <div class="caption">
                                                 <a class="company-name" href="{{ route('employ-details', $val->links) }}" title="{{ $val->name }}">{{ $val->name }}</a>
-                                                <p class="salary"><em class="fa fa-usd"></em>thương lượng</p>
+                                                <p class="salary">thương lượng</p>
                                                 <div class="location">
-                                                    <em class="mdi mdi-map-marker"></em>
+                                                    
                                                     <ul>
                                                         <li>Hồ Chí Minh</li>
                                                     </ul>
