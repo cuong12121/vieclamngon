@@ -311,10 +311,10 @@
                                 });
                                 
                                 editor = CKEDITOR.replace( 'content', {
-                                    filebrowserImageBrowseUrl: '/laravel-filemanager?type=Images',
-                                    filebrowserImageUploadUrl: '/laravel-filemanager/upload?type=Images&_token='+document.querySelector('meta[name="csrf-token"]').getAttribute('content'),
-                                    filebrowserBrowseUrl: '/laravel-filemanager?type=Files',
-                                    filebrowserUploadUrl: '/laravel-filemanager/upload?type=Files&_token='+document.querySelector('meta[name="csrf-token"]').getAttribute('content'),
+                                    filebrowserImageBrowseUrl: 'http://localhost:8000/laravel-filemanager?type=Images',
+                                    filebrowserImageUploadUrl: 'http://localhost:8000/laravel-filemanager/upload?type=Images&_token='+document.querySelector('meta[name="csrf-token"]').getAttribute('content'),
+                                    filebrowserBrowseUrl: 'http://localhost:8000/laravel-filemanager?type=Files',
+                                    filebrowserUploadUrl: 'http://localhost:8000/laravel-filemanager/upload?type=Files&_token='+document.querySelector('meta[name="csrf-token"]').getAttribute('content'),
                                     on: {
                                         change: function( evt ) {
                                 
