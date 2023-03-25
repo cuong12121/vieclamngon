@@ -18,7 +18,9 @@ class job extends Model
         'deadline',
         'employer_id',
         'link',
-        'linkCrawl'
+        'linkCrawl',
+        'benefit',
+        'type',
         
     ];
      

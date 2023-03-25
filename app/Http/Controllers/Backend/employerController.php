@@ -170,9 +170,12 @@ class employerController extends Controller
     public function postJob(Request $request)
     {
         
+       
         $input['title'] = $request->job_title;
         $input['code']  =  $request->job_code;
         $input['detail']  =  $request->job_desc;
+        $input['type'] = $request->type;
+        $input['benefit'] = json_encode($request->BENEFIT_ID);
         $input['requirements'] = $request->job_req;
         $input['career'] = [$request->INDUSTRY_ID][0][0]??'';
         $input['address_job'] = [$request->LOCATION_ID][0][0];

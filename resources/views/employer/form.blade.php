@@ -251,6 +251,7 @@
     </div>
    
 </div>
+
 <form name="frmEditJob" id="frmEditJob"  method="post" action="{{ route('postJob') }}">
     @csrf
 <div class="main-tabslet">
@@ -671,31 +672,15 @@
             <p class="title-label">Hình thức <font style="color: red">*</font></p>
         </div>
         <div class="row">
-            <div class="col-sm-6 col-lg-3">
-                <div class="form-group form-checkbox">
-                    <input type="checkbox" class="require-one-job-type input_margin"  id="job_type1"  name="job_type1" value="1" />
-                    <label for="job_type1">Nhân viên chính thức</label>
-                </div>
-                <span class="form-error" id="last_jobtype"></span>
-            </div>
-            <div class="col-sm-6 col-lg-3">
-                <div class="form-group form-checkbox">
-                    <input type="checkbox" class="require-one-job-type input_margin" id="job_type2"  name="job_type2" value="1"  />
-                    <label for="job_type2">Bán thời gian</label>
-                </div>
-            </div>
-            <div class="col-sm-6 col-lg-3">
-                <div class="form-group form-checkbox">
-                    <input type="checkbox" class="require-one-job-type input_margin" id="job_type3"  name="job_type3" value="1"  />
-                    <label for="job_type3">Thời vụ - Nghề tự do </label>
-                </div>
-            </div>
-            <div class="col-sm-6 col-lg-3">
-                <div class="form-group form-checkbox">
-                    <input type="checkbox" class="require-one-job-type input_margin" id="job_type4"  name="job_type4" value="1"  />
-                    <label for="job_type4">Thực tập</label>
-                </div>
-            </div>
+
+            <select name="type">
+                <option value="1">Nhân viên chính thức</option>
+                <option value="2">Bán thời gian</option>
+                <option value="3">Thời vụ - Nghề tự do</option>
+                <option value="4">Thực tập</option>
+
+            </select>
+           
         </div>
     </div>
     <div class="row">
@@ -711,333 +696,103 @@
 </div>
 </form>
 
-<!-- <h2 class="title-application">Phúc lợi</h2>
+<h2 class="title-application">Phúc lợi</h2>
 <div class="checkbox-wrap">
     <div class="row">
         <div class="col-sm-6 col-lg-3">
             <div class="form-group form-checkbox">
-                <input type="checkbox" class="" id="BENEFIT_ID_2" name="BENEFIT_ID[]" value="2"  checked="checked" >
-                <label for="BENEFIT_ID_2"> <em class="fa fa-medkit"></em>Chế độ bảo hiểm</label>
+                <input type="checkbox" class="" id="BENEFIT_ID_2" name="BENEFIT_ID[]" value="2">
+                <label for="BENEFIT_ID_2"> Chế độ bảo hiểm</label>
             </div>
         </div>
         <div class="col-sm-6 col-lg-3">
             <div class="form-group form-checkbox">
-                <input type="checkbox" class="" id="BENEFIT_ID_3" name="BENEFIT_ID[]" value="3"  checked="checked" >
-                <label for="BENEFIT_ID_3"> <em class="fa fa-plane"></em>Du Lịch</label>
+                <input type="checkbox" class="" id="BENEFIT_ID_3" name="BENEFIT_ID[]" value="3">
+                <label for="BENEFIT_ID_3"> Du Lịch</label>
             </div>
         </div>
         <div class="col-sm-6 col-lg-3">
             <div class="form-group form-checkbox">
-                <input type="checkbox" class="" id="BENEFIT_ID_8" name="BENEFIT_ID[]" value="8"  checked="checked" >
-                <label for="BENEFIT_ID_8"> <em class="fa fa-usd"></em>Chế độ thưởng</label>
+                <input type="checkbox" class="" id="BENEFIT_ID_8" name="BENEFIT_ID[]" value="8">
+                <label for="BENEFIT_ID_8"> Chế độ thưởng</label>
             </div>
         </div>
         <div class="col-sm-6 col-lg-3">
             <div class="form-group form-checkbox">
-                <input type="checkbox" class="" id="BENEFIT_ID_9" name="BENEFIT_ID[]" value="9"  checked="checked" >
-                <label for="BENEFIT_ID_9"> <em class="fa fa-user-md"></em>Chăm sóc sức khỏe</label>
+                <input type="checkbox" class="" id="BENEFIT_ID_9" name="BENEFIT_ID[]" value="9">
+                <label for="BENEFIT_ID_9"> Chăm sóc sức khỏe</label>
             </div>
         </div>
         <div class="col-sm-6 col-lg-3">
             <div class="form-group form-checkbox">
-                <input type="checkbox" class="" id="BENEFIT_ID_10" name="BENEFIT_ID[]" value="10"  checked="checked" >
-                <label for="BENEFIT_ID_10"> <em class="fa fa-graduation-cap"></em>Đào tạo</label>
+                <input type="checkbox" class="" id="BENEFIT_ID_10" name="BENEFIT_ID[]" value="10">
+                <label for="BENEFIT_ID_10"> Đào tạo</label>
             </div>
         </div>
         <div class="col-sm-6 col-lg-3">
             <div class="form-group form-checkbox">
-                <input type="checkbox" class="" id="BENEFIT_ID_11" name="BENEFIT_ID[]" value="11"  checked="checked" >
-                <label for="BENEFIT_ID_11"> <em class="fa fa-line-chart"></em>Tăng lương</label>
+                <input type="checkbox" class="" id="BENEFIT_ID_11" name="BENEFIT_ID[]" value="11">
+                <label for="BENEFIT_ID_11"> Tăng lương</label>
             </div>
         </div>
         <div class="col-sm-6 col-lg-3">
             <div class="form-group form-checkbox">
                 <input type="checkbox" class="" id="BENEFIT_ID_1" name="BENEFIT_ID[]" value="1" >
-                <label for="BENEFIT_ID_1"> <em class="fa fa-laptop"></em>Laptop</label>
+                <label for="BENEFIT_ID_1"> Laptop</label>
             </div>
         </div>
         <div class="col-sm-6 col-lg-3">
             <div class="form-group form-checkbox">
                 <input type="checkbox" class="" id="BENEFIT_ID_4" name="BENEFIT_ID[]" value="4" >
-                <label for="BENEFIT_ID_4"> <em class="fa fa-money"></em>Phụ cấp</label>
+                <label for="BENEFIT_ID_4">Phụ cấp</label>
             </div>
         </div>
         <div class="col-sm-6 col-lg-3">
             <div class="form-group form-checkbox">
                 <input type="checkbox" class="" id="BENEFIT_ID_5" name="BENEFIT_ID[]" value="5" >
-                <label for="BENEFIT_ID_5"> <em class="fa fa-taxi"></em>Xe đưa đón</label>
+                <label for="BENEFIT_ID_5"> Xe đưa đón</label>
             </div>
         </div>
         <div class="col-sm-6 col-lg-3">
             <div class="form-group form-checkbox">
                 <input type="checkbox" class="" id="BENEFIT_ID_6" name="BENEFIT_ID[]" value="6" >
-                <label for="BENEFIT_ID_6"> <em class="fa fa-fighter-jet"></em>Du lịch nước ngoài</label>
+                <label for="BENEFIT_ID_6"> Du lịch nước ngoài</label>
             </div>
         </div>
         <div class="col-sm-6 col-lg-3">
             <div class="form-group form-checkbox">
                 <input type="checkbox" class="" id="BENEFIT_ID_7" name="BENEFIT_ID[]" value="7" >
-                <label for="BENEFIT_ID_7"> <em class="fa fa-black-tie"></em>Đồng phục</label>
+                <label for="BENEFIT_ID_7"> Đồng phục</label>
             </div>
         </div>
         <div class="col-sm-6 col-lg-3">
             <div class="form-group form-checkbox">
                 <input type="checkbox" class="" id="BENEFIT_ID_12" name="BENEFIT_ID[]" value="12" >
-                <label for="BENEFIT_ID_12"> <em class="fa fa-credit-card"></em>Công tác phí</label>
+                <label for="BENEFIT_ID_12"> Công tác phí</label>
             </div>
         </div>
         <div class="col-sm-6 col-lg-3">
             <div class="form-group form-checkbox">
                 <input type="checkbox" class="" id="BENEFIT_ID_13" name="BENEFIT_ID[]" value="13" >
-                <label for="BENEFIT_ID_13"> <em class="fa fa-money"></em>Phụ cấp thâm niên</label>
+                <label for="BENEFIT_ID_13"> Phụ cấp thâm niên</label>
             </div>
         </div>
         <div class="col-sm-6 col-lg-3">
             <div class="form-group form-checkbox">
                 <input type="checkbox" class="" id="BENEFIT_ID_14" name="BENEFIT_ID[]" value="14" >
-                <label for="BENEFIT_ID_14"> <em class="fa fa-briefcase"></em>Nghỉ phép năm</label>
+                <label for="BENEFIT_ID_14"> Nghỉ phép năm</label>
             </div>
         </div>
         <div class="col-sm-6 col-lg-3">
             <div class="form-group form-checkbox">
                 <input type="checkbox" class="" id="BENEFIT_ID_15" name="BENEFIT_ID[]" value="15" >
-                <label for="BENEFIT_ID_15"> <em class="fa fa-heartbeat"></em>CLB thể thao</label>
+                <label for="BENEFIT_ID_15"> CLB thể thao</label>
             </div>
         </div>
     </div>
 </div>
-<h2 class="title-application">Yêu cầu chung</h2>
-<div class="form-wrap">
-    <div class="row">
-        <div class="col-lg-6">
-            <div class="form-group">
-                <p class="title-label">Giới tính</p>
-            </div>
-            <div class="d-flex gender-wrap">
-                <div class="form-group form-radio">
-                    <input type="radio" id="rnamnu" name="JOB_GENDER" value="0" checked="checked">
-                    <label for="rnamnu">Nam/Nữ</label>
-                </div>
-                <div class="form-group form-radio">
-                    <input type="radio" id="rnam" name="JOB_GENDER" value="1" >
-                    <label for="rnam">Nam</label>
-                </div>
-                <div class="form-group form-radio">
-                    <input type="radio" id="rnu" name="JOB_GENDER" value="2" >
-                    <label for="rnu">Nữ</label>
-                </div>
-            </div>
-        </div>
-    </div>
-    <div class="row">
-        <div class="col-lg-6">
-            <div class="form-group">
-                <p class="title-label">Tuổi</p>
-            </div>
-            <div class="d-flex form-age align-center">
-                <div class="form-group form-text">
-                    <label>Từ</label>
-                    <input type="text" name="JOB_FROMAGE" id="JOB_FROMAGE" onkeyup="change_age(this);" onblur="chckage();">
-                </div>
-                <div class="form-group form-text">
-                    <label>Đến</label>
-                    <input type="text" name="JOB_TOAGE" id="JOB_TOAGE" onkeyup="change_age(this);" onblur="chckage();">
-                </div>
-            </div>
-        </div>
-    </div>
-    <div class="row">
-        <div class="col-lg-6">
-            <div class="form-group form-select">
-                <label>Kinh nghiệm <font style="color: red">*</font></label>
-                <select class="" name="JOB_ISEXPERIENCE" id="JOB_ISEXPERIENCE" onchange="loadExperience(this.value);">
-                    <option value="">Chọn Kinh nghiệm</option>
-                    <option value="2">Không yêu cầu kinh nghiệm</option>
-                    <option value="1">Có kinh nghiệm</option>
-                    <option value="0">Chưa có kinh nghiệm</option>
-                </select>
-                <span class="form-error"></span>
-            </div>
-        </div>
-        <div class="col-lg-6" id="JOB_EXPERIENCE" style="display: none;">
-            <div class="form-group">
-                <p class="title-label">năm</p>
-            </div>
-            <div class="d-flex form-age align-center">
-                <div class="form-group form-text">
-                    <label>Từ</label>
-                    <input name="JOB_FROMEXPERIENCE" id="JOB_FROMEXPERIENCE" onkeyup="change_number(this);" onblur="chcknumber();" />
-                </div>
-                <div class="form-group form-text">
-                    <label>Đến</label>
-                    <input name="JOB_TOEXPERIENCE" id="JOB_TOEXPERIENCE" onkeyup="change_number(this);" onblur="chcknumber();" />
-                </div>
-            </div>
-        </div>
-    </div>
-    <div class="row">
-        <div class="col-lg-6">
-            <div class="form-group form-select">
-                <label>Cấp bậc <font style="color: red">*</font></label>
-                <select name="LEVEL_ID" id="LEVEL_ID">
-                    <option value="">Chọn Cấp bậc</option>
-                    <option value="1" >Sinh viên/ Thực tập sinh</option>
-                    <option value="2" >Mới tốt nghiệp</option>
-                    <option value="3" >Nhân viên</option>
-                    <option value="4" >Trưởng nhóm / Giám sát</option>
-                    <option value="5" >Quản lý</option>
-                    <option value="6" >Phó Giám đốc</option>
-                    <option value="7" >Giám đốc </option>
-                    <option value="8" >Tổng giám đốc</option>
-                    <option value="9" >Chủ tịch / Phó Chủ tịch</option>
-                </select>
-                <span class="form-error"></span>
-            </div>
-        </div>
-    </div>
-    <div class="row">
-        <div class="col-lg-6">
-            <div class="form-group form-select">
-                <label>Bằng cấp</label>
-                <select name="DEGREE_ID" id="DEGREE_ID">
-                    <option value="0" >Không yêu cầu bằng cấp</option>
-                    <option value="1" >Trung học</option>
-                    <option value="2" >Trung cấp</option>
-                    <option value="3" >Cao đẳng</option>
-                    <option value="4" >Đại học</option>
-                    <option value="5" >Sau đại học</option>
-                    <option value="6" >Khác</option>
-                </select>
-            </div>
-        </div>
-    </div>
-    <div class="row">
-        <div class="col-lg-8">
-            <div class="form-group">
-                <p class="title-label">Ngôn Ngữ Trình Bày Hồ Sơ</p>
-            </div>
-            <div class="list-profile-requirement" id="div_lang_req">
-                <div class="checkbox-group">
-                    <div class="form-group form-checkbox">
-                        <input type="checkbox" id="language_require_1" name="LANGUAGE_REQUIRE[]" value="1" class="chk_lang_req">
-                        <label for="language_require_1">Tiếng Anh</label>
-                    </div>
-                    <div class="form-group form-checkbox" id="lang_priority_1" style="display:none;">
-                        <input type="checkbox" id="language_priority_1" name="LANGUAGE_PRIORITY[]" value="1" checked="checked" class="chk_lang_pri unique">
-                        <label for="language_priority_1">Ưu tiên</label>
-                    </div>
-                </div>
-                <div class="checkbox-group">
-                    <div class="form-group form-checkbox">
-                        <input type="checkbox" id="language_require_2" name="LANGUAGE_REQUIRE[]" value="2" class="chk_lang_req">
-                        <label for="language_require_2">Tiếng Việt</label>
-                    </div>
-                    <div class="form-group form-checkbox" id="lang_priority_2" style="display:none;">
-                        <input type="checkbox" id="language_priority_2" name="LANGUAGE_PRIORITY[]" value="2" checked="checked" class="chk_lang_pri unique">
-                        <label for="language_priority_2">Ưu tiên</label>
-                    </div>
-                </div>
-                <div class="checkbox-group">
-                    <div class="form-group form-checkbox">
-                        <input type="checkbox" id="language_require_3" name="LANGUAGE_REQUIRE[]" value="3" class="chk_lang_req">
-                        <label for="language_require_3">Tiếng Pháp</label>
-                    </div>
-                    <div class="form-group form-checkbox" id="lang_priority_3" style="display:none;">
-                        <input type="checkbox" id="language_priority_3" name="LANGUAGE_PRIORITY[]" value="3" checked="checked" class="chk_lang_pri unique">
-                        <label for="language_priority_3">Ưu tiên</label>
-                    </div>
-                </div>
-                <div class="checkbox-group">
-                    <div class="form-group form-checkbox">
-                        <input type="checkbox" id="language_require_4" name="LANGUAGE_REQUIRE[]" value="4" class="chk_lang_req">
-                        <label for="language_require_4">Tiếng Trung</label>
-                    </div>
-                    <div class="form-group form-checkbox" id="lang_priority_4" style="display:none;">
-                        <input type="checkbox" id="language_priority_4" name="LANGUAGE_PRIORITY[]" value="4" checked="checked" class="chk_lang_pri unique">
-                        <label for="language_priority_4">Ưu tiên</label>
-                    </div>
-                </div>
-                <div class="checkbox-group">
-                    <div class="form-group form-checkbox">
-                        <input type="checkbox" id="language_require_5" name="LANGUAGE_REQUIRE[]" value="5" class="chk_lang_req">
-                        <label for="language_require_5">Tiếng Nhật</label>
-                    </div>
-                    <div class="form-group form-checkbox" id="lang_priority_5" style="display:none;">
-                        <input type="checkbox" id="language_priority_5" name="LANGUAGE_PRIORITY[]" value="5" checked="checked" class="chk_lang_pri unique">
-                        <label for="language_priority_5">Ưu tiên</label>
-                    </div>
-                </div>
-                <div class="checkbox-group">
-                    <div class="form-group form-checkbox">
-                        <input type="checkbox" id="language_require_6" name="LANGUAGE_REQUIRE[]" value="6" class="chk_lang_req">
-                        <label for="language_require_6">Tiếng Hàn Quốc</label>
-                    </div>
-                    <div class="form-group form-checkbox" id="lang_priority_6" style="display:none;">
-                        <input type="checkbox" id="language_priority_6" name="LANGUAGE_PRIORITY[]" value="6" checked="checked" class="chk_lang_pri unique">
-                        <label for="language_priority_6">Ưu tiên</label>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-</div>
-<input type="hidden" id="strPhoto" name="strPhoto" value="" />
-<input type="hidden" id="strPhotoDelete" name="strPhotoDelete" value="" />
-<input type="hidden" id="checkYouTube" name="checkYouTube" />
-<h2 class="title-application">Video và hình ảnh <span class="txt_required mar_left10">(Không bắt buộc)</span> </h2>
-<div class="form-wrap video-wrap">
-    <div class="noti">
-        <p> <em class="material-icons">info </em>Link video youtube</p>
-        <div class="toolip">
-            Nhập thêm video và hình ảnh giới thiệu về công ty sẽ thu hút ứng viên nộp đơn ứng tuyển. <br>Video và hình ảnh này sẽ được sử dụng chung cho tất cả 
-            <a class="line_bot fancybox" href="https://static.careerbuilder.vn/themes/kiemviecv32/employersnews/images/graphics/ex1.gif">thông tin tuyển dụng</a>
-            và
-            <a class="line_bot fancybox" href="https://static.careerbuilder.vn/themes/kiemviecv32/employersnews/images/graphics/ex2.gif">trang giới thiệu về công ty</a>
-        </div>
-    </div>
-    <div class="row">
-        <div class="col-lg-6">
-            <div class="form-group form-text">
-                <input type="text" placeholder="Link video youtube" id="strVideo" name="strVideo" onblur="checkYoutubeValid(0);" value="">
-            </div>
-            <span class="error error_strVideo"> </span>
-        </div>
-        <div class="col-lg-6">
-            <div class="noti mt-20">
-                <p> <em class="material-icons">info </em></p>
-                <div class="toolip">
-                    Ví dụ: https://www.youtube.com/watch?v=egYcmuk3dso
-                </div>
-            </div>
-        </div>
-    </div>
-    <div class="preview"><a class="btn-preview" href="javascript:void(0);" onclick="checkYoutubeValid(1)">Xem trước</a></div>
-    <div class="main-image">
-        <div class="form-group">
-            <p class="title-label">Hình ảnh <br /><span class="note2">(Tối đa 5 ảnh)</span></p>
-        </div>
-        <div class="list-image" id="list-image">
-        </div>
-        <div class="upload-img">
-            <input type="file" id="filephoto"  onchange="return ajaxPhotoUpload();" >
-            <label for="filephoto" class=""><em class="material-icons">folder_open</em>Tải Ảnh từ máy tính</label>
-            <div class="noti">
-                <em class="material-icons">info </em>
-                <div class="toolip">
-                    <div class="clear note2 pad_top8">- Hỗ trợ định dạng .jpg, .gif, .png; dung lượng mỗi ảnh không vượt quá 1mb</div>
-                    <div class="clear note2">- Chiều cao mỗi ảnh phải >135px và < 1,500px</div>
-                </div>
-            </div>
-        </div>
-    </div>
-    <div class="show-video">
-        <div class="form-group form-checkbox">
-            <input type="checkbox" id="isdisplay" name="isdisplay" value="1" checked="checked" disabled >
-            <label for="isdisplay"><strong>Hiển thị video và ảnh cho tuyển dụng này</strong></label>
-            <span id="loading" class="img_loading" style="display:none"><img src="https://static.careerbuilder.vn/themes/kiemviecv32/css/images/graphics/loading.gif"></span>
-        </div>
-    </div>
-</div> -->
+
+
 <script type="text/javascript">
 $( document ).ready(function() {
    checkYoutubeValid();

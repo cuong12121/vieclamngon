@@ -11,7 +11,12 @@
 
         $address = ADDRESS;
 
-        $now = Carbon\Carbon::now()
+
+        $now  = Carbon\Carbon::now();
+
+        $date_deadline =   strtotime($data->deadline);
+
+        $check_date = ($now<=$date_deadline)?'':'Đã quá hạn';
 
 
     ?>
@@ -33,9 +38,15 @@
                                 <a class="employer job-company-name" href="{{ route('employ-details',  $data->link) }}">{{ @$data->name }}</a>  
                             </div>
 
+                            
+                            @if(empty($check_date))
                             <div class="apply-now-btn ">        
                                 <a href="javascript:void(0);" class="btn-gradient " onclick="apply('{{ $data->id }}')"> Nộp Đơn Ứng Tuyển </a>        
                             </div>
+
+                            @endif
+
+                            
                         </div>
                     </section>
                 </div>
@@ -90,7 +101,7 @@
                                         <div class="col-lg-4 col-sm-6 item-blue">
                                             <div class="detail-box">
                                                 <div class="map">
-                                                    <strong><em class="mdi mdi-map-marker"></em>Địa điểm</strong>
+                                                    <strong>Địa điểm</strong>
                                                     <p><a href="javascript:void(0)">{{ $address[$data->address_job] }}</a></p>
                                                     <a href="javascript:void(0)" onclick="show_map_detail_job();"></a>
                                                 </div>
@@ -100,11 +111,11 @@
                                             <div class="detail-box has-background">
                                                 <ul>
                                                     <li>
-                                                        <strong><em class="mdi mdi-update"> </em>Ngày cập nhật</strong>
+                                                        <strong>Ngày cập nhật</strong>
                                                         <p>{{ $data->updated_at }}</p>
                                                     </li>
                                                     <li>
-                                                        <strong> <em class="mdi mdi-briefcase"></em>Ngành nghề</strong>
+                                                        <strong> Ngành nghề</strong>
                                                         <p>  
                                                                      
                                                             <a href="javascript:void(0)" >
@@ -114,7 +125,7 @@
                                                         </p>
                                                     </li>
                                                     <li>
-                                                        <strong><em class="mdi mdi-briefcase-edit"> </em>Hình thức</strong>
+                                                        <strong>Hình thức</strong>
                                                         <p>Nhân viên chính thức</p>
                                                     </li>
                                                 </ul>
@@ -127,19 +138,16 @@
                                                         <strong>Lương</strong>
                                                         {!! $data->salary   !!}
                                                     </li>
-                                                    <li>
-                                                        <strong>Kinh nghiệm</strong>
-                                                        <p>
-                                                            0 - 5 Năm
-                                                        </p>
-                                                    </li>
+                                                   
                                                     <li>
                                                         <strong>Cấp bậc</strong>
                                                         <p>Nhân viên</p>
                                                     </li>
                                                     <li>
+
+
                                                         <strong>Hết hạn nộp</strong>
-                                                        <p>{{ $data->deadline   }}</p>
+                                                        <p>{{ $data->deadline   }} ( {{ !empty($check_date)?$check_date:'' }})</p>
                                                     </li>
                                                 </ul>
                                             </div>
@@ -149,14 +157,14 @@
                                 <div class="detail-row">
                                     <h3 class="detail-title">Phúc lợi </h3>
                                     <ul class="welfare-list">
-                                        <li><span class="fa fa-medkit"></span> Chế độ bảo hiểm</li>
-                                        <li><span class="fa fa-money"></span> Phụ cấp</li>
-                                        <li><span class="fa fa-black-tie"></span> Đồng phục</li>
-                                        <li><span class="fa fa-usd"></span> Chế độ thưởng</li>
-                                        <li><span class="fa fa-line-chart"></span> Tăng lương</li>
-                                        <li><span class="fa fa-credit-card"></span> Công tác phí</li>
-                                        <li><span class="fa fa-money"></span> Phụ cấp thâm niên</li>
-                                        <li><span class="fa fa-briefcase"></span> Nghỉ phép năm</li>
+                                        <li> Chế độ bảo hiểm</li>
+                                        <li> Phụ cấp</li>
+                                        <li> Đồng phục</li>
+                                        <li> Chế độ thưởng</li>
+                                        <li> Tăng lương</li>
+                                        <li> Công tác phí</li>
+                                        <li> Phụ cấp thâm niên</li>
+                                        <li> Nghỉ phép năm</li>
                                     </ul>
                                 </div>
                                 <div class="detail-row">
