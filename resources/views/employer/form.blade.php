@@ -257,8 +257,6 @@
 <div class="main-tabslet">
 <ul class="tabslet-tab">
     <li class="active"> <a href="javascript:void(0);">Thông Tin Tuyển Dụng</a></li>
-   <!--  <li> <a href="javascript:void(0)" onclick="is_Filter_Form();">Thông Tin Liên Hệ</a></li>
-    <li> <a href="javascript:void(0)" onclick="is_Filter_Form();">Thiết Lập Độ Phù Hợp Ứng Viên</a></li> -->
 </ul>
 <div class="tabslet-content active" id="tab-1">
 <input name="ispublic" type="hidden" value="0">

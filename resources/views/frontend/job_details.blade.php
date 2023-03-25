@@ -12,11 +12,18 @@
         $address = ADDRESS;
 
 
-        $now  = Carbon\Carbon::now();
+        $now  = Carbon\Carbon::now()->timestamp;
+
+
+
 
         $date_deadline =   strtotime($data->deadline);
 
+
+
         $check_date = ($now<=$date_deadline)?'':'Đã quá hạn';
+
+       
 
 
     ?>
@@ -156,6 +163,7 @@
                                 </div>
                                 <div class="detail-row">
                                     <h3 class="detail-title">Phúc lợi </h3>
+
                                     <ul class="welfare-list">
                                         <li> Chế độ bảo hiểm</li>
                                         <li> Phụ cấp</li>
@@ -418,7 +426,7 @@
                                                     <div class="job-item">
                                                         <div class="figure">
                                                             <div class="image">
-                                                                <a href="https://careerbuilder.vn/vi/nha-tuyen-dung/cong-ty-tnhh-lien-doanh-vinh-hung-tmi-viet-nam.35A8E27D.html" target="_blank"  title="Công ty TNHH, Liên Doanh Vĩnh Hưng (TMI Việt Nam)">
+                                                                <a href="#" target="_blank"  title="Công ty TNHH, Liên Doanh Vĩnh Hưng (TMI Việt Nam)">
                                                                 
                                                                 </a>
                                                             </div>
@@ -440,13 +448,13 @@
                                                     <div class="job-item">
                                                         <div class="figure">
                                                             <div class="image">
-                                                                <a href="https://careerbuilder.vn/vi/nha-tuyen-dung/cong-ty-co-phan-bat-dong-san-grandland.35A8B759.html" target="_blank"  title="CÔNG TY CỔ PHẦN BẤT ĐỘNG SẢN GRANDLAND">
+                                                                <a href="#" target="_blank"  title="CÔNG TY CỔ PHẦN BẤT ĐỘNG SẢN GRANDLAND">
                                                                 
                                                                 </a>
                                                             </div>
                                                             <div class="figcaption">
                                                                 <div class="timeago"></div>
-                                                                <div class="title"><a target="_blank" title="Nhân Viên Tuyển Dụng" href="https://careerbuilder.vn/vi/tim-viec-lam/nhan-vien-tuyen-dung.35B9592D.html?s=rec">Nhân Viên Tuyển Dụng</a></div>
+                                                                <div class="title"><a target="_blank" title="Nhân Viên Tuyển Dụng" href="#">Nhân Viên Tuyển Dụng</a></div>
                                                                 <div class="caption">
                                                                     <p class="company-name">CÔNG TY CỔ PHẦN BẤT ĐỘNG SẢN GRANDLAND</p>
                                                                     <p class="salary">$ 8 Tr - 13 Tr VND</p>
@@ -462,7 +470,7 @@
                                                     <div class="job-item">
                                                         <div class="figure">
                                                             <div class="image">
-                                                                <a href="https://careerbuilder.vn/vi/nha-tuyen-dung/cong-ty-tnhh-thoi-trang-an-viet-vm-style.35A8D54D.html" target="_blank"  title="Công ty TNHH Thời trang An Việt (VM STYLE)">
+                                                                <a href="#" target="_blank"  title="Công ty TNHH Thời trang An Việt (VM STYLE)">
                                                                 
                                                                 </a>
                                                             </div>
