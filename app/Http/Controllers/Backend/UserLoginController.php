@@ -60,6 +60,7 @@ class UserLoginController extends Controller
 
 
         $user->name = $input['name'];
+        $user->jobs = $input['jobs'];
         $user->email = $input['email'];
         $user->password = $input['password'];
 
@@ -119,5 +120,29 @@ class UserLoginController extends Controller
 
         return redirect(route('home'));
 
+    }
+
+    public function SearchUserJob(Request $request)
+    {
+        $data = '';
+        if(!empty($request->search)){
+            $search =  trim(strip_tags($request->search));
+
+            $job    = $request->jobs;
+
+            if($job==='0'){
+
+                $data_search = DB::table('users')->join('application', 'users.id', '=', 'application.users_id')->select('users.id','users.surname', 'users.name', 'users.workplace', 'application.desired_salary')->where('users.workplace','like', "%{$search}%")->orWhere('users.name', 'like', "%{$search}%")->get();
+            }
+            else{
+                $data_search = DB::table('users')->join('application', 'users.id', '=', 'application.users_id')->select('users.id','users.surname', 'users.name', 'users.workplace', 'application.desired_salary')->where('users.workplace','like', "%{$search}%")->where('users.jobs', $job)->orWhere('users.name', 'like', "%{$search}%")->where('users.jobs', $job)->get();
+
+            }
+
+        }
+
+        return view('employer.list_ungvien', compact('data_search'));
+
+    
     }
 }

@@ -89,6 +89,9 @@ Route::group(['prefix' => 'nha-tuyen-dung','middleware' => 'Checkemploy'], funct
     Route::get('employers-info', 'Backend\employerController@info_employer')->name('employers_info');
 
 
+    Route::get('cv/{id}', 'Backend\adminController@viewCv')->name('viewCvEmployer');
+
+
     Route::get('list-ung-vien', function () {
 
         return view('employer.list_ungvien');
@@ -123,6 +126,8 @@ Route::group(['prefix' => 'nha-tuyen-dung','middleware' => 'Checkemploy'], funct
 
 
     Route::get('logout', 'Backend\employerController@logout')->name('employer-logout');
+
+    Route::post('employer-search-user', 'Backend\UserLoginController@SearchUserJob')->name('employer-search-user');
 
 });
 

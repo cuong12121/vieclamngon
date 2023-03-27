@@ -227,7 +227,9 @@
                                             </div>
                                             <div class="space-y-3 !mt-12">
                                                 <div class="text-2xl font-semibold">Bạn đã sẵn sàng để chọn nhân tài về cho công ty?</div>
-                                                <div class="flex justify-center"><button class="flex items-center justify-center border px-8 py-3 h-11 btn btn-primary !h-[50px] px-16 w-full md:w-[358px] rounded">Bắt đầu tìm ngay!</button></div>
+                                                <div class="flex justify-center">
+                                                    <a href="{{ route('list-ung-vien') }}"><button class="flex items-center justify-center border px-8 py-3 h-11 btn btn-primary !h-[50px] px-16 w-full md:w-[358px] rounded">Bắt đầu tìm ngay!</button></div></a>
+                                                    
                                             </div>
                                         </div>
                                     </div>

@@ -659,7 +659,7 @@
 
                                 @endforeach
                             </div>
-                            <div class="load-more"><a href="javascript:void(0)">Xem tất cả</a></div>
+                            <div class="load-more"><a href="{{ route('all_job') }}">Xem tất cả</a></div>
                         </section>
                     </div>
                 </div>

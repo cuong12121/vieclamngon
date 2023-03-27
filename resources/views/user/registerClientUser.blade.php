@@ -1,6 +1,11 @@
     @extends('frontend.layout.appfe')
     @section('content')
     <main>
+
+        <?php 
+
+            $job = LIST_JOB;
+        ?>
         <style type="text/css">
             .alert-danger{
                 color: red;
@@ -180,6 +185,20 @@
                                             <br>
 
                                             <input type="text" name="national">
+                                        </div>
+
+                                        <div class="form-group form-text">
+                                           
+                                            <label for="">Nghề nghiệp </label>
+
+                                            <br>
+
+                                            <select name="jobs">
+                                                @foreach($job as $key => $value)
+                                                <option value="{{ $key }}">{{ $value }}</option>
+                                                @endforeach
+                                                
+                                            </select>
                                         </div>
 
 

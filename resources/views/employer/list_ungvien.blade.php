@@ -8,13 +8,13 @@
         height: 17px;
         width: 17px;
     }
-    .main button{
+   /* .main button{
         background-color: transparent;
         border: none;
         position: absolute;
         top: 4px;
         right: 10px;
-    }
+    }*/
 
     
 </style>
@@ -25,7 +25,7 @@
     <div class="box-manage-job-posting">
         <div class="heading-manage">
             <div class="left-heading">
-                <h1 class="title-manage">Quản Lý Tuyển Dụng</h1>
+                <h1 class="title-manage">Tìm kiếm ứng viên phù hợp</h1>
                 <div class="button"><a class="btn-gradient" href="{{ route('form_recruit') }}">Tạo Mẫu Tuyển Dụng</a></div>
             </div>
             <!-- <div class="right-heading"><a href="https://careerbuilder.vn/vi/employers/faq" target="_blank" class="support">Hướng dẫn</a></div> -->
@@ -141,18 +141,29 @@
                         <div class="table table-jobs-posting">
                             <div class="main">
   
-                               <form class="form-inline d-flex justify-content-center mb-5 active-cyan-4">
-                                    <input class="form-control form-control-sm mr-3 w-75" type="text" placeholder="Nhập tên vị trí hoặc chức danh" aria-label="Nhập tên vị trí hoặc chức danh" style="width: 50%;">
-                                    
-                                    
+                               <form class="form-inline d-flex justify-content-center mb-5 active-cyan-4" method="post" action="{{ route('employer-search-user') }}" >
 
-                                    <input class="form-control form-control-sm mr-3 w-75" type="text" placeholder="Nhập tên vị trí hoặc chức danh" aria-label="Nhập tên vị trí hoặc chức danh" style="width: 20%;">
+                                    @csrf
+                                    <input class="form-control form-control-sm mr-3 w-75" name="search" type="text" placeholder="Nhập tên vị trí hoặc chức danh" aria-label="Nhập tên vị trí hoặc chức danh" style="width: 50%;">
+                                    
+                                    <?php 
 
-                                    <i class="fa fa-search" aria-hidden="true"></i>
+                                        $job = LIST_JOB;
+                                    ?>
+                                    <select name="jobs" style="width: 30%; height: 27px;" >
+                                        <option value="0">Tất cả ngành nghề</option>
+                                        @foreach($job as $key => $value)
+                                        <option value="{{ $key }}">{{ $value }}</option>
+                                        @endforeach
+                                    </select>
+
+                                    <button type="submit"><i class="fa fa-search" aria-hidden="true"></i></button>
                               </form>
                               
                             </div>
                             <br>
+
+                            @if(!empty($data_search) && $data_search->count()>0)
 
                             <table>
                                 <thead>
@@ -162,24 +173,40 @@
                                     </tr>
                                 </thead>
                                 <tbody>
-                                    
+
+                                    @foreach($data_search as $value)
                                     <tr>
-                                        <td style="width: 20%;">
-                                           
-                                        </td>
-                                        <td >
-                                           <a href="http://localhost:8000/job-details/can-tuyen-gap-nhan-vien-thiet-ke-noi-that-tai-ha-noi/72.html" target="_blank">
-                                           CẦN TUYỂN GẤP NHÂN VIÊN THIẾT KẾ NỘI THẤT TẠI HÀ NỘI</a>
-                                        </td>
                                         
-                                        <td class="cb-text-center"></td>
-                                        
-                                       
+                                        <td style="text-align:left">
+                                           <a href="javascript::void(0)" target="_blank">
+
+                                            {{ $value->surname }} {{ $value->name }}  
+                                          </a>
+
+                                           <br>
+
+                                           <span>{{ $value->workplace }}</span>
+
+                                           <br>
+
+                                            @if(!empty($value->desired_salary))
+                                            <span>{{ @json_decode($value->desired_salary)->desired_salary }} đ</span>
+                                            @endif
+
+                                        </td>
+
+                                        <td style="text-align:right">
+                                            <a href="{{ route('viewCvEmployer', $value->id)  }}">xem hồ sơ</a>
+                                        </td>
                                     </tr>
+
+                                    @endforeach
                                     
                                     
                                 </tbody>
                             </table>
+
+                            @endif
                         </div>
                     </div>
                    

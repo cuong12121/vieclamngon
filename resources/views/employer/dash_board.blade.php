@@ -96,7 +96,7 @@
                                 <ul class="list-search-management">
                                    
                                     <li>
-                                        <p class="textNodata"> <a href="">Xem hồ sơ ứng viên</a> </p>
+                                        <p class="textNodata"> <a href="{{ route('list-ung-vien') }}">Xem hồ sơ ứng viên</a> </p>
                                     </li>
                                 </ul>
                             </div>
