@@ -21,14 +21,9 @@
         <meta name="apple-mobile-web-app-status-bar-style" content="#1e5c8b"/>
         <meta name="apple-mobile-web-app-title" content="CareerBuilder"/>
         <link rel="apple-touch-icon" href="javascript:void(0)"/>
-        <link rel="apple-touch-icon" sizes="57x57" href="https://static.careerbuilder.vn/themes/kiemviecv32/images/graphics/cb_57x57.png?t=1"/>
-        <link rel="apple-touch-icon" sizes="76x76" href="https://static.careerbuilder.vn/themes/kiemviecv32/images/graphics/cb_76x76.png?t=1"/>
-        <link rel="apple-touch-icon" sizes="120x120" href="https://static.careerbuilder.vn/themes/kiemviecv32/images/graphics/cb_120x120.png?t=1"/>
-        <link rel="apple-touch-icon" sizes="152x152" href="https://static.careerbuilder.vn/themes/kiemviecv32/images/graphics/cb_152x152.png?t=1"/>
-        <link rel="apple-touch-icon" sizes="167x167" href="https://static.careerbuilder.vn/themes/kiemviecv32/images/graphics/cb_167x167.png?t=1"/>
-        <link rel="apple-touch-icon" sizes="180x180" href="https://static.careerbuilder.vn/themes/kiemviecv32/images/graphics/cb_180x180.png?t=1"/>
+       
         <link href="javascript:void(0)" rel="manifest"/>
-        <meta property="og:image" content="https://static.careerbuilder.vn/themes/careerbuilder/img/CareerBuilder-social.png"/>
+
         <link data-page-subject="true" href="https://static.careerbuilder.vn/themes/careerbuilder/img/CareerBuilder-social.png" rel="image_src"/>
         <meta property="fb:app_id" content="143458889176984"/>
         <link rel="shortcut icon" href="javascript:void(0)"/>
@@ -73,26 +68,7 @@
         <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery-validate/1.19.4/jquery.validate.min.js"></script>
         <script src='//cdnt.netcoresmartech.com/smartechclient.js'></script>
         
-        <script>
-            $.fancybox.defaults.hash=false;
-            $.fancybox.defaults.backFocus=false;
-            if (!$.isFunction(window.smartech)) {
-            	function smartech(action,data){console.log('smartech:'+action);}
-            }
-            if ($.isFunction(window.smartech)) {
-            	smartech('create', 'ADGMOT35CHFLVDHBJNIG50K96BT3VC7KA7MBJ665I14C320R3PRG');
-            	smartech('register', '87d64a04bc7036938e094b9327ac7fd1');
-            	smartech('identify', '');
-            	smartech('dispatch', 1,{});
-            }
-            if (!$.isFunction(window.OA_show)) {
-            	function OA_show(id){console.log('ads:'+id)}
-            	var OA_output = Array();
-            }
-            var language_common = {title_popup:"Thông báo",popup_msg_success:"Lưu thành công",message_common:"Vui lòng thao tác đầy đủ để hoàn thành",popup_msg_error:"Vui lòng kiểm tra lại",popup_close_popup:"Đóng",job_message_save_job_succ_new:"job_message_save_job_succ_new",job_view_detail_saved_exists:"job_view_detail_saved_exists",job_message_error:"Lỗi trong quá trình thực thi",job_view_detail_saved_exists:"job_view_detail_saved_exists",popup_login_error:"Vui lòng nhập thông tin",job_message_delete_job_succ:"Xóa thành công",okButton:"Đồng ý",cancelButton:"Hủy"
-            };
-            if(typeof language === 'undefined')	var language = language_common;	else $.extend(language, language_common);
-        </script>
+        
         <script src="https://accounts.google.com/gsi/client" async defer></script>
     </head>
     <body class="index-page">
@@ -101,7 +77,15 @@
                 <div class="main-wrap">
                     <div class="left-wrap">
                         <div class="button-hambuger"><span class="mdi mdi-menu"></span></div>
-                        <div class="logo"><a href="{{ route('home') }}" title="Tuyển dụng & Tìm kiếm việc làm nhanh" ><img src="{{ asset('images/template/logo/logo.png') }}" alt="Tuyển dụng & Tìm kiếm việc làm nhanh"></a></div>
+
+                        @if(\Request::route()->getName()=='login-users'||\Request::route()->getName()=='registerClientUser'||\Request::route()->getName()=='job_details')
+                        <div class="logo"><a href="{{ route('home') }}  " title="Tuyển dụng & Tìm kiếm việc làm nhanh" ><img src="{{ asset('images/template/logo/logo.png') }}" alt="Tuyển dụng & Tìm kiếm việc làm nhanh"></a></div>
+
+                        @else
+
+                         <div class="logo"><a href="{{ route('show-index') }}  " title="Tuyển dụng & Tìm kiếm việc làm nhanh" ><img src="{{ asset('images/template/logo/logo.png') }}" alt="Tuyển dụng & Tìm kiếm việc làm nhanh"></a></div>
+                        @endif
+
                         <div class="main-menu">
                             <ul class="menu">
                               
@@ -189,7 +173,7 @@
                         <div class="main-employer dropdown">
                             <a href="{{ route('register_employer') }}" title="Đăng tuyển, Tìm ứng viên">
                                 <div class="dropdown-toggle">
-                                    <h4>Dành cho nhà tuyển dụng<em class="mdi mdi-chevron-down"></em></h4>
+                                    <h4>Dành cho nhà tuyển dụng</h4>
                                     <p>Đăng tuyển, Tìm ứng viên</p>
                                 </div>
                             </a>

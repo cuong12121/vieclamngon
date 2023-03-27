@@ -85,7 +85,7 @@
             });
             
         </script> 
-        <script type="text/javascript" src="https://www.dropbox.com/static/api/2/dropins.js" data-app-key="fa9yyto5llvqw2b" id="dropboxjs')}}"></script>
+        <!-- <script type="text/javascript" src="https://www.dropbox.com/static/api/2/dropins.js" data-app-key="fa9yyto5llvqw2b" id="dropboxjs')}}"></script> -->
         <style type="text/css">
             #banner-video{
                 background: #ddd;
@@ -211,7 +211,7 @@
                             @endif
 
                             <li> 
-                               <a href="{{ route('form_recruit') }}">Dành cho nhà tuyển dụng</a>
+                               <a href="{{ route('show-index') }}">Dành cho nhà tuyển dụng</a>
 
                                  
 

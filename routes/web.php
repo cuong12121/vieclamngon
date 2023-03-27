@@ -81,12 +81,22 @@ Route::get('ve-chung-toi', function () {
 Route::get('nha-tuyen-dung/dang-ky', 'Backend\employerController@index')->name('register_employer'); 
 
 
-Route::group(['prefix' => 'employer','middleware' => 'Checkemploy'], function() {
+Route::group(['prefix' => 'nha-tuyen-dung','middleware' => 'Checkemploy'], function() {
 
     Route::post('update-pass-employer', 'employerController@updatePassEmployer')->name('update-pass-employer');
 
     
     Route::get('employers-info', 'Backend\employerController@info_employer')->name('employers_info');
+
+
+    Route::get('list-ung-vien', function () {
+
+        return view('employer.list_ungvien');
+
+    })->name('list-ung-vien');
+
+
+
 
     Route::post('update-active-job', 'Backend\employerController@activeJobEmployer')->name('update-active-job');
 
@@ -99,11 +109,14 @@ Route::group(['prefix' => 'employer','middleware' => 'Checkemploy'], function() 
     Route::post('updateEmployer', 'Backend\employerController@updateEmployer')->name('updateEmployer');
 
 
-    Route::get('/index','Backend\employerController@viewIndex')->name('index_employer');  
+    Route::get('/dash-board','Backend\employerController@viewIndex')->name('index_employer');  
 
     Route::get('/form', function () {
         return view('employer.form');
     })->name('form_recruit'); 
+
+     Route::get('/index', 'Backend\employerController@showIndex')->name('show-index'); 
+
 
     Route::get('/info', 'Backend\employerInfoController@getInfoEmployer')->name('info-employer'); 
 

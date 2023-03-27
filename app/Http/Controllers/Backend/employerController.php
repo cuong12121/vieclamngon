@@ -26,6 +26,18 @@ class employerController extends Controller
         }  
     }
 
+
+    public function showIndex()
+    {
+        if(!Auth::guard('employer_register')->check()){
+            return view('employer.home');
+        }
+        else{
+
+            return view('employer.home');
+        }  
+    }
+
     public function user_apply(){
         return view('frontend.jops_apply');
     }
@@ -41,7 +53,7 @@ class employerController extends Controller
 
 
 
-        return view('employer.index_employer', compact('job'));
+        return view('employer.dash_board', compact('job'));
     }
 
     public function logout()

@@ -91,16 +91,16 @@
                             <div class="head">
                                 <h2 class="title-dashboard">Tìm Kiếm Hồ Sơ</h2>
                             </div>
+
                             <div class="body">
                                 <ul class="list-search-management">
+                                   
                                     <li>
-                                        <p class="textNodata">Chưa có điểm xem hồ sơ</p>
-                                    </li>
-                                    <li>
-                                        <p class="textNodata">Chưa có dịch vụ xem hồ sơ</p>
+                                        <p class="textNodata"> <a href="">Xem hồ sơ ứng viên</a> </p>
                                     </li>
                                 </ul>
                             </div>
+
                         </div>
                     </div>
                     <div class="col-sm-6 col-xl-3">
