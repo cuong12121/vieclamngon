@@ -137,9 +137,13 @@
 
                                                             $type = TYPE;
                                                         ?>
+
+                                                        @if(isset($data->type))
                                                         <strong>Hình thức</strong>
 
                                                         <p>{{ $type[$data->type] }}</p>
+
+                                                        @endif
                                                     </li>
                                                 </ul>
                                             </div>
