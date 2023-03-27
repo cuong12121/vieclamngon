@@ -132,8 +132,14 @@
                                                         </p>
                                                     </li>
                                                     <li>
+
+                                                        <?php 
+
+                                                            $type = TYPE;
+                                                        ?>
                                                         <strong>Hình thức</strong>
-                                                        <p>Nhân viên chính thức</p>
+
+                                                        <p>{{ $type[$data->type] }}</p>
                                                     </li>
                                                 </ul>
                                             </div>
@@ -164,16 +170,26 @@
                                 <div class="detail-row">
                                     <h3 class="detail-title">Phúc lợi </h3>
 
+
+                                    <?php 
+
+                                        $benefit = json_decode($data->benefit);
+
+                                        $data_ben = BENEFIT_ID;
+
+                                       
+                                    
+                                    ?>
+
+                                    @if(isset($benefit))
+                                    @foreach($benefit as $val)
+
                                     <ul class="welfare-list">
-                                        <li> Chế độ bảo hiểm</li>
-                                        <li> Phụ cấp</li>
-                                        <li> Đồng phục</li>
-                                        <li> Chế độ thưởng</li>
-                                        <li> Tăng lương</li>
-                                        <li> Công tác phí</li>
-                                        <li> Phụ cấp thâm niên</li>
-                                        <li> Nghỉ phép năm</li>
+                                        <li>{{ $data_ben[$val] }}</li>
+                                       
                                     </ul>
+                                    @endforeach
+                                    @endif
                                 </div>
                                 <div class="detail-row">
                                     <h3 class="detail-title">Mô tả Công việc</h3>

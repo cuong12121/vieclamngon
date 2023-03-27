@@ -669,13 +669,13 @@
         <div class="form-group">
             <p class="title-label">Hình thức <font style="color: red">*</font></p>
         </div>
-        <div class="row">
+        <div class="row" style="width:50%">
 
             <select name="type">
-                <option value="1">Nhân viên chính thức</option>
-                <option value="2">Bán thời gian</option>
-                <option value="3">Thời vụ - Nghề tự do</option>
-                <option value="4">Thực tập</option>
+                <option value="0">Nhân viên chính thức</option>
+                <option value="1">Bán thời gian</option>
+                <option value="2">Thời vụ - Nghề tự do</option>
+                <option value="3">Thực tập</option>
 
             </select>
            
@@ -697,96 +697,21 @@
 <h2 class="title-application">Phúc lợi</h2>
 <div class="checkbox-wrap">
     <div class="row">
+
+        <?php 
+
+            $benefit = BENEFIT_ID;
+        ?>
+
+        @foreach($benefit as $key => $value)
         <div class="col-sm-6 col-lg-3">
             <div class="form-group form-checkbox">
-                <input type="checkbox" class="" id="BENEFIT_ID_2" name="BENEFIT_ID[]" value="2">
-                <label for="BENEFIT_ID_2"> Chế độ bảo hiểm</label>
+                <input type="checkbox"  name="BENEFIT_ID[]" value="{{ $key }}">
+                <label for="{{ $key }}"> {{ $value }}</label>
             </div>
         </div>
-        <div class="col-sm-6 col-lg-3">
-            <div class="form-group form-checkbox">
-                <input type="checkbox" class="" id="BENEFIT_ID_3" name="BENEFIT_ID[]" value="3">
-                <label for="BENEFIT_ID_3"> Du Lịch</label>
-            </div>
-        </div>
-        <div class="col-sm-6 col-lg-3">
-            <div class="form-group form-checkbox">
-                <input type="checkbox" class="" id="BENEFIT_ID_8" name="BENEFIT_ID[]" value="8">
-                <label for="BENEFIT_ID_8"> Chế độ thưởng</label>
-            </div>
-        </div>
-        <div class="col-sm-6 col-lg-3">
-            <div class="form-group form-checkbox">
-                <input type="checkbox" class="" id="BENEFIT_ID_9" name="BENEFIT_ID[]" value="9">
-                <label for="BENEFIT_ID_9"> Chăm sóc sức khỏe</label>
-            </div>
-        </div>
-        <div class="col-sm-6 col-lg-3">
-            <div class="form-group form-checkbox">
-                <input type="checkbox" class="" id="BENEFIT_ID_10" name="BENEFIT_ID[]" value="10">
-                <label for="BENEFIT_ID_10"> Đào tạo</label>
-            </div>
-        </div>
-        <div class="col-sm-6 col-lg-3">
-            <div class="form-group form-checkbox">
-                <input type="checkbox" class="" id="BENEFIT_ID_11" name="BENEFIT_ID[]" value="11">
-                <label for="BENEFIT_ID_11"> Tăng lương</label>
-            </div>
-        </div>
-        <div class="col-sm-6 col-lg-3">
-            <div class="form-group form-checkbox">
-                <input type="checkbox" class="" id="BENEFIT_ID_1" name="BENEFIT_ID[]" value="1" >
-                <label for="BENEFIT_ID_1"> Laptop</label>
-            </div>
-        </div>
-        <div class="col-sm-6 col-lg-3">
-            <div class="form-group form-checkbox">
-                <input type="checkbox" class="" id="BENEFIT_ID_4" name="BENEFIT_ID[]" value="4" >
-                <label for="BENEFIT_ID_4">Phụ cấp</label>
-            </div>
-        </div>
-        <div class="col-sm-6 col-lg-3">
-            <div class="form-group form-checkbox">
-                <input type="checkbox" class="" id="BENEFIT_ID_5" name="BENEFIT_ID[]" value="5" >
-                <label for="BENEFIT_ID_5"> Xe đưa đón</label>
-            </div>
-        </div>
-        <div class="col-sm-6 col-lg-3">
-            <div class="form-group form-checkbox">
-                <input type="checkbox" class="" id="BENEFIT_ID_6" name="BENEFIT_ID[]" value="6" >
-                <label for="BENEFIT_ID_6"> Du lịch nước ngoài</label>
-            </div>
-        </div>
-        <div class="col-sm-6 col-lg-3">
-            <div class="form-group form-checkbox">
-                <input type="checkbox" class="" id="BENEFIT_ID_7" name="BENEFIT_ID[]" value="7" >
-                <label for="BENEFIT_ID_7"> Đồng phục</label>
-            </div>
-        </div>
-        <div class="col-sm-6 col-lg-3">
-            <div class="form-group form-checkbox">
-                <input type="checkbox" class="" id="BENEFIT_ID_12" name="BENEFIT_ID[]" value="12" >
-                <label for="BENEFIT_ID_12"> Công tác phí</label>
-            </div>
-        </div>
-        <div class="col-sm-6 col-lg-3">
-            <div class="form-group form-checkbox">
-                <input type="checkbox" class="" id="BENEFIT_ID_13" name="BENEFIT_ID[]" value="13" >
-                <label for="BENEFIT_ID_13"> Phụ cấp thâm niên</label>
-            </div>
-        </div>
-        <div class="col-sm-6 col-lg-3">
-            <div class="form-group form-checkbox">
-                <input type="checkbox" class="" id="BENEFIT_ID_14" name="BENEFIT_ID[]" value="14" >
-                <label for="BENEFIT_ID_14"> Nghỉ phép năm</label>
-            </div>
-        </div>
-        <div class="col-sm-6 col-lg-3">
-            <div class="form-group form-checkbox">
-                <input type="checkbox" class="" id="BENEFIT_ID_15" name="BENEFIT_ID[]" value="15" >
-                <label for="BENEFIT_ID_15"> CLB thể thao</label>
-            </div>
-        </div>
+        @endforeach
+        
     </div>
 </div>
 

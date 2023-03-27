@@ -287,7 +287,9 @@
 
                             <div class="item-cvcht">
                                 <div class="col-sm-3">
-                                    <img src="img/dash-board/i2.png" alt="">
+
+                                    <a href="{{ asset(Auth::user()->cv) }}" download><img src="img/dash-board/i2.png" alt=""></a>
+                                    
                                 </div>
                             </div>
                             <span><a href="{{ asset(Auth::user()->cv) }}">Xem cv</a> </span>

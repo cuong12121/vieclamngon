@@ -133,6 +133,9 @@ define('ADDRESS', [
 
 
 
+
+
+
 define('LIST_JOB', [
 
 	"51"=>"An Ninh / Bảo Vệ",
@@ -219,6 +222,26 @@ define('CATEGORY', [
 
 ]);
 
+define('BENEFIT_ID', [
+
+    '2'=>'Chế độ bảo hiểm', 
+    '3'=>'Du Lịch',
+    '4'=>'Chế độ thưởng',
+    '5'=>'Chăm sóc sức khỏe',
+    '6'=>'Đào tạo',
+    '7'=>'Tăng lương',
+    '8'=>'Laptop',
+    '9'=>'Phụ cấp',
+    '10'=>'Xe đưa đón',
+    '11'=>'Du lịch nước ngoài',
+    '12'=>'Đồng phục',
+    '13'=>'Công tác phí',
+    '14'=>'Phụ cấp thâm niên',
+    '15'=>'Nghỉ phép năm',
+    '16'=>'CLB thể thao',
+
+]);
+
 define('SALARY', [
     'Dưới 3 triệu',
    '3 - 5 triệu',
@@ -266,6 +289,15 @@ define('COMPANY_TYPE', [
     'Liên doanh',
     'Nhà nước',
     'Trách nhiệm hữu hạn',
+
+]);
+
+define('TYPE', [
+    'Nhân viên chính thức',
+    'Bán thời gian',
+    'Thời vụ - Nghề tự do',
+    'Thực tập',
+   
 
 ]);
 
