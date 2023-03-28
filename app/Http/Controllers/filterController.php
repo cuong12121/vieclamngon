@@ -20,12 +20,11 @@ class filterController extends Controller
 
         $industry = $request->industry;
 
-        
-        $job = DB::table('employer_registers')->join('job', 'employer_registers.id', '=', 'job.employer_id')->join('employ_info', 'employer_registers.id', '=', 'employ_info.employ_id')->where('job.title','LIKE', '%'. $datas .'%')->OrWhere('employ_info.name', 'LIKE', '%' . $datas . '%')->select('job.title', 'job.id', 'employ_info.name', 'employ_info.logo', 'employ_info.links', 'job.link', 'job.salary', 'job.address_job')->get();
+
+        $job = DB::table('employer_registers')->join('job', 'employer_registers.id', '=', 'job.employer_id')->join('employ_info', 'employer_registers.id', '=', 'employ_info.employ_id')->where('job.title','LIKE', '%'. $datas .'%')->OrWhere('employ_info.name', 'LIKE', '%' . $datas . '%')->OrWhere('job.title', 'LIKE', '%' . $datas . '%')->select('job.title', 'job.id', 'employ_info.name', 'employ_info.logo', 'employ_info.links', 'job.link', 'job.salary', 'job.address_job')->get();
+
+        dd($job);
        
-
-
-
         return view('frontend.filter', compact('job'));
     }
 
@@ -36,10 +35,9 @@ class filterController extends Controller
         $address = $request->location;
 
         $industry = $request->industry;
-
         
 
-        $job = DB::table('employer_registers')->join('job', 'employer_registers.id', '=', 'job.employer_id')->join('employ_info', 'employer_registers.id', '=', 'employ_info.employ_id')->where('job.title','LIKE', '%'. $datas .'%')->where('job.address_job', $address)->where('career', $industry)->OrWhere('employ_info.name', 'LIKE', '%' . $datas . '%')->where('job.address_job', $address)->where('career', $industry)->get();
+        $job = DB::table('employer_registers')->join('job', 'employer_registers.id', '=', 'job.employer_id')->join('employ_info', 'employer_registers.id', '=', 'employ_info.employ_id')->OrWhere('job.title','LIKE', '%'. $datas .'%')->OrWhere('job.address_job', $address)->OrWhere('career', $industry)->OrWhere('employ_info.name', 'LIKE', '%' . $datas . '%')->OrWhere('job.address_job', $address)->OrWhere('career', $industry)->get();
 
         return view('frontend.filter', compact('job'));
     }
