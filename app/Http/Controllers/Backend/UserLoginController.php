@@ -124,11 +124,11 @@ class UserLoginController extends Controller
 
     public function SearchUserJob(Request $request)
     {
-        $data = '';
+        $job    = $request->jobs;
         if(!empty($request->search)){
             $search =  trim(strip_tags($request->search));
 
-            $job    = $request->jobs;
+            
 
             if($job==='0'){
 
@@ -139,6 +139,10 @@ class UserLoginController extends Controller
 
             }
 
+        }
+        else{
+
+            $data_search = DB::table('users')->join('application', 'users.id', '=', 'application.users_id')->select('users.id','users.surname', 'users.name', 'users.workplace', 'application.desired_salary')->where('users.jobs', $job)->get();
         }
 
         return view('employer.list_ungvien', compact('data_search'));

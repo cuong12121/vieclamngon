@@ -595,7 +595,9 @@
                                     </div>
                                 </div>
                                 <div class="form-group form-submit form-continue form-back-continue">
-                                    <a class="btn-gradient btn-save" href="javascript:void(0);" onclick="is_Filter_Form2()">Tiếp tục</a>
+
+                                    <button type="submit" class="btn-gradient">Tiếp tục</button>
+                                   
                                 </div>
                             </div>
                         </div>
