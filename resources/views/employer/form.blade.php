@@ -20,6 +20,18 @@
                     </div>
                     
                 </div>
+                
+                <div class="flex items-center justify-between px-[11px] py-[18px] h-8 rounded-[3px] border border-grey-bright">
+                    <div class="flex-1 text-[13px] font-semibold"><a href="{{ route('user-dashboard') }}">Cổng người tìm việc</a> </div>
+                    <button class="text-primary font-semibold text-[10px]"><a href="{{ route('user-dashboard') }}">Chuyển</a> </button>
+                </div>
+                <div>
+                    <div class="flex items-center cursor-pointer select-none dropdown-wrapper">
+                        
+                        <div class="pl-4 select-none font-semibold text-13 leading-[24px] tracking-[-0.5px] py-2">Tổng quan</div>
+                    </div>
+                    
+                </div>
                 <div>
                     <div class="flex items-center cursor-pointer select-none dropdown-wrapper">
                         
