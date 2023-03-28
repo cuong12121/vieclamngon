@@ -63,7 +63,7 @@
                                 <div class="ml-[10px] text-13 leading-[16.5px] tracking-[-0.5px]"><a href="{{ route('form_recruit') }}">Tạo tin tuyển dụng</a></div>
                             </div>
                         </div>
-                        <div class="py-2 select-none cursor-pointer hover:bg-pale-turquoise hover:bg-opacity-30 bg-pale-turquoise">
+                        <div class="py-2 select-none cursor-pointer hover:bg-pale-turquoise hover:bg-opacity-30">
                             <div id="" class="flex items-center" style="margin-left: 28px;">
                                 <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
                                     <g clip-path="url(#clip0)">
@@ -95,7 +95,7 @@
                 </div>
                 <div class="child-wrapper overflow-hidden transition-all ease-in-out duration-300 " style="height: 98px;">
                     <div class="dropdown-child">
-                        <div class="py-2 select-none cursor-pointer hover:bg-pale-turquoise hover:bg-opacity-30">
+                        <div class="py-2 select-none cursor-pointer hover:bg-pale-turquoise hover:bg-opacity-30 bg-pale-turquoise">
                             <div id="" class="flex items-center" style="margin-left: 28px;">
                                 <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
                                     <g clip-path="url(#clip0)">
@@ -264,15 +264,15 @@
                                 <table>
                                     <thead>
                                         <tr>
-                                            <th width="1%"></th>
-                                            <th width="12%">Chức danh</th>
+                                            
+                                            <th width="20%">Chức danh</th>
                                             <th width="12%" onclick="setTypeSort('posting', 'asc', 3)">Ngày đăng
                                             </th>
                                             <th width="10%" onclick="setTypeSort('posting', 'asc', 4)">Hết hạn</th>
-                                            <th width="10%" onclick="setTypeSort('posting', 'asc', 0)">Lượt Xem</th>
-                                            <th width="10%" onclick="setTypeSort('posting', 'asc', 1)">Lượt Nộp</th>
+                                            
+                                            <th width="10%" onclick="setTypeSort('posting', 'asc', 1)">Cv nộp</th>
                                            <!--  <th width="10%">CV Gợi Ý</th> -->
-                                            <th width="15%">Nổi bật</th>
+                                           
                                            
                                         </tr>
                                     </thead>
@@ -280,29 +280,26 @@
                                         @if(!empty($job))
                                         @foreach($job as $jobs)
                                         <tr>
-                                            <td style="width: 20%;">
-                                               
-                                            </td>
+                                           
                                             <td >
                                                 <a href="{{ route('job_details', [$jobs->link, $jobs->id]) }}" target="_blank">{{ $jobs->title}}</a>
                                             </td>
                                             <td >
                                                 {{ $jobs->created_at}}
                                             </td>
-                                            <td >
-                                                 {{ $jobs->deadline}}
-                                            </td>
+                                           
                                             <td>
-                                                0
+                                                {{ $jobs->deadline }}
                                             </td>
+
+                                            @if(!empty($jobs->user_id))
+                                            
                                              <td>
-                                                0
+                                                <a href="{{ route('viewCvEmployer', $jobs->user_id) }}">Xem</a>
                                             </td>
+                                            @endif
 
-                                            <td class="cb-text-center">
-
-                                                <a href="javascript:void(0)" onclick="updateActiveJob({{  $jobs->id }},  {{ $jobs->active==0?1:0  }})">{{ $jobs->active==0?'Tắt':'Bật'  }}</a>
-                                            </td>
+                                          
                                             
                                            
                                         </tr>

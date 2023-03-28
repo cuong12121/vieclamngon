@@ -116,30 +116,91 @@
                 
             </div>
             <div class="right-wrap">
-                                <div class="main-login dropdown logged"><a href="javascript:void(0)" title="cuong"> </a>
-                    <div class="dropdown-menu">
-                        <ul>
-                            <li> <a href="https://careerbuilder.vn/vi/employers/hrcentral/accounts"> <em class="fa fa-cog"></em>Tài khoản</a></li>
-                            <li> <a href="https://careerbuilder.vn/vi/employers/logout"> <em class="fa fa-sign-out"> </em>Thoát</a></li>
-                        </ul>
-                    </div>
-                </div>
-                                <div class="main-noti" style="display: none"><a href="javascript:void(0);"> <span class="mdi mdi-cart"></span></a></div>
-                <!-- <div class="main-language dropdown">
-                    <div class="dropdown-toggle">
-                        <p>VI<em class="mdi mdi-chevron-down"></em></p>
-                    </div>
-                    <div class="dropdown-menu">
-                        <div class="item active">
-                            <a class="dropdown-item" href="javascript:void(0);" title="Change language">VI</a>
-                        </div>
-                        <div class="item">
-                            <a class="dropdown-item" href="https://careerbuilder.vn/en/employers/postjobs" title="Change language">EN</a>
-                        </div>
-                    </div>
-                </div> -->
-                <div class="main-candidates"><a href="{{ route('registerClientUser') }}"><em class="fa fa-external-link"></em>
-                        <h4>Dành cho Ứng Viên</h4></a></div>
+                  @if(!Auth::guard('employer_register')->check())
+                            <div class="main-login dropdown">
+                                @if (Auth::guard('employer_register')->check()) 
+                            
+                                <div class="titles-login"><a href="{{ route('user-dashboard') }}">Xin chào {{ Auth::guard('employer_register')->name }}</a></div>
+
+                            
+                                @else
+
+                                    <div class="title-login"><a href="javascript:;" title="Đăng nhập">Đăng nhập</a></div>
+
+                                
+                                @endif
+
+                               
+                                 <div class="dropdown-menu">
+                                    <div class="login-wrapper">
+                                       <form method="post" action="{{ route('loginEmployer') }}" id="frm_login_header">
+                                          @csrf
+                                          <div class="row">
+                                             <div class="form-group col-12">
+                                                <input type="text" placeholder="Email/Tên đăng nhập"  autocomplete="off"  id="username_box" name="email">
+                                             </div>
+                                             <div class="form-group col-8">
+                                                <input type="password" placeholder="Mật khẩu" id="password_box" name="password" autocomplete="off">
+                                             </div>
+                                             <div class="form-group col-4">
+                                                <input type="hidden" name="csrf_token_login" value= "7e7e04f06310c940562b558142ad1436eee6c56ad49b67af45cb527256c5f388" />
+                                                <button type="submit">Đăng nhập</button>
+                                             </div>
+                                          </div>
+                               
+                                          <a class="forget-password register" href="">Đăng ký</a>
+                                       </form>
+                                    </div>
+                                 </div>
+                            </div>
+                            @endif
+
+                            <!-- <div class="main-register"><a href="{{ route('register_employer') }}">Đăng ký</a></div> -->
+                            <div class="main-noti" style="display: none"><a href="javascript:void(0);"> <span class="mdi mdi-cart"></span></a></div>
+
+
+                             @if(Auth::guard('employer_register')->check())
+
+                            <div class="main-language dropdown">
+                                 <div class="dropdown-toggle">
+                                    <p>Xin chào {{ Auth::guard('employer_register')->user()->name_company }}</p>
+                                </div> 
+                                <div class="dropdown-menu">
+
+                                    <div class="item">
+                                       <a class="dropdown-item" href="{{ route('index_employer') }}" title="Change language">Dashboard</a>
+                                    </div>
+                                    
+                                    <div class="item">
+                                       <a class="dropdown-item" href="{{ route('employers_info') }}" title="Change language">Thông tin Doanh Nghiệp</a>
+                                    </div>
+                                    <div class="item">
+                                       <a class="dropdown-item" href="{{ route('employers-info-list') }}" title="Change language">Quản lý đăng tuyển</a>
+                                    </div>
+
+                                    
+
+                                    <div class="item">
+                                       <a class="dropdown-item" href="{{ route('employer-logout') }}" title="Change language">Logout</a>
+                                    </div>
+
+                                </div>
+                            </div>
+
+            
+                            @endif
+
+                            
+
+
+                            <div class="main-candidates">
+                                <a href="{{ route('registerClientUser') }}">
+                                    
+                                    <h4>Dành cho Ứng Viên</h4>
+                                 </a>
+                            </div>
+
+                                          
             </div>
         </div>
     </div>

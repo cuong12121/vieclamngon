@@ -18292,12 +18292,8 @@ header.header-dashboard .mobile-menu .menu .menu-logged ul li.dropdown-mobile .d
 
 					</tr>
 
-					<?php 
-						dd($data_cv['info']);
-					?>
-					<tr>
-						<td><a href="">xem cv pdf</a></td>
-					</tr>
+					
+					
 				</tbody>
 
 			</table>			

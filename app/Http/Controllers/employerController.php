@@ -76,4 +76,15 @@ class employerController extends Controller
         }
         return view('employer.employer_login');
     }
+
+    public function viewCvApply()
+    {
+
+
+        $job =    DB::table('apply_jobs')->join('job', 'apply_jobs.job_id', '=', 'job.id')->select('job.id', 'job.title', 'job.link', 'job.deadline', 'apply_jobs.user_id', 'job.created_at')->get();
+        
+        return view('employer.cv_apply', compact('job'));
+
+        
+    }
 }
