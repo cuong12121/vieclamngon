@@ -292,7 +292,7 @@
                                     
                                 </div>
                             </div>
-                            <span><a href="{{ asset(Auth::user()->cv) }}">Xem cv</a> </span>
+                            <span><a target="_blank" href="{{ asset(Auth::user()->cv) }}">Xem cv</a> </span>
                             
                             <!-- <span><a href="{{ asset(Auth::user()->cv) }}" download >tải cv</a> </span> -->
 

@@ -625,39 +625,7 @@
             <header class="container-fluid">
                 <h2 class="section-title">Kết nối với vieclamngon</h2>
             </header>
-            <div class="col-sm-6 col-md-3 socialWrapper setfive">
-                <div class="col-xs-2 col-sm-2">
-                    <a class="socialIcon hvr-float-shadow" href="https://www.facebook.com/eurowindow.tuyendung/?fref=ts" target="_blank">
-                        <i class="fa fa-facebook fa-brands fa-facebook-f"></i>
-                         
-                    </a>
-                </div>
-                <div class="col-xs-2 col-sm-2">
-                    <a class="socialIcon hvr-float-shadow" href="https://www.linkedin.com/in/tuyen-dung-eurowindow-b0974538/" target="_blank">
-
-                        <i class="fa fa-linkedin fa-brands fa-linkedin" aria-hidden="true"></i>
-
-
-                    </a>
-                </div>
-                <div class="col-xs-2 col-sm-2">
-                    <a class="socialIcon hvr-float-shadow" href="https://www.youtube.com/watch?v=2Cd0a7YlMiA" target="_blank"><i class="fa fa-youtube fa-brands fa-youtube"></i></a>
-                </div>
-                <div class="col-xs-2 col-sm-2">
-                    <a class="socialIcon hvr-float-shadow" href="" target="_blank">
-                        
-                        <i class="fa fa-twitter fa-brands fa-twitter"></i>
-                    </a>
-                </div>
-                <div class="col-xs-2 col-sm-2">
-
-                    <a class="socialIcon hvr-float-shadow" href="" target="_blank">
-                        <i class="fa fa-instagram fa-instagram fa-brands fa-instagram"></i>
-                    </a>
-                </div>
-            </div>
         </div>
-
 
         <footer>
             <div class="container">
@@ -767,19 +735,7 @@
 
 
         <script>
-        // document.getElementById("save-button").addEventListener("click", function() {
-        //     // Get the image URL
-        //     var $temp = $("<input>");
-        //     var $url = 'https://dienmaynguoiviet.vn/uploads/product/1672817564_RT35K5982DX-km1.jpg';  
-            
-        //     $("body").append($temp);
-        //     $temp.val($url).select();
-        //     document.execCommand("copy");
-        //     $temp.remove();
-         
-        //     // Show a success message
-        //     alert("Image saved to clipboard");
-        // });
+      
 
             async function getImageBlobFromUrl(url) {
               const fetchedImageData = await fetch(url)
@@ -787,25 +743,7 @@
               return blob
             }
 
-            // document.querySelector('.copy-button').addEventListener('click', async () => {
-            //   const src = 'https://png.pngtree.com/png-vector/20211220/ourlarge/pngtree-tree-and-roots-logo-png-image_4077826.png';
-            //   try {
-            //     const blob = await getImageBlobFromUrl(src)
-            //     await navigator.clipboard.write([
-            //       new ClipboardItem({
-            //         [blob.type]: blob
-            //       })
-            //     ])
-            //     alert('Image copied to clipboard!')
-            //   } catch (err) {
-            //     console.error(err.name, err.message);
-            //     alert('There was an error while copying image to clipboard :/')
-            //   }
-            // })
-
-
-
-            
+           
         </script>
 
 

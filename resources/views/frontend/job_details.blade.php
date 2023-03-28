@@ -32,6 +32,11 @@
     <link rel="stylesheet" type="text/css" href="{{ asset('css/search-result-list-detail.css') }}">
     @include('frontend.layout.search')
 
+    <style type="text/css">
+        .apply-now-banner{
+            height: 48px !important;
+        } 
+    </style>
    
     <section class="search-result-list-detail template-2">
         <div class="container">
@@ -42,6 +47,8 @@
                         <div class="apply-now-content">
                             <div class="job-desc">
                                 <h1 class="title">{{ @$data->title }}</h1>
+
+
                                 <a class="employer job-company-name" href="{{ route('employ-details',  $data->link) }}">{{ @$data->name }}</a>  
                             </div>
 
@@ -636,6 +643,8 @@
 
                                 @foreach($jobtt as $val)
 
+                                
+
                                 <div class="job-item">
                                     <div class="figure">
                                         <div class="image"> <a href="{{ route('job_details', [$val->link, $val->id]) }}" target="_blank" title="Hệ thống nhà hàng Nhật Tokyo Deli"> <img  class="lazy-bg" data-src="{{ asset('picture/'.basename(str_replace('..','',$val->logo))) }}" src="{{ asset('images/1653372151_data-analyst-careerbuilder.jpg') }}" alt="{{ $val->title }}"> </a> </div>
@@ -643,7 +652,7 @@
                                             <div class="timeago"></div>
                                             <div class="title"> <a class="job_link" href="{{ route('job_details', [$val->link, $val->id]) }}" target="_blank" title="{{ $val->title }}"> {{ $val->title }}</a> </div>
                                             <div class="caption">
-                                                <a class="company-name" href="{{ route('employ-details', $val->links) }}" title="{{ $val->name }}">{{ $val->name }}</a>
+                                                <a class="company-name" href="{{ !empty($val->links)?route('employ-details', $val->links):'javascript:void(0)' }}" title="{{ $val->name }}">{{ $val->name }}</a>
                                                 <p class="salary">thương lượng</p>
                                                 <div class="location">
                                                     

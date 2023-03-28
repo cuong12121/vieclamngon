@@ -18288,8 +18288,18 @@ header.header-dashboard .mobile-menu .menu .menu-logged ul li.dropdown-mobile .d
 				<tbody>
 					<tr>
 						<td><img src="https://static.careerbuilder.vn/themes/cv_tool/images/avatar.jpg"></td>
+
+
+					</tr>
+
+					<?php 
+						dd($data_cv['info']);
+					?>
+					<tr>
+						<td><a href="">xem cv pdf</a></td>
 					</tr>
 				</tbody>
+
 			</table>			
 		</div>
 		<div class="name">

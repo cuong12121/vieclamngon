@@ -78,7 +78,7 @@
                     <div class="left-wrap">
                         <div class="button-hambuger"><span class="mdi mdi-menu"></span></div>
 
-                        @if(\Request::route()->getName()=='login-users'||\Request::route()->getName()=='registerClientUser'||\Request::route()->getName()=='job_details'||\Request::route()->getName()=='all_job')
+                        @if(\Request::route()->getName()=='login-users'||\Request::route()->getName()=='registerClientUser'||\Request::route()->getName()=='job_details'||\Request::route()->getName()=='all_job'||\Request::route()->getName()=='filters')
                         <div class="logo"><a href="{{ route('home') }}  " title="Tuyển dụng & Tìm kiếm việc làm nhanh" ><img src="{{ asset('images/template/logo/logo.png') }}" alt="Tuyển dụng & Tìm kiếm việc làm nhanh"></a></div>
 
                         @else
@@ -96,7 +96,7 @@
                        
 
 
-                        @if(\Request::route()->getName()=='login-users'||\Request::route()->getName()=='registerClientUser'||\Request::route()->getName()=='job_details'||\Request::route()->getName()=='all_job')
+                        @if(\Request::route()->getName()=='login-users'||\Request::route()->getName()=='registerClientUser'||\Request::route()->getName()=='job_details'||\Request::route()->getName()=='all_job'||\Request::route()->getName()=='filters')
                         <div class="main-login dropdown">
                           
 
