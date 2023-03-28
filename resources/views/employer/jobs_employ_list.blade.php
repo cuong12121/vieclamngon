@@ -264,7 +264,7 @@
                                 <table>
                                     <thead>
                                         <tr>
-                                            <th width="1%"></th>
+                                            
                                             <th width="12%">Chức danh</th>
                                             <th width="12%" onclick="setTypeSort('posting', 'asc', 3)">Ngày đăng
                                             </th>
@@ -280,9 +280,7 @@
                                         @if(!empty($job))
                                         @foreach($job as $jobs)
                                         <tr>
-                                            <td style="width: 20%;">
-                                               
-                                            </td>
+                                           
                                             <td >
                                                 <a href="{{ route('job_details', [$jobs->link, $jobs->id]) }}" target="_blank">{{ $jobs->title}}</a>
                                             </td>
