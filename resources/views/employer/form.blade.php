@@ -5,6 +5,9 @@
         .formality select{
             height: 56px;
         }
+        .font-semibold{
+            text-align: center;
+        }
     </style>
 
     <link rel="stylesheet" type="text/css" href="{{ asset('css/employ/autocomplete-sugest.css') }}"> 
