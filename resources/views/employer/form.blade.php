@@ -582,7 +582,7 @@
                                                 ?>
                                             @foreach($benefit as $key => $value)
                                             <div class="col-sm-6 col-lg-3">
-                                                <div class="form-group form-checkbox">
+                                                <div class="">
                                                     <input type="checkbox"  name="BENEFIT_ID[]" value="{{ $key }}">
                                                     <label for="{{ $key }}"> {{ $value }}</label>
                                                 </div>
