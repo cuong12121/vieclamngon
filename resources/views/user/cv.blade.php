@@ -18302,11 +18302,8 @@ header.header-dashboard .mobile-menu .menu .menu-logged ul li.dropdown-mobile .d
 	<ul class="contact">
 		<li><i class="fa fa-phone"></i> {{ @json_decode($data_cv['info'])->mobile  }} </li>
 
-		@if(Route::currentRouteName() == 'viewCvadmin')
-			<li><i class="fa fa-envelope"></i> {{ $email  }} </li>
-		@else	
-			<li><i class="fa fa-envelope"></i> {{ json_decode($data_cv['info'])->email??Auth::user()->email  }} </li>
-		@endif
+		<li><i class="fa fa-envelope"></i> {{ $email  }} </li>
+		
 		
 		<li><i class="fa fa-home"></i> {{   @json_decode($data_cv['info'])->address }}</li>
 	</ul>

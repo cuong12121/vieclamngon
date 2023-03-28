@@ -124,6 +124,8 @@ class adminController extends Controller
 
         $email = (User::find($id))->email;
 
+       
+
         return view('user.cv', compact('data_cv','email'));
     }
 
