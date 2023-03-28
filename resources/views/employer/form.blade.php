@@ -1,6 +1,12 @@
     @extends('frontend.layout.appfe')
     @section('content')   
 
+    <style type="text/css">
+        .formality select{
+            height: 56px;
+        }
+    </style>
+
     <link rel="stylesheet" type="text/css" href="{{ asset('css/employ/autocomplete-sugest.css') }}"> 
     <script src='https://cdn.jsdelivr.net/npm/@goongmaps/goong-js@1.0.6/dist/goong-js.js'></script>
     <link href='https://cdn.jsdelivr.net/npm/@goongmaps/goong-js@1.0.6/dist/goong-js.css' rel='stylesheet' />
