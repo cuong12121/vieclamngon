@@ -311,7 +311,7 @@
                         </div>
                     </div>
                     <div class="sticker-jobs">
-                        <div class="icons"><em class="material-icons">access_alarms</em></div>
+                        <div class="icons"></div>
                         <div class="content">
                             <p>Gửi tôi việc làm tương tự</p>
                         </div>
