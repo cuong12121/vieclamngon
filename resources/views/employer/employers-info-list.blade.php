@@ -308,7 +308,7 @@
                                              <td>
                                                 <?php 
 
-                                                    $apply = App\Models\job::select('id')->where('job_id', $jobs->id)->get();
+                                                    $apply = DB::table('apply_jobs')->select('id')->where('job_id', $jobs->id)->get();
                                                 ?>
 
                                                 {{  !empty($apply)?count($apply):0  }}
