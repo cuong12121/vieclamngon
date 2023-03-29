@@ -147,7 +147,7 @@
         <div class="box-manage-job-posting">
             <div class="heading-manage">
                 <div class="left-heading">
-                    <h1 class="title-manage">Quản Lý Tuyển Dụng</h1>
+                    <h1 class="title-manage">Quản Lý Tin</h1>
                     <div class="button"><a class="btn-gradient" href="{{ route('form_recruit') }}">Tạo Mẫu Tuyển Dụng</a></div>
                 </div>
                 <!-- <div class="right-heading"><a href="https://careerbuilder.vn/vi/employers/faq" target="_blank" class="support">Hướng dẫn</a></div> -->
@@ -273,6 +273,8 @@
                                             <th width="10%" onclick="setTypeSort('posting', 'asc', 1)">Lượt Nộp</th>
                                            <!--  <th width="10%">CV Gợi Ý</th> -->
                                             <th width="15%">Nổi bật</th>
+                                            <th width="10%">Sửa</th>
+                                            <th width="10%">Xóa</th>
                                            
                                         </tr>
                                     </thead>
@@ -301,6 +303,8 @@
 
                                                 <a href="javascript:void(0)" onclick="updateActiveJob({{  $jobs->id }},  {{ $jobs->active==0?1:0  }})">{{ $jobs->active==0?'Tắt':'Bật'  }}</a>
                                             </td>
+                                            <td> <a href="#">Sửa</a> </td>
+                                            <td> <a href="#">Xóa</a> </td>
                                             
                                            
                                         </tr>

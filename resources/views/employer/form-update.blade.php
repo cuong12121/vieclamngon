@@ -144,7 +144,7 @@
                     <div class="box-manage-job-posting">
                         <div class="heading-manage">
                             <div class="left-heading">
-                                <h1 class="title-manage">Đăng Tuyển Dụng</h1>
+                                <h1 class="title-manage">Sửa tin Tuyển Dụng</h1>
                             </div>
                         </div>
                         <form name="frmEditJob" id="frmEditJob"  method="post" action="{{ route('postJob') }}">
@@ -171,7 +171,7 @@
                                         <div class="row">
                                             <div class="col-lg-6">
                                                 <div class="form-group form-text">
-                                                    <input type="text"id="job_title" class="keyword" name="job_title" value="{{ @$data->title }}" onblur="loadTagKey()" placeholder="Chức danh tuyển dụng">
+                                                    <input type="text"id="job_title" class="keyword" name="job_title" value="" onblur="loadTagKey()" placeholder="Chức danh tuyển dụng">
                                                     <span class="form-error"></span>
                                                 </div>
                                             </div>
@@ -186,7 +186,7 @@
                                         <div class="row">
                                             <div class="col-lg-3">
                                                 <div class="form-group form-text">
-                                                    <input type="text" id="job_code" name="job_code" maxlength="12" value="{{ @$data->code }}" placeholder="Mã công việc">
+                                                    <input type="text" id="job_code" name="job_code" maxlength="12" value="" placeholder="Mã công việc">
                                                 </div>
                                             </div>
                                             <div class="col-lg-6">
@@ -201,7 +201,7 @@
                                         </div>
                                         <div class="form-group form-editor" id="div_jobdesc">
                                             <label>Mô Tả Công Việc <font style="color: red">*</font></label>
-                                            <textarea cols="80" rows="5" id="job_desc" name="job_desc" class="editor">{{ @$data->detail }}</textarea>
+                                            <textarea cols="80" rows="5" id="job_desc" name="job_desc" class="editor"></textarea>
                                             <span class="form-error"></span>
                                             <div class="note">
                                                 <p>Nhỏ hơn 10 000 kí tự</p>
@@ -209,7 +209,7 @@
                                         </div>
                                         <div class="form-group form-editor" id="div_jobreq">
                                             <label>Yêu cầu công việc <font style="color: red">*</font></label>
-                                            <textarea cols="80" rows="5" id="job_req" name="job_req" class="editor">{{ @$data->requirements }}</textarea>
+                                            <textarea cols="80" rows="5" id="job_req" name="job_req" class="editor"></textarea>
                                             <span class="form-error"></span>
                                             <div class="note">
                                                 <p>Nhỏ hơn 10 000 kí tự</p>
@@ -217,7 +217,7 @@
                                         </div>
                                         <div class="form-group form-editor" id="div_jobreq">
                                             <label>Quyền lợi ứng viên<font style="color: red">*</font></label>
-                                            <textarea cols="80" rows="5" id="rights" name="rights" class="editor">{{ @$data->rights }}</textarea>
+                                            <textarea cols="80" rows="5" id="rights" name="rights" class="editor"></textarea>
                                             <span class="form-error"></span>
                                             <div class="note">
                                                 <p>Nhỏ hơn 10 000 kí tự</p>
@@ -228,27 +228,109 @@
                                                 <div class="form-group ">
                                                     <label>Ngành nghề <font style="color: red">*</font></label>
                                                     <select name="INDUSTRY_ID[]" data-placeholder="Chọn" id="select_industry_db" class="chosen-select-max-three" multiple>
-
-                                                        <?php 
-                                                            $list_job = LIST_JOB;
-                                                        ?>
-                                                        @foreach($list_job as $key =>$value)
-
-                                                        <option value="{{ $key }}" {{ !empty($data)&& $data->career===$key?'selected':'' }}>{{ $value }}</option>
-                                                           
-                                                        @endforeach
-                                                       
+                                                        <optgroup label="Bán hàng / Tiếp thị">
+                                                            <option value="4" >Tiếp thị / Marketing</option>
+                                                            <option value="30" >Bán lẻ / Bán sỉ</option>
+                                                            <option value="31" >Bán hàng / Kinh doanh</option>
+                                                            <option value="37" >Tiếp thị trực tuyến</option>
+                                                        </optgroup>
+                                                        <optgroup label="Chăm sóc sức khỏe">
+                                                            <option value="7" >Dược phẩm</option>
+                                                            <option value="56" >Y tế / Chăm sóc sức khỏe</option>
+                                                        </optgroup>
+                                                        <optgroup label="Dịch vụ">
+                                                            <option value="9" >Tư vấn</option>
+                                                            <option value="12" >Dịch vụ khách hàng</option>
+                                                            <option value="20" >Phi chính phủ / Phi lợi nhuận</option>
+                                                            <option value="24" >Luật / Pháp lý</option>
+                                                            <option value="32" >Bưu chính viễn thông</option>
+                                                            <option value="33" >Vận chuyển / Giao nhận /  Kho vận</option>
+                                                            <option value="44" >Lao động phổ thông</option>
+                                                            <option value="51" >An Ninh / Bảo Vệ</option>
+                                                        </optgroup>
+                                                        <optgroup label="Giáo dục / Đào tạo">
+                                                            <option value="13" >Giáo dục / Đào tạo</option>
+                                                            <option value="57" >Thư viện</option>
+                                                        </optgroup>
+                                                        <optgroup label="Hàng tiêu dùng">
+                                                            <option value="10" >Hàng gia dụng / Chăm sóc cá nhân</option>
+                                                            <option value="21" >Thực phẩm &amp; Đồ uống</option>
+                                                        </optgroup>
+                                                        <optgroup label="Hành chính / Nhân sự">
+                                                            <option value="3" >Hành chính / Thư ký</option>
+                                                            <option value="17" >Quản lý điều hành</option>
+                                                            <option value="22" >Nhân sự</option>
+                                                            <option value="38" >Biên phiên dịch</option>
+                                                        </optgroup>
+                                                        <optgroup label="Kế toán / Tài chính">
+                                                            <option value="2" >Kế toán / Kiểm toán</option>
+                                                            <option value="19" >Ngân hàng</option>
+                                                            <option value="23" >Bảo hiểm</option>
+                                                            <option value="46" >Chứng khoán</option>
+                                                            <option value="59" >Tài chính / Đầu tư</option>
+                                                        </optgroup>
+                                                        <optgroup label="Khách sạn / Du lịch">
+                                                            <option value="29" >Nhà hàng / Khách sạn</option>
+                                                            <option value="34" >Du lịch</option>
+                                                            <option value="60" >Hàng không</option>
+                                                        </optgroup>
+                                                        <optgroup label="Khoa học">
+                                                            <option value="5" >Nông nghiệp</option>
+                                                            <option value="36" >Thống kê</option>
+                                                            <option value="49" >Thủy sản / Hải sản</option>
+                                                            <option value="50" >Lâm Nghiệp</option>
+                                                            <option value="52" >Chăn nuôi / Thú y</option>
+                                                            <option value="53" >Thủy lợi</option>
+                                                            <option value="54" >Trắc địa / Địa Chất</option>
+                                                            <option value="61" >Hàng hải</option>
+                                                            <option value="69" >Công nghệ sinh học</option>
+                                                            <option value="70" >Công nghệ thực phẩm / Dinh dưỡng</option>
+                                                        </optgroup>
+                                                        <optgroup label="Kỹ thuật">
+                                                            <option value="14" >Cơ khí / Ô tô / Tự động hóa</option>
+                                                            <option value="16" >Môi trường</option>
+                                                            <option value="26" >Dầu khí</option>
+                                                            <option value="41" >Hóa học</option>
+                                                            <option value="48" >Điện / Điện tử / Điện lạnh</option>
+                                                            <option value="65" >Khoáng sản</option>
+                                                            <option value="71" >Bảo trì / Sửa chữa</option>
+                                                        </optgroup>
+                                                        <optgroup label="Máy tính / Công nghệ thông tin">
+                                                            <option value="1" >CNTT - Phần mềm</option>
+                                                            <option value="63" >CNTT - Phần cứng / Mạng</option>
+                                                        </optgroup>
+                                                        <optgroup label="Truyền thông / Media">
+                                                            <option value="11" >Mỹ thuật / Nghệ thuật / Thiết kế</option>
+                                                            <option value="15" >Giải trí</option>
+                                                            <option value="66" >Truyền hình / Báo chí / Biên tập</option>
+                                                            <option value="67" >Quảng cáo / Đối ngoại / Truyền Thông</option>
+                                                            <option value="68" >Tổ chức sự kiện</option>
+                                                        </optgroup>
+                                                        <optgroup label="Sản xuất">
+                                                            <option value="18" >Xuất nhập khẩu</option>
+                                                            <option value="25" >Sản xuất / Vận hành sản xuất</option>
+                                                            <option value="35" >Đồ gỗ</option>
+                                                            <option value="39" >Dệt may / Da giày / Thời trang</option>
+                                                            <option value="42" >Quản lý chất lượng (QA/QC)</option>
+                                                            <option value="43" >Thu mua / Vật tư</option>
+                                                            <option value="58" >An toàn lao động</option>
+                                                            <option value="64" >In ấn / Xuất bản</option>
+                                                        </optgroup>
+                                                        <optgroup label="Xây dựng">
+                                                            <option value="6" >Kiến trúc</option>
+                                                            <option value="8" >Xây dựng</option>
+                                                            <option value="28" >Bất động sản</option>
+                                                            <option value="47" >Nội ngoại thất</option>
+                                                        </optgroup>
+                                                        <optgroup label="Nhóm ngành khác">
+                                                            <option value="27" >Ngành khác</option>
+                                                            <option value="45" >Mới tốt nghiệp / Thực tập</option>
+                                                        </optgroup>
                                                     </select>
                                                     <span class="form-error error_select_industry_db_1" ></span>
                                                 </div>
                                             </div>
                                         </div>
-
-                                        <?php
-
-                                            $address_job = ADDRESS;
-
-                                        ?>
                                         <div id="post_job_location">
                                             <div class="item_post_job_location">
                                                 <div class="row">
@@ -259,12 +341,163 @@
                                                             </label>
                                                             <select name="LOCATION_ID[]"  class="select_location" >
                                                                 <option value="">Chọn</option>
-
-
-                                                                @foreach($address_job as $key => $value)
-                                                                <option value="4" {{ !empty($data)&& $data->address_job===$key?'selected':'' }}>{{ $value }}</option>
-                                                                @endforeach
-                                                                    
+                                                                <optgroup label="Việt Nam" >
+                                                                    <option value="4" >Hà Nội</option>
+                                                                    <option value="8" >Hồ Chí Minh</option>
+                                                                    <option value="76" >An Giang</option>
+                                                                    <option value="64" >Bà Rịa - Vũng Tàu</option>
+                                                                    <option value="781" >Bạc Liêu</option>
+                                                                    <option value="281" >Bắc Cạn</option>
+                                                                    <option value="240" >Bắc Giang</option>
+                                                                    <option value="241" >Bắc Ninh</option>
+                                                                    <option value="75" >Bến Tre</option>
+                                                                    <option value="650" >Bình Dương</option>
+                                                                    <option value="56" >Bình Định</option>
+                                                                    <option value="651" >Bình Phước</option>
+                                                                    <option value="62" >Bình Thuận</option>
+                                                                    <option value="78" >Cà Mau</option>
+                                                                    <option value="26" >Cao Bằng</option>
+                                                                    <option value="71" >Cần Thơ</option>
+                                                                    <option value="50" >Dak Lak</option>
+                                                                    <option value="1042" >Dak Nông</option>
+                                                                    <option value="511" >Đà Nẵng</option>
+                                                                    <option value="900" >Điện Biên</option>
+                                                                    <option value="1064" >Đồng Bằng Sông Cửu Long</option>
+                                                                    <option value="61" >Đồng Nai</option>
+                                                                    <option value="67" >Đồng Tháp</option>
+                                                                    <option value="59" >Gia Lai</option>
+                                                                    <option value="19" >Hà Giang</option>
+                                                                    <option value="351" >Hà Nam</option>
+                                                                    <option value="39" >Hà Tĩnh</option>
+                                                                    <option value="320" >Hải Dương</option>
+                                                                    <option value="31" >Hải Phòng</option>
+                                                                    <option value="780" >Hậu Giang</option>
+                                                                    <option value="18" >Hòa Bình</option>
+                                                                    <option value="321" >Hưng Yên</option>
+                                                                    <option value="901" >Khác</option>
+                                                                    <option value="58" >Khánh Hòa</option>
+                                                                    <option value="77" >Kiên Giang</option>
+                                                                    <option value="60" >Kon Tum</option>
+                                                                    <option value="1071" >KV Bắc Trung Bộ</option>
+                                                                    <option value="1069" >KV Đông Nam Bộ</option>
+                                                                    <option value="1070" >KV Nam Trung Bộ</option>
+                                                                    <option value="1072" >KV Tây Nguyên</option>
+                                                                    <option value="23" >Lai Châu</option>
+                                                                    <option value="25" >Lạng Sơn</option>
+                                                                    <option value="20" >Lào Cai</option>
+                                                                    <option value="63" >Lâm Đồng</option>
+                                                                    <option value="72" >Long An</option>
+                                                                    <option value="350" >Nam Định</option>
+                                                                    <option value="38" >Nghệ An</option>
+                                                                    <option value="30" >Ninh Bình</option>
+                                                                    <option value="68" >Ninh Thuận</option>
+                                                                    <option value="210" >Phú Thọ</option>
+                                                                    <option value="57" >Phú Yên</option>
+                                                                    <option value="52" >Quảng Bình</option>
+                                                                    <option value="510" >Quảng Nam</option>
+                                                                    <option value="55" >Quảng Ngãi</option>
+                                                                    <option value="33" >Quảng Ninh</option>
+                                                                    <option value="53" >Quảng Trị</option>
+                                                                    <option value="79" >Sóc Trăng</option>
+                                                                    <option value="22" >Sơn La</option>
+                                                                    <option value="66" >Tây Ninh</option>
+                                                                    <option value="36" >Thái Bình</option>
+                                                                    <option value="280" >Thái Nguyên</option>
+                                                                    <option value="37" >Thanh Hóa</option>
+                                                                    <option value="54" >Thừa Thiên- Huế</option>
+                                                                    <option value="73" >Tiền Giang</option>
+                                                                    <option value="1065" >Toàn quốc</option>
+                                                                    <option value="74" >Trà Vinh</option>
+                                                                    <option value="27" >Tuyên Quang</option>
+                                                                    <option value="70" >Vĩnh Long</option>
+                                                                    <option value="211" >Vĩnh Phúc</option>
+                                                                    <option value="29" >Yên Bái</option>
+                                                                </optgroup>
+                                                                >
+                                                                <option value="1098" >Banteay Meanchey</option>
+                                                                <option value="1096" >Battambang</option>
+                                                                <option value="1092" >Kampong Chhnang</option>
+                                                                <option value="1090" >Kampong Speu</option>
+                                                                <option value="1085" >Kampot</option>
+                                                                <option value="1088" >Kandal</option>
+                                                                <option value="1094" >Kâmpóng Thum, Cambodia</option>
+                                                                <option value="1084" >Kep</option>
+                                                                <option value="1091" >Koh Kong</option>
+                                                                <option value="1093" >Kratie</option>
+                                                                <option value="1102" >Mondulkiri</option>
+                                                                <option value="1104" >Otdar Meanchey</option>
+                                                                <option value="1103" >Pailin</option>
+                                                                <option value="1041" >Phnompenh</option>
+                                                                <option value="1105" >Preah Sihanouk</option>
+                                                                <option value="1099" >Preah Vihear</option>
+                                                                <option value="1089" >Prey Veng</option>
+                                                                <option value="1095" >Pursat</option>
+                                                                <option value="1101" >Rotanak Kiri</option>
+                                                                <option value="1097" >Siem Reap</option>
+                                                                <option value="1083" >Sihanoukville</option>
+                                                                <option value="1100" >Stung Treng</option>
+                                                                <option value="1087" >Svay Rieng</option>
+                                                                <option value="1082" >Tbong Khmum</option>
+                                                                </optgroup>
+                                                                >
+                                                                <option value="1018" >Seoul</option>
+                                                                </optgroup>
+                                                                >
+                                                                <option value="1034" >Chicago</option>
+                                                                <option value="1077" >Florida</option>
+                                                                <option value="1033" >Miami</option>
+                                                                <option value="1039" >San Diego</option>
+                                                                </optgroup>
+                                                                >
+                                                                <option value="1079" >Hồng Kông</option>
+                                                                </optgroup>
+                                                                >
+                                                                <option value="1318" >Khác</option>
+                                                                </optgroup>
+                                                                >
+                                                                <option value="1106" >Attapeu</option>
+                                                                <option value="1107" >Bokeo</option>
+                                                                <option value="1108" >Bolikhamsai</option>
+                                                                <option value="1109" >Champasak</option>
+                                                                <option value="1110" >Houaphanh</option>
+                                                                <option value="1111" >Khammouane</option>
+                                                                <option value="1112" >Louang Namtha</option>
+                                                                <option value="1113" >Luang Prabang</option>
+                                                                <option value="1115" >Phongsaly</option>
+                                                                <option value="1119" >Sekong</option>
+                                                                <option value="1059" >Vientiane</option>
+                                                                <option value="1120" >Xiangkhouang</option>
+                                                                </optgroup>
+                                                                >
+                                                                <option value="1019" >Kuala Lumpur</option>
+                                                                <option value="1078" >Malaysia</option>
+                                                                </optgroup>
+                                                                >
+                                                                <option value="1320" >Yangon</option>
+                                                                </optgroup>
+                                                                >
+                                                                <option value="1319" >Aichi</option>
+                                                                <option value="1043" >Hokkaido</option>
+                                                                <option value="1000" >Osaka</option>
+                                                                <option value="1001" >Tokyo</option>
+                                                                <option value="1002" >Yokohama</option>
+                                                                </optgroup>
+                                                                >
+                                                                <option value="1055" >Qatar</option>
+                                                                </optgroup>
+                                                                >
+                                                                <option value="1073" >Quốc tế</option>
+                                                                </optgroup>
+                                                                >
+                                                                <option value="1040" >Singapore</option>
+                                                                </optgroup>
+                                                                >
+                                                                <option value="1004" >Melbourne</option>
+                                                                <option value="1005" >Sydney</option>
+                                                                </optgroup>
+                                                                >
+                                                                <option value="1053" >Kharkiv</option>
+                                                                </optgroup>
                                                             </select>
                                                             <span class="form-error"></span>
                                                         </div>
@@ -300,21 +533,11 @@
                                                             <option value="usd">USD</option>
                                                         </select>
                                                     </div>
-
-                                                    <?php 
-
-                                                        if(!empty($data)){
-
-                                                            $salary_from = explode('-', $data->salary)[0];
-                                                            $salary_to = explode('-', $data->salary)[1];
-                                                        }
-
-                                                    ?>
                                                     <div class="form-group form-text">
-                                                        <input type="text" name="salary_from" id="salary_from" maxlength="12" value="{{ @$salary_from }}"  placeholder="Tối Thiểu *">
+                                                        <input type="text" name="salary_from" id="salary_from" maxlength="12" value="" onblur="checkAlertSalary();" placeholder="Tối Thiểu *">
                                                     </div>
                                                     <div class="form-group form-text">
-                                                        <input type="text" name="salary_to" id="salary_to" maxlength="12"  value="{{ @$salary_to }}"  placeholder="Tối Đa *">
+                                                        <input type="text" name="salary_to" id="salary_to" maxlength="12"  value="" onblur="checkAlertSalary();" placeholder="Tối Đa *">
                                                     </div>
                                                     <span class="form-error" id="error_salary" style="width: 100%;max-width: none;flex: 1;"></span>
                                                 </div>
@@ -335,19 +558,11 @@
                                                 <p class="title-label">Hình thức <font style="color: red">*</font></p>
                                             </div>
                                             <div class="row" style="width:50%">
-
-                                                <?php
-
-                                                    $type = TYPE;
-                                                ?>
-
-
                                                 <select name="type">
-
-                                                    @foreach($type as $key => $value)
-                                                    <option value="{{ $key }}" {{ !empty($data) && $data->type==$key?'selected':'' }}>{{ $value }}</option>
-                                                    @endforeach
-                                                   
+                                                    <option value="0">Nhân viên chính thức</option>
+                                                    <option value="1">Bán thời gian</option>
+                                                    <option value="2">Thời vụ - Nghề tự do</option>
+                                                    <option value="3">Thực tập</option>
                                                 </select>
                                             </div>
                                         </div>
@@ -355,7 +570,7 @@
                                             <div class="col-lg-3">
                                                 <div class="form-group form-date">
                                                     <label>Hạn nhận hồ sơ <font style="color: red">*</font></label>
-                                                    <input type="date" name="JOB_LASTDATE" id="JOB_LASTDATE" class="dates_cus_select_postjob required" value="{{ @$data->deadline }}" />
+                                                    <input type="date" name="JOB_LASTDATE" id="JOB_LASTDATE" class="dates_cus_select_postjob required" value="" />
                                                     <span class="form-error error_job_lastdate"></span>
                                                 </div>
                                             </div>
@@ -367,19 +582,11 @@
                                         <div class="row">
                                             <?php 
                                                 $benefit = BENEFIT_ID;
-
-                                                if(!empty($data)){
-
-                                                    $benefit = json_decode($data->benefit);
-
-                                                }
-                                            ?>
+                                                ?>
                                             @foreach($benefit as $key => $value)
                                             <div class="col-sm-6 col-lg-3">
-
-
                                                 <div class="">
-                                                    <input type="checkbox"  name="BENEFIT_ID[]" value="{{ $key }}"  {{ $value->  }}>
+                                                    <input type="checkbox"  name="BENEFIT_ID[]" value="{{ $key }}">
                                                     <label for="{{ $key }}"> {{ $value }}</label>
                                                 </div>
                                             </div>
