@@ -296,8 +296,8 @@
                                                 <div class="form-salary d-flex align-center">
                                                     <div class="form-group form-select">
                                                         <select name="job_salaryunit" id="job_salaryunit">
-                                                            <option value="vnd">VNĐ</option>
-                                                            <option value="usd">USD</option>
+                                                            <option value="0">VNĐ</option>
+                                                            <option value="1">USD</option>
                                                         </select>
                                                     </div>
 

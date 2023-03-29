@@ -301,6 +301,8 @@
                                             </td>
                                             <td>
                                                 {{ Cache::get('count_'.$jobs->id)??0  }}
+
+                                               
                                             </td>
                                              <td>
                                                 0

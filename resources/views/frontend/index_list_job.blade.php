@@ -207,7 +207,17 @@
 
                             @else
 
-                            <li><a href="{{ route('user-dashboard') }}" class="showDialogD">Xin chào {{ Auth::user()->name }}</a></li>
+                            <li style="position: relative;">
+                                <a href="{{ route('user-dashboard') }}" class="showDialogD" onmouseover="callHoverEvent()">Xin chào {{ Auth::user()->name }}</a>
+                                <ul class="dropdown-menu drop1">
+                                    <li><a href="{{ route('user-dashboard') }}">Dashboard</a></li>
+                                    <li><a href="#">Logout</a></li>
+                                 
+                                </ul>
+                            </li>
+
+                           
+                            
                             @endif
 
                             <li> 
@@ -525,7 +535,7 @@
 
                     <?php 
 
-                         $outstanding_work= DB::table('job')->join('employ_info', 'job.employer_id', '=', 'employ_info.employ_id')->select('job.title', 'job.id', 'employ_info.name', 'employ_info.logo', 'employ_info.links', 'job.link', 'job.salary', 'job.address_job')->orderBy('id', 'desc')->take(10)->get();
+                         $outstanding_work= DB::table('job')->join('employ_info', 'job.employer_id', '=', 'employ_info.employ_id')->select('job.title', 'job.id', 'employ_info.name', 'employ_info.logo', 'employ_info.links', 'job.link','job.salaryunit', 'job.salary', 'job.address_job')->orderBy('id', 'desc')->take(10)->get();
                        
  
 
@@ -541,8 +551,10 @@
                                     <div class="title"><a target="_blank" href="{{ route('job_details', [$value->link, $value->id]) }}" title="Senior Sales Manager">{{  $value->title }}</a></div>
                                     <div class="caption">
                                         <a class="company-name" href="{{ route('job_details', [$value->link, $value->id]) }}" title="Hongfa Electroacoustic (HK) Company Limited" target="_blank">{{ $value->name }}</a>
+
                                         
-                                        {!! @$value->salary  !!}
+                                        
+                                        {!! @$value->salary  !!} {{ $value->salaryunit===0?'Đ':'usd' }}
 
                                         <!-- <div class="location">
                                             <em class="mdi mdi-map-marker"></em>
@@ -817,6 +829,11 @@
             }
             function windowsPhone(){
                     return /windows phone/i.test(navigator.userAgent)
+            }
+
+            function callHoverEvent() {
+              
+                $('.drop1').show();
             }
 
             function saveJob(id){

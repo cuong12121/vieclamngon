@@ -11,11 +11,10 @@
 
         $address = ADDRESS;
 
+        $auth_user_id = Auth::user()->id??'';
+
 
         $now  = Carbon\Carbon::now()->timestamp;
-
-
-
 
         $date_deadline =   strtotime($data->deadline);
 
@@ -26,20 +25,23 @@
 
         // tạo bộ đếm người xem bài viết
 
-        $postKey = 'post_' . $data->id;
+        $postKey = 'post_' . $job_id;
 
         // Check if blog session key exists
         // If not, update view_count and create session key
 
         if (!Session::has($postKey)) {
 
-            Cache::increment('count_'.$data->id);
+            Cache::increment('count_'.$job_id);
     
             Session::put($postKey, 1);
         }
 
-        $count_post = Cache::get('count_'.$data->id);
+        $count_post = Cache::get('count_'.$job_id);
 
+
+
+    
     ?>
     <link rel="stylesheet" type="text/css" href="{{ asset('css/common-job-detail.css') }}">
     <link rel="stylesheet" type="text/css" href="{{ asset('css/chosen.css') }}">
@@ -68,8 +70,19 @@
 
                             
                             @if(empty($check_date))
-                            <div class="apply-now-btn ">        
-                                <a href="javascript:void(0);" class="btn-gradient " onclick="apply('{{ $data->id }}')"> Nộp Đơn Ứng Tuyển </a>        
+
+                            <?php 
+
+                                $check_apply_job = App\Models\apply_job::where('user_id', $auth_user_id)->where('job_id', $job_id)->first();
+                            ?>
+                            <div class="apply-now-btn "> 
+
+                                <a href="javascript:void(0);" class="btn-gradient " onclick="apply('{{ $data->id }}', '{{ $job_id }}')"> 
+
+                                    {{ !empty($check_apply_job)?'Đã ứng tuyển':'Nộp đơn ứng tuyển' }}
+
+                    
+                                </a>        
                             </div>
 
                             @endif
@@ -174,7 +187,7 @@
                                                 <ul>
                                                     <li>
                                                         <strong>Lương</strong>
-                                                        {!! $data->salary   !!}
+                                                        {!! @$data->salary   !!} {{ $data->salaryunit===0?'Đ':'usd' }}
                                                     </li>
                                                    
                                                     <li>
@@ -184,8 +197,8 @@
                                                     <li>
 
 
-                                                        <strong>Hết hạn nộp</strong>
-                                                        <p>{{ $data->deadline   }} ( {{ !empty($check_date)?$check_date:'' }})</p>
+                                                        <strong>Hạn nộp hồ sơ</strong>
+                                                        <p>{{ $data->deadline   }} {{ !empty($check_date)?')'.$check_date.':)':'' }}</p>
                                                     </li>
                                                 </ul>
                                             </div>
@@ -811,18 +824,7 @@
             });
         });
     </script>
-    <script>
-        function showboxJobalert() {
-               var win = window.open('https://careerbuilder.vn/thong-bao-viec-lam', '_blank');
-               if (win) {
-                   win.focus();
-               } else {
-                   console.log('error open tab');
-               }
-               return false;
-            //$.fancybox.open($("#popup-jobalert"));
-        }
-    </script>
+    
     <input type="hidden" value="" name="from_action" id="from_action" />
     <script src="{{ asset('js/footer2.js') }}">/*jquery.tabslet.js*/</script>
     <script type="text/javascript">

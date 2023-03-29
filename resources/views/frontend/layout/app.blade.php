@@ -134,7 +134,7 @@
                             </div>
                         </div>
                         <div class="main-login logged dropdown">
-                            <a href="https://careerbuilder.vn/vi/jobseekers/dashboard" rel="nofollow"> <span class="mdi mdi-account-circle"></span>Chào <span class="name">{{ Auth::user()->name }}</span></a>
+                            <a href="javascript:void(0)" rel="nofollow"> <span class="mdi mdi-account-circle"></span>Chào <span class="name">{{ Auth::user()->name }}</span></a>
                             <div class="dropdown-menu">
                                 <ul>
                                     <li> <a href="{{ route('user-dashboard') }}" rel="nofollow">Quản Lý Hồ Sơ</a></li>

@@ -409,14 +409,15 @@
 
         <script type="text/javascript">
             
-            function apply(id) {
+            function apply(id, job_id) {
 
                  $.ajax({
 
                     type: 'GET',
                     url: "{{ route('apply-job') }}",
                     data: {
-                        job: id,
+                        job: job_id,
+                        employ:id
                     
                         
                     },
@@ -427,7 +428,7 @@
                             window.location.href = "{{ route('login-users')  }}";
                         }
                         else{
-                            $('.btn-gradient').text('đã ứng tuyển');
+                            $('.btn-gradient').text('Đã ứng tuyển');
                             alert('thanh cong');
                         }
                         
