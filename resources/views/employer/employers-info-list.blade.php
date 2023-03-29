@@ -300,7 +300,7 @@
                                                  {{ $jobs->deadline}}
                                             </td>
                                             <td>
-                                                0
+                                                {{ Cache::get('count_'.$jobs->id)??0  }}
                                             </td>
                                              <td>
                                                 0

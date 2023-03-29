@@ -23,8 +23,22 @@
 
         $check_date = ($now<=$date_deadline)?'':'Đã quá hạn';
 
-       
 
+        // tạo bộ đếm người xem bài viết
+
+        $postKey = 'post_' . $data->id;
+
+        // Check if blog session key exists
+        // If not, update view_count and create session key
+
+        if (!Session::has($postKey)) {
+
+            Cache::increment('count_'.$data->id);
+    
+            Session::put($postKey, 1);
+        }
+
+        $count_post = Cache::get('count_'.$data->id);
 
     ?>
     <link rel="stylesheet" type="text/css" href="{{ asset('css/common-job-detail.css') }}">
