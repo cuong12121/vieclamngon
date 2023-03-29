@@ -24,4 +24,25 @@ class employerInfoController extends Controller
         return view('employer.employers-info-list.blade', compact('infoEmployer'));
 
     }
+
+    public function show($id)
+    {
+
+        $employer_id = Auth::guard('employer_register')->user()->id;
+
+        // check user de hien thi phan update job
+
+        $checked = job::where('employer_id', $employer_id)->where('id', $id)->first();
+
+        if(!empty($checked)){
+
+            $data = job::find($id);
+
+            return view('employer.form', compact('data'));
+        }
+
+        return abort('404');
+
+
+    }
 }

@@ -120,16 +120,22 @@ Route::group(['prefix' => 'nha-tuyen-dung','middleware' => 'Checkemploy'], funct
         return view('employer.form');
     })->name('form_recruit'); 
 
-     Route::get('/index', 'Backend\employerController@showIndex')->name('show-index'); 
 
+    Route::get('/form/{id}', 'Backend\employerInfoController@show')->name('form_show_update'); 
+
+    Route::get('/index', 'Backend\employerController@showIndex')->name('show-index'); 
 
     Route::get('/info', 'Backend\employerInfoController@getInfoEmployer')->name('info-employer'); 
-
-
 
     Route::get('logout', 'Backend\employerController@logout')->name('employer-logout');
 
     Route::post('employer-search-user', 'Backend\UserLoginController@SearchUserJob')->name('employer-search-user');
+
+    Route::post('nha-tuyen-dung/postJob', 'Backend\employerController@postJob')->name('postJob');
+
+    Route::post('update-job/{id}', 'Backend\employerController@updateJob')->name('update-job');
+
+    Route::get('remove-job/{id}', 'Backend\employerController@removeJob')->name('remove-job');
 
 });
 
@@ -149,7 +155,7 @@ Route::post('ung-vien/profice/{action}', 'Backend\applicationController@updateAp
 
 Route::post('nha-tuyen-dung/login', 'Backend\employerController@postLoginEmployer')->name('loginEmployer');
 
-Route::post('nha-tuyen-dung/postJob', 'Backend\employerController@postJob')->name('postJob');
+
 
 
 

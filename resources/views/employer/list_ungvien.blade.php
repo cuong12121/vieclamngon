@@ -360,11 +360,11 @@
                     });
                 </script>
 
+
+                
                 <script type="text/javascript">
                     
                     function updateActiveJob(id,active) {
-
-
 
                         $.ajaxSetup({
                             headers: {

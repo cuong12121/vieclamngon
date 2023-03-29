@@ -7,6 +7,7 @@ use Illuminate\Http\Request;
 use App\employer_register;
 use App\Models\job; 
 use Auth;
+use DB;
 use Illuminate\Support\Facades\Validator;
 
 use App\Models\employ_info;
@@ -182,12 +183,12 @@ class employerController extends Controller
     public function postJob(Request $request)
     {
         
-       
         $input['title'] = $request->job_title;
         $input['code']  =  $request->job_code;
         $input['detail']  =  $request->job_desc;
         $input['type'] = $request->type;
         $input['benefit'] = json_encode($request->BENEFIT_ID);
+        $input['rights'] = $request->rights;
         $input['requirements'] = $request->job_req;
         $input['career'] = [$request->INDUSTRY_ID][0][0]??'';
         $input['address_job'] = [$request->LOCATION_ID][0][0];
@@ -198,9 +199,66 @@ class employerController extends Controller
         $job = new job();
         $job->create($input);
 
-        return redirect(route('index_employer'));
+        return redirect(route('employers-info-list'));
        
     }
+
+    public function updateJob(Request $request, $id)
+    {
+
+        $employer_id = Auth::guard('employer_register')->user()->id;
+
+        // check user de hien thi phan update job
+
+        $checked = job::where('employer_id', $employer_id)->where('id', $id)->first();
+
+        if(!empty($checked)){
+
+            $input['title'] = $request->job_title;
+            $input['code']  =  $request->job_code;
+            $input['detail']  =  $request->job_desc;
+            $input['type'] = $request->type;
+            $input['benefit'] = json_encode($request->BENEFIT_ID);
+            $input['rights'] = $request->rights;
+            $input['requirements'] = $request->job_req;
+            $input['career'] = [$request->INDUSTRY_ID][0][0]??'';
+            $input['address_job'] = [$request->LOCATION_ID][0][0];
+            $input['salary'] = $request->salary_from.' '.$request->job_salaryunit.'-'.$request->salary_to;
+            $input['deadline'] = $request->JOB_LASTDATE; 
+            $input['employer_id'] = Auth::guard('employer_register')->id();
+            $input['link'] = $this->convertSlug($request->job_title);
+            DB::table('job')->update($input);
+            return redirect(route('employers-info-list'));
+
+        }
+        else{
+
+            return abort('404');
+        }
+        
+
+    }
+
+    public function removeJob($id)
+    {
+        $employer_id = Auth::guard('employer_register')->user()->id;
+
+        $checked = job::where('employer_id', $employer_id)->where('id', $id)->first();
+
+        if(!empty($checked)){
+
+            $job = job::find($id)->delete();
+
+            return redirect(route('employers-info-list'))->with('notification-remove', 'Xóa thành công');
+
+        }
+
+        return abort('404');
+
+
+    }
+
+
 
     public function updateEmployer(Request $request)
     {

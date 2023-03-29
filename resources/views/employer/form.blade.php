@@ -54,7 +54,7 @@
                                         <path d="M14.0997 0H4.80948C4.38385 0.00102546 3.9709 0.144959 3.63685 0.408716C3.3028 0.672474 3.06701 1.04077 2.96729 1.45455H11.6801C12.4393 1.45685 13.1668 1.75949 13.7037 2.29637C14.2406 2.83325 14.5432 3.56076 14.5455 4.32002V13.0328C14.9593 12.9331 15.3276 12.6973 15.5914 12.3632C15.8551 12.0292 15.9991 11.6162 16.0001 11.1906V1.90037C16.0001 1.39636 15.7999 0.912996 15.4435 0.556606C15.0871 0.200217 14.6037 0 14.0997 0Z" fill="#451DA0"></path>
                                         <path d="M11.1906 2.90918H1.90037C1.39654 2.90976 0.913508 3.11016 0.557244 3.46642C0.20098 3.82269 0.00057746 4.30572 0 4.80955V14.0998C0.00057746 14.6036 0.20098 15.0866 0.557244 15.4429C0.913508 15.7992 1.39654 15.9996 1.90037 16.0002H11.1906C11.6944 15.9996 12.1775 15.7992 12.5337 15.4429C12.89 15.0866 13.0904 14.6036 13.091 14.0998V4.80955C13.0904 4.30572 12.89 3.82269 12.5337 3.46642C12.1775 3.11016 11.6944 2.90976 11.1906 2.90918ZM9.45459 10.1819H7.27277V12.3638C7.27277 12.5567 7.19614 12.7416 7.05975 12.878C6.92336 13.0144 6.73837 13.0911 6.54549 13.0911C6.3526 13.0911 6.16762 13.0144 6.03123 12.878C5.89484 12.7416 5.81821 12.5567 5.81821 12.3638V10.1819H3.63638C3.4435 10.1819 3.25851 10.1053 3.12212 9.96893C2.98573 9.83254 2.90911 9.64755 2.90911 9.45467C2.90911 9.26178 2.98573 9.0768 3.12212 8.94041C3.25851 8.80402 3.4435 8.72739 3.63638 8.72739H5.81821V6.54556C5.81821 6.35268 5.89484 6.16769 6.03123 6.0313C6.16762 5.89491 6.3526 5.81829 6.54549 5.81829C6.73837 5.81829 6.92336 5.89491 7.05975 6.0313C7.19614 6.16769 7.27277 6.35268 7.27277 6.54556V8.72739H9.45459C9.64748 8.72739 9.83247 8.80402 9.96886 8.94041C10.1052 9.0768 10.1819 9.26178 10.1819 9.45467C10.1819 9.64755 10.1052 9.83254 9.96886 9.96893C9.83247 10.1053 9.64748 10.1819 9.45459 10.1819Z" fill="#451DA0"></path>
                                     </svg>
-                                    <div class="ml-[10px] text-13 leading-[16.5px] tracking-[-0.5px]"><a href="{{ route('form_recruit') }}">Tạo tin tuyển dụng</a></div>
+                                    <div class="ml-[10px] text-13 leading-[16.5px] tracking-[-0.5px]"><a href="{{route('form_recruit')  }}">Tạo tin tuyển dụng</a></div>
                                 </div>
                             </div>
                             <div class="py-2 select-none cursor-pointer hover:bg-pale-turquoise hover:bg-opacity-30 ">
@@ -147,7 +147,7 @@
                                 <h1 class="title-manage">Đăng Tuyển Dụng</h1>
                             </div>
                         </div>
-                        <form name="frmEditJob" id="frmEditJob"  method="post" action="{{ route('postJob') }}">
+                        <form name="frmEditJob" id="frmEditJob"  method="post" action="{{!empty($data)?route('update-job', $data->id):route('postJob')  }}">
                             @csrf
 
                         <div class="main-tabslet">
@@ -217,7 +217,7 @@
                                         </div>
                                         <div class="form-group form-editor" id="div_jobreq">
                                             <label>Quyền lợi ứng viên<font style="color: red">*</font></label>
-                                            <textarea cols="80" rows="5" id="rights" name="rights" class="editor">{{ @$data->rights }}</textarea>
+                                            <textarea cols="80" rows="5" id="rights" name="rights" class="editor">{!! @$data->rights !!}</textarea>
                                             <span class="form-error"></span>
                                             <div class="note">
                                                 <p>Nhỏ hơn 10 000 kí tự</p>
@@ -234,7 +234,7 @@
                                                         ?>
                                                         @foreach($list_job as $key =>$value)
 
-                                                        <option value="{{ $key }}" {{ !empty($data)&& $data->career===$key?'selected':'' }}>{{ $value }}</option>
+                                                        <option value="{{ $key }}" {{ !empty($data)&& $data->career==$key?'selected':'' }}>{{ $value }}</option>
                                                            
                                                         @endforeach
                                                        
@@ -262,7 +262,7 @@
 
 
                                                                 @foreach($address_job as $key => $value)
-                                                                <option value="4" {{ !empty($data)&& $data->address_job===$key?'selected':'' }}>{{ $value }}</option>
+                                                                <option value="{{ $key }}" {{ !empty($data)&& $data->address_job==$key?'selected':'' }}>{{ $value }}</option>
                                                                 @endforeach
                                                                     
                                                             </select>
@@ -368,9 +368,13 @@
                                             <?php 
                                                 $benefit = BENEFIT_ID;
 
+                                                $benefit_selected = [];
+
                                                 if(!empty($data)){
 
-                                                    $benefit = json_decode($data->benefit);
+
+
+                                                    $benefit_selected = json_decode($data->benefit);
 
                                                 }
                                             ?>
@@ -379,7 +383,7 @@
 
 
                                                 <div class="">
-                                                    <input type="checkbox"  name="BENEFIT_ID[]" value="{{ $key }}"  {{ $value->  }}>
+                                                    <input type="checkbox"  name="BENEFIT_ID[]" value="{{ $key }}"  {{ in_array($key, $benefit_selected)?'checked':'' }}>
                                                     <label for="{{ $key }}"> {{ $value }}</label>
                                                 </div>
                                             </div>
@@ -389,7 +393,7 @@
                                 </div>
                                 <div class="form-group form-submit form-continue form-back-continue">
 
-                                    <button type="submit" class="btn-gradient">Tiếp tục</button>
+                                    <button type="submit" class="btn-gradient">{{  !empty($data)?'Sửa tin':'Đăng tin' }}</button>
                                    
                                 </div>
                             </div>

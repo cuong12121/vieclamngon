@@ -268,6 +268,10 @@
                                             <th width="12%">Chức danh</th>
                                             <th width="12%" onclick="setTypeSort('posting', 'asc', 3)">Ngày đăng
                                             </th>
+
+                                            <th width="12%" onclick="setTypeSort('posting', 'asc', 3)">Ngày sửa
+                                            </th>
+
                                             <th width="10%" onclick="setTypeSort('posting', 'asc', 4)">Hết hạn</th>
                                             <th width="10%" onclick="setTypeSort('posting', 'asc', 0)">Lượt Xem</th>
                                             <th width="10%" onclick="setTypeSort('posting', 'asc', 1)">Lượt Nộp</th>
@@ -287,7 +291,10 @@
                                                 <a href="{{ route('job_details', [$jobs->link, $jobs->id]) }}" target="_blank">{{ $jobs->title}}</a>
                                             </td>
                                             <td >
-                                                {{ $jobs->created_at}}
+                                                {{ ($jobs->created_at)->format('d/m/Y, H:i:s')}}
+                                            </td>
+                                            <td>
+                                                {{ ($jobs->updated_at)->format('d/m/Y, H:i:s')}}
                                             </td>
                                             <td >
                                                  {{ $jobs->deadline}}
@@ -303,8 +310,8 @@
 
                                                 <a href="javascript:void(0)" onclick="updateActiveJob({{  $jobs->id }},  {{ $jobs->active==0?1:0  }})">{{ $jobs->active==0?'Tắt':'Bật'  }}</a>
                                             </td>
-                                            <td> <a href="#">Sửa</a> </td>
-                                            <td> <a href="#">Xóa</a> </td>
+                                            <td> <a href="{{ route('form_show_update', $jobs->id) }}">Sửa</a> </td>
+                                            <td> <a href="{{ route('remove-job', $jobs->id) }}">Xóa</a> </td>
                                             
                                            
                                         </tr>
@@ -322,6 +329,23 @@
                        
                     </div>
                 </div>
+
+                @if(\Session::has('notification-remove'))
+
+                <script type="text/javascript">
+                    
+                    alert('Xóa thành công');
+
+                </script>
+
+                <?php
+
+                Session::forget('notification-remove');
+
+                ?>
+
+                @endif
+
 
                 
                 <script type="text/javascript">
