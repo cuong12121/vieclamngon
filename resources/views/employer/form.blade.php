@@ -306,7 +306,7 @@
                                                         if(!empty($data)){
 
                                                             $salary_from = explode('-', $data->salary)[0];
-                                                            $salary_to = explode('-', $data->salary)[1];
+                                                            $salary_to = explode('-', $data->salary)[1]??'';
                                                         }
 
                                                     ?>
