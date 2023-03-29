@@ -228,7 +228,7 @@ class employerController extends Controller
             $input['deadline'] = $request->JOB_LASTDATE; 
             $input['employer_id'] = Auth::guard('employer_register')->id();
             $input['link'] = $this->convertSlug($request->job_title);
-            DB::table('job')->update($input);
+            DB::table('job')->where('id', $id)->update($input);
             return redirect(route('employers-info-list'));
 
         }

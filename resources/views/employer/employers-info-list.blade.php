@@ -23,6 +23,7 @@
         background-color: transparent;
         border: none;
         position: absolute;
+
         top: 4px;
         right: 10px;
     }*/
@@ -302,10 +303,15 @@
                                             <td>
                                                 {{ Cache::get('count_'.$jobs->id)??0  }}
 
-                                               
+
                                             </td>
                                              <td>
-                                                0
+                                                <?php 
+
+                                                    $apply = App\Models\job::select('id')->where('job_id', $jobs->id)->get();
+                                                ?>
+
+                                                {{  !empty($apply)?count($apply):0  }}
                                             </td>
 
                                             <td class="cb-text-center">

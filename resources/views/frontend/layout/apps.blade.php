@@ -111,8 +111,13 @@
         <div class="main-wrap">
             <div class="left-wrap">
                 <div class="button-hambuger"><span class="mdi mdi-menu"></span></div>
-                                <div class="logo"><a href="http://vieclamngon.vn/" title="homepage-employers">
-                    <img src="{{ asset('images/template/logo/logo.png') }}" alt="vieclamngon.vn" title="https://images.careerbuilder.vn/logo/logo_1482896879_1489026739.png" /></a></div>
+                  @if(\Request::route()->getName()=='login-users'||\Request::route()->getName()=='registerClientUser'||\Request::route()->getName()=='job_details'||\Request::route()->getName()=='all_job'||\Request::route()->getName()=='filters')
+                <div class="logo"><a href="{{ route('home') }}  " title="Tuyển dụng & Tìm kiếm việc làm nhanh" ><img src="{{ asset('images/template/logo/logo.png') }}" alt="Tuyển dụng & Tìm kiếm việc làm nhanh"></a></div>
+
+                @else
+
+                 <div class="logo"><a href="{{ route('show-index') }}  " title="Tuyển dụng & Tìm kiếm việc làm nhanh" ><img src="{{ asset('images/template/logo/logo.png') }}" alt="Tuyển dụng & Tìm kiếm việc làm nhanh"></a></div>
+                @endif   
                 
             </div>
             <div class="right-wrap">
