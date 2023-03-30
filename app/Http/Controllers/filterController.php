@@ -53,14 +53,8 @@ class filterController extends Controller
         ->Where('career','LIKE', '%'.$industry.'%')
         ->Orwhere('job.address_job', $address)->where('job.career', $industry)->get();
 
-        if(!empty($job) && $job->count()>0 ){
-            $notification = 'Tìm thấy '.  $job->count(). ' ứng viên phù hợp';
+        
 
-        }
-        else{
-            $notification = 'Không tìm thấy ứng viên phù hợp'
-        }
-
-        return view('frontend.filter', compact('job', 'notification'));
+        return view('frontend.filter', compact('job'));
     }
 }

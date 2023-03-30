@@ -151,6 +151,14 @@ class UserLoginController extends Controller
             
         }
 
+        if(!empty($data_search) && $data_search->count()>0 ){
+            $notification = 'Tìm thấy '.  $data_search->count(). ' ứng viên phù hợp';
+
+        }
+        else{
+            $notification = 'Không tìm thấy ứng viên phù hợp'
+        }
+
         return view('employer.list_ungvien', compact('data_search'));
 
     
