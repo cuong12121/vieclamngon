@@ -279,7 +279,10 @@
                                         <select name="jobs" style="width: 30%; height: 45px;" >
                                             <option value="0">Tất cả ngành nghề</option>
                                             @foreach($job as $key => $value)
+
+                                            @if($key !=0)
                                             <option value="{{ $key }}">{{ $value }}</option>
+                                            @endif
                                             @endforeach
                                         </select>
 
