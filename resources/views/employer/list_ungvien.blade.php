@@ -28,6 +28,7 @@
 
     
 </style>
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css"  />
 <link rel="stylesheet" type="text/css" href="https://static-cdn.vieclam24h.vn/recruiter/230316114925/_next/static/css/116ba476cc1d5646.css">
 <div class="row">
@@ -306,19 +307,22 @@
                                                   </a>
 
                                                    <br>
+                                                   <i class="fa fa-id-card-o" aria-hidden="true"></i>
 
                                                    <span>{{ $value->workplace }}</span>
 
                                                    <br>
-
+                                                   <i class="fa fa-usd" aria-hidden="true"></i>
                                                     @if(!empty($value->desired_salary))
                                                     <span>{{ @json_decode($value->desired_salary)->desired_salary }} đ</span>
                                                     @endif
 
+                                                    <br>
+
                                                 </td>
 
                                                 <td style="text-align:right; width:10%">
-                                                    <a href="{{ route('viewCvEmployer', $value->id)  }}">xem hồ sơ</a>
+                                                    <a href="{{ route('viewCvEmployer', $value->id)  }}">Xem hồ sơ</a>
                                                 </td>
                                             </tr>
 
