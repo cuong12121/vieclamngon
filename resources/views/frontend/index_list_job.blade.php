@@ -304,7 +304,7 @@
                 <div class="container-search">
                     <div class="search-jobs-main">
                         <form method="get" action="{{route('filters') }}"  id="frmSearchJob">
-                            <input name="keyword"  id="keywords" type="text" class="brOrgane h15 width_545" onblur="if(this.value=='') this.value='Tìm việc';" onfocus="javascript:if(this.value=='Tìm việc') this.value='';" value="Tìm việc" />
+                            <input name="keyword"  id="keywords" type="text" class="brOrgane h15 width_545" onblur="if(this.value=='') this.value='';" onfocus="javascript:if(this.value=='Tìm việc') this.value='';" value="" />
                             <select id="industry" name="industry" class="chosen slc-mb">
                                 <option value="">Ngành nghề</option>
                                  @foreach($listDefineJob as $key => $value)

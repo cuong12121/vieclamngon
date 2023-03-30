@@ -38,13 +38,9 @@ class filterController extends Controller
 
         if(empty($datas) && empty($address) && empty($industry)){
 
-            dd(1);
 
             $job = job::paginate(10);
             return view('frontend.filter', compact('job'));
-
-
-
         }
 
         
