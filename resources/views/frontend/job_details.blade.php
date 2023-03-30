@@ -234,7 +234,7 @@
                                 </div>
                                 <div class="detail-row">
                                     <h3 class="detail-title">Quyền lợi được hưởng</h3>
-                                    {!!str_replace('<h2>Quyền lợi được hưởng</h2>', '', $data->rights)!!}
+                                    {{ str_replace('<h2>Quyền lợi được hưởng</h2>', '', $data->rights) }}
                                 </div>
                                 
                                 
