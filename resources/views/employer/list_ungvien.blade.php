@@ -287,7 +287,8 @@
                                   </form>
 
                                     @if(!empty($data_search) && $data_search->count()>0)
-                                
+                                    
+                                    {{  @$notification }}
                                 
                                     <table>
                                         <thead>
