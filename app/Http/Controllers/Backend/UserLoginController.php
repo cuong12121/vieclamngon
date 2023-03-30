@@ -159,7 +159,7 @@ class UserLoginController extends Controller
             $notification = 'Không tìm thấy ứng viên phù hợp';
         }
 
-        return view('employer.list_ungvien', compact('data_search'));
+        return view('employer.list_ungvien', compact('data_search', 'notification'));
 
     
     }
