@@ -279,14 +279,18 @@
                                                     <div class="title">
                                                         <a target="_blank" href="{{ route('job_details', [$jobs->link, $jobs->id]) }}" title="{{ $jobs->title  }}">{{ $jobs->title  }}</a>
                                                     </div>
+                                                    <?php 
 
+                                                        $address = ADDRESS;
+
+                                                    ?>
 
                                                     <div class="caption">
                                                         <a class="company-name" href="/nha-tuyen-dung/{{ $jobs->links }}" title="{{ $jobs->links }}" target="_blank">{{ $jobs->name }} </a>
                                                         <p class="salary">{!! $jobs->salary  !!}</p>
                                                         <div class="location">
                                                             <em class="mdi mdi-map-marker"></em>
-                                                            <p> Hà Nội</p>
+                                                            <p> {{  $address[$jobs->address_job] }}</p>
                                                         </div>
                                                     </div>
                                                 </div>

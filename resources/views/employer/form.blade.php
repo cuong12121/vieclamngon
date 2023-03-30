@@ -10,10 +10,13 @@
         }
     </style>
 
+
+
     <link rel="stylesheet" type="text/css" href="{{ asset('css/employ/autocomplete-sugest.css') }}"> 
     <script src='https://cdn.jsdelivr.net/npm/@goongmaps/goong-js@1.0.6/dist/goong-js.js'></script>
     <link href='https://cdn.jsdelivr.net/npm/@goongmaps/goong-js@1.0.6/dist/goong-js.css' rel='stylesheet' />
     <link rel="stylesheet" type="text/css" href="https://static-cdn.vieclam24h.vn/recruiter/230316114925/_next/static/css/116ba476cc1d5646.css">
+   
     
     <div class="row">
          <div class="col-md-2 side-bar">
@@ -409,7 +412,23 @@
    
     
 
-    @endsection    
+    @endsection   
+
+     <script type="text/javascript" src="http://js.nicedit.com/nicEdit-latest.js"></script> 
+
+    <script type="text/javascript">
+        bkLib.onDomLoaded(function() {
+             new nicEditor().panelInstance('job_req');
+        }); 
+
+        bkLib.onDomLoaded(function() {
+             new nicEditor().panelInstance('job_desc');
+        }); 
+
+        bkLib.onDomLoaded(function() {
+             new nicEditor().panelInstance('rights');
+        }); 
+    </script>
 
   
     

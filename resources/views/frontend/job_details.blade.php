@@ -14,13 +14,13 @@
         $auth_user_id = Auth::user()->id??'';
 
 
-        $now  = Carbon\Carbon::now()->timestamp;
+        $now  = strtotime("now");
 
         $date_deadline =   strtotime($data->deadline);
 
+        
 
-
-        $check_date = ($now>$date_deadline)?'':'Đã quá hạn';
+        $check_date = ($now<=$date_deadline)?'':'Đã quá hạn';
 
 
         // tạo bộ đếm người xem bài viết
@@ -193,7 +193,7 @@
 
 
                                                         <strong>Hạn nộp hồ sơ</strong>
-                                                        <p>{{ $data->deadline   }} {{ !empty($check_date)?')'.$check_date.':)':'' }}</p>
+                                                        <p>{{ $data->deadline   }} {{ !empty($check_date)?'('.$check_date.')':'' }}</p>
                                                     </li>
                                                 </ul>
                                             </div>
@@ -234,7 +234,7 @@
                                 </div>
                                 <div class="detail-row">
                                     <h3 class="detail-title">Quyền lợi được hưởng</h3>
-                                    {{ str_replace('<h2>Quyền lợi được hưởng</h2>', '', $data->rights) }}
+                                    {!! str_replace('<h2>Quyền lợi được hưởng</h2>', '', $data->rights) !!}
                                 </div>
                                 
                                 

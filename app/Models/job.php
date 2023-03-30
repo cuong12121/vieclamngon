@@ -15,6 +15,7 @@ class job extends Model
         'career',
         'address_job',
         'salary',
+        'rights',
         'deadline',
         'employer_id',
         'link',
