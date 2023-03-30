@@ -297,7 +297,7 @@
                                         <tbody>
 
                                             @foreach($data_search as $value)
-                                            <tr style="border-bottom:  1px solid:#ddd">
+                                            <tr style="border-bottom:  1px solid #ddd">
                                                 
                                                 <td style="text-align:left; width:93%">
                                                    <a href="javascript::void(0)" target="_blank">
