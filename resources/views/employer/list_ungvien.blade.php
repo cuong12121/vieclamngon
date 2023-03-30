@@ -288,7 +288,7 @@
 
                                     @if(!empty($data_search) && $data_search->count()>0)
                                     
-                                    {{  @$notification }}
+                                    <div> <h2>{{  @$notification }}</h2> </div>
                                 
                                     <table>
                                         <thead>
