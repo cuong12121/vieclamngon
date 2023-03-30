@@ -137,7 +137,7 @@ define('ADDRESS', [
 
 
 define('LIST_JOB', [
-
+    "0"=>'Chưa chọn',
 	"51"=>"An Ninh / Bảo Vệ",
 	 "58"=>"An toàn lao động",
 	 "31"=>"Bán hàng / Kinh doanh",

@@ -265,7 +265,8 @@
                         <div class="boding-jobs-posting">
                             <div class="table table-jobs-posting">
                                 <div class="main">
-      
+
+
                                    <form class="form-inline d-flex justify-content-center mb-5 active-cyan-4" method="post" action="{{ route('employer-search-user') }}" >
 
                                         @csrf
@@ -320,7 +321,7 @@
                                                    ?>
 
                                                     <i class="fa fa-calendar-minus-o" aria-hidden="true"></i>
-                                                     @if(!empty($value->jobs))
+                                                     @if(isset($value->jobs))
                                                     <span>{{ $list[$value->jobs] }}</span>
                                                     @endif
 
