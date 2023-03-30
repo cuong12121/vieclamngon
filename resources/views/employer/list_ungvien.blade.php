@@ -314,7 +314,7 @@
                                                    <br>
                                                    <i class="fa fa-usd" aria-hidden="true"></i>
                                                     @if(!empty($value->desired_salary))
-                                                    <span>{{ @json_decode($value->desired_salary)->desired_salary }} đ</span>
+                                                    <span>{{ @number_format( intval(json_decode($value->desired_salary)->desired_salary)) }} đ</span>
                                                     @endif
 
                                                     <br>
