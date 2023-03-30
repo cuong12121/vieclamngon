@@ -29,6 +29,11 @@
 
         } 
 
+        .saves-icon{
+            width: 25%;
+            text-align: right;
+        }
+
         @media only screen and (min-width: 768px) {
              .find-jobs-form {
                 display: none;
@@ -263,6 +268,7 @@
                                 <div class="swiper-slide">
                                     <div class="jobs-side-list">
 
+
                                         @if(isset($job))
                                         @foreach($job as $jobs)
 
@@ -288,11 +294,13 @@
                                                 @if (Auth::check()) 
                                                 <div class="top-icon"> <span class="top apply-job" onclick="apply('{{ $jobs->id }}')">Apply</span> </div>
 
-                                               
 
-                                                <div class="saves-icon"> <span class="top save-job" onclick="saveJob('{{ $jobs->id }}')">Save</span> </div>
+
+                                                <div class="saves-icon">  <span class="top save-job" onclick="saveJob('{{ $jobs->id }}')" id="job_{{ $jobs->id }}" data-id="{{ $jobs->id }}"><i class="fa fa-heart" aria-hidden="true"></i></span> </div>
                                                 @endif
                                             </div>
+
+                                           
                                         </div>
                                         @endforeach
                                         @endif
@@ -426,26 +434,7 @@
         </div>
     </div>
     <script type="text/javascript"></script>
-    <script>
-        $(document).ready(function(){
-          $("#popup_login_form").validate({
-            rules: {
-                username: {
-                  required: true,
-                },
-                password: {
-                  required: true,
-                }
-            },
-            errorPlacement: function(error, element) {
-        return true;
-            },
-            success: function (error) {
-              error.remove();
-            }
-          });
-        });
-    </script>
+    
     <script>
         function showboxJobalert() {
                var win = window.open('https://careerbuilder.vn/thong-bao-viec-lam', '_blank');
@@ -499,4 +488,22 @@
     </script> 
     <div class="back-drop"></div>
 </main>
+
+@push('js')
+
+<script>
+        $(document).ready(function(){
+
+            job =  JSON.parse(window.localStorage.getItem('job'));
+
+            console.log(job);
+
+        
+
+            const save = localStorage.getItem("job");
+        }
+        
+    </script>
+
+  @endpush  
 @endsection

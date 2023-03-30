@@ -128,8 +128,6 @@ class UserLoginController extends Controller
         if(!empty($request->search)){
             $search =  trim(strip_tags($request->search));
 
-            
-
             if($job==='0'){
 
                 $data_search = DB::table('users')->join('application', 'users.id', '=', 'application.users_id')->select('users.id','users.surname', 'users.name', 'users.workplace', 'application.desired_salary')->where('users.workplace','like', "%{$search}%")->orWhere('users.name', 'like', "%{$search}%")->get();

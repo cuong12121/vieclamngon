@@ -20,7 +20,7 @@
 
 
 
-        $check_date = ($now<=$date_deadline)?'':'Đã quá hạn';
+        $check_date = ($now>$date_deadline)?'':'Đã quá hạn';
 
 
         // tạo bộ đếm người xem bài viết
@@ -57,10 +57,11 @@
     <section class="search-result-list-detail template-2">
         <div class="container">
             <div class="row no-gutters">
-                <div class="col-12 mb-15">
-                    <section class="apply-now-banner  ">
-                        <div class="image"></div>
-                        <div class="apply-now-content">
+                
+                <div class="col-lg-7 col-custom-xxl-9">
+                    <div class="tabs">
+                        <nav class="job-result-nav">
+
                             <div class="job-desc">
                                 <h1 class="title">{{ @$data->title }}</h1>
 
@@ -68,38 +69,32 @@
                                 <a class="employer job-company-name" href="{{ route('employ-details',  $data->link) }}">{{ @$data->name }}</a>  
                             </div>
 
-                            
-                            @if(empty($check_date))
+                              @if(empty($check_date))
 
                             <?php 
 
                                 $check_apply_job = App\Models\apply_job::where('user_id', $auth_user_id)->where('job_id', $job_id)->first();
                             ?>
-                            <div class="apply-now-btn "> 
 
-                                <a href="javascript:void(0);" class="btn-gradient " onclick="apply('{{ $data->id }}', '{{ $job_id }}')"> 
 
-                                    {{ !empty($check_apply_job)?'Đã ứng tuyển':'Nộp đơn ứng tuyển' }}
+                            <ul class="tabs-toggle">
+                                <li id="tabs-job-detail">
+                                        <a href="javascript:void(0);" class="btn-gradient " onclick="apply('{{ $data->id }}', '{{ $job_id }}')"> 
 
-                    
-                                </a>        
-                            </div>
+                                        {{ !empty($check_apply_job)?'Đã ứng tuyển':'Nộp đơn ứng tuyển' }}
+                        
+                                    </a>  
+                                </li>
+
+                                <li id="tabs-job-company">
+                                    <a class="toollips save-job chk_save_35BBB502 " href="javascript:void(0);" data-id="'{{ $job_id}}'" onclick="saveJob('{{ $job_id}}')">
+                                
+                                    <span class="top save-job" onclick="saveJob('{{ $job_id}}')" id="job_{{$job_id }}" data-id="{{ $job_id }}"><i class="fa fa-heart" aria-hidden="true"></i></span> 
+                                </a> </li>
+                            </ul>
 
                             @endif
 
-                            
-                        </div>
-                    </section>
-                </div>
-
-
-                <div class="col-lg-7 col-custom-xxl-9">
-                    <div class="tabs">
-                        <nav class="job-result-nav">
-                            <ul class="tabs-toggle">
-                                <li id="tabs-job-detail"><a href="javascript:void(0)" data-href="#tab-1">Chi tiết</a></li>
-                                <li id="tabs-job-company"><a href="javascript:void(0)" data-href="#tab-2">Tổng quan công ty</a></li>
-                            </ul>
                             <!-- <div class="job-detail-tool">
                                 <ol class="tabs-saved">
                                     <li>
@@ -907,5 +902,26 @@
     </script>
     <script type="application/ld+json">{"@context": "http://schema.org","@type": "JobPosting","baseSalary" : {"@type": "MonetaryAmount","currency": "VND","value": {"@type": "QuantitativeValue","value":"Cạnh tranh","unitText":"MONTH"}},"industry": "Nhân sự, Dệt may / Da giày / Thời trang, Hành chính / Thư ký","jobBenefits": "Chế độ bảo hiểm, Phụ cấp, Đồng phục, Chế độ thưởng, Tăng lương, Công tác phí, Phụ cấp thâm niên, Nghỉ phép năm","datePosted": "2022-06-14","validThrough": "2022-07-15","occupationalCategory": "Nhân viên","description": "<p>Đề xuất các kênh tuyển dụng phù hợp nhằm đáp ứng nhu cầu nhân sự cho nhà máy<br/>Triển khai các kế hoạch tuyển mộ, tuyển chọn ứng viên<br/>Phỏng vấn, đánh giá, tham vấn ra quyết định tuyển chọn ứng viên<br/>Xây dựng và cải tiến quy trình tuyển dụng<br/>Thực hiện các hoạt động hướng dẫn và đào tạo hội nhập cho nhân viên mới</p><p>Một số công việc khác trao đổi trong phỏng vấn</p>","experienceRequirements": {"@type": "OccupationalExperienceRequirements","monthsOfExperience": "60","description":"<p>Nam, nữ kinh nghiệm 05 năm tuyển dụng hệ thống, td lao động số lượng lớn<br/>Ngoại hình khá, nhanh nhẹn, giao tiếp tốt.<br/>Thông thạo các kênh tuyển dụng<br/>Có kinh nghiệm quản lý nhân sự công ty quy mô 1000 lđ trở lên</p>"},"qualifications": "Cao đẳng","identifier": {"@type":"PropertyValue","name":"Công Ty TNHH May Thêu Giày An Phước","value":"35A4F400"},"hiringOrganization" : {"@type" : "Organization","name" : "Công Ty TNHH May Thêu Giày An Phước","sameAs":"https://careerbuilder.vn/vi/nha-tuyen-dung/cong-ty-tnhh-may-theu-giay-an-phuoc.35A4F400.html","logo":"https://images.careerbuilder.vn/employer_folders/lot6/2816/110x55/74705logoap.jpg"},"employmentType": ["FULL_TIME"],"jobLocation" : {"@type": "Place","address": {"@type": "PostalAddress","streetAddress": "Hồ Chí Minh","addressLocality": "Hồ Chí Minh","addressRegion": "Hồ Chí Minh","addressCountry": "Việt Nam","postalCode": "70000"}},"title" : "Nhân Viên Tuyển Dụng","skills" : "","workHours" : "8 giờ"}</script>
     <div class="back-drop"></div>
+
+ @push('js')   
+
+<script type="text/javascript">
+
+    const id = '{{ $job_id }}';
+
+    let like = JSON.parse(window.localStorage.getItem('job'))
+
+    if(like.indexOf(id) != -1)
+    {  
+       $('#tabs-job-company .save-job').addClass('red');
+    }
+
+
+    
+</script>  
+
+ @endpush 
 </main>
+
+
 @endsection

@@ -63,6 +63,7 @@
          <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.7/jquery.min.js"></script>
          <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.5.7/jquery.fancybox.min.js"></script>
          <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery.lazy/1.7.11/jquery.lazy.min.js"></script>
+         <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
 
         <script src="{{ asset('js//global2.js') }}"></script>
         <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery-validate/1.19.4/jquery.validate.min.js"></script>
@@ -70,6 +71,13 @@
         
         
         <script src="https://accounts.google.com/gsi/client" async defer></script>
+
+        <style type="text/css">
+            
+            .red{
+                color: red !important;
+            }
+        </style>
     </head>
     <body class="index-page">
         <header>
@@ -457,7 +465,6 @@
                 return newArr
             }
 
-
             function saveJob(id){
                 job =  JSON.parse(window.localStorage.getItem('job'));
 
@@ -471,15 +478,28 @@
 
                 job = JSON.stringify(job);
 
+                 localStorage.clear();
+
                 window.localStorage.setItem('job', job);
 
-                 // localStorage.clear();
+                
+
+                $('#job_'+id).addClass('red');
 
                 alert('save thành  công');
 
 
+
             }
-            console.log(JSON.parse(window.localStorage.getItem('job')));
+
+             job =  JSON.parse(window.localStorage.getItem('job'));
+
+             for(i=0; i<job.length; i++){
+
+                $('.job-item #job_'+job[i]).addClass('red');
+             }
+
+        
 
            
         </script>

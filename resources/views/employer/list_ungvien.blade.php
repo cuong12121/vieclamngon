@@ -283,54 +283,58 @@
 
                                         <button type="submit" class="btn-submit"><i class="fa fa-search" aria-hidden="true"></i></button>
                                   </form>
+
+                                    @if(!empty($data_search) && $data_search->count()>0)
+                                
+                                
+                                    <table>
+                                        <thead>
+                                            <tr>
+                                                
+                                               
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+
+                                            @foreach($data_search as $value)
+                                            <tr>
+                                                
+                                                <td style="text-align:left; width:93%">
+                                                   <a href="javascript::void(0)" target="_blank">
+
+                                                    {{ $value->surname }} {{ $value->name }}  
+                                                  </a>
+
+                                                   <br>
+
+                                                   <span>{{ $value->workplace }}</span>
+
+                                                   <br>
+
+                                                    @if(!empty($value->desired_salary))
+                                                    <span>{{ @json_decode($value->desired_salary)->desired_salary }} đ</span>
+                                                    @endif
+
+                                                </td>
+
+                                                <td style="text-align:right; width:10%">
+                                                    <a href="{{ route('viewCvEmployer', $value->id)  }}">xem hồ sơ</a>
+                                                </td>
+                                            </tr>
+
+                                            @endforeach
+                                            
+                                            
+                                        </tbody>
+                                    </table>
+                                
+
+                                @endif
                                   
                                 </div>
                                 <br>
 
-                                @if(!empty($data_search) && $data_search->count()>0)
 
-                                <table>
-                                    <thead>
-                                        <tr>
-                                            
-                                           
-                                        </tr>
-                                    </thead>
-                                    <tbody>
-
-                                        @foreach($data_search as $value)
-                                        <tr>
-                                            
-                                            <td style="text-align:left">
-                                               <a href="javascript::void(0)" target="_blank">
-
-                                                {{ $value->surname }} {{ $value->name }}  
-                                              </a>
-
-                                               <br>
-
-                                               <span>{{ $value->workplace }}</span>
-
-                                               <br>
-
-                                                @if(!empty($value->desired_salary))
-                                                <span>{{ @json_decode($value->desired_salary)->desired_salary }} đ</span>
-                                                @endif
-
-                                            </td>
-
-                                            <td style="text-align:right">
-                                                <a href="{{ route('viewCvEmployer', $value->id)  }}">xem hồ sơ</a>
-                                            </td>
-                                        </tr>
-
-                                        @endforeach
-                                        
-                                        
-                                    </tbody>
-                                </table>
-
-                                @endif
                             </div>
                         </div>
                        
