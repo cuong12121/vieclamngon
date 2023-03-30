@@ -142,7 +142,7 @@ class UserLoginController extends Controller
 
             if(empty($request->search) && empty($request->jobs)){
 
-                $data_search = DB::table('users')->join('application', 'users.id', '=', 'application.users_id')->select('users.id','users.jobs','users.surname', 'users.name', 'users.workplace', 'application.desired_salary')->get()->paginate(20);
+                $data_search = DB::table('users')->join('application', 'users.id', '=', 'application.users_id')->select('users.id','users.jobs','users.surname', 'users.name', 'users.workplace', 'application.desired_salary')->paginate(20);
             }
             else{
                 $data_search = DB::table('users')->join('application', 'users.id', '=', 'application.users_id')->select('users.id','users.jobs','users.surname', 'users.name', 'users.workplace', 'application.desired_salary')->where('users.jobs', $job)->get();
