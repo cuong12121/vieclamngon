@@ -253,6 +253,10 @@
 
                             }
 
+                            ::placeholder {
+                              color: #fff;
+                            }
+
                         </style>
 
                     </div>
