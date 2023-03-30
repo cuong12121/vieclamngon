@@ -313,11 +313,26 @@
 
                                                    <br>
                                                    <i class="fa fa-usd" aria-hidden="true"></i>
+
+                                                   <?php
+
+                                                        $list = LIST_JOB;
+                                                   ?>
+
+                                                    <i class="fa fa-calendar-minus-o" aria-hidden="true"></i>
+                                                     @if(!empty($value->jobs))
+                                                    <span>{{ $list[$value->jobs] }}</span>
+                                                    @endif
+
+                                                    <br>
+
                                                     @if(!empty($value->desired_salary))
                                                     <span>{{ @number_format( intval(json_decode($value->desired_salary)->desired_salary)) }} đ</span>
                                                     @endif
 
-                                                    <br>
+                                                    
+
+                                                    
 
                                                 </td>
 
