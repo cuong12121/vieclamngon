@@ -289,7 +289,8 @@
                                                         <a class="company-name" href="/nha-tuyen-dung/{{ $jobs->links }}" title="{{ $jobs->links }}" target="_blank">{{ $jobs->name }} </a>
                                                         <p class="salary">{!! $jobs->salary  !!}</p>
                                                         <div class="location">
-                                                            <em class="mdi mdi-map-marker"></em>
+                                                            <i class="fa fa-map-marker" aria-hidden="true"></i>
+
                                                             <p> {{  $address[$jobs->address_job] }}</p>
                                                         </div>
                                                     </div>
