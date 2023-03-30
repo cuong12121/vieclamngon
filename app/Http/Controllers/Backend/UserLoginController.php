@@ -140,7 +140,15 @@ class UserLoginController extends Controller
         }
         else{
 
-            $data_search = DB::table('users')->join('application', 'users.id', '=', 'application.users_id')->select('users.id','users.jobs','users.surname', 'users.name', 'users.workplace', 'application.desired_salary')->where('users.jobs', $job)->get();
+            if(empty($request->search) && empty($request->jobs)){
+
+                $data_search = DB::table('users')->join('application', 'users.id', '=', 'application.users_id')->select('users.id','users.jobs','users.surname', 'users.name', 'users.workplace', 'application.desired_salary')->get();
+            }
+            else{
+                $data_search = DB::table('users')->join('application', 'users.id', '=', 'application.users_id')->select('users.id','users.jobs','users.surname', 'users.name', 'users.workplace', 'application.desired_salary')->where('users.jobs', $job)->get();
+            }
+
+            
         }
 
         return view('employer.list_ungvien', compact('data_search'));
