@@ -499,9 +499,6 @@
                 $('.job-item #job_'+job[i]).addClass('red');
              }
 
-        
-
-           
         </script>
 
         @stack('js')

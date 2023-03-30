@@ -415,6 +415,18 @@
                         });
                         
                     }
+
+
+                    let job =  JSON.parse(window.localStorage.getItem('job'));
+
+                    console.log(job.length);
+
+                    for(i=0; i<job.length; i++){
+
+                        console.log(i);
+
+                        $('.saves-icon #job_'+job[i]).addClass('red');
+                    }
                 </script>
             </div>
         </div>

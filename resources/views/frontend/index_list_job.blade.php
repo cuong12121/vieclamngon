@@ -566,7 +566,10 @@
                                         @if (Auth::check()) 
                                         
 
-                                        <div class="saves-icon"> <span class="top save-job btn btn-info" onclick="saveJob('{{ $value->id }}')">Save</span> </div>
+                                        <div class="saves-icon">
+                                            <span class="top save-job" onclick="saveJob('{{ $value->id }}')" id="job_{{ $value->id }}" data-id="{{ $value->id }}"><i class="fa fa-heart" aria-hidden="true"></i></span> 
+                                           
+                                        </div>
                                         @endif
                                     </div>
                                 </div>
