@@ -47,11 +47,13 @@ class filterController extends Controller
         ->select('job.title', 'job.id', 'employ_info.name', 'employ_info.logo', 'employ_info.links', 'job.link', 'job.salary', 'job.address_job')
         ->Where('job.title','LIKE', '%'. $datas .'%')
         ->Where('job.address_job', $address)
-        ->Where('career','LIKE', '%'.$industry.'%')
+        ->Where('career',$industry)
         ->Orwhere('employ_info.name','LIKE', '%'. $datas .'%')
         ->Where('job.address_job', $address)
-        ->Where('career','LIKE', '%'.$industry.'%')
-        ->Orwhere('job.address_job', $address)->where('job.career', $industry)->Orwhere('job.address_job', $address)->Orwhere('job.career', $industry)->get();
+        ->Where('career',$industry)
+        ->Orwhere('job.address_job', $address)->where('job.career', $industry)
+        ->Orwhere('job.address_job', $address)
+        ->Orwhere('job.career', $industry)->get();
 
         return view('frontend.filter', compact('job'));
     }
