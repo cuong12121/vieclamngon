@@ -211,11 +211,11 @@
 
 
                                                        
-                                                        @for($i = 0; $i<$count_check; $i++)
+                                                        @for($i = 0; $i<=$count_check; $i++)
 
                                                         <div class="line success-line">
                                                             
-                                                            @if($i ===5)<span class="success success-line"></span> @endif
+                                                            @if($i ===6)<span class="success success-line"></span> @endif
                                                         </div>
 
                                                         @endfor
