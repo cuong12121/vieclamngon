@@ -39,7 +39,6 @@ class filterController extends Controller
         if(empty($datas) && empty($address) && empty($industry)){
 
             $job = job::paginate(10);
-            return view('frontend.filter', compact('job'));
         }
 
         $job = DB::table('employer_registers')->join('job', 'employer_registers.id', '=', 'job.employer_id')
@@ -65,12 +64,13 @@ class filterController extends Controller
             }
 
             // Trường hợp không nhập keyword va industry
-            else(empty($keyword)&& empty($industry) || empty($keyword)&& empty($address)){
+            else(empty($datas)&& empty($industry) || empty($datas)&& empty($address)){
                  $job =   DB::table('employer_registers')->join('job', 'employer_registers.id', '=', 'job.employer_id')
                 ->join('employ_info', 'employer_registers.id', '=', 'employ_info.employ_id')
                 ->select('job.title', 'job.id', 'employ_info.name', 'employ_info.logo', 'employ_info.links', 'job.link', 'job.salary', 'job.address_job')
                 ->Where('job.address_job', $address)->Orwhere('job.career', $industry)->get();
             }
+
 
         }
 
