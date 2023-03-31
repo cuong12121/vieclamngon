@@ -14,7 +14,7 @@
 
     $checkTitle = App\Models\application::where('users_id', Auth::user()->id)->first();
 
-    $ar_index  = ['title', 'experience', 'objective', 'info', 'education', 'experience_details'];
+    $ar_index  = ['title', 'experience', 'objective', 'info', 'education', 'experience'];
 
     $count_check = 0;
 
@@ -26,7 +26,9 @@
 
         }
 
+
     }
+
 
     $checksucess = $count_check ===6?true:false;
 
@@ -127,7 +129,8 @@
                                                 </div>
                                                 <div class="information">
 
-                                                    @if($checksucess===true)
+
+                                                    @if($count_check===6)
                                                     <style type="text/css">
                                                         
                                                         .widget-2 .widget-body .progress-bar-status.incomplete .progress-bar .progress-row .line:last-child .success:before  , .widget-2 .widget-body .progress-bar-status.incomplete .progress-bar .progress-row .line:last-child .success:before, {
@@ -169,7 +172,7 @@
                                             <h2 id="section_name">{{ Auth::user()->name }}</h2>
                                         </div>
                                         <div class="information">
-                                             @if($checksucess===true)
+                                             @if($count_check===6)
                                             <div class="assistant">Đã cập nhật</div>
 
                                             @else
@@ -181,10 +184,10 @@
                                         <div id="complete_section">
                                             <div class="progress-bar-status incomplete">
                                                 <div class="profile-strength">
-                                                    <p>Mức độ hoàn thành:<span> {{ ($checksucess===true)?'Đã hoàn tất':'Chưa Hoàn Tất'}}</span></p>
+                                                    <p>Mức độ hoàn thành:<span> {{ ($count_check===6)?'Đã hoàn tất':'Chưa Hoàn Tất'}}</span></p>
                                                 </div>
 
-                                                @if($checksucess===false)
+                                                @if($count_check<6)
                                                 <div class="noti">
                                                     <em class="mdi mdi-alert-circle-outline"></em>
                                                     <p>Chưa hoàn thành. Bạn vui lòng cập nhật và hoàn thành hồ sơ</p>
@@ -201,19 +204,23 @@
                                                         <?php 
 
                                                             $count_minus = 6-$count_check;
+
+                                                            
                                                         ?>
 
+
+
                                                        
-                                                        @for($i = 0; $i<=$count_check; $i++)
+                                                        @for($i = 0; $i<$count_check; $i++)
 
                                                         <div class="line success-line">
                                                             
-                                                            @if($i ===6)<span class="success success-line"></span> @endif
+                                                            @if($i ===5)<span class="success success-line"></span> @endif
                                                         </div>
 
                                                         @endfor
 
-                                                        @for($k =0; $k <= $count_minus; $k++)
+                                                        @for($k =0; $k < $count_minus; $k++)
 
                                                         <div class="line"></div>    
 
@@ -688,6 +695,7 @@
                                         <div class="image"><img src="./img/dash-board/i4.png" alt=""></div>
                                         <div class="figcaption">
                                             <h3>Kinh nghiệm làm việc *</h3>
+
 
 
                                            @if(!empty(json_decode($checkTitle->experience)))
