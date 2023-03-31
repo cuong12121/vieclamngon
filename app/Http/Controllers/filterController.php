@@ -52,7 +52,7 @@ class filterController extends Controller
         ->Where('job.address_job', $address)
         ->Where('career',$industry)
         ->Orwhere('job.address_job', $address)->where('job.career', $industry)->get();
-        if(empty($job)){
+        if(empty($job) || $job->count()===0){
 
             $job =   DB::table('employer_registers')->join('job', 'employer_registers.id', '=', 'job.employer_id')
             ->join('employ_info', 'employer_registers.id', '=', 'employ_info.employ_id')
