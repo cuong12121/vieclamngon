@@ -12,7 +12,25 @@
 
     $slMarritial =['Độc thân', 'Đã kết hôn'];
 
-    $checkTitle = App\Models\application::where('users_id', Auth::user()->id)->first();                                    
+    $checkTitle = App\Models\application::where('users_id', Auth::user()->id)->first();
+
+    $ar_index  = ['title', 'experience', 'objective', 'info', 'education', 'experience_details'];
+
+    $count_check = 0;
+
+    foreach ($ar_index as $key => $value) {
+
+        if(!empty(json_decode($checkTitle->$value))){
+
+            $count_check += 1;
+
+        }
+
+    }
+
+    $checksucess = $count_check ===6?true:false;
+
+
 
     if(!empty(json_decode($checkTitle->title)) &&!empty(json_decode($checkTitle->experience))&&!empty(json_decode($checkTitle->objective)) && !empty(json_decode($checkTitle->info)) && !empty(json_decode($checkTitle->education))&&!empty(json_decode($checkTitle->experience_details))){
         $checksucess = true;
@@ -20,6 +38,18 @@
     else{
         $checksucess = false;
     }
+
+    ?>
+
+    <?php 
+
+        $check_salary = json_decode($checkTitle->desired_salary);
+
+        $check_workrc = json_decode($checkTitle->workrc);
+
+        $checkTitleShow = json_decode($checkTitle->title);
+
+        $objective = json_decode($checkTitle->objective);
 
     ?>
 
@@ -167,18 +197,32 @@
 
 
                                                     <div class="progress-row">
-                                                        <div class="line active {{  $checksucess===true?'success-line':'' }}"></div>
-                                                        <div class="line {{  $checksucess===true?'success-line':'' }}"></div>
-                                                        <div class="line {{  $checksucess===true?'success-line':'' }}"></div>
-                                                        <div class="line {{  $checksucess===true?'success-line':'' }}"></div>
-                                                        <div class="line {{  $checksucess===true?'success-line':'' }}"></div>
-                                                        <div class="line {{  $checksucess===true?'success-line':'' }}"></div>
-                                                        <div class="line {{  $checksucess===true?'success-line':'' }}">
-                                                        <span class="success"></span></div>
+
+                                                        <?php 
+
+                                                            $count_minus = 6-$count_check;
+                                                        ?>
+
+                                                       
+                                                        @for($i = 0; $i<=$count_check; $i++)
+
+                                                        <div class="line success-line">
+                                                            
+                                                            @if($i ===6)<span class="success success-line"></span> @endif
+                                                        </div>
+
+                                                        @endfor
+
+                                                        @for($k =0; $k <= $count_minus; $k++)
+
+                                                        <div class="line">
+
+                                                        @endfor    
+
+                                                      
                                                     </div>
                                                 </div>
                                             </div>
-                                          
 
                                             @if(!empty(Auth::user()->cv))
                                             <div class="check-box">
@@ -286,12 +330,7 @@
                                         <div class="figcaption">
                                             <h3>Mức lương mong muốn </h3>
 
-                                            <?php 
 
-                                                $check_salary = json_decode($checkTitle->desired_salary);
-
-
-                                            ?>
 
                                              @if(!empty($check_salary))
                                             <div class="status success">
@@ -342,12 +381,6 @@
                                         <div class="image"><img src="./img/dash-board/i14.png" alt=""></div>
                                         <div class="figcaption">
                                             <h3>Công việc gần đây </h3>
-
-                                            <?php 
-
-                                                $check_workrc = json_decode($checkTitle->workrc);
-                                            ?>
-
                                              @if(!empty($check_workrc))
                                             <div class="status success">
                                                 <p>Đã hoàn thành</p>
@@ -535,14 +568,6 @@
                                         <div class="image"><img src="./img/dash-board/i3.png" alt=""></div>
                                         <div class="figcaption">
                                             <h3>Mục tiêu nghề nghiệp</h3>
-
-                                            <?php 
-
-                                                $objective = json_decode($checkTitle->objective);
-
-
-
-                                            ?>
 
                                             @if(!empty($objective))
                                             <div class="status success">
