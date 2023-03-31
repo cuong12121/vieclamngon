@@ -215,7 +215,7 @@
 
                                                         @for($k =0; $k <= $count_minus; $k++)
 
-                                                        <div class="line">
+                                                        <div class="line"></div>    
 
                                                         @endfor    
 
