@@ -839,7 +839,7 @@
 
             $('.drop1').hide();
             
-            $(".showDialogD").mouseenter(function() {
+            $(".navbar-right").mouseenter(function() {
                 $('.drop1').show();
             }).mouseleave(function() {
                $('.drop1').hide();
