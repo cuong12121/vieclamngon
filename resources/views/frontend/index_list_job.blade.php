@@ -208,7 +208,7 @@
                             @else
 
                             <li style="position: relative;">
-                                <a href="{{ route('user-dashboard') }}" class="showDialogD" onmouseover="callHoverEvent()">Xin chào {{ Auth::user()->name }}</a>
+                                <a href="{{ route('user-dashboard') }}" class="showDialogD" >Xin chào {{ Auth::user()->name }}</a>
                                 <ul class="dropdown-menu drop1">
                                     <li><a href="{{ route('user-dashboard') }}">Dashboard</a></li>
                                     <li><a href="#">Logout</a></li>
@@ -835,6 +835,16 @@
             function windowsPhone(){
                     return /windows phone/i.test(navigator.userAgent)
             }
+
+
+            $('.drop1').hide();
+            
+            $(".showDialogD").mouseenter(function() {
+                $('.drop1').show();
+            }).mouseleave(function() {
+               $('.drop1').hide();
+            });
+   
 
             function callHoverEvent() {
               

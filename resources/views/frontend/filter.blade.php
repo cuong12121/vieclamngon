@@ -299,9 +299,23 @@
                                                 @if (Auth::check()) 
                                                 <div class="top-icon"> <span class="top apply-job" onclick="apply('{{ $jobs->id }}')">Apply</span> </div>
 
+                                                <style type="text/css">
+                                                    
+                                                    .hidden {
+                                                     
+                                                      display: none;  /* hide text */
+                                                    }
+
+                                                  
+                                                </style>
 
 
-                                                <div class="saves-icon">  <span class="top save-job" onclick="saveJob('{{ $jobs->id }}')" id="job_{{ $jobs->id }}" data-id="{{ $jobs->id }}"><i class="fa fa-heart" aria-hidden="true"></i></span> </div>
+
+                                                <div class="saves-icon">  
+                                                    <span class="top save-job" onclick="saveJob('{{ $jobs->id }}')" id="job_{{ $jobs->id }}" data-id="{{ $jobs->id }}"><i class="fa fa-heart" aria-hidden="true"></i></span> 
+
+                                                     <div class="hide">lưu công việc</div>
+                                                </div>
                                                 @endif
                                             </div>
 
@@ -488,6 +502,19 @@
           }
         });
     </script>
+
+    <script type="text/javascript">
+
+        $('.hide').hide();
+        
+        $(".fa-heart").mouseenter(function() {
+            $('.hide').show();
+        }).mouseleave(function() {
+           $('.hide').hide();
+        });
+    </script>
+
+
     <script type="text/javascript">
         var arrData = {"similar":0,"OWNER":"kiemviec","COUNT_SEARCH":true,"SORT":"dv","SORT_BY":"desc","SORT_TITLE":"dv"};
     </script> 
