@@ -313,7 +313,11 @@
                                 <option value="">Ngành nghề</option>
                                  @foreach($listDefineJob as $key => $value)
 
+                                    @if($key !=0)
+
                                      <option value="{{ $key }}">{{ $value }}</option>
+
+                                    @endif 
                                 @endforeach
                 
                             </select>
