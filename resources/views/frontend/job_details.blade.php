@@ -51,7 +51,21 @@
     <style type="text/css">
         .apply-now-banner{
             height: 48px !important;
+        }
+
+        .job-result-nav>ul li a{
+            padding: 20px;
+            font-size: 13px;
         } 
+
+        .apply-now-btn a{
+            width: 100%;
+        }
+
+        .job-result-nav>ul li:hover a{
+            color: #fff;
+        }
+
     </style>
    
     <section class="search-result-list-detail template-2">
@@ -78,12 +92,16 @@
 
 
                             <ul class="tabs-toggle">
-                                <li id="tabs-job-detail">
+                                <li id="tabs-job-detail" class="apply-now-btn">
                                         <a href="javascript:void(0);" class="btn-gradient " onclick="apply('{{ $data->id }}', '{{ $job_id }}')"> 
 
                                         {{ !empty($check_apply_job)?'Đã ứng tuyển':'Nộp đơn ứng tuyển' }}
                         
                                     </a>  
+                                </li>
+
+                                <li id="tabs-job-detail" class="apply-now-btn">
+                                        <a href="javascript:void(0);" class="btn-gradient " onclick="">chia sẻ</a>  
                                 </li>
 
                                 <li id="tabs-job-company">

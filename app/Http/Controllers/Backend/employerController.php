@@ -224,7 +224,7 @@ class employerController extends Controller
             $input['requirements'] = $request->job_req;
             $input['career'] = [$request->INDUSTRY_ID][0][0]??'';
             $input['address_job'] = [$request->LOCATION_ID][0][0];
-            $input['salary'] = $request->salary_from.' '.$request->job_salaryunit.'-'.$request->salary_to;
+            $input['salary'] = $request->salary_from.'-'.$request->salary_to;
             $input['deadline'] = $request->JOB_LASTDATE; 
             $input['employer_id'] = Auth::guard('employer_register')->id();
             $input['link'] = $this->convertSlug($request->job_title);

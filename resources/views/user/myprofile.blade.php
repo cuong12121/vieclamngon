@@ -14,7 +14,7 @@
 
     $checkTitle = App\Models\application::where('users_id', Auth::user()->id)->first();
 
-    $ar_index  = ['title', 'experience', 'objective', 'info', 'education', 'experience'];
+    $ar_index  = ['title', 'workrc', 'experience','desired_salary', 'objective', 'info', 'education'];
 
     $count_check = 0;
 
@@ -26,13 +26,10 @@
 
         }
 
-
     }
 
 
     $checksucess = $count_check ===6?true:false;
-
-
 
     if(!empty(json_decode($checkTitle->title)) &&!empty(json_decode($checkTitle->experience))&&!empty(json_decode($checkTitle->objective)) && !empty(json_decode($checkTitle->info)) && !empty(json_decode($checkTitle->education))&&!empty(json_decode($checkTitle->experience_details))){
         $checksucess = true;
@@ -52,6 +49,8 @@
         $checkTitleShow = json_decode($checkTitle->title);
 
         $objective = json_decode($checkTitle->objective);
+
+
 
     ?>
 
@@ -130,7 +129,7 @@
                                                 <div class="information">
 
 
-                                                    @if($count_check===6)
+                                                    
                                                     <style type="text/css">
                                                         
                                                         .widget-2 .widget-body .progress-bar-status.incomplete .progress-bar .progress-row .line:last-child .success:before  , .widget-2 .widget-body .progress-bar-status.incomplete .progress-bar .progress-row .line:last-child .success:before, {
@@ -141,6 +140,8 @@
                                                              background: #39BA73 !important;
                                                         }
                                                     </style>
+
+                                                    @if($count_check===7)
 
                                                     <div class="assistant">Đã cập nhật</div>
 
@@ -172,7 +173,7 @@
                                             <h2 id="section_name">{{ Auth::user()->name }}</h2>
                                         </div>
                                         <div class="information">
-                                             @if($count_check===6)
+                                             @if($count_check===7)
                                             <div class="assistant">Đã cập nhật</div>
 
                                             @else
@@ -181,10 +182,12 @@
 
                                             @endif
                                         </div>
+
+                                      
                                         <div id="complete_section">
                                             <div class="progress-bar-status incomplete">
                                                 <div class="profile-strength">
-                                                    <p>Mức độ hoàn thành:<span> {{ ($count_check===6)?'Đã hoàn tất':'Chưa Hoàn Tất'}}</span></p>
+                                                    <p>Mức độ hoàn thành:<span> {{ ($count_check===7)?'Đã hoàn tất':'Chưa Hoàn Tất'}}</span></p>
                                                 </div>
 
                                                 @if($count_check<6)
@@ -203,15 +206,15 @@
 
                                                         <?php 
 
-                                                            $count_minus = 6-$count_check;
+                                                            $count_minus = 7-$count_check;
+
+                                                           
 
                                                             
                                                         ?>
 
 
-
-                                                       
-                                                        @for($i = 0; $i<=$count_check; $i++)
+                                                        @for($i = 0; $i < $count_check; $i++)
 
                                                         <div class="line success-line">
                                                             
@@ -226,7 +229,7 @@
 
                                                         @endfor    
 
-                                                      
+
                                                     </div>
                                                 </div>
                                             </div>

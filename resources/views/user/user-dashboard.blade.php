@@ -233,13 +233,21 @@
                 </div>
                 
             </div>
+
+            <?php 
+
+                $save_job_count = session('saveJob');
+
+                $apply_job = App\Models\apply_job::where('user_id', Auth::user()->id)->get();
+            ?>
             <div class="row">
                 
                 <div class="col-sm-6 col-lg-3">
                     <div class="widget-1 b3">
                         <div class="widget-head">
-                            <p>0</p>
+                            <p>{{  $save_job_count??0 }}</p>
                             <p>Việc làm đã lưu</p>
+
                         </div>
                         <div class="widget-body">
                             <div class="item">
@@ -251,7 +259,9 @@
                 <div class="col-sm-6 col-lg-3">
                     <div class="widget-1 b4">
                         <div class="widget-head">
-                            <p>0</p>
+
+                            
+                            <p>{{  $apply_job->count()??0 }}</p>
                             <p>Việc làm đã nộp</p>
                         </div>
                         

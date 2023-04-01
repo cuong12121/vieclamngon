@@ -10,12 +10,16 @@ use App\Models\apply_job;
 
 use Auth; 
 
+use Session;
+
 use DB;
 
 class ajaxController extends Controller
 {
     public function getSaveJob(Request $request){
         $data = json_decode($request->data);
+
+        session(['saveJob' => count($data)]);
 
         $job = DB::table('job')->join('employ_info', 'job.employer_id','=', 'employ_info.employ_id')->whereIn('job.id', $data)->select('job.id', 'job.title', 'job.link','employ_info.logo', 'employ_info.name', 'employ_info.links')->get();
 
