@@ -14,8 +14,8 @@
 
 
                 <div class="figcaption">
-                    <h3><a href="javascript:void(0)">{{ $jobs->title }}</a></h3>
-                    <p class="company-name"><a href="javascript:void(0)" title="{{ $jobs->name }}">{{ $jobs->name }}</a></p>
+                    <h3><a href="{{ route('job_details',  $jobs->links)  }}">{{ $jobs->title }}</a></h3>
+                    <p class="company-name"><a href="{{ $jobs->links }}" title="{{ $jobs->name }}">{{ $jobs->name }}</a></p>
                     <p class="location">Hà Nội</p>
                 </div>
             </div>
