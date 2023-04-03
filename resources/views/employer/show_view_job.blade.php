@@ -18,9 +18,4 @@
        
     </tr>
     @endforeach
-@else
-    <td colspan="9" class="cb-text-center">
-
-        <p><strong> Không có vị trí nào trong thư mục này.</strong></p>
-    </td>
 @endif
