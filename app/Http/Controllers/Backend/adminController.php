@@ -16,6 +16,8 @@ use DB;
 use Auth;
 use App\Models\application;
 use Carbon\Carbon;
+use Illuminate\Support\Facades\Cache;
+use Session;
 
 class adminController extends Controller
 {
@@ -120,11 +122,52 @@ class adminController extends Controller
 
     public function viewCv($id)
     {
+
+        $now = Carbon::now();
+
+        dd(Auth::guard('employer_register')->user()->id);
+
+
+        if(Auth::guard('employer_register')->check()){
+
+            $postKey = 'employer_post_' . $id;
+
+            $list_id_employ_view = Cache::get('list_id_employ_view_'.$id)??[];
+
+            if (!Session::has($postKey)) {
+
+                $check =  array_search( Auth::guard('employer_register')->user()->id, $list_id_employ_view);
+
+                if($check<0){
+                    $count = empty(Cache::get('employer_view_'.$id))?0:count(Cache::get('employer_view_'.$id));
+
+                    $arr_employ_view = Cache::get('employer_view_'.$id)??[];
+
+                    $arr_employ_view[$count]['id'] = Auth::guard('employer_register')->user()->id;
+
+
+                    // biến check trung id employ search  
+
+                    $list_id_employ_view[] = Auth::guard('employer_register')->user()->id;
+
+
+                    Cache::forget('list_id_employ_view_'.$id, $list_id_employ_view);
+
+                    Cache::forever('list_id_employ_view_'.$id, $arr_employ_view);
+
+                    $arr_employ_view[$count]['created_at'] = $now;
+
+                    Cache::forget('employer_post_'.$id);
+
+                    Cache::forever('employer_post_'.$id, $arr_employ_view);
+                }
+                
+            }
+        } 
+
         $data_cv = application::findOrFail($id);
 
         $email = (User::find($id))->email;
-
-       
 
         return view('user.cv', compact('data_cv','email'));
     }

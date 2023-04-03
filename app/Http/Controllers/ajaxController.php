@@ -14,6 +14,8 @@ use Session;
 
 use DB;
 
+use Illuminate\Support\Facades\Cache;
+
 class ajaxController extends Controller
 {
     public function getSaveJob(Request $request){
@@ -52,6 +54,7 @@ class ajaxController extends Controller
     }
     public function getInfoDataCV(Request $request)
     {
+
         $id = $request->id;
         $data = apply_job::where('user_id', $id)->get();
         return view('ajax.job_apply', compact('data'));
@@ -62,11 +65,7 @@ class ajaxController extends Controller
     {
         $page = $request->id;
 
-
         $job =  $job= DB::table('employer_registers')->join('job', 'employer_registers.id', '=', 'job.employer_id')->join('employ_info', 'employer_registers.id', '=', 'employ_info.employ_id')->paginate(8,['*'], 'page', $page);
-
-    
-
 
         return view('ajax.job_home', compact('job'));
        

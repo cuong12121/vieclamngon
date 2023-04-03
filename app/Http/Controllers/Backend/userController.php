@@ -56,6 +56,11 @@ class userController extends Controller
         
     }
 
+    public function employerView()
+    {
+        return view('user.employer_view');
+    }
+
     public function viewCv($id)
     {
         $data_cv = application::findOrFail($id);

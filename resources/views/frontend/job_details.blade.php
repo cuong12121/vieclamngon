@@ -30,10 +30,6 @@
         // Check if blog session key exists
         // If not, update view_count and create session key
 
-
-        Session::forget($postKey);
-
-
         // nếu chưa truy cập thì đếm là 1 
 
         if (!Session::has($postKey)) {

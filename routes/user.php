@@ -16,6 +16,8 @@ Route::group(['middleware' => 'checklogin'], function() {
 
 	Route::get('cv/{id}', 'userController@viewCv')->name('viewCv');
 
+	Route::get('employer-view', 'userController@employerView')->name('employerView');
+
 	Route::post('upload-cv-pdf', 'userController@upload_cv_pdf')->name('upload-cv-file');
 });	
 Route::get('ung-vien/dang-ky', 'userController@registerUser')->name('registerClientUser');

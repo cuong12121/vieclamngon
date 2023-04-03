@@ -12,7 +12,10 @@
             
         </td>
         <td>
+            @if(!empty($user->cv))
             <a href="{{ asset($user->cv) }}" download="">tải cv xuống</a>
+
+            @endif
         </td>
        
        
