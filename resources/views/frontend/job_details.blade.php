@@ -61,7 +61,7 @@
             Session::put($postKey, 1);
         }
 
-        dd(Cache::get('arr_user_view_auth_'.$job_id));
+
 
         $count_post = Cache::get('count_'.$job_id);
     
@@ -124,7 +124,7 @@
                                 </li>
 
                                 <li id="tabs-job-detail" class="apply-now-btn">
-                                        <a href="javascript:void(0);" class="btn-gradient " onclick="">chia sẻ</a>  
+                                        <a href="javascript:void(0);" class="btn-gradient " onclick="copyToClipboard()">chia sẻ</a>  
                                 </li>
 
                                 <li id="tabs-job-company">
@@ -955,6 +955,16 @@
     if(like.indexOf(id) != -1)
     {  
        $('#tabs-job-company .save-job').addClass('red');
+    }
+
+
+    function copyToClipboard() {
+        var url = window.location;;
+        navigator.clipboard.writeText(url).then(function() {
+          alert('Copy thành công');
+        }, function(err) {
+          console.error('Async: Could not copy text: ', err);
+        });
     }
 
 
