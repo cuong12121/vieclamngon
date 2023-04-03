@@ -543,10 +543,15 @@
 
                         $outstanding_work= DB::table('job')->join('employ_info', 'job.employer_id', '=', 'employ_info.employ_id')->select('job.title', 'job.id', 'employ_info.name', 'employ_info.logo', 'employ_info.links', 'job.link','job.salaryunit', 'job.salary', 'job.address_job')->orderBy('id', 'desc')->take(10)->get();
 
+
+
+
                     ?>
                     @if($outstanding_work->count()>0)
 
                     @foreach($outstanding_work as $value)
+
+                    @if($value->id != 235)
                     <div class="col-lg-6 ">
                         <div class="job-item">
                             <div class="figure">
@@ -579,6 +584,10 @@
                             </div>
                         </div>
                     </div>
+
+                    @endif
+
+
                     @endforeach
 
                     @endif
