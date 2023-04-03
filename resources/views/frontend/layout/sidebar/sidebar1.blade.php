@@ -22,7 +22,7 @@
                 </ul>
             </li>
 
-            <li> <a href="javascript:void(0)" class=""><span>Nhà tuyển dụng xem hồ sơ</span></a></li>
+            <li> <a href="{{ route('employerView')  }}" class=""><span>Nhà tuyển dụng xem hồ sơ</span></a></li>
             <li> <a href="{{ route('notification-user') }}" class="{{ $routeName=='notification-user'?'active':'' }}"><span>Thông Báo Việc Làm</span></a></li>
        
             
