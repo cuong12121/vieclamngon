@@ -961,7 +961,7 @@
     function copyToClipboard() {
         var url = window.location;;
         navigator.clipboard.writeText(url).then(function() {
-          alert('Copy thành công');
+          alert('Thành công');
         }, function(err) {
           console.error('Async: Could not copy text: ', err);
         });
