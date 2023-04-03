@@ -2,8 +2,43 @@
 
 @section('content') 
 
-
 <style type="text/css">
+/*    modal css*/
+    .modal {
+          display: none;
+          position: fixed;
+          z-index: 1;
+          padding-top: 100px;
+          left: 0;
+          top: 0;
+          width: 100%;
+          height: 100%;
+          overflow: auto;
+          background-color: rgb(0, 0, 0);
+          background-color: rgba(0, 0, 0, .4);
+    }
+
+    .modal-content {
+        background-color: #fefefe;
+        margin: auto;
+        padding: 20px;
+        border: 1px solid #888;
+        width: 80%;
+    }
+
+    .close {
+        color: #aaaaaa;
+        float: right;
+        font-size: 28px;
+        font-weight: bold;
+    }
+
+    .close:hover,.close:focus {
+      color: #000;
+      text-decoration: none;
+      cursor: pointer;
+    }
+
     .icon-search {
         background-position: -150px 0;
         height: 46px !important;
@@ -19,19 +54,42 @@
         height: 44px;
         width:40px;
     }
-   /* .main button{
-        background-color: transparent;
-        border: none;
-        position: absolute;
 
-        top: 4px;
-        right: 10px;
-    }*/
-
+/*    end css modal*/
+  
     
 </style>
+
+
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css"  />
 <link rel="stylesheet" type="text/css" href="https://static-cdn.vieclam24h.vn/recruiter/230316114925/_next/static/css/116ba476cc1d5646.css">
+
+ <div class="modal">
+    <div class="modal-content">
+        <span class="close">&times;</span>
+        <p>Danh sách ứng viên đã xem công việc</p>
+        <div class="table table-jobs-posting view-cv-on">
+            <table style="width: 200%;">
+                <thead>
+                    <tr>
+                        
+                        <th width="40%">ứng viên </th>
+                        <th width="40%" onclick="setTypeSort('posting', 'asc', 3)">CV ứng viên 
+                        </th>
+
+                        <th width="40%" onclick="setTypeSort('posting', 'asc', 3)">Cv tải lên 
+                        </th>
+                       
+                    </tr>
+                </thead>
+                <tbody>
+
+                    
+                </tbody>
+            </table>
+        </div>
+    </div>
+</div>
 
 
 <div class="row">
@@ -193,8 +251,7 @@
                                                  {{ $jobs->deadline}}
                                             </td>
                                             <td>
-                                                {{ Cache::get('count_'.$jobs->id)??0  }}
-
+                                                <a href="javascript:void(0)" onclick="showViewerProduct({{ $jobs->id }})">{{ Cache::get('count_'.$jobs->id)??0  }}</a>
 
                                             </td>
                                              <td>
@@ -229,6 +286,9 @@
                        
                     </div>
                 </div>
+
+
+
 
                 @if(\Session::has('notification-remove'))
 
@@ -303,6 +363,61 @@
     </div>
 
 </div>
+
+
+<script type="text/javascript">
+
+
+    $(document).ready(function () {
+        var modal = $('.modal');
+      var btn = $('.btn');
+      var span = $('.close');
+
+     
+      span.click(function () {
+
+
+            modal.hide();
+      });
+
+      $(window).on('click', function (e) {
+            if ($(e.target).is('.modal')) {
+              modal.hide();
+            }
+            });
+        });
+    
+    function showViewerProduct(id) {
+
+        $.ajaxSetup({
+            headers: {
+                'X-CSRF-TOKEN': $('meta[name="csrf-token"]').attr('content')
+            }
+        });
+
+        $.ajax({
+            type: 'POST',
+            url: "{{ route('show-viewer-job')  }}",
+            data: {
+                id: id,
+               
+            },
+           
+            success: function(result){
+
+                $('.view-cv-on tbody').append(result);
+
+                var modal = $('.modal');
+        
+                modal.show();
+               
+            }
+        });
+
+
+        
+    }
+</script>
 
 
 @endsection

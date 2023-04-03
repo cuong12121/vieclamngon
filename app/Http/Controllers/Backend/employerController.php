@@ -8,6 +8,7 @@ use App\employer_register;
 use App\Models\job; 
 use Auth;
 use DB;
+use Illuminate\Support\Facades\Cache;
 use Illuminate\Support\Facades\Validator;
 
 use App\Models\employ_info;
@@ -202,6 +203,31 @@ class employerController extends Controller
 
         return redirect(route('employers-info-list'));
        
+    }
+
+    public function showViewerJob(Request $request)
+    {
+        $id = $request->id;
+
+        $data = Cache::get('arr_user_view_auth_'.$id);
+
+        $data_user = [];
+
+        if(isset($data)){
+
+            foreach ($data as  $value) {
+
+                $user = DB::table('users')->select('name', 'cv', 'id')->where('id', $value)->get()->first();
+
+                array_push($data_user, $user);
+               
+            }
+
+        }
+
+        return view('employer.show_view_job', compact('data_user'));
+
+
     }
 
     public function updateJob(Request $request, $id)

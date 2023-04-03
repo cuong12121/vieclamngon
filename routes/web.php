@@ -93,6 +93,8 @@ Route::group(['prefix' => 'nha-tuyen-dung','middleware' => 'Checkemploy'], funct
 
     Route::get('ung-tuyen', 'employerController@viewCvApply')->name('cv-apply-employer');
 
+    Route::post('show-viewer-job', 'Backend\employerController@showViewerJob')->name('show-viewer-job');
+
 
     Route::get('list-ung-vien', function () {
 

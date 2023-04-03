@@ -30,12 +30,38 @@
         // Check if blog session key exists
         // If not, update view_count and create session key
 
+
+        Session::forget($postKey);
+
+
+        // nếu chưa truy cập thì đếm là 1 
+
         if (!Session::has($postKey)) {
 
+
             Cache::increment('count_'.$job_id);
+
+            // nếu tồn tại id user thì lưu vào để lấy dữ thông tin user xem 
+
+            if(!empty($auth_user_id)){
+
+                $arr_user_view_auth = Cache::get('arr_user_view_auth_'.$job_id)??[];
+
+                array_push($arr_user_view_auth, $auth_user_id);
+
+                $arr_user_view_auth = array_unique($arr_user_view_auth);
+
+                Cache::forget('arr_user_view_auth_'.$job_id);
+
+                Cache::forever('arr_user_view_auth_'.$job_id, $arr_user_view_auth);
+
+            }
+
     
             Session::put($postKey, 1);
         }
+
+        dd(Cache::get('arr_user_view_auth_'.$job_id));
 
         $count_post = Cache::get('count_'.$job_id);
     
@@ -80,7 +106,7 @@
                                 <a class="employer job-company-name" href="{{ route('employ-details',  $data->link) }}">{{ @$data->name }}</a>  
                             </div>
 
-                              @if(empty($check_date))
+                            @if(empty($check_date))
 
                             <?php 
 
