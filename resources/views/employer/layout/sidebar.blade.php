@@ -18,7 +18,9 @@
                 </div>
                 <div class="child-wrapper overflow-hidden transition-all ease-in-out duration-300 " style="height: 65px;">
                     <div class="dropdown-child">
-                        <div class="py-2 select-none cursor-pointer hover:bg-pale-turquoise hover:bg-opacity-30">
+
+                      
+                        <div class="py-2 select-none cursor-pointer hover:bg-pale-turquoise hover:bg-opacity-30  {{ \Request::route()->getName()==='form_recruit'?'bg-pale-turquoise':''  }}" >
                             <div id="" class="flex items-center" style="margin-left: 28px;">
                                 <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
                                     <path d="M14.0997 0H4.80948C4.38385 0.00102546 3.9709 0.144959 3.63685 0.408716C3.3028 0.672474 3.06701 1.04077 2.96729 1.45455H11.6801C12.4393 1.45685 13.1668 1.75949 13.7037 2.29637C14.2406 2.83325 14.5432 3.56076 14.5455 4.32002V13.0328C14.9593 12.9331 15.3276 12.6973 15.5914 12.3632C15.8551 12.0292 15.9991 11.6162 16.0001 11.1906V1.90037C16.0001 1.39636 15.7999 0.912996 15.4435 0.556606C15.0871 0.200217 14.6037 0 14.0997 0Z" fill="#451DA0"></path>
@@ -27,7 +29,7 @@
                                 <div class="ml-[10px] text-13 leading-[16.5px] tracking-[-0.5px]"><a href="{{ route('form_recruit') }}">Tạo tin tuyển dụng</a></div>
                             </div>
                         </div>
-                        <div class="py-2 select-none cursor-pointer hover:bg-pale-turquoise hover:bg-opacity-30 bg-pale-turquoise">
+                        <div class="py-2 select-none cursor-pointer hover:bg-pale-turquoise hover:bg-opacity-30 {{ \Request::route()->getName()==='employers-info-list'?'bg-pale-turquoise':''  }} ">
                             <div id="" class="flex items-center" style="margin-left: 28px;">
                                 <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
                                     <g clip-path="url(#clip0)">
@@ -59,7 +61,7 @@
                 </div>
                 <div class="child-wrapper overflow-hidden transition-all ease-in-out duration-300 " style="height: 98px;">
                     <div class="dropdown-child">
-                        <div class="py-2 select-none cursor-pointer hover:bg-pale-turquoise hover:bg-opacity-30">
+                        <div class="py-2 select-none cursor-pointer hover:bg-pale-turquoise hover:bg-opacity-30 {{ \Request::route()->getName()==='cv-apply-employer'?'bg-pale-turquoise':''}}" >
                             <div id="" class="flex items-center" style="margin-left: 28px;">
                                 <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
                                     <g clip-path="url(#clip0)">
@@ -85,7 +87,7 @@
                                 <div class="ml-[10px] text-13 leading-[16.5px] tracking-[-0.5px]">Hồ sơ đã lưu</div>
                             </div>
                         </div> -->
-                        <div class="py-2 select-none cursor-pointer">
+                        <div class="py-2 select-none cursor-pointer {{ \Request::route()->getName()==='list-ung-vien'?'bg-pale-turquoise':''}}" >
                             <div id="" class="flex items-center" style="margin-left: 28px;">
                                 <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
                                     <g clip-path="url(#clip0)">
