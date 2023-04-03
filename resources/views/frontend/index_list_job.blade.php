@@ -544,14 +544,11 @@
                         $outstanding_work= DB::table('job')->join('employ_info', 'job.employer_id', '=', 'employ_info.employ_id')->select('job.title', 'job.id', 'employ_info.name', 'employ_info.logo', 'employ_info.links', 'job.link','job.salaryunit', 'job.salary', 'job.address_job')->orderBy('id', 'desc')->take(10)->get();
 
 
-
-
                     ?>
                     @if($outstanding_work->count()>0)
 
                     @foreach($outstanding_work as $value)
-
-                    @if($value->id != 235)
+                   
                     <div class="col-lg-6 ">
                         <div class="job-item">
                             <div class="figure">
@@ -560,8 +557,6 @@
                                     <div class="title"><a target="_blank" href="{{ route('job_details', [$value->link, $value->id]) }}" title="Senior Sales Manager">{{  $value->title }}</a></div>
                                     <div class="caption">
                                         <a class="company-name" href="{{ route('job_details', [$value->link, $value->id]) }}" title="Hongfa Electroacoustic (HK) Company Limited" target="_blank">{{ $value->name }}</a>
-
-                                        
                                         
                                         {!! @$value->salary  !!} {{ $value->salaryunit===0?'Đ':'usd' }}
 
@@ -585,9 +580,7 @@
                         </div>
                     </div>
 
-                    @endif
-
-
+                   
                     @endforeach
 
                     @endif
