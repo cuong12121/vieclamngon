@@ -8,7 +8,7 @@
 <meta name="keywords" content="Kiem viec, tim viec lam, tuyen dung, viec lam, viec lam online, tim viec, mang tuyen dung, việc làm, tìm việc, kiếm việc, tuyển dụng, việc làm online" />
 <meta name="description" content="tìm kiếm  Hơn 1,3 triệu ứng viên để lựa chọn, nhưng vẫn làm cho việc tuyển dụng dễ dàng và tiết kiệm nhờ các tính năng quản lý và nhắc nhở thông minh." />
 
-<link rel="shortcut icon" href="https://vieclamngon.vn/images/logo.png"/>
+<link rel="shortcut icon" href="{{ asset('images/upload/logo/logo2.jpg') }}"/>
 
 <meta name="robots" content="index,follow">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
