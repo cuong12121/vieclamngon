@@ -11,28 +11,14 @@
        
         <title>{{ $meta??'Tuyển dụng và Tìm kiếm việc làm nhanh' }} </title>
         <meta name="keywords" content="Việc làm, kiếm việc, tìm việc làm, tuyển dụng, ứng viên,  mạng tuyển dụng, việc làm online, HR, nghành nghề hot, công ty hàng đầu Việt Nam, việc làm bán thời gian" />
-        <meta name="description" content="CareerBuilder Mạng Việc Làm &amp; Tuyển Dụng hàng đầu thế giới với hơn 300.000 cơ hội &quot;Việc Tốt - Lương Cao&quot;, được tin dùng bởi hơn 14.000 doanh nghiệp hàng đầu tại Việt Nam. Khám phá ngay!" />
+        <meta name="description" content="" />
         <link href="javascript:void(0)" hreflang="vi-vn" rel="alternate"/>
         <link href="javascript:void(0)" hreflang="x-default" rel="alternate"/>
-        <meta property="og:url" content="https://careerbuilder.vn/vi/"/>
-        <meta property="og:title" content="Tuyển dụng & Tìm kiếm việc làm nhanh - CareerBuilder.vn"/>
-        <meta property="og:description" content="CareerBuilder Mạng Việc Làm &amp; Tuyển Dụng hàng đầu thế giới với hơn 300.000 cơ hội &quot;Việc Tốt - Lương Cao&quot;, được tin dùng bởi hơn 14.000 doanh nghiệp hàng đầu tại Việt Nam. Khám phá ngay!"/>
-        <meta name="apple-mobile-web-app-capable" content="yes"/>
-        <meta name="apple-mobile-web-app-status-bar-style" content="#1e5c8b"/>
-        <meta name="apple-mobile-web-app-title" content="CareerBuilder"/>
+    
         <link rel="apple-touch-icon" href="javascript:void(0)"/>
-       
         <link href="javascript:void(0)" rel="manifest"/>
-
-        <link data-page-subject="true" href="https://static.careerbuilder.vn/themes/careerbuilder/img/CareerBuilder-social.png" rel="image_src"/>
-        <meta property="fb:app_id" content="143458889176984"/>
         <link rel="shortcut icon" href="javascript:void(0)"/>
-        <link href="javascript:void(0)" rel="canonical" />
-        <style>/*jquery.fancybox.css*/
-           
-            /*global.css*/
-           
-        </style>
+       
         <link rel="stylesheet" type="text/css" href="{{ asset('css/fancybox.css') }}">
         <link rel="stylesheet" type="text/css" href="{{ asset('css/global1.css') }}">
         <link rel="stylesheet" type="text/css" href="{{ asset('css/swiper.css') }}">    
@@ -478,17 +464,14 @@
 
                 job = JSON.stringify(job);
 
-                 localStorage.clear();
+                localStorage.clear();
 
                 window.localStorage.setItem('job', job);
 
-                
-
                 $('#job_'+id).addClass('red');
 
-                alert('save thành  công');
-
-
+            
+                alert('save thành công');
 
             }
 

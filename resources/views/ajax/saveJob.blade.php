@@ -1,7 +1,11 @@
 
 
+
+
 @if(!empty($job))
 @foreach($job as $jobs)
+
+
 
 
 
@@ -11,16 +15,16 @@
             <div class="figure">
                 <div class="image">
                     <a href="javascript:void(0)"><img src="{{ asset($jobs->logo) }}" alt="{{ $jobs->name }}" title="{{ $jobs->title }}"> {{ $jobs->title }} </a></div>
-
-
+            
                 <div class="figcaption">
-                    <h3><a href="{{ route('job_details',  $jobs->links)  }}">{{ $jobs->title }}</a></h3>
+                    <h3><a href="{{ route('job_details', [$jobs->link, $jobs->id]) }}" target="_blank">{{ $jobs->title }}</a></h3>
                     <p class="company-name"><a href="{{ $jobs->links }}" title="{{ $jobs->name }}">{{ $jobs->name }}</a></p>
                     <p class="location">Hà Nội</p>
                 </div>
             </div>
         </div>
     </td>
+
 
 
     <td class="location">

@@ -10,29 +10,12 @@
         <title>Tuyển dụng và tìm kiếm việc làm nhanh</title>
         <meta name="keywords" content="Việc làm, kiếm việc, tìm việc làm, tuyển dụng, ứng viên,  mạng tuyển dụng, việc làm online, HR, nghành nghề hot, công ty hàng đầu Việt Nam, việc làm bán thời gian" />
         <meta name="description" content="CareerBuilder.vn - Mạng việc làm và tuyển dụng lớn nhất Việt Nam. Cho phép tìm kiếm việc làm nhanh và hiệu quả với hơn 10.000 việc làm mới và hấp dẫn mỗi tuần từ các công ty hàng đầu" />
-        <link href="https://careerbuilder.vn/vi/jobseekers/dashboard" hreflang="vi-vn" rel="alternate"/>
-        <link href="https://careerbuilder.vn/en/jobseekers/dashboard" hreflang="x-default" rel="alternate"/>
-        <meta property="og:url" content="https://careerbuilder.vn/vi/jobseekers/dashboard"/>
         <meta property="og:title" content="Tuyển dụng và tìm kiếm việc làm nhanh | CareerBuilder.vn"/>
         <meta property="og:description" content="CareerBuilder.vn - Mạng việc làm và tuyển dụng lớn nhất Việt Nam. Cho phép tìm kiếm việc làm nhanh và hiệu quả với hơn 10.000 việc làm mới và hấp dẫn mỗi tuần từ các công ty hàng đầu"/>
-        <meta name="apple-mobile-web-app-capable" content="yes"/>
-        <meta name="apple-mobile-web-app-status-bar-style" content="#1e5c8b"/>
-        <meta name="apple-mobile-web-app-title" content="CareerBuilder"/>
-        <link rel="apple-touch-icon" href="https://careerbuilder.vn/favicon_careerbuilder_v2.ico?t=1"/>
-        <link rel="apple-touch-icon" sizes="57x57" href="https://static.careerbuilder.vn/themes/kiemviecv32/images/graphics/cb_57x57.png?t=1"/>
-        <link rel="apple-touch-icon" sizes="76x76" href="https://static.careerbuilder.vn/themes/kiemviecv32/images/graphics/cb_76x76.png?t=1"/>
-        <link rel="apple-touch-icon" sizes="120x120" href="https://static.careerbuilder.vn/themes/kiemviecv32/images/graphics/cb_120x120.png?t=1"/>
-        <link rel="apple-touch-icon" sizes="152x152" href="https://static.careerbuilder.vn/themes/kiemviecv32/images/graphics/cb_152x152.png?t=1"/>
-        <link rel="apple-touch-icon" sizes="167x167" href="https://static.careerbuilder.vn/themes/kiemviecv32/images/graphics/cb_167x167.png?t=1"/>
-        <link rel="apple-touch-icon" sizes="180x180" href="https://static.careerbuilder.vn/themes/kiemviecv32/images/graphics/cb_180x180.png?t=1"/>
-     
-
+  
+   
         <meta name="csrf-token" content="{{ csrf_token() }}">
-        <meta property="og:image" content="https://static.careerbuilder.vn/themes/careerbuilder/img/CareerBuilder-social.png"/>
-        <link data-page-subject="true" href="https://static.careerbuilder.vn/themes/careerbuilder/img/CareerBuilder-social.png" rel="image_src"/>
         <meta property="fb:app_id" content="143458889176984"/>
-     
-        
         <link rel="stylesheet" type="text/css" href="{{ asset('css/userClient.css') }}">
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
         <!-- <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery-ajaxy/1.6.1/scripts/jquery.ajaxy.min.js"></script> -->

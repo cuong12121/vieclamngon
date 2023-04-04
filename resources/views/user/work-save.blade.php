@@ -95,6 +95,8 @@
 
     var data = window.localStorage.getItem('job');
 
+    
+
     function saveJob() {
          $.ajax({
 

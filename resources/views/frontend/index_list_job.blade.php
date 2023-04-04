@@ -872,11 +872,20 @@
 
                  // localStorage.clear();
 
-                alert('lưu công việc thành công');
+                $('#job_'+id).addClass('red');
+
+                // alert('lưu công việc thành công');
 
 
             }
-            console.log(JSON.parse(window.localStorage.getItem('job')));
+            
+            job =  JSON.parse(window.localStorage.getItem('job'));
+
+             for(i=0; i<job.length; i++){
+
+                $('#job_'+job[i]).addClass('red');
+             }
+
         </script>
         <script type="text/javascript" src="{{ asset('download/js/jquery.fancybox-1.3.4.js')}}"></script>
         <script type="text/javascript" src="{{ asset('download/js/jquery.validate.js')}}"></script>

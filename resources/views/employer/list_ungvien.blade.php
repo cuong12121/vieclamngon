@@ -43,24 +43,7 @@
                 <!-- <div class="right-heading"><a href="https://careerbuilder.vn/vi/employers/faq" target="_blank" class="support">Hướng dẫn</a></div> -->
             </div>
             
-            <script type="text/javascript">
-                var action  = 'posting';
-                var user_id = 'chiensi26045.1652405352';
-                
-                $(document).ready(function() {
-                    $("#limit").on('change', function(event) {
-                        event.preventDefault();
-                        var limit       = $('#limit').val();
-                        var url = 'employers/hrcentral/'+action+'/user_id/'+user_id+'/sort/desc/type/3/limit/'+limit;
-                        window.location = domain + url;
-                        return false;
-                    });
-                });
-                function setTypeSort(act, sort, type)
-                {
-                    window.location = domain+"employers/hrcentral/"+act+"/user_id/chiensi26045.1652405352/sort/"+sort+"/type/"+type;
-                }
-            </script>
+          
             <!-- <div class="filter-emp-user-create">
                 <label>Việc làm đăng bởi</label>
                 <select name="user_id" onchange="SetUserId(this.value, 'posting');">
@@ -94,33 +77,7 @@
                         </a>
                     </li> -->
                 </ul>
-                <script>
-                    function exportJobs()
-                    {
-                        var i=0;
-                        var strParam = '';
-                                strParam += "strUser_id=chiensi26045.1652405352&";
-                                strParam += "intEmp_parent=271347&";
-                                strParam += "strSort=desc&";
-                                strParam += "intType=3&";
-                                strParam += "keyword=&";
-                                strParam += "type_s=0&";
-                                strParam += "datetype=&";
-                                strParam += "fromdate=&";
-                                strParam += "todate=&";
-                                strParam += "intPage=1&";
-                                strParam += "intLimit=20&";
-                                strParam +='straction=posting';
-                        window.location = domain + "employers/hrcentral/exportjobs?"+strParam;
-                    }
-                    function exportResumes(job_id)
-                    {
-                        window.location = domain + "employers/hrcentral/exportresume?j="+job_id;
-                    }
-                    $(document).ready(function() {
-                    
-                    });
-                </script>
+               
                 <div class="tabslet-content active">
                     <div class="main-jobs-posting">
                         <div class="heading-jobs-posting">
@@ -253,29 +210,6 @@
                 </div>
 
                 
-                <script type="text/javascript">
-                    var language_append = {
-                            emp_hrcentral_unposting_this_online_job:"Quý khách muốn tạm ngừng đăng quảng cáo tuyển dụng này?<br/>Lưu ý: Thời gian tạm ngừng vẫn được tính vào thời hạn 30 ngày đăng tuyển của quảng cáo tuyển dụng. Trong thời gian tạm ngừng, các dịch vụ cộng thêm sẽ bị gián đoạn cho đến khi quảng cáo tuyển dụng được kích hoạt lại. ",
-                            emp_hrcentral_unposting_success:"Tạm dừng đăng thành công",
-                            emp_hrcentral_unposting_unsuccess:"Tạm dừng đăng không thành công",
-                            emp_hrcentral_please_select_fromdate:"Vui lòng chọn ngày từ",
-                            emp_hrcentral_please_select_todate:"Vui lòng chọn ngày đến",
-                            emp_hrcentral_validate_date:"Ngày không hợp lệ",
-                            emp_hrcentral_please_select_1_dk:"Vui lòng chọn 1 điều kiện tìm kiếm",
-                            hrcentral_select_check_unposting_job:"Vui lòng chọn ít nhất 1 vị trí tuyển dụng để tạm dừng đăng",
-                            emp_hrcentral_permission_unposting:"Tài khoản của bạn chưa được cấp quyền tạm dừng đăng tuyển dụng."
-                    }
-                    if(typeof language === 'undefined'){
-                        var language = language_append;
-                    }else{
-                        $.extend(language, language_append);
-                    }
-                    var current_tag_show = null;
-                    $(document).ready(function(){
-                    });
-                </script>
-
-
                 
                 <script type="text/javascript">
                     
