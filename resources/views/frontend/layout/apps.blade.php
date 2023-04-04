@@ -106,91 +106,85 @@
                 
             </div>
             <div class="right-wrap">
-                  @if(!Auth::guard('employer_register')->check())
-                            <div class="main-login dropdown">
-                                @if (Auth::guard('employer_register')->check()) 
-                            
-                                <div class="titles-login"><a href="{{ route('user-dashboard') }}">Xin chào {{ Auth::guard('employer_register')->name }}</a></div>
+                @if(!Auth::guard('employer_register')->check())
+                <div class="main-login dropdown">
+                    @if (Auth::guard('employer_register')->check()) 
+                
+                    <div class="titles-login"><a href="{{ route('user-dashboard') }}">Xin chào {{ Auth::guard('employer_register')->name }}</a></div>
 
-                            
-                                @else
+                
+                    @else
 
-                                    <div class="title-login"><a href="javascript:;" title="Đăng nhập">Đăng nhập</a></div>
+                        <div class="title-login"><a href="javascript:;" title="Đăng nhập">Đăng nhập</a></div>
 
-                                
-                                @endif
+                    
+                    @endif
 
-                               
-                                 <div class="dropdown-menu">
-                                    <div class="login-wrapper">
-                                       <form method="post" action="{{ route('loginEmployer') }}" id="frm_login_header">
-                                          @csrf
-                                          <div class="row">
-                                             <div class="form-group col-12">
-                                                <input type="text" placeholder="Email/Tên đăng nhập"  autocomplete="off"  id="username_box" name="email">
-                                             </div>
-                                             <div class="form-group col-8">
-                                                <input type="password" placeholder="Mật khẩu" id="password_box" name="password" autocomplete="off">
-                                             </div>
-                                             <div class="form-group col-4">
-                                                <input type="hidden" name="csrf_token_login" value= "7e7e04f06310c940562b558142ad1436eee6c56ad49b67af45cb527256c5f388" />
-                                                <button type="submit">Đăng nhập</button>
-                                             </div>
-                                          </div>
-                               
-                                          <a class="forget-password register" href="">Đăng ký</a>
-                                       </form>
-                                    </div>
+                   
+                     <div class="dropdown-menu">
+                        <div class="login-wrapper">
+                           <form method="post" action="{{ route('loginEmployer') }}" id="frm_login_header">
+                              @csrf
+                              <div class="row">
+                                 <div class="form-group col-12">
+                                    <input type="text" placeholder="Email/Tên đăng nhập"  autocomplete="off"  id="username_box" name="email">
                                  </div>
-                            </div>
-                            @endif
+                                 <div class="form-group col-8">
+                                    <input type="password" placeholder="Mật khẩu" id="password_box" name="password" autocomplete="off">
+                                 </div>
+                                 <div class="form-group col-4">
+                                    <input type="hidden" name="csrf_token_login" value= "7e7e04f06310c940562b558142ad1436eee6c56ad49b67af45cb527256c5f388" />
+                                    <button type="submit">Đăng nhập</button>
+                                 </div>
+                              </div>
+                   
+                              <a class="forget-password register" href="">Đăng ký</a>
+                           </form>
+                        </div>
+                     </div>
+                </div>
+                @endif
 
-                            <!-- <div class="main-register"><a href="{{ route('register_employer') }}">Đăng ký</a></div> -->
-                            <div class="main-noti" style="display: none"><a href="javascript:void(0);"> <span class="mdi mdi-cart"></span></a></div>
+                <!-- <div class="main-register"><a href="{{ route('register_employer') }}">Đăng ký</a></div> -->
+                <div class="main-noti" style="display: none"><a href="javascript:void(0);"> <span class="mdi mdi-cart"></span></a></div>
 
+                @if(Auth::guard('employer_register')->check())
 
-                             @if(Auth::guard('employer_register')->check())
+                <div class="main-language dropdown">
+                     <div class="dropdown-toggle">
+                        <p>Xin chào {{ Auth::guard('employer_register')->user()->name_company }}</p>
+                    </div> 
+                    <div class="dropdown-menu">
 
-                            <div class="main-language dropdown">
-                                 <div class="dropdown-toggle">
-                                    <p>Xin chào {{ Auth::guard('employer_register')->user()->name_company }}</p>
-                                </div> 
-                                <div class="dropdown-menu">
+                        <div class="item">
+                           <a class="dropdown-item" href="{{ route('index_employer') }}" title="Change language">Dashboard</a>
+                        </div>
+                        
+                        <div class="item">
+                           <a class="dropdown-item" href="{{ route('employers_info') }}" title="Change language">Thông tin Doanh Nghiệp</a>
+                        </div>
+                        <div class="item">
+                           <a class="dropdown-item" href="{{ route('employers-info-list') }}" title="Change language">Quản lý đăng tuyển</a>
+                        </div>
 
-                                    <div class="item">
-                                       <a class="dropdown-item" href="{{ route('index_employer') }}" title="Change language">Dashboard</a>
-                                    </div>
-                                    
-                                    <div class="item">
-                                       <a class="dropdown-item" href="{{ route('employers_info') }}" title="Change language">Thông tin Doanh Nghiệp</a>
-                                    </div>
-                                    <div class="item">
-                                       <a class="dropdown-item" href="{{ route('employers-info-list') }}" title="Change language">Quản lý đăng tuyển</a>
-                                    </div>
+                        
 
-                                    
+                        <div class="item">
+                           <a class="dropdown-item" href="{{ route('employer-logout') }}" title="Change language">Logout</a>
+                        </div>
 
-                                    <div class="item">
-                                       <a class="dropdown-item" href="{{ route('employer-logout') }}" title="Change language">Logout</a>
-                                    </div>
+                    </div>
+                </div>
 
-                                </div>
-                            </div>
+                @endif
 
-            
-                            @endif
+                <div class="main-candidates">
+                    <a href="{{ route('registerClientUser') }}">
+                        
+                        <h4>Dành cho Ứng Viên</h4>
+                     </a>
+                </div>
 
-                            
-
-
-                            <div class="main-candidates">
-                                <a href="{{ route('registerClientUser') }}">
-                                    
-                                    <h4>Dành cho Ứng Viên</h4>
-                                 </a>
-                            </div>
-
-                                          
             </div>
         </div>
     </div>
@@ -227,9 +221,8 @@
                                         <li><a href="https://careerbuilder.vn/vi/employers/dashboard">Dashboard</a></li>
                                         <li><a href="https://careerbuilder.vn/vi/employers/postjobs">Đăng Tuyển Dụng</a></li>
                                         <li><a href="https://careerbuilder.vn/vi/resume-search.html">Tìm Hồ Sơ</a></li>
-
-                                                                                                                                <li><a href="https://careerbuilder.vn/vi/employers/careerbuilder-rewards">CareerBuilder Rewards</a></li>
-                                                                                                                </ul>
+                                        <li><a href="https://careerbuilder.vn/vi/employers/careerbuilder-rewards">CareerBuilder Rewards</a></li>
+                                    </ul>
                                 </div>
                             </li>
                             <li><a href="https://careerbuilder.vn/vi/hiringsite"> <i class="mdi mdi-lightbulb-on-outline"></i>Cẩm Nang Tuyển Dụng</a></li>
@@ -257,8 +250,9 @@
         </div>
     </div>
     <div class="backdrop"></div>
-</header>            <main>
-                   <style>/*jquery.auto-complete.css*/
+</header>            
+<main>
+<style>/*jquery.auto-complete.css*/
 .autocomplete-suggestions{text-align:left;cursor:default;border:1px solid #ccc;border-top:0;background:#fff;box-shadow:-1px 1px 3px rgba(0,0,0,.1);position:absolute;display:none;z-index:9999;max-height:254px;overflow:hidden;overflow-y:auto;box-sizing:border-box;}.autocomplete-suggestion{position:relative;padding:0 .6em;line-height:23px;white-space:nowrap;overflow:hidden;text-overflow:ellipsis;font-size:1.02em;color:#333;}.autocomplete-suggestion b{font-weight:normal;color:#1f8dd6;}.autocomplete-suggestion.selected{background:#f0f0f0;}
 
 /*manage-job-posting-post-jobs.css*/
@@ -272,8 +266,6 @@
     <script src='https://cdn.jsdelivr.net/npm/@goongmaps/goong-js@1.0.6/dist/goong-js.js'></script>
     <link href='https://cdn.jsdelivr.net/npm/@goongmaps/goong-js@1.0.6/dist/goong-js.css' rel='stylesheet' />
     <section class="employer-navbar-2-1">
-
-
 
     @yield('content')
 
