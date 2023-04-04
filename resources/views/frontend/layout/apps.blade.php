@@ -28,13 +28,6 @@
    var memberLogin = "yes";
 </script>
 
-
-<!-- 
-<script type="text/javascript" src="https://static.careerbuilder.vn/themes/employer/gallery/daterangepicker/moment.min.js"></script>
-<script type="text/javascript" src="https://static.careerbuilder.vn/themes/employer/gallery/daterangepicker/moment-with-locales.min.js"></script>
-<script type="text/javascript" src="https://static.careerbuilder.vn/themes/employer/gallery/daterangepicker/daterangepicker.min.js"></script>
-<link rel="stylesheet" type="text/css" href="https://static.careerbuilder.vn/themes/employer/gallery/daterangepicker/daterangepicker.css" /> -->
-
 <script>
    var language_common = {
       common_menu_left_view_all:"Xem tất cả",
