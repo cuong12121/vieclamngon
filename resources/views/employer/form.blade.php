@@ -53,7 +53,7 @@
                                         <div class="row">
                                             <div class="col-lg-6">
                                                 <div class="form-group form-text">
-                                                    <input type="text"id="job_title" class="keyword" name="job_title" value="{{ @$data->title }}" onblur="loadTagKey()" placeholder="Chức danh tuyển dụng">
+                                                    <input type="text"id="job_title" class="keyword" name="job_title" value="{{ @$data->title }}" onblur="loadTagKey()" placeholder="Chức danh tuyển dụng" required>
                                                     <span class="form-error"></span>
                                                 </div>
                                             </div>
@@ -68,7 +68,7 @@
                                         <div class="row">
                                             <div class="col-lg-3">
                                                 <div class="form-group form-text">
-                                                    <input type="text" id="job_code" name="job_code" maxlength="12" value="{{ @$data->code }}" placeholder="Mã công việc">
+                                                    <input type="text" id="job_code" name="job_code" maxlength="12" value="{{ @$data->code }}" placeholder="Mã công việc" required>
                                                 </div>
                                             </div>
                                             <div class="col-lg-6">
@@ -83,7 +83,7 @@
                                         </div>
                                         <div class="form-group form-editor" id="div_jobdesc">
                                             <label>Mô Tả Công Việc <font style="color: red">*</font></label>
-                                            <textarea cols="80" rows="5" id="job_desc" name="job_desc" class="editor">{{ @$data->detail }}</textarea>
+                                            <textarea cols="80" rows="5" id="job_desc" name="job_desc" class="editor" required>{{ @$data->detail }}</textarea>
                                             <span class="form-error"></span>
                                             <div class="note">
                                                 <p>Nhỏ hơn 10 000 kí tự</p>
@@ -91,7 +91,7 @@
                                         </div>
                                         <div class="form-group form-editor" id="div_jobreq">
                                             <label>Yêu cầu công việc <font style="color: red">*</font></label>
-                                            <textarea cols="80" rows="5" id="job_req" name="job_req" class="editor">{{ @$data->requirements }}</textarea>
+                                            <textarea cols="80" rows="5" id="job_req" name="job_req" class="editor" required>{{ @$data->requirements }}</textarea>
                                             <span class="form-error"></span>
                                             <div class="note">
                                                 <p>Nhỏ hơn 10 000 kí tự</p>
@@ -99,7 +99,7 @@
                                         </div>
                                         <div class="form-group form-editor" id="div_jobreq">
                                             <label>Quyền lợi ứng viên<font style="color: red">*</font></label>
-                                            <textarea cols="80" rows="5" id="rights" name="rights" class="editor">{!! @$data->rights !!}</textarea>
+                                            <textarea cols="80" rows="5" id="rights" name="rights" class="editor" required>{!! @$data->rights !!}</textarea>
                                             <span class="form-error"></span>
                                             <div class="note">
                                                 <p>Nhỏ hơn 10 000 kí tự</p>
@@ -255,8 +255,6 @@
                                                 $benefit_selected = [];
 
                                                 if(!empty($data)){
-
-
 
                                                     $benefit_selected = json_decode($data->benefit);
 
