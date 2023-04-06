@@ -14,6 +14,7 @@ class employ_info extends Model
         'website',
         'taxid',
         'desc',
+        'links',
         'address_employ',
         'employ_id',
         'logo'

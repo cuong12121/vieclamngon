@@ -544,6 +544,8 @@
                         $outstanding_work= DB::table('job')->join('employ_info', 'job.employer_id', '=', 'employ_info.employ_id')->select('job.title', 'job.id', 'employ_info.name', 'employ_info.logo', 'employ_info.links', 'job.link','job.salaryunit', 'job.salary', 'job.address_job')->orderBy('id', 'desc')->take(10)->get();
 
 
+
+
                     ?>
                     @if($outstanding_work->count()>0)
 
@@ -552,7 +554,7 @@
                     <div class="col-lg-6 ">
                         <div class="job-item">
                             <div class="figure">
-                                <div class="image"><a target="_blank" href="{{ route('job_details', [$value->link, $value->id]) }}" title="Hongfa Electroacoustic (HK) Company Limited"><img src="https://images.careerbuilder.vn/employer_folders/lot3/291743/67x67/103534logo_hongfa-003-4.png" class="swiper-lazy swiper-lazy-loaded" alt="Hongfa Electroacoustic (HK) Company Limited"></a></div>
+                                <div class="image"><a target="_blank" href="{{ route('job_details', [$value->link, $value->id]) }}" title="{{  $value->title }}" class="swiper-lazy swiper-lazy-loaded" alt="{{  $value->title }}"></a></div>
                                 <div class="figcaption">
                                     <div class="title"><a target="_blank" href="{{ route('job_details', [$value->link, $value->id]) }}" title="Senior Sales Manager">{{  $value->title }}</a></div>
                                     <div class="caption">

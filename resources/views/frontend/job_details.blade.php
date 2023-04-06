@@ -98,8 +98,7 @@
                             <div class="job-desc">
                                 <h1 class="title">{{ @$data->title }}</h1>
 
-
-                                <a class="employer job-company-name" href="{{ route('employ-details',  $data->link) }}">{{ @$data->name }}</a>  
+                                <a class="employer job-company-name" href="{{ route('employ-details',  $data->links) }}">{{ @$data->name }}</a>  
                             </div>
 
                             @if(empty($check_date))
