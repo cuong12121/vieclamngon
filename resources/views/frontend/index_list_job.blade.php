@@ -557,14 +557,15 @@
                                     <div class="title"><a target="_blank" href="{{ route('job_details', [$value->link, $value->id]) }}" title="Senior Sales Manager">{{  $value->title }}</a></div>
                                     <div class="caption">
                                         <a class="company-name" href="{{ route('job_details', [$value->link, $value->id]) }}" title="Hongfa Electroacoustic (HK) Company Limited" target="_blank">{{ $value->name }}</a>
+
+                                         <?php 
+
+                                            $salary =  explode('-', $value->salary);  
+
+                                        ?>
+                                        {{ @number_format(intval($salary[0]))   }} - {{ @number_format(intval($salary[1]))   }} {{ $value->salaryunit===0?'Đ':'usd' }}
                                         
-                                        {!! @$value->salary  !!} {{ $value->salaryunit===0?'Đ':'usd' }}
-
-                                        <!-- <div class="location">
-                                            <em class="mdi mdi-map-marker"></em>
-                                            <p> Hà Nội</p>
-                                        </div> -->
-
+                            
                                         @if (Auth::check()) 
                                         
 
