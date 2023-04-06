@@ -14,7 +14,7 @@ class jobController extends Controller
 
         $findID = job::findOrFail($id);
 
-        $data =   DB::table('job')->join('employ_info', 'employ_info.employ_id', '=', 'job.employer_id')->select()->where('job.id', $findID->id)->first(); 
+        $data =   DB::table('job')->join('employ_info', 'employ_info.employ_id', '=', 'job.employer_id')->where('job.id', $findID->id)->first(); 
 
         $job_id = $id;
         

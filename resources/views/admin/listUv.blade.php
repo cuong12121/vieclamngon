@@ -53,9 +53,6 @@
         @endif    
         
         
-
-    
-    
     </table>
 
     <!-- Modal -->
@@ -83,19 +80,17 @@
 
     function data_apply_cv(id) {
        
-    
-
         $.ajax({
             type: 'GET',
             url: "{{ route('view-apply-job') }}",
             data:{
                 id:id
             },
-           
             success: function(result){
-              
-               $('.modal-body').append(result);
-                 $('#exampleModal').modal('show');
+
+                $('.modal-body').html('');
+                $('.modal-body').append(result);
+                $('#exampleModal').modal('show');
               
                 
             }

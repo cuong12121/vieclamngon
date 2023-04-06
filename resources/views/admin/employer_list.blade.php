@@ -25,7 +25,7 @@
 <table>
 
     <?php 
-        $data = DB::table('employ_info')->get();
+        $data = DB::table('employ_info')->paginate(10);
     ?>
 
     <tr>
@@ -36,15 +36,38 @@
         
         <th>Xóa</th>
     </tr>
-    
+
+
+       
         @if(!empty($data))
             @foreach($data as $value)
+
+            <?php 
+
+                $check_job_post =   DB::table('job')->join('employ_info', 'employ_info.employ_id', '=', 'job.employer_id')->where('job.employer_id', $value->employ_id)->get();
+
+                $apply = DB::table('apply_jobs')->join('employ_info', 'employ_info.id', '=', 'apply_jobs.employ_id')->where('apply_jobs.employ_id', $value->id)->get();
+
+
+            ?>
             <tr>
                 <td>{{ $value->name }}</td>
-                <td><button type="button" class="btn btn-primary"  onclick="data_job({{ $value->employ_id }})">Xem</button></td>
+
                 <td>
-                    <button type="button" class="btn btn-primary"  onclick="cv_apply({{ $value->employ_id }})">Xem</button>
+                     @if(!empty($check_job_post->first()))
+                    <button type="button" class="btn btn-primary"  onclick="data_job({{ $value->employ_id }})">Xem {{ $check_job_post->count() }} công việc </button>
+                     @endif
                 </td>
+
+                
+                <td> 
+
+                   
+                    @if(!empty($apply->first()))
+                    <button type="button" class="btn btn-primary"  onclick="cv_apply({{ $value->employ_id }})">Xem {{  $apply->count() }} cv ứng tuyển </button>
+                    @endif
+                </td>
+               
                 <td>chọn</td>
                
                 <td><a href="{{ route('delete-employ', $value->id) }}">Xóa</a></td>
@@ -52,13 +75,12 @@
             @endforeach
         @endif    
         
-        
-   
+</table>
+@if(!empty($data))
 
+{!! $data->links()   !!}
 
-    
-    
-    </table>
+@endif
 
     <!-- Modal -->
 

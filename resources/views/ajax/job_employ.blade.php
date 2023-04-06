@@ -1,16 +1,14 @@
 <table>             
     <tr>
-        <th>cv nộp </th>
-        <th>Ngày giờ nộp</th>
+        <th>Tên công việc </th>
+        <th>Ngày tạo</th>
      
     </tr>
-    @if(!empty($apply_job))
-    @foreach($apply_job as $datas)
+    @if(!empty($job))
+    @foreach($job as $datas)
     <tr>
-
-        
-        <td><a href="{{ route('viewCvadmin', $datas->id) }}">{{ (App\User::find($datas->user_id))->name }}</a></td>
-        <td>{{ ($datas->created_at)->format('d/m/Y, H:i:s') }}</td>
+        <td><a href="">{{  $datas->title }}</a></td>
+        <td>{{ \Carbon\Carbon::parse($datas->created_at)->format('d/m/Y')    }}</td>
     </tr>
     @endforeach
     @endif

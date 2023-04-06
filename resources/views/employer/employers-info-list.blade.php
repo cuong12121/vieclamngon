@@ -248,7 +248,7 @@
                                                 {{ ($jobs->updated_at)->format('d/m/Y, H:i:s')}}
                                             </td>
                                             <td >
-                                                 {{ $jobs->deadline}}
+                                                 {{  \Carbon\Carbon::parse($jobs->deadline)->format('d/m/Y') }}
                                             </td>
                                             <td>
                                                 <a href="javascript:void(0)" onclick="showViewerProduct({{ $jobs->id }})">{{ Cache::get('count_'.$jobs->id)??0  }}</a>

@@ -172,10 +172,9 @@ class adminController extends Controller
     public function showJob(Request $request)
     {
         $id = $request->id;
-        $job = job::where('employer_id', $id)->get();
+        $job =  DB::table('job')->join('employ_info', 'employ_info.employ_id', '=', 'job.employer_id')->where('employ_info.employ_id', $id)->OrderBy('job.updated_at', 'desc')->get();
+
         return view('ajax.job_employ', compact('job'));
-
-
 
     }
 
@@ -184,8 +183,8 @@ class adminController extends Controller
         $id = $request->id;
         $job_id = job::where('employer_id', $id)->get()->pluck('id')->toArray();
 
-        $apply_job = apply_job::whereIn('job_id', $job_id)->get();
-        return view('ajax.job_employ', compact('apply_job'));
+        $data = apply_job::whereIn('job_id', $job_id)->get();
+        return view('ajax.job_apply', compact('data'));
 
 
 
