@@ -71,7 +71,14 @@
                                         <h3 class="title"><a href="{{ route('job_details', [$value->link, $value->id]) }}" title="{{ $value->title }}">{{ $value->title }}</a></h3>
                                         <div class="caption">
                                             <p class="company-name">{{ $value->name }}</p>
-                                            <p class="salary">{!! $value->salary !!}</p>
+
+                                            <?php 
+
+                                                $salary =  explode('-', $value->salary);  
+
+                                            ?>
+                                            
+                                            <p class="salary">{{ @number_format(intval($salary[0]))   }} - {{ @number_format(intval($salary[1]))   }} {{ $value->salaryunit===0?'Đ':'usd' }}</p>
                                             <div class="location">
                                                 <ul>
                                                     <li>Hà Nội</li>
