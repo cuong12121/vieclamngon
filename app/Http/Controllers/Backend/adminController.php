@@ -125,9 +125,6 @@ class adminController extends Controller
 
         $now = Carbon::now();
 
-        dd(Auth::guard('employer_register')->user()->id);
-
-
         if(Auth::guard('employer_register')->check()){
 
             $postKey = 'employer_post_' . $id;

@@ -8,6 +8,10 @@
         .font-semibold{
             text-align: center;
         }
+        .remove-row{
+            margin:auto 0 !important;
+        }
+
     </style>
 
 
@@ -18,7 +22,7 @@
     <link rel="stylesheet" type="text/css" href="https://static-cdn.vieclam24h.vn/recruiter/230316114925/_next/static/css/116ba476cc1d5646.css">
    
     
-    <div class="row">
+    <div class="row remove-row">
         @include('employer.layout.sidebar')
         <div class="col-md-10">
             <section class="manage-job-posting-post-jobs cb-section bg-manage">

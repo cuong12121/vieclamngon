@@ -13,7 +13,7 @@
                 <div class="advanced-search">
                     <div class="form-group form-keyword">
                         <input type="search" class="keyword" name="keyword" id="keyword" placeholder="Chức danh, Kỹ năng, Tên công ty">
-                        <div class="cleartext"><em class="mdi mdi-close-circle"></em></div>
+                        <div class="cleartext"><i class="fa fa-search" aria-hidden="true"></i></div>
                     </div>
                    <!--  <div class="form-group form-select-chosen">
                         <select id="industry" name="industry" class="chosen-select chosen-select-max-three" data-placeholder="Tất cả ngành nghề" multiple>
@@ -223,13 +223,13 @@
                     <div class="form-group find-jobs">
                         <button class="btn-gradient" onClick="return validDatasearchJobsByKeyword('vi');">
                             <p>Tìm Ngay</p>
-                            <span class="mdi mdi-magnify"></span> 
+                           <i class="fa fa-search" aria-hidden="true"></i>
                         </button>
                     </div>
                     <div class="form-group animation">
                         <button class="btn-gradient" onClick="return validDatasearchJobsByKeyword('vi');">
                             <p>Tìm Ngay</p>
-                            <span class="mdi mdi-magnify"></span> 
+                           <i class="fa fa-search" aria-hidden="true"></i>
                         </button>
                     </div>
                 </div>
