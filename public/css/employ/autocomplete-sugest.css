@@ -2971,7 +2971,7 @@ a:hover {
   font-weight: 400;
 }
 .manage-job-posting-post-jobs .form-group input {
-  height: 45px;
+  height: 100px;
   border: none;
   border: none;
   border-bottom: 1px solid #e5e5e5;
@@ -2979,8 +2979,12 @@ a:hover {
   font-size: 16px;
   font-weight: 400;
 }
+
+.chosen-select-max-three{
+   height: 450px !important; 
+}
 .manage-job-posting-post-jobs .form-group select {
-  height: 450px;
+  height: 100px;
   border: none;
   border: none;
   border-bottom: 1px solid #e5e5e5;

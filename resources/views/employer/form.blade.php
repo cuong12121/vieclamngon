@@ -12,7 +12,7 @@
 
 
 
-    <link rel="stylesheet" type="text/css" href="{{ asset('css/employ/autocomplete-sugest.css') }}?ver=2"> 
+    <link rel="stylesheet" type="text/css" href="{{ asset('css/employ/autocomplete-sugest.css') }}?ver=6"> 
     <script src='https://cdn.jsdelivr.net/npm/@goongmaps/goong-js@1.0.6/dist/goong-js.js'></script>
     <link href='https://cdn.jsdelivr.net/npm/@goongmaps/goong-js@1.0.6/dist/goong-js.css' rel='stylesheet' />
     <link rel="stylesheet" type="text/css" href="https://static-cdn.vieclam24h.vn/recruiter/230316114925/_next/static/css/116ba476cc1d5646.css">

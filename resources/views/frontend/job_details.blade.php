@@ -219,7 +219,13 @@
                                                 <ul>
                                                     <li>
                                                         <strong>Lương</strong>
-                                                        {!! @$data->salary   !!} {{ $data->salaryunit===0?'Đ':'usd' }}
+
+                                                        <?php 
+
+                                                            $salary =  explode('-', $data->salary);  
+
+                                                        ?>
+                                                        {{ @number_format(intval($salary[0]))   }} - {{ @number_format(intval($salary[1]))   }} {{ $data->salaryunit===0?'Đ':'usd' }}
                                                     </li>
                                                    
                                                     <li>
@@ -247,8 +253,6 @@
 
                                         $data_ben = BENEFIT_ID;
 
-                                       
-                                    
                                     ?>
 
                                     @if(isset($benefit))
