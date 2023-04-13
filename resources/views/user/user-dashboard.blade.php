@@ -7,6 +7,181 @@
     .success{
         color: green !important;
     }
+
+/*    css modal*/
+
+/**
+ * Box model adjustments
+ * `border-box`... ALL THE THINGS - http://cbrac.co/RQrDL5
+ */
+
+*,
+*:before,
+*:after {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+/**
+ * 1. Force a vertical scrollbar - http://cbrac.co/163MspB
+ * NOTE: Use `text-rendering` with caution - http://cbrac.co/SJt8p1
+ * NOTE: Avoid the webkit anti-aliasing trap - http://cbrac.co/TAdhbH
+ * NOTE: IE for Windows Phone 8 ignores `-ms-text-size-adjust` if the
+ *       viewport <meta> tag is used - http://cbrac.co/1cFrAvl
+ */
+
+html {
+  font-size: 100%;
+  overflow-y: scroll; /* 1 */
+  min-height: 100%;
+}
+
+/**
+ * 1. Inherits percentage declared on above <html> as base `font-size`
+ * 2. Unitless `line-height`, which acts as multiple of base `font-size`
+ */
+
+body {
+  font-family: "Helvetica Neue", Arial, sans-serif;
+  font-size: 1em;   /* 1 */
+  line-height: 1.5; /* 2 */
+  color: #444;
+}
+
+/* Page wrapper */
+.wrapper {
+  width: 90%;
+  max-width: 800px;
+  margin: 4em auto;
+  text-align: center;
+}
+
+/* Icons */
+.icon {
+  display: inline-block;
+  width: 16px;
+  height: 16px;
+  vertical-align: middle;
+  fill: currentcolor;
+}
+
+/* Headings */
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  color: #222;
+  font-weight: 700;
+  font-family: inherit;
+  line-height: 1.333;
+  text-rendering: optimizeLegibility;
+}
+
+/**
+ * Modals ($modals)
+ */
+
+/* 1. Ensure this sits above everything when visible */
+.modal {
+    position: absolute;
+    z-index: 10000; /* 1 */
+    top: 0;
+    left: 0;
+    visibility: hidden;
+    width: 100%;
+    height: 100%;
+}
+
+.modal.is-visible {
+    visibility: visible;
+}
+
+.modal-overlay {
+  position: fixed;
+  z-index: 10;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: hsla(0, 0%, 0%, 0.5);
+  visibility: hidden;
+  opacity: 0;
+  transition: visibility 0s linear 0.3s, opacity 0.3s;
+}
+
+.modal.is-visible .modal-overlay {
+  opacity: 1;
+  visibility: visible;
+  transition-delay: 0s;
+}
+
+.modal-wrapper {
+  position: absolute;
+  z-index: 9999;
+  top: 6em;
+  left: 50%;
+  width: 32em;
+  margin-left: -16em;
+  background-color: #fff;
+  box-shadow: 0 0 1.5em hsla(0, 0%, 0%, 0.35);
+}
+
+.modal-transition {
+  transition: all 0.3s 0.12s;
+  transform: translateY(-10%);
+  opacity: 0;
+}
+
+.modal.is-visible .modal-transition {
+  transform: translateY(0);
+  opacity: 1;
+}
+
+.modal-header,
+.modal-content {
+  padding: 1em;
+}
+
+.modal-header {
+  position: relative;
+  background-color: #fff;
+  box-shadow: 0 1px 2px hsla(0, 0%, 0%, 0.06);
+  border-bottom: 1px solid #e8e8e8;
+}
+
+.modal-close {
+  position: absolute;
+  top: 0;
+  right: 0;
+  padding: 1em;
+  color: #aaa;
+  background: none;
+  border: 0;
+}
+
+.modal-close:hover {
+  color: #777;
+}
+
+.modal-heading {
+  font-size: 1.125em;
+  margin: 0;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.modal-content > *:first-child {
+  margin-top: 0;
+}
+
+.modal-content > *:last-child {
+  margin-bottom: 0;
+}
+
+/*end modal*/
 </style>
 
 <?php 
@@ -147,7 +322,7 @@
                                             @endif
                                           
 
-                                             @if($checksucess===true)
+                                            @if($checksucess===true)
                                             <li style="position: relative;">
                                                 <em class="mdi mdi-calendar"></em>
                                                 <p id="date_16167824">
@@ -217,7 +392,7 @@
                                         @else
 
                                          <div class="item">
-                                            <a title="Cập nhật hồ sơ" href="javascript:void(0);" class="ac_refesh" rel="16167824" >
+                                            <a title="Cập nhật hồ sơ" href="{{ route('my-profile') }}" class="ac_refesh" rel="16167824" >
                                             <span class="mdi mdi-rotate-3d-variant"></span>
                                             Cập nhật hồ sơ
                                             </a>
@@ -226,6 +401,15 @@
                                         @endif
                                     </div>
                                     
+                                </div>
+
+                                 <div class="item">
+
+
+                                    <a title="Cập nhật hồ sơ" href="javascript:void(0)" class="ac_refesh modal-button" >
+                                   
+                                    Thay ảnh đại diện
+                                    </a>
                                 </div>
                             </div>
                         </div>
@@ -328,10 +512,60 @@
                 </div>
             </div>
         </div>
+
+
+
+        <div class="modal">
+            <div class="modal-overlay modal-toggle"></div>
+            <div class="modal-wrapper modal-transition">
+                <div class="modal-header">
+                    <button class="modal-close modal-toggle">
+                        <svg class="icon-close icon" viewBox="0 0 32 32">
+                            <use xlink:href="#icon-close"></use>
+                        </svg>
+                    </button>
+                    <h2 class="modal-heading">Update Logo</h2>
+                </div>
+                <div class="modal-body">
+                    <div class="modal-content">
+
+                        <form method="POST" action="{{ route('upload-avatar') }}" enctype="multipart/form-data">
+
+                            @csrf
+                            <div>
+                                
+                                <input type="file" id="file" name="upFile" accept="jpg, png">
+
+                            </div>
+
+                            <br>
+                            
+                            <div>
+                                 <button type="submit">Update</button>
+                            </div>
+                            
+                        </form>
+                       
+                       
+                    </div>
+                </div>
+            </div>
+        </div>
+
         <style>
             .detail-loading{display: none;}
         </style>
         <script>
+
+            $('.modal-button').on('click', function(e) {
+
+                e.preventDefault();
+                $('.modal').toggleClass('is-visible');
+
+            });
+           
+
+
             var language_psearchlist = {
                 job_chk_save_jobs_saved:"Việc làm đã lưu",
                 job_chk_save_jobs_save:"Lưu việc làm"

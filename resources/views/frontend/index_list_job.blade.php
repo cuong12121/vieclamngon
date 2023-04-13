@@ -211,7 +211,7 @@
                                 <a href="{{ route('user-dashboard') }}" class="showDialogD" >Xin chào {{ Auth::user()->name }}</a>
                                 <ul class="dropdown-menu drop1">
                                     <li><a href="{{ route('user-dashboard') }}">Dashboard</a></li>
-                                    <li><a href="#">Logout</a></li>
+                                    <li><a href="{{ route('logoutUser') }}">Logout</a></li>
                                  
                                 </ul>
                             </li>

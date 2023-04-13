@@ -218,7 +218,7 @@
                     </div>
                 @endif
                 <div class="cb-title cb-title-center">
-                    <h2>Tham gia ngay hôm nay</h2>
+                    <h2>Update lại password</h2>
                 </div>
 
                 @foreach ($errors->all() as $error)
@@ -285,42 +285,32 @@
                         <div class="col-md-6">
                             <div class="main-form">
                                 <ul class="list-tabs">
-                                    <li class="login-user"><a href="javascript:void(0)" title="Đăng Nhập ">Đăng Nhập </a></li>
+                                    <li class="login-user"><a href="javascript:void(0)" title="Đăng Nhập ">Lấy lại mật khẩu đăng nhập</a></li>
                                   
                                 </ul>
-                                <!-- <div class="choose-follow">
-                                    <p>Đăng nhập bằng</p>
-                                    <ul class="list-follow">
-                                        <li>
-                                            <button class="fb" onclick="popupapi('facebook','aHR0cHM6Ly9jYXJlZXJidWlsZGVyLnZuL3ZpL2pvYnNlZWtlcnMvbG9naW5mYWNlYm9vaz9jaGVjaz0xJm93bmVyPWtpZW12aWVjJmFwcGx5X3VybD1odHRwczovL2NhcmVlcmJ1aWxkZXIudm4vdmkvam9ic2Vla2Vycy9yZGxvZ2luc2M=');"><em class="fa fa-facebook"></em>Facebook</button>
-                                        </li>
-                                        <li>
-                                            <button class="gg" onclick="popupapi('google','aHR0cHM6Ly9jYXJlZXJidWlsZGVyLnZuL3ZpL2pvYnNlZWtlcnMvbG9naW5nb29nbGU=');"><em class="fa fa-google"></em>Google</button>
-                                        </li>
-                                    </ul>
-                                </div>
-                                <div class="or-line"><span>hoặc </span></div> -->
-
+                                
 
                                 <div class="login-form">
                            
                                     <div>
                                         <form name="frmRegister" id="frmRegister" method="post" action="{{ route('login-user') }}" autocomplete="off">
                                             @csrf
+                                            
                                             <div class="form-group form-text">
-                                                <input name="emails" id="emails"  maxlength="50" type="text"   autocomplete="off" value="">
-                                                <label for="">* Email</label>
-                                                <span class="error_email" style="display:none"></span>
-                                            </div>
-                                            <div class="form-group form-text">
-                                                <input type="password" name="passwords" id="passwords" maxlength="255"   autocomplete="off" value="">
+                                                <input type="password" name="passwords" id="passwords" maxlength="255"   autocomplete="off" value="" required>
                                                 <label for="">* Mật khẩu</label>
                                                 <span class="error_password" style="display:none"></span>
                                             </div>
 
-                                            <button class="btn-gradient">Đăng Nhập</button>
+                                            <div class="form-group form-text">
+                                                <input type="password" name="passwords" id="passwords" maxlength="255"   autocomplete="off" value=""required>
+                                                <label for="">* Mật khẩu mới</label>
+                                                <span class="error_password" style="display:none"></span>
+                                            </div>
 
-                                            <a href="javascript:void(0)" class="btn-gradient modal-button">Quên mật khẩu</a>
+                                            <button class="btn-gradient">Update</button>
+
+                                           
 
                             
                                         </form>
@@ -448,154 +438,11 @@
             else
               $.extend(language, language_register);    
         </script>
-        <script>/*register.js*/
-            $(document).ready(function() {
-                $.validator.addMethod('fullname', function(value) {
-                    var strCheck = /([^0-9\~\`\!\@\#\$\%\^\&\*\(\)\=\+\[\]\{\}\|\\\;\:\"\<\>\,\/\?]+)/g;
-                    var reg = new RegExp(strCheck);
-                    var strTemp = value.replace(reg, '');
-                    return (strTemp == '') ? true : false;
-                }, language.message_common);
-                var emailold;
-                $('#email').focusout(function() {
-                    var emailnew = $(this).val();
-                    if (emailnew == emailold)
-                        return false;
-                    else
-                        emailold = emailnew;
-                    return true;
-                });
-                $.validator.addMethod('emailexist', function(value) {
-                    var email = $('#email').val();
-                    var emailexist;
-                    filter = /^((([a-z]|\d|[!#\$%&'\*\+\-\/=\?\^_`{\|}~]|[\u00A0-\uD7FF\uF900-\uFDCF\uFDF0-\uFFEF])+(\.([a-z]|\d|[!#\$%&'\*\+\-\/=\?\^_`{\|}~]|[\u00A0-\uD7FF\uF900-\uFDCF\uFDF0-\uFFEF])+)*)|((\x22)((((\x20|\x09)*(\x0d\x0a))?(\x20|\x09)+)?(([\x01-\x08\x0b\x0c\x0e-\x1f\x7f]|\x21|[\x23-\x5b]|[\x5d-\x7e]|[\u00A0-\uD7FF\uF900-\uFDCF\uFDF0-\uFFEF])|(\\([\x01-\x09\x0b\x0c\x0d-\x7f]|[\u00A0-\uD7FF\uF900-\uFDCF\uFDF0-\uFFEF]))))*(((\x20|\x09)*(\x0d\x0a))?(\x20|\x09)+)?(\x22)))@((([a-z]|\d|[\u00A0-\uD7FF\uF900-\uFDCF\uFDF0-\uFFEF])|(([a-z]|\d|[\u00A0-\uD7FF\uF900-\uFDCF\uFDF0-\uFFEF])([a-z]|\d|-|\.|_|~|[\u00A0-\uD7FF\uF900-\uFDCF\uFDF0-\uFFEF])*([a-z]|\d|[\u00A0-\uD7FF\uF900-\uFDCF\uFDF0-\uFFEF])))\.)+(([a-z]|[\u00A0-\uD7FF\uF900-\uFDCF\uFDF0-\uFFEF])|(([a-z]|[\u00A0-\uD7FF\uF900-\uFDCF\uFDF0-\uFFEF])([a-z]|\d|-|\.|_|~|[\u00A0-\uD7FF\uF900-\uFDCF\uFDF0-\uFFEF])*([a-z]|[\u00A0-\uD7FF\uF900-\uFDCF\uFDF0-\uFFEF])))\.?$/i;
-                    // if (filter.test(email) && email != '') {
-                    //     $.ajax({
-                    //         type: "POST",
-                    //         async: false,
-                    //         url: PATH_KIEMVIEC + "jobseekers/member/emailexist",
-                    //         data: {
-                    //             'email': email
-                    //         },
-                    //         success: function(data) {
-                    //             if (data == 1) {
-                    //                 emailexist = false;
-                    //             } else {
-                    //                 emailexist = true;
-                    //             }
-                    //         }
-                    //     });
-                    //     return emailexist;
-                    // } else {
-                    //     return false;
-                    // }
-                }, language.message_common);
-                $.validator.addMethod('requiredemail', function(value) {
-                    var valemail = $.trim($('#email').val());
-                    return (valemail != language.member_register_write_email && valemail != '') ? true : false;
-                }, language.message_common);
-                $.validator.addMethod('checkUnicode', function(value, element) {
-                    return (!/\s/g.test(value) && !/[ạáàảãâậấầẩẫăặắằẳẫẠÁÀẢÃÂẬẤẦẨẪĂẶẮẰẲẪêẹéèẻẽếềểễệÊẸÉÈẺẼẾỀỂỄỆọộổỗốồôóòỏõơợớờởỡỌỘỔỖỐỒÔÓÒỎÕƠỢỚỜỞỠụưứừửữựúùủũỤƯỨỪỬỮỰÚÙỦŨịíìỉĩỊÍÌỈĨỵýỳỷỹỴÝỲỶỸđĐ]/.test(value));
-                }, language.message_common);
-                $.validator.addMethod("noSpace", function(value, element) {
-                    if (value != language.member_register_write_firstname)
-                        return value.indexOf(" ") < 0;
-                    else
-                        return true;
-                }, language.message_common);
-                $(function() {
-                    $("#frmRegister").validate({
-                        onkeyup: false,
-                        rules: {
-                            firstname: {
-                                required: true,
-                                fullname: true,
-                                noSpace: true
-                            },
-                            lastname: {
-                                required: true,
-                                fullname: true
-                            },
-                            email: {
-                                requiredemail: true,
-                                email: true,
-                                checkUnicode: true,
-                                emailexist: true
-                            },
-                            password: {
-                                required: true,
-                                rangelength: [6, 15]
-                            },
-                            confirm_password: {
-                                equalTo: "#password"
-                            },
-                            chkAgree: {
-                                required: true
-                            }
-                        },
-                        messages: {
-                            lastname: {
-                                required: language.LANG_ERROR_LASTNAME_NULL,
-                                fullname: language.ERROR_FULL_LASTNAME_CHARACTER
-                            },
-                            firstname: {
-                                required: language.LANG_ERROR_FIRSTNAME_NULL,
-                                fullname: language.ERROR_FULL_FIRSTNAME_CHARACTER,
-                                noSpace: language.member_nospace
-                            },
-                            email: {
-                                requiredemail: language.LANG_ERROR_EMAIL_NULL,
-                                email: language.LANG_ERROR_EMAIL_IS_VALID,
-                                checkUnicode: language.LANG_ERROR_EMAIL_UNICODE,
-                               
-                            },
-                            password: {
-                                required: language.LANG_ERROR_PASSWORD_NULL,
-                                rangelength: language.LANG_ERROR_PASSWORD_LENGTH,
-                                validatePassUnicode: language.LANG_ERROR_PASSWORD_UNICODE
-                            },
-                            confirm_password: {
-                                equalTo: language.LANG_ERROR_CONFIRM_PASSWORD,
-                            },
-                            chkAgree: {
-                                required: language.LANG_ERROR_CHK_AGREE_CHECKED
-                            }
-                        },
-                        errorPlacement: function(error, element) {
-                            var errorSelector = '.error_' + element.attr('name');
-                            $(errorSelector).html(error.html()).show();
-                        },
-                        invalidHandler: function(form, validator) {
-                            var errors = validator.numberOfInvalids();
-                            if (errors) {
-                                validator.errorList[0].element.focus();
-                            }
-                        },
-                        success: function(element) {
-
-                            $('.error_' + element[0].htmlFor).hide();
-                            element.remove();
-                        }
-                    });
-                });
-            });
-        </script>
+       
         <script language="javascript">
             $(document).ready(function(){
             });  
         </script>
-
-        @if (session('alert'))
-
-        <script type="text/javascript">
-            alert('{{ session("alert") }}');
-            
-        </script>
-        <?php
-            Session::forget('alert');
-        ?>
-        
-        @endif
         <div class="back-drop"></div>
     </main>
     @endsection

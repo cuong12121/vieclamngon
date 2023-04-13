@@ -73,26 +73,5 @@ class ajaxController extends Controller
 
     }
 
-    public function uploadAvatar(Request $request)
-    {
-       
-        $validatedData = $request->validate([
-            'upFile' => 'required|max:4096|mimes:pdf,png'
-            
-        ]);
-        
-        $name = $request->file('upFile')->getClientOriginalName();
-
-        $id_user = Auth::user()->id;
-
-        $name = $id_user.'_'.$name;
-
-        $path = $request->file('upFile')->storeAs('logo-user', $name, 'public');
-
-        DB::table('users')->where('id', $id_user)->update(['logo'=>$path]);
-
-        return redirect()->back();
-
-
-    }
+    
 }

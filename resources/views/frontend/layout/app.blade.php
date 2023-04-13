@@ -5,7 +5,7 @@
         <meta charset="UTF-8"/>
         <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
         <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=0, maximum-scale=1"/>
-        <base href="https://static.careerbuilder.vn/themes/careerbuilder/"/>
+        
         <meta name="theme-color" content="#1e5c8b"/>
         <title>Tuyển dụng và tìm kiếm việc làm nhanh</title>
         <meta name="keywords" content="Việc làm, kiếm việc, tìm việc làm, tuyển dụng, ứng viên,  mạng tuyển dụng, việc làm online, HR, nghành nghề hot, công ty hàng đầu Việt Nam, việc làm bán thời gian" />
@@ -101,9 +101,7 @@
                                     <li> <a href="{{ route('user-dashboard') }}" rel="nofollow">Quản Lý Hồ Sơ</a></li>
                                     <li> <a href="{{ route('my-profile') }}" rel="nofollow">Hồ sơ </a></li>
                                     
-                                   <!--  <li> <a href="https://careerbuilder.vn/vi/jobseekers/mykiemviec/jobsaved" rel="nofollow">Việc làm đã lưu</a></li>
-                                    <li> <a href="https://careerbuilder.vn/vi/jobseekers/jobalert" rel="nofollow">Thông Báo Việc Làm</a></li>
-                                    <li> <a href="https://careerbuilder.vn/vi/jobseekers/myresume/viewbyemp" rel="nofollow">Nhà tuyển dụng xem hồ sơ của tôi</a></li> -->
+                                  
                                    
                                     <li> <a href="javascript:void(0)" rel="nofollow">Cài đặt</a></li>
                                     <li> <a href="{{ route('logoutUser') }}" rel="nofollow">Thoát</a></li>
@@ -117,11 +115,11 @@
             </div>
             <div class="mobile-menu logged">
                 <div class="mobile-wrap">
-                    <div class="header-logo"><a href="https://careerbuilder.vn/vi/" title="Tuyển dụng & Tìm kiếm việc làm nhanh"><img class="lazy-bg" data-src="./img/logo.png" src="../kiemviecv32/images/graphics/blank.gif" alt="Tuyển dụng & Tìm kiếm việc làm nhanh"></a></div>
+                    <div class="header-logo"><a href="javascript:void(0)" title="Tuyển dụng & Tìm kiếm việc làm nhanh"><img class="lazy-bg" data-src="./img/logo.png" src="../kiemviecv32/images/graphics/blank.gif" alt="Tuyển dụng & Tìm kiếm việc làm nhanh"></a></div>
                     <div class="header-bottom">
                         <div class="header-bottom-top">
                             <div class="profile">
-                                <div class="avatar"><a href="https://careerbuilder.vn/vi/jobseekers/dashboard"><img class="lazy-bg" data-src="./img/user_circle.png" src="../kiemviecv32/images/graphics/blank.gif" alt="avatar"></a></div>
+                                <div class="avatar"><a href="javascript:void(0)"><img class="lazy-bg" data-src="./img/user_circle.png" src="../kiemviecv32/images/graphics/blank.gif" alt="avatar"></a></div>
                                 <div class="username">
                                     <p><a href="https://careerbuilder.vn/vi/jobseekers/dashboard">Cuong</a></p>
                                 </div>

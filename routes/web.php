@@ -137,6 +137,8 @@ Route::group(['prefix' => 'nha-tuyen-dung','middleware' => 'Checkemploy'], funct
 
     Route::post('update-job/{id}', 'Backend\employerController@updateJob')->name('update-job');
 
+
+
     Route::get('remove-job/{id}', 'Backend\employerController@removeJob')->name('remove-job');
 
 });
@@ -147,10 +149,7 @@ Route::post('users', 'Backend\UserLoginController@registerUser')->name('register
 
 Route::post('ung-vien/login', 'Backend\UserLoginController@loginUser')->name('login-user');
 
-
-Route::post('uploadAvatar', 'ajaxController@uploadAvatar')->name('upload-avatar');
-
-
+Route::post('send-mail-reset-pass', 'Backend\userController@resetPassWord')->name('send-mail-reset-pass');
 
 
 Route::post('ung-vien/profice/{action}', 'Backend\applicationController@updateApplication')->name('postProfile');

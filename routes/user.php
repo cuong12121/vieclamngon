@@ -19,8 +19,12 @@ Route::group(['middleware' => 'checklogin'], function() {
 	Route::get('employer-view', 'userController@employerView')->name('employerView');
 
 	Route::post('upload-cv-pdf', 'userController@upload_cv_pdf')->name('upload-cv-file');
+
+	Route::post('uploadAvatar', 'userController@uploadAvatar')->name('upload-avatar');
 });	
 Route::get('ung-vien/dang-ky', 'userController@registerUser')->name('registerClientUser');
 
 Route::get('ung-vien/dang-nhap', 'userController@viewLogin')->name('login-users');
+
+Route::get('update-password-user', 'userController@showViewUpdatePassWord')->name('update-password-user');
 
