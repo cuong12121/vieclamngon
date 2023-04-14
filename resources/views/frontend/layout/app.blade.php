@@ -377,20 +377,7 @@
                                 </ul>
                             </div>
                         </div>
-                        <div class="col-lg-4 col-12">
-                            <div class="footer-app-links">
-                                <h3>Tìm Kiếm Mọi Lúc Mọi Nơi</h3>
-                                <div class="app-links"> <a href="https://itunes.apple.com/vn/app/careerbuilder.vn-job-search/id882391884?l=vi&mt=8" target="_blank" rel="nofollow,noreferrer" title="careerbuilder.vn-job-search"> <img class="lazy-bg" data-src="./img/apple.png" src="../kiemviecv32/images/graphics/blank.gif" alt="app"> </a> <a href="https://play.google.com/store/apps/details?id=vn.careerbuilder.android.app" target="_blank" rel="nofollow,noreferrer" title="careerbuilder.vn-job-search"> <img class="lazy-bg" data-src="./img/android.png" src="../kiemviecv32/images/graphics/blank.gif" alt="app"> </a> </div>
-                            </div>
-                            <div class="footer-social-links">
-                                <h3>Kết nối với CareerBuilder.vn</h3>
-                                <ul>
-                                    <li><a rel="nofollow,noreferrer" title="Facebook" target="_blank" href="https://www.facebook.com/pages/CareerBuilder-Vietnam/265321726945679?ref=tn_tnmn"> <span class="fa fa-facebook"></span></a></li>
-                                    <li><a rel="nofollow,noreferrer" title="Linkedin" target="_blank" href="https://www.linkedin.com/company/careerbuilder-vietnam"> <span class="fa fa-linkedin"></span></a></li>
-                                    <li><a rel="nofollow,noreferrer" title="Youtube" target="_blank" href="https://www.youtube.com/user/CareerBuilderVietnam"> <span class="fa fa-youtube-play"></span></a></li>
-                                </ul>
-                            </div>
-                        </div>
+                       
                     </div>
                 </section>
                 <section class="bottom-footer">
