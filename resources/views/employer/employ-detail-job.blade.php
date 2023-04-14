@@ -77,8 +77,12 @@
                                                 $salary =  explode('-', $value->salary);  
 
                                             ?>
+
+                                            @if(!empty($salary))
                                             
-                                            <p class="salary">{{ @number_format(intval($salary[0]))   }} - {{ @number_format(intval($salary[1]))   }} {{ $value->salaryunit===0?'Đ':'usd' }}</p>
+                                            <p class="salary">{{ @number_format(intval($salary[0]))   }} - {{ @number_format(intval($salary[1]))   }} {{!empty($value->salaryunit)?$value->salaryunit===0?'Đ':'usd':'' }}</p>
+
+                                            @endif
                                             <div class="location">
                                                 <ul>
                                                     <li>Hà Nội</li>

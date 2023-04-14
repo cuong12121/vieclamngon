@@ -515,8 +515,69 @@ h6 {
                             <div class="cb-title-h3">
                                 <h3>Việc Làm Phù Hợp Với Bạn</h3>
                             </div>
+
+                            <?php 
+
+                                $data_job_id = App\Models\application::where('users_id', Auth::user()->id)->first();
+
+                                $job_id = json_decode($data_job_id->experience)->job_id??'';
+                                
+                            ?>
+
+                            <div class="list-job jobs-list-ajax" id="jobs-list">
+                                <div class="item">
+                                    <div class="ckb-item">
+                                        <label class="container-ckb">
+                                            <input type="checkbox" checked="checked" name="jobchk[]" value="35BBDA28">
+                                        
+                                        </label>
+                                    </div>
+
+
+                                    @if(!empty($job_id))
+
+                                    <?php 
+                                        $data_job = DB::table('job')->join('employ_info', 'job.employer_id', '=', 'employ_info.employ_id')->select('job.title', 'job.id', 'employ_info.name', 'employ_info.logo', 'employ_info.links', 'job.link','job.salaryunit', 'job.salary', 'job.address_job')->where('job.career', $job_id)->orderBy('id', 'desc')->take(10)->get();
+                                       
+                                    ?>
+                                    @if(!empty($data_job))
+                                    @foreach($data_job as $value)
+
+                                    <div class="job-item active">
+                                        <div class="figure">
+
+                                            <div class="image"><a href="{{ route('job_details', [$value->link, $value->id]) }}" target="_blank" title=" {{  $value->title }}"><img class="lazy-bg" src="https://images.careerbuilder.vn/employer_folders/lot8/84588/79x79/104616hpt_13041_2011_08_26.gif" alt="{{  $value->title }}" style=""></a></div>
+                                            <div class="figcaption">
+                                                <div class="title"><a class="job_link" data-id="35BBDA28" href="{{ route('job_details', [$value->link, $value->id]) }}" title="{{  $value->title }}" target="_blank">{{  $value->title }}</a></div>
+                                                <div class="caption">
+                                                    <a class="company-name" target="_blank" href="{{ Route('employ-details', $value->links) }}" title="{{ $value->name }}">{{ $value->name }}</a>
+                                                    <?php 
+
+                                                        $salary =  explode('-', $value->salary);  
+
+                                                    ?>
+
+                                                    <p class="salary"><em class="fa fa-usd"></em>{{ @number_format(intval($salary[0]))   }} - {{ @number_format(intval($salary[1]))   }} {{ $value->salaryunit===0?'Đ':'usd' }}</p>
+                                                    <!-- <div class="location">
+                                                        <ul>
+                                                            <li>Hà Nội |  Hồ Chí Minh</li>
+                                                        </ul>
+                                                    </div> -->
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    @endforeach
+                                    @endif
+                                    @endif
+
+
+                                </div>
+                                
+                            </div>
                         </div>
-                       
+
                     </div>
                 </div>
             </div>

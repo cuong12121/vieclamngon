@@ -742,14 +742,14 @@
                                                 <td>Cấp bậc hiện tại</td>
                                                 <?php 
 
+
+
                                                     $int_num_levelcurrent_id = '';
                                                     if(!empty(json_decode($checkTitle->experience))&&(json_decode($checkTitle->experience))->levelcurrent_id != null){
 
                                                         $int_num_levelcurrent_id = (int)(json_decode($checkTitle->experience))->levelcurrent_id;
 
-                                                        
-
-                                                        $number_levelcurrent_id = $ar_ex[(int)(json_decode($checkTitle->experience))->levelcurrent_id-1];
+                                                        $number_levelcurrent_id = $ar_ex[$int_num_levelcurrent_id];
 
                                                     }
                                                     else{
@@ -861,6 +861,7 @@
                        
                 </div>
             </div>
+
             <div class="hidden-edit-modal edit-modal-dashboard" style="display: none">
                 <div class="modal-title">
                     <h3>Ẩn một số thông tin</h3>
@@ -932,9 +933,47 @@
                 <div class="modal-title">
                     <h3>Kinh nghiệm làm việc</h3>
                 </div>
+
+
                 <div class="modal-body">
                     <form name="frm_Experience" id="frm_Experience" method="post" action="{{ route('postProfile', 'experience') }}">
                         @csrf
+
+                        <?php 
+                            $list_job = LIST_JOB;
+                        ?>
+                        
+
+                        <div class="form-group row">
+                            <div class="col-lg-4">
+                                <label for="">Nghề nghiệp hiện tại</label>
+                            </div>
+                            <div class="col-lg-8">
+                                <div class="select-group">
+                                    
+                                    <select name="job_id" id="job_id" style="float: left; width: 200px; margin-bottom:5px">
+                                        <option value="" >Chọn</option>
+
+                                        <?php 
+                                            $job_id_checked = (int)(json_decode($checkTitle->experience))->job_id??'';
+                                        ?>
+                                        @foreach($list_job as $keys =>$value)
+                                        <?php  
+
+                                            $i++;
+                                        ?>
+                                        <option value="{{ $keys }}"   {{ $keys== $job_id_checked?'selected':'' }}>{{ $value }}</option>
+                                        @endforeach
+                                        
+                                    </select>
+                                </div>
+                                <div class="form-error"><span class="err_levelcurrent_id" style="display:none"></span></div>
+                            </div>
+                        </div>
+
+
+
+
                         <div class="form-group row">
                             <div class="col-lg-4">
                                 <label for="">Số năm kinh nghiệm</label>
@@ -954,18 +993,22 @@
                         <div class="form-group row">
                             <div class="col-lg-4">
                                 <label for="">Cấp bậc hiện tại</label>
+
+                              
                             </div>
                             <div class="col-lg-8">
                                 <div class="select-group">
+
                                     
                                     <select name="levelcurrent_id" id="levelcurrent_id" style="float: left; width: 200px; margin-bottom:5px">
+
                                         <option value="" >Chọn</option>
-                                        @foreach($ar_ex as $value)
+                                        @foreach($ar_ex as $key => $value)
                                         <?php  
 
                                             $i++;
                                         ?>
-                                        <option value="{{ $i }}"   {{ $int_num_levelcurrent_id== $i?'selected':'' }}>{{ $value }}</option>
+                                        <option value="{{ $key }}" {{ $int_num_levelcurrent_id== $key?'selected':'' }}>{{ $value }}</option>
                                         @endforeach
                                         
                                     </select>
@@ -973,6 +1016,8 @@
                                 <div class="form-error"><span class="err_levelcurrent_id" style="display:none"></span></div>
                             </div>
                         </div>
+
+
                         <div class="form-group form-button">
                             <div class="button-save button-center">
                                 <button class="btn-gradient" type="submit" >Lưu Lại</button>
