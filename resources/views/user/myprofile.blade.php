@@ -926,8 +926,6 @@
                     </form>
                 </div>
             </div>
-            <?php dd(json_decode($checkTitle->experience)->levelcurrent_id); 
-            ?>
 
 
             <div class="edit-db-work-experience-1 edit-modal-dashboard" style="display:none" id="tip-experience-modals">
@@ -959,7 +957,7 @@
                                             $job_id_checked = '';
 
 
-                                            if(!empty(json_decode($checkTitle->experience)->job_id) ){
+                                            if(isset(json_decode($checkTitle->experience)->job_id) ){
                                                 $job_id_checked = (int)(json_decode($checkTitle->experience))->job_id??'';
                                             }
 
