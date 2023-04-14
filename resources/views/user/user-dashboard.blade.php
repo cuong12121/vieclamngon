@@ -524,7 +524,7 @@ h6 {
 
 
 
-        <div class="modal modal-change-logo ">
+        <div class="modal modal-change-logo">
             <div class="modal-overlay modal-toggle"></div>
             <div class="modal-wrapper modal-transition">
                 <div class="modal-header">
