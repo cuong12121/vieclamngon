@@ -338,13 +338,13 @@
                                         </div>
                                         <a class="forget-password" href="javascript:void(0)">Quên mật khẩu?</a>
                                     </form>
-                                    <div class="sign-in-by">
+                                   <!--  <div class="sign-in-by">
                                         <span>Đăng nhập bằng</span>
                                         <ul>
                                             <li><a href="javascript:void(0);" onclick="popupapi('facebook','aHR0cHM6Ly9jYXJlZXJidWlsZGVyLnZuL3ZpL2pvYnNlZWtlcnMvbG9naW5mYWNlYm9vaw==');" title="Login Facebook"><i class="fa fa-facebook-official"></i></a></li>
                                             <li><a href="javascript:void(0);" onclick="popupapi('google','aHR0cHM6Ly9jYXJlZXJidWlsZGVyLnZuL3ZpL2pvYnNlZWtlcnMvbG9naW5nb29nbGU=');" title="Login Google"><i class="fa fa-google-plus-square"></i></a></li>
                                         </ul>
-                                    </div>
+                                    </div> -->
                                 </div>
                             </div>
                         </div>
