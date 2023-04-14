@@ -120,13 +120,13 @@
                     </div>
 
 
-                    <div class="sticker-jobs">
+                   <!--  <div class="sticker-jobs">
                       
                         <div class="content">
                             <p>Gửi tôi việc làm tương tự</p>
                         </div>
                         <div class="button"> <a href="javascript:;" onclick="return adVanceJobalert();">Đăng ký ngay</a></div>
-                    </div>
+                    </div> -->
                     <div class="job-bottom-banner" style="text-align:center;">
                         <script type='text/javascript'><!--// <![CDATA[
                             /* [id853] CB_JSK_SearchResult_Banner_1410x140_01 */
