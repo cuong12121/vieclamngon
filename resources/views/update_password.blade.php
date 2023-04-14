@@ -342,7 +342,7 @@
                             <form name="frmRegister" id="frmRegister" method="post" action="{{ route('send-mail-reset-pass') }}" autocomplete="off">
                                 @csrf
 
-                                <h3>Vui lòng nhập email của bạn và click Gửi.</h3>
+                                <h3>Vui lòng nhập  email của bạn và bấm Gửi.</h3>
                                 <div class="form-group form-text">
 
                                     <label for="">* Email</label>
