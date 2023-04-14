@@ -8,6 +8,15 @@
         color: green !important;
     }
 
+    .close-modal{
+        position: absolute;
+        top:0;
+        right: 0;
+    }
+    .close-modal i{
+        font-size: 30px;
+    }
+
 /*    css modal*/
 
 /**
@@ -515,7 +524,7 @@ h6 {
 
 
 
-        <div class="modal">
+        <div class="modal modal-change-logo">
             <div class="modal-overlay modal-toggle"></div>
             <div class="modal-wrapper modal-transition">
                 <div class="modal-header">
@@ -548,6 +557,8 @@ h6 {
                        
                        
                     </div>
+
+                    <div class="close-modal"><a href="javascript:void(0)" onclick="closeModal()"><i class="fa fa-times-circle" aria-hidden="true"></i></a></div>
                 </div>
             </div>
         </div>
@@ -560,9 +571,14 @@ h6 {
             $('.modal-button').on('click', function(e) {
 
                 e.preventDefault();
-                $('.modal').toggleClass('is-visible');
+                $('.modal-change-logo').toggleClass('is-visible');
 
             });
+
+            function closeModal() {
+                  $('.modal-change-logo').removeClass('is-visible');
+            }  
+
            
 
 

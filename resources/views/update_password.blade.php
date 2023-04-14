@@ -293,18 +293,18 @@
                                 <div class="login-form">
                            
                                     <div>
-                                        <form name="frmRegister" id="frmRegister" method="post" action="{{ route('login-user') }}" autocomplete="off">
+                                        <form name="frmRegister" id="frmRegister" method="post" action="{{ route('update-password-user-id', $token) }}" autocomplete="off">
                                             @csrf
                                             
                                             <div class="form-group form-text">
-                                                <input type="password" name="passwords" id="passwords" maxlength="255"   autocomplete="off" value="" required>
-                                                <label for="">* Mật khẩu</label>
+                                                <input type="password" name="password" id="passwords" maxlength="255"   autocomplete="off" value="" required>
+                                                <label for="">* Mật khẩu mới</label>
                                                 <span class="error_password" style="display:none"></span>
                                             </div>
 
                                             <div class="form-group form-text">
-                                                <input type="password" name="passwords" id="passwords" maxlength="255"   autocomplete="off" value=""required>
-                                                <label for="">* Mật khẩu mới</label>
+                                                <input type="password" name="re_password" id="passwords" maxlength="255"   autocomplete="off" value=""required>
+                                                <label for="">*Nhập lại mật khẩu</label>
                                                 <span class="error_password" style="display:none"></span>
                                             </div>
 
@@ -371,6 +371,20 @@
         <?php 
             $check_action = \Request::session()->pull('keys', 'default');
         ?>
+
+        @if (session('notification'))
+
+        <script type="text/javascript">
+            alert('{{ session("notification") }}');
+            
+        </script>
+        <?php
+            Session::forget('notification');
+        ?>
+        
+        @endif
+
+        
         <script language="javascript" >
 
             function closeModal(argument) {

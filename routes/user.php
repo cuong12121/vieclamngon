@@ -26,5 +26,7 @@ Route::get('ung-vien/dang-ky', 'userController@registerUser')->name('registerCli
 
 Route::get('ung-vien/dang-nhap', 'userController@viewLogin')->name('login-users');
 
+Route::post('update-password-user/{token}', 'userController@updatePassWord')->name('update-password-user-id');
+
 Route::get('update-password-user', 'userController@showViewUpdatePassWord')->name('update-password-user');
 

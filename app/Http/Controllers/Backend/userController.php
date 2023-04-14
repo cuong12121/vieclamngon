@@ -162,21 +162,52 @@ class userController extends Controller
     {
         $token =  $request->token;
 
-        $cache_data = Cache::get($token);
 
-        if(Cache::has($cache_data))
+        if(Cache::has($token))
         {
-            $data = Cache::get($cache_data);
+            $data = Cache::get($token);
 
-            // xóa dữ liệu đã nhận từ cache
-
-            Cache::forget($cache_data);
-
-            return view('update_password', compact('data'));
+            return view('update_password', compact('data', 'token'));
         }
 
         return abort('404');
        
+    }
+
+    public function updatePassWord(Request $request, $token)
+    {
+
+        $validatedData = $request->validate([
+            'password' => 'required',
+            're_password' => 'required'
+            
+        ]);
+
+        $password = trim($request->password);
+
+        $repassword = trim($request->re_password);
+
+        $session = '2 mật khẩu không khớp nhau';
+
+        if($password === $repassword){
+
+            $data_id = Cache::get($token);
+
+            $update = ['password'=>bcrypt($password)];
+
+            // xóa cache
+
+            Cache::forget($token);
+
+            $user = DB::table('users')->where('id', $data_id)->update($update);
+
+            $session = 'Đổi mật khẩu thành công';
+
+           
+        }
+
+        return redirect(Route('login-users'))->with('notification', $session);
+
     }
 
 
