@@ -218,7 +218,7 @@
                     </div>
                 @endif
                 <div class="cb-title cb-title-center">
-                    <h2>Đổi lại password</h2>
+                    <h2>Đổi lại mật khẩu</h2>
                 </div>
 
                 @foreach ($errors->all() as $error)
