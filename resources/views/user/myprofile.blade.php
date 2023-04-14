@@ -926,7 +926,7 @@
                     </form>
                 </div>
             </div>
-            <?php dd(json_decode($checkTitle->experience)); 
+            <?php dd(json_decode($checkTitle->experience)->levelcurrent_id); 
             ?>
 
 
