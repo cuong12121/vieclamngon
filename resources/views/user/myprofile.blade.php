@@ -956,7 +956,7 @@
 
                                         <?php 
                                             $job_id_checked = '';
-                                            if(!empty(json_decode($checkTitle->experience))->job_id){
+                                            if(!empty(json_decode($checkTitle->experience)->job_id) ){
                                                 $job_id_checked = (int)(json_decode($checkTitle->experience))->job_id??'';
                                             }
 
