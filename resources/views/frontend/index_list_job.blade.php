@@ -558,7 +558,9 @@
                                 <div class="figcaption">
                                     <div class="title"><a target="_blank" href="{{ route('job_details', [$value->link, $value->id]) }}" title="Senior Sales Manager">{{  $value->title }}</a></div>
                                     <div class="caption">
-                                        <a class="company-name" href="{{ Route('employ-details', $value->links) }}" title="{{ $value->name }}" target="_blank">{{ $value->name }}</a>
+
+
+                                        <a class="company-name" href="{{  !empty($value->links)?Route('employ-details', $value->links):'#' }}" title="{{ $value->name }}" target="_blank">{{ $value->name }}</a>
 
                                          <?php 
 
