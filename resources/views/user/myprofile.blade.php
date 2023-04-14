@@ -955,7 +955,11 @@
                                         <option value="" >Chọn</option>
 
                                         <?php 
-                                            $job_id_checked = (int)(json_decode($checkTitle->experience))->job_id??'';
+                                            $job_id_checked = '';
+                                            if(!empty(json_decode($checkTitle->experience))->job_id){
+                                                $job_id_checked = (int)(json_decode($checkTitle->experience))->job_id??'';
+                                            }
+
                                         ?>
                                         @foreach($list_job as $keys =>$value)
                                         <?php  
