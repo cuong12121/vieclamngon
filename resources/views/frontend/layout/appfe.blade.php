@@ -276,7 +276,7 @@
                        
 
 
-                        @if(\Request::route()->getName()=='login-users'||\Request::route()->getName()=='registerClientUser'||\Request::route()->getName()=='job_details'||\Request::route()->getName()=='all_job'||\Request::route()->getName()=='filters')
+                        @if(\Request::route()->getName()=='login-users'||\Request::route()->getName()=='registerClientUser'||\Request::route()->getName()=='job_details'||\Request::route()->getName()=='all_job'||\Request::route()->getName()=='filters'||\Request::route()->getName()=='update-password-user'||\Request::route()->getName()=='update-password-user-id')
                         <div class="main-login dropdown">
                           
 
