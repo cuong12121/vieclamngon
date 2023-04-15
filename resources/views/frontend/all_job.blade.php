@@ -47,11 +47,7 @@
                         </div> -->
                     </div>
 
-                  
 
-
-
-                    
                    
                     <div class="main-slide">
                         <div class="swiper-container">
@@ -84,8 +80,6 @@
 
                                                     @if (Auth::check()) 
                                                     <div class="saves-icon"> <span class="top save-job" onclick="apply('{{ $jobs->id }}')">Apply</span> </div>
-
-                                                   
 
                                                     <!-- <div class="saves-icon"> <span class="top save-job" onclick="saveJob('{{ $jobs->id }}')">Save</span> </div> -->
                                                     @endif
