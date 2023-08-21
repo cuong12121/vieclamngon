@@ -1,902 +1,1630 @@
 <!DOCTYPE html>
 <html lang="vi">
     <head>
-        <META HTTP-EQUIV="Content-language" CONTENT="vi">
-        <link href="vi" hreflang="vi" rel="alternate" />
-        <link href="en" hreflang="en" rel="alternate" />
-        <!-- <base href="https://static.talentnetwork.vn/talentnetwork/source/eurowindow/"/> -->
-        <!-- <link rel="shortcut icon" href="https://static.talentnetwork.vn/talentnetwork/source/favicon_eurowindow.ico?t=1"/> -->
-        <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
-        <meta name="robots" content="noindex" />
-        <title>Tuyển dụng và tìm kiếm việc làm nhanh việc làm ngon</title>
-        <!-- tag share 4 -->
+        <link rel="preload" href="https://static.chotot.com/storage/APP_WRAPPER/v4/4.3.2/header.css" as="style"/>
+        <link rel="preload" href="https://static.chotot.com/storage/APP_WRAPPER/v4/4.3.2/footer.css" as="style"/>
+        <meta charSet="utf-8"/>
+        <meta name="viewport" content="width=device-width"/>
+        <link rel="stylesheet" href="https://static.chotot.com/storage/APP_WRAPPER/v4/4.3.2/header.css"/>
+        <link rel="stylesheet" href="https://static.chotot.com/storage/APP_WRAPPER/v4/4.3.2/footer.css"/>
+
+        <base href="https://www.vieclamtot.com/">
+
+        <title>Việc Làm Tốt: Tuyển Dụng &amp; Tìm Việc Làm Mới Nhất 08/2023</title>
+        <meta name="description" content="✅Việc Làm Tốt - Kênh tuyển dụng và tìm việc hiệu quả, uy tín toàn quốc ✅Cập nhật việc làm mới trong tháng 08/2023 ✅Được phát triển bởi Chợ Tốt"/>
+        <meta property="og:title" content="Việc Làm Tốt: Tuyển Dụng &amp; Tìm Việc Làm Mới Nhất 08/2023"/>
+        <meta property="og:description" content="✅Việc Làm Tốt - Kênh tuyển dụng và tìm việc hiệu quả, uy tín toàn quốc ✅Cập nhật việc làm mới trong tháng 08/2023 ✅Được phát triển bởi Chợ Tốt"/>
+        <meta property="og:image" content="https://static.chotot.com/storage/marketplace/ct-job-200.png"/>
+        <meta property="og:url" content="https://www.vieclamtot.com"/>
         <meta property="og:type" content="website"/>
-        <meta property="og:site_name" content=""/>
-        <meta property="og:title" content=""/>
-        <meta property="og:url" content="vi"/>
-        <meta property="og:image:type" content="image/jpeg"/>
-
-        <meta name="google-site-verification" content="5IKRqCwpFtP82JdyuTKfb9H8BsJdUm5ZRKTEfYbd0Bw" />
-        
-        <meta property="og:image:width" content="600"/>
-        <meta property="og:image:height" content="315"/>
-        <meta property="og:description" content=""/>
-        <script type="text/javascript" src="{{ asset('download/js/jquery.min.js') }}"></script>
-        <script type="text/javascript" src="{{ asset('download/js/hoverIntent.js')}}"></script>
-        <meta name="keywords" content="_seo_index_index_keywords_" />
-        <meta name="description" content=""/>
-        <meta name="viewport" content="width=device-width,initial-scale=1.0,maximum-scale=1.0">
-        <link href="{{  asset('download/css/bootstrap.css')}}" rel="stylesheet" type="text/css" media="screen"/>
-        <!--[if lt IE 9]>
-    
-        <script type="text/javascript" src="{{ asset('download/js/html5shiv.min.js')}}"></script>
-        <script type="text/javascript" src="{{ asset('download/js/respond.min.js')}}"></script>
-        <![endif]-->
-        <style type="text/css">
-            .wrapDialog .container { width: 100% }
-            .jc-bs3-container, .jc-bs3-row {width:100% !important}
-            .jconfirm-content{line-height: 22px}
-        </style>
-        <link href="{{ asset('download/css/general.css')}}" rel="stylesheet" type="text/css" media="screen"/>
-        <link href="{{ asset('download/css/core.css?t=20171010')}}" rel="stylesheet" type="text/css" media="screen"/>
-        <link href="{{ asset('download/css/theme_default.css')}}" rel="stylesheet" type="text/css" media="screen"/>
-        <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1"/>
-        <link href="{{ asset('download/css/TNredirect.css')}}" rel="stylesheet" type="text/css" media="screen"/>
-        <link href="{{ asset('download/css/premium.css')}}?ver=1" rel="stylesheet" type="text/css" media="screen"/>
-        <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css">
-        <link rel="stylesheet" type="text/css" href="{{ asset('/css/global1.css') }}">
-
-       
-        <!-- <link rel="stylesheet" type="text/css" href="css/nav_vi.css?t=12032015" media="screen"/> -->
-        <link href="{{ asset('download/js/jquery.multiselect.css')}}" rel="stylesheet" type="text/css"/>
-        <link href="{{ asset('download/js/jquery-ui.css')}}" rel="stylesheet" type="text/css"/>
-        <link href="{{ asset('download/css/jquery.fancybox-1.3.4.css')}}" rel="stylesheet" type="text/css"/>
-        <link href="{{ asset('download/css/jquery-confirm.min.css')}}" rel="stylesheet" type="text/css"/>
-
-        <style type="text/css">
-            .search-jobs-main input.width_545, .search-jobs-main select.slc-mb,.searchvt1{
-                background: green !important;
-            }
-
-            .container-fluid{
-                display: none;
-            }
-        </style>
-        <script type="text/javascript" src="{{ asset('download/js/jquery-ui.min.js')}}"></script>
-        <script type="text/javascript" src="{{ asset('download/js/jquery.multiselect.js')}}"></script>
-        <script type="text/javascript" src="{{ asset('download/js/jquery.formatcurrency.js')}}"></script>
-        <script language="javascript" src="{{ asset('download/js/jquery-confirm.min.js')}}"></script>
-        
-       
-        <script type="text/javascript">
-            $( window ).load(function() {
-              // Search
-                
-                $( window ).resize(function() {
-                    widthWindowChosen = $(window).width();
-                    if(widthWindowChosen > 973){
-                        //$(".chosen").show();
-                        //setTimeout(function(){ $(".chosen").trigger("chosen:updated") }, 3000);
-                        //$(".chosen").hide();
-                        if($('.chosen').is(":visible"))
-                            $(".chosen").chosen({no_results_text: language.msg_no_results_matched});
-                    }
-                });
-            });
-            
-        </script> 
-        <!-- <script type="text/javascript" src="https://www.dropbox.com/static/api/2/dropins.js" data-app-key="fa9yyto5llvqw2b" id="dropboxjs')}}"></script> -->
-        <style type="text/css">
-            #banner-video{
-                background: #ddd;
-            }
-            #banner-video img{
-                width: 100%;
-            }
-            #back-top{
-                display: none !important;
-            }
-        </style>
+        <link rel="preload" as="image" href="https://cdn.chotot.com/admincentre/h-zbL-gnlTG02ESMCWPpPqSd2EBpHeb4yEQGAYgkQ9A/preset:raw/plain/d058e42ba4f3545eecb81382238f82d2-2830734792045236056.jpg"/>
+        <meta name="next-head-count" content="14"/>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0"/>
+        <link rel="shortcut icon" href="https://www.chotot.com/chotot-img/favicon.ico"/>
+        <link rel="shortcut icon" href="https://static.chotot.com/storage/chotot-icons/favicon.ico"/>
+        <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+            new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+            j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+            'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+            })(window,document,'script','dataLayer','GTM-WCFN73J');
+        </script>
+        <link rel="canonical" href="https://www.vieclamtot.com"/>
+        <script async="" src="https://static.chotot.com/storage/js/prebid-ads.js"></script>
+        <meta name="theme-color" content="#2561CF"/>
+        <meta name="full-screen" content="yes"/>
+        <meta name="application-name" content="Việc Làm Tốt"/>
+        <meta name="apple-mobile-web-app-capable" content="yes"/>
+        <meta name="mobile-web-app-capable" content="yes"/>
+        <meta name="apple-mobile-web-app-title" content="Việc Làm Tốt"/>
+        <meta name="apple-mobile-web-app-status-bar-style" content="#2561CF"/>
+        <link rel="preload" href="https://static.chotot.com/storage/CT_WEB_JOB_HOMEPAGE/045deaba/_next/static/css/4bbedbea6b34299c.css" as="style"/>
+        <link rel="stylesheet" href="https://static.chotot.com/storage/CT_WEB_JOB_HOMEPAGE/045deaba/_next/static/css/4bbedbea6b34299c.css" data-n-g=""/>
+        <link rel="preload" href="https://static.chotot.com/storage/CT_WEB_JOB_HOMEPAGE/045deaba/_next/static/css/52ff40af76ff9229.css" as="style"/>
+        <link rel="stylesheet" href="https://static.chotot.com/storage/CT_WEB_JOB_HOMEPAGE/045deaba/_next/static/css/52ff40af76ff9229.css" data-n-p=""/>
+        <noscript data-n-css=""></noscript>
+        <script defer="" nomodule="" src="https://static.chotot.com/storage/CT_WEB_JOB_HOMEPAGE/045deaba/_next/static/chunks/polyfills-c67a75d1b6f99dc8.js"></script><script src="https://static.chotot.com/storage/CT_WEB_JOB_HOMEPAGE/045deaba/_next/static/chunks/webpack-171ec6a063d511d2.js" defer=""></script><script src="https://static.chotot.com/storage/CT_WEB_JOB_HOMEPAGE/045deaba/_next/static/chunks/framework-9cbeeda99911c9a6.js" defer=""></script><script src="https://static.chotot.com/storage/CT_WEB_JOB_HOMEPAGE/045deaba/_next/static/chunks/main-09420cbe4422d828.js" defer=""></script><script src="https://static.chotot.com/storage/CT_WEB_JOB_HOMEPAGE/045deaba/_next/static/chunks/pages/_app-e3de07ed458a07b0.js" defer=""></script><script src="https://static.chotot.com/storage/CT_WEB_JOB_HOMEPAGE/045deaba/_next/static/chunks/884-6875ed31db40ae5e.js" defer=""></script><script src="https://static.chotot.com/storage/CT_WEB_JOB_HOMEPAGE/045deaba/_next/static/chunks/pages/index-c9a7ab747977598a.js" defer=""></script><script src="https://static.chotot.com/storage/CT_WEB_JOB_HOMEPAGE/045deaba/_next/static/CX1-9PsQaitoXlcz5noD7/_buildManifest.js" defer=""></script><script src="https://static.chotot.com/storage/CT_WEB_JOB_HOMEPAGE/045deaba/_next/static/CX1-9PsQaitoXlcz5noD7/_ssgManifest.js" defer=""></script>
     </head>
 
-    <?php 
-        $introduce_banner = DB::table('posts1')->where('category', 10)->get()->last();
+    <style type="text/css">
+        
+         .w19p4n4d{background-color:#fff;padding:16px 42px;margin-top:12px;}@media (max-width:576px){.w19p4n4d{padding:16px 12px;height:100%;}}
+.twmyzwe{text-align:center;margin-bottom:12px;color:#222222;font-weight:700;font-size:1.125rem;}
+.itmnpwc{position:absolute;right:12px;top:8px;}.itmnpwc button{background:#fe9900;border-radius:4px;width:34px;height:32px;color:white;display:-webkit-box;display:-webkit-flex;display:-ms-flexbox;display:flex;-webkit-align-items:center;-webkit-box-align:center;-ms-flex-align:center;align-items:center;-webkit-box-pack:center;-webkit-justify-content:center;-ms-flex-pack:center;justify-content:center;}
+.m5tgxx8{width:100%;}.m5tgxx8 .disabled{background-color:#fff !important;border-color:#cacaca;}.m5tgxx8 input{background-color:#fff !important;padding-left:35px;text-overflow:ellipsis;white-space:nowrap;width:85%;}.m5tgxx8 label{padding-left:35px;}
+.snv20gd{position:relative;}
+.s1paj8ff{position:absolute;top:12px;left:12px;z-index:1;}@media (max-width:576px){.s1paj8ff{left:8px;}}
 
-        $introduce_top = DB::table('posts1')->where('category', 9)->get()->last();
 
 
 
-    ?>
+.d1ci50gw{position:relative;}.d1ci50gw input{text-overflow:ellipsis;padding-right:34px;padding-left:39px;}.d1ci50gw label{left:39px;}
+.d1ynyt29{-webkit-transition:color 0.15s ease 0s,background-color 0.15s ease 0s;transition:color 0.15s ease 0s,background-color 0.15s ease 0s;left:0px;right:0px;top:50px;position:absolute;background-color:rgb(255,255,255);z-index:1001;box-shadow:rgb(0 0 0 / 20%) 0px 2px 4px -1px,rgb(0 0 0 / 14%) 0px 4px 5px 0px, rgb(0 0 0 / 12%) 0px 1px 10px 0px;max-height:220px;overflow:auto;border-radius:4px;}
+.d1pwxavn{-webkit-transition:color 0.15s ease 0s,background-color 0.15s ease 0s;transition:color 0.15s ease 0s,background-color 0.15s ease 0s;left:0px;right:0px;top:50px;position:absolute;background-color:rgb(255,255,255);z-index:1001;box-shadow:rgb(0 0 0 / 20%) 0px 2px 4px -1px,rgb(0 0 0 / 14%) 0px 4px 5px 0px, rgb(0 0 0 / 12%) 0px 1px 10px 0px;overflow:auto;border-radius:4px;}
+.djo0ppj{cursor:pointer;padding:12px 12px;position:relative;-webkit-transition:background-color 150ms cubic-bezier(0.4,0,0.2,1) 0ms;transition:background-color 150ms cubic-bezier(0.4,0,0.2,1) 0ms;color:#777777;font-size:14px;line-height:20px;white-space:nowrap;}.djo0ppj div{text-overflow:ellipsis;overflow:hidden;}.djo0ppj:hover{background-color:#f4f4f4;}.djo0ppj b{color:#222222;font-weight:700;font-size:14px;line-height:20px;font-style:normal;}
+.dpndhs3{cursor:pointer;padding:14px 12px;position:relative;-webkit-transition:background-color 150ms cubic-bezier(0.4,0,0.2,1) 0ms;transition:background-color 150ms cubic-bezier(0.4,0,0.2,1) 0ms;box-shadow:inset 0px -1px 0px #E8E8E8;white-space:nowrap;color:#777777;font-size:14px;line-height:20px;}.dpndhs3 div{text-overflow:ellipsis;overflow:hidden;}.dpndhs3:hover{background-color:#f4f4f4;}.dpndhs3 b{color:#222222;font-size:14px;line-height:20px;font-style:normal;}
+.sc50nhy{position:relative;}@media (max-width:540px){.sc50nhy{box-shadow:0px 1px 0px rgba(0,0,0,0.12);}}
+.m1tumyem{outline:none;width:100%;border:none;font-size:16px;height:48px;}
+.syvda4k{position:absolute;left:12px;top:12px;z-index:100;}.syvda4k img{width:15px;}@media (max-width:540px){.syvda4k img{width:100%;}}
+.i3757bm{position:absolute;right:12px;top:8px;}.i3757bm button{background:#fe9900;border-radius:4px;width:34px;height:32px;color:white;display:-webkit-box;display:-webkit-flex;display:-ms-flexbox;display:flex;-webkit-align-items:center;-webkit-box-align:center;-ms-flex-align:center;align-items:center;-webkit-box-pack:center;-webkit-justify-content:center;-ms-flex-pack:center;justify-content:center;}
 
-    <?php 
-            $listDefineJob = LIST_JOB;
 
-            $address = ADDRESS;
 
-            $salary = SALARY;
+.i1s7c94{width:100%;height:100%;font-size:0.875rem;color:#222222;-webkit-appearance:none;-moz-appearance:none;appearance:none;outline:none;border:none;padding:14px 12px 0 12px;border-radius:4px;background-color:#FFFFFF;}.i1s7c94.required + label::after{content:'*';margin-left:4px;color:#E5193B;}.i1s7c94.isDropdown{cursor:pointer;}.i1s7c94:disabled{background-color:#F4F4F4;cursor:default;}.i1s7c94.noLabel{padding-top:0;}.i1s7c94.hasValue + label,.i1s7c94:-webkit-autofill + label{-webkit-transform:scale(0.7143) translateY(-10px);-ms-transform:scale(0.7143) translateY(-10px);transform:scale(0.7143) translateY(-10px);font-weight:700;}
+.i4vwqrf:focus + label{-webkit-transform:scale(0.7143) translateY(-10px);-ms-transform:scale(0.7143) translateY(-10px);transform:scale(0.7143) translateY(-10px);font-weight:700;}
+.c8lb66c{width:var(--c8lb66c-0);}
+.p5j4mea{color:#8C8C8C;font-size:0.625rem;min-height:16px;margin-left:12px;line-height:1.5;text-align:left;}
+.iqg2ugv{width:100%;height:48px;position:relative;border-radius:4px;border:1px solid #C0C0C0;background-color:#FFFFFF;}.iqg2ugv:focus-within{border-color:#FF8800;}.iqg2ugv.error{border-color:#E5193B;}.iqg2ugv.error + p{color:#E5193B;}.iqg2ugv.disabled{border-color:#F4F4F4;background-color:#F4F4F4;}.iqg2ugv > label{position:absolute;top:13px;left:12px;cursor:text;pointer-events:none;-webkit-transform-origin:top left;-ms-transform-origin:top left;transform-origin:top left;-webkit-transition:-webkit-transform 0.1s ease;-webkit-transition:transform 0.1s ease;transition:transform 0.1s ease;color:#8C8C8C;font-size:0.875rem;}.iqg2ugv > button{background:transparent;outline:none;border:none;height:48px;min-width:16px;position:absolute;top:0;right:4px;color:#2A70DF;padding:8px;}.iqg2ugv > .password{top:-1px;}.iqg2ugv svg{font-size:0.75rem;}.iqg2ugv > svg{height:48px;position:absolute;top:-1px;right:12px;color:#8C8C8C;pointer-events:none;}
+.t1ojzfkw{position:absolute;top:14px;right:12px;color:#8C8C8C;}.t1ojzfkw > p{visibility:hidden;width:236px;background-color:#222222;color:#FFFFFF;border-radius:4px;padding:8px 12px;position:absolute;top:28px;opacity:0;-webkit-transition:all 100ms ease;transition:all 100ms ease;z-index:1800;font-size:0.875rem;text-align:left;-webkit-transform:scale(0.9);-ms-transform:scale(0.9);transform:scale(0.9);}.t1ojzfkw > p::after{content:'';position:absolute;bottom:calc(100% - 1px);border:8px solid transparent;border-bottom-color:#222222;}.t1ojzfkw:hover > p{visibility:visible;opacity:1;-webkit-transform:scale(1);-ms-transform:scale(1);transform:scale(1);}.t1ojzfkw.tooltip-left > p{-webkit-transform-origin:205px 0;-ms-transform-origin:205px 0;transform-origin:205px 0;left:-205px;}.t1ojzfkw.tooltip-left > p::after{left:203px;}.t1ojzfkw.tooltip-right > p{-webkit-transform-origin:14px 0;-ms-transform-origin:14px 0;transform-origin:14px 0;left:-14px;}.t1ojzfkw.tooltip-right > p::after{left:12px;}
 
-            $level  = LEVEL;
-            
-        ?>
-    <!-- End Landing Page -->
-    <body class="frontend_clients indexclass_index ">
-        <!-- Load Facebook SDK for JavaScript -->
-        <div id="fb-root"></div>
-        <!-- Your customer chat code -->
-        <div class="fb-customerchat"
-            attribution=setup_tool
-            page_id="1686228198272519"
-            theme_color="#0060af"
-            logged_in_greeting="Xin chào! Chúng tôi có thể giúp gì cho bạn?"
-            logged_out_greeting="Xin chào! Chúng tôi có thể giúp gì cho bạn?">
-        </div>
-        <div id="header-menu-mobile">
-            <div class="col-xs-12 c1">
-                <div id="header-menu-greeting">
-                    <div class="col-xs-12">
-                        <h2>Welcome To Talentnetwork</h2>
-                    </div>
-                </div>
-                <div id="header-menu-links">
-                    <ul>
-                        <li id="header-menu-authentication-links">
-                            <div class="col-xs-6"><a href="dang-nhap/vi" class="btn">Đăng nhập</a></div>
-                            <div class="col-xs-6"><a href="join-talent-network/vi?url=vi" class="btn">Đăng ký</a> </div>
-                        </li>
+
+.w1yk8s72{background:#eff6ff;display:-webkit-box;display:-webkit-flex;display:-ms-flexbox;display:flex;padding:12px;margin-top:12px;-webkit-align-items:center;-webkit-box-align:center;-ms-flex-align:center;align-items:center;}
+.c1pt0d9t{display:-webkit-box;display:-webkit-flex;display:-ms-flexbox;display:flex;width:100%;-webkit-align-items:center;-webkit-box-align:center;-ms-flex-align:center;align-items:center;}@media (min-width:768px){.c1pt0d9t{width:100%;}}
+@media (min-width:768px){.ioqm53g{width:26px;height:44px;}}
+.c1t549ed{margin-left:12px;}@media (min-width:768px){.c1t549ed{width:calc(100% - 38px);display:-webkit-box;display:-webkit-flex;display:-ms-flexbox;display:flex;-webkit-align-items:center;-webkit-box-align:center;-ms-flex-align:center;align-items:center;}}
+.t712cse{color:#2561cf;font-weight:700;}@media (min-width:768px){.t712cse{margin-bottom:0;}}
+@media (min-width:768px){.d1mcybls{margin-bottom:0;}}
+.a13mp7rd{width:100%;}.a13mp7rd button{background-color:#2561cf !important;border-color:#2561cf !important;}@media (min-width:768px){.a13mp7rd{width:30%;}}
+@media (min-width:768px){.t1d3fms{width:70%;padding-right:2.5rem;}}
+
+
+.w1d827wb{background:#ffffff;margin-top:12px;padding:12px 0;}.w1d827wb .i-next{top:40% !important;}.w1d827wb .i-prev{top:40% !important;}.w1d827wb:hover .next,.w1d827wb:hover .prev{-webkit-transform:scale(1.5) !important;-ms-transform:scale(1.5) !important;transform:scale(1.5) !important;-webkit-transition:all 0.2s ease-in-out;transition:all 0.2s ease-in-out;}
+.t16lncvr{font-size:16px;margin:0;padding:0 0 0 12px;font-weight:bold;font-stretch:normal;font-style:normal;line-height:1.41;-webkit-letter-spacing:normal;-moz-letter-spacing:normal;-ms-letter-spacing:normal;letter-spacing:normal;color:#222222;}@media (min-width:768px){.t16lncvr{border-bottom:1px solid #f4f4f4;padding:0 0 12px 12px;}}
+.d1mlmcxt{padding:12px;line-height:20px;}.d1mlmcxt strong{font-size:14px;}
+.i19q506l{outline:none;position:relative;list-style:none;-webkit-flex:1 1 33.33%;-ms-flex:1 1 33.33%;flex:1 1 33.33%;display:-webkit-box;display:-webkit-flex;display:-ms-flexbox;display:flex;-webkit-align-items:center;-webkit-box-align:center;-ms-flex-align:center;align-items:center;-webkit-flex-direction:column;-ms-flex-direction:column;flex-direction:column;text-align:center;}@media (min-width:768px){.i19q506l{-webkit-flex-direction:row;-ms-flex-direction:row;flex-direction:row;text-align:left;}}
+.c1ix36js{color:#ffba00;line-height:1.4;font-size:16px;margin-top:4px;margin-bottom:4px;font-weight:bold;font-stretch:normal;font-style:normal;}
+.clzh3k5{color:#222;font-size:14px;margin-bottom:8px;font-weight:bold;font-stretch:normal;font-style:normal;}.clzh3k5 b{font-size:14px;}
+.w1sxweed{display:-webkit-box;display:-webkit-flex;display:-ms-flexbox;display:flex;padding:12px;}
+.t1ug96jk{display:-webkit-box;display:-webkit-flex;display:-ms-flexbox;display:flex;-webkit-flex-direction:column;-ms-flex-direction:column;flex-direction:column;}
+@media (min-width:768px){.i1hboxia{margin-right:12px;}}
+.cemylwf{text-align:center;}.cemylwf img{border-radius:20px;outline:none;-webkit-user-drag:none;-moz-user-drag:none;-ms-user-drag:none;user-drag:none;-webkit-user-select:none;-moz-user-select:none;-ms-user-select:none;user-select:none;-moz-user-select:none;-webkit-user-drag:none;-webkit-user-select:none;-ms-user-select:none;}
+
+
+
+.w1flksht{height:34px;width:100%;text-align:center;padding:12px 12px 12px 12px;margin-top:12px;border-top:1px solid #f4f4f4;}.w1flksht .noMore{color:#9b9b9b;text-align:center;}.w1flksht button{cursor:pointer;outline:none;background:none;border:none;display:block;width:100%;color:#38699f;font-size:16px;font-weight:bold;font-stretch:normal;font-style:normal;line-height:20px;margin:0 auto;}@media (max-width:768px){.w1flksht button{font-size:15px;line-height:20px;}}.w1flksht button svg{vertical-align:middle;margin-left:5px;}
+
+
+.wnrhoix{background:#ffffff;margin-top:12px;padding:12px 0;}@media (min-width:768px){.wnrhoix{padding-bottom:12px;}}.wnrhoix .i-next{top:40% !important;}.wnrhoix .i-prev{top:40% !important;}.wnrhoix:hover .next,.wnrhoix:hover .prev{-webkit-transform:scale(1.5) !important;-ms-transform:scale(1.5) !important;transform:scale(1.5) !important;-webkit-transition:all 0.2s ease-in-out;transition:all 0.2s ease-in-out;}
+.t1gy7sqq{font-size:16px;margin:0 0 12px 0;padding:0 0 0 12px;font-weight:bold;font-stretch:normal;font-style:normal;line-height:1.41;-webkit-letter-spacing:normal;-moz-letter-spacing:normal;-ms-letter-spacing:normal;letter-spacing:normal;color:#222222;}@media (min-width:768px){.t1gy7sqq{border-bottom:1px solid #f4f4f4;padding:0 0 12px 12px;}}
+.iws5vzr{outline:none;position:relative;list-style:none;cursor:pointer;-webkit-flex:1 1 33.33%;-ms-flex:1 1 33.33%;flex:1 1 33.33%;border-right:1px solid #f4f4f4;border-top:1px solid #f4f4f4;padding:8px;}.iws5vzr:not(:nth-child(n + 4)){border-top:none;}.iws5vzr:nth-child(3n){border-right:1px solid transparent;}@media (min-width:768px){.iws5vzr{padding:0;border-top:none;-webkit-flex:1 1 10%;-ms-flex:1 1 10%;flex:1 1 10%;}.iws5vzr:nth-child(3n){border-right:1px solid #f4f4f4;}}
+.w1mkj27i{display:-webkit-box;display:-webkit-flex;display:-ms-flexbox;display:flex;-webkit-flex-wrap:wrap;-ms-flex-wrap:wrap;flex-wrap:wrap;}
+.i5ej9zg{width:100%;}
+.c17lw2jw{display:-webkit-box;display:-webkit-flex;display:-ms-flexbox;display:flex;-webkit-box-pack:center;-webkit-justify-content:center;-ms-flex-pack:center;justify-content:center;-webkit-align-items:center;-webkit-box-align:center;-ms-flex-align:center;align-items:center;}.c17lw2jw img{outline:none;-webkit-user-drag:none;-moz-user-drag:none;-ms-user-drag:none;user-drag:none;-webkit-user-select:none;-moz-user-select:none;-ms-user-select:none;user-select:none;-moz-user-select:none;-webkit-user-drag:none;-webkit-user-select:none;-ms-user-select:none;}
+.azmhcbw{display:block;background-size:cover;-webkit-align-items:center;-webkit-box-align:center;-ms-flex-align:center;align-items:center;-webkit-text-decoration:none;text-decoration:none;height:100%;margin-right:-1px;}
+
+
+
+
+
+
+.i1s7c94 {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    background-color: #fff;
+    border: none;
+    border-radius: 4px;
+    color: #222;
+    font-size: .875rem;
+    height: 100%;
+    outline: 0;
+    padding: 14px 12px 0;
+    width: 100%;
+}
+
+.d1ci50gw label {
+    left: 39px;
+}
+
+.ct_rm__d10lg5yr{
+    padding: 0 !important;
+}
+
+
+    </style>
+    <body class="custom_class">
+        <noscript><iframe title="noscript_GTM-WCFN73J" src="https://www.googletagmanager.com/ns.html?id=GTM-WCFN73J" height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+        <div id="__next" data-reactroot="">
+            <progress hidden=""></progress>
+            <div class="c1kiracd">
+                <div></div>
+                <div class="ct_rm__lf71da1">
+                    <div class="desktop-layout" id="placeholder-app-wrapper" style="width:100%;background-color:#2561CF;padding-bottom:12px">
+                        <div class="ct_rm__d10lg5yr">
                         
-                        <li><a href="gioi-thieu-35A517C6/vi">Đăng nhập</a>
-                        </li>
-                       
-                        <li><a href="phuc-loi-35A517C8/vi">Tìm việc làm</a>
-                        </li>
-                        
-                    </ul>
-                </div>
-            </div>
-        </div>
-        <style type="text/css">
-            #fancybox-close{right:50px !important}
-        </style>
-        <div class="section-header" id="section-header">
-            <!-- <div id="my-download">
-                <div class="container">
-                    <div class="download_form_premium">
-                        <a href="http://advertising.careerbuilder.vn/html/customer/eurowindow/BM06_QT08EW_To khai ung vien.doc">Tải mẫu thông tin ứng viên</a>
-                    </div>
-                </div>
-            </div> -->
-            <div id="header-pre">
-                <div class="columns hidden">
-                    <div id="show-menu"><span class="fa fa-bars"></span></div>
-                </div>
-                <div class="container">
-                    <div class="logo"><a href="{{ route('home') }}"><img alt="Công Ty Cổ Phần Eurowindow" src="{{ asset('images/logo.png') }}" /></a></div>
-                    <div class="menu">
-                        <ul>
-                            
-                            
-                            <li class=""><a href="{{ route('form_recruit') }}" id="menu_11979"  target="_self">Đăng tin tuyển dụng </a>
-                            </li>
+                            <div class="aw__sa4yob3" mode="user" profile="[object Object]" style="--sa4yob3-0: #2561CF; --sa4yob3-1: #fff;">
+                                <div class="aw__s10g0md5" style="--s10g0md5-0: #fff;">
+                                    <span class="aw__l3mdvjv"><span><a href="https://www.chotot.com" class="aw__i9tio1c">Chợ Tốt</a><span class="aw__v1t61y1y"></span></span><span><a href="https://nhatot.com" class="aw__i9tio1c">Nhà Tốt</a><span class="aw__v1t61y1y"></span></span><span><a href="https://xe.chotot.com" class="aw__i9tio1c">Chợ Tốt Xe</a><span class="aw__v1t61y1y"></span></span><span><a href="https://www.vieclamtot.com" class="aw__i9tio1c">Việc Làm Tốt</a></span></span>
+                                    <span class="aw__r1pijacb">
+                                        <a class="aw__i9tio1c" href="https://docs.google.com/forms/d/e/1FAIpQLSc5begvG3B5NE29iy3JnXya_6zY_DyHdIIfb3TnnQTNqr5ZVQ/viewform?vc=0&amp;c=0&amp;w=1&amp;flr=0" rel="nofollow" headerfallbackreduxversionref="[object Object]" sitename="job" headerconfig="[object Object]" auth="[object Object]" user="[object Object]" bgcolor="#2561CF" mode="user" remoteurl="https://static.chotot.com/storage/APP_WRAPPER/v4/4.5.2/header.js" fallback="[object Object]" loader="[object Object]" location="[object Object]" site="job" shop="[object Object]" config="[object Object]" manifest="[object Object]" url="https://static.chotot.com/storage/APP_WRAPPER/v4/4.5.2/header.js" backupurl="https://static.chotot.com/storage/APP_WRAPPER/v4/4.1.3/header.js" profile="[object Object]" target="_blank"><span class="aw__nx3kzrx show-desktop aw__szp9uz0" color="#8C8C8C" style="--szp9uz0-1: inherit; --szp9uz0-9: #8C8C8C;">Đóng góp ý kiến</span></a>
+                                        <a class="aw__naoniqq" href="/" rel="nofollow">
+                                            <span class="aw__nez25v5 show-desktop aw__szp9uz0" color="#fff" style="--szp9uz0-1: #ffffff; --szp9uz0-9: #fff;">Tải ứng dụng</span>
+                                            <ul class="aw__d1yvsyvu" style="--d1yvsyvu-0: none;"><span class="aw__d1dfdrjn"><img src="https://static.chotot.com/storage/default/aw-download-qr.png" rel="download-qr" class="aw__q16hn1nx" width="148" height="148" alt=""><span class="aw__d1t0fobn"><img alt="App Store" srcset="https://static.chotot.com/storage/default/appstore.png" class="aw__ar8bqid"><img alt="Google Play Store" srcset="https://static.chotot.com/storage/default/playstore.png" class="aw__ar8bqid"><img alt="App Huawei" srcset="https://static.chotot.com/storage/default/huaweistore.png" class="aw__ar8bqid"></span></span></ul>
+                                        </a>
+                                        <a class="aw__i9tio1c" href="https://trogiup.chotot.com/" rel="nofollow" headerfallbackreduxversionref="[object Object]" sitename="job" headerconfig="[object Object]" auth="[object Object]" user="[object Object]" bgcolor="#2561CF" mode="user" remoteurl="https://static.chotot.com/storage/APP_WRAPPER/v4/4.5.2/header.js" fallback="[object Object]" loader="[object Object]" location="[object Object]" site="job" shop="[object Object]" config="[object Object]" manifest="[object Object]" url="https://static.chotot.com/storage/APP_WRAPPER/v4/4.5.2/header.js" backupurl="https://static.chotot.com/storage/APP_WRAPPER/v4/4.1.3/header.js" profile="[object Object]" target="_blank"><span class="aw__n1rd4x1j show-desktop aw__szp9uz0" color="#8C8C8C" style="--szp9uz0-1: inherit; --szp9uz0-9: #8C8C8C;">Trợ giúp</span></a>
+                                    </span>
+                                </div>
+                                <div class="aw__fe17nfm" href="https://www.vieclamtot.com/nha-tuyen-dung/tim-ung-vien" style="--fe17nfm-1: 196px; --fe17nfm-3: #1956B8; --fe17nfm-4: #FFFFFF;" color="#FFFFFF"><span class="aw__muulhme"><img src="https://static.chotot.com/storage/APP_WRAPPER/icons/icon-suitcase-white.png" alt=""></span><span>Dành cho Nhà tuyển dụng</span></div>
+                            </div>
 
 
-                            <li class=""><a href="{{ route('registerClientUser') }}"  target="_self">Gia nhập việc làm ngon </a>
-                            </li>
-
-                            <li class=""><a href="{{ route('our') }}"  target="_self">Về chúng tôi </a>
-                            </li>
-
-                            <li class=""><a href="javascript:void(0)" class="dropdown-toggle click-drop"  data-toggle="dropdown">Kiến thức </a>
-
-                                <ul class="dropdown-menu">
-                                  <li><a href="{{ route('view-List-Cate', 'ki-nang-cong-so') }}">Kỹ năng công sở</a></li>
-                                  <li><a href="{{ route('view-List-Cate', 'chuyen-nganh') }}">Chuyên ngành</a></li>
-                                  <li><a href="{{ route('view-List-Cate', 'chuyen-cong-so') }}">Chuyện công sở</a></li>
-                                </ul>
-
-                            </li>
-                        </ul>
-                    </div>
-                    <div class="navbar-right">
-
-                        <ul>
-
-                            @if(!Auth::check())
-                            <li><a href="{{ route('login-users') }}" class="showDialogD">Đăng nhập</a></li>
-
-                            <li><a href="{{ route('registerClientUser') }}">Đăng Ký</a></li>
-
-                            @else
-
-                            <li style="position: relative;">
-                                <a href="{{ route('user-dashboard') }}" class="showDialogD" >Xin chào {{ Auth::user()->name }}</a>
-                                <ul class="dropdown-menu drop1">
-                                    <li><a href="{{ route('user-dashboard') }}">Dashboard</a></li>
-                                    <li><a href="{{ route('logoutUser') }}">Logout</a></li>
-                                 
-                                </ul>
-                            </li>
-                            
-                            @endif
-
-                            <li> 
-                               <a href="{{ route('show-index') }}">Dành cho nhà tuyển dụng</a>
-
-                                 
-
-                            </li>
-                           
-                        </ul>
-
-                       
-
-
-                        <style type="text/css">
-                            
-                           .main-employer .dropdown-toggle {
-                                min-width: 190px;
-                                padding: 17.5px 20px;
-                            }
-
-                            .main-employer .dropdown-toggle {
-                                padding: 17.5px;
-                                background: #182642;
-                            }
-
-                            .main-employer .dropdown-toggle p {
-                                color: #999999;
-                                font-size: 14.5px;
-                                font-weight: 500;
-                            }
-                            .bgimage{
-                                background-size :auto !important;
-
-
-                            }
-
-                            ::placeholder {
-                              color: #fff;
-                            }
-
-                        </style>
-
-                    </div>
-
-                </div>
-            </div>
-        </div>
-        <div style="display: none">
-            <div id="WhyJoin" class="wrapDialog msgbox">
-                <div class="container">
-                    <h3 class="col_theme">Join Our Talent Network</h3>
-                    <div class="content_why_join">
-                        <h4>Talent Network là gì?</h4>
-                        <p>Gia nhập Talent Network của chúng tôi sẽ giúp bạn nâng cao khả năng tìm kiếm việc làm. Cho dù bạn ứng tuyển một công việc nào đó hoặc đơn giản là cập nhật thông tin của mình, chúng tôi cũng luôn mong muốn được kết nối cùng bạn.</p>
-                        <h4>Vì sao bạn nên gia nhập Talent Network?</h4>
-                        <ul style="list-style: disc">
-                            <li>Nhận thông báo việc làm mới phù hợp với sự quan tâm của bạn</li>
-                            <li>Cập nhật các thông tin mới nhất về công ty</li>
-                            <li>Chia sẻ cơ hội việc làm với gia đình, bạn bè thông qua mạng xã hội hoặc email</li>
-                        </ul>
-                        <p><a href="join-talent-network/vi?url=vi" class="showDialogD"><strong>Hãy gia nhập Talent Network của chúng tôi ngay hôm nay!</strong></a></p>
-                    </div>
-                    <div class="clearall mar_top10">
-                        <div class="btnContinute"><a href="join-talent-network/vi?url=vi" class="showDialogD">Tiếp Tục</a></div>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <div id="wrapper">
-           
-            <div id="photo-area">
-                <div class="texton">
-                   <!--  <div class="slogan">
-                        <h1>CÙNG KIẾN TẠO MỘT SỰ NGHIỆP THÀNH CÔNG</h1>
-                    </div> -->
-                    <!-- <div class="join-talent-onclip"><a href="join-talent-network/vi" class="showDialogD">Gia nhập cùng Eurowindow</a></div> -->
-                </div>
-                <div id="banner-video">
-                    <div class="filter-videos"></div>
-
-                    <?php 
-
-                        $banners =  App\Models\banners::where('id', 5)->first();
-                    ?>
-
-                    <img src="{{ asset($banners->image) }}">
-                    
-                </div>
-                <div class="container-search">
-                    <div class="search-jobs-main">
-                        <form method="get" action="{{route('filters') }}"  id="frmSearchJob">
-                            <input name="keyword"  id="keywords" type="text" class="brOrgane h15 width_545" onblur="if(this.value=='') this.value='';" onfocus="javascript:if(this.value=='Tìm việc') this.value='';" value="" /  placeholder="Tìm việc">
-                            <select id="industry" name="industry" class="chosen slc-mb">
-                                <option value="">Ngành nghề</option>
-                                 @foreach($listDefineJob as $key => $value)
-
-                                    @if($key !=0)
-
-                                     <option value="{{ $key }}">{{ $value }}</option>
-
-                                    @endif 
-                                @endforeach
-                
-                            </select>
-
-                            <select id="location" name="location" class="chosen slc-mb">
-                                <option value="">Nơi làm việc</option>
-                                <optgroup label="Việt Nam" >
-                                    @foreach($address as $key => $value)
-                                        <option value="{{ $key }}">{{ $value }}</option>
-                                    @endforeach
-                                </optgroup>
-                            </select>
-                            <button class="searchvt1" type="submit">
-                            <i class="fa fa-search"></i>
-                            <span>Tìm kiếm</span>
-                            </button>
-                        </form>
-                    </div>
-                    <style type="text/css">
-                        .chosen-container{float:left}
-                    </style>
-                </div>
-            </div>
-            <style>
-                #bgvid, #bgvid1 {width: 100%;object-fit: cover;transform: translateY(-50%);top:50%;}
-                #bgvid1 { position: absolute; min-height:100%; height:auto; }
-            </style>
-
-            <div id="11974" class="section-page page-content-pre bg-odd" >
-                <header class="container-fluid">
-                    <h2 class="section-title" >Giới thiệu</h2>
-                </header>
-                <div class="container">
-                    <div class="col-xs-12">
-                        <div class="content_fck text-intro">
-                            <p style="text-align:justify">
-                                <img src="{{ asset('images/1570440136_1568967007-20180619-01-1.jpg') }}" style="float:right; height:264px; margin-left:15px; margin-right:15px; width:450px" />
-                                {!!  @$introduce_top->content !!}
-                            </p>
-                            
-                        </div>
-                    </div>
-                </div>
-            </div>
-
-            <div id="11975" class="section-page section-grid-career " >
-                <div class="container">
-                    <header class="container-fluid">
-                        <h2 class="section-title" >Cơ Hội Nghề Nghiệp</h2>
-                        <!--<p>Here are our openings. Think you're the right fit? Apply today!</p>-->
-                    </header>
-                    <div class="container-fluid container-narrow">
-                        <ul class="flex-row jobs">
-                            <li class="col-xs-6 col-sm-6 col-md-4 job">
-                                <a href="#"><img src="{{ asset('images/job1.png')}}" /></a>
-                                <h3 class="job-title"><a href="#">Bán hàng / Kinh doanh</a></h3>
-                            </li>
-                            <li class="col-xs-6 col-sm-6 col-md-4 job">
-                                <a href="#"><img src="{{ asset('images/job2.png')}}" /></a>
-                                <h3 class="job-title"><a href="#">Kế toán / Kiểm toán</a></h3>
-                            </li>
-                            <li class="col-xs-6 col-sm-6 col-md-4 job">
-                                <a href="#"><img src="{{ asset('images/job3.png')}}" /></a>
-                                <h3 class="job-title"><a href="#">Kiến trúc</a></h3>
-                            </li>
-                            <li class="col-xs-6 col-sm-6 col-md-4 job">
-                                <a href="#"><img src="{{ asset('images/job4.png')}}" /></a>
-                                <h3 class="job-title"><a href="#">Thu mua / Vật tư</a></h3>
-                            </li>
-                            <li class="col-xs-6 col-sm-6 col-md-4 job">
-                                <a href="#"><img src="{{ asset('images/job5.png')}}" /></a>
-                                <h3 class="job-title"><a href="#">Vận chuyển / Giao nhận / Kho vận</a></h3>
-                            </li>
-                            <li class="col-xs-6 col-sm-6 col-md-4 job">
-                                <a href="#"><img src="{{ asset('images/job6.png')}}" /></a>
-                                <h3 class="job-title"><a href="#">Xây dựng</a></h3>
-                            </li>
-                        </ul>
-                    </div>
-                    <!-- <div class="row">
-                        <div class="col-xs-3 btn-viewmore">
-                            <a href="#" class="btn btn-block btn-primary">Xem thêm</a>
-                        </div>
-                    </div> -->
-                </div>
-            </div>
-            <div class="visible-xs visible-sm">
-            </div>
-            <div class="hidden-xs hidden-sm">
-                <div class="ads-pre slidebg" style="height:350px">
-                    <div id="slidehr">
-                        <div class="bgimage" style="background-image:url({{ asset('images/banner1.jpg')}}">
-                            
-                        </div>
-                        
-                    </div>
-                   <!--  <ul id="pager">
-                        <li><a href="javascript:void(0);"></a></li>
-                        <li><a href="javascript:void(0);"></a></li>
-                        <li><a href="javascript:void(0);"></a></li>
-                        <li><a href="javascript:void(0);"></a></li>
-                    </ul> -->
-                    <script type="text/javascript">
-                       
-                        $(window).load(function(){
-                                var posPage = ($(window).width() - $('#pager').width())/2;
-                                $('#pager').css({'left':posPage+'px'});
-                                $(window).resize(function(){
-                                        posPage = ($(window).width() - $('#pager').width())/2;
-                                        $('#pager').css({'left':posPage+'px'});
-                                });
-                        });
-                    </script>
-                </div>
-            </div>
-            <div id="11976" class="section-page page-content-pre bg-odd" >
-                <header class="container-fluid">
-                    <h2 class="section-title" >Chính sách nhân sự</h2>
-                </header>
-                <div class="container">
-                    <div class="col-xs-12">
-                        <div class="content_fck text-intro">
-
-                            
-
-                            {!!  @$introduce_banner->content  !!}
-                        </div>
-                    </div>
-                </div>
-            </div>
-
-           
-            <div class="container">
-
-                <header class="container-fluid">
-                    <h2 class="section-title section1">Việc làm nổi bật</h2>
-                </header>
-
-                <style type="text/css">
-
-                    .title-special{
-                        text-align: center;
-                        font-weight: bold;
-                        text-transform: uppercase;
-                    }
-
-                     .section1 {
-                        padding: 20px 0;
-                     }
-                    
-                    .figure {
-                        padding-right: 45px;
-                    }
-
-                    .figure {
-                        -ms-flex-wrap: wrap;
-                        -webkit-transition: 0.4s ease-in-out all;
-                        -o-transition: 0.4s ease-in-out all;
-                        display: -webkit-box;
-                        display: -ms-flexbox;
-                        display: flex;
-                        position: relative;
-                        flex-wrap: wrap;
-                        padding: 15px 10px;
-                        overflow: hidden;
-                        border-top: 1px solid #e5e5e5;
-                        border-right: 1px solid #e5e5e5;
-                        border-radius: 5px;
-                        border-top-left-radius: 4px;
-                        transition: 0.4s ease-in-out all;
-                    }
-
-                    .figure .title a {
-                        -o-text-overflow: ellipsis;
-                        -webkit-line-clamp: 1;
-                        -webkit-box-orient: vertical;
-                        display: -webkit-box;
-                        overflow: hidden;
-                        color: #172642;
-                        font-size: 16px;
-                        font-weight: 700;
-                        line-height: 1.2;
-                        text-overflow: ellipsis;
-                    }
-
-                    .job-item .figure .figcaption {
-                        -webkit-box-flex: 0;
-                        -ms-flex: 0 0 auto;
-                        flex: 0 0 auto;
-                        max-width: calc(100% - 79px);
-                        padding-left: 15px;
-                    }
-
-                    .job-item .figure .caption .company-name {
-                        -o-text-overflow: ellipsis;
-                        -webkit-line-clamp: 1;
-                        -webkit-box-orient: vertical;
-                        display: -webkit-box;
-                        overflow: hidden;
-                        color: #5d677a;
-                        text-overflow: ellipsis;
-                    }
-
-                   .figure .image {
-                        background-color: #fff;
-
-                        display: flex;
-                        flex: 0 0 79px;
-                        align-items: center;
-                        justify-content: center;
-                        max-width: 79px;
-                        height: 79px;
-                        padding: 5px;
-                        border: 1px solid #e5e5e5;
-                        border-radius: 5px;
-                    }
-                </style>
-
-                <div class="row">
-
-
-                    <?php 
-
-                        $outstanding_work= DB::table('job')->join('employ_info', 'job.employer_id', '=', 'employ_info.employ_id')->select('job.title', 'job.id', 'employ_info.name', 'employ_info.logo', 'employ_info.links', 'job.link','job.salaryunit', 'job.salary', 'job.address_job')->orderBy('id', 'desc')->take(10)->get();
-
-
-
-
-                    ?>
-                    @if($outstanding_work->count()>0)
-
-                    @foreach($outstanding_work as $value)
-                   
-                    <div class="col-lg-6 ">
-                        <div class="job-item">
-                            <div class="figure">
-                                <div class="image"><a target="_blank" href="{{ route('job_details', [$value->link, $value->id]) }}" title="{{  $value->title }}" class="swiper-lazy swiper-lazy-loaded" alt="{{  $value->title }}"></a></div>
-                                <div class="figcaption">
-                                    <div class="title"><a target="_blank" href="{{ route('job_details', [$value->link, $value->id]) }}" title="Senior Sales Manager">{{  $value->title }}</a></div>
-                                    <div class="caption">
-
-
-                                        <a class="company-name" href="{{  !empty($value->links)?Route('employ-details', $value->links):'#' }}" title="{{ $value->name }}" target="_blank">{{ $value->name }}</a>
-
-                                         <?php 
-
-                                            $salary =  explode('-', $value->salary);  
-
-                                        ?>
-                                        {{ @number_format(intval($salary[0]))   }} - {{ @number_format(intval($salary[1]))   }} {{ $value->salaryunit===0?'Đ':'usd' }}
-                                        
-                            
-                                        @if (Auth::check()) 
-                                        
-
-                                        <div class="saves-icon">
-                                            <span class="top save-job" onclick="saveJob('{{ $value->id }}')" id="job_{{ $value->id }}" data-id="{{ $value->id }}"><i class="fa fa-heart" aria-hidden="true"></i></span> 
-                                           
+                            <header class="aw__h5101fz" style="--h5101fz-0: #2561CF; --h5101fz-2: 40px; --h5101fz-5: 100;">
+                                <div class="aw__co22znp">
+                                    <div class="aw__la2dsz4" style="--la2dsz4-0: 20%; --la2dsz4-2: unset;">
+                                        <div class="aw__l152mft9">
+                                            <a class="aw__l1l4rfje" href="https://www.vieclamtot.com/" style="justify-content: unset;">
+                                                <picture>
+                                                    <source type="image/webp" srcset="https://static.chotot.com/storage/APP_WRAPPER/logo/job-logo-appwrapper.png">
+                                                    <img height="35" class="aw__ldrazpr" alt="Chợ Tốt">
+                                                </picture>
+                                            </a>
                                         </div>
-                                        @endif
+                                        <div class="aw__cexsh2j" style="--cexsh2j-2: undefined; --cexsh2j-3: undefined;">
+                                            <div class="aw__i8z877t" style="--i8z877t-0: #8C8C8C; --i8z877t-6: #222222;">
+                                                <svg width="24" height="25" viewBox="0 0 24 25" fill="none" xmlns="http://www.w3.org/2000/svg" class="aw__j1a2zdhw">
+                                                    <g clip-path="url(#clip0_5847_24383)">
+                                                        <path d="M4 18.5H20C20.55 18.5 21 18.05 21 17.5C21 16.95 20.55 16.5 20 16.5H4C3.45 16.5 3 16.95 3 17.5C3 18.05 3.45 18.5 4 18.5ZM4 13.5H20C20.55 13.5 21 13.05 21 12.5C21 11.95 20.55 11.5 20 11.5H4C3.45 11.5 3 11.95 3 12.5C3 13.05 3.45 13.5 4 13.5ZM3 7.5C3 8.05 3.45 8.5 4 8.5H20C20.55 8.5 21 8.05 21 7.5C21 6.95 20.55 6.5 20 6.5H4C3.45 6.5 3 6.95 3 7.5Z" fill="#222222"></path>
+                                                    </g>
+                                                    <defs>
+                                                        <clipPath id="clip0_5847_24383">
+                                                            <rect width="24" height="24" fill="white" transform="translate(0 0.5)"></rect>
+                                                        </clipPath>
+                                                    </defs>
+                                                </svg>
+                                                <span class="aw__i1utyhlb">
+                                                    <span class="aw__c19wws31 show-desktop aw__szp9uz0" color="#8C8C8C" style="--szp9uz0-1: #ffffff; --szp9uz0-9: #8C8C8C;">Danh mục</span>
+                                                    <svg width="1rem" height="1rem" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg" class="aw__dtt35j3 aw__j1a2zdhw">
+                                                        <path d="M4.67154 5.99959C4.9323 5.74067 5.35336 5.74141 5.6132 6.00125L8.19653 8.58458L10.7863 6.00048C11.0461 5.74125 11.4668 5.74148 11.7263 6.00099C11.986 6.26071 11.986 6.68179 11.7263 6.94151L8.90364 9.76414C8.51312 10.1547 7.87995 10.1547 7.48943 9.76414L4.66987 6.94459C4.40872 6.68344 4.40947 6.25981 4.67154 5.99959Z" fill="currentColor"></path>
+                                                    </svg>
+                                                </span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="aw__c8p27ky">
+                                        <div class="aw__s1wdsl35">
+                                            <div>
+                                                <div class="aw__slq94yq" style="--slq94yq-4: #fff;">
+                                                    <div id="autoComplete">
+                                                        <div class="aw__d1g2y39b">
+                                                            <div class="aw__s7k33ul">
+                                                                <div value="" class="aw__ah4jb82" style="--ah4jb82-2: undefined; --ah4jb82-6: 35px;">
+                                                                    <button aria-label="Search Button Desktop" class="aw__j1ue8cei aw__cm4yjvg">
+                                                                        <svg xmlns="http://www.w3.org/2000/svg" data-type="monochrome" viewBox="0 0 16 16" width="1em" height="1em" fill="none">
+                                                                            <path fill="currentColor" d="M6.4 0a6.369 6.369 0 00-4.525 1.873A6.425 6.425 0 00.502 3.906v.002A6.383 6.383 0 000 6.398a6.372 6.372 0 001.875 4.524 6.385 6.385 0 008.428.537l-.006.006 4.295 4.293a.827.827 0 001.166-1.166l-4.295-4.295a6.368 6.368 0 00-.537-8.424A6.372 6.372 0 006.4 0zm0 1.615a4.75 4.75 0 013.383 1.4c.44.44.785.95 1.028 1.522h-.002c.249.59.377 1.214.377 1.861 0 .648-.128 1.27-.377 1.862h.002a4.783 4.783 0 01-2.55 2.545c-.59.25-1.213.377-1.86.377a4.761 4.761 0 01-1.864-.377A4.749 4.749 0 013.016 9.78c-.44-.44-.783-.95-1.024-1.521a4.735 4.735 0 01-.377-1.862c0-.647.127-1.272.377-1.863a4.75 4.75 0 011.024-1.52 4.754 4.754 0 013.384-1.4z"></path>
+                                                                        </svg>
+                                                                    </button>
+                                                                </div>
+                                                                <input autocomplete="off" placeholder="Tìm ngay 44.311 việc làm tại Việc Làm Tốt" id="__inputItemProps" type="text" class="aw__t16o28i7" value="" style="--t16o28i7-3: 36px; --t16o28i7-5: #fff; --t16o28i7-6: 35px;">
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="aw__r1fkdta0">
+                                        <div class="aw__rjogxfr aw__nygw70q">
+                                            <div class="aw__n1kniwks">
+                                                <div class="hover aw__naus9sk">
+                                                    <div class="aw__m14bta8d">
+                                                        <div color="#FFFFFF" id="btnundefined" class="aw__i8z877t" style="--i8z877t-0: #FFFFFF; --i8z877t-6: #FFFFFF;">
+                                                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" class="aw__ie1ow2r aw__j10y9k4g">
+                                                                <g clip-path="url(#clip0_5790_635)">
+                                                                    <g clip-path="url(#clip1_5790_635)">
+                                                                        <path d="M19.4045 18.7012H4.58447C4.33116 18.6997 4.08267 18.6319 3.86373 18.5044C3.64479 18.377 3.46306 18.1945 3.33662 17.975C3.21018 17.7555 3.14344 17.5067 3.14307 17.2534C3.14269 17.0001 3.20868 16.7511 3.33447 16.5312C4.25656 14.6713 4.68036 12.6039 4.56447 10.5312V9.75119C4.56208 8.76941 4.75587 7.79705 5.13447 6.89119C5.50399 5.9826 6.05527 5.15909 6.75447 4.47119C7.44834 3.77705 8.27473 3.22952 9.18447 2.86119C10.0896 2.48125 11.0629 2.29067 12.0445 2.30119C14.0179 2.33276 15.8994 3.14096 17.2809 4.55055C18.6624 5.96015 19.4326 7.8575 19.4245 9.83119V10.5012C19.3053 12.5742 19.7293 14.6423 20.6545 16.5012C20.7789 16.7226 20.8442 16.9723 20.8442 17.2262C20.8442 17.4801 20.7789 17.7298 20.6545 17.9512C20.5307 18.1738 20.3494 18.359 20.1295 18.4874C19.9096 18.6159 19.6591 18.6828 19.4045 18.6812V18.7012ZM11.9945 3.70119C11.2051 3.70057 10.4234 3.85571 9.69411 4.15773C8.96481 4.45974 8.30228 4.90269 7.74447 5.46119C7.17636 6.03386 6.72767 6.71369 6.42447 7.46119C6.13287 8.1891 5.98679 8.9671 5.99447 9.75119V9.75119V10.5012C6.11944 12.8302 5.62973 15.1512 4.57447 17.2312L19.4345 17.3012C18.4083 15.1855 17.914 12.8513 17.9945 10.5012V9.83119C18 8.22614 17.3737 6.68338 16.251 5.53633C15.1283 4.38928 13.5993 3.73008 11.9945 3.70119V3.70119Z" fill="currentColor"></path>
+                                                                        <path d="M11.9945 22.4508C11.5081 22.4529 11.0261 22.3585 10.5764 22.1731C10.1267 21.9877 9.71819 21.715 9.37453 21.3708C8.68295 20.6741 8.29475 19.7324 8.29453 18.7508V18.0008C8.29453 17.8151 8.36827 17.6371 8.49955 17.5058C8.63083 17.3745 8.80887 17.3008 8.99452 17.3008C9.18018 17.3008 9.35822 17.3745 9.4895 17.5058C9.62078 17.6371 9.69452 17.8151 9.69452 18.0008V18.7508C9.69584 19.3609 9.9364 19.9461 10.3645 20.3808C10.8081 20.7912 11.3902 21.0192 11.9945 21.0192C12.5989 21.0192 13.181 20.7912 13.6245 20.3808C14.0526 19.9461 14.2932 19.3609 14.2945 18.7508V18.0008C14.2945 17.8151 14.3683 17.6371 14.4995 17.5058C14.6308 17.3745 14.8089 17.3008 14.9945 17.3008C15.1802 17.3008 15.3582 17.3745 15.4895 17.5058C15.6208 17.6371 15.6945 17.8151 15.6945 18.0008V18.7508C15.6958 19.237 15.601 19.7188 15.4156 20.1683C15.2301 20.6178 14.9576 21.0262 14.6138 21.37C14.2699 21.7139 13.8615 21.9863 13.412 22.1718C12.9625 22.3573 12.4808 22.4521 11.9945 22.4508Z" fill="currentColor"></path>
+                                                                    </g>
+                                                                </g>
+                                                                <defs>
+                                                                    <clipPath id="clip0_5790_635">
+                                                                        <rect width="24" height="24" fill="white"></rect>
+                                                                    </clipPath>
+                                                                    <clipPath id="clip1_5790_635">
+                                                                        <rect width="17.71" height="20.15" fill="white" transform="translate(3.14453 2.30078)"></rect>
+                                                                    </clipPath>
+                                                                </defs>
+                                                            </svg>
+                                                        </div>
+                                                        <div></div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="aw__n1kniwks">
+                                                <a class="aw__n1u3b0ub" href="https://chat.chotot.com/chat" rel="nofollow">
+                                                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" class="aw__ih32wb2 aw__j10ox233">
+                                                        <path fill-rule="evenodd" clip-rule="evenodd" d="M3.7499 4.34844C3.71012 4.34844 3.67197 4.36424 3.64384 4.39237C3.61571 4.4205 3.5999 4.45866 3.5999 4.49844V15.2422L6.33529 13.0318C6.44205 12.9455 6.57515 12.8984 6.7124 12.8984H15.7499C15.7897 12.8984 15.8278 12.8826 15.856 12.8545C15.8841 12.8264 15.8999 12.7882 15.8999 12.7484V4.49844C15.8999 4.45865 15.8841 4.4205 15.856 4.39237C15.8278 4.36424 15.7897 4.34844 15.7499 4.34844H3.7499ZM2.79531 3.54384C3.04848 3.29067 3.39186 3.14844 3.7499 3.14844H15.7499C16.1079 3.14844 16.4513 3.29067 16.7045 3.54384C16.9577 3.79702 17.0999 4.1404 17.0999 4.49844V12.7484C17.0999 13.1065 16.9577 13.4499 16.7045 13.703C16.4513 13.9562 16.1079 14.0984 15.7499 14.0984H6.92453L3.37701 16.9651C3.19721 17.1104 2.94992 17.1395 2.74132 17.0399C2.53271 16.9402 2.3999 16.7296 2.3999 16.4984V4.49844C2.3999 4.14039 2.54213 3.79702 2.79531 3.54384Z" fill="#222222"></path>
+                                                        <path fill-rule="evenodd" clip-rule="evenodd" d="M15.8999 8.24844C15.8999 7.91707 16.1685 7.64844 16.4999 7.64844H20.2499C20.6079 7.64844 20.9513 7.79067 21.2045 8.04384C21.4577 8.29702 21.5999 8.6404 21.5999 8.99844V20.9984C21.5999 21.2296 21.4671 21.4402 21.2585 21.5399C21.0499 21.6395 20.8026 21.6104 20.6228 21.4651L17.0753 18.5984H8.2499C7.89186 18.5984 7.54848 18.4562 7.29531 18.203C7.04213 17.9499 6.8999 17.6065 6.8999 17.2484V13.4984C6.8999 13.1671 7.16853 12.8984 7.4999 12.8984C7.83127 12.8984 8.0999 13.1671 8.0999 13.4984V17.2484C8.0999 17.2882 8.11571 17.3264 8.14384 17.3545C8.17197 17.3826 8.21012 17.3984 8.2499 17.3984H17.2874C17.4247 17.3984 17.5578 17.4455 17.6645 17.5318L20.3999 19.7422V8.99844C20.3999 8.95865 20.3841 8.9205 20.356 8.89237C20.3278 8.86424 20.2897 8.84844 20.2499 8.84844H16.4999C16.1685 8.84844 15.8999 8.57981 15.8999 8.24844Z" fill="#222222"></path>
+                                                        <path fill-rule="evenodd" clip-rule="evenodd" d="M6.7998 7.23047C6.7998 6.95433 6.99168 6.73047 7.22838 6.73047H12.3712C12.6079 6.73047 12.7998 6.95433 12.7998 7.23047C12.7998 7.50661 12.6079 7.73047 12.3712 7.73047H7.22838C6.99168 7.73047 6.7998 7.50661 6.7998 7.23047Z" fill="#222222"></path>
+                                                        <path fill-rule="evenodd" clip-rule="evenodd" d="M6.7998 10.2305C6.7998 9.95433 6.99168 9.73047 7.22838 9.73047H12.3712C12.6079 9.73047 12.7998 9.95433 12.7998 10.2305C12.7998 10.5066 12.6079 10.7305 12.3712 10.7305H7.22838C6.99168 10.7305 6.7998 10.5066 6.7998 10.2305Z" fill="#222222"></path>
+                                                    </svg>
+                                                    <div class="aw__bhbktvj"><span class="aw__bxyv27i" id="chat-unread-count" style="display: none;">0</span></div>
+                                                </a>
+                                            </div>
+                                            <div class="aw__n1kniwks">
+                                                <a href="https://id.chotot.com/login" color="#FFFFFF" rel="nofollow" class="aw__iwanj6m" style="--iwanj6m-0: #FFFFFF; --iwanj6m-7: #FFFFFF;">
+                                                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" class="aw__irp38gy aw__jyowa18">
+                                                        <path d="M6.28571 2C5.14907 2 4.05898 2.45153 3.25526 3.25526C2.45153 4.05898 2 5.14907 2 6.28571V17.7143C2 18.8509 2.45153 19.941 3.25526 20.7447C4.05898 21.5485 5.14907 22 6.28571 22H17.7143C18.8509 22 19.941 21.5485 20.7447 20.7447C21.5485 19.941 22 18.8509 22 17.7143V6.28571C22 5.14907 21.5485 4.05898 20.7447 3.25526C19.941 2.45153 18.8509 2 17.7143 2H6.28571ZM3.42857 6.28571C3.42857 5.52795 3.72959 4.80123 4.26541 4.26541C4.80123 3.72959 5.52795 3.42857 6.28571 3.42857H17.7143C18.472 3.42857 19.1988 3.72959 19.7346 4.26541C20.2704 4.80123 20.5714 5.52795 20.5714 6.28571V17.7143C20.5714 18.472 20.2704 19.1988 19.7346 19.7346C19.1988 20.2704 18.472 20.5714 17.7143 20.5714H6.28571C5.52795 20.5714 4.80123 20.2704 4.26541 19.7346C3.72959 19.1988 3.42857 18.472 3.42857 17.7143V6.28571Z" fill="currentColor"></path>
+                                                        <rect x="6" y="7" width="3" height="3" rx="1.5" fill="currentColor"></rect>
+                                                        <path d="M12 8.5C12 8.08579 12.3358 7.75 12.75 7.75H17.25C17.6642 7.75 18 8.08579 18 8.5C18 8.91421 17.6642 9.25 17.25 9.25H12.75C12.3358 9.25 12 8.91421 12 8.5Z" fill="currentColor"></path>
+                                                        <rect x="6" y="14" width="3" height="3" rx="1.5" fill="currentColor"></rect>
+                                                        <path d="M12 15.5C12 15.0858 12.3358 14.75 12.75 14.75H17.25C17.6642 14.75 18 15.0858 18 15.5C18 15.9142 17.6642 16.25 17.25 16.25H12.75C12.3358 16.25 12 15.9142 12 15.5Z" fill="currentColor"></path>
+                                                    </svg>
+                                                    <span class="aw__c1rviyfj show-desktop aw__szp9uz0" color="#8c8c8c" style="--szp9uz0-1: #ffffff; --szp9uz0-9: #8c8c8c;">Quản lý tin</span>
+                                                </a>
+                                            </div>
+                                            <div class="aw__n1kniwks">
+                                                <div class="aw__wghp0cg">
+                                                    <div class="aw__neg216p">
+                                                        <div class="aw__mpdl6d2">
+                                                            <div id="btnundefinedundefined" class="aw__i8z877t" style="--i8z877t-0: #8C8C8C; --i8z877t-6: #222222;">
+                                                                <svg width="24" height="24" viewBox="0 0 24 25" fill="none" xmlns="http://www.w3.org/2000/svg" class="aw__m17fph8v aw__i62c49q aw__j1ssv7av">
+                                                                    <path fill-rule="evenodd" clip-rule="evenodd" d="M11.9998 4.20078C7.41584 4.20078 3.6998 7.91682 3.6998 12.5008C3.6998 17.0847 7.41584 20.8008 11.9998 20.8008C16.5838 20.8008 20.2998 17.0847 20.2998 12.5008C20.2998 7.91682 16.5838 4.20078 11.9998 4.20078ZM2.2998 12.5008C2.2998 7.14362 6.64264 2.80078 11.9998 2.80078C17.357 2.80078 21.6998 7.14362 21.6998 12.5008C21.6998 17.8579 17.357 22.2008 11.9998 22.2008C6.64264 22.2008 2.2998 17.8579 2.2998 12.5008Z" fill="curentColor"></path>
+                                                                    <path fill-rule="evenodd" clip-rule="evenodd" d="M11.9998 8.70078C10.3153 8.70078 8.9498 10.0663 8.9498 11.7508C8.9498 13.4352 10.3153 14.8008 11.9998 14.8008C13.6843 14.8008 15.0498 13.4352 15.0498 11.7508C15.0498 10.0663 13.6843 8.70078 11.9998 8.70078ZM7.5498 11.7508C7.5498 9.29311 9.54214 7.30078 11.9998 7.30078C14.4575 7.30078 16.4498 9.29311 16.4498 11.7508C16.4498 14.2084 14.4575 16.2008 11.9998 16.2008C9.54214 16.2008 7.5498 14.2084 7.5498 11.7508Z" fill="curentColor"></path>
+                                                                    <path fill-rule="evenodd" clip-rule="evenodd" d="M12.0001 16.2008C10.8829 16.2008 9.78747 16.5102 8.83528 17.0946C7.88309 17.6791 7.11134 18.5158 6.60557 19.512C6.43056 19.8567 6.00923 19.9943 5.66452 19.8193C5.3198 19.6443 5.18222 19.2229 5.35723 18.8782C5.98004 17.6515 6.93038 16.6211 8.10291 15.9014C9.27544 15.1817 10.6244 14.8008 12.0001 14.8008C13.3759 14.8008 14.7249 15.1817 15.8974 15.9014C17.0699 16.6211 18.0203 17.6515 18.6431 18.8782C18.8181 19.2229 18.6805 19.6443 18.3358 19.8193C17.9911 19.9943 17.5697 19.8567 17.3947 19.512C16.889 18.5158 16.1172 17.6791 15.165 17.0946C14.2128 16.5102 13.1174 16.2008 12.0001 16.2008Z" fill="curentColor"></path>
+                                                                </svg>
+                                                                <span class="show-desktop aw__szp9uz0" color="#8C8C8C" style="--szp9uz0-1: #ffffff; --szp9uz0-9: #8C8C8C;">Tài khoản</span>
+                                                                <svg width="1rem" height="1rem" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg" class="aw__dvoj89e aw__j1ssv7av">
+                                                                    <path d="M4.67154 5.99959C4.9323 5.74067 5.35336 5.74141 5.6132 6.00125L8.19653 8.58458L10.7863 6.00048C11.0461 5.74125 11.4668 5.74148 11.7263 6.00099C11.986 6.26071 11.986 6.68179 11.7263 6.94151L8.90364 9.76414C8.51312 10.1547 7.87995 10.1547 7.48943 9.76414L4.66987 6.94459C4.40872 6.68344 4.40947 6.25981 4.67154 5.99959Z" fill="currentColor"></path>
+                                                                </svg>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <a class="aw__b1358qut primary r-normal medium w-bold i-left aw__h1gb9yk aw__j142z0xn" href="https://www.chotot.com/dang-tin-viec-lam" rel="nofollow">
+                                            <svg xmlns="http://www.w3.org/2000/svg" data-type="monochrome" viewBox="0 0 23.228 23.227" width="1em" height="1em" fill="none">
+                                                <path d="M13.288 0a.759.759 0 110 1.518H3.396a1.88 1.88 0 00-1.877 1.877v16.438a1.88 1.88 0 001.877 1.877h16.437a1.88 1.88 0 001.877-1.877V9.488a.76.76 0 011.518 0v10.344a3.399 3.399 0 01-3.395 3.395H3.396A3.4 3.4 0 010 19.832V3.395A3.4 3.4 0 013.396 0zm6.022.21c.273-.1.564-.078.835-.038.276.042.57.205.83.461l.54.54 1.117 1.117c.24.24.394.497.46.766a1.68 1.68 0 01-.4 1.545l-.058.062c-.344.352-.7.707-1.048 1.05l-.631.63-6.33 6.328-.488.493-.038.04c-.307.31-.621.628-.939.932-.153.148-.339.219-.619.236l-3.014.184h-.03a.719.719 0 01-.484-.218c-.158-.156-.249-.358-.24-.543l.135-3.097c.016-.253.095-.443.248-.598l.157-.16.003-.002.082-.081 5.416-5.415a719.16 719.16 0 011.747-1.745l1.68-1.682c.144-.146.27-.275.397-.396a1.8 1.8 0 01.672-.408zm.493 1.428l-.221.219c-.153.151-.306.305-.457.456l-.536.537-8.151 8.152-.086 1.957 1.906-.115.312-.312.226-.224.05-.049.385-.38 8.401-8.403-1.211-1.209a8.233 8.233 0 01-.172-.175l-.027-.029c-.065-.068-.13-.137-.2-.206l-.22-.219z" fill="currentColor"></path>
+                                            </svg>
+                                            ĐĂNG TUYỂN
+                                        </a>
                                     </div>
                                 </div>
-                                
-                            </div>
+                            </header>     
                         </div>
                     </div>
-
-                   
-                    @endforeach
-
-                    @endif
-
-
-                   
+                    <div class="mobile-layout" id="placeholder-app-wrapper-mobile" style="width:100%;background-color:#2561CF">
+                        <div class="ct_rm__d1dlz6zw"><img src="https://static.chotot.com/storage/APP_WRAPPER/logo/job-logo-appwrapper.png" width="115px" height="52px" alt="logo" class="ct_rm__imnlv0p"/><span height="36px" width="90%" class="ct_rm__sism4q3 ct_rm__si1y09m" style="--si1y09m-0:90%;--si1y09m-1:36px"></span></div>
+                    </div>
                 </div>
-            </div>  
-
-
-
-            <div id="11977" class="section-page " >
-                <div class="news-five-items">
-                    <div class="container">
-                        <header class="container-fluid">
-                            <h2 class="section-title" >Tin Tức</h2>
-                        </header>
-                        <div class="row">
-
-                            <?php 
-
-                                $post =  App\Models\post::take(6)->get();
-                            ?>
-
-                            @if($post->count()>0)
-
-                             @foreach($post as $posts)
-                            <div class="col-xs-12 col-sm-6 col-md-4">
-                                <div class="box bg-size-cover" style="background-image:url({{  asset('images/1653372151_data-analyst-careerbuilder.jpg') }}">
-                                    <div class="blurb">
-                                        <p><a href="{{ route('blog_detail', $posts->link??'') }}">{{ $posts->title }}</a></p>
-                                    </div>
-                                    <div class="excerpt">
-                                        <p class="title"><a href="{{ route('blog_detail', $posts->link??'') }}">{{ $posts->title }}</a></p>
-                                        <p class="note"></p>
-                                        <p class="viewmore"><a href="{{ route('blog_detail', $posts->link??'') }}">Xem chi tiết</a></p>
+                <main class="mi85h81">
+                    <main class="h1sor5lr" style="--h1sor5lr-1:;--h1sor5lr-2:;--h1sor5lr-3:;--h1sor5lr-4:">
+                        <div class="w154pun3">
+                            <div class="cfnyd4t" style="--cfnyd4t-1:#fff">
+                                <div class="b1cj3zp3">
+                                    <div class="w1bxxhj6">
+                                        <div style="overflow-x:hidden">
+                                            <div style="-webkit-flex-direction:row;flex-direction:row;-webkit-transition:all 0s ease 0s;transition:all 0s ease 0s;direction:ltr;display:flex;will-change:transform" class="react-swipeable-view-container">
+                                                <div style="width:100%;-webkit-flex-shrink:0;flex-shrink:0;overflow:auto" aria-hidden="false" data-swipeable="true"><span style="box-sizing:border-box;display:block;overflow:hidden;width:initial;height:initial;background:none;opacity:1;border:0;margin:0;padding:0;position:relative"><span style="box-sizing:border-box;display:block;width:initial;height:initial;background:none;opacity:1;border:0;margin:0;padding:0;padding-top:25%"></span><img alt="HB JOB subscription Jun 23 campaign" src="https://cdn.chotot.com/admincentre/h-zbL-gnlTG02ESMCWPpPqSd2EBpHeb4yEQGAYgkQ9A/preset:raw/plain/d058e42ba4f3545eecb81382238f82d2-2830734792045236056.jpg" decoding="async" data-nimg="responsive" class="img-item" style="position:absolute;top:0;left:0;bottom:0;right:0;box-sizing:border-box;padding:0;border:none;margin:auto;display:block;width:0;height:0;min-width:100%;max-width:100%;min-height:100%;max-height:100%;object-fit:cover"/></span></div>
+                                            </div>
+                                        </div>
+                                        <div class="pd1mtx4"><button class="active dy8q42y"></button><button class="dy8q42y"></button><button class="dy8q42y"></button><button class="dy8q42y"></button></div>
                                     </div>
                                 </div>
                             </div>
-                            @endforeach
-
-                            @endif
-
                         </div>
-                        <div class="row">
-                            <div class="col-sm-2 col-sm-offset-5 btn-viewmore">
-                                <a class="btn btn-block btn-primary" href="{{ route('list-news') }}" class="btn btn-block btn-primary weight-bold">Xem thêm</a>
+
+                        <div class="w2pqa04">
+
+                            <div class="w190laor">
+                                <h2 class="tnqy5sa">Việc làm theo ngành nghề</h2>
+                                <div class="WrapperScroll_wrapperOverflow__BptX1">
+                                    <div class="styles_oneRowContent__yddIy wflw9x5" style="--wflw9x5-0: 0;">
+                                        <a class="w1wkvqfs">
+                                            <li class="slider-item i1jeubyn" style="width: 96px;">
+                                        <a aria-label="Bán hàng" href="https://www.vieclamtot.com/viec-lam-ban-hang-sdjt2" class="apx1hlq"><div class="c14xr536"><span style="box-sizing: border-box; display: inline-block; overflow: hidden; width: initial; height: initial; background: none; opacity: 1; border: 0px; margin: 0px; padding: 0px; position: relative; max-width: 100%;"><span style="box-sizing: border-box; display: block; width: initial; height: initial; background: none; opacity: 1; border: 0px; margin: 0px; padding: 0px; max-width: 100%;"><img alt="" aria-hidden="true" src="data:image/svg+xml,%3csvg%20xmlns=%27http://www.w3.org/2000/svg%27%20version=%271.1%27%20width=%2752%27%20height=%2752%27/%3e" style="display: block; max-width: 100%; width: initial; height: initial; background: none; opacity: 1; border: 0px; margin: 0px; padding: 0px;"></span><img alt="Bán hàng" srcset="/_next/image?url=https%3A%2F%2Fcdn.chotot.com%2Fadmincentre%2FhNaOr70kP-DZsamwTk-F5xLNY55LleF4aG6W_GSRWtQ%2Fpreset%3Araw%2Fplain%2F762e39389a9ad43be12d20a3ea96d371-2787152571195383189.jpg&amp;w=256&amp;q=95 1x" src="/_next/image?url=https%3A%2F%2Fcdn.chotot.com%2Fadmincentre%2FhNaOr70kP-DZsamwTk-F5xLNY55LleF4aG6W_GSRWtQ%2Fpreset%3Araw%2Fplain%2F762e39389a9ad43be12d20a3ea96d371-2787152571195383189.jpg&amp;w=256&amp;q=95" decoding="async" data-nimg="intrinsic" style="position: absolute; inset: 0px; box-sizing: border-box; padding: 0px; border: none; margin: auto; display: block; width: 0px; height: 0px; min-width: 100%; max-width: 100%; min-height: 100%; max-height: 100%;"></span></div><div class="flex flex-col flex-auto"><span class="coblrut">Bán hàng</span></div></a></li>
+                                        <li class="slider-item i1jeubyn" style="width: 96px;">
+                                            <a aria-label="Nhân viên phục vụ" href="https://www.vieclamtot.com/viec-lam-nhan-vien-phuc-vu-sdjt27" class="apx1hlq">
+                                                <div class="c14xr536"><span style="box-sizing: border-box; display: inline-block; overflow: hidden; width: initial; height: initial; background: none; opacity: 1; border: 0px; margin: 0px; padding: 0px; position: relative; max-width: 100%;"><span style="box-sizing: border-box; display: block; width: initial; height: initial; background: none; opacity: 1; border: 0px; margin: 0px; padding: 0px; max-width: 100%;"><img alt="" aria-hidden="true" src="data:image/svg+xml,%3csvg%20xmlns=%27http://www.w3.org/2000/svg%27%20version=%271.1%27%20width=%2752%27%20height=%2752%27/%3e" style="display: block; max-width: 100%; width: initial; height: initial; background: none; opacity: 1; border: 0px; margin: 0px; padding: 0px;"></span><img alt="Nhân viên phục vụ" srcset="/_next/image?url=https%3A%2F%2Fcdn.chotot.com%2Fadmincentre%2F550r-_J6HSjS9TFF-YswV_eNURa9VqIa8NzJ7FpDeKg%2Fpreset%3Araw%2Fplain%2F7571f23bbb0290870f94a4a8207fce3f-2787152427833590447.jpg&amp;w=256&amp;q=95 1x" src="/_next/image?url=https%3A%2F%2Fcdn.chotot.com%2Fadmincentre%2F550r-_J6HSjS9TFF-YswV_eNURa9VqIa8NzJ7FpDeKg%2Fpreset%3Araw%2Fplain%2F7571f23bbb0290870f94a4a8207fce3f-2787152427833590447.jpg&amp;w=256&amp;q=95" decoding="async" data-nimg="intrinsic" style="position: absolute; inset: 0px; box-sizing: border-box; padding: 0px; border: none; margin: auto; display: block; width: 0px; height: 0px; min-width: 100%; max-width: 100%; min-height: 100%; max-height: 100%;"></span></div>
+                                                <div class="flex flex-col flex-auto"><span class="coblrut">Nhân viên phục vụ</span></div>
+                                            </a>
+                                        </li>
+                                        <li class="slider-item i1jeubyn" style="width: 96px;">
+                                            <a aria-label="Tài xế giao hàng xe máy" href="https://www.vieclamtot.com/viec-lam-giao-hang-sdjt24" class="apx1hlq">
+                                                <div class="c14xr536"><span style="box-sizing: border-box; display: inline-block; overflow: hidden; width: initial; height: initial; background: none; opacity: 1; border: 0px; margin: 0px; padding: 0px; position: relative; max-width: 100%;"><span style="box-sizing: border-box; display: block; width: initial; height: initial; background: none; opacity: 1; border: 0px; margin: 0px; padding: 0px; max-width: 100%;"><img alt="" aria-hidden="true" src="data:image/svg+xml,%3csvg%20xmlns=%27http://www.w3.org/2000/svg%27%20version=%271.1%27%20width=%2752%27%20height=%2752%27/%3e" style="display: block; max-width: 100%; width: initial; height: initial; background: none; opacity: 1; border: 0px; margin: 0px; padding: 0px;"></span><img alt="Tài xế giao hàng xe máy" srcset="/_next/image?url=https%3A%2F%2Fcdn.chotot.com%2Fadmincentre%2FRzZRx3CxIPHzccrzEJkeUzTa3BVKgVSYg7asIrHmtp0%2Fpreset%3Araw%2Fplain%2F76c9d9ea9e111090138ef6b972323dc8-2745358638816092486.jpg&amp;w=256&amp;q=95 1x" src="/_next/image?url=https%3A%2F%2Fcdn.chotot.com%2Fadmincentre%2FRzZRx3CxIPHzccrzEJkeUzTa3BVKgVSYg7asIrHmtp0%2Fpreset%3Araw%2Fplain%2F76c9d9ea9e111090138ef6b972323dc8-2745358638816092486.jpg&amp;w=256&amp;q=95" decoding="async" data-nimg="intrinsic" style="position: absolute; inset: 0px; box-sizing: border-box; padding: 0px; border: none; margin: auto; display: block; width: 0px; height: 0px; min-width: 100%; max-width: 100%; min-height: 100%; max-height: 100%;"></span></div>
+                                                <div class="flex flex-col flex-auto"><span class="coblrut">Tài xế giao hàng xe máy</span></div>
+                                            </a>
+                                        </li>
+                                        <li class="slider-item i1jeubyn" style="width: 96px;">
+                                            <a aria-label="Tạp vụ" href="https://www.vieclamtot.com/viec-lam-tap-vu-sdjt30" class="apx1hlq">
+                                                <div class="c14xr536"><span style="box-sizing: border-box; display: inline-block; overflow: hidden; width: initial; height: initial; background: none; opacity: 1; border: 0px; margin: 0px; padding: 0px; position: relative; max-width: 100%;"><span style="box-sizing: border-box; display: block; width: initial; height: initial; background: none; opacity: 1; border: 0px; margin: 0px; padding: 0px; max-width: 100%;"><img alt="" aria-hidden="true" src="data:image/svg+xml,%3csvg%20xmlns=%27http://www.w3.org/2000/svg%27%20version=%271.1%27%20width=%2752%27%20height=%2752%27/%3e" style="display: block; max-width: 100%; width: initial; height: initial; background: none; opacity: 1; border: 0px; margin: 0px; padding: 0px;"></span><img alt="Tạp vụ" srcset="/_next/image?url=https%3A%2F%2Fcdn.chotot.com%2Fadmincentre%2FFSFApA-ve7u0AnBfBlUnVK8Fv1xiOO4UlLq01Bje3Ls%2Fpreset%3Araw%2Fplain%2F95398b432e2683798eae20fb3cdec327-2809864671391774411.jpg&amp;w=256&amp;q=95 1x" src="/_next/image?url=https%3A%2F%2Fcdn.chotot.com%2Fadmincentre%2FFSFApA-ve7u0AnBfBlUnVK8Fv1xiOO4UlLq01Bje3Ls%2Fpreset%3Araw%2Fplain%2F95398b432e2683798eae20fb3cdec327-2809864671391774411.jpg&amp;w=256&amp;q=95" decoding="async" data-nimg="intrinsic" style="position: absolute; inset: 0px; box-sizing: border-box; padding: 0px; border: none; margin: auto; display: block; width: 0px; height: 0px; min-width: 100%; max-width: 100%; min-height: 100%; max-height: 100%;"></span></div>
+                                                <div class="flex flex-col flex-auto"><span class="coblrut">Tạp vụ</span></div>
+                                            </a>
+                                        </li>
+                                        <li class="slider-item i1jeubyn" style="width: 96px;">
+                                            <a aria-label="Pha chế" href="https://www.vieclamtot.com/viec-lam-nhan-vien-pha-che-sdjt36" class="apx1hlq">
+                                                <div class="c14xr536"><span style="box-sizing: border-box; display: inline-block; overflow: hidden; width: initial; height: initial; background: none; opacity: 1; border: 0px; margin: 0px; padding: 0px; position: relative; max-width: 100%;"><span style="box-sizing: border-box; display: block; width: initial; height: initial; background: none; opacity: 1; border: 0px; margin: 0px; padding: 0px; max-width: 100%;"><img alt="" aria-hidden="true" src="data:image/svg+xml,%3csvg%20xmlns=%27http://www.w3.org/2000/svg%27%20version=%271.1%27%20width=%2752%27%20height=%2752%27/%3e" style="display: block; max-width: 100%; width: initial; height: initial; background: none; opacity: 1; border: 0px; margin: 0px; padding: 0px;"></span><img alt="Pha chế" srcset="/_next/image?url=https%3A%2F%2Fcdn.chotot.com%2Fadmincentre%2FBJJVsIwPfmVJpxSp53dY66w_F7DrtLYAQidw98AVlJ4%2Fpreset%3Araw%2Fplain%2F7e49868ab9e8d8c97d1004c5cc291da7-2809865252018599952.jpg&amp;w=256&amp;q=95 1x" src="/_next/image?url=https%3A%2F%2Fcdn.chotot.com%2Fadmincentre%2FBJJVsIwPfmVJpxSp53dY66w_F7DrtLYAQidw98AVlJ4%2Fpreset%3Araw%2Fplain%2F7e49868ab9e8d8c97d1004c5cc291da7-2809865252018599952.jpg&amp;w=256&amp;q=95" decoding="async" data-nimg="intrinsic" style="position: absolute; inset: 0px; box-sizing: border-box; padding: 0px; border: none; margin: auto; display: block; width: 0px; height: 0px; min-width: 100%; max-width: 100%; min-height: 100%; max-height: 100%;"></span></div>
+                                                <div class="flex flex-col flex-auto"><span class="coblrut">Pha chế</span></div>
+                                            </a>
+                                        </li>
+                                        <li class="slider-item i1jeubyn" style="width: 96px;">
+                                            <a aria-label="Phụ bếp" href="https://www.vieclamtot.com/viec-lam-phu-bep-sdjt33" class="apx1hlq">
+                                                <div class="c14xr536"><span style="box-sizing: border-box; display: inline-block; overflow: hidden; width: initial; height: initial; background: none; opacity: 1; border: 0px; margin: 0px; padding: 0px; position: relative; max-width: 100%;"><span style="box-sizing: border-box; display: block; width: initial; height: initial; background: none; opacity: 1; border: 0px; margin: 0px; padding: 0px; max-width: 100%;"><img alt="" aria-hidden="true" src="data:image/svg+xml,%3csvg%20xmlns=%27http://www.w3.org/2000/svg%27%20version=%271.1%27%20width=%2752%27%20height=%2752%27/%3e" style="display: block; max-width: 100%; width: initial; height: initial; background: none; opacity: 1; border: 0px; margin: 0px; padding: 0px;"></span><img alt="Phụ bếp" srcset="/_next/image?url=https%3A%2F%2Fcdn.chotot.com%2Fadmincentre%2FXESTmhycA_O-JemkKht-N_Ij2T5YXEgWzu65LKq8Wjg%2Fpreset%3Araw%2Fplain%2F1177b339e4742e186ce803430356063b-2809865576440067787.jpg&amp;w=256&amp;q=95 1x" src="/_next/image?url=https%3A%2F%2Fcdn.chotot.com%2Fadmincentre%2FXESTmhycA_O-JemkKht-N_Ij2T5YXEgWzu65LKq8Wjg%2Fpreset%3Araw%2Fplain%2F1177b339e4742e186ce803430356063b-2809865576440067787.jpg&amp;w=256&amp;q=95" decoding="async" data-nimg="intrinsic" style="position: absolute; inset: 0px; box-sizing: border-box; padding: 0px; border: none; margin: auto; display: block; width: 0px; height: 0px; min-width: 100%; max-width: 100%; min-height: 100%; max-height: 100%;"></span></div>
+                                                <div class="flex flex-col flex-auto"><span class="coblrut">Phụ bếp</span></div>
+                                            </a>
+                                        </li>
+                                        <li class="slider-item i1jeubyn" style="width: 96px;">
+                                            <a aria-label="Nhân viên kinh doanh" href="https://www.vieclamtot.com/viec-lam-nhan-vien-kinh-doanh-sdjt15" class="apx1hlq">
+                                                <div class="c14xr536"><span style="box-sizing: border-box; display: inline-block; overflow: hidden; width: initial; height: initial; background: none; opacity: 1; border: 0px; margin: 0px; padding: 0px; position: relative; max-width: 100%;"><span style="box-sizing: border-box; display: block; width: initial; height: initial; background: none; opacity: 1; border: 0px; margin: 0px; padding: 0px; max-width: 100%;"><img alt="" aria-hidden="true" src="data:image/svg+xml,%3csvg%20xmlns=%27http://www.w3.org/2000/svg%27%20version=%271.1%27%20width=%2752%27%20height=%2752%27/%3e" style="display: block; max-width: 100%; width: initial; height: initial; background: none; opacity: 1; border: 0px; margin: 0px; padding: 0px;"></span><img alt="Nhân viên kinh doanh" srcset="/_next/image?url=https%3A%2F%2Fcdn.chotot.com%2Fadmincentre%2FYXn-_z7XhrB9XWo46qaCtB_5ZYoSMvMBdQa0K51AzU4%2Fpreset%3Araw%2Fplain%2F8b444641af7d8b936ef826af6a316ecf-2787153279100879535.jpg&amp;w=256&amp;q=95 1x" src="/_next/image?url=https%3A%2F%2Fcdn.chotot.com%2Fadmincentre%2FYXn-_z7XhrB9XWo46qaCtB_5ZYoSMvMBdQa0K51AzU4%2Fpreset%3Araw%2Fplain%2F8b444641af7d8b936ef826af6a316ecf-2787153279100879535.jpg&amp;w=256&amp;q=95" decoding="async" data-nimg="intrinsic" style="position: absolute; inset: 0px; box-sizing: border-box; padding: 0px; border: none; margin: auto; display: block; width: 0px; height: 0px; min-width: 100%; max-width: 100%; min-height: 100%; max-height: 100%;"></span></div>
+                                                <div class="flex flex-col flex-auto"><span class="coblrut">Nhân viên kinh doanh</span></div>
+                                            </a>
+                                        </li>
+                                        <li class="slider-item i1jeubyn" style="width: 96px;">
+                                            <a aria-label="Công nhân" href="https://www.vieclamtot.com/viec-lam-cong-nhan-nha-may-sdjt17" class="apx1hlq">
+                                                <div class="c14xr536"><span style="box-sizing: border-box; display: inline-block; overflow: hidden; width: initial; height: initial; background: none; opacity: 1; border: 0px; margin: 0px; padding: 0px; position: relative; max-width: 100%;"><span style="box-sizing: border-box; display: block; width: initial; height: initial; background: none; opacity: 1; border: 0px; margin: 0px; padding: 0px; max-width: 100%;"><img alt="" aria-hidden="true" src="data:image/svg+xml,%3csvg%20xmlns=%27http://www.w3.org/2000/svg%27%20version=%271.1%27%20width=%2752%27%20height=%2752%27/%3e" style="display: block; max-width: 100%; width: initial; height: initial; background: none; opacity: 1; border: 0px; margin: 0px; padding: 0px;"></span><img alt="Công nhân" srcset="/_next/image?url=https%3A%2F%2Fcdn.chotot.com%2Fadmincentre%2F8PFneEINgDoPCGt_Wo1zfGNxjE7teaAVgwcdNJYDGSQ%2Fpreset%3Araw%2Fplain%2F45fff453437f38469dcf4c944a76bbdf-2787152001905558191.jpg&amp;w=256&amp;q=95 1x" src="/_next/image?url=https%3A%2F%2Fcdn.chotot.com%2Fadmincentre%2F8PFneEINgDoPCGt_Wo1zfGNxjE7teaAVgwcdNJYDGSQ%2Fpreset%3Araw%2Fplain%2F45fff453437f38469dcf4c944a76bbdf-2787152001905558191.jpg&amp;w=256&amp;q=95" decoding="async" data-nimg="intrinsic" style="position: absolute; inset: 0px; box-sizing: border-box; padding: 0px; border: none; margin: auto; display: block; width: 0px; height: 0px; min-width: 100%; max-width: 100%; min-height: 100%; max-height: 100%;"></span></div>
+                                                <div class="flex flex-col flex-auto"><span class="coblrut">Công nhân</span></div>
+                                            </a>
+                                        </li>
+                                        <li class="slider-item i1jeubyn" style="width: 96px;">
+                                            <a aria-label="Nhân viên kho vận" href="https://www.vieclamtot.com/viec-lam-nhan-vien-kho-sdjt29" class="apx1hlq">
+                                                <div class="c14xr536"><span style="box-sizing: border-box; display: inline-block; overflow: hidden; width: initial; height: initial; background: none; opacity: 1; border: 0px; margin: 0px; padding: 0px; position: relative; max-width: 100%;"><span style="box-sizing: border-box; display: block; width: initial; height: initial; background: none; opacity: 1; border: 0px; margin: 0px; padding: 0px; max-width: 100%;"><img alt="" aria-hidden="true" src="data:image/svg+xml,%3csvg%20xmlns=%27http://www.w3.org/2000/svg%27%20version=%271.1%27%20width=%2752%27%20height=%2752%27/%3e" style="display: block; max-width: 100%; width: initial; height: initial; background: none; opacity: 1; border: 0px; margin: 0px; padding: 0px;"></span><img alt="Nhân viên kho vận" srcset="/_next/image?url=https%3A%2F%2Fcdn.chotot.com%2Fadmincentre%2FAbmRzHUVDXi8gi3ygH4BdhPwmnS5NvxYm_1dpZHzanI%2Fpreset%3Araw%2Fplain%2F395a4a72e39dbdbbbc08014f25452de2-2787157857927888857.jpg&amp;w=256&amp;q=95 1x" src="/_next/image?url=https%3A%2F%2Fcdn.chotot.com%2Fadmincentre%2FAbmRzHUVDXi8gi3ygH4BdhPwmnS5NvxYm_1dpZHzanI%2Fpreset%3Araw%2Fplain%2F395a4a72e39dbdbbbc08014f25452de2-2787157857927888857.jpg&amp;w=256&amp;q=95" decoding="async" data-nimg="intrinsic" style="position: absolute; inset: 0px; box-sizing: border-box; padding: 0px; border: none; margin: auto; display: block; width: 0px; height: 0px; min-width: 100%; max-width: 100%; min-height: 100%; max-height: 100%;"></span></div>
+                                                <div class="flex flex-col flex-auto"><span class="coblrut">Nhân viên kho vận</span></div>
+                                            </a>
+                                        </li>
+                                        <li class="slider-item i1jeubyn" style="width: 96px;">
+                                            <a aria-label="Bảo vệ" href="https://www.vieclamtot.com/viec-lam-bao-ve-sdjt7" class="apx1hlq">
+                                                <div class="c14xr536">
+                                                    <span style="box-sizing: border-box; display: inline-block; overflow: hidden; width: initial; height: initial; background: none; opacity: 1; border: 0px; margin: 0px; padding: 0px; position: relative; max-width: 100%;">
+                                                        <span style="box-sizing: border-box; display: block; width: initial; height: initial; background: none; opacity: 1; border: 0px; margin: 0px; padding: 0px; max-width: 100%;"><img alt="" aria-hidden="true" src="data:image/svg+xml,%3csvg%20xmlns=%27http://www.w3.org/2000/svg%27%20version=%271.1%27%20width=%2752%27%20height=%2752%27/%3e" style="display: block; max-width: 100%; width: initial; height: initial; background: none; opacity: 1; border: 0px; margin: 0px; padding: 0px;"></span><img alt="Bảo vệ" src="/_next/image?url=https%3A%2F%2Fcdn.chotot.com%2Fadmincentre%2FC_A7x90o-__I77POBAY60jgXADBkoX-zlulSoWfJHLM%2Fpreset%3Araw%2Fplain%2F045324ad0e8dc5b2a0d72ac04d2d1dbf-2787152475844481790.jpg&amp;w=256&amp;q=95" decoding="async" data-nimg="intrinsic" srcset="/_next/image?url=https%3A%2F%2Fcdn.chotot.com%2Fadmincentre%2FC_A7x90o-__I77POBAY60jgXADBkoX-zlulSoWfJHLM%2Fpreset%3Araw%2Fplain%2F045324ad0e8dc5b2a0d72ac04d2d1dbf-2787152475844481790.jpg&amp;w=256&amp;q=95 1x" style="position: absolute; inset: 0px; box-sizing: border-box; padding: 0px; border: none; margin: auto; display: block; width: 0px; height: 0px; min-width: 100%; max-width: 100%; min-height: 100%; max-height: 100%;">
+                                                        <noscript></noscript>
+                                                    </span>
+                                                </div>
+                                                <div class="flex flex-col flex-auto"><span class="coblrut">Bảo vệ</span></div>
+                                            </a>
+                                        </li>
+                                        </a>
+                                    </div>
+                                    <i class="i-prev WrapperScroll_iconPrev__8Mj8Y false" tabindex="0" role="button" aria-label="Prev"></i><i class="i-next WrapperScroll_iconNext__dU_oO false" tabindex="0" role="button" aria-label="Next"></i>
+                                </div>
+                                <div class="w1sgdazv">
+                                    <button type="button">
+                                        Xem tất cả 33 ngành nghề
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="11" height="18" viewBox="0 0 11 18">
+                                            <g fill="none" fill-rule="evenodd">
+                                                <path stroke="#38699F" stroke-linecap="round" stroke-width="1.5" d="M1.125 3L6.75 8 1.125 13" transform="translate(1 1)"></path>
+                                                <path stroke="#FFF" stroke-width=".1" d="M0 0H9V16H0z" opacity=".01" transform="translate(1 1)"></path>
+                                            </g>
+                                        </svg>
+                                    </button>
+                                </div>
                             </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
 
-              
-            <div id="media_section" class="section-page ImageService-pre"></div>
-            <script type="text/javascript">
-                // $(function(){
-                //     loadMediaSection('media_section', 'index', 'index');
-                // });
-            </script>
-        </div>
-        <div class="section-page social-pre bg-odd">
-            <header class="container-fluid">
-                <h2 class="section-title">Kết nối với vieclamngon</h2>
-            </header>
-        </div>
 
-        <footer>
-            <div class="container">
-                <section class="top-footer cb-section cb-section-border-bottom">
-                    <div class="">
-                        <div class="col-lg-12 logo"><img class="lazy-bg" data-src="{{ asset('images/template/logo/logo.png') }}" src="{{ asset('images/template/logo/logo.png') }}" alt="Tuyển dụng &amp; Tìm kiếm việc làm nhanh"></div>
-                        <div class="col-lg-3 col-sm-6">
-                            <div class="footer-links">
-                                <h3>Dành Cho Ứng Viên</h3>
-                                <ul>
-                                    <li><a href="javascript:void(0)" title="Việc làm mới nhất">Việc làm mới nhất</a></li>
-                                    <li><a href="javascript:void(0)" title="CV Hay">CV Hay</a></li>
-                                    <li><a href="javascript:void(0)" title="VietnamSalary">VietnamSalary</a></li>
-             
-                                    <li><a href="javascript:void(0)" title="Cẩm Nang">Cẩm Nang</a></li>
-                                    <li><a href="javascript:void(0)" title="IT Blogs">IT Blogs</a></li>
-                                    <li><a href="javascript:void(0)" title="Ứng Dụng Di Động">Ứng Dụng Di Động</a></li>
-                                    <li><a href="javascript:void(0)" title="Sơ Đồ Trang Web">Sơ Đồ Trang Web</a></li>
-                                </ul>
+                            <div class="w14dpw3e">
+                                <div class="c10riy5t">
+                                    <div class="a6b9i9n">
+                                        <span style="box-sizing:border-box;display:block;overflow:hidden;width:initial;height:initial;background:none;opacity:1;border:0;margin:0;padding:0;position:absolute;top:0;left:0;bottom:0;right:0">
+                                            <img alt="recruitment_hub_entrypoint" src="https://static.chotot.com/storage/ATS_STATIC_CDN/recruitment_hub_entrypoint_icon.svg" decoding="async" data-nimg="fill" style="position:absolute;top:0;left:0;bottom:0;right:0;box-sizing:border-box;padding:0;border:none;margin:auto;display:block;width:0;height:0;min-width:100%;max-width:100%;min-height:100%;max-height:100%;object-fit:cover"/>
+                                            <noscript><img alt="recruitment_hub_entrypoint" sizes="100vw" srcSet="https://static.chotot.com/storage/ATS_STATIC_CDN/recruitment_hub_entrypoint_icon.svg 640w, https://static.chotot.com/storage/ATS_STATIC_CDN/recruitment_hub_entrypoint_icon.svg 750w, https://static.chotot.com/storage/ATS_STATIC_CDN/recruitment_hub_entrypoint_icon.svg 828w, https://static.chotot.com/storage/ATS_STATIC_CDN/recruitment_hub_entrypoint_icon.svg 1080w, https://static.chotot.com/storage/ATS_STATIC_CDN/recruitment_hub_entrypoint_icon.svg 1200w, https://static.chotot.com/storage/ATS_STATIC_CDN/recruitment_hub_entrypoint_icon.svg 1920w, https://static.chotot.com/storage/ATS_STATIC_CDN/recruitment_hub_entrypoint_icon.svg 2048w, https://static.chotot.com/storage/ATS_STATIC_CDN/recruitment_hub_entrypoint_icon.svg 3840w" src="https://static.chotot.com/storage/ATS_STATIC_CDN/recruitment_hub_entrypoint_icon.svg" decoding="async" data-nimg="fill" style="position:absolute;top:0;left:0;bottom:0;right:0;box-sizing:border-box;padding:0;border:none;margin:auto;display:block;width:0;height:0;min-width:100%;max-width:100%;min-height:100%;max-height:100%;object-fit:cover" loading="lazy"/></noscript>
+                                        </span>
+                                    </div>
+                                    <div class="c1x6su60">
+                                        <div class="tv11zoy">
+                                            <h5 class="tv4v44m">
+                                                <span>Dành cho nhà tuyển dụng</span> 
+                                                <svg xmlns="http://www.w3.org/2000/svg" width="11" height="18" viewBox="0 0 11 18">
+                                                    <g fill="none" fill-rule="evenodd">
+                                                        <path stroke="#222222" stroke-linecap="round" stroke-width="1.5" d="M1.125 3L6.75 8 1.125 13" transform="translate(1 1)"></path>
+                                                        <path stroke="#FFF" stroke-width=".1" d="M0 0H9V16H0z" opacity=".01" transform="translate(1 1)"></path>
+                                                    </g>
+                                                </svg>
+                                            </h5>
+                                            <p class="dp6ub9d">Trải nghiệm các công cụ đắc lực: Ưu đãi NTD, Quản lý ứng viên, Tìm ứng viên mới, Gói Tuyển Dụng,...</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <a href="https://www.vieclamtot.com/nha-tuyen-dung/uu-dai-nha-tuyen-dung-moi
+                                    " rel="dofollow" class="p1kl3zxi">
+                                    <div style="color:#222222" class="p1tw6yxk">
+                                        <div class="p15o5cty">📣 Gói Tuyển Dụng <strong>giảm đến 50%</strong> dành cho người mới</div>
+                                        <span class="p2t6y5s">
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="11" height="18" viewBox="0 0 11 18">
+                                                <g fill="none" fill-rule="evenodd">
+                                                    <path stroke="#222222" stroke-linecap="round" stroke-width="1.5" d="M1.125 3L6.75 8 1.125 13" transform="translate(1 1)"></path>
+                                                    <path stroke="#FFF" stroke-width=".1" d="M0 0H9V16H0z" opacity=".01" transform="translate(1 1)"></path>
+                                                </g>
+                                            </svg>
+                                        </span>
+                                    </div>
+                                </a>
+
+                                <div class="wiwbxky">
+                                    <div class="WrapperScroll_wrapperOverflow__BptX1 WrapperScroll_wrapperOverflowNoPadding__bO1t_">
+                                        <div class="styles_oneRowContent__24W6r wflw9x5" style="--wflw9x5-0: 0;">
+                                            <div class="row-cat">
+                                                <li class="slider-item ibmz4fe" style="--ibmz4fe-0: #F2F6FC; --ibmz4fe-1: right; width: 234px;">
+                                                    <a aria-label="👩🏻‍💼 Quản lý ứng viên" href="https://www.vieclamtot.com/nha-tuyen-dung/quan-ly-ung-vien?_ga=2.225852381.619846207.1692580706-953912583.1692580706" class="am3px05">
+                                                        <div color="#222222" class="cmomclx" style="--cmomclx-0: #222222; --cmomclx-1: 400;">👩🏻‍💼 Quản lý ứng viên</div>
+                                                        <div color="#306BD9" class="c1kk05bw" style="--c1kk05bw-0: #306BD9;">🔒 Kích hoạt ngay</div>
+                                                    </a>
+                                                </li>
+                                                <li class="slider-item ibmz4fe" style="--ibmz4fe-0: #FFF4E0; --ibmz4fe-1: right; width: 234px;">
+                                                    <a aria-label="🔍 Tìm ứng viên mới" href="https://www.vieclamtot.com/nha-tuyen-dung/tim-ung-vien" class="am3px05">
+                                                        <div color="#222222" class="cmomclx" style="--cmomclx-0: #222222; --cmomclx-1: 400;">🔍 Tìm ứng viên mới</div>
+                                                        <div color="#FF8800" class="c1kk05bw" style="--c1kk05bw-0: #FF8800;">0 ứng viên</div>
+                                                    </a>
+                                                </li>
+                                                <li class="slider-item ibmz4fe" style="--ibmz4fe-0: url(https://static.chotot.com/storage/JOB_STATIC_CDN/shortcut_partner_background.svg); --ibmz4fe-1: right; width: 234px;">
+                                                    <a aria-label="Trở thành Đối Tác" href="https://www.vieclamtot.com/kinh-nghiem/uu-dai-cho-doi-tac-tuyen-dung.html" class="am3px05">
+                                                        <div color="#FFFFFF" class="cmomclx" style="--cmomclx-0: #FFFFFF; --cmomclx-1: 400;">Trở thành Đối Tác</div>
+                                                        <div color="#FFFFFF" class="c1kk05bw" style="--c1kk05bw-0: #FFFFFF;">Xem ngay</div>
+                                                    </a>
+                                                </li>
+                                                <li class="slider-item ibmz4fe" style="--ibmz4fe-0: url(https://static.chotot.com/storage/JOB_STATIC_CDN/pro_subscription.svg); --ibmz4fe-1: right; width: 234px;">
+                                                    <a aria-label="Gói tuyển dụng" href="https://www.chotot.com/goi-pro/viec-lam" rel="nofollow" class="am3px05">
+                                                        <div color="#FFFFFF" class="cmomclx" style="--cmomclx-0: #FFFFFF; --cmomclx-1: 700;">Gói tuyển dụng</div>
+                                                        <div color="#FFFFFF" class="c1kk05bw" style="--c1kk05bw-0: #FFFFFF;">Khám phá ngay</div>
+                                                    </a>
+                                                </li>
+                                            </div>
+                                        </div>
+                                        <i class="i-prev WrapperScroll_iconPrev__8Mj8Y false" tabindex="0" role="button" aria-label="Prev"></i><i class="i-next WrapperScroll_iconNext__dU_oO false" tabindex="0" role="button" aria-label="Next"></i>
+                                    </div>
+                                </div>
                             </div>
-                        </div>
-                        <div class="col-lg-3 col-sm-6">
-                            <div class="footer-links">
-                                <h3>Nhà Tuyển Dụng</h3>
-                                <ul>
-                                    <li><a href="javascript:void(0)" title="Đăng Tuyển Dụng">Đăng Tuyển Dụng</a></li>
-                                    <li><a href="javascript:void(0)" title="Tìm Hồ Sơ">Tìm Hồ Sơ</a></li>
-                                    <li><a href="javascript:void(0)">Giải Pháp Talent Solution</a></li>
-                                    <li><a href="javascript:void(0)" title="Sản Phẩm Dịch Vụ">Sản Phẩm Dịch Vụ</a></li>
-                                </ul>
-                            </div>
-                        </div>
-                        <div class="col-lg-3 col-sm-6">
-                            <div class="footer-links">
-                                <h3>Trung tâm trợ giúp</h3>
-                                <ul>
-                                  
-                                    <li><a href="javascript:void(0)" title="Chính Sách BV Thông Tin">Chính Sách BV Thông Tin</a></li>
-                                    <li><a href="javascript:void(0)" title="Chính sách GDPR">Chính sách GDPR</a></li>
-                                    <li><a href="javascript:void(0)" title="Quy chế sàn giao dịch">Quy chế sàn giao dịch</a></li>
-                                    <li><a href="javascript:void(0)" title="Thỏa thuận sử dụng">Thỏa thuận sử dụng</a></li>
-                                    <li><a href="javascript:void(0)" title="Quy định bảo mật">Quy định bảo mật</a></li>
-                                    <li><a href="javascript:void(0)" title="QT Giải Quyết Tranh Chấp">QT Giải Quyết Tranh Chấp</a></li>
-                                    <li><a href="javascript:void(0)" title="Trợ giúp">Trợ giúp</a></li>
-                                </ul>
-                            </div>
-                        </div>
-                        <div class="col-lg-3 col-sm-6">
-                            <div class="footer-links">
-                                <h3>Website Đối Tác</h3>
-                                <ul>
-                                    <li><a href="javascript:void(0)">Vieclam.Tuoitre.vn</a></li>
-                                    <li><a href="javascript:void(0)">Vieclam.Vietnamnet.vn</a></li>
-                                    <li><a href="javascript:void(0)">Vieclam.Thanhnien.vn</a></li>
-                                    <li><a href="javascript:void(0)">VieclamIT.vn</a></li>
-                                    <li><a href="javascript:void(0)">Liên Hệ</a></li>
-                                </ul>
-                            </div>
-                        </div>
-                        
-                    </div>
-                </section>
-               
-            </div>
-        </footer>
 
 
-        <div id="back-top" class="" style="display: none;"><a class="bgcolor_theme" id="topToPage" href="javascript:void(0);">_Top_</a></div>
-        <div style="display: none">
-            <div id="NoticePost" class="msgbox">
-                <div class="msg_content">
-                    <div class="i_alert"></div>
-                    <h2 id="notice_title"></h2>
-                    <div id="notice_desc"></div>
-                    <div class="clear cp">
-                        <input id="notice_ok" type="button" value="_Ok_" class="fl_left ui_btnCb" onClick="$.fancybox.close();">&nbsp;
-                        <input id="notice_cancel" type="button" value="Bỏ qua" class="ui_btnCb" onClick="$.fancybox.close();"> 
-                    </div>
-                </div>
-            </div>
-        </div>
-        <div style="display: none;">
-            <div id="Join_Success" class="wrapDialog msgbox">
-                <div class="container">
-                    <h2>Cảm ơn bạn   gia nhập mạng lưới nhân tài của chúng tôi,</h2>
-                    <p>Bằng cách tham gia mạng lưới nhân tài của chúng tôi, bạn chưa thực sự ứng tuyển vào các vị trí tuyển dụng.</p>
-                    <p>Hãy ứng tuyển ngay để trở thành ứng viên sáng giá cho <a href="viec-lam/tat-ca-viec-lam/vi"><span style="color:#26a2d6">vị trí tuyển dụng</span></a> của chúng tôi hoặc tiếp tục <a href="vi/resume"><span style="color:#26a2d6">cập nhật hồ sơ.</span></a></p>
-                </div>
-            </div>
-        </div>
+                            <div class="tworow_catMatchingBox__ASXPu w16rgpvr">
+                                <h2 class="tqc9i0c">
+                                    🔥 Việc làm tuyển gấp
+                                    <span>
+                                        <div class="h1jlx0nq"></div>
+                                    </span>
+                                </h2>
 
 
-        <script type="text/javascript">
-            
-            $('.click-drop').click(function () {
-
-                if($('.dropdown-menu').is(":visible")){
-
-                    $('.dropdown-menu').hide();
-                }
-                else{
-                    $('.dropdown-menu').show();
-                }   
-                
-            })
-        </script>
 
 
-        <script>
-      
+                                <div class="WrapperScroll_wrapperOverflow__BptX1">
+                                    <div class="tworow_catMatchingScroll__Ysir1 tworow_catMatchingScrollTwo__BiCfs wflw9x5" style="--wflw9x5-0: 0;">
+                                        <?php 
 
-            async function getImageBlobFromUrl(url) {
-              const fetchedImageData = await fetch(url)
-              const blob = await fetchedImageData.blob()
-              return blob
-            }
+                                            $outstanding_work= DB::table('job')->join('employ_info', 'job.employer_id', '=', 'employ_info.employ_id')->select('job.title', 'job.id', 'employ_info.name', 'employ_info.logo', 'employ_info.links', 'job.link', 'job.salary', 'job.address_job')->where('job.active', 1)->get();
 
-           
-        </script>
-
-
-        <script type="text/javascript">
-            $(document).ready(function(){
-                var popup_success = ''; 
-                if(popup_success == 1){
-                    ga('send', 'event', 'jobseekers', 'register', 'join success', 1);
-                    $.fancybox({
-                        'href' : '#Join_Success',
-                        'type' : 'inline',
-                        'padding':0,
-                        onComplete:(function(){
-                            $("#fancybox-wrap").css({'width':($("#fancybox-content").width()+40)+"px", 'padding':0});
-                        })
-                    });     
-                }
-            });
-        </script>
-        <script type="text/javascript">
-
-            
-
-            if (typeof checkMobile!='undefined'){
-                if (checkMobile()){
-                    
                                             
-                }
-            }
-            var arrCates = new Array();
-            arrCates[31] = 'Bán hàng / Kinh doanh';arrCates[30] = 'Bán lẻ / Bán sỉ';arrCates[28] = 'Bất động sản';arrCates[74] = 'Bộ phận pháp lý';arrCates[63] = 'CNTT - Phần cứng / Mạng';arrCates[1] = 'CNTT - Phần mềm';arrCates[81] = 'Chưa có kinh nghiệm';arrCates[14] = 'Cơ khí / Ô tô / Tự động hóa';arrCates[3] = 'Hành chính / Thư ký';arrCates[2] = 'Kế toán / Kiểm toán';arrCates[6] = 'Kiến trúc';arrCates[44] = 'Lao động phổ thông';arrCates[24] = 'Luật / Pháp lý';arrCates[45] = 'Mới tốt nghiệp / Thực tập';arrCates[11] = 'Mỹ thuật / Nghệ thuật / Thiết kế';arrCates[22] = 'Nhân sự';arrCates[47] = 'Nội ngoại thất';arrCates[42] = 'Quản lý chất lượng (QA/QC)';arrCates[17] = 'Quản lý điều hành';arrCates[67] = 'Quảng cáo / Đối ngoại / Truyền Thông';arrCates[25] = 'Sản xuất / Vận hành sản xuất';arrCates[59] = 'Tài chính / Đầu tư';arrCates[36] = 'Thống kê';arrCates[43] = 'Thu mua / Vật tư';arrCates[4] = 'Tiếp thị';arrCates[68] = 'Tổ chức sự kiện';arrCates[9] = 'Tư vấn';arrCates[33] = 'Vận chuyển / Giao nhận / Kho vận';arrCates[8] = 'Xây dựng';arrCates[18] = 'Xuất nhập khẩu';
-            var arrLocs = new Array();
-            arrLocs[8] = 'Hồ Chí Minh';arrLocs[4] = 'Hà Nội';arrLocs[76] = 'An Giang';arrLocs[64] = 'Bà Rịa và Vũng Tàu';arrLocs[240] = 'Bắc Giang';arrLocs[281] = 'Bắc Kạn';arrLocs[781] = 'Bạc Liêu';arrLocs[241] = 'Bắc Ninh';arrLocs[75] = 'Bến Tre';arrLocs[56] = 'Bình Định';arrLocs[650] = 'Bình Dương';arrLocs[651] = 'Bình Phước';arrLocs[62] = 'Bình Thuận';arrLocs[78] = 'Cà Mau';arrLocs[71] = 'Cần Thơ';arrLocs[26] = 'Cao Bằng';arrLocs[511] = 'Đà Nẵng';arrLocs[50] = 'Đắk Lắk';arrLocs[1042] = 'Đắk Nông';arrLocs[900] = 'Điện Biên';arrLocs[61] = 'Đồng Nai';arrLocs[67] = 'Đồng Tháp';arrLocs[59] = 'Gia Lai';arrLocs[19] = 'Hà Giang';arrLocs[351] = 'Hà Nam';arrLocs[39] = 'Hà Tĩnh';arrLocs[320] = 'Hải Dương';arrLocs[31] = 'Hải Phòng';arrLocs[780] = 'Hậu Giang';arrLocs[18] = 'Hòa Bình';arrLocs[321] = 'Hưng Yên';arrLocs[58] = 'Khánh Hòa';arrLocs[77] = 'Kiên Giang';arrLocs[60] = 'Kon Tum';arrLocs[23] = 'Lai Châu';arrLocs[63] = 'Lâm Đồng';arrLocs[25] = 'Lạng Sơn';arrLocs[20] = 'Lào Cai';arrLocs[72] = 'Long An';arrLocs[350] = 'Nam Định';arrLocs[38] = 'Nghệ An';arrLocs[30] = 'Ninh Bình';arrLocs[68] = 'Ninh Thuận';arrLocs[210] = 'Phú Thọ';arrLocs[57] = 'Phú Yên';arrLocs[52] = 'Quảng Bình';arrLocs[510] = 'Quảng Nam';arrLocs[55] = 'Quảng Ngãi';arrLocs[33] = 'Quảng Ninh';arrLocs[53] = 'Quảng Trị';arrLocs[79] = 'Sóc Trăng';arrLocs[22] = 'Sơn La';arrLocs[66] = 'Tây Ninh';arrLocs[36] = 'Thái Bình';arrLocs[280] = 'Thái Nguyên';arrLocs[37] = 'Thanh Hóa';arrLocs[54] = 'Thừa Thiên Huế';arrLocs[73] = 'Tiền Giang';arrLocs[1065] = 'Toàn quốc';arrLocs[74] = 'Trà Vinh';arrLocs[27] = 'Tuyên Quang';arrLocs[70] = 'Vĩnh Long';arrLocs[211] = 'Vĩnh Phúc';arrLocs[29] = 'Yên Bái';
-            function validateSearch(form){
-                if($('input[name="q"]').val()=='Tìm việc'){
-                    $('input[name="q"]').val('');
-                }   
-                var keyword = createKeyword($('input[name="q"]').val()),
-                    category = parseInt($('select[name="cat"]').val()),
-                    location = parseInt($('select[name="loc"]').val()),
-                    
-                    prep = new Array('en', 'vi');
-                    prep['en'] = new Array('category', 'at');
-                    prep['vi'] = new Array('nganh', 'tai');
-                    if(LANGUAGE != 'vi' && LANGUAGE != 'en') prep[LANGUAGE] = prep['en'];
-                
-                if(!keyword && !category && !location){
-                    searchLink = 'tim-viec-lam/tat-ca-viec-lam/vi';
-                }
-                else{
-                    searchLink = 'tim-viec-lam';  
-                    if(keyword != ''){
-                        searchLink += '/'+ keyword;
-                    }
-                    if(keyword && category){
-                        searchLink += '/'+prep[LANGUAGE][0]+'-'+ createKeyword(stripVietnamese(arrCates[category])) + '.' + category;   
-                    }
-                    else if(category){
-                        searchLink += '/'+ createKeyword(stripVietnamese(arrCates[category])) + '.' + category; 
-                    }
-                    if(location){
-                        searchLink += '/'+prep[LANGUAGE][1]+'-'+ createKeyword(stripVietnamese(arrLocs[location])) + '.' + location;
-                    }
-                    searchLink += '/'+ LANGUAGE;
-                }
-                window.location=searchLink;
-                return false;
-            }
-            function checkIos(){
-                    return /webOS|iPhone|iPad|iPod/i.test(navigator.userAgent)
-            }
-            function windowsPhone(){
-                    return /windows phone/i.test(navigator.userAgent)
-            }
+                                        ?>
+                                        @if($outstanding_work->count()>0)
+
+                                        @foreach($outstanding_work as $value)
 
 
-            $('.drop1').hide();
-            
-            $(".navbar-right").mouseenter(function() {
-                $('.drop1').show();
-            }).mouseleave(function() {
-               $('.drop1').hide();
-            });
-   
+                                        <div class="AdItem_item___Rdm7 tworow_catMatchingScrollItem__JrTcP AdItem_itemEntitlement__OLyni i1jdhhry">
+                                            <div class="AdItem_wrapperLink__w2rsn">
+                                                <a class="AdItem_wrapperLinkHref__U9mX_" href="{{ route('job_details', [$value->link, $value->id]) }}">
+                                                    <div class="styles_adTitle__US_h0">
+                                                        <div class="commonStyle_adTitleGrid__e3PyM styles_title__XeY4x">{{ $value->title }}</div>
+                                                    </div>
+                                                    <div class="AdItem_wrapperLinkFooter__v9V5D">
+                                                        <div class="AdThumbnail_thumbnailWrapper__IrMJY">
+                                                            <div class="AdThumbnail_thumbnailImg__wHm_a  ">
+                                                                <span style="box-sizing: border-box; display: block; overflow: hidden; width: initial; height: initial; background: none; opacity: 1; border: 0px; margin: 0px; padding: 0px; position: absolute; inset: 0px;"><img alt="{{  $value->title }}" src="/_next/image?url=https%3A%2F%2Fstatic.chotot.com%2Fstorage%2Fchotot-icons%2Fpng%2Fjobtype_v2%2F15.png&amp;w=3840&amp;q=75" decoding="async" data-nimg="fill" sizes="100vw" srcset="/_next/image?url=https%3A%2F%2Fstatic.chotot.com%2Fstorage%2Fchotot-icons%2Fpng%2Fjobtype_v2%2F15.png&amp;w=640&amp;q=75 640w, /_next/image?url=https%3A%2F%2Fstatic.chotot.com%2Fstorage%2Fchotot-icons%2Fpng%2Fjobtype_v2%2F15.png&amp;w=750&amp;q=75 750w, /_next/image?url=https%3A%2F%2Fstatic.chotot.com%2Fstorage%2Fchotot-icons%2Fpng%2Fjobtype_v2%2F15.png&amp;w=828&amp;q=75 828w, /_next/image?url=https%3A%2F%2Fstatic.chotot.com%2Fstorage%2Fchotot-icons%2Fpng%2Fjobtype_v2%2F15.png&amp;w=1080&amp;q=75 1080w, /_next/image?url=https%3A%2F%2Fstatic.chotot.com%2Fstorage%2Fchotot-icons%2Fpng%2Fjobtype_v2%2F15.png&amp;w=1200&amp;q=75 1200w, /_next/image?url=https%3A%2F%2Fstatic.chotot.com%2Fstorage%2Fchotot-icons%2Fpng%2Fjobtype_v2%2F15.png&amp;w=1920&amp;q=75 1920w, /_next/image?url=https%3A%2F%2Fstatic.chotot.com%2Fstorage%2Fchotot-icons%2Fpng%2Fjobtype_v2%2F15.png&amp;w=2048&amp;q=75 2048w, /_next/image?url=https%3A%2F%2Fstatic.chotot.com%2Fstorage%2Fchotot-icons%2Fpng%2Fjobtype_v2%2F15.png&amp;w=3840&amp;q=75 3840w" style="position: absolute; inset: 0px; box-sizing: border-box; padding: 0px; border: none; margin: auto; display: block; width: 0px; height: 0px; min-width: 100%; max-width: 100%; min-height: 100%; max-height: 100%; object-fit: cover;"></span>
+                                                                <div class="l195y29z"></div>
+                                                            </div>
+                                                        </div>
+                                                        <div class="w1jbmbeu">
+                                                            <div class="AdBody_caption__iFaw_">
+                                                                <div><span class="AdBody_price__tUISH">{!! @$value->salary  !!}</span></div>
+                                                            </div>
+                                                            <div class="AdBody_footer__plkQC">
+                                                                <span class="AdBody_adItemPostedTime__rX677 AdBody_location__44t75 AdBody_adItemCompany__VC2qX"><span class="AdBody_text__zZZ87"><span class="AdBody_companyIcon__HjGd8"></span>{{ $value->name }}</span></span><span class="AdBody_adItemPostedTime__rX677 AdBody_location__44t75"><span class="AdBody_text__zZZ87"><span class="AdBody_locationIcon__qGgrm"></span>Hà Nội</span></span>
+                                                                <div class="SaveAd_saveAdWrapper__2bqj7 AdItem_saveAd__yjv8V"><button id="btn_save_ad" type="button" class="SaveAd_btnSavedAd__zXXRD"><img width="16" src="https://static.chotot.com/storage/chotot-icons/next/save-ad.svg" alt="like"></button></div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </a>
+                                            </div>
+                                        </div>
 
-            function callHoverEvent() {
-              
-                $('.drop1').show();
-            }
+                                        @endforeach
 
-            function saveJob(id){
-                job =  JSON.parse(window.localStorage.getItem('job'));
-
-                if(job==null){
-                    job = [];
-                }
-
-                job.push(id);
-
-                job =   [...new Set(job)];
-
-                job = JSON.stringify(job);
-
-                window.localStorage.setItem('job', job);
-
-                 // localStorage.clear();
-
-                $('#job_'+id).addClass('red');
-
-                // alert('lưu công việc thành công');
+                                        @endif
+                                       
+                                       
+                                    </div>
+                                    <i class="i-prev WrapperScroll_iconPrev__8Mj8Y false" tabindex="0" role="button" aria-label="Prev"></i><i class="i-next WrapperScroll_iconNext__dU_oO WrapperScroll_active__YmiA6" tabindex="0" role="button" aria-label="Next"></i>
+                                </div>
+                                <div class="w1sgdazv">
+                                    <button type="button">
+                                        Xem thêm các việc làm  khác
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="11" height="18" viewBox="0 0 11 18">
+                                            <g fill="none" fill-rule="evenodd">
+                                                <path stroke="#38699F" stroke-linecap="round" stroke-width="1.5" d="M1.125 3L6.75 8 1.125 13" transform="translate(1 1)"></path>
+                                                <path stroke="#FFF" stroke-width=".1" d="M0 0H9V16H0z" opacity=".01" transform="translate(1 1)"></path>
+                                            </g>
+                                        </svg>
+                                    </button>
+                                </div>
+                            </div>
 
 
-            }
-            
-            job =  JSON.parse(window.localStorage.getItem('job'));
+                            <div class="w19p4n4d">
+                                <div class="twmyzwe">Việc làm gần bạn - Đi làm ngay</div>
+                                <div class="downshift d1ci50gw">
+                                    <div class="sc50nhy">
+                                        <div class="syvda4k"><span style="box-sizing: border-box; display: inline-block; overflow: hidden; width: initial; height: initial; background: none; opacity: 1; border: 0px; margin: 0px; padding: 0px; position: relative; max-width: 100%;"><span style="box-sizing: border-box; display: block; width: initial; height: initial; background: none; opacity: 1; border: 0px; margin: 0px; padding: 0px; max-width: 100%;"><img alt="" aria-hidden="true" src="data:image/svg+xml,%3csvg%20xmlns=%27http://www.w3.org/2000/svg%27%20version=%271.1%27%20width=%2724%27%20height=%2724%27/%3e" style="display: block; max-width: 100%; width: initial; height: initial; background: none; opacity: 1; border: 0px; margin: 0px; padding: 0px;"></span><img alt="location" src="https://static.chotot.com/storage/chotot-icons/svg/garment_location.svg" decoding="async" data-nimg="intrinsic" srcset="https://static.chotot.com/storage/chotot-icons/svg/garment_location.svg 1x" style="position: absolute; inset: 0px; box-sizing: border-box; padding: 0px; border: none; margin: auto; display: block; width: 0px; height: 0px; min-width: 100%; max-width: 100%; min-height: 100%; max-height: 100%;"></span></div>
+                                        <div class="c8lb66c" style="--c8lb66c-0: 100%;">
+                                            <div class="iqg2ugv"><input class="i1s7c94 i4vwqrf required" type="text" inputmode="text" value=""><label for="">Nhập vị trí để tìm việc gần nhất</label></div>
+                                            <!-- <p class="p5j4mea">Vui lòng chọn vị trí bạn muốn tìm kiếm</p> -->
+                                        </div>
+                                        <div class="i3757bm">
+                                            <button type="button">
+                                                <svg xmlns="http://www.w3.org/2000/svg" data-type="monochrome" viewBox="0 0 16 16" width="1em" height="1em" fill="none">
+                                                    <path fill="currentColor" d="M6.4 0a6.369 6.369 0 00-4.525 1.873A6.425 6.425 0 00.502 3.906v.002A6.383 6.383 0 000 6.398a6.372 6.372 0 001.875 4.524 6.385 6.385 0 008.428.537l-.006.006 4.295 4.293a.827.827 0 001.166-1.166l-4.295-4.295a6.368 6.368 0 00-.537-8.424A6.372 6.372 0 006.4 0zm0 1.615a4.75 4.75 0 013.383 1.4c.44.44.785.95 1.028 1.522h-.002c.249.59.377 1.214.377 1.861 0 .648-.128 1.27-.377 1.862h.002a4.783 4.783 0 01-2.55 2.545c-.59.25-1.213.377-1.86.377a4.761 4.761 0 01-1.864-.377A4.749 4.749 0 013.016 9.78c-.44-.44-.783-.95-1.024-1.521a4.735 4.735 0 01-.377-1.862c0-.647.127-1.272.377-1.863a4.75 4.75 0 011.024-1.52 4.754 4.754 0 013.384-1.4z"></path>
+                                                </svg>
+                                            </button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
 
-             for(i=0; i<job.length; i++){
 
-                $('#job_'+job[i]).addClass('red');
-             }
+                            <div></div>
+                            <div></div>
+                            <div></div>
 
-        </script>
-        <script type="text/javascript" src="{{ asset('download/js/jquery.fancybox-1.3.4.js')}}"></script>
-        <script type="text/javascript" src="{{ asset('download/js/jquery.validate.js')}}"></script>
-        <script type="text/javascript" src="{{ asset('download/js/additional-methods.js')}}"></script>
-        <!-- <script type="text/javascript" src="{{ asset('download/js/tn-validate-methods.js')}}"></script> -->
-       <!--  <script type="text/javascript" src="{{ asset('download/js/common.js?27062018')}}"></script>
-        <script type="text/javascript" src="{{ asset('download/js/common_premium.js?v=1')}}"></script> -->
+
+                            <div class="w1yk8s72">
+                                <div class="c1pt0d9t">
+                                    <img src="https://static.chotot.com/storage/chotot-icons/svg/ats_js_database.svg" alt="js-database" class="ioqm53g">
+                                    <div class="c1t549ed">
+                                        <div class="t1d3fms">
+                                            <h5 class="t712cse">Để lại thông tin nhận việc ngay</h5>
+                                            <p class="d1mcybls">Hãy để lại số điện thoại để nhà tuyển dụng gọi cho bạn khi có công việc phù hợp nhé!</p>
+                                        </div>
+                                        <div class="a13mp7rd"><button class="bgcbfpj primary r-normal medium w-bold i-left stretch">TẠO HỒ SƠ</button></div>
+                                    </div>
+                                </div>
+                            </div>
+
+
+                            <div class="tworow_catMatchingBox__ASXPu w16rgpvr">
+                                <h2 class="tqc9i0c">Việc làm mới nhất</h2>
+                                <div class="WrapperScroll_wrapperOverflow__BptX1">
+                                    <div class="tworow_catMatchingScroll__Ysir1 tworow_catMatchingScrollTwo__BiCfs wflw9x5" style="--wflw9x5-0: 0;">
+                                        <div class="AdItem_item___Rdm7 tworow_catMatchingScrollItem__JrTcP  i1jdhhry">
+                                            <div class="AdItem_wrapperLink__w2rsn">
+                                                <a class="AdItem_wrapperLinkHref__U9mX_" href="/viec-lam-quan-1-tp-ho-chi-minh/106398924.htm">
+                                                    <div class="AdItem_wrapperLinkFooter__v9V5D">
+                                                        <div class="AdThumbnail_thumbnailWrapper__IrMJY">
+                                                            <div class="AdThumbnail_thumbnailImg__wHm_a  AdThumbnail_thumbnailImgWithAdLabel__69t9Q">
+                                                                <span style="box-sizing: border-box; display: block; overflow: hidden; width: initial; height: initial; background: none; opacity: 1; border: 0px; margin: 0px; padding: 0px; position: absolute; inset: 0px;">
+                                                                    <img alt="Tuyển Dụng Buồng Phòng" src="/_next/image?url=https%3A%2F%2Fstatic.chotot.com%2Fstorage%2Fchotot-icons%2Fpng%2Fjobtype_v2%2F30.png&amp;w=3840&amp;q=75" decoding="async" data-nimg="fill" style="position: absolute; inset: 0px; box-sizing: border-box; padding: 0px; border: none; margin: auto; display: block; width: 0px; height: 0px; min-width: 100%; max-width: 100%; min-height: 100%; max-height: 100%; object-fit: cover;" sizes="100vw" srcset="/_next/image?url=https%3A%2F%2Fstatic.chotot.com%2Fstorage%2Fchotot-icons%2Fpng%2Fjobtype_v2%2F30.png&amp;w=640&amp;q=75 640w, /_next/image?url=https%3A%2F%2Fstatic.chotot.com%2Fstorage%2Fchotot-icons%2Fpng%2Fjobtype_v2%2F30.png&amp;w=750&amp;q=75 750w, /_next/image?url=https%3A%2F%2Fstatic.chotot.com%2Fstorage%2Fchotot-icons%2Fpng%2Fjobtype_v2%2F30.png&amp;w=828&amp;q=75 828w, /_next/image?url=https%3A%2F%2Fstatic.chotot.com%2Fstorage%2Fchotot-icons%2Fpng%2Fjobtype_v2%2F30.png&amp;w=1080&amp;q=75 1080w, /_next/image?url=https%3A%2F%2Fstatic.chotot.com%2Fstorage%2Fchotot-icons%2Fpng%2Fjobtype_v2%2F30.png&amp;w=1200&amp;q=75 1200w, /_next/image?url=https%3A%2F%2Fstatic.chotot.com%2Fstorage%2Fchotot-icons%2Fpng%2Fjobtype_v2%2F30.png&amp;w=1920&amp;q=75 1920w, /_next/image?url=https%3A%2F%2Fstatic.chotot.com%2Fstorage%2Fchotot-icons%2Fpng%2Fjobtype_v2%2F30.png&amp;w=2048&amp;q=75 2048w, /_next/image?url=https%3A%2F%2Fstatic.chotot.com%2Fstorage%2Fchotot-icons%2Fpng%2Fjobtype_v2%2F30.png&amp;w=3840&amp;q=75 3840w">
+                                                                    <noscript></noscript>
+                                                                </span>
+                                                            </div>
+                                                        </div>
+                                                        <div class="w1jbmbeu">
+                                                            <div class="AdBody_caption__iFaw_">
+                                                                <div class="commonStyle_adTitleGrid__e3PyM AdBody_title__p0P9Y">Tuyển Dụng Buồng Phòng</div>
+                                                                <div><span class="AdBody_price__tUISH">Đến 8,6 triệu/tháng</span></div>
+                                                            </div>
+                                                            <div class="AdBody_footer__plkQC">
+                                                                <span class="AdBody_adItemPostedTime__rX677 AdBody_location__44t75"><span class="AdBody_text__zZZ87"><span class="AdBody_locationIcon__qGgrm"></span>Tp Hồ Chí Minh</span></span>
+                                                                <div class="SaveAd_saveAdWrapper__2bqj7 AdItem_saveAd__yjv8V"><button id="btn_save_ad" type="button" class="SaveAd_btnSavedAd__zXXRD"><img width="16" src="https://static.chotot.com/storage/chotot-icons/next/save-ad.svg" alt="like"></button></div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </a>
+                                            </div>
+                                        </div>
+                                        <div class="AdItem_item___Rdm7 tworow_catMatchingScrollItem__JrTcP  i1jdhhry">
+                                            <div class="AdItem_wrapperLink__w2rsn">
+                                                <a class="AdItem_wrapperLinkHref__U9mX_" href="/viec-lam-thanh-pho-di-an-binh-duong/108887435.htm">
+                                                    <div class="AdItem_wrapperLinkFooter__v9V5D">
+                                                        <div class="AdThumbnail_thumbnailWrapper__IrMJY">
+                                                            <div class="AdThumbnail_thumbnailImg__wHm_a  AdThumbnail_thumbnailImgWithAdLabel__69t9Q">
+                                                                <span style="box-sizing: border-box; display: block; overflow: hidden; width: initial; height: initial; background: none; opacity: 1; border: 0px; margin: 0px; padding: 0px; position: absolute; inset: 0px;">
+                                                                    <img alt="Tuyển Dụng: Nhân Viên Kinh Doanh Lương Cao" src="/_next/image?url=https%3A%2F%2Fcdn.chotot.com%2F1YD0P-vlZk8rP1vhIiS-icNJtuVWZMRTBiCd_F6uk7E%2Fpreset%3Alisting%2Fplain%2F8d79fca43cce20228fc69d77a3c22d7a-2824025854054270242.jpg&amp;w=3840&amp;q=75" decoding="async" data-nimg="fill" style="position: absolute; inset: 0px; box-sizing: border-box; padding: 0px; border: none; margin: auto; display: block; width: 0px; height: 0px; min-width: 100%; max-width: 100%; min-height: 100%; max-height: 100%; object-fit: cover;" sizes="100vw" srcset="/_next/image?url=https%3A%2F%2Fcdn.chotot.com%2F1YD0P-vlZk8rP1vhIiS-icNJtuVWZMRTBiCd_F6uk7E%2Fpreset%3Alisting%2Fplain%2F8d79fca43cce20228fc69d77a3c22d7a-2824025854054270242.jpg&amp;w=640&amp;q=75 640w, /_next/image?url=https%3A%2F%2Fcdn.chotot.com%2F1YD0P-vlZk8rP1vhIiS-icNJtuVWZMRTBiCd_F6uk7E%2Fpreset%3Alisting%2Fplain%2F8d79fca43cce20228fc69d77a3c22d7a-2824025854054270242.jpg&amp;w=750&amp;q=75 750w, /_next/image?url=https%3A%2F%2Fcdn.chotot.com%2F1YD0P-vlZk8rP1vhIiS-icNJtuVWZMRTBiCd_F6uk7E%2Fpreset%3Alisting%2Fplain%2F8d79fca43cce20228fc69d77a3c22d7a-2824025854054270242.jpg&amp;w=828&amp;q=75 828w, /_next/image?url=https%3A%2F%2Fcdn.chotot.com%2F1YD0P-vlZk8rP1vhIiS-icNJtuVWZMRTBiCd_F6uk7E%2Fpreset%3Alisting%2Fplain%2F8d79fca43cce20228fc69d77a3c22d7a-2824025854054270242.jpg&amp;w=1080&amp;q=75 1080w, /_next/image?url=https%3A%2F%2Fcdn.chotot.com%2F1YD0P-vlZk8rP1vhIiS-icNJtuVWZMRTBiCd_F6uk7E%2Fpreset%3Alisting%2Fplain%2F8d79fca43cce20228fc69d77a3c22d7a-2824025854054270242.jpg&amp;w=1200&amp;q=75 1200w, /_next/image?url=https%3A%2F%2Fcdn.chotot.com%2F1YD0P-vlZk8rP1vhIiS-icNJtuVWZMRTBiCd_F6uk7E%2Fpreset%3Alisting%2Fplain%2F8d79fca43cce20228fc69d77a3c22d7a-2824025854054270242.jpg&amp;w=1920&amp;q=75 1920w, /_next/image?url=https%3A%2F%2Fcdn.chotot.com%2F1YD0P-vlZk8rP1vhIiS-icNJtuVWZMRTBiCd_F6uk7E%2Fpreset%3Alisting%2Fplain%2F8d79fca43cce20228fc69d77a3c22d7a-2824025854054270242.jpg&amp;w=2048&amp;q=75 2048w, /_next/image?url=https%3A%2F%2Fcdn.chotot.com%2F1YD0P-vlZk8rP1vhIiS-icNJtuVWZMRTBiCd_F6uk7E%2Fpreset%3Alisting%2Fplain%2F8d79fca43cce20228fc69d77a3c22d7a-2824025854054270242.jpg&amp;w=3840&amp;q=75 3840w">
+                                                                    <noscript></noscript>
+                                                                </span>
+                                                            </div>
+                                                        </div>
+                                                        <div class="w1jbmbeu">
+                                                            <div class="AdBody_caption__iFaw_">
+                                                                <div class="commonStyle_adTitleGrid__e3PyM AdBody_title__p0P9Y">Tuyển Dụng: Nhân Viên Kinh Doanh Lương Cao</div>
+                                                                <div><span class="AdBody_price__tUISH">Đến 12 triệu/tháng</span></div>
+                                                            </div>
+                                                            <div class="AdBody_footer__plkQC">
+                                                                <span class="AdBody_adItemPostedTime__rX677 AdBody_location__44t75"><span class="AdBody_text__zZZ87"><span class="AdBody_locationIcon__qGgrm"></span>Bình Dương</span></span>
+                                                                <div class="SaveAd_saveAdWrapper__2bqj7 AdItem_saveAd__yjv8V"><button id="btn_save_ad" type="button" class="SaveAd_btnSavedAd__zXXRD"><img width="16" src="https://static.chotot.com/storage/chotot-icons/next/save-ad.svg" alt="like"></button></div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </a>
+                                            </div>
+                                        </div>
+                                        <div class="AdItem_item___Rdm7 tworow_catMatchingScrollItem__JrTcP  i1jdhhry">
+                                            <div class="AdItem_wrapperLink__w2rsn">
+                                                <a class="AdItem_wrapperLinkHref__U9mX_" href="/viec-lam-quan-dong-da-ha-noi/107070585.htm">
+                                                    <div class="AdItem_wrapperLinkFooter__v9V5D">
+                                                        <div class="AdThumbnail_thumbnailWrapper__IrMJY">
+                                                            <div class="AdThumbnail_thumbnailImg__wHm_a  AdThumbnail_thumbnailImgWithAdLabel__69t9Q">
+                                                                <span style="box-sizing: border-box; display: block; overflow: hidden; width: initial; height: initial; background: none; opacity: 1; border: 0px; margin: 0px; padding: 0px; position: absolute; inset: 0px;">
+                                                                    <img alt="[Hà Nội] Tuyển 15 Công Nhân Dọn Nhà Và Văn Phòng" src="/_next/image?url=https%3A%2F%2Fcdn.chotot.com%2F6dkTBVuiJmi56aJWuo4fOqreSVV2VitXT3H4d1pMLas%2Fpreset%3Alisting%2Fplain%2Ff8390fe3cf66a121bdca742540c8b92e-2788115921502865532.jpg&amp;w=3840&amp;q=75" decoding="async" data-nimg="fill" style="position: absolute; inset: 0px; box-sizing: border-box; padding: 0px; border: none; margin: auto; display: block; width: 0px; height: 0px; min-width: 100%; max-width: 100%; min-height: 100%; max-height: 100%; object-fit: cover;" sizes="100vw" srcset="/_next/image?url=https%3A%2F%2Fcdn.chotot.com%2F6dkTBVuiJmi56aJWuo4fOqreSVV2VitXT3H4d1pMLas%2Fpreset%3Alisting%2Fplain%2Ff8390fe3cf66a121bdca742540c8b92e-2788115921502865532.jpg&amp;w=640&amp;q=75 640w, /_next/image?url=https%3A%2F%2Fcdn.chotot.com%2F6dkTBVuiJmi56aJWuo4fOqreSVV2VitXT3H4d1pMLas%2Fpreset%3Alisting%2Fplain%2Ff8390fe3cf66a121bdca742540c8b92e-2788115921502865532.jpg&amp;w=750&amp;q=75 750w, /_next/image?url=https%3A%2F%2Fcdn.chotot.com%2F6dkTBVuiJmi56aJWuo4fOqreSVV2VitXT3H4d1pMLas%2Fpreset%3Alisting%2Fplain%2Ff8390fe3cf66a121bdca742540c8b92e-2788115921502865532.jpg&amp;w=828&amp;q=75 828w, /_next/image?url=https%3A%2F%2Fcdn.chotot.com%2F6dkTBVuiJmi56aJWuo4fOqreSVV2VitXT3H4d1pMLas%2Fpreset%3Alisting%2Fplain%2Ff8390fe3cf66a121bdca742540c8b92e-2788115921502865532.jpg&amp;w=1080&amp;q=75 1080w, /_next/image?url=https%3A%2F%2Fcdn.chotot.com%2F6dkTBVuiJmi56aJWuo4fOqreSVV2VitXT3H4d1pMLas%2Fpreset%3Alisting%2Fplain%2Ff8390fe3cf66a121bdca742540c8b92e-2788115921502865532.jpg&amp;w=1200&amp;q=75 1200w, /_next/image?url=https%3A%2F%2Fcdn.chotot.com%2F6dkTBVuiJmi56aJWuo4fOqreSVV2VitXT3H4d1pMLas%2Fpreset%3Alisting%2Fplain%2Ff8390fe3cf66a121bdca742540c8b92e-2788115921502865532.jpg&amp;w=1920&amp;q=75 1920w, /_next/image?url=https%3A%2F%2Fcdn.chotot.com%2F6dkTBVuiJmi56aJWuo4fOqreSVV2VitXT3H4d1pMLas%2Fpreset%3Alisting%2Fplain%2Ff8390fe3cf66a121bdca742540c8b92e-2788115921502865532.jpg&amp;w=2048&amp;q=75 2048w, /_next/image?url=https%3A%2F%2Fcdn.chotot.com%2F6dkTBVuiJmi56aJWuo4fOqreSVV2VitXT3H4d1pMLas%2Fpreset%3Alisting%2Fplain%2Ff8390fe3cf66a121bdca742540c8b92e-2788115921502865532.jpg&amp;w=3840&amp;q=75 3840w">
+                                                                    <noscript></noscript>
+                                                                </span>
+                                                            </div>
+                                                        </div>
+                                                        <div class="w1jbmbeu">
+                                                            <div class="AdBody_caption__iFaw_">
+                                                                <div class="commonStyle_adTitleGrid__e3PyM AdBody_title__p0P9Y">[Hà Nội] Tuyển 15 Công Nhân Dọn Nhà Và Văn Phòng</div>
+                                                                <div><span class="AdBody_price__tUISH">Đến 15,5 triệu/tháng</span></div>
+                                                            </div>
+                                                            <div class="AdBody_footer__plkQC">
+                                                                <span class="AdBody_adItemPostedTime__rX677 AdBody_location__44t75"><span class="AdBody_text__zZZ87"><span class="AdBody_locationIcon__qGgrm"></span>Hà Nội</span></span>
+                                                                <div class="SaveAd_saveAdWrapper__2bqj7 AdItem_saveAd__yjv8V"><button id="btn_save_ad" type="button" class="SaveAd_btnSavedAd__zXXRD"><img width="16" src="https://static.chotot.com/storage/chotot-icons/next/save-ad.svg" alt="like"></button></div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </a>
+                                            </div>
+                                        </div>
+                                        <div class="AdItem_item___Rdm7 tworow_catMatchingScrollItem__JrTcP  i1jdhhry">
+                                            <div class="AdItem_wrapperLink__w2rsn">
+                                                <a class="AdItem_wrapperLinkHref__U9mX_" href="/viec-lam-quan-binh-tan-tp-ho-chi-minh/109160253.htm">
+                                                    <div class="AdItem_wrapperLinkFooter__v9V5D">
+                                                        <div class="AdThumbnail_thumbnailWrapper__IrMJY">
+                                                            <div class="AdThumbnail_thumbnailImg__wHm_a  AdThumbnail_thumbnailImgWithAdLabel__69t9Q">
+                                                                <span style="box-sizing: border-box; display: block; overflow: hidden; width: initial; height: initial; background: none; opacity: 1; border: 0px; margin: 0px; padding: 0px; position: absolute; inset: 0px;">
+                                                                    <img alt="Tuyển DụNG.Nữ Nhân Viên Bán Sữa Khu Vực Bình Tân" src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" decoding="async" data-nimg="fill" style="position: absolute; inset: 0px; box-sizing: border-box; padding: 0px; border: none; margin: auto; display: block; width: 0px; height: 0px; min-width: 100%; max-width: 100%; min-height: 100%; max-height: 100%; object-fit: cover;">
+                                                                    <noscript></noscript>
+                                                                </span>
+                                                            </div>
+                                                        </div>
+                                                        <div class="w1jbmbeu">
+                                                            <div class="AdBody_caption__iFaw_">
+                                                                <div class="commonStyle_adTitleGrid__e3PyM AdBody_title__p0P9Y">Tuyển DụNG.Nữ Nhân Viên Bán Sữa Khu Vực Bình Tân</div>
+                                                                <div><span class="AdBody_price__tUISH">Đến 10 triệu/tháng</span></div>
+                                                            </div>
+                                                            <div class="AdBody_footer__plkQC">
+                                                                <span class="AdBody_adItemPostedTime__rX677 AdBody_location__44t75"><span class="AdBody_text__zZZ87"><span class="AdBody_locationIcon__qGgrm"></span>Tp Hồ Chí Minh</span></span>
+                                                                <div class="SaveAd_saveAdWrapper__2bqj7 AdItem_saveAd__yjv8V"><button id="btn_save_ad" type="button" class="SaveAd_btnSavedAd__zXXRD"><img width="16" src="https://static.chotot.com/storage/chotot-icons/next/save-ad.svg" alt="like"></button></div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </a>
+                                            </div>
+                                        </div>
+                                        <div class="AdItem_item___Rdm7 tworow_catMatchingScrollItem__JrTcP  i1jdhhry">
+                                            <div class="AdItem_wrapperLink__w2rsn">
+                                                <a class="AdItem_wrapperLinkHref__U9mX_" href="/viec-lam-huyen-hoc-mon-tp-ho-chi-minh/108843948.htm">
+                                                    <div class="AdItem_wrapperLinkFooter__v9V5D">
+                                                        <div class="AdThumbnail_thumbnailWrapper__IrMJY">
+                                                            <div class="AdThumbnail_thumbnailImg__wHm_a  AdThumbnail_thumbnailImgWithAdLabel__69t9Q">
+                                                                <span style="box-sizing: border-box; display: block; overflow: hidden; width: initial; height: initial; background: none; opacity: 1; border: 0px; margin: 0px; padding: 0px; position: absolute; inset: 0px;">
+                                                                    <img alt="Cần Tuyển Thợ Thêu Không Cần Kinh Nghiệm" src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" decoding="async" data-nimg="fill" style="position: absolute; inset: 0px; box-sizing: border-box; padding: 0px; border: none; margin: auto; display: block; width: 0px; height: 0px; min-width: 100%; max-width: 100%; min-height: 100%; max-height: 100%; object-fit: cover;">
+                                                                    <noscript></noscript>
+                                                                </span>
+                                                            </div>
+                                                        </div>
+                                                        <div class="w1jbmbeu">
+                                                            <div class="AdBody_caption__iFaw_">
+                                                                <div class="commonStyle_adTitleGrid__e3PyM AdBody_title__p0P9Y">Cần Tuyển Thợ Thêu Không Cần Kinh Nghiệm</div>
+                                                                <div><span class="AdBody_price__tUISH">Đến 7 triệu/tháng</span></div>
+                                                            </div>
+                                                            <div class="AdBody_footer__plkQC">
+                                                                <span class="AdBody_adItemPostedTime__rX677 AdBody_location__44t75"><span class="AdBody_text__zZZ87"><span class="AdBody_locationIcon__qGgrm"></span>Tp Hồ Chí Minh</span></span>
+                                                                <div class="SaveAd_saveAdWrapper__2bqj7 AdItem_saveAd__yjv8V"><button id="btn_save_ad" type="button" class="SaveAd_btnSavedAd__zXXRD"><img width="16" src="https://static.chotot.com/storage/chotot-icons/next/save-ad.svg" alt="like"></button></div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </a>
+                                            </div>
+                                        </div>
+                                        <div class="AdItem_item___Rdm7 tworow_catMatchingScrollItem__JrTcP  i1jdhhry">
+                                            <div class="AdItem_wrapperLink__w2rsn">
+                                                <a class="AdItem_wrapperLinkHref__U9mX_" href="/viec-lam-quan-1-tp-ho-chi-minh/108488558.htm">
+                                                    <div class="AdItem_wrapperLinkFooter__v9V5D">
+                                                        <div class="AdThumbnail_thumbnailWrapper__IrMJY">
+                                                            <div class="AdThumbnail_thumbnailImg__wHm_a  AdThumbnail_thumbnailImgWithAdLabel__69t9Q">
+                                                                <span style="box-sizing: border-box; display: block; overflow: hidden; width: initial; height: initial; background: none; opacity: 1; border: 0px; margin: 0px; padding: 0px; position: absolute; inset: 0px;">
+                                                                    <img alt="Tuyển LĐPT Phun Thuốc Diệt Côn Trùng Chuột, Mối" src="/_next/image?url=https%3A%2F%2Fstatic.chotot.com%2Fstorage%2Fchotot-icons%2Fpng%2Fjobtype_v2%2F17.png&amp;w=3840&amp;q=75" decoding="async" data-nimg="fill" style="position: absolute; inset: 0px; box-sizing: border-box; padding: 0px; border: none; margin: auto; display: block; width: 0px; height: 0px; min-width: 100%; max-width: 100%; min-height: 100%; max-height: 100%; object-fit: cover;" sizes="100vw" srcset="/_next/image?url=https%3A%2F%2Fstatic.chotot.com%2Fstorage%2Fchotot-icons%2Fpng%2Fjobtype_v2%2F17.png&amp;w=640&amp;q=75 640w, /_next/image?url=https%3A%2F%2Fstatic.chotot.com%2Fstorage%2Fchotot-icons%2Fpng%2Fjobtype_v2%2F17.png&amp;w=750&amp;q=75 750w, /_next/image?url=https%3A%2F%2Fstatic.chotot.com%2Fstorage%2Fchotot-icons%2Fpng%2Fjobtype_v2%2F17.png&amp;w=828&amp;q=75 828w, /_next/image?url=https%3A%2F%2Fstatic.chotot.com%2Fstorage%2Fchotot-icons%2Fpng%2Fjobtype_v2%2F17.png&amp;w=1080&amp;q=75 1080w, /_next/image?url=https%3A%2F%2Fstatic.chotot.com%2Fstorage%2Fchotot-icons%2Fpng%2Fjobtype_v2%2F17.png&amp;w=1200&amp;q=75 1200w, /_next/image?url=https%3A%2F%2Fstatic.chotot.com%2Fstorage%2Fchotot-icons%2Fpng%2Fjobtype_v2%2F17.png&amp;w=1920&amp;q=75 1920w, /_next/image?url=https%3A%2F%2Fstatic.chotot.com%2Fstorage%2Fchotot-icons%2Fpng%2Fjobtype_v2%2F17.png&amp;w=2048&amp;q=75 2048w, /_next/image?url=https%3A%2F%2Fstatic.chotot.com%2Fstorage%2Fchotot-icons%2Fpng%2Fjobtype_v2%2F17.png&amp;w=3840&amp;q=75 3840w">
+                                                                    <noscript></noscript>
+                                                                </span>
+                                                            </div>
+                                                        </div>
+                                                        <div class="w1jbmbeu">
+                                                            <div class="AdBody_caption__iFaw_">
+                                                                <div class="commonStyle_adTitleGrid__e3PyM AdBody_title__p0P9Y">Tuyển LĐPT Phun Thuốc Diệt Côn Trùng Chuột, Mối</div>
+                                                                <div><span class="AdBody_price__tUISH">Đến 12 triệu/tháng</span></div>
+                                                            </div>
+                                                            <div class="AdBody_footer__plkQC">
+                                                                <span class="AdBody_adItemPostedTime__rX677 AdBody_location__44t75"><span class="AdBody_text__zZZ87"><span class="AdBody_locationIcon__qGgrm"></span>Tp Hồ Chí Minh</span></span>
+                                                                <div class="SaveAd_saveAdWrapper__2bqj7 AdItem_saveAd__yjv8V"><button id="btn_save_ad" type="button" class="SaveAd_btnSavedAd__zXXRD"><img width="16" src="https://static.chotot.com/storage/chotot-icons/next/save-ad.svg" alt="like"></button></div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </a>
+                                            </div>
+                                        </div>
+                                        <div class="AdItem_item___Rdm7 tworow_catMatchingScrollItem__JrTcP  i1jdhhry">
+                                            <div class="AdItem_wrapperLink__w2rsn">
+                                                <a class="AdItem_wrapperLinkHref__U9mX_" href="/viec-lam-thanh-pho-thu-duc-tp-ho-chi-minh/109184129.htm">
+                                                    <div class="AdItem_wrapperLinkFooter__v9V5D">
+                                                        <div class="AdThumbnail_thumbnailWrapper__IrMJY">
+                                                            <div class="AdThumbnail_thumbnailImg__wHm_a  AdThumbnail_thumbnailImgWithAdLabel__69t9Q">
+                                                                <span style="box-sizing: border-box; display: block; overflow: hidden; width: initial; height: initial; background: none; opacity: 1; border: 0px; margin: 0px; padding: 0px; position: absolute; inset: 0px;">
+                                                                    <img alt="Nam Rửa Xe + Chăm Sóc Ô Tô Chịu Khó" src="/_next/image?url=https%3A%2F%2Fstatic.chotot.com%2Fstorage%2Fchotot-icons%2Fpng%2Fjobtype_v2%2F17.png&amp;w=3840&amp;q=75" decoding="async" data-nimg="fill" style="position: absolute; inset: 0px; box-sizing: border-box; padding: 0px; border: none; margin: auto; display: block; width: 0px; height: 0px; min-width: 100%; max-width: 100%; min-height: 100%; max-height: 100%; object-fit: cover;" sizes="100vw" srcset="/_next/image?url=https%3A%2F%2Fstatic.chotot.com%2Fstorage%2Fchotot-icons%2Fpng%2Fjobtype_v2%2F17.png&amp;w=640&amp;q=75 640w, /_next/image?url=https%3A%2F%2Fstatic.chotot.com%2Fstorage%2Fchotot-icons%2Fpng%2Fjobtype_v2%2F17.png&amp;w=750&amp;q=75 750w, /_next/image?url=https%3A%2F%2Fstatic.chotot.com%2Fstorage%2Fchotot-icons%2Fpng%2Fjobtype_v2%2F17.png&amp;w=828&amp;q=75 828w, /_next/image?url=https%3A%2F%2Fstatic.chotot.com%2Fstorage%2Fchotot-icons%2Fpng%2Fjobtype_v2%2F17.png&amp;w=1080&amp;q=75 1080w, /_next/image?url=https%3A%2F%2Fstatic.chotot.com%2Fstorage%2Fchotot-icons%2Fpng%2Fjobtype_v2%2F17.png&amp;w=1200&amp;q=75 1200w, /_next/image?url=https%3A%2F%2Fstatic.chotot.com%2Fstorage%2Fchotot-icons%2Fpng%2Fjobtype_v2%2F17.png&amp;w=1920&amp;q=75 1920w, /_next/image?url=https%3A%2F%2Fstatic.chotot.com%2Fstorage%2Fchotot-icons%2Fpng%2Fjobtype_v2%2F17.png&amp;w=2048&amp;q=75 2048w, /_next/image?url=https%3A%2F%2Fstatic.chotot.com%2Fstorage%2Fchotot-icons%2Fpng%2Fjobtype_v2%2F17.png&amp;w=3840&amp;q=75 3840w">
+                                                                    <noscript></noscript>
+                                                                </span>
+                                                            </div>
+                                                        </div>
+                                                        <div class="w1jbmbeu">
+                                                            <div class="AdBody_caption__iFaw_">
+                                                                <div class="commonStyle_adTitleGrid__e3PyM AdBody_title__p0P9Y">Nam Rửa Xe + Chăm Sóc Ô Tô Chịu Khó</div>
+                                                                <div><span class="AdBody_price__tUISH">Đến 10 triệu/tháng</span></div>
+                                                            </div>
+                                                            <div class="AdBody_footer__plkQC">
+                                                                <span class="AdBody_adItemPostedTime__rX677 AdBody_location__44t75"><span class="AdBody_text__zZZ87"><span class="AdBody_locationIcon__qGgrm"></span>Tp Hồ Chí Minh</span></span>
+                                                                <div class="SaveAd_saveAdWrapper__2bqj7 AdItem_saveAd__yjv8V"><button id="btn_save_ad" type="button" class="SaveAd_btnSavedAd__zXXRD"><img width="16" src="https://static.chotot.com/storage/chotot-icons/next/save-ad.svg" alt="like"></button></div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </a>
+                                            </div>
+                                        </div>
+                                        <div class="AdItem_item___Rdm7 tworow_catMatchingScrollItem__JrTcP  i1jdhhry">
+                                            <div class="AdItem_wrapperLink__w2rsn">
+                                                <a class="AdItem_wrapperLinkHref__U9mX_" href="/viec-lam-quan-7-tp-ho-chi-minh/107481350.htm">
+                                                    <div class="AdItem_wrapperLinkFooter__v9V5D">
+                                                        <div class="AdThumbnail_thumbnailWrapper__IrMJY">
+                                                            <div class="AdThumbnail_thumbnailImg__wHm_a  AdThumbnail_thumbnailImgWithAdLabel__69t9Q">
+                                                                <span style="box-sizing: border-box; display: block; overflow: hidden; width: initial; height: initial; background: none; opacity: 1; border: 0px; margin: 0px; padding: 0px; position: absolute; inset: 0px;">
+                                                                    <img alt="Cần 5 Bảo Vệ Ở Trung Tâm Thư Mại Vivo City Q7" src="/_next/image?url=https%3A%2F%2Fcdn.chotot.com%2FACUQ_ujZ0qPmsYzhVe2zVjekiHS02te1U9sjpF_LRLU%2Fpreset%3Alisting%2Fplain%2Fee85a3eb96c39f8ce15ea16672f18d56-2830725121268781845.jpg&amp;w=3840&amp;q=75" decoding="async" data-nimg="fill" style="position: absolute; inset: 0px; box-sizing: border-box; padding: 0px; border: none; margin: auto; display: block; width: 0px; height: 0px; min-width: 100%; max-width: 100%; min-height: 100%; max-height: 100%; object-fit: cover;" sizes="100vw" srcset="/_next/image?url=https%3A%2F%2Fcdn.chotot.com%2FACUQ_ujZ0qPmsYzhVe2zVjekiHS02te1U9sjpF_LRLU%2Fpreset%3Alisting%2Fplain%2Fee85a3eb96c39f8ce15ea16672f18d56-2830725121268781845.jpg&amp;w=640&amp;q=75 640w, /_next/image?url=https%3A%2F%2Fcdn.chotot.com%2FACUQ_ujZ0qPmsYzhVe2zVjekiHS02te1U9sjpF_LRLU%2Fpreset%3Alisting%2Fplain%2Fee85a3eb96c39f8ce15ea16672f18d56-2830725121268781845.jpg&amp;w=750&amp;q=75 750w, /_next/image?url=https%3A%2F%2Fcdn.chotot.com%2FACUQ_ujZ0qPmsYzhVe2zVjekiHS02te1U9sjpF_LRLU%2Fpreset%3Alisting%2Fplain%2Fee85a3eb96c39f8ce15ea16672f18d56-2830725121268781845.jpg&amp;w=828&amp;q=75 828w, /_next/image?url=https%3A%2F%2Fcdn.chotot.com%2FACUQ_ujZ0qPmsYzhVe2zVjekiHS02te1U9sjpF_LRLU%2Fpreset%3Alisting%2Fplain%2Fee85a3eb96c39f8ce15ea16672f18d56-2830725121268781845.jpg&amp;w=1080&amp;q=75 1080w, /_next/image?url=https%3A%2F%2Fcdn.chotot.com%2FACUQ_ujZ0qPmsYzhVe2zVjekiHS02te1U9sjpF_LRLU%2Fpreset%3Alisting%2Fplain%2Fee85a3eb96c39f8ce15ea16672f18d56-2830725121268781845.jpg&amp;w=1200&amp;q=75 1200w, /_next/image?url=https%3A%2F%2Fcdn.chotot.com%2FACUQ_ujZ0qPmsYzhVe2zVjekiHS02te1U9sjpF_LRLU%2Fpreset%3Alisting%2Fplain%2Fee85a3eb96c39f8ce15ea16672f18d56-2830725121268781845.jpg&amp;w=1920&amp;q=75 1920w, /_next/image?url=https%3A%2F%2Fcdn.chotot.com%2FACUQ_ujZ0qPmsYzhVe2zVjekiHS02te1U9sjpF_LRLU%2Fpreset%3Alisting%2Fplain%2Fee85a3eb96c39f8ce15ea16672f18d56-2830725121268781845.jpg&amp;w=2048&amp;q=75 2048w, /_next/image?url=https%3A%2F%2Fcdn.chotot.com%2FACUQ_ujZ0qPmsYzhVe2zVjekiHS02te1U9sjpF_LRLU%2Fpreset%3Alisting%2Fplain%2Fee85a3eb96c39f8ce15ea16672f18d56-2830725121268781845.jpg&amp;w=3840&amp;q=75 3840w">
+                                                                    <noscript></noscript>
+                                                                </span>
+                                                            </div>
+                                                        </div>
+                                                        <div class="w1jbmbeu">
+                                                            <div class="AdBody_caption__iFaw_">
+                                                                <div class="commonStyle_adTitleGrid__e3PyM AdBody_title__p0P9Y">Cần 5 Bảo Vệ Ở Trung Tâm Thư Mại Vivo City Q7</div>
+                                                                <div><span class="AdBody_price__tUISH">Đến 9 triệu/tháng</span></div>
+                                                            </div>
+                                                            <div class="AdBody_footer__plkQC">
+                                                                <span class="AdBody_adItemPostedTime__rX677 AdBody_location__44t75"><span class="AdBody_text__zZZ87"><span class="AdBody_locationIcon__qGgrm"></span>Tp Hồ Chí Minh</span></span>
+                                                                <div class="SaveAd_saveAdWrapper__2bqj7 AdItem_saveAd__yjv8V"><button id="btn_save_ad" type="button" class="SaveAd_btnSavedAd__zXXRD"><img width="16" src="https://static.chotot.com/storage/chotot-icons/next/save-ad.svg" alt="like"></button></div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </a>
+                                            </div>
+                                        </div>
+                                        <div class="AdItem_item___Rdm7 tworow_catMatchingScrollItem__JrTcP  i1jdhhry">
+                                            <div class="AdItem_wrapperLink__w2rsn">
+                                                <a class="AdItem_wrapperLinkHref__U9mX_" href="/viec-lam-quan-12-tp-ho-chi-minh/109262191.htm">
+                                                    <div class="AdItem_wrapperLinkFooter__v9V5D">
+                                                        <div class="AdThumbnail_thumbnailWrapper__IrMJY">
+                                                            <div class="AdThumbnail_thumbnailImg__wHm_a  AdThumbnail_thumbnailImgWithAdLabel__69t9Q">
+                                                                <span style="box-sizing: border-box; display: block; overflow: hidden; width: initial; height: initial; background: none; opacity: 1; border: 0px; margin: 0px; padding: 0px; position: absolute; inset: 0px;">
+                                                                    <img alt="Tuyển Gấp 1 Nam Đứng Máy In Bao Bì,Làm Đi Về" src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" decoding="async" data-nimg="fill" style="position: absolute; inset: 0px; box-sizing: border-box; padding: 0px; border: none; margin: auto; display: block; width: 0px; height: 0px; min-width: 100%; max-width: 100%; min-height: 100%; max-height: 100%; object-fit: cover;">
+                                                                    <noscript></noscript>
+                                                                </span>
+                                                            </div>
+                                                        </div>
+                                                        <div class="w1jbmbeu">
+                                                            <div class="AdBody_caption__iFaw_">
+                                                                <div class="commonStyle_adTitleGrid__e3PyM AdBody_title__p0P9Y">Tuyển Gấp 1 Nam Đứng Máy In Bao Bì,Làm Đi Về</div>
+                                                                <div><span class="AdBody_price__tUISH">Từ 8 triệu/tháng</span></div>
+                                                            </div>
+                                                            <div class="AdBody_footer__plkQC">
+                                                                <span class="AdBody_adItemPostedTime__rX677 AdBody_location__44t75"><span class="AdBody_text__zZZ87"><span class="AdBody_locationIcon__qGgrm"></span>Tp Hồ Chí Minh</span></span>
+                                                                <div class="SaveAd_saveAdWrapper__2bqj7 AdItem_saveAd__yjv8V"><button id="btn_save_ad" type="button" class="SaveAd_btnSavedAd__zXXRD"><img width="16" src="https://static.chotot.com/storage/chotot-icons/next/save-ad.svg" alt="like"></button></div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </a>
+                                            </div>
+                                        </div>
+                                        <div class="AdItem_item___Rdm7 tworow_catMatchingScrollItem__JrTcP  i1jdhhry">
+                                            <div class="AdItem_wrapperLink__w2rsn">
+                                                <a class="AdItem_wrapperLinkHref__U9mX_" href="/viec-lam-quan-cau-giay-ha-noi/109262173.htm">
+                                                    <div class="AdItem_wrapperLinkFooter__v9V5D">
+                                                        <div class="AdThumbnail_thumbnailWrapper__IrMJY">
+                                                            <div class="AdThumbnail_thumbnailImg__wHm_a  AdThumbnail_thumbnailImgWithAdLabel__69t9Q">
+                                                                <span style="box-sizing: border-box; display: block; overflow: hidden; width: initial; height: initial; background: none; opacity: 1; border: 0px; margin: 0px; padding: 0px; position: absolute; inset: 0px;">
+                                                                    <img alt="Tuyển Giúp Việc Chăm Trẻ Hoặc Cụ Già Tại Hà Nội" src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" decoding="async" data-nimg="fill" style="position: absolute; inset: 0px; box-sizing: border-box; padding: 0px; border: none; margin: auto; display: block; width: 0px; height: 0px; min-width: 100%; max-width: 100%; min-height: 100%; max-height: 100%; object-fit: cover;">
+                                                                    <noscript></noscript>
+                                                                </span>
+                                                            </div>
+                                                        </div>
+                                                        <div class="w1jbmbeu">
+                                                            <div class="AdBody_caption__iFaw_">
+                                                                <div class="commonStyle_adTitleGrid__e3PyM AdBody_title__p0P9Y">Tuyển Giúp Việc Chăm Trẻ Hoặc Cụ Già Tại Hà Nội</div>
+                                                                <div><span class="AdBody_price__tUISH">Đến 7,5 triệu/tháng</span></div>
+                                                            </div>
+                                                            <div class="AdBody_footer__plkQC">
+                                                                <span class="AdBody_adItemPostedTime__rX677 AdBody_location__44t75"><span class="AdBody_text__zZZ87"><span class="AdBody_locationIcon__qGgrm"></span>Hà Nội</span></span>
+                                                                <div class="SaveAd_saveAdWrapper__2bqj7 AdItem_saveAd__yjv8V"><button id="btn_save_ad" type="button" class="SaveAd_btnSavedAd__zXXRD"><img width="16" src="https://static.chotot.com/storage/chotot-icons/next/save-ad.svg" alt="like"></button></div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <i class="i-prev WrapperScroll_iconPrev__8Mj8Y false" tabindex="0" role="button" aria-label="Prev"></i><i class="i-next WrapperScroll_iconNext__dU_oO WrapperScroll_active__YmiA6" tabindex="0" role="button" aria-label="Next"></i>
+                                </div>
+                                <div class="w1sgdazv">
+                                    <button type="button">
+                                        Xem thêm 33.784 việc làm khác
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="11" height="18" viewBox="0 0 11 18">
+                                            <g fill="none" fill-rule="evenodd">
+                                                <path stroke="#38699F" stroke-linecap="round" stroke-width="1.5" d="M1.125 3L6.75 8 1.125 13" transform="translate(1 1)"></path>
+                                                <path stroke="#FFF" stroke-width=".1" d="M0 0H9V16H0z" opacity=".01" transform="translate(1 1)"></path>
+                                            </g>
+                                        </svg>
+                                    </button>
+                                </div>
+                            </div>
+
+
+                            <div class="w1d827wb">
+                                <h2 class="t16lncvr">Trở thành Đối tác tuyển dụng</h2>
+                                <div class="d1mlmcxt">Việc Làm Tốt - nền tảng trực tuyến đã kết nối việc làm, phục vụ cho <strong>hơn 40 triệu lao động phổ thông.</strong> Trở thành Đối Tác của Việc Làm Tốt để tin đăng tuyển dụng <strong>thu hút hơn 4 lần số lượng ứng viên tiềm năng</strong> so với những tin tuyển dụng thông thường khác.</div>
+                                <div class="w1sxweed">
+                                    <li class="i19q506l">
+                                        <div class="i1hboxia">
+                                            <div class="cemylwf"><span style="box-sizing: border-box; display: inline-block; overflow: hidden; width: initial; height: initial; background: none; opacity: 1; border: 0px; margin: 0px; padding: 0px; position: relative; max-width: 100%;"><span style="box-sizing: border-box; display: block; width: initial; height: initial; background: none; opacity: 1; border: 0px; margin: 0px; padding: 0px; max-width: 100%;"><img alt="" aria-hidden="true" src="data:image/svg+xml,%3csvg%20xmlns=%27http://www.w3.org/2000/svg%27%20version=%271.1%27%20width=%2768%27%20height=%2768%27/%3e" style="display: block; max-width: 100%; width: initial; height: initial; background: none; opacity: 1; border: 0px; margin: 0px; padding: 0px;"></span><img alt="Nhãn Đối Tác" src="/_next/image?url=https%3A%2F%2Fcdn.chotot.com%2Fadmincentre%2FMwB28EwtHLa7gTFzb4ho8xz6fqzfoaT7K3HsMZ_UVE4%2Fpreset%3Araw%2Fplain%2Fee47df0d75dd021db4d24bad3b34d64f-2773746007237003745.jpg&amp;w=256&amp;q=75" decoding="async" data-nimg="intrinsic" style="position: absolute; inset: 0px; box-sizing: border-box; padding: 0px; border: none; margin: auto; display: block; width: 0px; height: 0px; min-width: 100%; max-width: 100%; min-height: 100%; max-height: 100%;" srcset="/_next/image?url=https%3A%2F%2Fcdn.chotot.com%2Fadmincentre%2FMwB28EwtHLa7gTFzb4ho8xz6fqzfoaT7K3HsMZ_UVE4%2Fpreset%3Araw%2Fplain%2Fee47df0d75dd021db4d24bad3b34d64f-2773746007237003745.jpg&amp;w=256&amp;q=75 1x"></span></div>
+                                        </div>
+                                        <div class="t1ug96jk"><span class="c1ix36js">Nhãn Đối Tác</span><span class="clzh3k5">x4 hiệu quả tuyển dụng</span></div>
+                                    </li>
+                                    <li class="i19q506l">
+                                        <div class="i1hboxia">
+                                            <div class="cemylwf"><span style="box-sizing: border-box; display: inline-block; overflow: hidden; width: initial; height: initial; background: none; opacity: 1; border: 0px; margin: 0px; padding: 0px; position: relative; max-width: 100%;"><span style="box-sizing: border-box; display: block; width: initial; height: initial; background: none; opacity: 1; border: 0px; margin: 0px; padding: 0px; max-width: 100%;"><img alt="" aria-hidden="true" src="data:image/svg+xml,%3csvg%20xmlns=%27http://www.w3.org/2000/svg%27%20version=%271.1%27%20width=%2768%27%20height=%2768%27/%3e" style="display: block; max-width: 100%; width: initial; height: initial; background: none; opacity: 1; border: 0px; margin: 0px; padding: 0px;"></span><img alt="Ứng viên liên hệ ngay" src="/_next/image?url=https%3A%2F%2Fcdn.chotot.com%2Fadmincentre%2F6fssUhmJtZKcHgzhS3qM8MrgjELIEhAR9FzmUGj74ao%2Fpreset%3Araw%2Fplain%2F5ee1552e8deaf9be5f649ffca3a03c2e-2773745921026952218.jpg&amp;w=256&amp;q=75" decoding="async" data-nimg="intrinsic" style="position: absolute; inset: 0px; box-sizing: border-box; padding: 0px; border: none; margin: auto; display: block; width: 0px; height: 0px; min-width: 100%; max-width: 100%; min-height: 100%; max-height: 100%;" srcset="/_next/image?url=https%3A%2F%2Fcdn.chotot.com%2Fadmincentre%2F6fssUhmJtZKcHgzhS3qM8MrgjELIEhAR9FzmUGj74ao%2Fpreset%3Araw%2Fplain%2F5ee1552e8deaf9be5f649ffca3a03c2e-2773745921026952218.jpg&amp;w=256&amp;q=75 1x"></span></div>
+                                        </div>
+                                        <div class="t1ug96jk"><span class="c1ix36js">Ứng viên liên hệ ngay</span><span class="clzh3k5">sau 30 phút đăng tin</span></div>
+                                    </li>
+                                    <li class="i19q506l">
+                                        <div class="i1hboxia">
+                                            <div class="cemylwf"><span style="box-sizing: border-box; display: inline-block; overflow: hidden; width: initial; height: initial; background: none; opacity: 1; border: 0px; margin: 0px; padding: 0px; position: relative; max-width: 100%;"><span style="box-sizing: border-box; display: block; width: initial; height: initial; background: none; opacity: 1; border: 0px; margin: 0px; padding: 0px; max-width: 100%;"><img alt="" aria-hidden="true" src="data:image/svg+xml,%3csvg%20xmlns=%27http://www.w3.org/2000/svg%27%20version=%271.1%27%20width=%2768%27%20height=%2768%27/%3e" style="display: block; max-width: 100%; width: initial; height: initial; background: none; opacity: 1; border: 0px; margin: 0px; padding: 0px;"></span><img alt="Tin đăng tiếp cận hơn" src="/_next/image?url=https%3A%2F%2Fcdn.chotot.com%2Fadmincentre%2FPp5XFppntqrByUnjf-0qnfiN4Z-2JJPG4y84pGL2Z1M%2Fpreset%3Araw%2Fplain%2Ff2fa340035ec6eddb0aafc1be5c62580-2773745753107538191.jpg&amp;w=256&amp;q=75" decoding="async" data-nimg="intrinsic" style="position: absolute; inset: 0px; box-sizing: border-box; padding: 0px; border: none; margin: auto; display: block; width: 0px; height: 0px; min-width: 100%; max-width: 100%; min-height: 100%; max-height: 100%;" srcset="/_next/image?url=https%3A%2F%2Fcdn.chotot.com%2Fadmincentre%2FPp5XFppntqrByUnjf-0qnfiN4Z-2JJPG4y84pGL2Z1M%2Fpreset%3Araw%2Fplain%2Ff2fa340035ec6eddb0aafc1be5c62580-2773745753107538191.jpg&amp;w=256&amp;q=75 1x"></span></div>
+                                        </div>
+                                        <div class="t1ug96jk"><span class="c1ix36js">Tin đăng tiếp cận hơn</span><span class="clzh3k5">40 triệu lao động phổ thông</span></div>
+                                    </li>
+                                </div>
+                                <div class="w1flksht">
+                                    <button type="button">
+                                        Tìm hiểu thêm về các chương trình
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="11" height="18" viewBox="0 0 11 18">
+                                            <g fill="none" fill-rule="evenodd">
+                                                <path stroke="#38699F" stroke-linecap="round" stroke-width="1.5" d="M1.125 3L6.75 8 1.125 13" transform="translate(1 1)"></path>
+                                                <path stroke="#FFF" stroke-width=".1" d="M0 0H9V16H0z" opacity=".01" transform="translate(1 1)"></path>
+                                            </g>
+                                        </svg>
+                                    </button>
+                                </div>
+                            </div>
+
+
+                            <div class="tworow_catMatchingBox__ASXPu w16rgpvr">
+                                <h2 class="tqc9i0c">
+                                    Từ Đối Tác Việc Làm Tốt
+                                    <div role="presentation" class="ihmd6xo"></div>
+                                </h2>
+                                <div class="styles_entitlementInfo__QXA34">
+                                    <div class="styles_partnerTitle__JWgoC">ĐỐI TÁC<br>VIỆC LÀM TỐT</div>
+                                    <div class="styles_textLayout__zW_jV">
+                                        <div class="styles_icTrusted__sjsMk"></div>
+                                        <div class="styles_text__gY28m">Việc làm xác thực</div>
+                                    </div>
+                                    <div class="styles_textLayout__zW_jV">
+                                        <div class="styles_icTrusted__sjsMk"></div>
+                                        <div class="styles_text__gY28m">Phản hồi trong 7 ngày</div>
+                                    </div>
+                                </div>
+                                <div class="WrapperScroll_wrapperOverflow__BptX1">
+                                    <div class="tworow_catMatchingScroll__Ysir1 tworow_catMatchingScrollTwo__BiCfs wflw9x5">
+                                        <div class="AdItem_item___Rdm7 tworow_catMatchingScrollItem__JrTcP AdItem_itemEntitlement__OLyni i1jdhhry">
+                                            <div class="AdItem_wrapperLink__w2rsn">
+                                                <a class="AdItem_wrapperLinkHref__U9mX_" href="/viec-lam-quan-3-tp-ho-chi-minh/108168741.htm">
+                                                    <div class="styles_adTitle__US_h0">
+                                                        <div class="styles_protectLabel__xHoyr"></div>
+                                                        <div class="commonStyle_adTitleGrid__e3PyM styles_title__XeY4x">[Quận 3] Nhân Viên Sơ Chế Cua</div>
+                                                    </div>
+                                                    <div class="AdItem_wrapperLinkFooter__v9V5D">
+                                                        <div class="AdThumbnail_thumbnailWrapper__IrMJY">
+                                                            <div class="AdThumbnail_thumbnailImg__wHm_a AdThumbnail_thumbnailImgEntitlement__WbdYO ">
+                                                                <span style="box-sizing: border-box; display: block; overflow: hidden; width: initial; height: initial; background: none; opacity: 1; border: 0px; margin: 0px; padding: 0px; position: absolute; inset: 0px;">
+                                                                    <img alt="[Quận 3] Nhân Viên Sơ Chế Cua" src="/_next/image?url=https%3A%2F%2Fcdn.chotot.com%2FvCdd8q3VGg9KE9i12CakLKAK_b_M_u9TL-4rkHlpZeI%2Fpreset%3Alisting%2Fplain%2F96c87987b040448b0c8e8991822522dd-2801703986590126756.jpg&amp;w=3840&amp;q=75" decoding="async" data-nimg="fill" style="position: absolute; inset: 0px; box-sizing: border-box; padding: 0px; border: none; margin: auto; display: block; width: 0px; height: 0px; min-width: 100%; max-width: 100%; min-height: 100%; max-height: 100%; object-fit: cover;" sizes="100vw" srcset="/_next/image?url=https%3A%2F%2Fcdn.chotot.com%2FvCdd8q3VGg9KE9i12CakLKAK_b_M_u9TL-4rkHlpZeI%2Fpreset%3Alisting%2Fplain%2F96c87987b040448b0c8e8991822522dd-2801703986590126756.jpg&amp;w=640&amp;q=75 640w, /_next/image?url=https%3A%2F%2Fcdn.chotot.com%2FvCdd8q3VGg9KE9i12CakLKAK_b_M_u9TL-4rkHlpZeI%2Fpreset%3Alisting%2Fplain%2F96c87987b040448b0c8e8991822522dd-2801703986590126756.jpg&amp;w=750&amp;q=75 750w, /_next/image?url=https%3A%2F%2Fcdn.chotot.com%2FvCdd8q3VGg9KE9i12CakLKAK_b_M_u9TL-4rkHlpZeI%2Fpreset%3Alisting%2Fplain%2F96c87987b040448b0c8e8991822522dd-2801703986590126756.jpg&amp;w=828&amp;q=75 828w, /_next/image?url=https%3A%2F%2Fcdn.chotot.com%2FvCdd8q3VGg9KE9i12CakLKAK_b_M_u9TL-4rkHlpZeI%2Fpreset%3Alisting%2Fplain%2F96c87987b040448b0c8e8991822522dd-2801703986590126756.jpg&amp;w=1080&amp;q=75 1080w, /_next/image?url=https%3A%2F%2Fcdn.chotot.com%2FvCdd8q3VGg9KE9i12CakLKAK_b_M_u9TL-4rkHlpZeI%2Fpreset%3Alisting%2Fplain%2F96c87987b040448b0c8e8991822522dd-2801703986590126756.jpg&amp;w=1200&amp;q=75 1200w, /_next/image?url=https%3A%2F%2Fcdn.chotot.com%2FvCdd8q3VGg9KE9i12CakLKAK_b_M_u9TL-4rkHlpZeI%2Fpreset%3Alisting%2Fplain%2F96c87987b040448b0c8e8991822522dd-2801703986590126756.jpg&amp;w=1920&amp;q=75 1920w, /_next/image?url=https%3A%2F%2Fcdn.chotot.com%2FvCdd8q3VGg9KE9i12CakLKAK_b_M_u9TL-4rkHlpZeI%2Fpreset%3Alisting%2Fplain%2F96c87987b040448b0c8e8991822522dd-2801703986590126756.jpg&amp;w=2048&amp;q=75 2048w, /_next/image?url=https%3A%2F%2Fcdn.chotot.com%2FvCdd8q3VGg9KE9i12CakLKAK_b_M_u9TL-4rkHlpZeI%2Fpreset%3Alisting%2Fplain%2F96c87987b040448b0c8e8991822522dd-2801703986590126756.jpg&amp;w=3840&amp;q=75 3840w">
+                                                                    <noscript></noscript>
+                                                                </span>
+                                                            </div>
+                                                        </div>
+                                                        <div class="w1jbmbeu">
+                                                            <div class="AdBody_caption__iFaw_">
+                                                                <div><span class="AdBody_price__tUISH">Đến 8 triệu/tháng</span></div>
+                                                            </div>
+                                                            <div class="AdBody_footer__plkQC">
+                                                                <span class="AdBody_adItemPostedTime__rX677 AdBody_location__44t75 AdBody_adItemCompany__VC2qX"><span class="AdBody_text__zZZ87"><span class="AdBody_companyIcon__HjGd8"></span>BẾP TRUNG TÂM - CÔNG TY CỔ PHẦN PIZZA 4PS</span></span><span class="AdBody_adItemPostedTime__rX677 AdBody_location__44t75"><span class="AdBody_text__zZZ87"><span class="AdBody_locationIcon__qGgrm"></span>Tp Hồ Chí Minh</span></span>
+                                                                <div class="SaveAd_saveAdWrapper__2bqj7 AdItem_saveAd__yjv8V"><button id="btn_save_ad" type="button" class="SaveAd_btnSavedAd__zXXRD"><img width="16" src="https://static.chotot.com/storage/chotot-icons/next/save-ad.svg" alt="like"></button></div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </a>
+                                            </div>
+                                        </div>
+                                        <div class="AdItem_item___Rdm7 tworow_catMatchingScrollItem__JrTcP AdItem_itemEntitlement__OLyni i1jdhhry">
+                                            <div class="AdItem_wrapperLink__w2rsn">
+                                                <a class="AdItem_wrapperLinkHref__U9mX_" href="/viec-lam-quan-7-tp-ho-chi-minh/95988951.htm">
+                                                    <div class="styles_adTitle__US_h0">
+                                                        <div class="styles_protectLabel__xHoyr"></div>
+                                                        <div class="commonStyle_adTitleGrid__e3PyM styles_title__XeY4x">📣 Fapv Tuyển 1.000 Nữ Công Nhân - Quận 7</div>
+                                                    </div>
+                                                    <div class="AdItem_wrapperLinkFooter__v9V5D">
+                                                        <div class="AdThumbnail_thumbnailWrapper__IrMJY">
+                                                            <div class="AdThumbnail_thumbnailImg__wHm_a AdThumbnail_thumbnailImgEntitlement__WbdYO ">
+                                                                <span style="box-sizing: border-box; display: block; overflow: hidden; width: initial; height: initial; background: none; opacity: 1; border: 0px; margin: 0px; padding: 0px; position: absolute; inset: 0px;">
+                                                                    <img alt="📣 Fapv Tuyển 1.000 Nữ Công Nhân - Quận 7" src="/_next/image?url=https%3A%2F%2Fcdn.chotot.com%2FRf4ORHGqT6YpejFW0dyNJh1eeLUrmADL0Y7hFetiZbA%2Fpreset%3Alisting%2Fplain%2F6553cf69689d0b0f9d443f31dc914f57-2777069723495642234.jpg&amp;w=3840&amp;q=75" decoding="async" data-nimg="fill" style="position: absolute; inset: 0px; box-sizing: border-box; padding: 0px; border: none; margin: auto; display: block; width: 0px; height: 0px; min-width: 100%; max-width: 100%; min-height: 100%; max-height: 100%; object-fit: cover;" sizes="100vw" srcset="/_next/image?url=https%3A%2F%2Fcdn.chotot.com%2FRf4ORHGqT6YpejFW0dyNJh1eeLUrmADL0Y7hFetiZbA%2Fpreset%3Alisting%2Fplain%2F6553cf69689d0b0f9d443f31dc914f57-2777069723495642234.jpg&amp;w=640&amp;q=75 640w, /_next/image?url=https%3A%2F%2Fcdn.chotot.com%2FRf4ORHGqT6YpejFW0dyNJh1eeLUrmADL0Y7hFetiZbA%2Fpreset%3Alisting%2Fplain%2F6553cf69689d0b0f9d443f31dc914f57-2777069723495642234.jpg&amp;w=750&amp;q=75 750w, /_next/image?url=https%3A%2F%2Fcdn.chotot.com%2FRf4ORHGqT6YpejFW0dyNJh1eeLUrmADL0Y7hFetiZbA%2Fpreset%3Alisting%2Fplain%2F6553cf69689d0b0f9d443f31dc914f57-2777069723495642234.jpg&amp;w=828&amp;q=75 828w, /_next/image?url=https%3A%2F%2Fcdn.chotot.com%2FRf4ORHGqT6YpejFW0dyNJh1eeLUrmADL0Y7hFetiZbA%2Fpreset%3Alisting%2Fplain%2F6553cf69689d0b0f9d443f31dc914f57-2777069723495642234.jpg&amp;w=1080&amp;q=75 1080w, /_next/image?url=https%3A%2F%2Fcdn.chotot.com%2FRf4ORHGqT6YpejFW0dyNJh1eeLUrmADL0Y7hFetiZbA%2Fpreset%3Alisting%2Fplain%2F6553cf69689d0b0f9d443f31dc914f57-2777069723495642234.jpg&amp;w=1200&amp;q=75 1200w, /_next/image?url=https%3A%2F%2Fcdn.chotot.com%2FRf4ORHGqT6YpejFW0dyNJh1eeLUrmADL0Y7hFetiZbA%2Fpreset%3Alisting%2Fplain%2F6553cf69689d0b0f9d443f31dc914f57-2777069723495642234.jpg&amp;w=1920&amp;q=75 1920w, /_next/image?url=https%3A%2F%2Fcdn.chotot.com%2FRf4ORHGqT6YpejFW0dyNJh1eeLUrmADL0Y7hFetiZbA%2Fpreset%3Alisting%2Fplain%2F6553cf69689d0b0f9d443f31dc914f57-2777069723495642234.jpg&amp;w=2048&amp;q=75 2048w, /_next/image?url=https%3A%2F%2Fcdn.chotot.com%2FRf4ORHGqT6YpejFW0dyNJh1eeLUrmADL0Y7hFetiZbA%2Fpreset%3Alisting%2Fplain%2F6553cf69689d0b0f9d443f31dc914f57-2777069723495642234.jpg&amp;w=3840&amp;q=75 3840w">
+                                                                    <noscript></noscript>
+                                                                </span>
+                                                            </div>
+                                                        </div>
+                                                        <div class="w1jbmbeu">
+                                                            <div class="AdBody_caption__iFaw_">
+                                                                <div><span class="AdBody_price__tUISH">Đến 12 triệu/tháng</span></div>
+                                                            </div>
+                                                            <div class="AdBody_footer__plkQC">
+                                                                <span class="AdBody_adItemPostedTime__rX677 AdBody_location__44t75 AdBody_adItemCompany__VC2qX"><span class="AdBody_text__zZZ87"><span class="AdBody_companyIcon__HjGd8"></span>CÔNG TY TNHH FURUKAWA AUTOMOTIVE PARTS VN - FAPV</span></span><span class="AdBody_adItemPostedTime__rX677 AdBody_location__44t75"><span class="AdBody_text__zZZ87"><span class="AdBody_locationIcon__qGgrm"></span>Tp Hồ Chí Minh</span></span>
+                                                                <div class="SaveAd_saveAdWrapper__2bqj7 AdItem_saveAd__yjv8V"><button id="btn_save_ad" type="button" class="SaveAd_btnSavedAd__zXXRD"><img width="16" src="https://static.chotot.com/storage/chotot-icons/next/save-ad.svg" alt="like"></button></div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </a>
+                                            </div>
+                                        </div>
+                                        <div class="AdItem_item___Rdm7 tworow_catMatchingScrollItem__JrTcP AdItem_itemEntitlement__OLyni i1jdhhry">
+                                            <div class="AdItem_wrapperLink__w2rsn">
+                                                <a class="AdItem_wrapperLinkHref__U9mX_" href="/viec-lam-quan-long-bien-ha-noi/109260452.htm">
+                                                    <div class="styles_adTitle__US_h0">
+                                                        <div class="styles_protectLabel__xHoyr"></div>
+                                                        <div class="commonStyle_adTitleGrid__e3PyM styles_title__XeY4x">179 Nhân Viên Sắp Xếp Hàng Hóa Trong Kho</div>
+                                                    </div>
+                                                    <div class="AdItem_wrapperLinkFooter__v9V5D">
+                                                        <div class="AdThumbnail_thumbnailWrapper__IrMJY">
+                                                            <div class="AdThumbnail_thumbnailImg__wHm_a AdThumbnail_thumbnailImgEntitlement__WbdYO ">
+                                                                <span style="box-sizing: border-box; display: block; overflow: hidden; width: initial; height: initial; background: none; opacity: 1; border: 0px; margin: 0px; padding: 0px; position: absolute; inset: 0px;">
+                                                                    <img alt="179 Nhân Viên Sắp Xếp Hàng Hóa Trong Kho" src="/_next/image?url=https%3A%2F%2Fcdn.chotot.com%2Fhz-Kbc7T_ttvi39vfZ9yZ871FX-Ch0QjBlh8CTOs8jY%2Fpreset%3Alisting%2Fplain%2F187f1ce1ccf0d99e88f5c2dd26078d70-2831753583678975404.jpg&amp;w=3840&amp;q=75" decoding="async" data-nimg="fill" style="position: absolute; inset: 0px; box-sizing: border-box; padding: 0px; border: none; margin: auto; display: block; width: 0px; height: 0px; min-width: 100%; max-width: 100%; min-height: 100%; max-height: 100%; object-fit: cover;" sizes="100vw" srcset="/_next/image?url=https%3A%2F%2Fcdn.chotot.com%2Fhz-Kbc7T_ttvi39vfZ9yZ871FX-Ch0QjBlh8CTOs8jY%2Fpreset%3Alisting%2Fplain%2F187f1ce1ccf0d99e88f5c2dd26078d70-2831753583678975404.jpg&amp;w=640&amp;q=75 640w, /_next/image?url=https%3A%2F%2Fcdn.chotot.com%2Fhz-Kbc7T_ttvi39vfZ9yZ871FX-Ch0QjBlh8CTOs8jY%2Fpreset%3Alisting%2Fplain%2F187f1ce1ccf0d99e88f5c2dd26078d70-2831753583678975404.jpg&amp;w=750&amp;q=75 750w, /_next/image?url=https%3A%2F%2Fcdn.chotot.com%2Fhz-Kbc7T_ttvi39vfZ9yZ871FX-Ch0QjBlh8CTOs8jY%2Fpreset%3Alisting%2Fplain%2F187f1ce1ccf0d99e88f5c2dd26078d70-2831753583678975404.jpg&amp;w=828&amp;q=75 828w, /_next/image?url=https%3A%2F%2Fcdn.chotot.com%2Fhz-Kbc7T_ttvi39vfZ9yZ871FX-Ch0QjBlh8CTOs8jY%2Fpreset%3Alisting%2Fplain%2F187f1ce1ccf0d99e88f5c2dd26078d70-2831753583678975404.jpg&amp;w=1080&amp;q=75 1080w, /_next/image?url=https%3A%2F%2Fcdn.chotot.com%2Fhz-Kbc7T_ttvi39vfZ9yZ871FX-Ch0QjBlh8CTOs8jY%2Fpreset%3Alisting%2Fplain%2F187f1ce1ccf0d99e88f5c2dd26078d70-2831753583678975404.jpg&amp;w=1200&amp;q=75 1200w, /_next/image?url=https%3A%2F%2Fcdn.chotot.com%2Fhz-Kbc7T_ttvi39vfZ9yZ871FX-Ch0QjBlh8CTOs8jY%2Fpreset%3Alisting%2Fplain%2F187f1ce1ccf0d99e88f5c2dd26078d70-2831753583678975404.jpg&amp;w=1920&amp;q=75 1920w, /_next/image?url=https%3A%2F%2Fcdn.chotot.com%2Fhz-Kbc7T_ttvi39vfZ9yZ871FX-Ch0QjBlh8CTOs8jY%2Fpreset%3Alisting%2Fplain%2F187f1ce1ccf0d99e88f5c2dd26078d70-2831753583678975404.jpg&amp;w=2048&amp;q=75 2048w, /_next/image?url=https%3A%2F%2Fcdn.chotot.com%2Fhz-Kbc7T_ttvi39vfZ9yZ871FX-Ch0QjBlh8CTOs8jY%2Fpreset%3Alisting%2Fplain%2F187f1ce1ccf0d99e88f5c2dd26078d70-2831753583678975404.jpg&amp;w=3840&amp;q=75 3840w">
+                                                                    <noscript></noscript>
+                                                                </span>
+                                                            </div>
+                                                        </div>
+                                                        <div class="w1jbmbeu">
+                                                            <div class="AdBody_caption__iFaw_">
+                                                                <div><span class="AdBody_price__tUISH">Từ 6 triệu/tháng</span></div>
+                                                            </div>
+                                                            <div class="AdBody_footer__plkQC">
+                                                                <span class="AdBody_adItemPostedTime__rX677 AdBody_location__44t75 AdBody_adItemCompany__VC2qX"><span class="AdBody_text__zZZ87"><span class="AdBody_companyIcon__HjGd8"></span>Manpower Hà Nội tuyển dụng</span></span><span class="AdBody_adItemPostedTime__rX677 AdBody_location__44t75"><span class="AdBody_text__zZZ87"><span class="AdBody_locationIcon__qGgrm"></span>Hà Nội</span></span>
+                                                                <div class="SaveAd_saveAdWrapper__2bqj7 AdItem_saveAd__yjv8V"><button id="btn_save_ad" type="button" class="SaveAd_btnSavedAd__zXXRD"><img width="16" src="https://static.chotot.com/storage/chotot-icons/next/save-ad.svg" alt="like"></button></div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </a>
+                                            </div>
+                                        </div>
+                                        <div class="AdItem_item___Rdm7 tworow_catMatchingScrollItem__JrTcP AdItem_itemEntitlement__OLyni i1jdhhry">
+                                            <div class="AdItem_wrapperLink__w2rsn">
+                                                <a class="AdItem_wrapperLinkHref__U9mX_" href="/viec-lam-quan-long-bien-ha-noi/109260450.htm">
+                                                    <div class="styles_adTitle__US_h0">
+                                                        <div class="styles_protectLabel__xHoyr"></div>
+                                                        <div class="commonStyle_adTitleGrid__e3PyM styles_title__XeY4x">182 Nhân Viên Xử Lý, Sắp Xếp Hàng Trong Kho</div>
+                                                    </div>
+                                                    <div class="AdItem_wrapperLinkFooter__v9V5D">
+                                                        <div class="AdThumbnail_thumbnailWrapper__IrMJY">
+                                                            <div class="AdThumbnail_thumbnailImg__wHm_a AdThumbnail_thumbnailImgEntitlement__WbdYO ">
+                                                                <span style="box-sizing: border-box; display: block; overflow: hidden; width: initial; height: initial; background: none; opacity: 1; border: 0px; margin: 0px; padding: 0px; position: absolute; inset: 0px;">
+                                                                    <img alt="182 Nhân Viên Xử Lý, Sắp Xếp Hàng Trong Kho" src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" decoding="async" data-nimg="fill" style="position: absolute; inset: 0px; box-sizing: border-box; padding: 0px; border: none; margin: auto; display: block; width: 0px; height: 0px; min-width: 100%; max-width: 100%; min-height: 100%; max-height: 100%; object-fit: cover;">
+                                                                    <noscript></noscript>
+                                                                </span>
+                                                            </div>
+                                                        </div>
+                                                        <div class="w1jbmbeu">
+                                                            <div class="AdBody_caption__iFaw_">
+                                                                <div><span class="AdBody_price__tUISH">Thương lượng</span></div>
+                                                            </div>
+                                                            <div class="AdBody_footer__plkQC">
+                                                                <span class="AdBody_adItemPostedTime__rX677 AdBody_location__44t75 AdBody_adItemCompany__VC2qX"><span class="AdBody_text__zZZ87"><span class="AdBody_companyIcon__HjGd8"></span>Vp Manpower Hà Nội tuyển dụng</span></span><span class="AdBody_adItemPostedTime__rX677 AdBody_location__44t75"><span class="AdBody_text__zZZ87"><span class="AdBody_locationIcon__qGgrm"></span>Hà Nội</span></span>
+                                                                <div class="SaveAd_saveAdWrapper__2bqj7 AdItem_saveAd__yjv8V"><button id="btn_save_ad" type="button" class="SaveAd_btnSavedAd__zXXRD"><img width="16" src="https://static.chotot.com/storage/chotot-icons/next/save-ad.svg" alt="like"></button></div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </a>
+                                            </div>
+                                        </div>
+                                        <div class="AdItem_item___Rdm7 tworow_catMatchingScrollItem__JrTcP AdItem_itemEntitlement__OLyni i1jdhhry">
+                                            <div class="AdItem_wrapperLink__w2rsn">
+                                                <a class="AdItem_wrapperLinkHref__U9mX_" href="/viec-lam-quan-long-bien-ha-noi/109260445.htm">
+                                                    <div class="styles_adTitle__US_h0">
+                                                        <div class="styles_protectLabel__xHoyr"></div>
+                                                        <div class="commonStyle_adTitleGrid__e3PyM styles_title__XeY4x">Tuyển Ngay 184 Nhân Viên Phân Loại Hàng Hóa</div>
+                                                    </div>
+                                                    <div class="AdItem_wrapperLinkFooter__v9V5D">
+                                                        <div class="AdThumbnail_thumbnailWrapper__IrMJY">
+                                                            <div class="AdThumbnail_thumbnailImg__wHm_a AdThumbnail_thumbnailImgEntitlement__WbdYO ">
+                                                                <span style="box-sizing: border-box; display: block; overflow: hidden; width: initial; height: initial; background: none; opacity: 1; border: 0px; margin: 0px; padding: 0px; position: absolute; inset: 0px;">
+                                                                    <img alt="Tuyển Ngay 184 Nhân Viên Phân Loại Hàng Hóa" src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" decoding="async" data-nimg="fill" style="position: absolute; inset: 0px; box-sizing: border-box; padding: 0px; border: none; margin: auto; display: block; width: 0px; height: 0px; min-width: 100%; max-width: 100%; min-height: 100%; max-height: 100%; object-fit: cover;">
+                                                                    <noscript></noscript>
+                                                                </span>
+                                                            </div>
+                                                        </div>
+                                                        <div class="w1jbmbeu">
+                                                            <div class="AdBody_caption__iFaw_">
+                                                                <div><span class="AdBody_price__tUISH">Thương lượng</span></div>
+                                                            </div>
+                                                            <div class="AdBody_footer__plkQC">
+                                                                <span class="AdBody_adItemPostedTime__rX677 AdBody_location__44t75 AdBody_adItemCompany__VC2qX"><span class="AdBody_text__zZZ87"><span class="AdBody_companyIcon__HjGd8"></span>Manpower Hà Nội tuyển dụng</span></span><span class="AdBody_adItemPostedTime__rX677 AdBody_location__44t75"><span class="AdBody_text__zZZ87"><span class="AdBody_locationIcon__qGgrm"></span>Hà Nội</span></span>
+                                                                <div class="SaveAd_saveAdWrapper__2bqj7 AdItem_saveAd__yjv8V"><button id="btn_save_ad" type="button" class="SaveAd_btnSavedAd__zXXRD"><img width="16" src="https://static.chotot.com/storage/chotot-icons/next/save-ad.svg" alt="like"></button></div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </a>
+                                            </div>
+                                        </div>
+                                        <div class="AdItem_item___Rdm7 tworow_catMatchingScrollItem__JrTcP AdItem_itemEntitlement__OLyni i1jdhhry">
+                                            <div class="AdItem_wrapperLink__w2rsn">
+                                                <a class="AdItem_wrapperLinkHref__U9mX_" href="/viec-lam-quan-long-bien-ha-noi/109260444.htm">
+                                                    <div class="styles_adTitle__US_h0">
+                                                        <div class="styles_protectLabel__xHoyr"></div>
+                                                        <div class="commonStyle_adTitleGrid__e3PyM styles_title__XeY4x">Cần Tuyển 178 Cn Phân Loại, Sắp Xếp Hàng Hóa</div>
+                                                    </div>
+                                                    <div class="AdItem_wrapperLinkFooter__v9V5D">
+                                                        <div class="AdThumbnail_thumbnailWrapper__IrMJY">
+                                                            <div class="AdThumbnail_thumbnailImg__wHm_a AdThumbnail_thumbnailImgEntitlement__WbdYO ">
+                                                                <span style="box-sizing: border-box; display: block; overflow: hidden; width: initial; height: initial; background: none; opacity: 1; border: 0px; margin: 0px; padding: 0px; position: absolute; inset: 0px;">
+                                                                    <img alt="Cần Tuyển 178 Cn Phân Loại, Sắp Xếp Hàng Hóa" src="/_next/image?url=https%3A%2F%2Fcdn.chotot.com%2FXtu6oFwqPjbXolEX7wrA93JL45RbIqs5JM0i8xjZZu4%2Fpreset%3Alisting%2Fplain%2F5e1fab3b5a7da433f229743cdd49acff-2834068627664176758.jpg&amp;w=3840&amp;q=75" decoding="async" data-nimg="fill" style="position: absolute; inset: 0px; box-sizing: border-box; padding: 0px; border: none; margin: auto; display: block; width: 0px; height: 0px; min-width: 100%; max-width: 100%; min-height: 100%; max-height: 100%; object-fit: cover;" sizes="100vw" srcset="/_next/image?url=https%3A%2F%2Fcdn.chotot.com%2FXtu6oFwqPjbXolEX7wrA93JL45RbIqs5JM0i8xjZZu4%2Fpreset%3Alisting%2Fplain%2F5e1fab3b5a7da433f229743cdd49acff-2834068627664176758.jpg&amp;w=640&amp;q=75 640w, /_next/image?url=https%3A%2F%2Fcdn.chotot.com%2FXtu6oFwqPjbXolEX7wrA93JL45RbIqs5JM0i8xjZZu4%2Fpreset%3Alisting%2Fplain%2F5e1fab3b5a7da433f229743cdd49acff-2834068627664176758.jpg&amp;w=750&amp;q=75 750w, /_next/image?url=https%3A%2F%2Fcdn.chotot.com%2FXtu6oFwqPjbXolEX7wrA93JL45RbIqs5JM0i8xjZZu4%2Fpreset%3Alisting%2Fplain%2F5e1fab3b5a7da433f229743cdd49acff-2834068627664176758.jpg&amp;w=828&amp;q=75 828w, /_next/image?url=https%3A%2F%2Fcdn.chotot.com%2FXtu6oFwqPjbXolEX7wrA93JL45RbIqs5JM0i8xjZZu4%2Fpreset%3Alisting%2Fplain%2F5e1fab3b5a7da433f229743cdd49acff-2834068627664176758.jpg&amp;w=1080&amp;q=75 1080w, /_next/image?url=https%3A%2F%2Fcdn.chotot.com%2FXtu6oFwqPjbXolEX7wrA93JL45RbIqs5JM0i8xjZZu4%2Fpreset%3Alisting%2Fplain%2F5e1fab3b5a7da433f229743cdd49acff-2834068627664176758.jpg&amp;w=1200&amp;q=75 1200w, /_next/image?url=https%3A%2F%2Fcdn.chotot.com%2FXtu6oFwqPjbXolEX7wrA93JL45RbIqs5JM0i8xjZZu4%2Fpreset%3Alisting%2Fplain%2F5e1fab3b5a7da433f229743cdd49acff-2834068627664176758.jpg&amp;w=1920&amp;q=75 1920w, /_next/image?url=https%3A%2F%2Fcdn.chotot.com%2FXtu6oFwqPjbXolEX7wrA93JL45RbIqs5JM0i8xjZZu4%2Fpreset%3Alisting%2Fplain%2F5e1fab3b5a7da433f229743cdd49acff-2834068627664176758.jpg&amp;w=2048&amp;q=75 2048w, /_next/image?url=https%3A%2F%2Fcdn.chotot.com%2FXtu6oFwqPjbXolEX7wrA93JL45RbIqs5JM0i8xjZZu4%2Fpreset%3Alisting%2Fplain%2F5e1fab3b5a7da433f229743cdd49acff-2834068627664176758.jpg&amp;w=3840&amp;q=75 3840w">
+                                                                    <noscript></noscript>
+                                                                </span>
+                                                            </div>
+                                                        </div>
+                                                        <div class="w1jbmbeu">
+                                                            <div class="AdBody_caption__iFaw_">
+                                                                <div><span class="AdBody_price__tUISH">Từ 6 triệu/tháng</span></div>
+                                                            </div>
+                                                            <div class="AdBody_footer__plkQC">
+                                                                <span class="AdBody_adItemPostedTime__rX677 AdBody_location__44t75 AdBody_adItemCompany__VC2qX"><span class="AdBody_text__zZZ87"><span class="AdBody_companyIcon__HjGd8"></span>Văn phòng tuyển dung Manpower - Hà Nội</span></span><span class="AdBody_adItemPostedTime__rX677 AdBody_location__44t75"><span class="AdBody_text__zZZ87"><span class="AdBody_locationIcon__qGgrm"></span>Hà Nội</span></span>
+                                                                <div class="SaveAd_saveAdWrapper__2bqj7 AdItem_saveAd__yjv8V"><button id="btn_save_ad" type="button" class="SaveAd_btnSavedAd__zXXRD"><img width="16" src="https://static.chotot.com/storage/chotot-icons/next/save-ad.svg" alt="like"></button></div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </a>
+                                            </div>
+                                        </div>
+                                        <div class="AdItem_item___Rdm7 tworow_catMatchingScrollItem__JrTcP AdItem_itemEntitlement__OLyni i1jdhhry">
+                                            <div class="AdItem_wrapperLink__w2rsn">
+                                                <a class="AdItem_wrapperLinkHref__U9mX_" href="/viec-lam-quan-long-bien-ha-noi/109260443.htm">
+                                                    <div class="styles_adTitle__US_h0">
+                                                        <div class="styles_protectLabel__xHoyr"></div>
+                                                        <div class="commonStyle_adTitleGrid__e3PyM styles_title__XeY4x">176 Nhân Viên Kho Hàng Tại Bắc Ninh - Hà Nội</div>
+                                                    </div>
+                                                    <div class="AdItem_wrapperLinkFooter__v9V5D">
+                                                        <div class="AdThumbnail_thumbnailWrapper__IrMJY">
+                                                            <div class="AdThumbnail_thumbnailImg__wHm_a AdThumbnail_thumbnailImgEntitlement__WbdYO ">
+                                                                <span style="box-sizing: border-box; display: block; overflow: hidden; width: initial; height: initial; background: none; opacity: 1; border: 0px; margin: 0px; padding: 0px; position: absolute; inset: 0px;">
+                                                                    <img alt="176 Nhân Viên Kho Hàng Tại Bắc Ninh - Hà Nội" src="/_next/image?url=https%3A%2F%2Fcdn.chotot.com%2FYOZsHaG4XmdcySqphG3P7GjbkKdrDETAtMRFsJKM6KM%2Fpreset%3Alisting%2Fplain%2F06f5070db970503caa3addca21ead296-2832769256806227429.jpg&amp;w=3840&amp;q=75" decoding="async" data-nimg="fill" style="position: absolute; inset: 0px; box-sizing: border-box; padding: 0px; border: none; margin: auto; display: block; width: 0px; height: 0px; min-width: 100%; max-width: 100%; min-height: 100%; max-height: 100%; object-fit: cover;" sizes="100vw" srcset="/_next/image?url=https%3A%2F%2Fcdn.chotot.com%2FYOZsHaG4XmdcySqphG3P7GjbkKdrDETAtMRFsJKM6KM%2Fpreset%3Alisting%2Fplain%2F06f5070db970503caa3addca21ead296-2832769256806227429.jpg&amp;w=640&amp;q=75 640w, /_next/image?url=https%3A%2F%2Fcdn.chotot.com%2FYOZsHaG4XmdcySqphG3P7GjbkKdrDETAtMRFsJKM6KM%2Fpreset%3Alisting%2Fplain%2F06f5070db970503caa3addca21ead296-2832769256806227429.jpg&amp;w=750&amp;q=75 750w, /_next/image?url=https%3A%2F%2Fcdn.chotot.com%2FYOZsHaG4XmdcySqphG3P7GjbkKdrDETAtMRFsJKM6KM%2Fpreset%3Alisting%2Fplain%2F06f5070db970503caa3addca21ead296-2832769256806227429.jpg&amp;w=828&amp;q=75 828w, /_next/image?url=https%3A%2F%2Fcdn.chotot.com%2FYOZsHaG4XmdcySqphG3P7GjbkKdrDETAtMRFsJKM6KM%2Fpreset%3Alisting%2Fplain%2F06f5070db970503caa3addca21ead296-2832769256806227429.jpg&amp;w=1080&amp;q=75 1080w, /_next/image?url=https%3A%2F%2Fcdn.chotot.com%2FYOZsHaG4XmdcySqphG3P7GjbkKdrDETAtMRFsJKM6KM%2Fpreset%3Alisting%2Fplain%2F06f5070db970503caa3addca21ead296-2832769256806227429.jpg&amp;w=1200&amp;q=75 1200w, /_next/image?url=https%3A%2F%2Fcdn.chotot.com%2FYOZsHaG4XmdcySqphG3P7GjbkKdrDETAtMRFsJKM6KM%2Fpreset%3Alisting%2Fplain%2F06f5070db970503caa3addca21ead296-2832769256806227429.jpg&amp;w=1920&amp;q=75 1920w, /_next/image?url=https%3A%2F%2Fcdn.chotot.com%2FYOZsHaG4XmdcySqphG3P7GjbkKdrDETAtMRFsJKM6KM%2Fpreset%3Alisting%2Fplain%2F06f5070db970503caa3addca21ead296-2832769256806227429.jpg&amp;w=2048&amp;q=75 2048w, /_next/image?url=https%3A%2F%2Fcdn.chotot.com%2FYOZsHaG4XmdcySqphG3P7GjbkKdrDETAtMRFsJKM6KM%2Fpreset%3Alisting%2Fplain%2F06f5070db970503caa3addca21ead296-2832769256806227429.jpg&amp;w=3840&amp;q=75 3840w">
+                                                                    <noscript></noscript>
+                                                                </span>
+                                                            </div>
+                                                        </div>
+                                                        <div class="w1jbmbeu">
+                                                            <div class="AdBody_caption__iFaw_">
+                                                                <div><span class="AdBody_price__tUISH">Từ 6 triệu/tháng</span></div>
+                                                            </div>
+                                                            <div class="AdBody_footer__plkQC">
+                                                                <span class="AdBody_adItemPostedTime__rX677 AdBody_location__44t75 AdBody_adItemCompany__VC2qX"><span class="AdBody_text__zZZ87"><span class="AdBody_companyIcon__HjGd8"></span>Công ty TNHH Manpower - Hà Nội</span></span><span class="AdBody_adItemPostedTime__rX677 AdBody_location__44t75"><span class="AdBody_text__zZZ87"><span class="AdBody_locationIcon__qGgrm"></span>Hà Nội</span></span>
+                                                                <div class="SaveAd_saveAdWrapper__2bqj7 AdItem_saveAd__yjv8V"><button id="btn_save_ad" type="button" class="SaveAd_btnSavedAd__zXXRD"><img width="16" src="https://static.chotot.com/storage/chotot-icons/next/save-ad.svg" alt="like"></button></div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </a>
+                                            </div>
+                                        </div>
+                                        <div class="AdItem_item___Rdm7 tworow_catMatchingScrollItem__JrTcP AdItem_itemEntitlement__OLyni i1jdhhry">
+                                            <div class="AdItem_wrapperLink__w2rsn">
+                                                <a class="AdItem_wrapperLinkHref__U9mX_" href="/viec-lam-quan-long-bien-ha-noi/109260441.htm">
+                                                    <div class="styles_adTitle__US_h0">
+                                                        <div class="styles_protectLabel__xHoyr"></div>
+                                                        <div class="commonStyle_adTitleGrid__e3PyM styles_title__XeY4x">Tuyển 173 Công Nhân Sắp Xếp Hàng Hóa</div>
+                                                    </div>
+                                                    <div class="AdItem_wrapperLinkFooter__v9V5D">
+                                                        <div class="AdThumbnail_thumbnailWrapper__IrMJY">
+                                                            <div class="AdThumbnail_thumbnailImg__wHm_a AdThumbnail_thumbnailImgEntitlement__WbdYO ">
+                                                                <span style="box-sizing: border-box; display: block; overflow: hidden; width: initial; height: initial; background: none; opacity: 1; border: 0px; margin: 0px; padding: 0px; position: absolute; inset: 0px;">
+                                                                    <img alt="Tuyển 173 Công Nhân Sắp Xếp Hàng Hóa" src="/_next/image?url=https%3A%2F%2Fcdn.chotot.com%2F0gYdWnhZgOpMu9a6yij43eOI1IIBbwtLGpD2F29Rh-M%2Fpreset%3Alisting%2Fplain%2F510ea9f2269cc4e955157fbe8e5270e4-2834071264941685245.jpg&amp;w=3840&amp;q=75" decoding="async" data-nimg="fill" style="position: absolute; inset: 0px; box-sizing: border-box; padding: 0px; border: none; margin: auto; display: block; width: 0px; height: 0px; min-width: 100%; max-width: 100%; min-height: 100%; max-height: 100%; object-fit: cover;" sizes="100vw" srcset="/_next/image?url=https%3A%2F%2Fcdn.chotot.com%2F0gYdWnhZgOpMu9a6yij43eOI1IIBbwtLGpD2F29Rh-M%2Fpreset%3Alisting%2Fplain%2F510ea9f2269cc4e955157fbe8e5270e4-2834071264941685245.jpg&amp;w=640&amp;q=75 640w, /_next/image?url=https%3A%2F%2Fcdn.chotot.com%2F0gYdWnhZgOpMu9a6yij43eOI1IIBbwtLGpD2F29Rh-M%2Fpreset%3Alisting%2Fplain%2F510ea9f2269cc4e955157fbe8e5270e4-2834071264941685245.jpg&amp;w=750&amp;q=75 750w, /_next/image?url=https%3A%2F%2Fcdn.chotot.com%2F0gYdWnhZgOpMu9a6yij43eOI1IIBbwtLGpD2F29Rh-M%2Fpreset%3Alisting%2Fplain%2F510ea9f2269cc4e955157fbe8e5270e4-2834071264941685245.jpg&amp;w=828&amp;q=75 828w, /_next/image?url=https%3A%2F%2Fcdn.chotot.com%2F0gYdWnhZgOpMu9a6yij43eOI1IIBbwtLGpD2F29Rh-M%2Fpreset%3Alisting%2Fplain%2F510ea9f2269cc4e955157fbe8e5270e4-2834071264941685245.jpg&amp;w=1080&amp;q=75 1080w, /_next/image?url=https%3A%2F%2Fcdn.chotot.com%2F0gYdWnhZgOpMu9a6yij43eOI1IIBbwtLGpD2F29Rh-M%2Fpreset%3Alisting%2Fplain%2F510ea9f2269cc4e955157fbe8e5270e4-2834071264941685245.jpg&amp;w=1200&amp;q=75 1200w, /_next/image?url=https%3A%2F%2Fcdn.chotot.com%2F0gYdWnhZgOpMu9a6yij43eOI1IIBbwtLGpD2F29Rh-M%2Fpreset%3Alisting%2Fplain%2F510ea9f2269cc4e955157fbe8e5270e4-2834071264941685245.jpg&amp;w=1920&amp;q=75 1920w, /_next/image?url=https%3A%2F%2Fcdn.chotot.com%2F0gYdWnhZgOpMu9a6yij43eOI1IIBbwtLGpD2F29Rh-M%2Fpreset%3Alisting%2Fplain%2F510ea9f2269cc4e955157fbe8e5270e4-2834071264941685245.jpg&amp;w=2048&amp;q=75 2048w, /_next/image?url=https%3A%2F%2Fcdn.chotot.com%2F0gYdWnhZgOpMu9a6yij43eOI1IIBbwtLGpD2F29Rh-M%2Fpreset%3Alisting%2Fplain%2F510ea9f2269cc4e955157fbe8e5270e4-2834071264941685245.jpg&amp;w=3840&amp;q=75 3840w">
+                                                                    <noscript></noscript>
+                                                                </span>
+                                                            </div>
+                                                        </div>
+                                                        <div class="w1jbmbeu">
+                                                            <div class="AdBody_caption__iFaw_">
+                                                                <div><span class="AdBody_price__tUISH">Từ 6 triệu/tháng</span></div>
+                                                            </div>
+                                                            <div class="AdBody_footer__plkQC">
+                                                                <span class="AdBody_adItemPostedTime__rX677 AdBody_location__44t75 AdBody_adItemCompany__VC2qX"><span class="AdBody_text__zZZ87"><span class="AdBody_companyIcon__HjGd8"></span>VP Manpower Hà Nội</span></span><span class="AdBody_adItemPostedTime__rX677 AdBody_location__44t75"><span class="AdBody_text__zZZ87"><span class="AdBody_locationIcon__qGgrm"></span>Hà Nội</span></span>
+                                                                <div class="SaveAd_saveAdWrapper__2bqj7 AdItem_saveAd__yjv8V"><button id="btn_save_ad" type="button" class="SaveAd_btnSavedAd__zXXRD"><img width="16" src="https://static.chotot.com/storage/chotot-icons/next/save-ad.svg" alt="like"></button></div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </a>
+                                            </div>
+                                        </div>
+                                        <div class="AdItem_item___Rdm7 tworow_catMatchingScrollItem__JrTcP AdItem_itemEntitlement__OLyni i1jdhhry">
+                                            <div class="AdItem_wrapperLink__w2rsn">
+                                                <a class="AdItem_wrapperLinkHref__U9mX_" href="/viec-lam-quan-long-bien-ha-noi/109260440.htm">
+                                                    <div class="styles_adTitle__US_h0">
+                                                        <div class="styles_protectLabel__xHoyr"></div>
+                                                        <div class="commonStyle_adTitleGrid__e3PyM styles_title__XeY4x">171 Công Nhân Phân Loại Hàng Hóa</div>
+                                                    </div>
+                                                    <div class="AdItem_wrapperLinkFooter__v9V5D">
+                                                        <div class="AdThumbnail_thumbnailWrapper__IrMJY">
+                                                            <div class="AdThumbnail_thumbnailImg__wHm_a AdThumbnail_thumbnailImgEntitlement__WbdYO ">
+                                                                <span style="box-sizing: border-box; display: block; overflow: hidden; width: initial; height: initial; background: none; opacity: 1; border: 0px; margin: 0px; padding: 0px; position: absolute; inset: 0px;">
+                                                                    <img alt="171 Công Nhân Phân Loại Hàng Hóa" src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" decoding="async" data-nimg="fill" style="position: absolute; inset: 0px; box-sizing: border-box; padding: 0px; border: none; margin: auto; display: block; width: 0px; height: 0px; min-width: 100%; max-width: 100%; min-height: 100%; max-height: 100%; object-fit: cover;">
+                                                                    <noscript></noscript>
+                                                                </span>
+                                                            </div>
+                                                        </div>
+                                                        <div class="w1jbmbeu">
+                                                            <div class="AdBody_caption__iFaw_">
+                                                                <div><span class="AdBody_price__tUISH">Từ 6 triệu/tháng</span></div>
+                                                            </div>
+                                                            <div class="AdBody_footer__plkQC">
+                                                                <span class="AdBody_adItemPostedTime__rX677 AdBody_location__44t75 AdBody_adItemCompany__VC2qX"><span class="AdBody_text__zZZ87"><span class="AdBody_companyIcon__HjGd8"></span>Manpower Hà Nội</span></span><span class="AdBody_adItemPostedTime__rX677 AdBody_location__44t75"><span class="AdBody_text__zZZ87"><span class="AdBody_locationIcon__qGgrm"></span>Hà Nội</span></span>
+                                                                <div class="SaveAd_saveAdWrapper__2bqj7 AdItem_saveAd__yjv8V"><button id="btn_save_ad" type="button" class="SaveAd_btnSavedAd__zXXRD"><img width="16" src="https://static.chotot.com/storage/chotot-icons/next/save-ad.svg" alt="like"></button></div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </a>
+                                            </div>
+                                        </div>
+                                        <div class="AdItem_item___Rdm7 tworow_catMatchingScrollItem__JrTcP AdItem_itemEntitlement__OLyni i1jdhhry">
+                                            <div class="AdItem_wrapperLink__w2rsn">
+                                                <a class="AdItem_wrapperLinkHref__U9mX_" href="/viec-lam-quan-3-tp-ho-chi-minh/107043313.htm">
+                                                    <div class="styles_adTitle__US_h0">
+                                                        <div class="styles_protectLabel__xHoyr"></div>
+                                                        <div class="commonStyle_adTitleGrid__e3PyM styles_title__XeY4x">[Quận 3] Phụ Bếp - Bếp Trung Tâm</div>
+                                                    </div>
+                                                    <div class="AdItem_wrapperLinkFooter__v9V5D">
+                                                        <div class="AdThumbnail_thumbnailWrapper__IrMJY">
+                                                            <div class="AdThumbnail_thumbnailImg__wHm_a AdThumbnail_thumbnailImgEntitlement__WbdYO ">
+                                                                <span style="box-sizing: border-box; display: block; overflow: hidden; width: initial; height: initial; background: none; opacity: 1; border: 0px; margin: 0px; padding: 0px; position: absolute; inset: 0px;">
+                                                                    <img alt="[Quận 3] Phụ Bếp - Bếp Trung Tâm" src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" decoding="async" data-nimg="fill" style="position: absolute; inset: 0px; box-sizing: border-box; padding: 0px; border: none; margin: auto; display: block; width: 0px; height: 0px; min-width: 100%; max-width: 100%; min-height: 100%; max-height: 100%; object-fit: cover;">
+                                                                    <noscript></noscript>
+                                                                </span>
+                                                            </div>
+                                                        </div>
+                                                        <div class="w1jbmbeu">
+                                                            <div class="AdBody_caption__iFaw_">
+                                                                <div><span class="AdBody_price__tUISH">Từ 10 triệu/tháng</span></div>
+                                                            </div>
+                                                            <div class="AdBody_footer__plkQC">
+                                                                <span class="AdBody_adItemPostedTime__rX677 AdBody_location__44t75 AdBody_adItemCompany__VC2qX"><span class="AdBody_text__zZZ87"><span class="AdBody_companyIcon__HjGd8"></span>BẾP TRUNG TÂM - CÔNG TY CỔ PHẦN PIZZA 4PS</span></span><span class="AdBody_adItemPostedTime__rX677 AdBody_location__44t75"><span class="AdBody_text__zZZ87"><span class="AdBody_locationIcon__qGgrm"></span>Tp Hồ Chí Minh</span></span>
+                                                                <div class="SaveAd_saveAdWrapper__2bqj7 AdItem_saveAd__yjv8V"><button id="btn_save_ad" type="button" class="SaveAd_btnSavedAd__zXXRD"><img width="16" src="https://static.chotot.com/storage/chotot-icons/next/save-ad.svg" alt="like"></button></div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <i class="i-prev WrapperScroll_iconPrev__8Mj8Y false" tabindex="0" role="button" aria-label="Prev"></i><i class="i-next WrapperScroll_iconNext__dU_oO WrapperScroll_active__YmiA6" tabindex="0" role="button" aria-label="Next"></i>
+                                </div>
+                                <div class="w1sgdazv">
+                                    <button type="button">
+                                        Xem thêm các việc làm  khác
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="11" height="18" viewBox="0 0 11 18">
+                                            <g fill="none" fill-rule="evenodd">
+                                                <path stroke="#38699F" stroke-linecap="round" stroke-width="1.5" d="M1.125 3L6.75 8 1.125 13" transform="translate(1 1)"></path>
+                                                <path stroke="#FFF" stroke-width=".1" d="M0 0H9V16H0z" opacity=".01" transform="translate(1 1)"></path>
+                                            </g>
+                                        </svg>
+                                    </button>
+                                </div>
+                            </div>
+
+
+
+                            <div class="wnrhoix">
+                            <h2 class="t1gy7sqq">Việc làm theo công ty</h2>
+                            <div class="w1mkj27i">
+                                <li class="iws5vzr">
+                                    <a aria-label="Tele 247" href="https://www.vieclamtot.com/tags/cong-ty-tele247-global-tuyen-dung?stickyad=disable" class="azmhcbw">
+                                        <div class="i5ej9zg">
+                                            <div class="c17lw2jw"><span style="box-sizing: border-box; display: inline-block; overflow: hidden; width: initial; height: initial; background: none; opacity: 1; border: 0px; margin: 0px; padding: 0px; position: relative; max-width: 100%;"><span style="box-sizing: border-box; display: block; width: initial; height: initial; background: none; opacity: 1; border: 0px; margin: 0px; padding: 0px; max-width: 100%;"><img alt="" aria-hidden="true" src="data:image/svg+xml,%3csvg%20xmlns=%27http://www.w3.org/2000/svg%27%20version=%271.1%27%20width=%2770%27%20height=%2770%27/%3e" style="display: block; max-width: 100%; width: initial; height: initial; background: none; opacity: 1; border: 0px; margin: 0px; padding: 0px;"></span><img alt="cat-0" src="/_next/image?url=https%3A%2F%2Fcdn.chotot.com%2Fadmincentre%2FWQfum01nHTc3sH6_6oUO3H5AgvnrN0ZRrA5TsFX8ktw%2Fpreset%3Araw%2Fplain%2F1771e76a10c3d2f56f124b248b7892a2-2804350275232217335.jpg&amp;w=256&amp;q=75" decoding="async" data-nimg="intrinsic" style="position: absolute; inset: 0px; box-sizing: border-box; padding: 0px; border: none; margin: auto; display: block; width: 0px; height: 0px; min-width: 100%; max-width: 100%; min-height: 100%; max-height: 100%;" srcset="/_next/image?url=https%3A%2F%2Fcdn.chotot.com%2Fadmincentre%2FWQfum01nHTc3sH6_6oUO3H5AgvnrN0ZRrA5TsFX8ktw%2Fpreset%3Araw%2Fplain%2F1771e76a10c3d2f56f124b248b7892a2-2804350275232217335.jpg&amp;w=256&amp;q=75 1x"></span></div>
+                                        </div>
+                                    </a>
+                                </li>
+                                <li class="iws5vzr">
+                                    <a aria-label="PepsiCo" href="https://www.vieclamtot.com/tags/cong-ty-tnhh-nuoc-giai-khat-suntory-pepsico-viet-nam-tuyen-dung?stickyad=disable" class="azmhcbw">
+                                        <div class="i5ej9zg">
+                                            <div class="c17lw2jw"><span style="box-sizing: border-box; display: inline-block; overflow: hidden; width: initial; height: initial; background: none; opacity: 1; border: 0px; margin: 0px; padding: 0px; position: relative; max-width: 100%;"><span style="box-sizing: border-box; display: block; width: initial; height: initial; background: none; opacity: 1; border: 0px; margin: 0px; padding: 0px; max-width: 100%;"><img alt="" aria-hidden="true" src="data:image/svg+xml,%3csvg%20xmlns=%27http://www.w3.org/2000/svg%27%20version=%271.1%27%20width=%2770%27%20height=%2770%27/%3e" style="display: block; max-width: 100%; width: initial; height: initial; background: none; opacity: 1; border: 0px; margin: 0px; padding: 0px;"></span><img alt="cat-1" src="/_next/image?url=https%3A%2F%2Fcdn.chotot.com%2Fadmincentre%2Fh798W57gsgMg6MkSs6eBaVt8EMBkM8THnm1F4nHvUAU%2Fpreset%3Araw%2Fplain%2Fd500f723165cf0cdcc370e864100e4cf-2804350324204688849.jpg&amp;w=256&amp;q=75" decoding="async" data-nimg="intrinsic" style="position: absolute; inset: 0px; box-sizing: border-box; padding: 0px; border: none; margin: auto; display: block; width: 0px; height: 0px; min-width: 100%; max-width: 100%; min-height: 100%; max-height: 100%;" srcset="/_next/image?url=https%3A%2F%2Fcdn.chotot.com%2Fadmincentre%2Fh798W57gsgMg6MkSs6eBaVt8EMBkM8THnm1F4nHvUAU%2Fpreset%3Araw%2Fplain%2Fd500f723165cf0cdcc370e864100e4cf-2804350324204688849.jpg&amp;w=256&amp;q=75 1x"></span></div>
+                                        </div>
+                                    </a>
+                                </li>
+                                <li class="iws5vzr">
+                                    <a aria-label="Pizza 4PS" href="https://www.vieclamtot.com/tags/cong-ty-co-phan-pizza-4ps-tuyen-dung?stickyad=disable" class="azmhcbw">
+                                        <div class="i5ej9zg">
+                                            <div class="c17lw2jw"><span style="box-sizing: border-box; display: inline-block; overflow: hidden; width: initial; height: initial; background: none; opacity: 1; border: 0px; margin: 0px; padding: 0px; position: relative; max-width: 100%;"><span style="box-sizing: border-box; display: block; width: initial; height: initial; background: none; opacity: 1; border: 0px; margin: 0px; padding: 0px; max-width: 100%;"><img alt="" aria-hidden="true" src="data:image/svg+xml,%3csvg%20xmlns=%27http://www.w3.org/2000/svg%27%20version=%271.1%27%20width=%2770%27%20height=%2770%27/%3e" style="display: block; max-width: 100%; width: initial; height: initial; background: none; opacity: 1; border: 0px; margin: 0px; padding: 0px;"></span><img alt="cat-2" src="/_next/image?url=https%3A%2F%2Fcdn.chotot.com%2Fadmincentre%2F3Dk_jclZcJyIgnFeGK_xAgSvtfYf374Y8zpyJrssIHY%2Fpreset%3Araw%2Fplain%2F0043b9cc220e6cf5765f170bec18cb79-2784898304161178513.jpg&amp;w=256&amp;q=75" decoding="async" data-nimg="intrinsic" style="position: absolute; inset: 0px; box-sizing: border-box; padding: 0px; border: none; margin: auto; display: block; width: 0px; height: 0px; min-width: 100%; max-width: 100%; min-height: 100%; max-height: 100%;" srcset="/_next/image?url=https%3A%2F%2Fcdn.chotot.com%2Fadmincentre%2F3Dk_jclZcJyIgnFeGK_xAgSvtfYf374Y8zpyJrssIHY%2Fpreset%3Araw%2Fplain%2F0043b9cc220e6cf5765f170bec18cb79-2784898304161178513.jpg&amp;w=256&amp;q=75 1x"></span></div>
+                                        </div>
+                                    </a>
+                                </li>
+                                <li class="iws5vzr">
+                                    <a aria-label="Golden Gate" href="https://www.vieclamtot.com/tags/cong-ty-co-phan-thuong-mai-dich-vu-cong-vang-tuyen-dung?stickyad=disable" class="azmhcbw">
+                                        <div class="i5ej9zg">
+                                            <div class="c17lw2jw"><span style="box-sizing: border-box; display: inline-block; overflow: hidden; width: initial; height: initial; background: none; opacity: 1; border: 0px; margin: 0px; padding: 0px; position: relative; max-width: 100%;"><span style="box-sizing: border-box; display: block; width: initial; height: initial; background: none; opacity: 1; border: 0px; margin: 0px; padding: 0px; max-width: 100%;"><img alt="" aria-hidden="true" src="data:image/svg+xml,%3csvg%20xmlns=%27http://www.w3.org/2000/svg%27%20version=%271.1%27%20width=%2770%27%20height=%2770%27/%3e" style="display: block; max-width: 100%; width: initial; height: initial; background: none; opacity: 1; border: 0px; margin: 0px; padding: 0px;"></span><img alt="cat-3" src="/_next/image?url=https%3A%2F%2Fcdn.chotot.com%2Fadmincentre%2Fz7vZotBKw5eouUhu6XVds8Pj05z7CI_4VRgJQAgzlww%2Fpreset%3Araw%2Fplain%2F15a800967f0fd0b1e9df23a457af312b-2784896980489888657.jpg&amp;w=256&amp;q=75" decoding="async" data-nimg="intrinsic" style="position: absolute; inset: 0px; box-sizing: border-box; padding: 0px; border: none; margin: auto; display: block; width: 0px; height: 0px; min-width: 100%; max-width: 100%; min-height: 100%; max-height: 100%;" srcset="/_next/image?url=https%3A%2F%2Fcdn.chotot.com%2Fadmincentre%2Fz7vZotBKw5eouUhu6XVds8Pj05z7CI_4VRgJQAgzlww%2Fpreset%3Araw%2Fplain%2F15a800967f0fd0b1e9df23a457af312b-2784896980489888657.jpg&amp;w=256&amp;q=75 1x"></span></div>
+                                        </div>
+                                    </a>
+                                </li>
+                                <li class="iws5vzr">
+                                    <a aria-label="Eurowindow" href="https://www.vieclamtot.com/tags/cong-ty-co-phan-eurowindow-tuyen-dung?stickyad=disable" class="azmhcbw">
+                                        <div class="i5ej9zg">
+                                            <div class="c17lw2jw"><span style="box-sizing: border-box; display: inline-block; overflow: hidden; width: initial; height: initial; background: none; opacity: 1; border: 0px; margin: 0px; padding: 0px; position: relative; max-width: 100%;"><span style="box-sizing: border-box; display: block; width: initial; height: initial; background: none; opacity: 1; border: 0px; margin: 0px; padding: 0px; max-width: 100%;"><img alt="" aria-hidden="true" src="data:image/svg+xml,%3csvg%20xmlns=%27http://www.w3.org/2000/svg%27%20version=%271.1%27%20width=%2770%27%20height=%2770%27/%3e" style="display: block; max-width: 100%; width: initial; height: initial; background: none; opacity: 1; border: 0px; margin: 0px; padding: 0px;"></span><img alt="cat-4" src="/_next/image?url=https%3A%2F%2Fcdn.chotot.com%2Fadmincentre%2Frw1_0TxDaXGsTdDJwR-P9z8laRhD2SqKs7WNTjPDiB8%2Fpreset%3Araw%2Fplain%2F1ddefec989a6b3adb30d3b73a2031570-2804349911399229756.jpg&amp;w=256&amp;q=75" decoding="async" data-nimg="intrinsic" style="position: absolute; inset: 0px; box-sizing: border-box; padding: 0px; border: none; margin: auto; display: block; width: 0px; height: 0px; min-width: 100%; max-width: 100%; min-height: 100%; max-height: 100%;" srcset="/_next/image?url=https%3A%2F%2Fcdn.chotot.com%2Fadmincentre%2Frw1_0TxDaXGsTdDJwR-P9z8laRhD2SqKs7WNTjPDiB8%2Fpreset%3Araw%2Fplain%2F1ddefec989a6b3adb30d3b73a2031570-2804349911399229756.jpg&amp;w=256&amp;q=75 1x"></span></div>
+                                        </div>
+                                    </a>
+                                </li>
+                                <li class="iws5vzr">
+                                    <a aria-label="Man Power" href="https://www.vieclamtot.com/tags/cong-ty-tnhh-manpower-viet-nam-tuyen-dung?stickyad=disable" class="azmhcbw">
+                                        <div class="i5ej9zg">
+                                            <div class="c17lw2jw"><span style="box-sizing: border-box; display: inline-block; overflow: hidden; width: initial; height: initial; background: none; opacity: 1; border: 0px; margin: 0px; padding: 0px; position: relative; max-width: 100%;"><span style="box-sizing: border-box; display: block; width: initial; height: initial; background: none; opacity: 1; border: 0px; margin: 0px; padding: 0px; max-width: 100%;"><img alt="" aria-hidden="true" src="data:image/svg+xml,%3csvg%20xmlns=%27http://www.w3.org/2000/svg%27%20version=%271.1%27%20width=%2770%27%20height=%2770%27/%3e" style="display: block; max-width: 100%; width: initial; height: initial; background: none; opacity: 1; border: 0px; margin: 0px; padding: 0px;"></span><img alt="cat-5" src="/_next/image?url=https%3A%2F%2Fcdn.chotot.com%2Fadmincentre%2FuXN-PHsjHrdQUncUg3pZZcg3ktEe-ZclN8s1q9N_DpE%2Fpreset%3Araw%2Fplain%2Fb867b10a9c2b39ff9d4678882c6f3f08-2804349840567370506.jpg&amp;w=256&amp;q=75" decoding="async" data-nimg="intrinsic" style="position: absolute; inset: 0px; box-sizing: border-box; padding: 0px; border: none; margin: auto; display: block; width: 0px; height: 0px; min-width: 100%; max-width: 100%; min-height: 100%; max-height: 100%;" srcset="/_next/image?url=https%3A%2F%2Fcdn.chotot.com%2Fadmincentre%2FuXN-PHsjHrdQUncUg3pZZcg3ktEe-ZclN8s1q9N_DpE%2Fpreset%3Araw%2Fplain%2Fb867b10a9c2b39ff9d4678882c6f3f08-2804349840567370506.jpg&amp;w=256&amp;q=75 1x"></span></div>
+                                        </div>
+                                    </a>
+                                </li>
+                                <li class="iws5vzr">
+                                    <a aria-label="Shopee Express" href="https://www.vieclamtot.com/tags/shopee-express-tuyen-dung?stickyad=disable" class="azmhcbw">
+                                        <div class="i5ej9zg">
+                                            <div class="c17lw2jw"><span style="box-sizing: border-box; display: inline-block; overflow: hidden; width: initial; height: initial; background: none; opacity: 1; border: 0px; margin: 0px; padding: 0px; position: relative; max-width: 100%;"><span style="box-sizing: border-box; display: block; width: initial; height: initial; background: none; opacity: 1; border: 0px; margin: 0px; padding: 0px; max-width: 100%;"><img alt="" aria-hidden="true" src="data:image/svg+xml,%3csvg%20xmlns=%27http://www.w3.org/2000/svg%27%20version=%271.1%27%20width=%2770%27%20height=%2770%27/%3e" style="display: block; max-width: 100%; width: initial; height: initial; background: none; opacity: 1; border: 0px; margin: 0px; padding: 0px;"></span><img alt="cat-6" src="/_next/image?url=https%3A%2F%2Fcdn.chotot.com%2Fadmincentre%2F5kJ-tWlENi9iTJH7foR6XVwAnccHVfsfAwnCSag429A%2Fpreset%3Araw%2Fplain%2Fb0f5ebbf50be842b9a9ed283699752bc-2793333657910419667.jpg&amp;w=256&amp;q=75" decoding="async" data-nimg="intrinsic" style="position: absolute; inset: 0px; box-sizing: border-box; padding: 0px; border: none; margin: auto; display: block; width: 0px; height: 0px; min-width: 100%; max-width: 100%; min-height: 100%; max-height: 100%;" srcset="/_next/image?url=https%3A%2F%2Fcdn.chotot.com%2Fadmincentre%2F5kJ-tWlENi9iTJH7foR6XVwAnccHVfsfAwnCSag429A%2Fpreset%3Araw%2Fplain%2Fb0f5ebbf50be842b9a9ed283699752bc-2793333657910419667.jpg&amp;w=256&amp;q=75 1x"></span></div>
+                                        </div>
+                                    </a>
+                                </li>
+                                <li class="iws5vzr">
+                                    <a aria-label="Công ty TNHH TMDV Đại Tiến" href="https://www.vieclamtot.com/tags/cong-ty-tnhh-dv-tm-dai-tien-tuyen-dung?stickyad=disable" class="azmhcbw">
+                                        <div class="i5ej9zg">
+                                            <div class="c17lw2jw"><span style="box-sizing: border-box; display: inline-block; overflow: hidden; width: initial; height: initial; background: none; opacity: 1; border: 0px; margin: 0px; padding: 0px; position: relative; max-width: 100%;"><span style="box-sizing: border-box; display: block; width: initial; height: initial; background: none; opacity: 1; border: 0px; margin: 0px; padding: 0px; max-width: 100%;"><img alt="" aria-hidden="true" src="data:image/svg+xml,%3csvg%20xmlns=%27http://www.w3.org/2000/svg%27%20version=%271.1%27%20width=%2770%27%20height=%2770%27/%3e" style="display: block; max-width: 100%; width: initial; height: initial; background: none; opacity: 1; border: 0px; margin: 0px; padding: 0px;"></span><img alt="cat-7" src="/_next/image?url=https%3A%2F%2Fcdn.chotot.com%2Fadmincentre%2FcWMx31X8GaxxdgM2trv7kF3LY6SdY5B1-lHE5ZULXDY%2Fpreset%3Araw%2Fplain%2Fb7537e5751957246f31494f401da03ac-2793332012870034633.jpg&amp;w=256&amp;q=75" decoding="async" data-nimg="intrinsic" style="position: absolute; inset: 0px; box-sizing: border-box; padding: 0px; border: none; margin: auto; display: block; width: 0px; height: 0px; min-width: 100%; max-width: 100%; min-height: 100%; max-height: 100%;" srcset="/_next/image?url=https%3A%2F%2Fcdn.chotot.com%2Fadmincentre%2FcWMx31X8GaxxdgM2trv7kF3LY6SdY5B1-lHE5ZULXDY%2Fpreset%3Araw%2Fplain%2Fb7537e5751957246f31494f401da03ac-2793332012870034633.jpg&amp;w=256&amp;q=75 1x"></span></div>
+                                        </div>
+                                    </a>
+                                </li>
+                                <li class="iws5vzr">
+                                    <a aria-label="FPT Telecom HCM" href="https://www.vieclamtot.com/tags/fpt-telecom-tuyen-dung?stickyad=disable" class="azmhcbw">
+                                        <div class="i5ej9zg">
+                                            <div class="c17lw2jw"><span style="box-sizing: border-box; display: inline-block; overflow: hidden; width: initial; height: initial; background: none; opacity: 1; border: 0px; margin: 0px; padding: 0px; position: relative; max-width: 100%;"><span style="box-sizing: border-box; display: block; width: initial; height: initial; background: none; opacity: 1; border: 0px; margin: 0px; padding: 0px; max-width: 100%;"><img alt="" aria-hidden="true" src="data:image/svg+xml,%3csvg%20xmlns=%27http://www.w3.org/2000/svg%27%20version=%271.1%27%20width=%2770%27%20height=%2770%27/%3e" style="display: block; max-width: 100%; width: initial; height: initial; background: none; opacity: 1; border: 0px; margin: 0px; padding: 0px;"></span><img alt="cat-8" src="/_next/image?url=https%3A%2F%2Fcdn.chotot.com%2Fadmincentre%2FG8GCIQaIeD6exlNPgEhkBUnAQWtXzU40JJt88sIpYos%2Fpreset%3Araw%2Fplain%2Fa168d8743ed65cc27f08aca235edb550-2727092860300532255.jpg&amp;w=256&amp;q=75" decoding="async" data-nimg="intrinsic" style="position: absolute; inset: 0px; box-sizing: border-box; padding: 0px; border: none; margin: auto; display: block; width: 0px; height: 0px; min-width: 100%; max-width: 100%; min-height: 100%; max-height: 100%;" srcset="/_next/image?url=https%3A%2F%2Fcdn.chotot.com%2Fadmincentre%2FG8GCIQaIeD6exlNPgEhkBUnAQWtXzU40JJt88sIpYos%2Fpreset%3Araw%2Fplain%2Fa168d8743ed65cc27f08aca235edb550-2727092860300532255.jpg&amp;w=256&amp;q=75 1x"></span></div>
+                                        </div>
+                                    </a>
+                                </li>
+                            </div>
+                        </div>
+
+
+
+
+
+                          
+                            
+                            <div id="job-blog-section" class="w1gup8gc">
+                                <h2 class="t39l6v3">Trang kinh nghiệm việc làm</h2>
+                                <div class="blogCate b1jouv0s">
+                                    <div class="WrapperScroll_wrapperOverflow__BptX1 WrapperScroll_wrapperOverflowNoPadding__bO1t_">
+                                        <div class="styles_oneRowContent__yddIy wflw9x5" style="--wflw9x5-0:0">
+                                            <div class="row-cat">
+                                                <div class="row-cat-item active"><span>Thông tin mới</span></div>
+                                                <div class="row-cat-item "><span>Mẹo tìm việc</span></div>
+                                                <div class="row-cat-item "><span>Chuyện đi làm</span></div>
+                                                <div class="row-cat-item "><span>Mẹo tuyển dụng</span></div>
+                                                <div class="row-cat-item "><span>Báo cáo thị trường</span></div>
+                                            </div>
+                                        </div>
+                                        <i class="i-prev WrapperScroll_iconPrev__8Mj8Y false" tabindex="0" role="button" aria-label="Prev"></i><i class="i-next WrapperScroll_iconNext__dU_oO false" tabindex="0" role="button" aria-label="Next"></i>
+                                    </div>
+                                </div>
+
+
+                                <div class="WrapperScroll_wrapperOverflow__BptX1 WrapperScroll_wrapperOverflowNoPadding__bO1t_">
+                                   <div class="styles_oneRowContent__yddIy wflw9x5" style="--wflw9x5-0: 0;">
+                                      <div class="gj2em8w">
+                                        <?php 
+
+                                            $post =  App\Models\post::take(6)->get();
+                                        ?>
+
+                                        @if($post->count()>0)
+
+                                         @foreach($post as $posts)
+                                         <div class="AdItem_item__wupZo undefined i9yvzff">
+                                            <div class="AdItem_wrapperLink__UB7fD">
+                                               <a class="AdItem_wrapperLinkHref___3x7b" href="{{ route('blog_detail', $posts->link??'') }}">
+                                                  <div class="AdThumbnail_thumbnailWrapper__xT4mx">
+                                                     <div class="AdThumbnail_thumbnailImg___95MD">
+                                                        <img alt="{{ $posts->title }}" src="{{  asset('images/1653372151_data-analyst-careerbuilder.jpg') }}" loading="lazy"></div>
+                                                  </div>
+                                                  <div class="AdItem_caption__xhJJ_ AdItem_threeline__0ngV1">
+                                                     <div class="commonStyle_adTitleGrid__xuGEz commonStyle_adTitleBold__y3Ajz commonStyle_adTitleBlog__b_IZv">{{ $posts->title }}</div>
+                                                     <div class="AdItem_description__8V6RR">Đăng ký chạy ShopeeFood giao đồ ăn giúp tài xế có giờ làm việc tự do và thu nhập tốt. Cùng Việc Làm Tốt tìm hiểu cách đăng ký ngay!</div>
+                                                     <div class="AdItem_conditionWrapper__lhe5y"><span class="AdItem_condition__K3TWV"></span></div>
+                                                     <div class="AdItem_wrapperPrice__o2r4x"><span class="AdItem_price__AVaJF"></span></div>
+                                                     <div class="AdItem_wrapperDate__lfL36">1 năm trước</div>
+                                                  </div>
+                                               </a>
+                                            </div>
+                                         </div>
+
+                                        @endforeach
+
+                                        @endif
+                                         
+                                      </div>
+                                   </div>
+                                   <i class="i-prev WrapperScroll_iconPrev__8Mj8Y false" tabindex="0" role="button" aria-label="Prev"></i><i class="i-next WrapperScroll_iconNext__dU_oO WrapperScroll_active__YmiA6" tabindex="0" role="button" aria-label="Next"></i>
+                                </div>    
+
+                            </div>                            
+                            <div></div>
+
+                            <div class="cokiwz8">
+                                <div class="w1n0uzon">
+                                    <h2 class="t10jqhqo">Việc Làm Tốt - Kênh tìm việc làm nhanh chóng, hiệu quả cao hàng đầu Việt Nam</h2>
+                                    <div class="c3uu092" style="--c3uu092-0:200px;--c3uu092-1:197px">
+                                        <h1 dir="ltr" style="text-align:center"><strong>Chuy&ecirc;n trang tuyển dụng v&agrave; t&igrave;m việc lao động phổ th&ocirc;ng th&aacute;ng 08/2023</strong></h1>
+                                        <p dir="ltr" style="text-align:justify">Hiện nay, t&igrave;m được một việc l&agrave;m th&iacute;ch hợp c&oacute; mức lương v&agrave; ph&uacute;c lợi xứng đ&aacute;ng kh&ocirc;ng hề đơn giản. Đặc biệt l&agrave; trong trạng th&aacute;i B&igrave;nh Thường Mới, hầu như mọi người kh&ocirc;ng c&ograve;n xin việc trực tiếp nữa. Kh&ocirc;ng phải cầm chiếc hồ sơ giấy, đi đến từng c&ocirc;ng ty để nộp, thay v&agrave;o đ&oacute; l&agrave; những trang t&igrave;m việc l&agrave;m c&oacute; thể ứng tuyển trực tuyến ngay. Vừa tiết kiệm thời gian v&agrave;&nbsp;chi ph&iacute;, vừa an to&agrave;n trong thời kỳ dịch covid. Với giao diện th&acirc;n thiện, dễ d&agrave;ng sử dụng, Việc L&agrave;m Tốt hiện l&agrave; cầu nối tuyệt vời giữa nh&agrave; tuyển dụng v&agrave; ứng vi&ecirc;n tr&ecirc;n to&agrave;n quốc.&nbsp;</p>
+                                        <p dir="ltr" style="text-align:justify">Tr&ecirc;n Việc L&agrave;m Tốt c&oacute; hơn 1 triệu <a href="https://www.vieclamtot.com/viec-lam" rel="noopener">việc l&agrave;m</a> đang tuyển dụng, số lượng tin đăng đang tăng nhiều hơn từng ng&agrave;y. Đặc biệt, tin đăng lu&ocirc;n được đội ngũ Việc L&agrave;m Tốt kiểm duyệt chất lượng, cập nhật mới li&ecirc;n tục. Đảm bảo cho người t&igrave;m việc tiếp cận được những việc l&agrave;m mới nhất, ph&ugrave; hợp nhất.</p>
+                                        <p dir="ltr" style="text-align:justify">Ngo&agrave;i ra, c&aacute;c nh&agrave; tuyển dụng cũng c&oacute; thể chủ động t&igrave;m kiếm c&aacute;c ứng vi&ecirc;n tiềm năng cho c&ocirc;ng ty, doanh nghiệp của m&igrave;nh. Tr&ecirc;n k&ecirc;nh Việc L&agrave;m Tốt, người t&igrave;m việc c&oacute; thể đăng tin cần t&igrave;m c&ocirc;ng việc cụ thể cho bản th&acirc;n, bạn b&egrave;,... Nhờ đ&oacute;, c&aacute;c nh&agrave; tuyển dụng c&oacute; thể t&igrave;m kiếm, chọn lọc v&agrave; nhanh ch&oacute;ng li&ecirc;n hệ với ứng vi&ecirc;n ph&ugrave; hợp.</p>
+                                        <p dir="ltr" style="text-align:justify">Những việc l&agrave;m <a href="https://www.vieclamtot.com/tags/viec-lam-ldpt" rel="noopener">lao động phổ th&ocirc;ng</a> đang phổ biến c&oacute; nhu cầu tuyển dụng nhiều nhất hiện nay: <a href="https://www.vieclamtot.com/tags/shipper" rel="noopener">Shipper</a>, <a href="https://www.vieclamtot.com/viec-lam-ban-hang-sdjt2" rel="noopener">B&aacute;n H&agrave;ng</a>, <a href="https://www.vieclamtot.com/viec-lam-bao-ve-sdjt7" rel="noopener">Bảo Vệ</a>, <a href="https://www.vieclamtot.com/viec-lam-giup-viec-sdjt35" rel="noopener">Gi&uacute;p Việc - Tạp Vụ</a>, <a href="https://www.vieclamtot.com/viec-lam-cong-nhan-nha-may-sdjt17" rel="noopener">C&ocirc;ng nh&acirc;n</a>,...&nbsp;</p>
+                                        <p dir="ltr" style="text-align:justify">Đặc biệt, Việc L&agrave;m Tốt c&ograve;n cung cấp cho bạn những th&ocirc;ng tin về thị trường lao động cũng như chia sẻ kinh nghiệm t&igrave;m việc, tuyển dụng. Bạn l&agrave; người lao động xa qu&ecirc; t&igrave;m việc, bạn kh&ocirc;ng biết bắt đầu từ đ&acirc;u? Bạn l&agrave; sinh vi&ecirc;n muốn kiếm việc l&agrave;m th&ecirc;m? Bạn cần t&igrave;m nhanh việc thời vụ?... Việc L&agrave;m Tốt sẽ gợi &yacute;, hướng dẫn bạn một c&aacute;ch dễ hiểu v&agrave; đơn giản nhất. Mời bạn&nbsp;truy cập&nbsp;v&agrave;o trang chia sẻ <a href="http://www.vieclamtot.com/kinh-nghiem/" rel="noopener">kinh nghiệm về việc l&agrave;m</a>&nbsp;của ch&uacute;ng t&ocirc;i để xem th&ecirc;m nhiều th&ocirc;ng tin bổ &iacute;ch.</p>
+                                        <p dir="ltr" style="text-align:justify">Nếu bạn đang c&oacute; nhu cầu t&igrave;m việc, h&atilde;y đến với chuy&ecirc;n mục việc l&agrave;m của Việc L&agrave;m Tốt để được tiếp cận những c&ocirc;ng việc mới nhất, ph&ugrave; hợp nhất.</p>
+                                        <p dir="ltr" style="text-align:justify">Bạn l&agrave; nh&agrave; tuyển dụng, đừng ngần ngại đăng tuyển việc l&agrave;m l&ecirc;n Việc L&agrave;m Tốt, với thao t&aacute;c đơn giản, dễ l&agrave;m, tin đăng của bạn sẽ nhanh ch&oacute;ng tiếp cận được với c&aacute;c ứng vi&ecirc;n. Trong trường hợp bạn t&igrave;m m&atilde;i chưa thấy ứng vi&ecirc;n ph&ugrave; hợp, h&atilde;y truy cập v&agrave;o trang người t&igrave;m việc của Việc L&agrave;m Tốt để chọn cho m&igrave;nh những ứng vi&ecirc;n s&aacute;ng gi&aacute; nhất.&nbsp;</p>
+                                        <p dir="ltr" style="text-align:justify">Hy vọng bạn sẽ c&oacute; những trải nghiệm tuyệt vời tr&ecirc;n k&ecirc;nh của ch&uacute;ng t&ocirc;i. Đừng qu&ecirc;n giới thiệu Việc L&agrave;m Tốt cho người th&acirc;n, bạn b&egrave; đang t&igrave;m kiếm c&ocirc;ng việc lao động phổ th&ocirc;ng nh&eacute;.</p>
+                                    </div>
+                                    <p class="r1nvlmmr">
+                                        <a class="a17h5wdc">
+                                            Mở rộng<!-- --> <i id="arrowIcon" class="fa fa-angle-down" aria-hidden="true"></i>
+                                        </a>
+                                    </p>
+                                </div>
+                            </div>
+
+                            <div class="cokiwz8">
+                                <div class="hidden-xs r8crksz">
+                                    <h2 class="t1h2opep">Các từ khóa phổ biến</h2>
+                                    <ul class="u1uy6a9l" style="--u1uy6a9l-0:auto">
+                                        <li class="col-sm-4 l193bxy7" itemscope="" itemType="http://schema.org/ListItem" itemProp="itemListElement">
+                                            <meta itemProp="position" content="1"/>
+                                            <a itemProp="url" href="https://www.vieclamtot.com/tags/viec-lam-thoi-vu" class="a85zez1"><span>Việc Làm Thời Vụ</span></a>
+                                        </li>
+                                        <li class="col-sm-4 l193bxy7" itemscope="" itemType="http://schema.org/ListItem" itemProp="itemListElement">
+                                            <meta itemProp="position" content="2"/>
+                                            <a itemProp="url" href="https://www.vieclamtot.com/viec-lam-bac-ninh" class="a85zez1"><span>Việc làm Bắc Ninh</span></a>
+                                        </li>
+                                        <li class="col-sm-4 l193bxy7" itemscope="" itemType="http://schema.org/ListItem" itemProp="itemListElement">
+                                            <meta itemProp="position" content="3"/>
+                                            <a itemProp="url" href="https://www.vieclamtot.com/tags/viec-lam-part-time" class="a85zez1"><span>Việc Làm Part Time</span></a>
+                                        </li>
+                                        <li class="col-sm-4 l193bxy7" itemscope="" itemType="http://schema.org/ListItem" itemProp="itemListElement">
+                                            <meta itemProp="position" content="4"/>
+                                            <a itemProp="url" href="https://www.vieclamtot.com/tags/viec-lam-online-tai-nha" class="a85zez1"><span>Việc Làm Online Tại Nhà</span></a>
+                                        </li>
+                                        <li class="col-sm-4 l193bxy7" itemscope="" itemType="http://schema.org/ListItem" itemProp="itemListElement">
+                                            <meta itemProp="position" content="5"/>
+                                            <a itemProp="url" href="https://www.vieclamtot.com/tags/viec-lam-online" class="a85zez1"><span>Việc Làm Online</span></a>
+                                        </li>
+                                        <li class="col-sm-4 l193bxy7" itemscope="" itemType="http://schema.org/ListItem" itemProp="itemListElement">
+                                            <meta itemProp="position" content="6"/>
+                                            <a itemProp="url" href="https://www.vieclamtot.com/viec-lam-dong-nai" class="a85zez1"><span>Việc làm Đồng Nai</span></a>
+                                        </li>
+                                        <li class="col-sm-4 l193bxy7" itemscope="" itemType="http://schema.org/ListItem" itemProp="itemListElement">
+                                            <meta itemProp="position" content="7"/>
+                                            <a itemProp="url" href="https://www.vieclamtot.com/tags/viec-lam-tai-nha" class="a85zez1"><span>Việc Làm Tại Nhà</span></a>
+                                        </li>
+                                        <li class="col-sm-4 l193bxy7" itemscope="" itemType="http://schema.org/ListItem" itemProp="itemListElement">
+                                            <meta itemProp="position" content="8"/>
+                                            <a itemProp="url" href="https://www.vieclamtot.com/tags/viec-lam-them" class="a85zez1"><span>Việc Làm Thêm</span></a>
+                                        </li>
+                                        <li class="col-sm-4 l193bxy7" itemscope="" itemType="http://schema.org/ListItem" itemProp="itemListElement">
+                                            <meta itemProp="position" content="9"/>
+                                            <a itemProp="url" href="https://www.vieclamtot.com/tags/viec-lam-khu-cong-nghiep" class="a85zez1"><span>Việc Làm Khu Công Nghiệp</span></a>
+                                        </li>
+                                        <li class="col-sm-4 l193bxy7" itemscope="" itemType="http://schema.org/ListItem" itemProp="itemListElement">
+                                            <meta itemProp="position" content="10"/>
+                                            <a itemProp="url" href="https://www.vieclamtot.com/viec-lam-tai-xe-binh-duong-sdjt3" class="a85zez1"><span>Tài Xế Bình Dương</span></a>
+                                        </li>
+                                        <li class="col-sm-4 l193bxy7" itemscope="" itemType="http://schema.org/ListItem" itemProp="itemListElement">
+                                            <meta itemProp="position" content="11"/>
+                                            <a itemProp="url" href="https://www.vieclamtot.com/viec-lam-quan-8-tp-ho-chi-minh" class="a85zez1"><span>Việc Làm Quận 8</span></a>
+                                        </li>
+                                        <li class="col-sm-4 l193bxy7" itemscope="" itemType="http://schema.org/ListItem" itemProp="itemListElement">
+                                            <meta itemProp="position" content="12"/>
+                                            <a itemProp="url" href="https://www.vieclamtot.com/viec-lam-huyen-cu-chi-tp-ho-chi-minh" class="a85zez1"><span>Việc Làm Củ Chi</span></a>
+                                        </li>
+                                        <li class="col-sm-4 l193bxy7" itemscope="" itemType="http://schema.org/ListItem" itemProp="itemListElement">
+                                            <meta itemProp="position" content="13"/>
+                                            <a itemProp="url" href="https://www.vieclamtot.com/tags/nhan-hang-gia-cong-ve-nha-lam" class="a85zez1"><span>Nhận Hàng Gia Công Về Nhà Làm</span></a>
+                                        </li>
+                                        <li class="col-sm-4 l193bxy7" itemscope="" itemType="http://schema.org/ListItem" itemProp="itemListElement">
+                                            <meta itemProp="position" content="14"/>
+                                            <a itemProp="url" href="https://www.vieclamtot.com/viec-lam-quan-go-vap-tp-ho-chi-minh" class="a85zez1"><span>Việc Làm Gò Vấp</span></a>
+                                        </li>
+                                        <li class="col-sm-4 l193bxy7" itemscope="" itemType="http://schema.org/ListItem" itemProp="itemListElement">
+                                            <meta itemProp="position" content="15"/>
+                                            <a itemProp="url" href="https://www.vieclamtot.com/viec-lam-can-tho" class="a85zez1"><span>Việc làm Cần Thơ</span></a>
+                                        </li>
+                                        <li class="col-sm-4 l193bxy7" itemscope="" itemType="http://schema.org/ListItem" itemProp="itemListElement">
+                                            <meta itemProp="position" content="16"/>
+                                            <a itemProp="url" href="https://www.vieclamtot.com/tags/viec-lam-quan-12" class="a85zez1"><span>Việc Làm Quận 12</span></a>
+                                        </li>
+                                        <li class="col-sm-4 l193bxy7" itemscope="" itemType="http://schema.org/ListItem" itemProp="itemListElement">
+                                            <meta itemProp="position" content="17"/>
+                                            <a itemProp="url" href="https://www.vieclamtot.com/viec-lam-huyen-hoc-mon-tp-ho-chi-minh" class="a85zez1"><span>Việc Làm Hóc Môn</span></a>
+                                        </li>
+                                        <li class="col-sm-4 l193bxy7" itemscope="" itemType="http://schema.org/ListItem" itemProp="itemListElement">
+                                            <meta itemProp="position" content="18"/>
+                                            <a itemProp="url" href="https://www.vieclamtot.com/viec-lam-thanh-pho-thu-duc-tp-ho-chi-minh" class="a85zez1"><span>Việc làm Quận 9</span></a>
+                                        </li>
+                                        <li class="col-sm-4 l193bxy7" itemscope="" itemType="http://schema.org/ListItem" itemProp="itemListElement">
+                                            <meta itemProp="position" content="19"/>
+                                            <a itemProp="url" href="https://www.vieclamtot.com/viec-lam-quan-binh-tan-tp-ho-chi-minh" class="a85zez1"><span>Việc Làm Quận Bình Tân</span></a>
+                                        </li>
+                                        <li class="col-sm-4 l193bxy7" itemscope="" itemType="http://schema.org/ListItem" itemProp="itemListElement">
+                                            <meta itemProp="position" content="20"/>
+                                            <a itemProp="url" href="https://www.vieclamtot.com/tags/viec-lam-thoi-vu-30-4" class="a85zez1"><span>Việc Làm Thời Vụ 30/4</span></a>
+                                        </li>
+                                        <li class="col-sm-4 l193bxy7" itemscope="" itemType="http://schema.org/ListItem" itemProp="itemListElement">
+                                            <meta itemProp="position" content="21"/>
+                                            <a itemProp="url" href="https://www.vieclamtot.com/viec-lam-quan-7-tp-ho-chi-minh" class="a85zez1"><span>Việc làm Quận 7</span></a>
+                                        </li>
+                                        <li class="col-sm-4 l193bxy7" itemscope="" itemType="http://schema.org/ListItem" itemProp="itemListElement">
+                                            <meta itemProp="position" content="22"/>
+                                            <a itemProp="url" href="https://www.vieclamtot.com/viec-lam-tai-xe-tp-ho-chi-minh-sdjt3" class="a85zez1"><span>Tài Xế TPHCM</span></a>
+                                        </li>
+                                        <li class="col-sm-4 l193bxy7" itemscope="" itemType="http://schema.org/ListItem" itemProp="itemListElement">
+                                            <meta itemProp="position" content="23"/>
+                                            <a itemProp="url" href="https://www.vieclamtot.com/viec-lam-ninh-thuan" class="a85zez1"><span>Việc Làm Ninh Thuận</span></a>
+                                        </li>
+                                        <li class="col-sm-4 l193bxy7" itemscope="" itemType="http://schema.org/ListItem" itemProp="itemListElement">
+                                            <meta itemProp="position" content="24"/>
+                                            <a itemProp="url" href="https://www.vieclamtot.com/viec-lam-phu-yen" class="a85zez1"><span>Việc Làm Phú Yên</span></a>
+                                        </li>
+                                        <li class="col-sm-4 l193bxy7" itemscope="" itemType="http://schema.org/ListItem" itemProp="itemListElement">
+                                            <meta itemProp="position" content="25"/>
+                                            <a itemProp="url" href="https://www.vieclamtot.com/viec-lam-hai-phong" class="a85zez1"><span>Việc làm Hải Phòng</span></a>
+                                        </li>
+                                        <li class="col-sm-4 l193bxy7" itemscope="" itemType="http://schema.org/ListItem" itemProp="itemListElement">
+                                            <meta itemProp="position" content="26"/>
+                                            <a itemProp="url" href="https://www.vieclamtot.com/viec-lam-da-nang" class="a85zez1"><span>Việc làm Đà Nẵng</span></a>
+                                        </li>
+                                        <li class="col-sm-4 l193bxy7" itemscope="" itemType="http://schema.org/ListItem" itemProp="itemListElement">
+                                            <meta itemProp="position" content="27"/>
+                                            <a itemProp="url" href="https://www.vieclamtot.com/viec-lam-gia-lai" class="a85zez1"><span>Việc Làm Gia Lai</span></a>
+                                        </li>
+                                        <li class="col-sm-4 l193bxy7" itemscope="" itemType="http://schema.org/ListItem" itemProp="itemListElement">
+                                            <meta itemProp="position" content="28"/>
+                                            <a itemProp="url" href="https://www.vieclamtot.com/viec-lam-ha-nam" class="a85zez1"><span>Việc Làm Hà Nam</span></a>
+                                        </li>
+                                        <li class="col-sm-4 l193bxy7" itemscope="" itemType="http://schema.org/ListItem" itemProp="itemListElement">
+                                            <meta itemProp="position" content="29"/>
+                                            <a itemProp="url" href="https://www.vieclamtot.com/viec-lam-quang-ngai" class="a85zez1"><span>Việc Làm Quảng Ngãi</span></a>
+                                        </li>
+                                        <li class="col-sm-4 l193bxy7" itemscope="" itemType="http://schema.org/ListItem" itemProp="itemListElement">
+                                            <meta itemProp="position" content="30"/>
+                                            <a itemProp="url" href="https://www.vieclamtot.com/viec-lam-khanh-hoa" class="a85zez1"><span>Việc Làm Khánh Hòa</span></a>
+                                        </li>
+                                        <li class="col-sm-4 l193bxy7" itemscope="" itemType="http://schema.org/ListItem" itemProp="itemListElement">
+                                            <meta itemProp="position" content="31"/>
+                                            <a itemProp="url" href="https://www.vieclamtot.com/viec-lam-thua-thien-hue" class="a85zez1"><span>Việc Làm Huế</span></a>
+                                        </li>
+                                        <li class="col-sm-4 l193bxy7" itemscope="" itemType="http://schema.org/ListItem" itemProp="itemListElement">
+                                            <meta itemProp="position" content="32"/>
+                                            <a itemProp="url" href="https://www.vieclamtot.com/viec-lam-ha-tinh" class="a85zez1"><span>Việc Làm Hà Tĩnh</span></a>
+                                        </li>
+                                        <li class="col-sm-4 l193bxy7" itemscope="" itemType="http://schema.org/ListItem" itemProp="itemListElement">
+                                            <meta itemProp="position" content="33"/>
+                                            <a itemProp="url" href="https://www.vieclamtot.com/viec-lam-tp-ho-chi-minh" class="a85zez1"><span>Tìm việc làm TPHCM</span></a>
+                                        </li>
+                                        <li class="col-sm-4 l193bxy7" itemscope="" itemType="http://schema.org/ListItem" itemProp="itemListElement">
+                                            <meta itemProp="position" content="34"/>
+                                            <a itemProp="url" href="https://www.vieclamtot.com/viec-lam-quang-nam" class="a85zez1"><span>Việc Làm Quảng Nam</span></a>
+                                        </li>
+                                        <li class="col-sm-4 l193bxy7" itemscope="" itemType="http://schema.org/ListItem" itemProp="itemListElement">
+                                            <meta itemProp="position" content="35"/>
+                                            <a itemProp="url" href="https://www.vieclamtot.com/viec-lam-binh-duong" class="a85zez1"><span>Việc làm Bình Dương</span></a>
+                                        </li>
+                                        <li class="col-sm-4 l193bxy7" itemscope="" itemType="http://schema.org/ListItem" itemProp="itemListElement">
+                                            <meta itemProp="position" content="36"/>
+                                            <a itemProp="url" href="https://www.vieclamtot.com/viec-lam-ha-noi" class="a85zez1"><span>Việc làm Hà Nội</span></a>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div></div>
+                        </div>
+                    </main>
+                </main>
+                <div></div>
+
+                <footer>
+                    <div class="aw__d16wu053">
+                        <div class="aw__catkylo">
+                            <section class="aw__c9g90xh">
+                                <div class="aw__i1ce1r9u">
+                                    <p class="aw__h1klxoqy"> TÌM VIỆC LÀM TRÊN ỨNG DỤNG CHỢ TỐT </p>
+                                    <div class="aw__i8yrc5u">
+                                        <div class="aw__i55qi11">
+                                            <picture>
+                                                <source type="image/webp" srcset="https://static.chotot.com/storage/default/group-qr.webp">
+                                                <img alt="Chợ Tốt" class="aw__i1nbm5k4" src="https://static.chotot.com/storage/default/group-qr.jpeg" width="87" height="87">
+                                            </picture>
+                                        </div>
+                                        <div class="aw__i55qi11">
+                                            <ul class="aw__d2kbcgu">
+                                                <li class="aw__d1fbfq7g"><a class="aw__d3ltxdb" href="https://itunes.apple.com/us/app/chotot.vn/id790034666" target="_blank" rel="noopener noreferrer nofollow"><img alt="App Store" src="https://static.chotot.com/storage/default/ios.svg" class="aw__d1kilyzx"></a></li>
+                                                <li class="aw__d1fbfq7g"><a class="aw__d3ltxdb" href="https://play.google.com/store/apps/details?id=com.chotot.vn" target="_blank" rel="noopener noreferrer nofollow"><img alt="Google Play" src="https://static.chotot.com/storage/default/android.svg" class="aw__d1kilyzx"></a></li>
+                                                <li>
+                                                    <a class="appWrapper-Footer-a" href="https://appgallery.cloud.huawei.com/ag/n/app/C102420927?channelId=web&amp;detailType=0" target="_blank" rel="noopener noreferrer nofollow">
+                                                        <picture>
+                                                            <source type="image/webp" srcset="https://static.chotot.com/storage/default/huawei_app_install.webp">
+                                                            <img alt="App Huawei" src="https://static.chotot.com/storage/default/huawei_app_install.png" class="aw__d1kilyzx">
+                                                        </picture>
+                                                    </a>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="aw__i1ce1r9u">
+                                    <p class="aw__h1klxoqy">VỀ VIỆC LÀM TỐT</p>
+                                    <ul class="aw__d2kbcgu">
+                                        <li class="aw__d1fbfq7g"><a class="aw__d3ltxdb" href="https://trogiup.chotot.com/nguoi-ban/ve-viec-lam-tot/" target="_blank" rel="noopener noreferrer nofollow">Về Việc Làm Tốt</a></li>
+                                        <li class="aw__d1fbfq7g"><a class="aw__d3ltxdb" href="https://trogiup.chotot.com/nguoi-ban/quy-che-hoat-dong-san-giao-dich-thuong-mai-dien-tu-vieclamtot-com/" target="_blank" rel="noopener noreferrer nofollow">Quy chế hoạt động sàn</a></li>
+                                        <li class="aw__d1fbfq7g"><a class="aw__d3ltxdb" href="https://trogiup.chotot.com/nguoi-ban/chinh-sach-bao-mat-cua-nhatot-com/" target="_blank" rel="noopener noreferrer nofollow">Chính sách bảo mật</a></li>
+                                        <li class="aw__d1fbfq7g"><a class="aw__d3ltxdb" href="https://trogiup.chotot.com/nguoi-ban/co-che-giai-quyet-tranh-chap-cua-nhatot-com/" target="_blank" rel="noopener noreferrer nofollow">Giải quyết tranh chấp</a></li>
+                                        <li class="aw__d1fbfq7g"><a class="aw__d3ltxdb" href="https://trogiup.chotot.com/nguoi-ban/dieu-khoan-su-dung-cua-nhatot-com/" target="_blank" rel="noopener noreferrer nofollow">Điều khoản sử dụng</a></li>
+                                    </ul>
+                                </div>
+                                <div class="aw__i1qinjtl">
+                                    <div class="aw__i1ce1r9u">
+                                        <p class="aw__h1klxoqy">Liên kết</p>
+                                        <ul class="aw__ue6m5w0">
+                                            <li class="aw__d1fbfq7g"><a class="aw__d3ltxdb" href="https://www.facebook.com/chotot.vn" target="_blank" rel="noopener noreferrer nofollow"><img class="aw__d1m9rhxg" alt="Facebook" width="32" height="32" src="https://static.chotot.com/storage/default/facebook.svg"></a></li>
+                                            <li class="aw__d1fbfq7g"><a class="aw__d3ltxdb" href="https://www.youtube.com/ChototVN" target="_blank" rel="noopener noreferrer nofollow"><img class="aw__d1m9rhxg" alt="Youtube" width="32" height="32" src="https://static.chotot.com/storage/default/youtube.svg"></a></li>
+                                            <li class="aw__d1fbfq7g"><a class="aw__d3ltxdb" href="https://linkedin.com/company/cho-tot" target="_blank" rel="noopener noreferrer nofollow"><img class="aw__d1m9rhxg" alt="LinkedIn" width="32" height="32" src="https://static.chotot.com/storage/default/linkedin.svg"></a></li>
+                                        </ul>
+                                    </div>
+                                    <div class="aw__i1ce1r9u">
+                                        <div class="aw__h1klxoqy">Chứng nhận</div>
+                                        <ul class="aw__d2kbcgu">
+                                            <li class="aw__d1fbfq7g">
+                                                <a class="aw__d3ltxdb" target="_blank" rel="noopener noreferrer nofollow" href="http://online.gov.vn/Home/WebDetails/84494">
+                                                    <picture>
+                                                        <source type="image/webp" srcset="https://static.chotot.com/storage/default/certificate.webp">
+                                                        <img alt="Certification" width="130" height="40" src="https://static.chotot.com/storage/default/cerfiticate.png">
+                                                    </picture>
+                                                </a>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </section>
+                        </div>
+                        <hr class="aw__h1thvigh">
+                        <section class="aw__c1klqbjn">
+                            <address class="aw__d1jlhxju">CÔNG TY TNHH CHỢ TỐT - Người đại diện theo pháp luật:&nbsp;Nguyễn&nbsp;Trọng&nbsp;Tấn;<br>GPDKKD:&nbsp;0312120782&nbsp;do&nbsp;sở&nbsp;KH&nbsp;&amp;&nbsp;ĐT&nbsp;TP.HCM&nbsp;cấp&nbsp;ngày&nbsp;11/01/2013; Giấy&nbsp;phép&nbsp;hoạt&nbsp;động&nbsp;dịch&nbsp;vụ&nbsp;việc&nbsp;làm:&nbsp;Số&nbsp;33035/2021/03/SLĐTBXH-VLATLĐ&nbsp;cấp&nbsp;ngày&nbsp;15/10/2021;<br>Địa chỉ: Số 2 Ngô Đức Kế, Phường Bến Nghé, Quận 1, Thành phố Hồ Chí Minh, Việt Nam; Email:&nbsp;trogiup@chotot.vn&nbsp;-&nbsp;Tổng&nbsp;đài&nbsp;CSKH:&nbsp;19003003&nbsp;(1.000đ/phút)</address>
+                        </section>
+                    </div>
+                </footer>
+            </div>
+        </div>
+     
     </body>
 </html>
