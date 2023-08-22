@@ -26,9 +26,13 @@ Route::get('/kien-thuc', 'listnewController@viewList')->name('list-news');
  Route::get('/job-details/{link}/{id}.html','Backend\jobController@jobDetails')->name('job_details');
 
 
- Route::get('/filter','filterController@filter')->name('filter');
+Route::get('/filter','filterController@filter')->name('filter');
 
-  Route::get('/filters','filterController@filterHight')->name('filters');
+Route::get('/filters','filterController@filterHight')->name('filters');
+
+Route::get('search-title-job', 'filterController@seachTitleJob')->name('search-title');
+
+
 
 Route::post('register-field', 'Backend\employerController@registerEmployer')->name('employer-register');
 
