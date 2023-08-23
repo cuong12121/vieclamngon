@@ -28,7 +28,7 @@ class filterController extends Controller
     }
 
 
-    public function seachTitleJob($value='')
+    public function seachTitleJob(Request $request)
     {
         $datas = trim($request->keyword);
 
