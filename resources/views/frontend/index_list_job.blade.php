@@ -45,57 +45,57 @@
                     <div class="styles_oneRowContent__yddIy wflw9x5" style="--wflw9x5-0: 0;">
                         <a class="w1wkvqfs">
                             <li class="slider-item i1jeubyn" style="width: 96px;">
-                        <a aria-label="Bán hàng" href="https://www.vieclamtot.com/viec-lam-ban-hang-sdjt2" class="apx1hlq"><div class="c14xr536"><span style="box-sizing: border-box; display: inline-block; overflow: hidden; width: initial; height: initial; background: none; opacity: 1; border: 0px; margin: 0px; padding: 0px; position: relative; max-width: 100%;"><span style="box-sizing: border-box; display: block; width: initial; height: initial; background: none; opacity: 1; border: 0px; margin: 0px; padding: 0px; max-width: 100%;"><img alt="" aria-hidden="true" src="data:image/svg+xml,%3csvg%20xmlns=%27http://www.w3.org/2000/svg%27%20version=%271.1%27%20width=%2752%27%20height=%2752%27/%3e" style="display: block; max-width: 100%; width: initial; height: initial; background: none; opacity: 1; border: 0px; margin: 0px; padding: 0px;"></span><img alt="Bán hàng" srcset="/_next/image?url=https%3A%2F%2Fcdn.chotot.com%2Fadmincentre%2FhNaOr70kP-DZsamwTk-F5xLNY55LleF4aG6W_GSRWtQ%2Fpreset%3Araw%2Fplain%2F762e39389a9ad43be12d20a3ea96d371-2787152571195383189.jpg&amp;w=256&amp;q=95 1x" src="/_next/image?url=https%3A%2F%2Fcdn.chotot.com%2Fadmincentre%2FhNaOr70kP-DZsamwTk-F5xLNY55LleF4aG6W_GSRWtQ%2Fpreset%3Araw%2Fplain%2F762e39389a9ad43be12d20a3ea96d371-2787152571195383189.jpg&amp;w=256&amp;q=95" decoding="async" data-nimg="intrinsic" style="position: absolute; inset: 0px; box-sizing: border-box; padding: 0px; border: none; margin: auto; display: block; width: 0px; height: 0px; min-width: 100%; max-width: 100%; min-height: 100%; max-height: 100%;"></span></div><div class="flex flex-col flex-auto"><span class="coblrut">Bán hàng</span></div></a></li>
+                        <a aria-label="Bán hàng" href="viec-lam-ban-hang-sdjt2" class="apx1hlq"><div class="c14xr536"><span style="box-sizing: border-box; display: inline-block; overflow: hidden; width: initial; height: initial; background: none; opacity: 1; border: 0px; margin: 0px; padding: 0px; position: relative; max-width: 100%;"><span style="box-sizing: border-box; display: block; width: initial; height: initial; background: none; opacity: 1; border: 0px; margin: 0px; padding: 0px; max-width: 100%;"><img alt="" aria-hidden="true" src="data:image/svg+xml,%3csvg%20xmlns=%27http://www.w3.org/2000/svg%27%20version=%271.1%27%20width=%2752%27%20height=%2752%27/%3e" style="display: block; max-width: 100%; width: initial; height: initial; background: none; opacity: 1; border: 0px; margin: 0px; padding: 0px;"></span><img alt="Bán hàng" srcset="/_next/image?url=https%3A%2F%2Fcdn.chotot.com%2Fadmincentre%2FhNaOr70kP-DZsamwTk-F5xLNY55LleF4aG6W_GSRWtQ%2Fpreset%3Araw%2Fplain%2F762e39389a9ad43be12d20a3ea96d371-2787152571195383189.jpg&amp;w=256&amp;q=95 1x" src="/_next/image?url=https%3A%2F%2Fcdn.chotot.com%2Fadmincentre%2FhNaOr70kP-DZsamwTk-F5xLNY55LleF4aG6W_GSRWtQ%2Fpreset%3Araw%2Fplain%2F762e39389a9ad43be12d20a3ea96d371-2787152571195383189.jpg&amp;w=256&amp;q=95" decoding="async" data-nimg="intrinsic" style="position: absolute; inset: 0px; box-sizing: border-box; padding: 0px; border: none; margin: auto; display: block; width: 0px; height: 0px; min-width: 100%; max-width: 100%; min-height: 100%; max-height: 100%;"></span></div><div class="flex flex-col flex-auto"><span class="coblrut">Bán hàng</span></div></a></li>
                         <li class="slider-item i1jeubyn" style="width: 96px;">
-                            <a aria-label="Nhân viên phục vụ" href="https://www.vieclamtot.com/viec-lam-nhan-vien-phuc-vu-sdjt27" class="apx1hlq">
+                            <a aria-label="Nhân viên phục vụ" href="viec-lam-nhan-vien-phuc-vu-sdjt27" class="apx1hlq">
                                 <div class="c14xr536"><span style="box-sizing: border-box; display: inline-block; overflow: hidden; width: initial; height: initial; background: none; opacity: 1; border: 0px; margin: 0px; padding: 0px; position: relative; max-width: 100%;"><span style="box-sizing: border-box; display: block; width: initial; height: initial; background: none; opacity: 1; border: 0px; margin: 0px; padding: 0px; max-width: 100%;"><img alt="" aria-hidden="true" src="data:image/svg+xml,%3csvg%20xmlns=%27http://www.w3.org/2000/svg%27%20version=%271.1%27%20width=%2752%27%20height=%2752%27/%3e" style="display: block; max-width: 100%; width: initial; height: initial; background: none; opacity: 1; border: 0px; margin: 0px; padding: 0px;"></span><img alt="Nhân viên phục vụ" srcset="/_next/image?url=https%3A%2F%2Fcdn.chotot.com%2Fadmincentre%2F550r-_J6HSjS9TFF-YswV_eNURa9VqIa8NzJ7FpDeKg%2Fpreset%3Araw%2Fplain%2F7571f23bbb0290870f94a4a8207fce3f-2787152427833590447.jpg&amp;w=256&amp;q=95 1x" src="/_next/image?url=https%3A%2F%2Fcdn.chotot.com%2Fadmincentre%2F550r-_J6HSjS9TFF-YswV_eNURa9VqIa8NzJ7FpDeKg%2Fpreset%3Araw%2Fplain%2F7571f23bbb0290870f94a4a8207fce3f-2787152427833590447.jpg&amp;w=256&amp;q=95" decoding="async" data-nimg="intrinsic" style="position: absolute; inset: 0px; box-sizing: border-box; padding: 0px; border: none; margin: auto; display: block; width: 0px; height: 0px; min-width: 100%; max-width: 100%; min-height: 100%; max-height: 100%;"></span></div>
                                 <div class="flex flex-col flex-auto"><span class="coblrut">Nhân viên phục vụ</span></div>
                             </a>
                         </li>
                         <li class="slider-item i1jeubyn" style="width: 96px;">
-                            <a aria-label="Tài xế giao hàng xe máy" href="https://www.vieclamtot.com/viec-lam-giao-hang-sdjt24" class="apx1hlq">
+                            <a aria-label="Tài xế giao hàng xe máy" href="viec-lam-giao-hang-sdjt24" class="apx1hlq">
                                 <div class="c14xr536"><span style="box-sizing: border-box; display: inline-block; overflow: hidden; width: initial; height: initial; background: none; opacity: 1; border: 0px; margin: 0px; padding: 0px; position: relative; max-width: 100%;"><span style="box-sizing: border-box; display: block; width: initial; height: initial; background: none; opacity: 1; border: 0px; margin: 0px; padding: 0px; max-width: 100%;"><img alt="" aria-hidden="true" src="data:image/svg+xml,%3csvg%20xmlns=%27http://www.w3.org/2000/svg%27%20version=%271.1%27%20width=%2752%27%20height=%2752%27/%3e" style="display: block; max-width: 100%; width: initial; height: initial; background: none; opacity: 1; border: 0px; margin: 0px; padding: 0px;"></span><img alt="Tài xế giao hàng xe máy" srcset="/_next/image?url=https%3A%2F%2Fcdn.chotot.com%2Fadmincentre%2FRzZRx3CxIPHzccrzEJkeUzTa3BVKgVSYg7asIrHmtp0%2Fpreset%3Araw%2Fplain%2F76c9d9ea9e111090138ef6b972323dc8-2745358638816092486.jpg&amp;w=256&amp;q=95 1x" src="/_next/image?url=https%3A%2F%2Fcdn.chotot.com%2Fadmincentre%2FRzZRx3CxIPHzccrzEJkeUzTa3BVKgVSYg7asIrHmtp0%2Fpreset%3Araw%2Fplain%2F76c9d9ea9e111090138ef6b972323dc8-2745358638816092486.jpg&amp;w=256&amp;q=95" decoding="async" data-nimg="intrinsic" style="position: absolute; inset: 0px; box-sizing: border-box; padding: 0px; border: none; margin: auto; display: block; width: 0px; height: 0px; min-width: 100%; max-width: 100%; min-height: 100%; max-height: 100%;"></span></div>
                                 <div class="flex flex-col flex-auto"><span class="coblrut">Tài xế giao hàng xe máy</span></div>
                             </a>
                         </li>
                         <li class="slider-item i1jeubyn" style="width: 96px;">
-                            <a aria-label="Tạp vụ" href="https://www.vieclamtot.com/viec-lam-tap-vu-sdjt30" class="apx1hlq">
+                            <a aria-label="Tạp vụ" href="viec-lam-tap-vu-sdjt30" class="apx1hlq">
                                 <div class="c14xr536"><span style="box-sizing: border-box; display: inline-block; overflow: hidden; width: initial; height: initial; background: none; opacity: 1; border: 0px; margin: 0px; padding: 0px; position: relative; max-width: 100%;"><span style="box-sizing: border-box; display: block; width: initial; height: initial; background: none; opacity: 1; border: 0px; margin: 0px; padding: 0px; max-width: 100%;"><img alt="" aria-hidden="true" src="data:image/svg+xml,%3csvg%20xmlns=%27http://www.w3.org/2000/svg%27%20version=%271.1%27%20width=%2752%27%20height=%2752%27/%3e" style="display: block; max-width: 100%; width: initial; height: initial; background: none; opacity: 1; border: 0px; margin: 0px; padding: 0px;"></span><img alt="Tạp vụ" srcset="/_next/image?url=https%3A%2F%2Fcdn.chotot.com%2Fadmincentre%2FFSFApA-ve7u0AnBfBlUnVK8Fv1xiOO4UlLq01Bje3Ls%2Fpreset%3Araw%2Fplain%2F95398b432e2683798eae20fb3cdec327-2809864671391774411.jpg&amp;w=256&amp;q=95 1x" src="/_next/image?url=https%3A%2F%2Fcdn.chotot.com%2Fadmincentre%2FFSFApA-ve7u0AnBfBlUnVK8Fv1xiOO4UlLq01Bje3Ls%2Fpreset%3Araw%2Fplain%2F95398b432e2683798eae20fb3cdec327-2809864671391774411.jpg&amp;w=256&amp;q=95" decoding="async" data-nimg="intrinsic" style="position: absolute; inset: 0px; box-sizing: border-box; padding: 0px; border: none; margin: auto; display: block; width: 0px; height: 0px; min-width: 100%; max-width: 100%; min-height: 100%; max-height: 100%;"></span></div>
                                 <div class="flex flex-col flex-auto"><span class="coblrut">Tạp vụ</span></div>
                             </a>
                         </li>
                         <li class="slider-item i1jeubyn" style="width: 96px;">
-                            <a aria-label="Pha chế" href="https://www.vieclamtot.com/viec-lam-nhan-vien-pha-che-sdjt36" class="apx1hlq">
+                            <a aria-label="Pha chế" href="viec-lam-nhan-vien-pha-che-sdjt36" class="apx1hlq">
                                 <div class="c14xr536"><span style="box-sizing: border-box; display: inline-block; overflow: hidden; width: initial; height: initial; background: none; opacity: 1; border: 0px; margin: 0px; padding: 0px; position: relative; max-width: 100%;"><span style="box-sizing: border-box; display: block; width: initial; height: initial; background: none; opacity: 1; border: 0px; margin: 0px; padding: 0px; max-width: 100%;"><img alt="" aria-hidden="true" src="data:image/svg+xml,%3csvg%20xmlns=%27http://www.w3.org/2000/svg%27%20version=%271.1%27%20width=%2752%27%20height=%2752%27/%3e" style="display: block; max-width: 100%; width: initial; height: initial; background: none; opacity: 1; border: 0px; margin: 0px; padding: 0px;"></span><img alt="Pha chế" srcset="/_next/image?url=https%3A%2F%2Fcdn.chotot.com%2Fadmincentre%2FBJJVsIwPfmVJpxSp53dY66w_F7DrtLYAQidw98AVlJ4%2Fpreset%3Araw%2Fplain%2F7e49868ab9e8d8c97d1004c5cc291da7-2809865252018599952.jpg&amp;w=256&amp;q=95 1x" src="/_next/image?url=https%3A%2F%2Fcdn.chotot.com%2Fadmincentre%2FBJJVsIwPfmVJpxSp53dY66w_F7DrtLYAQidw98AVlJ4%2Fpreset%3Araw%2Fplain%2F7e49868ab9e8d8c97d1004c5cc291da7-2809865252018599952.jpg&amp;w=256&amp;q=95" decoding="async" data-nimg="intrinsic" style="position: absolute; inset: 0px; box-sizing: border-box; padding: 0px; border: none; margin: auto; display: block; width: 0px; height: 0px; min-width: 100%; max-width: 100%; min-height: 100%; max-height: 100%;"></span></div>
                                 <div class="flex flex-col flex-auto"><span class="coblrut">Pha chế</span></div>
                             </a>
                         </li>
                         <li class="slider-item i1jeubyn" style="width: 96px;">
-                            <a aria-label="Phụ bếp" href="https://www.vieclamtot.com/viec-lam-phu-bep-sdjt33" class="apx1hlq">
+                            <a aria-label="Phụ bếp" href="viec-lam-phu-bep-sdjt33" class="apx1hlq">
                                 <div class="c14xr536"><span style="box-sizing: border-box; display: inline-block; overflow: hidden; width: initial; height: initial; background: none; opacity: 1; border: 0px; margin: 0px; padding: 0px; position: relative; max-width: 100%;"><span style="box-sizing: border-box; display: block; width: initial; height: initial; background: none; opacity: 1; border: 0px; margin: 0px; padding: 0px; max-width: 100%;"><img alt="" aria-hidden="true" src="data:image/svg+xml,%3csvg%20xmlns=%27http://www.w3.org/2000/svg%27%20version=%271.1%27%20width=%2752%27%20height=%2752%27/%3e" style="display: block; max-width: 100%; width: initial; height: initial; background: none; opacity: 1; border: 0px; margin: 0px; padding: 0px;"></span><img alt="Phụ bếp" srcset="/_next/image?url=https%3A%2F%2Fcdn.chotot.com%2Fadmincentre%2FXESTmhycA_O-JemkKht-N_Ij2T5YXEgWzu65LKq8Wjg%2Fpreset%3Araw%2Fplain%2F1177b339e4742e186ce803430356063b-2809865576440067787.jpg&amp;w=256&amp;q=95 1x" src="/_next/image?url=https%3A%2F%2Fcdn.chotot.com%2Fadmincentre%2FXESTmhycA_O-JemkKht-N_Ij2T5YXEgWzu65LKq8Wjg%2Fpreset%3Araw%2Fplain%2F1177b339e4742e186ce803430356063b-2809865576440067787.jpg&amp;w=256&amp;q=95" decoding="async" data-nimg="intrinsic" style="position: absolute; inset: 0px; box-sizing: border-box; padding: 0px; border: none; margin: auto; display: block; width: 0px; height: 0px; min-width: 100%; max-width: 100%; min-height: 100%; max-height: 100%;"></span></div>
                                 <div class="flex flex-col flex-auto"><span class="coblrut">Phụ bếp</span></div>
                             </a>
                         </li>
                         <li class="slider-item i1jeubyn" style="width: 96px;">
-                            <a aria-label="Nhân viên kinh doanh" href="https://www.vieclamtot.com/viec-lam-nhan-vien-kinh-doanh-sdjt15" class="apx1hlq">
+                            <a aria-label="Nhân viên kinh doanh" href="viec-lam-nhan-vien-kinh-doanh-sdjt15" class="apx1hlq">
                                 <div class="c14xr536"><span style="box-sizing: border-box; display: inline-block; overflow: hidden; width: initial; height: initial; background: none; opacity: 1; border: 0px; margin: 0px; padding: 0px; position: relative; max-width: 100%;"><span style="box-sizing: border-box; display: block; width: initial; height: initial; background: none; opacity: 1; border: 0px; margin: 0px; padding: 0px; max-width: 100%;"><img alt="" aria-hidden="true" src="data:image/svg+xml,%3csvg%20xmlns=%27http://www.w3.org/2000/svg%27%20version=%271.1%27%20width=%2752%27%20height=%2752%27/%3e" style="display: block; max-width: 100%; width: initial; height: initial; background: none; opacity: 1; border: 0px; margin: 0px; padding: 0px;"></span><img alt="Nhân viên kinh doanh" srcset="/_next/image?url=https%3A%2F%2Fcdn.chotot.com%2Fadmincentre%2FYXn-_z7XhrB9XWo46qaCtB_5ZYoSMvMBdQa0K51AzU4%2Fpreset%3Araw%2Fplain%2F8b444641af7d8b936ef826af6a316ecf-2787153279100879535.jpg&amp;w=256&amp;q=95 1x" src="/_next/image?url=https%3A%2F%2Fcdn.chotot.com%2Fadmincentre%2FYXn-_z7XhrB9XWo46qaCtB_5ZYoSMvMBdQa0K51AzU4%2Fpreset%3Araw%2Fplain%2F8b444641af7d8b936ef826af6a316ecf-2787153279100879535.jpg&amp;w=256&amp;q=95" decoding="async" data-nimg="intrinsic" style="position: absolute; inset: 0px; box-sizing: border-box; padding: 0px; border: none; margin: auto; display: block; width: 0px; height: 0px; min-width: 100%; max-width: 100%; min-height: 100%; max-height: 100%;"></span></div>
                                 <div class="flex flex-col flex-auto"><span class="coblrut">Nhân viên kinh doanh</span></div>
                             </a>
                         </li>
                         <li class="slider-item i1jeubyn" style="width: 96px;">
-                            <a aria-label="Công nhân" href="https://www.vieclamtot.com/viec-lam-cong-nhan-nha-may-sdjt17" class="apx1hlq">
+                            <a aria-label="Công nhân" href="viec-lam-cong-nhan-nha-may-sdjt17" class="apx1hlq">
                                 <div class="c14xr536"><span style="box-sizing: border-box; display: inline-block; overflow: hidden; width: initial; height: initial; background: none; opacity: 1; border: 0px; margin: 0px; padding: 0px; position: relative; max-width: 100%;"><span style="box-sizing: border-box; display: block; width: initial; height: initial; background: none; opacity: 1; border: 0px; margin: 0px; padding: 0px; max-width: 100%;"><img alt="" aria-hidden="true" src="data:image/svg+xml,%3csvg%20xmlns=%27http://www.w3.org/2000/svg%27%20version=%271.1%27%20width=%2752%27%20height=%2752%27/%3e" style="display: block; max-width: 100%; width: initial; height: initial; background: none; opacity: 1; border: 0px; margin: 0px; padding: 0px;"></span><img alt="Công nhân" srcset="/_next/image?url=https%3A%2F%2Fcdn.chotot.com%2Fadmincentre%2F8PFneEINgDoPCGt_Wo1zfGNxjE7teaAVgwcdNJYDGSQ%2Fpreset%3Araw%2Fplain%2F45fff453437f38469dcf4c944a76bbdf-2787152001905558191.jpg&amp;w=256&amp;q=95 1x" src="/_next/image?url=https%3A%2F%2Fcdn.chotot.com%2Fadmincentre%2F8PFneEINgDoPCGt_Wo1zfGNxjE7teaAVgwcdNJYDGSQ%2Fpreset%3Araw%2Fplain%2F45fff453437f38469dcf4c944a76bbdf-2787152001905558191.jpg&amp;w=256&amp;q=95" decoding="async" data-nimg="intrinsic" style="position: absolute; inset: 0px; box-sizing: border-box; padding: 0px; border: none; margin: auto; display: block; width: 0px; height: 0px; min-width: 100%; max-width: 100%; min-height: 100%; max-height: 100%;"></span></div>
                                 <div class="flex flex-col flex-auto"><span class="coblrut">Công nhân</span></div>
                             </a>
                         </li>
                         <li class="slider-item i1jeubyn" style="width: 96px;">
-                            <a aria-label="Nhân viên kho vận" href="https://www.vieclamtot.com/viec-lam-nhan-vien-kho-sdjt29" class="apx1hlq">
+                            <a aria-label="Nhân viên kho vận" href="viec-lam-nhan-vien-kho-sdjt29" class="apx1hlq">
                                 <div class="c14xr536"><span style="box-sizing: border-box; display: inline-block; overflow: hidden; width: initial; height: initial; background: none; opacity: 1; border: 0px; margin: 0px; padding: 0px; position: relative; max-width: 100%;"><span style="box-sizing: border-box; display: block; width: initial; height: initial; background: none; opacity: 1; border: 0px; margin: 0px; padding: 0px; max-width: 100%;"><img alt="" aria-hidden="true" src="data:image/svg+xml,%3csvg%20xmlns=%27http://www.w3.org/2000/svg%27%20version=%271.1%27%20width=%2752%27%20height=%2752%27/%3e" style="display: block; max-width: 100%; width: initial; height: initial; background: none; opacity: 1; border: 0px; margin: 0px; padding: 0px;"></span><img alt="Nhân viên kho vận" srcset="/_next/image?url=https%3A%2F%2Fcdn.chotot.com%2Fadmincentre%2FAbmRzHUVDXi8gi3ygH4BdhPwmnS5NvxYm_1dpZHzanI%2Fpreset%3Araw%2Fplain%2F395a4a72e39dbdbbbc08014f25452de2-2787157857927888857.jpg&amp;w=256&amp;q=95 1x" src="/_next/image?url=https%3A%2F%2Fcdn.chotot.com%2Fadmincentre%2FAbmRzHUVDXi8gi3ygH4BdhPwmnS5NvxYm_1dpZHzanI%2Fpreset%3Araw%2Fplain%2F395a4a72e39dbdbbbc08014f25452de2-2787157857927888857.jpg&amp;w=256&amp;q=95" decoding="async" data-nimg="intrinsic" style="position: absolute; inset: 0px; box-sizing: border-box; padding: 0px; border: none; margin: auto; display: block; width: 0px; height: 0px; min-width: 100%; max-width: 100%; min-height: 100%; max-height: 100%;"></span></div>
                                 <div class="flex flex-col flex-auto"><span class="coblrut">Nhân viên kho vận</span></div>
                             </a>
                         </li>
                         <li class="slider-item i1jeubyn" style="width: 96px;">
-                            <a aria-label="Bảo vệ" href="https://www.vieclamtot.com/viec-lam-bao-ve-sdjt7" class="apx1hlq">
+                            <a aria-label="Bảo vệ" href="viec-lam-bao-ve-sdjt7" class="apx1hlq">
                                 <div class="c14xr536">
                                     <span style="box-sizing: border-box; display: inline-block; overflow: hidden; width: initial; height: initial; background: none; opacity: 1; border: 0px; margin: 0px; padding: 0px; position: relative; max-width: 100%;">
                                         <span style="box-sizing: border-box; display: block; width: initial; height: initial; background: none; opacity: 1; border: 0px; margin: 0px; padding: 0px; max-width: 100%;"><img alt="" aria-hidden="true" src="data:image/svg+xml,%3csvg%20xmlns=%27http://www.w3.org/2000/svg%27%20version=%271.1%27%20width=%2752%27%20height=%2752%27/%3e" style="display: block; max-width: 100%; width: initial; height: initial; background: none; opacity: 1; border: 0px; margin: 0px; padding: 0px;"></span><img alt="Bảo vệ" src="/_next/image?url=https%3A%2F%2Fcdn.chotot.com%2Fadmincentre%2FC_A7x90o-__I77POBAY60jgXADBkoX-zlulSoWfJHLM%2Fpreset%3Araw%2Fplain%2F045324ad0e8dc5b2a0d72ac04d2d1dbf-2787152475844481790.jpg&amp;w=256&amp;q=95" decoding="async" data-nimg="intrinsic" srcset="/_next/image?url=https%3A%2F%2Fcdn.chotot.com%2Fadmincentre%2FC_A7x90o-__I77POBAY60jgXADBkoX-zlulSoWfJHLM%2Fpreset%3Araw%2Fplain%2F045324ad0e8dc5b2a0d72ac04d2d1dbf-2787152475844481790.jpg&amp;w=256&amp;q=95 1x" style="position: absolute; inset: 0px; box-sizing: border-box; padding: 0px; border: none; margin: auto; display: block; width: 0px; height: 0px; min-width: 100%; max-width: 100%; min-height: 100%; max-height: 100%;">
@@ -146,7 +146,7 @@
                         </div>
                     </div>
                 </div>
-                <a href="https://www.vieclamtot.com/nha-tuyen-dung/uu-dai-nha-tuyen-dung-moi
+                <a href="nha-tuyen-dung/uu-dai-nha-tuyen-dung-moi
                     " rel="dofollow" class="p1kl3zxi">
                     <div style="color:#222222" class="p1tw6yxk">
                         <div class="p15o5cty">📣 Gói Tuyển Dụng <strong>giảm đến 50%</strong> dành cho người mới</div>
@@ -166,19 +166,19 @@
                         <div class="styles_oneRowContent__24W6r wflw9x5" style="--wflw9x5-0: 0;">
                             <div class="row-cat">
                                 <li class="slider-item ibmz4fe" style="--ibmz4fe-0: #F2F6FC; --ibmz4fe-1: right; width: 234px;">
-                                    <a aria-label="👩🏻‍💼 Quản lý ứng viên" href="https://www.vieclamtot.com/nha-tuyen-dung/quan-ly-ung-vien?_ga=2.225852381.619846207.1692580706-953912583.1692580706" class="am3px05">
+                                    <a aria-label="👩🏻‍💼 Quản lý ứng viên" href="nha-tuyen-dung/quan-ly-ung-vien?_ga=2.225852381.619846207.1692580706-953912583.1692580706" class="am3px05">
                                         <div color="#222222" class="cmomclx" style="--cmomclx-0: #222222; --cmomclx-1: 400;">👩🏻‍💼 Quản lý ứng viên</div>
                                         <div color="#306BD9" class="c1kk05bw" style="--c1kk05bw-0: #306BD9;">🔒 Kích hoạt ngay</div>
                                     </a>
                                 </li>
                                 <li class="slider-item ibmz4fe" style="--ibmz4fe-0: #FFF4E0; --ibmz4fe-1: right; width: 234px;">
-                                    <a aria-label="🔍 Tìm ứng viên mới" href="https://www.vieclamtot.com/nha-tuyen-dung/tim-ung-vien" class="am3px05">
+                                    <a aria-label="🔍 Tìm ứng viên mới" href="nha-tuyen-dung/tim-ung-vien" class="am3px05">
                                         <div color="#222222" class="cmomclx" style="--cmomclx-0: #222222; --cmomclx-1: 400;">🔍 Tìm ứng viên mới</div>
                                         <div color="#FF8800" class="c1kk05bw" style="--c1kk05bw-0: #FF8800;">0 ứng viên</div>
                                     </a>
                                 </li>
                                 <li class="slider-item ibmz4fe" style="--ibmz4fe-0: url(https://static.chotot.com/storage/JOB_STATIC_CDN/shortcut_partner_background.svg); --ibmz4fe-1: right; width: 234px;">
-                                    <a aria-label="Trở thành Đối Tác" href="https://www.vieclamtot.com/kinh-nghiem/uu-dai-cho-doi-tac-tuyen-dung.html" class="am3px05">
+                                    <a aria-label="Trở thành Đối Tác" href="kinh-nghiem/uu-dai-cho-doi-tac-tuyen-dung.html" class="am3px05">
                                         <div color="#FFFFFF" class="cmomclx" style="--cmomclx-0: #FFFFFF; --cmomclx-1: 400;">Trở thành Đối Tác</div>
                                         <div color="#FFFFFF" class="c1kk05bw" style="--c1kk05bw-0: #FFFFFF;">Xem ngay</div>
                                     </a>
@@ -401,63 +401,63 @@
             <h2 class="t1gy7sqq">Việc làm theo công ty</h2>
             <div class="w1mkj27i">
                 <li class="iws5vzr">
-                    <a aria-label="Tele 247" href="https://www.vieclamtot.com/tags/cong-ty-tele247-global-tuyen-dung?stickyad=disable" class="azmhcbw">
+                    <a aria-label="Tele 247" href="tags/cong-ty-tele247-global-tuyen-dung?stickyad=disable" class="azmhcbw">
                         <div class="i5ej9zg">
                             <div class="c17lw2jw"><span style="box-sizing: border-box; display: inline-block; overflow: hidden; width: initial; height: initial; background: none; opacity: 1; border: 0px; margin: 0px; padding: 0px; position: relative; max-width: 100%;"><span style="box-sizing: border-box; display: block; width: initial; height: initial; background: none; opacity: 1; border: 0px; margin: 0px; padding: 0px; max-width: 100%;"><img alt="" aria-hidden="true" src="data:image/svg+xml,%3csvg%20xmlns=%27http://www.w3.org/2000/svg%27%20version=%271.1%27%20width=%2770%27%20height=%2770%27/%3e" style="display: block; max-width: 100%; width: initial; height: initial; background: none; opacity: 1; border: 0px; margin: 0px; padding: 0px;"></span><img alt="cat-0" src="/_next/image?url=https%3A%2F%2Fcdn.chotot.com%2Fadmincentre%2FWQfum01nHTc3sH6_6oUO3H5AgvnrN0ZRrA5TsFX8ktw%2Fpreset%3Araw%2Fplain%2F1771e76a10c3d2f56f124b248b7892a2-2804350275232217335.jpg&amp;w=256&amp;q=75" decoding="async" data-nimg="intrinsic" style="position: absolute; inset: 0px; box-sizing: border-box; padding: 0px; border: none; margin: auto; display: block; width: 0px; height: 0px; min-width: 100%; max-width: 100%; min-height: 100%; max-height: 100%;" srcset="/_next/image?url=https%3A%2F%2Fcdn.chotot.com%2Fadmincentre%2FWQfum01nHTc3sH6_6oUO3H5AgvnrN0ZRrA5TsFX8ktw%2Fpreset%3Araw%2Fplain%2F1771e76a10c3d2f56f124b248b7892a2-2804350275232217335.jpg&amp;w=256&amp;q=75 1x"></span></div>
                         </div>
                     </a>
                 </li>
                 <li class="iws5vzr">
-                    <a aria-label="PepsiCo" href="https://www.vieclamtot.com/tags/cong-ty-tnhh-nuoc-giai-khat-suntory-pepsico-viet-nam-tuyen-dung?stickyad=disable" class="azmhcbw">
+                    <a aria-label="PepsiCo" href="tags/cong-ty-tnhh-nuoc-giai-khat-suntory-pepsico-viet-nam-tuyen-dung?stickyad=disable" class="azmhcbw">
                         <div class="i5ej9zg">
                             <div class="c17lw2jw"><span style="box-sizing: border-box; display: inline-block; overflow: hidden; width: initial; height: initial; background: none; opacity: 1; border: 0px; margin: 0px; padding: 0px; position: relative; max-width: 100%;"><span style="box-sizing: border-box; display: block; width: initial; height: initial; background: none; opacity: 1; border: 0px; margin: 0px; padding: 0px; max-width: 100%;"><img alt="" aria-hidden="true" src="data:image/svg+xml,%3csvg%20xmlns=%27http://www.w3.org/2000/svg%27%20version=%271.1%27%20width=%2770%27%20height=%2770%27/%3e" style="display: block; max-width: 100%; width: initial; height: initial; background: none; opacity: 1; border: 0px; margin: 0px; padding: 0px;"></span><img alt="cat-1" src="/_next/image?url=https%3A%2F%2Fcdn.chotot.com%2Fadmincentre%2Fh798W57gsgMg6MkSs6eBaVt8EMBkM8THnm1F4nHvUAU%2Fpreset%3Araw%2Fplain%2Fd500f723165cf0cdcc370e864100e4cf-2804350324204688849.jpg&amp;w=256&amp;q=75" decoding="async" data-nimg="intrinsic" style="position: absolute; inset: 0px; box-sizing: border-box; padding: 0px; border: none; margin: auto; display: block; width: 0px; height: 0px; min-width: 100%; max-width: 100%; min-height: 100%; max-height: 100%;" srcset="/_next/image?url=https%3A%2F%2Fcdn.chotot.com%2Fadmincentre%2Fh798W57gsgMg6MkSs6eBaVt8EMBkM8THnm1F4nHvUAU%2Fpreset%3Araw%2Fplain%2Fd500f723165cf0cdcc370e864100e4cf-2804350324204688849.jpg&amp;w=256&amp;q=75 1x"></span></div>
                         </div>
                     </a>
                 </li>
                 <li class="iws5vzr">
-                    <a aria-label="Pizza 4PS" href="https://www.vieclamtot.com/tags/cong-ty-co-phan-pizza-4ps-tuyen-dung?stickyad=disable" class="azmhcbw">
+                    <a aria-label="Pizza 4PS" href="tags/cong-ty-co-phan-pizza-4ps-tuyen-dung?stickyad=disable" class="azmhcbw">
                         <div class="i5ej9zg">
                             <div class="c17lw2jw"><span style="box-sizing: border-box; display: inline-block; overflow: hidden; width: initial; height: initial; background: none; opacity: 1; border: 0px; margin: 0px; padding: 0px; position: relative; max-width: 100%;"><span style="box-sizing: border-box; display: block; width: initial; height: initial; background: none; opacity: 1; border: 0px; margin: 0px; padding: 0px; max-width: 100%;"><img alt="" aria-hidden="true" src="data:image/svg+xml,%3csvg%20xmlns=%27http://www.w3.org/2000/svg%27%20version=%271.1%27%20width=%2770%27%20height=%2770%27/%3e" style="display: block; max-width: 100%; width: initial; height: initial; background: none; opacity: 1; border: 0px; margin: 0px; padding: 0px;"></span><img alt="cat-2" src="/_next/image?url=https%3A%2F%2Fcdn.chotot.com%2Fadmincentre%2F3Dk_jclZcJyIgnFeGK_xAgSvtfYf374Y8zpyJrssIHY%2Fpreset%3Araw%2Fplain%2F0043b9cc220e6cf5765f170bec18cb79-2784898304161178513.jpg&amp;w=256&amp;q=75" decoding="async" data-nimg="intrinsic" style="position: absolute; inset: 0px; box-sizing: border-box; padding: 0px; border: none; margin: auto; display: block; width: 0px; height: 0px; min-width: 100%; max-width: 100%; min-height: 100%; max-height: 100%;" srcset="/_next/image?url=https%3A%2F%2Fcdn.chotot.com%2Fadmincentre%2F3Dk_jclZcJyIgnFeGK_xAgSvtfYf374Y8zpyJrssIHY%2Fpreset%3Araw%2Fplain%2F0043b9cc220e6cf5765f170bec18cb79-2784898304161178513.jpg&amp;w=256&amp;q=75 1x"></span></div>
                         </div>
                     </a>
                 </li>
                 <li class="iws5vzr">
-                    <a aria-label="Golden Gate" href="https://www.vieclamtot.com/tags/cong-ty-co-phan-thuong-mai-dich-vu-cong-vang-tuyen-dung?stickyad=disable" class="azmhcbw">
+                    <a aria-label="Golden Gate" href="tags/cong-ty-co-phan-thuong-mai-dich-vu-cong-vang-tuyen-dung?stickyad=disable" class="azmhcbw">
                         <div class="i5ej9zg">
                             <div class="c17lw2jw"><span style="box-sizing: border-box; display: inline-block; overflow: hidden; width: initial; height: initial; background: none; opacity: 1; border: 0px; margin: 0px; padding: 0px; position: relative; max-width: 100%;"><span style="box-sizing: border-box; display: block; width: initial; height: initial; background: none; opacity: 1; border: 0px; margin: 0px; padding: 0px; max-width: 100%;"><img alt="" aria-hidden="true" src="data:image/svg+xml,%3csvg%20xmlns=%27http://www.w3.org/2000/svg%27%20version=%271.1%27%20width=%2770%27%20height=%2770%27/%3e" style="display: block; max-width: 100%; width: initial; height: initial; background: none; opacity: 1; border: 0px; margin: 0px; padding: 0px;"></span><img alt="cat-3" src="/_next/image?url=https%3A%2F%2Fcdn.chotot.com%2Fadmincentre%2Fz7vZotBKw5eouUhu6XVds8Pj05z7CI_4VRgJQAgzlww%2Fpreset%3Araw%2Fplain%2F15a800967f0fd0b1e9df23a457af312b-2784896980489888657.jpg&amp;w=256&amp;q=75" decoding="async" data-nimg="intrinsic" style="position: absolute; inset: 0px; box-sizing: border-box; padding: 0px; border: none; margin: auto; display: block; width: 0px; height: 0px; min-width: 100%; max-width: 100%; min-height: 100%; max-height: 100%;" srcset="/_next/image?url=https%3A%2F%2Fcdn.chotot.com%2Fadmincentre%2Fz7vZotBKw5eouUhu6XVds8Pj05z7CI_4VRgJQAgzlww%2Fpreset%3Araw%2Fplain%2F15a800967f0fd0b1e9df23a457af312b-2784896980489888657.jpg&amp;w=256&amp;q=75 1x"></span></div>
                         </div>
                     </a>
                 </li>
                 <li class="iws5vzr">
-                    <a aria-label="Eurowindow" href="https://www.vieclamtot.com/tags/cong-ty-co-phan-eurowindow-tuyen-dung?stickyad=disable" class="azmhcbw">
+                    <a aria-label="Eurowindow" href="tags/cong-ty-co-phan-eurowindow-tuyen-dung?stickyad=disable" class="azmhcbw">
                         <div class="i5ej9zg">
                             <div class="c17lw2jw"><span style="box-sizing: border-box; display: inline-block; overflow: hidden; width: initial; height: initial; background: none; opacity: 1; border: 0px; margin: 0px; padding: 0px; position: relative; max-width: 100%;"><span style="box-sizing: border-box; display: block; width: initial; height: initial; background: none; opacity: 1; border: 0px; margin: 0px; padding: 0px; max-width: 100%;"><img alt="" aria-hidden="true" src="data:image/svg+xml,%3csvg%20xmlns=%27http://www.w3.org/2000/svg%27%20version=%271.1%27%20width=%2770%27%20height=%2770%27/%3e" style="display: block; max-width: 100%; width: initial; height: initial; background: none; opacity: 1; border: 0px; margin: 0px; padding: 0px;"></span><img alt="cat-4" src="/_next/image?url=https%3A%2F%2Fcdn.chotot.com%2Fadmincentre%2Frw1_0TxDaXGsTdDJwR-P9z8laRhD2SqKs7WNTjPDiB8%2Fpreset%3Araw%2Fplain%2F1ddefec989a6b3adb30d3b73a2031570-2804349911399229756.jpg&amp;w=256&amp;q=75" decoding="async" data-nimg="intrinsic" style="position: absolute; inset: 0px; box-sizing: border-box; padding: 0px; border: none; margin: auto; display: block; width: 0px; height: 0px; min-width: 100%; max-width: 100%; min-height: 100%; max-height: 100%;" srcset="/_next/image?url=https%3A%2F%2Fcdn.chotot.com%2Fadmincentre%2Frw1_0TxDaXGsTdDJwR-P9z8laRhD2SqKs7WNTjPDiB8%2Fpreset%3Araw%2Fplain%2F1ddefec989a6b3adb30d3b73a2031570-2804349911399229756.jpg&amp;w=256&amp;q=75 1x"></span></div>
                         </div>
                     </a>
                 </li>
                 <li class="iws5vzr">
-                    <a aria-label="Man Power" href="https://www.vieclamtot.com/tags/cong-ty-tnhh-manpower-viet-nam-tuyen-dung?stickyad=disable" class="azmhcbw">
+                    <a aria-label="Man Power" href="tags/cong-ty-tnhh-manpower-viet-nam-tuyen-dung?stickyad=disable" class="azmhcbw">
                         <div class="i5ej9zg">
                             <div class="c17lw2jw"><span style="box-sizing: border-box; display: inline-block; overflow: hidden; width: initial; height: initial; background: none; opacity: 1; border: 0px; margin: 0px; padding: 0px; position: relative; max-width: 100%;"><span style="box-sizing: border-box; display: block; width: initial; height: initial; background: none; opacity: 1; border: 0px; margin: 0px; padding: 0px; max-width: 100%;"><img alt="" aria-hidden="true" src="data:image/svg+xml,%3csvg%20xmlns=%27http://www.w3.org/2000/svg%27%20version=%271.1%27%20width=%2770%27%20height=%2770%27/%3e" style="display: block; max-width: 100%; width: initial; height: initial; background: none; opacity: 1; border: 0px; margin: 0px; padding: 0px;"></span><img alt="cat-5" src="/_next/image?url=https%3A%2F%2Fcdn.chotot.com%2Fadmincentre%2FuXN-PHsjHrdQUncUg3pZZcg3ktEe-ZclN8s1q9N_DpE%2Fpreset%3Araw%2Fplain%2Fb867b10a9c2b39ff9d4678882c6f3f08-2804349840567370506.jpg&amp;w=256&amp;q=75" decoding="async" data-nimg="intrinsic" style="position: absolute; inset: 0px; box-sizing: border-box; padding: 0px; border: none; margin: auto; display: block; width: 0px; height: 0px; min-width: 100%; max-width: 100%; min-height: 100%; max-height: 100%;" srcset="/_next/image?url=https%3A%2F%2Fcdn.chotot.com%2Fadmincentre%2FuXN-PHsjHrdQUncUg3pZZcg3ktEe-ZclN8s1q9N_DpE%2Fpreset%3Araw%2Fplain%2Fb867b10a9c2b39ff9d4678882c6f3f08-2804349840567370506.jpg&amp;w=256&amp;q=75 1x"></span></div>
                         </div>
                     </a>
                 </li>
                 <li class="iws5vzr">
-                    <a aria-label="Shopee Express" href="https://www.vieclamtot.com/tags/shopee-express-tuyen-dung?stickyad=disable" class="azmhcbw">
+                    <a aria-label="Shopee Express" href="tags/shopee-express-tuyen-dung?stickyad=disable" class="azmhcbw">
                         <div class="i5ej9zg">
                             <div class="c17lw2jw"><span style="box-sizing: border-box; display: inline-block; overflow: hidden; width: initial; height: initial; background: none; opacity: 1; border: 0px; margin: 0px; padding: 0px; position: relative; max-width: 100%;"><span style="box-sizing: border-box; display: block; width: initial; height: initial; background: none; opacity: 1; border: 0px; margin: 0px; padding: 0px; max-width: 100%;"><img alt="" aria-hidden="true" src="data:image/svg+xml,%3csvg%20xmlns=%27http://www.w3.org/2000/svg%27%20version=%271.1%27%20width=%2770%27%20height=%2770%27/%3e" style="display: block; max-width: 100%; width: initial; height: initial; background: none; opacity: 1; border: 0px; margin: 0px; padding: 0px;"></span><img alt="cat-6" src="/_next/image?url=https%3A%2F%2Fcdn.chotot.com%2Fadmincentre%2F5kJ-tWlENi9iTJH7foR6XVwAnccHVfsfAwnCSag429A%2Fpreset%3Araw%2Fplain%2Fb0f5ebbf50be842b9a9ed283699752bc-2793333657910419667.jpg&amp;w=256&amp;q=75" decoding="async" data-nimg="intrinsic" style="position: absolute; inset: 0px; box-sizing: border-box; padding: 0px; border: none; margin: auto; display: block; width: 0px; height: 0px; min-width: 100%; max-width: 100%; min-height: 100%; max-height: 100%;" srcset="/_next/image?url=https%3A%2F%2Fcdn.chotot.com%2Fadmincentre%2F5kJ-tWlENi9iTJH7foR6XVwAnccHVfsfAwnCSag429A%2Fpreset%3Araw%2Fplain%2Fb0f5ebbf50be842b9a9ed283699752bc-2793333657910419667.jpg&amp;w=256&amp;q=75 1x"></span></div>
                         </div>
                     </a>
                 </li>
                 <li class="iws5vzr">
-                    <a aria-label="Công ty TNHH TMDV Đại Tiến" href="https://www.vieclamtot.com/tags/cong-ty-tnhh-dv-tm-dai-tien-tuyen-dung?stickyad=disable" class="azmhcbw">
+                    <a aria-label="Công ty TNHH TMDV Đại Tiến" href="tags/cong-ty-tnhh-dv-tm-dai-tien-tuyen-dung?stickyad=disable" class="azmhcbw">
                         <div class="i5ej9zg">
                             <div class="c17lw2jw"><span style="box-sizing: border-box; display: inline-block; overflow: hidden; width: initial; height: initial; background: none; opacity: 1; border: 0px; margin: 0px; padding: 0px; position: relative; max-width: 100%;"><span style="box-sizing: border-box; display: block; width: initial; height: initial; background: none; opacity: 1; border: 0px; margin: 0px; padding: 0px; max-width: 100%;"><img alt="" aria-hidden="true" src="data:image/svg+xml,%3csvg%20xmlns=%27http://www.w3.org/2000/svg%27%20version=%271.1%27%20width=%2770%27%20height=%2770%27/%3e" style="display: block; max-width: 100%; width: initial; height: initial; background: none; opacity: 1; border: 0px; margin: 0px; padding: 0px;"></span><img alt="cat-7" src="/_next/image?url=https%3A%2F%2Fcdn.chotot.com%2Fadmincentre%2FcWMx31X8GaxxdgM2trv7kF3LY6SdY5B1-lHE5ZULXDY%2Fpreset%3Araw%2Fplain%2Fb7537e5751957246f31494f401da03ac-2793332012870034633.jpg&amp;w=256&amp;q=75" decoding="async" data-nimg="intrinsic" style="position: absolute; inset: 0px; box-sizing: border-box; padding: 0px; border: none; margin: auto; display: block; width: 0px; height: 0px; min-width: 100%; max-width: 100%; min-height: 100%; max-height: 100%;" srcset="/_next/image?url=https%3A%2F%2Fcdn.chotot.com%2Fadmincentre%2FcWMx31X8GaxxdgM2trv7kF3LY6SdY5B1-lHE5ZULXDY%2Fpreset%3Araw%2Fplain%2Fb7537e5751957246f31494f401da03ac-2793332012870034633.jpg&amp;w=256&amp;q=75 1x"></span></div>
                         </div>
                     </a>
                 </li>
                 <li class="iws5vzr">
-                    <a aria-label="FPT Telecom HCM" href="https://www.vieclamtot.com/tags/fpt-telecom-tuyen-dung?stickyad=disable" class="azmhcbw">
+                    <a aria-label="FPT Telecom HCM" href="tags/fpt-telecom-tuyen-dung?stickyad=disable" class="azmhcbw">
                         <div class="i5ej9zg">
                             <div class="c17lw2jw"><span style="box-sizing: border-box; display: inline-block; overflow: hidden; width: initial; height: initial; background: none; opacity: 1; border: 0px; margin: 0px; padding: 0px; position: relative; max-width: 100%;"><span style="box-sizing: border-box; display: block; width: initial; height: initial; background: none; opacity: 1; border: 0px; margin: 0px; padding: 0px; max-width: 100%;"><img alt="" aria-hidden="true" src="data:image/svg+xml,%3csvg%20xmlns=%27http://www.w3.org/2000/svg%27%20version=%271.1%27%20width=%2770%27%20height=%2770%27/%3e" style="display: block; max-width: 100%; width: initial; height: initial; background: none; opacity: 1; border: 0px; margin: 0px; padding: 0px;"></span><img alt="cat-8" src="/_next/image?url=https%3A%2F%2Fcdn.chotot.com%2Fadmincentre%2FG8GCIQaIeD6exlNPgEhkBUnAQWtXzU40JJt88sIpYos%2Fpreset%3Araw%2Fplain%2Fa168d8743ed65cc27f08aca235edb550-2727092860300532255.jpg&amp;w=256&amp;q=75" decoding="async" data-nimg="intrinsic" style="position: absolute; inset: 0px; box-sizing: border-box; padding: 0px; border: none; margin: auto; display: block; width: 0px; height: 0px; min-width: 100%; max-width: 100%; min-height: 100%; max-height: 100%;" srcset="/_next/image?url=https%3A%2F%2Fcdn.chotot.com%2Fadmincentre%2FG8GCIQaIeD6exlNPgEhkBUnAQWtXzU40JJt88sIpYos%2Fpreset%3Araw%2Fplain%2Fa168d8743ed65cc27f08aca235edb550-2727092860300532255.jpg&amp;w=256&amp;q=75 1x"></span></div>
                         </div>
@@ -536,9 +536,9 @@
                     <div class="c3uu092" style="--c3uu092-0:200px;--c3uu092-1:197px">
                         <h1 dir="ltr" style="text-align:center"><strong>Chuy&ecirc;n trang tuyển dụng v&agrave; t&igrave;m việc lao động phổ th&ocirc;ng th&aacute;ng 08/2023</strong></h1>
                         <p dir="ltr" style="text-align:justify">Hiện nay, t&igrave;m được một việc l&agrave;m th&iacute;ch hợp c&oacute; mức lương v&agrave; ph&uacute;c lợi xứng đ&aacute;ng kh&ocirc;ng hề đơn giản. Đặc biệt l&agrave; trong trạng th&aacute;i B&igrave;nh Thường Mới, hầu như mọi người kh&ocirc;ng c&ograve;n xin việc trực tiếp nữa. Kh&ocirc;ng phải cầm chiếc hồ sơ giấy, đi đến từng c&ocirc;ng ty để nộp, thay v&agrave;o đ&oacute; l&agrave; những trang t&igrave;m việc l&agrave;m c&oacute; thể ứng tuyển trực tuyến ngay. Vừa tiết kiệm thời gian v&agrave;&nbsp;chi ph&iacute;, vừa an to&agrave;n trong thời kỳ dịch covid. Với giao diện th&acirc;n thiện, dễ d&agrave;ng sử dụng, Việc L&agrave;m Tốt hiện l&agrave; cầu nối tuyệt vời giữa nh&agrave; tuyển dụng v&agrave; ứng vi&ecirc;n tr&ecirc;n to&agrave;n quốc.&nbsp;</p>
-                        <p dir="ltr" style="text-align:justify">Tr&ecirc;n Việc L&agrave;m Tốt c&oacute; hơn 1 triệu <a href="https://www.vieclamtot.com/viec-lam" rel="noopener">việc l&agrave;m</a> đang tuyển dụng, số lượng tin đăng đang tăng nhiều hơn từng ng&agrave;y. Đặc biệt, tin đăng lu&ocirc;n được đội ngũ Việc L&agrave;m Tốt kiểm duyệt chất lượng, cập nhật mới li&ecirc;n tục. Đảm bảo cho người t&igrave;m việc tiếp cận được những việc l&agrave;m mới nhất, ph&ugrave; hợp nhất.</p>
+                        <p dir="ltr" style="text-align:justify">Tr&ecirc;n Việc L&agrave;m Tốt c&oacute; hơn 1 triệu <a href="viec-lam" rel="noopener">việc l&agrave;m</a> đang tuyển dụng, số lượng tin đăng đang tăng nhiều hơn từng ng&agrave;y. Đặc biệt, tin đăng lu&ocirc;n được đội ngũ Việc L&agrave;m Tốt kiểm duyệt chất lượng, cập nhật mới li&ecirc;n tục. Đảm bảo cho người t&igrave;m việc tiếp cận được những việc l&agrave;m mới nhất, ph&ugrave; hợp nhất.</p>
                         <p dir="ltr" style="text-align:justify">Ngo&agrave;i ra, c&aacute;c nh&agrave; tuyển dụng cũng c&oacute; thể chủ động t&igrave;m kiếm c&aacute;c ứng vi&ecirc;n tiềm năng cho c&ocirc;ng ty, doanh nghiệp của m&igrave;nh. Tr&ecirc;n k&ecirc;nh Việc L&agrave;m Tốt, người t&igrave;m việc c&oacute; thể đăng tin cần t&igrave;m c&ocirc;ng việc cụ thể cho bản th&acirc;n, bạn b&egrave;,... Nhờ đ&oacute;, c&aacute;c nh&agrave; tuyển dụng c&oacute; thể t&igrave;m kiếm, chọn lọc v&agrave; nhanh ch&oacute;ng li&ecirc;n hệ với ứng vi&ecirc;n ph&ugrave; hợp.</p>
-                        <p dir="ltr" style="text-align:justify">Những việc l&agrave;m <a href="https://www.vieclamtot.com/tags/viec-lam-ldpt" rel="noopener">lao động phổ th&ocirc;ng</a> đang phổ biến c&oacute; nhu cầu tuyển dụng nhiều nhất hiện nay: <a href="https://www.vieclamtot.com/tags/shipper" rel="noopener">Shipper</a>, <a href="https://www.vieclamtot.com/viec-lam-ban-hang-sdjt2" rel="noopener">B&aacute;n H&agrave;ng</a>, <a href="https://www.vieclamtot.com/viec-lam-bao-ve-sdjt7" rel="noopener">Bảo Vệ</a>, <a href="https://www.vieclamtot.com/viec-lam-giup-viec-sdjt35" rel="noopener">Gi&uacute;p Việc - Tạp Vụ</a>, <a href="https://www.vieclamtot.com/viec-lam-cong-nhan-nha-may-sdjt17" rel="noopener">C&ocirc;ng nh&acirc;n</a>,...&nbsp;</p>
+                        <p dir="ltr" style="text-align:justify">Những việc l&agrave;m <a href="tags/viec-lam-ldpt" rel="noopener">lao động phổ th&ocirc;ng</a> đang phổ biến c&oacute; nhu cầu tuyển dụng nhiều nhất hiện nay: <a href="tags/shipper" rel="noopener">Shipper</a>, <a href="viec-lam-ban-hang-sdjt2" rel="noopener">B&aacute;n H&agrave;ng</a>, <a href="viec-lam-bao-ve-sdjt7" rel="noopener">Bảo Vệ</a>, <a href="viec-lam-giup-viec-sdjt35" rel="noopener">Gi&uacute;p Việc - Tạp Vụ</a>, <a href="viec-lam-cong-nhan-nha-may-sdjt17" rel="noopener">C&ocirc;ng nh&acirc;n</a>,...&nbsp;</p>
                         <p dir="ltr" style="text-align:justify">Đặc biệt, Việc L&agrave;m Tốt c&ograve;n cung cấp cho bạn những th&ocirc;ng tin về thị trường lao động cũng như chia sẻ kinh nghiệm t&igrave;m việc, tuyển dụng. Bạn l&agrave; người lao động xa qu&ecirc; t&igrave;m việc, bạn kh&ocirc;ng biết bắt đầu từ đ&acirc;u? Bạn l&agrave; sinh vi&ecirc;n muốn kiếm việc l&agrave;m th&ecirc;m? Bạn cần t&igrave;m nhanh việc thời vụ?... Việc L&agrave;m Tốt sẽ gợi &yacute;, hướng dẫn bạn một c&aacute;ch dễ hiểu v&agrave; đơn giản nhất. Mời bạn&nbsp;truy cập&nbsp;v&agrave;o trang chia sẻ <a href="http://www.vieclamtot.com/kinh-nghiem/" rel="noopener">kinh nghiệm về việc l&agrave;m</a>&nbsp;của ch&uacute;ng t&ocirc;i để xem th&ecirc;m nhiều th&ocirc;ng tin bổ &iacute;ch.</p>
                         <p dir="ltr" style="text-align:justify">Nếu bạn đang c&oacute; nhu cầu t&igrave;m việc, h&atilde;y đến với chuy&ecirc;n mục việc l&agrave;m của Việc L&agrave;m Tốt để được tiếp cận những c&ocirc;ng việc mới nhất, ph&ugrave; hợp nhất.</p>
                         <p dir="ltr" style="text-align:justify">Bạn l&agrave; nh&agrave; tuyển dụng, đừng ngần ngại đăng tuyển việc l&agrave;m l&ecirc;n Việc L&agrave;m Tốt, với thao t&aacute;c đơn giản, dễ l&agrave;m, tin đăng của bạn sẽ nhanh ch&oacute;ng tiếp cận được với c&aacute;c ứng vi&ecirc;n. Trong trường hợp bạn t&igrave;m m&atilde;i chưa thấy ứng vi&ecirc;n ph&ugrave; hợp, h&atilde;y truy cập v&agrave;o trang người t&igrave;m việc của Việc L&agrave;m Tốt để chọn cho m&igrave;nh những ứng vi&ecirc;n s&aacute;ng gi&aacute; nhất.&nbsp;</p>
@@ -558,147 +558,147 @@
                     <ul class="u1uy6a9l" style="--u1uy6a9l-0:auto">
                         <!-- <li class="col-sm-4 l193bxy7" itemscope="" itemType="http://schema.org/ListItem" itemProp="itemListElement">
                             <meta itemProp="position" content="1"/>
-                            <a itemProp="url" href="https://www.vieclamtot.com/tags/viec-lam-thoi-vu" class="a85zez1"><span>Việc Làm Thời Vụ</span></a>
+                            <a itemProp="url" href="tags/viec-lam-thoi-vu" class="a85zez1"><span>Việc Làm Thời Vụ</span></a>
                         </li>
                         <li class="col-sm-4 l193bxy7" itemscope="" itemType="http://schema.org/ListItem" itemProp="itemListElement">
                             <meta itemProp="position" content="2"/>
-                            <a itemProp="url" href="https://www.vieclamtot.com/viec-lam-bac-ninh" class="a85zez1"><span>Việc làm Bắc Ninh</span></a>
+                            <a itemProp="url" href="viec-lam-bac-ninh" class="a85zez1"><span>Việc làm Bắc Ninh</span></a>
                         </li>
                         <li class="col-sm-4 l193bxy7" itemscope="" itemType="http://schema.org/ListItem" itemProp="itemListElement">
                             <meta itemProp="position" content="3"/>
-                            <a itemProp="url" href="https://www.vieclamtot.com/tags/viec-lam-part-time" class="a85zez1"><span>Việc Làm Part Time</span></a>
+                            <a itemProp="url" href="tags/viec-lam-part-time" class="a85zez1"><span>Việc Làm Part Time</span></a>
                         </li>
                         <li class="col-sm-4 l193bxy7" itemscope="" itemType="http://schema.org/ListItem" itemProp="itemListElement">
                             <meta itemProp="position" content="4"/>
-                            <a itemProp="url" href="https://www.vieclamtot.com/tags/viec-lam-online-tai-nha" class="a85zez1"><span>Việc Làm Online Tại Nhà</span></a>
+                            <a itemProp="url" href="tags/viec-lam-online-tai-nha" class="a85zez1"><span>Việc Làm Online Tại Nhà</span></a>
                         </li>
                         <li class="col-sm-4 l193bxy7" itemscope="" itemType="http://schema.org/ListItem" itemProp="itemListElement">
                             <meta itemProp="position" content="5"/>
-                            <a itemProp="url" href="https://www.vieclamtot.com/tags/viec-lam-online" class="a85zez1"><span>Việc Làm Online</span></a>
+                            <a itemProp="url" href="tags/viec-lam-online" class="a85zez1"><span>Việc Làm Online</span></a>
                         </li>
                         <li class="col-sm-4 l193bxy7" itemscope="" itemType="http://schema.org/ListItem" itemProp="itemListElement">
                             <meta itemProp="position" content="6"/>
-                            <a itemProp="url" href="https://www.vieclamtot.com/viec-lam-dong-nai" class="a85zez1"><span>Việc làm Đồng Nai</span></a>
+                            <a itemProp="url" href="viec-lam-dong-nai" class="a85zez1"><span>Việc làm Đồng Nai</span></a>
                         </li>
                         <li class="col-sm-4 l193bxy7" itemscope="" itemType="http://schema.org/ListItem" itemProp="itemListElement">
                             <meta itemProp="position" content="7"/>
-                            <a itemProp="url" href="https://www.vieclamtot.com/tags/viec-lam-tai-nha" class="a85zez1"><span>Việc Làm Tại Nhà</span></a>
+                            <a itemProp="url" href="tags/viec-lam-tai-nha" class="a85zez1"><span>Việc Làm Tại Nhà</span></a>
                         </li>
                         <li class="col-sm-4 l193bxy7" itemscope="" itemType="http://schema.org/ListItem" itemProp="itemListElement">
                             <meta itemProp="position" content="8"/>
-                            <a itemProp="url" href="https://www.vieclamtot.com/tags/viec-lam-them" class="a85zez1"><span>Việc Làm Thêm</span></a>
+                            <a itemProp="url" href="tags/viec-lam-them" class="a85zez1"><span>Việc Làm Thêm</span></a>
                         </li>
                         <li class="col-sm-4 l193bxy7" itemscope="" itemType="http://schema.org/ListItem" itemProp="itemListElement">
                             <meta itemProp="position" content="9"/>
-                            <a itemProp="url" href="https://www.vieclamtot.com/tags/viec-lam-khu-cong-nghiep" class="a85zez1"><span>Việc Làm Khu Công Nghiệp</span></a>
+                            <a itemProp="url" href="tags/viec-lam-khu-cong-nghiep" class="a85zez1"><span>Việc Làm Khu Công Nghiệp</span></a>
                         </li>
                         <li class="col-sm-4 l193bxy7" itemscope="" itemType="http://schema.org/ListItem" itemProp="itemListElement">
                             <meta itemProp="position" content="10"/>
-                            <a itemProp="url" href="https://www.vieclamtot.com/viec-lam-tai-xe-binh-duong-sdjt3" class="a85zez1"><span>Tài Xế Bình Dương</span></a>
+                            <a itemProp="url" href="viec-lam-tai-xe-binh-duong-sdjt3" class="a85zez1"><span>Tài Xế Bình Dương</span></a>
                         </li>
                         <li class="col-sm-4 l193bxy7" itemscope="" itemType="http://schema.org/ListItem" itemProp="itemListElement">
                             <meta itemProp="position" content="11"/>
-                            <a itemProp="url" href="https://www.vieclamtot.com/viec-lam-quan-8-tp-ho-chi-minh" class="a85zez1"><span>Việc Làm Quận 8</span></a>
+                            <a itemProp="url" href="viec-lam-quan-8-tp-ho-chi-minh" class="a85zez1"><span>Việc Làm Quận 8</span></a>
                         </li>
                         <li class="col-sm-4 l193bxy7" itemscope="" itemType="http://schema.org/ListItem" itemProp="itemListElement">
                             <meta itemProp="position" content="12"/>
-                            <a itemProp="url" href="https://www.vieclamtot.com/viec-lam-huyen-cu-chi-tp-ho-chi-minh" class="a85zez1"><span>Việc Làm Củ Chi</span></a>
+                            <a itemProp="url" href="viec-lam-huyen-cu-chi-tp-ho-chi-minh" class="a85zez1"><span>Việc Làm Củ Chi</span></a>
                         </li>
                         <li class="col-sm-4 l193bxy7" itemscope="" itemType="http://schema.org/ListItem" itemProp="itemListElement">
                             <meta itemProp="position" content="13"/>
-                            <a itemProp="url" href="https://www.vieclamtot.com/tags/nhan-hang-gia-cong-ve-nha-lam" class="a85zez1"><span>Nhận Hàng Gia Công Về Nhà Làm</span></a>
+                            <a itemProp="url" href="tags/nhan-hang-gia-cong-ve-nha-lam" class="a85zez1"><span>Nhận Hàng Gia Công Về Nhà Làm</span></a>
                         </li>
                         <li class="col-sm-4 l193bxy7" itemscope="" itemType="http://schema.org/ListItem" itemProp="itemListElement">
                             <meta itemProp="position" content="14"/>
-                            <a itemProp="url" href="https://www.vieclamtot.com/viec-lam-quan-go-vap-tp-ho-chi-minh" class="a85zez1"><span>Việc Làm Gò Vấp</span></a>
+                            <a itemProp="url" href="viec-lam-quan-go-vap-tp-ho-chi-minh" class="a85zez1"><span>Việc Làm Gò Vấp</span></a>
                         </li>
                         <li class="col-sm-4 l193bxy7" itemscope="" itemType="http://schema.org/ListItem" itemProp="itemListElement">
                             <meta itemProp="position" content="15"/>
-                            <a itemProp="url" href="https://www.vieclamtot.com/viec-lam-can-tho" class="a85zez1"><span>Việc làm Cần Thơ</span></a>
+                            <a itemProp="url" href="viec-lam-can-tho" class="a85zez1"><span>Việc làm Cần Thơ</span></a>
                         </li>
                         <li class="col-sm-4 l193bxy7" itemscope="" itemType="http://schema.org/ListItem" itemProp="itemListElement">
                             <meta itemProp="position" content="16"/>
-                            <a itemProp="url" href="https://www.vieclamtot.com/tags/viec-lam-quan-12" class="a85zez1"><span>Việc Làm Quận 12</span></a>
+                            <a itemProp="url" href="tags/viec-lam-quan-12" class="a85zez1"><span>Việc Làm Quận 12</span></a>
                         </li>
                         <li class="col-sm-4 l193bxy7" itemscope="" itemType="http://schema.org/ListItem" itemProp="itemListElement">
                             <meta itemProp="position" content="17"/>
-                            <a itemProp="url" href="https://www.vieclamtot.com/viec-lam-huyen-hoc-mon-tp-ho-chi-minh" class="a85zez1"><span>Việc Làm Hóc Môn</span></a>
+                            <a itemProp="url" href="viec-lam-huyen-hoc-mon-tp-ho-chi-minh" class="a85zez1"><span>Việc Làm Hóc Môn</span></a>
                         </li>
                         <li class="col-sm-4 l193bxy7" itemscope="" itemType="http://schema.org/ListItem" itemProp="itemListElement">
                             <meta itemProp="position" content="18"/>
-                            <a itemProp="url" href="https://www.vieclamtot.com/viec-lam-thanh-pho-thu-duc-tp-ho-chi-minh" class="a85zez1"><span>Việc làm Quận 9</span></a>
+                            <a itemProp="url" href="viec-lam-thanh-pho-thu-duc-tp-ho-chi-minh" class="a85zez1"><span>Việc làm Quận 9</span></a>
                         </li>
                         <li class="col-sm-4 l193bxy7" itemscope="" itemType="http://schema.org/ListItem" itemProp="itemListElement">
                             <meta itemProp="position" content="19"/>
-                            <a itemProp="url" href="https://www.vieclamtot.com/viec-lam-quan-binh-tan-tp-ho-chi-minh" class="a85zez1"><span>Việc Làm Quận Bình Tân</span></a>
+                            <a itemProp="url" href="viec-lam-quan-binh-tan-tp-ho-chi-minh" class="a85zez1"><span>Việc Làm Quận Bình Tân</span></a>
                         </li>
                         <li class="col-sm-4 l193bxy7" itemscope="" itemType="http://schema.org/ListItem" itemProp="itemListElement">
                             <meta itemProp="position" content="20"/>
-                            <a itemProp="url" href="https://www.vieclamtot.com/tags/viec-lam-thoi-vu-30-4" class="a85zez1"><span>Việc Làm Thời Vụ 30/4</span></a>
+                            <a itemProp="url" href="tags/viec-lam-thoi-vu-30-4" class="a85zez1"><span>Việc Làm Thời Vụ 30/4</span></a>
                         </li>
                         <li class="col-sm-4 l193bxy7" itemscope="" itemType="http://schema.org/ListItem" itemProp="itemListElement">
                             <meta itemProp="position" content="21"/>
-                            <a itemProp="url" href="https://www.vieclamtot.com/viec-lam-quan-7-tp-ho-chi-minh" class="a85zez1"><span>Việc làm Quận 7</span></a>
+                            <a itemProp="url" href="viec-lam-quan-7-tp-ho-chi-minh" class="a85zez1"><span>Việc làm Quận 7</span></a>
                         </li>
                         <li class="col-sm-4 l193bxy7" itemscope="" itemType="http://schema.org/ListItem" itemProp="itemListElement">
                             <meta itemProp="position" content="22"/>
-                            <a itemProp="url" href="https://www.vieclamtot.com/viec-lam-tai-xe-tp-ho-chi-minh-sdjt3" class="a85zez1"><span>Tài Xế TPHCM</span></a>
+                            <a itemProp="url" href="viec-lam-tai-xe-tp-ho-chi-minh-sdjt3" class="a85zez1"><span>Tài Xế TPHCM</span></a>
                         </li>
                         <li class="col-sm-4 l193bxy7" itemscope="" itemType="http://schema.org/ListItem" itemProp="itemListElement">
                             <meta itemProp="position" content="23"/>
-                            <a itemProp="url" href="https://www.vieclamtot.com/viec-lam-ninh-thuan" class="a85zez1"><span>Việc Làm Ninh Thuận</span></a>
+                            <a itemProp="url" href="viec-lam-ninh-thuan" class="a85zez1"><span>Việc Làm Ninh Thuận</span></a>
                         </li>
                         <li class="col-sm-4 l193bxy7" itemscope="" itemType="http://schema.org/ListItem" itemProp="itemListElement">
                             <meta itemProp="position" content="24"/>
-                            <a itemProp="url" href="https://www.vieclamtot.com/viec-lam-phu-yen" class="a85zez1"><span>Việc Làm Phú Yên</span></a>
+                            <a itemProp="url" href="viec-lam-phu-yen" class="a85zez1"><span>Việc Làm Phú Yên</span></a>
                         </li>
                         <li class="col-sm-4 l193bxy7" itemscope="" itemType="http://schema.org/ListItem" itemProp="itemListElement">
                             <meta itemProp="position" content="25"/>
-                            <a itemProp="url" href="https://www.vieclamtot.com/viec-lam-hai-phong" class="a85zez1"><span>Việc làm Hải Phòng</span></a>
+                            <a itemProp="url" href="viec-lam-hai-phong" class="a85zez1"><span>Việc làm Hải Phòng</span></a>
                         </li>
                         <li class="col-sm-4 l193bxy7" itemscope="" itemType="http://schema.org/ListItem" itemProp="itemListElement">
                             <meta itemProp="position" content="26"/>
-                            <a itemProp="url" href="https://www.vieclamtot.com/viec-lam-da-nang" class="a85zez1"><span>Việc làm Đà Nẵng</span></a>
+                            <a itemProp="url" href="viec-lam-da-nang" class="a85zez1"><span>Việc làm Đà Nẵng</span></a>
                         </li>
                         <li class="col-sm-4 l193bxy7" itemscope="" itemType="http://schema.org/ListItem" itemProp="itemListElement">
                             <meta itemProp="position" content="27"/>
-                            <a itemProp="url" href="https://www.vieclamtot.com/viec-lam-gia-lai" class="a85zez1"><span>Việc Làm Gia Lai</span></a>
+                            <a itemProp="url" href="viec-lam-gia-lai" class="a85zez1"><span>Việc Làm Gia Lai</span></a>
                         </li>
                         <li class="col-sm-4 l193bxy7" itemscope="" itemType="http://schema.org/ListItem" itemProp="itemListElement">
                             <meta itemProp="position" content="28"/>
-                            <a itemProp="url" href="https://www.vieclamtot.com/viec-lam-ha-nam" class="a85zez1"><span>Việc Làm Hà Nam</span></a>
+                            <a itemProp="url" href="viec-lam-ha-nam" class="a85zez1"><span>Việc Làm Hà Nam</span></a>
                         </li>
                         <li class="col-sm-4 l193bxy7" itemscope="" itemType="http://schema.org/ListItem" itemProp="itemListElement">
                             <meta itemProp="position" content="29"/>
-                            <a itemProp="url" href="https://www.vieclamtot.com/viec-lam-quang-ngai" class="a85zez1"><span>Việc Làm Quảng Ngãi</span></a>
+                            <a itemProp="url" href="viec-lam-quang-ngai" class="a85zez1"><span>Việc Làm Quảng Ngãi</span></a>
                         </li>
                         <li class="col-sm-4 l193bxy7" itemscope="" itemType="http://schema.org/ListItem" itemProp="itemListElement">
                             <meta itemProp="position" content="30"/>
-                            <a itemProp="url" href="https://www.vieclamtot.com/viec-lam-khanh-hoa" class="a85zez1"><span>Việc Làm Khánh Hòa</span></a>
+                            <a itemProp="url" href="viec-lam-khanh-hoa" class="a85zez1"><span>Việc Làm Khánh Hòa</span></a>
                         </li>
                         <li class="col-sm-4 l193bxy7" itemscope="" itemType="http://schema.org/ListItem" itemProp="itemListElement">
                             <meta itemProp="position" content="31"/>
-                            <a itemProp="url" href="https://www.vieclamtot.com/viec-lam-thua-thien-hue" class="a85zez1"><span>Việc Làm Huế</span></a>
+                            <a itemProp="url" href="viec-lam-thua-thien-hue" class="a85zez1"><span>Việc Làm Huế</span></a>
                         </li>
                         <li class="col-sm-4 l193bxy7" itemscope="" itemType="http://schema.org/ListItem" itemProp="itemListElement">
                             <meta itemProp="position" content="32"/>
-                            <a itemProp="url" href="https://www.vieclamtot.com/viec-lam-ha-tinh" class="a85zez1"><span>Việc Làm Hà Tĩnh</span></a>
+                            <a itemProp="url" href="viec-lam-ha-tinh" class="a85zez1"><span>Việc Làm Hà Tĩnh</span></a>
                         </li>
                         <li class="col-sm-4 l193bxy7" itemscope="" itemType="http://schema.org/ListItem" itemProp="itemListElement">
                             <meta itemProp="position" content="33"/>
-                            <a itemProp="url" href="https://www.vieclamtot.com/viec-lam-tp-ho-chi-minh" class="a85zez1"><span>Tìm việc làm TPHCM</span></a>
+                            <a itemProp="url" href="viec-lam-tp-ho-chi-minh" class="a85zez1"><span>Tìm việc làm TPHCM</span></a>
                         </li>
                         <li class="col-sm-4 l193bxy7" itemscope="" itemType="http://schema.org/ListItem" itemProp="itemListElement">
                             <meta itemProp="position" content="34"/>
-                            <a itemProp="url" href="https://www.vieclamtot.com/viec-lam-quang-nam" class="a85zez1"><span>Việc Làm Quảng Nam</span></a>
+                            <a itemProp="url" href="viec-lam-quang-nam" class="a85zez1"><span>Việc Làm Quảng Nam</span></a>
                         </li>
                         <li class="col-sm-4 l193bxy7" itemscope="" itemType="http://schema.org/ListItem" itemProp="itemListElement">
                             <meta itemProp="position" content="35"/>
-                            <a itemProp="url" href="https://www.vieclamtot.com/viec-lam-binh-duong" class="a85zez1"><span>Việc làm Bình Dương</span></a>
+                            <a itemProp="url" href="viec-lam-binh-duong" class="a85zez1"><span>Việc làm Bình Dương</span></a>
                         </li>
                         <li class="col-sm-4 l193bxy7" itemscope="" itemType="http://schema.org/ListItem" itemProp="itemListElement">
                             <meta itemProp="position" content="36"/>
-                            <a itemProp="url" href="https://www.vieclamtot.com/viec-lam-ha-noi" class="a85zez1"><span>Việc làm Hà Nội</span></a>
+                            <a itemProp="url" href="viec-lam-ha-noi" class="a85zez1"><span>Việc làm Hà Nội</span></a>
                         </li> -->
                     </ul>
                 </div>
