@@ -82,6 +82,14 @@ Route::get('ve-chung-toi', function () {
 
 
 
+Route::get('rate', function () {
+
+    return view('rate');
+
+})->name('rate');
+
+
+
 Route::get('nha-tuyen-dung/dang-ky', 'Backend\employerController@index')->name('register_employer'); 
 
 
