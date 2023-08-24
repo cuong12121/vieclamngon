@@ -20,10 +20,8 @@
       
         <meta name="next-head-count" content="14"/>
         <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0"/>
-     
-       
-        <link rel="canonical" href="//>
-        <script async="" src="https://static.chotot.com/storage/js/prebid-ads.js"></script>
+         <link rel="shortcut icon" href="javascript:void(0)"/>
+      
         <meta name="theme-color" content="#2561CF"/>
         <meta name="full-screen" content="yes"/>
         <meta name="application-name" content="Việc Làm Ngon"/>
