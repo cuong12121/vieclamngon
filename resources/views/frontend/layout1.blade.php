@@ -20,8 +20,7 @@
       
         <meta name="next-head-count" content="14"/>
         <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0"/>
-      <!--   <link rel="shortcut icon" href="https://www.chotot.com/chotot-img/favicon.ico"/>
-        <link rel="shortcut icon" href="https://static.chotot.com/storage/chotot-icons/favicon.ico"/> -->
+     
        
         <link rel="canonical" href="//>
         <script async="" src="https://static.chotot.com/storage/js/prebid-ads.js"></script>
