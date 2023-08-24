@@ -10,10 +10,10 @@
 
         <base href="https://www.vieclamtot.com/">
 
-        <title>Việc Làm Tốt: Tuyển Dụng &amp; Tìm Việc Làm Mới Nhất 08/2023</title>
-        <meta name="description" content="✅Việc Làm Tốt - Kênh tuyển dụng và tìm việc hiệu quả, uy tín toàn quốc ✅Cập nhật việc làm mới trong tháng 08/2023 ✅Được phát triển bởi Chợ Tốt"/>
-        <meta property="og:title" content="Việc Làm Tốt: Tuyển Dụng &amp; Tìm Việc Làm Mới Nhất 08/2023"/>
-        <meta property="og:description" content="✅Việc Làm Tốt - Kênh tuyển dụng và tìm việc hiệu quả, uy tín toàn quốc ✅Cập nhật việc làm mới trong tháng 08/2023 ✅Được phát triển bởi Chợ Tốt"/>
+        <title>Vieclamngon Kênh tuyển dụng và tìm việc hiệu quả, uy tín toàn quốc </title>
+        <meta name="description" content=""/>
+        <meta property="og:title" content=""/>
+        <meta property="og:description" content=""/>
         <meta property="og:image" content="https://static.chotot.com/storage/marketplace/ct-job-200.png"/>
         <meta property="og:url" content="https://www.vieclamtot.com"/>
         <meta property="og:type" content="website"/>
@@ -32,7 +32,7 @@
         <script async="" src="https://static.chotot.com/storage/js/prebid-ads.js"></script>
         <meta name="theme-color" content="#2561CF"/>
         <meta name="full-screen" content="yes"/>
-        <meta name="application-name" content="Việc Làm Tốt"/>
+        <meta name="application-name" content="Việc Làm Ngon"/>
         <meta name="apple-mobile-web-app-capable" content="yes"/>
         <meta name="mobile-web-app-capable" content="yes"/>
         <meta name="apple-mobile-web-app-title" content="Việc Làm Tốt"/>
@@ -1146,7 +1146,7 @@
 
                             <div class="cokiwz8">
                                 <div class="w1n0uzon">
-                                    <h2 class="t10jqhqo">Việc Làm Tốt - Kênh tìm việc làm nhanh chóng, hiệu quả cao hàng đầu Việt Nam</h2>
+                                    <h2 class="t10jqhqo">Vieclamngon</h2>
                                     <div class="c3uu092" style="--c3uu092-0:200px;--c3uu092-1:197px">
                                         <h1 dir="ltr" style="text-align:center"><strong>Chuy&ecirc;n trang tuyển dụng v&agrave; t&igrave;m việc lao động phổ th&ocirc;ng th&aacute;ng 08/2023</strong></h1>
                                         <p dir="ltr" style="text-align:justify">Hiện nay, t&igrave;m được một việc l&agrave;m th&iacute;ch hợp c&oacute; mức lương v&agrave; ph&uacute;c lợi xứng đ&aacute;ng kh&ocirc;ng hề đơn giản. Đặc biệt l&agrave; trong trạng th&aacute;i B&igrave;nh Thường Mới, hầu như mọi người kh&ocirc;ng c&ograve;n xin việc trực tiếp nữa. Kh&ocirc;ng phải cầm chiếc hồ sơ giấy, đi đến từng c&ocirc;ng ty để nộp, thay v&agrave;o đ&oacute; l&agrave; những trang t&igrave;m việc l&agrave;m c&oacute; thể ứng tuyển trực tuyến ngay. Vừa tiết kiệm thời gian v&agrave;&nbsp;chi ph&iacute;, vừa an to&agrave;n trong thời kỳ dịch covid. Với giao diện th&acirc;n thiện, dễ d&agrave;ng sử dụng, Việc L&agrave;m Tốt hiện l&agrave; cầu nối tuyệt vời giữa nh&agrave; tuyển dụng v&agrave; ứng vi&ecirc;n tr&ecirc;n to&agrave;n quốc.&nbsp;</p>
@@ -1338,16 +1338,7 @@
                                         </div>
                                         <div class="aw__i55qi11">
                                             <ul class="aw__d2kbcgu">
-                                                <li class="aw__d1fbfq7g"><a class="aw__d3ltxdb" href="https://itunes.apple.com/us/app/chotot.vn/id790034666" target="_blank" rel="noopener noreferrer nofollow"><img alt="App Store" src="https://static.chotot.com/storage/default/ios.svg" class="aw__d1kilyzx"></a></li>
-                                                <li class="aw__d1fbfq7g"><a class="aw__d3ltxdb" href="https://play.google.com/store/apps/details?id=com.chotot.vn" target="_blank" rel="noopener noreferrer nofollow"><img alt="Google Play" src="https://static.chotot.com/storage/default/android.svg" class="aw__d1kilyzx"></a></li>
-                                                <li>
-                                                    <a class="appWrapper-Footer-a" href="https://appgallery.cloud.huawei.com/ag/n/app/C102420927?channelId=web&amp;detailType=0" target="_blank" rel="noopener noreferrer nofollow">
-                                                        <picture>
-                                                            <source type="image/webp" srcset="https://static.chotot.com/storage/default/huawei_app_install.webp">
-                                                            <img alt="App Huawei" src="https://static.chotot.com/storage/default/huawei_app_install.png" class="aw__d1kilyzx">
-                                                        </picture>
-                                                    </a>
-                                                </li>
+                                                
                                             </ul>
                                         </div>
                                     </div>
@@ -1355,41 +1346,27 @@
                                 <div class="aw__i1ce1r9u">
                                     <p class="aw__h1klxoqy">VỀ VIỆC LÀM TỐT</p>
                                     <ul class="aw__d2kbcgu">
-                                        <li class="aw__d1fbfq7g"><a class="aw__d3ltxdb" href="https://trogiup.chotot.com/nguoi-ban/ve-viec-lam-tot/" target="_blank" rel="noopener noreferrer nofollow">Về Việc Làm Tốt</a></li>
+                                        <li class="aw__d1fbfq7g"><a class="aw__d3ltxdb" href="#" target="_blank" rel="noopener noreferrer nofollow">Về Việc Làm Tốt</a></li>
                                         <li class="aw__d1fbfq7g"><a class="aw__d3ltxdb" href="https://trogiup.chotot.com/nguoi-ban/quy-che-hoat-dong-san-giao-dich-thuong-mai-dien-tu-vieclamtot-com/" target="_blank" rel="noopener noreferrer nofollow">Quy chế hoạt động sàn</a></li>
-                                        <li class="aw__d1fbfq7g"><a class="aw__d3ltxdb" href="https://trogiup.chotot.com/nguoi-ban/chinh-sach-bao-mat-cua-nhatot-com/" target="_blank" rel="noopener noreferrer nofollow">Chính sách bảo mật</a></li>
-                                        <li class="aw__d1fbfq7g"><a class="aw__d3ltxdb" href="https://trogiup.chotot.com/nguoi-ban/co-che-giai-quyet-tranh-chap-cua-nhatot-com/" target="_blank" rel="noopener noreferrer nofollow">Giải quyết tranh chấp</a></li>
-                                        <li class="aw__d1fbfq7g"><a class="aw__d3ltxdb" href="https://trogiup.chotot.com/nguoi-ban/dieu-khoan-su-dung-cua-nhatot-com/" target="_blank" rel="noopener noreferrer nofollow">Điều khoản sử dụng</a></li>
+                                        <li class="aw__d1fbfq7g"><a class="aw__d3ltxdb" href="#" target="_blank" rel="noopener noreferrer nofollow">Chính sách bảo mật</a></li>
+                                        <li class="aw__d1fbfq7g"><a class="aw__d3ltxdb" href="#" target="_blank" rel="noopener noreferrer nofollow">Giải quyết tranh chấp</a></li>
+                                        <li class="aw__d1fbfq7g"><a class="aw__d3ltxdb" href="#" target="_blank" rel="noopener noreferrer nofollow">Điều khoản sử dụng</a></li>
                                     </ul>
                                 </div>
                                 <div class="aw__i1qinjtl">
                                     <div class="aw__i1ce1r9u">
                                         <p class="aw__h1klxoqy">Liên kết</p>
-                                        <ul class="aw__ue6m5w0">
-                                            <li class="aw__d1fbfq7g"><a class="aw__d3ltxdb" href="https://www.facebook.com/chotot.vn" target="_blank" rel="noopener noreferrer nofollow"><img class="aw__d1m9rhxg" alt="Facebook" width="32" height="32" src="https://static.chotot.com/storage/default/facebook.svg"></a></li>
-                                            <li class="aw__d1fbfq7g"><a class="aw__d3ltxdb" href="https://www.youtube.com/ChototVN" target="_blank" rel="noopener noreferrer nofollow"><img class="aw__d1m9rhxg" alt="Youtube" width="32" height="32" src="https://static.chotot.com/storage/default/youtube.svg"></a></li>
-                                            <li class="aw__d1fbfq7g"><a class="aw__d3ltxdb" href="https://linkedin.com/company/cho-tot" target="_blank" rel="noopener noreferrer nofollow"><img class="aw__d1m9rhxg" alt="LinkedIn" width="32" height="32" src="https://static.chotot.com/storage/default/linkedin.svg"></a></li>
-                                        </ul>
+                                       
                                     </div>
                                     <div class="aw__i1ce1r9u">
-                                        <div class="aw__h1klxoqy">Chứng nhận</div>
-                                        <ul class="aw__d2kbcgu">
-                                            <li class="aw__d1fbfq7g">
-                                                <a class="aw__d3ltxdb" target="_blank" rel="noopener noreferrer nofollow" href="http://online.gov.vn/Home/WebDetails/84494">
-                                                    <picture>
-                                                        <source type="image/webp" srcset="https://static.chotot.com/storage/default/certificate.webp">
-                                                        <img alt="Certification" width="130" height="40" src="https://static.chotot.com/storage/default/cerfiticate.png">
-                                                    </picture>
-                                                </a>
-                                            </li>
-                                        </ul>
+                                        
                                     </div>
                                 </div>
                             </section>
                         </div>
                         <hr class="aw__h1thvigh">
                         <section class="aw__c1klqbjn">
-                            <address class="aw__d1jlhxju">CÔNG TY TNHH CHỢ TỐT - Người đại diện theo pháp luật:&nbsp;Nguyễn&nbsp;Trọng&nbsp;Tấn;<br>GPDKKD:&nbsp;0312120782&nbsp;do&nbsp;sở&nbsp;KH&nbsp;&amp;&nbsp;ĐT&nbsp;TP.HCM&nbsp;cấp&nbsp;ngày&nbsp;11/01/2013; Giấy&nbsp;phép&nbsp;hoạt&nbsp;động&nbsp;dịch&nbsp;vụ&nbsp;việc&nbsp;làm:&nbsp;Số&nbsp;33035/2021/03/SLĐTBXH-VLATLĐ&nbsp;cấp&nbsp;ngày&nbsp;15/10/2021;<br>Địa chỉ: Số 2 Ngô Đức Kế, Phường Bến Nghé, Quận 1, Thành phố Hồ Chí Minh, Việt Nam; Email:&nbsp;trogiup@chotot.vn&nbsp;-&nbsp;Tổng&nbsp;đài&nbsp;CSKH:&nbsp;19003003&nbsp;(1.000đ/phút)</address>
+                            
                         </section>
                     </div>
                 </footer>
