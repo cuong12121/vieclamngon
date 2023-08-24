@@ -20,15 +20,15 @@
         <link rel="preload" as="image" href="https://cdn.chotot.com/admincentre/h-zbL-gnlTG02ESMCWPpPqSd2EBpHeb4yEQGAYgkQ9A/preset:raw/plain/d058e42ba4f3545eecb81382238f82d2-2830734792045236056.jpg"/>
         <meta name="next-head-count" content="14"/>
         <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0"/>
-        <link rel="shortcut icon" href="https://www.chotot.com/chotot-img/favicon.ico"/>
-        <link rel="shortcut icon" href="https://static.chotot.com/storage/chotot-icons/favicon.ico"/>
-        <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+      <!--   <link rel="shortcut icon" href="https://www.chotot.com/chotot-img/favicon.ico"/>
+        <link rel="shortcut icon" href="https://static.chotot.com/storage/chotot-icons/favicon.ico"/> -->
+       <!--  <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
             new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
             j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
             'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
             })(window,document,'script','dataLayer','GTM-WCFN73J');
-        </script>
-        <link rel="canonical" href="https://www.vieclamtot.com"/>
+        </script> -->
+        
         <script async="" src="https://static.chotot.com/storage/js/prebid-ads.js"></script>
         <meta name="theme-color" content="#2561CF"/>
         <meta name="full-screen" content="yes"/>
