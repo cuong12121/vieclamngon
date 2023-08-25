@@ -10,6 +10,8 @@
 
          <base href="https://www.vieclamtot.com/">
 
+         <meta name="csrf-token" content="{{ csrf_token() }}">
+
         <title>Vieclamngon Kênh tuyển dụng và tìm việc hiệu quả, uy tín toàn quốc </title>
         <meta name="description" content=""/>
         <meta property="og:title" content=""/>
@@ -43,7 +45,7 @@
 
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css">
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css">
-
+        
         <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
         <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
 
@@ -152,6 +154,12 @@
 }
 .aw__m1n72bce{
     display: none;
+}
+
+
+.aw__i1nbm5k4{
+    width:100% !important;
+    height: auto !important;
 }
 
 @media screen and (max-width: 769px){
@@ -635,7 +643,7 @@
                         <div class="aw__catkylo">
                             <section class="aw__c9g90xh">
                                 <div class="aw__i1ce1r9u">
-                                    <p class="aw__h1klxoqy"> TÌM VIỆC LÀM TRÊN ỨNG DỤNG CHỢ TỐT </p>
+                                    <p class="aw__h1klxoqy"> TÌM VIỆC LÀM</p>
                                     <div class="aw__i8yrc5u">
                                         <div class="aw__i55qi11">
                                             <picture>
@@ -651,9 +659,9 @@
                                     </div>
                                 </div>
                                 <div class="aw__i1ce1r9u">
-                                    <p class="aw__h1klxoqy">VỀ VIỆC LÀM TỐT</p>
+                                    <p class="aw__h1klxoqy">Về Việc Làm Ngon</p>
                                     <ul class="aw__d2kbcgu">
-                                        <li class="aw__d1fbfq7g"><a class="aw__d3ltxdb" href="#" target="_blank" rel="noopener noreferrer nofollow">Về Việc Làm Tốt</a></li>
+                                        <li class="aw__d1fbfq7g"><a class="aw__d3ltxdb" href="#" target="_blank" rel="noopener noreferrer nofollow">Về việc làm ngon</a></li>
                                         <li class="aw__d1fbfq7g"><a class="aw__d3ltxdb" href="https://trogiup.chotot.com/nguoi-ban/quy-che-hoat-dong-san-giao-dich-thuong-mai-dien-tu-vieclamtot-com/" target="_blank" rel="noopener noreferrer nofollow">Quy chế hoạt động sàn</a></li>
                                         <li class="aw__d1fbfq7g"><a class="aw__d3ltxdb" href="#" target="_blank" rel="noopener noreferrer nofollow">Chính sách bảo mật</a></li>
                                         <li class="aw__d1fbfq7g"><a class="aw__d3ltxdb" href="#" target="_blank" rel="noopener noreferrer nofollow">Giải quyết tranh chấp</a></li>

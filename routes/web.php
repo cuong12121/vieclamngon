@@ -32,10 +32,9 @@ Route::get('/filters','filterController@filterHight')->name('filters');
 
 Route::get('search-title-job', 'filterController@seachTitleJob')->name('search-title');
 
-
-
 Route::post('register-field', 'Backend\employerController@registerEmployer')->name('employer-register');
 
+Route::post('add-rate', 'rateController@addRate')->name('add-rate');
 
 Route::group(['prefix' => 'ajax'], function() {
 
@@ -57,9 +56,6 @@ Route::get('/co-hoi-nghe-nghiep', function () {
 
 Route::get('employ-details/{link}', 'employerController@employDetails')->name('employ-details');
 
-
-
-
 Route::get('/quick-register-user', function () {
 
     return view('frontend.regiter-fast-form');
@@ -68,11 +64,7 @@ Route::get('/quick-register-user', function () {
 
 Route::get('blog-details/{link}', 'blogController@viewBlog')->name('blog_detail'); 
 
-
-
 Route::get('employers-login', 'employerController@employesLogin')->name('employers_login_fe'); 
-
-
 
 Route::get('ve-chung-toi', function () {
 
@@ -81,14 +73,7 @@ Route::get('ve-chung-toi', function () {
 })->name('our');
 
 
-
-Route::get('rate', function () {
-
-    return view('rate');
-
-})->name('rate');
-
-
+Route::get('rate', 'rateController@rate')->name('rate');
 
 Route::get('nha-tuyen-dung/dang-ky', 'Backend\employerController@index')->name('register_employer'); 
 
@@ -107,15 +92,11 @@ Route::group(['prefix' => 'nha-tuyen-dung','middleware' => 'Checkemploy'], funct
 
     Route::post('show-viewer-job', 'Backend\employerController@showViewerJob')->name('show-viewer-job');
 
-
     Route::get('list-ung-vien', function () {
 
         return view('employer.list_ungvien');
 
     })->name('list-ung-vien');
-
-
-
 
     Route::post('update-active-job', 'Backend\employerController@activeJobEmployer')->name('update-active-job');
 
@@ -137,8 +118,6 @@ Route::group(['prefix' => 'nha-tuyen-dung','middleware' => 'Checkemploy'], funct
 
     Route::get('/form/{id}', 'Backend\employerInfoController@show')->name('form_show_update'); 
 
-    Route::get('/index', 'Backend\employerController@showIndex')->name('show-index'); 
-
     Route::get('/info', 'Backend\employerInfoController@getInfoEmployer')->name('info-employer'); 
 
     Route::get('logout', 'Backend\employerController@logout')->name('employer-logout');
@@ -149,11 +128,11 @@ Route::group(['prefix' => 'nha-tuyen-dung','middleware' => 'Checkemploy'], funct
 
     Route::post('update-job/{id}', 'Backend\employerController@updateJob')->name('update-job');
 
-
-
     Route::get('remove-job/{id}', 'Backend\employerController@removeJob')->name('remove-job');
 
 });
+
+Route::get('nha-tuyen-dung/index', 'Backend\employerController@showIndex')->name('show-index'); 
 
 Route::get('ung-vien/user-dashboard', 'userController@dashBoard')->middleware('checklogin')->name('user-dashboard');
 
@@ -162,7 +141,6 @@ Route::post('users', 'Backend\UserLoginController@registerUser')->name('register
 Route::post('ung-vien/login', 'Backend\UserLoginController@loginUser')->name('login-user');
 
 Route::post('send-mail-reset-pass', 'Backend\userController@resetPassWord')->name('send-mail-reset-pass');
-
 
 Route::post('ung-vien/profice/{action}', 'Backend\applicationController@updateApplication')->name('postProfile');
 
@@ -174,12 +152,4 @@ Route::post('nha-tuyen-dung/login', 'Backend\employerController@postLoginEmploye
 
 
    
-
-
-
-
-
-
-
-
 

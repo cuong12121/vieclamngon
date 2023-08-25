@@ -32,6 +32,7 @@
         <th>Tên nhà tuyển dụng</th>
         <th>Danh sách công việc đã đăng</th>
         <th>Danh sách cv đã nộp</th>
+        <th>Danh sách đánh giá cty</th>
         <th>Chọn nổi bật</th>
         
         <th>Xóa</th>
@@ -61,12 +62,12 @@
 
                 
                 <td> 
-
-                   
                     @if(!empty($apply->first()))
                     <button type="button" class="btn btn-primary"  onclick="cv_apply({{ $value->employ_id }})">Xem {{  $apply->count() }} cv ứng tuyển </button>
                     @endif
                 </td>
+
+                <td><a href="javascript:void(0)">Xem</a></td>
                
                 <td>chọn</td>
                

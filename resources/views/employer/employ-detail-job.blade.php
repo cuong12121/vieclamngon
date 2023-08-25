@@ -17,6 +17,16 @@
                 padding: 20px;
                 background: #f1f9fd;
             }
+
+           .bh5myrx{
+                color: #fff;
+                background-color: #ffb057;
+                border-color: #ffb057;
+                border-radius: 10px;
+                position: absolute;
+                right: 10px;
+                top:10px;
+            }
         </style>
         
         <section class="jobsby-company cb-section">
@@ -67,7 +77,7 @@
                             <div class="job-item">
                                 <div class="figure">
                                     <div class="figcaption">
-                                   <!--      <div class="timeago"> <span><font color="FF0000">(Mới)</font></span>  </div> -->
+                                        
                                         <h3 class="title"><a href="{{ route('job_details', [$value->link, $value->id]) }}" title="{{ $value->title }}">{{ $value->title }}</a></h3>
                                         <div class="caption">
                                             <p class="company-name">{{ $value->name }}</p>
@@ -89,6 +99,10 @@
                                                 </ul>
                                             </div>
                                         </div>
+
+                                        <a href="{{ route('rate') }}?job={{ $value->id }}">
+                                            <button class="bh5myrx primary r-normal large w-bold i-left b1ozkzx9">Đánh giá</button>
+                                        </a>   
                                     </div>
                                 </div>
                             </div>
