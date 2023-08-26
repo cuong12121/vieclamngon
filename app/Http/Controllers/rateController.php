@@ -8,6 +8,8 @@ use Auth;
 
 use Carbon\Carbon;
 
+use App\Models\job;
+
 use DB;
 
 class rateController extends Controller
@@ -16,13 +18,24 @@ class rateController extends Controller
     {
         $content = $request->content;
 
-        $job = $request->job;
+        $job_id = $request->job;
+
+       
+        $job = job::find($job_id);
+
+        $now = Carbon::now();
 
         $user_check = Auth::check();
 
+
+        $user_id = Auth::user()->id;
+
+
         if(!empty($job) && $user_check){
 
-            return view('rate');
+            $show_rate = DB::table('rate')->where('user_id', $user_id)->get();
+
+            return view('rate', compact('job', 'show_rate', 'now'));
         }
 
         return abort(404);
@@ -41,11 +54,13 @@ class rateController extends Controller
 
         $email = Auth::user()->email;
 
+        $user_id  = Auth::user()->id;
+
         $active = 0;
 
         $now = Carbon::now();
 
-        DB::table('rate')->insert(['name'=> $name, 'employer_id'=>$employer_id,  'email'=> $email, 'content'=>$content, 'star'=>$star_selected, 'active'=>0, 'created_at'=>$now, 'updated_at'=>$now]);
+        DB::table('rate')->insert(['name'=> $name, 'user_id'=>$user_id, 'employer_id'=>$employer_id,  'email'=> $email, 'content'=>$content, 'star'=>$star_selected, 'active'=>0, 'created_at'=>$now, 'updated_at'=>$now]);
 
         return response('thành công');
 

@@ -18,6 +18,10 @@
 
     <link rel="stylesheet" type="text/css" href="https://static.chotot.com/storage/CT_WEB_UNI_PUBLIC_PROFILE/17d70828/_next/static/css/f44495da3bea9809.css">
 
+    <link rel="stylesheet" type="text/css" href="https://static.chotot.com/storage/CT_WEB_UNI_SHOP_FRONT/852027d6/_next/static/css/78133e826f0f3082.css">
+
+    <link rel="stylesheet" type="text/css" href="https://static.chotot.com/storage/CT_WEB_UNI_SHOP_FRONT/852027d6/_next/static/css/18126cceff93753c.css">
+
 
 
     <style type="text/css">
@@ -38,20 +42,15 @@
             min-height: 500px;
         }
 
+        .show-rate{
+            display: none;
+        }
+
         
     </style>
 
 @endpush
 
-
-<?php 
-
-
-
-    $job_id =  strip_tags($_GET['job']);
-
-    $job = App\Models\job::find($job_id);
-?>
 <div class="aw__catkylo">
                     
     <div class="container contactInfo ratingDetail">
@@ -146,11 +145,17 @@
                             <img alt="rating-star" width="24px" loading="lazy" src="https://static.chotot.com/storage/marketplace/common/pf_rating_disable_icon.svg" class="mocked-styled-14 ct_rlm__s1uhtalk" />
                         </div>
                     </div>
+
+                    @if(!empty($show_rate) && $show_rate->count()>0)
                     <div class="total">
-                        0<!-- -->
-                        đánh giá
+                        
+                        {{ $show_rate->count() }} Đánh giá
                     </div>
+
+
                     <div class="suggestion-label"></div>
+
+                    @endif
                 </div>
 
             </div>
@@ -199,13 +204,25 @@
                     --s1n3jvkx-40: 0;
                     --s1n3jvkx-41: none;
                 "
-                class="mocked-styled-123 s1n3jvkx"
-            >
+                class="mocked-styled-123 s1n3jvkx">
 
-           
-                <div class="mocked-styled-137 c1luditf">
-                    <a class="mocked-styled-43 lwemh88">Đã đánh giá <span>(0)</span></a>
+                <div class="mocked-styled-25">
+                    <div role="tablist" class="mocked-styled-26 t1ssja1g" style="--t1ssja1g-0:hidden">
+                        <button class="t1dz3fd0 fullWidth show_active  active" style="--display:inline-grid" role="tab" aria-selected="true" aria-disabled="false" tabindex="0">
+                            <span class="mocked-styled-23 tl5g64g" style="--tl5g64g-0:#222222">NGƯỜI BÁN (1)</span><span color="primary" class="mocked-styled-27 tagu49w" style="--tagu49w-0:#FF8800"></span>
+                        </button>
+                        <button class="t1dz3fd0 fullWidth show_active" style="--display:inline-grid" role="tab" aria-selected="false" aria-disabled="false" tabindex="-1"><span class="mocked-styled-23 tl5g64g" style="--tl5g64g-0:#222222">DANH SÁCH ĐÁNH GIÁ</span></button>
+                    </div>
                 </div>
+
+                @if(!empty($show_rate) && $show_rate->count()>0)
+                <div class="mocked-styled-137 c1luditf">
+                    <a class="mocked-styled-43 lwemh88">Đã đánh giá <span>({{ $show_rate->count() }})</span></a>
+                </div>
+
+                @endif
+
+
                 <div class="mocked-styled-25 t1aixrug">
                     <div role="tablist" class="mocked-styled-26 t1ssja1g" style="--t1ssja1g-0: hidden;">
                         <button class="t1dz3fd0 fullWidth active" style="--display: inline-grid;" role="tab" aria-selected="true" aria-disabled="false" tabindex="0">
@@ -217,7 +234,7 @@
                     </div>
                 </div>
                 <div class="ratingDetailInfoWrapper">
-                    <div class="row">
+                    <div>
                         <div class="reviewItem col-md-12">
                             <div size="32" class="mocked-styled-0 a1o3nv49" style="--a1o3nv49-0: 32px;">
                                 <img alt="avatar" src="https://cdn.chotot.com/mufjxx21kV6m4p4JPXupUxICS9v-ws-LBsh7tp8iodE/preset:shopava/plain/e5232671b39277565f79909d5cd3d5a1-2777646557960381488.jpg" />
@@ -247,14 +264,72 @@
                                     </div>
                                 </div>
                                 <div class="mocked-styled-12 fvrd6wu">
-                                    <div class="mocked-styled-14 r12s69ub">|</div>
+                                    
                                     <div class="mocked-styled-15 b1omm4kf"><button class="bh5myrx primary r-normal large w-bold i-left b1ozkzx9">Đánh giá</button></div>
                                 </div>
                             </div>
                             <div class="mocked-styled-24 b1fhlzlu">
                                 <button class="bh5myrx primary r-normal large w-bold i-left b1ozkzx9" data-toggle="modal" data-target="#exampleModal">Đánh giá</button>
                             </div>
+
                         </div>
+
+
+                        <div class="show-rate">   
+
+                            <ul class="flex flex-col divide-y border-t">
+
+                                @if(!empty($show_rate) && $show_rate->count()>0 )
+
+                                @foreach($show_rate as $value)
+
+                                <li class="flex gap-2 p-3 [&amp;>span]:invisible [&amp;>span]:absolute [&amp;>span]:mt-[-140px] [&amp;>span]:block [&amp;>span]:pt-[140px]">
+                                    <div class="c10h79xq"><img alt="" class="w-full" src=""></div><span id="1803919"></span><a class="flex-1" href="#1803919"><b>{{ $value->name??'' }}</b>
+                                        <p>
+                                            <div class="[&amp;_a]:text-[#2275D3]">{{ $value->content??'' }}</div>
+                                        </p>
+                                        <div></div>
+                                        <div class="flex items-center">
+                                            <div class="sjvt0sz flex items-center gap-2" role="presentation">
+                                                <ul class="flex items-center">
+
+                                                    @for($i=0; $i<$value->star; $i++)
+                                                    <li class="liStar24"><span class="s5z3j8f"></span></li>
+                                                    @endfor
+                                                </ul>
+                                            </div>
+
+
+                                            <?php 
+                                                Carbon\Carbon::setLocale('vi');
+                                                $carbonated_date = Carbon\Carbon::parse($value->created_at);
+                                               //  Assuming today was 2016-07-27 12:45:32
+                                               $diff_date = $carbonated_date->diffForHumans($now);
+                                            ?>
+
+                
+                                            <div class="text-[14px] text-[#9b9b9b]"> |   {{    $carbonated_date->diffForHumans($now) }} </div>
+                                        </div>
+
+                                        <div class="my-2 flex h-[52px] overflow-hidden rounded bg-[#f8f8f8]"><img alt="" height="56" src="https://static.chotot.com/storage/default_images/c2c_ad_image.jpg" width="56">
+                                            <div class="ml-[8px] flex flex-col justify-center">
+                                                <p>{{ $job->title??'' }}</p>
+                                            </div>
+                                        </div>
+                                        <div></div>
+                                    </a>
+                                </li>
+
+                                @endforeach
+
+                                @endif
+
+
+
+                            </ul>
+                        </div>
+
+
                     </div>
                 </div>
                 <div class="row loadMoreBtn hidden"><button class="bh5myrx primary r-normal medium w-bold i-left">Xem thêm</button></div>
@@ -440,7 +515,34 @@
             })     
 
             
-        })    
+        }) 
+
+        $('.show_active').click(function () {
+
+            $('.show_active').removeClass('active');
+
+            $('.show_active').find('.tagu49w').remove();
+
+            $(this).addClass('active');
+
+            $(this).append('<span color="primary" class="mocked-styled-27 tagu49w" style="--tagu49w-0:#FF8800"></span>');
+
+            if($('.show-rate').is(":visible")){
+
+                $('.show-rate').hide();
+
+                $('.reviewItem').show();
+
+            }
+            else{
+                $('.show-rate').show();
+
+                $('.reviewItem').hide();
+            }
+
+
+            
+        })   
 
         
     </script>

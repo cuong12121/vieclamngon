@@ -40,7 +40,6 @@
 
                                         $price_ar = explode('-', trim($value->salary));
 
-
                                     }
 
                                 ?>
