@@ -662,7 +662,7 @@
                                     <p class="aw__h1klxoqy">Về Việc Làm Ngon</p>
                                     <ul class="aw__d2kbcgu">
                                         <li class="aw__d1fbfq7g"><a class="aw__d3ltxdb" href="#" target="_blank" rel="noopener noreferrer nofollow">Về việc làm ngon</a></li>
-                                        <li class="aw__d1fbfq7g"><a class="aw__d3ltxdb" href="https://trogiup.chotot.com/nguoi-ban/quy-che-hoat-dong-san-giao-dich-thuong-mai-dien-tu-vieclamtot-com/" target="_blank" rel="noopener noreferrer nofollow">Quy chế hoạt động sàn</a></li>
+                                        <li class="aw__d1fbfq7g"><a class="aw__d3ltxdb" href="#" target="_blank" rel="noopener noreferrer nofollow">Quy chế hoạt động sàn</a></li>
                                         <li class="aw__d1fbfq7g"><a class="aw__d3ltxdb" href="#" target="_blank" rel="noopener noreferrer nofollow">Chính sách bảo mật</a></li>
                                         <li class="aw__d1fbfq7g"><a class="aw__d3ltxdb" href="#" target="_blank" rel="noopener noreferrer nofollow">Giải quyết tranh chấp</a></li>
                                         <li class="aw__d1fbfq7g"><a class="aw__d3ltxdb" href="#" target="_blank" rel="noopener noreferrer nofollow">Điều khoản sử dụng</a></li>
