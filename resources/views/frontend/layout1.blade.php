@@ -223,7 +223,7 @@
 
                                                         <div id="layers" style="position: absolute; top: 0px; left: 0px; right: 0px;">
                                                             <span class="show exit aw__mxjwfwa" style="--mxjwfwa-1: 150ms; position: fixed; top: 68px; left: 178px; will-change: top, left, width, height;">
-                                                                <a href="/viec-lam-ban-hang-sdjt2" class="menuItem">
+                                                                <a href="#" class="menuItem">
                                                                     <span class="aw__ngv58n8">
                                                                         <span class="aw__lza0u1"><img src="https://static.chotot.com/storage/APP_WRAPPER/icons/PTY_lv1_jobtype_banhang.png" alt="" /></span><span>Bán hàng</span>
                                                                     </span>
