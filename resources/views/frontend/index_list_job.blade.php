@@ -5,10 +5,11 @@
 @section('content')
 
 
+
 <main class="mi85h81">
-    <main class="h1sor5lr" style="--h1sor5lr-1:;--h1sor5lr-2:;--h1sor5lr-3:;--h1sor5lr-4:">
+    <main class="h1sor5lr">
         <div class="w154pun3">
-            <div class="cfnyd4t" style="--cfnyd4t-1:#fff">
+            <div class="cfnyd4t" >
                 <div class="b1cj3zp3">
                     <div class="w1bxxhj6">
                         <div style="overflow-x:hidden">
@@ -212,9 +213,9 @@
                     
                         <?php 
 
-                            $outstanding_work= DB::table('job')->join('employ_info', 'job.employer_id', '=', 'employ_info.employ_id')->select('job.title', 'job.id', 'employ_info.name', 'employ_info.logo', 'employ_info.links', 'job.link', 'job.salary', 'job.address_job')->get();
+                            $outstanding_work= DB::table('job')->join('employ_info', 'job.employer_id', '=', 'employ_info.employ_id')->select('job.title', 'job.id', 'employ_info.name', 'employ_info.logo', 'employ_info.links', 'job.link', 'job.salary', 'job.address_job')->take(12)->get();
 
-                            $job_new  = DB::table('job')->join('employ_info', 'job.employer_id', '=', 'employ_info.employ_id')->select('job.title', 'job.id', 'employ_info.name', 'employ_info.logo', 'employ_info.links', 'job.link', 'job.salary', 'job.address_job')->where('job.active', 1)->Orderby('id', 'desc')->get();
+                            $job_new  = DB::table('job')->join('employ_info', 'job.employer_id', '=', 'employ_info.employ_id')->select('job.title', 'job.id', 'employ_info.name', 'employ_info.logo', 'employ_info.links', 'job.link', 'job.salary', 'job.address_job')->where('job.active', 1)->Orderby('id', 'desc')->take(10)->get();
 
                             $random_job = DB::table('job')->join('employ_info', 'job.employer_id', '=', 'employ_info.employ_id')->select('job.title', 'job.id', 'employ_info.name', 'employ_info.logo', 'employ_info.links', 'job.link', 'job.salary', 'job.address_job')->where('job.active', 1)->inRandomOrder()->take(12)->get();
 
@@ -466,11 +467,6 @@
             </div>
         </div>
 
-
-
-
-          
-            
             <div id="job-blog-section" class="w1gup8gc">
                 <h2 class="t39l6v3">Trang kinh nghiệm việc làm</h2>
                 <!-- <div class="blogCate b1jouv0s">
@@ -555,151 +551,8 @@
             <div class="cokiwz8">
                 <div class="hidden-xs r8crksz">
                     <h2 class="t1h2opep">Các từ khóa phổ biến</h2>
-                    <ul class="u1uy6a9l" style="--u1uy6a9l-0:auto">
-                        <!-- <li class="col-sm-4 l193bxy7" itemscope="" itemType="http://schema.org/ListItem" itemProp="itemListElement">
-                            <meta itemProp="position" content="1"/>
-                            <a itemProp="url" href="tags/viec-lam-thoi-vu" class="a85zez1"><span>Việc Làm Thời Vụ</span></a>
-                        </li>
-                        <li class="col-sm-4 l193bxy7" itemscope="" itemType="http://schema.org/ListItem" itemProp="itemListElement">
-                            <meta itemProp="position" content="2"/>
-                            <a itemProp="url" href="viec-lam-bac-ninh" class="a85zez1"><span>Việc làm Bắc Ninh</span></a>
-                        </li>
-                        <li class="col-sm-4 l193bxy7" itemscope="" itemType="http://schema.org/ListItem" itemProp="itemListElement">
-                            <meta itemProp="position" content="3"/>
-                            <a itemProp="url" href="tags/viec-lam-part-time" class="a85zez1"><span>Việc Làm Part Time</span></a>
-                        </li>
-                        <li class="col-sm-4 l193bxy7" itemscope="" itemType="http://schema.org/ListItem" itemProp="itemListElement">
-                            <meta itemProp="position" content="4"/>
-                            <a itemProp="url" href="tags/viec-lam-online-tai-nha" class="a85zez1"><span>Việc Làm Online Tại Nhà</span></a>
-                        </li>
-                        <li class="col-sm-4 l193bxy7" itemscope="" itemType="http://schema.org/ListItem" itemProp="itemListElement">
-                            <meta itemProp="position" content="5"/>
-                            <a itemProp="url" href="tags/viec-lam-online" class="a85zez1"><span>Việc Làm Online</span></a>
-                        </li>
-                        <li class="col-sm-4 l193bxy7" itemscope="" itemType="http://schema.org/ListItem" itemProp="itemListElement">
-                            <meta itemProp="position" content="6"/>
-                            <a itemProp="url" href="viec-lam-dong-nai" class="a85zez1"><span>Việc làm Đồng Nai</span></a>
-                        </li>
-                        <li class="col-sm-4 l193bxy7" itemscope="" itemType="http://schema.org/ListItem" itemProp="itemListElement">
-                            <meta itemProp="position" content="7"/>
-                            <a itemProp="url" href="tags/viec-lam-tai-nha" class="a85zez1"><span>Việc Làm Tại Nhà</span></a>
-                        </li>
-                        <li class="col-sm-4 l193bxy7" itemscope="" itemType="http://schema.org/ListItem" itemProp="itemListElement">
-                            <meta itemProp="position" content="8"/>
-                            <a itemProp="url" href="tags/viec-lam-them" class="a85zez1"><span>Việc Làm Thêm</span></a>
-                        </li>
-                        <li class="col-sm-4 l193bxy7" itemscope="" itemType="http://schema.org/ListItem" itemProp="itemListElement">
-                            <meta itemProp="position" content="9"/>
-                            <a itemProp="url" href="tags/viec-lam-khu-cong-nghiep" class="a85zez1"><span>Việc Làm Khu Công Nghiệp</span></a>
-                        </li>
-                        <li class="col-sm-4 l193bxy7" itemscope="" itemType="http://schema.org/ListItem" itemProp="itemListElement">
-                            <meta itemProp="position" content="10"/>
-                            <a itemProp="url" href="viec-lam-tai-xe-binh-duong-sdjt3" class="a85zez1"><span>Tài Xế Bình Dương</span></a>
-                        </li>
-                        <li class="col-sm-4 l193bxy7" itemscope="" itemType="http://schema.org/ListItem" itemProp="itemListElement">
-                            <meta itemProp="position" content="11"/>
-                            <a itemProp="url" href="viec-lam-quan-8-tp-ho-chi-minh" class="a85zez1"><span>Việc Làm Quận 8</span></a>
-                        </li>
-                        <li class="col-sm-4 l193bxy7" itemscope="" itemType="http://schema.org/ListItem" itemProp="itemListElement">
-                            <meta itemProp="position" content="12"/>
-                            <a itemProp="url" href="viec-lam-huyen-cu-chi-tp-ho-chi-minh" class="a85zez1"><span>Việc Làm Củ Chi</span></a>
-                        </li>
-                        <li class="col-sm-4 l193bxy7" itemscope="" itemType="http://schema.org/ListItem" itemProp="itemListElement">
-                            <meta itemProp="position" content="13"/>
-                            <a itemProp="url" href="tags/nhan-hang-gia-cong-ve-nha-lam" class="a85zez1"><span>Nhận Hàng Gia Công Về Nhà Làm</span></a>
-                        </li>
-                        <li class="col-sm-4 l193bxy7" itemscope="" itemType="http://schema.org/ListItem" itemProp="itemListElement">
-                            <meta itemProp="position" content="14"/>
-                            <a itemProp="url" href="viec-lam-quan-go-vap-tp-ho-chi-minh" class="a85zez1"><span>Việc Làm Gò Vấp</span></a>
-                        </li>
-                        <li class="col-sm-4 l193bxy7" itemscope="" itemType="http://schema.org/ListItem" itemProp="itemListElement">
-                            <meta itemProp="position" content="15"/>
-                            <a itemProp="url" href="viec-lam-can-tho" class="a85zez1"><span>Việc làm Cần Thơ</span></a>
-                        </li>
-                        <li class="col-sm-4 l193bxy7" itemscope="" itemType="http://schema.org/ListItem" itemProp="itemListElement">
-                            <meta itemProp="position" content="16"/>
-                            <a itemProp="url" href="tags/viec-lam-quan-12" class="a85zez1"><span>Việc Làm Quận 12</span></a>
-                        </li>
-                        <li class="col-sm-4 l193bxy7" itemscope="" itemType="http://schema.org/ListItem" itemProp="itemListElement">
-                            <meta itemProp="position" content="17"/>
-                            <a itemProp="url" href="viec-lam-huyen-hoc-mon-tp-ho-chi-minh" class="a85zez1"><span>Việc Làm Hóc Môn</span></a>
-                        </li>
-                        <li class="col-sm-4 l193bxy7" itemscope="" itemType="http://schema.org/ListItem" itemProp="itemListElement">
-                            <meta itemProp="position" content="18"/>
-                            <a itemProp="url" href="viec-lam-thanh-pho-thu-duc-tp-ho-chi-minh" class="a85zez1"><span>Việc làm Quận 9</span></a>
-                        </li>
-                        <li class="col-sm-4 l193bxy7" itemscope="" itemType="http://schema.org/ListItem" itemProp="itemListElement">
-                            <meta itemProp="position" content="19"/>
-                            <a itemProp="url" href="viec-lam-quan-binh-tan-tp-ho-chi-minh" class="a85zez1"><span>Việc Làm Quận Bình Tân</span></a>
-                        </li>
-                        <li class="col-sm-4 l193bxy7" itemscope="" itemType="http://schema.org/ListItem" itemProp="itemListElement">
-                            <meta itemProp="position" content="20"/>
-                            <a itemProp="url" href="tags/viec-lam-thoi-vu-30-4" class="a85zez1"><span>Việc Làm Thời Vụ 30/4</span></a>
-                        </li>
-                        <li class="col-sm-4 l193bxy7" itemscope="" itemType="http://schema.org/ListItem" itemProp="itemListElement">
-                            <meta itemProp="position" content="21"/>
-                            <a itemProp="url" href="viec-lam-quan-7-tp-ho-chi-minh" class="a85zez1"><span>Việc làm Quận 7</span></a>
-                        </li>
-                        <li class="col-sm-4 l193bxy7" itemscope="" itemType="http://schema.org/ListItem" itemProp="itemListElement">
-                            <meta itemProp="position" content="22"/>
-                            <a itemProp="url" href="viec-lam-tai-xe-tp-ho-chi-minh-sdjt3" class="a85zez1"><span>Tài Xế TPHCM</span></a>
-                        </li>
-                        <li class="col-sm-4 l193bxy7" itemscope="" itemType="http://schema.org/ListItem" itemProp="itemListElement">
-                            <meta itemProp="position" content="23"/>
-                            <a itemProp="url" href="viec-lam-ninh-thuan" class="a85zez1"><span>Việc Làm Ninh Thuận</span></a>
-                        </li>
-                        <li class="col-sm-4 l193bxy7" itemscope="" itemType="http://schema.org/ListItem" itemProp="itemListElement">
-                            <meta itemProp="position" content="24"/>
-                            <a itemProp="url" href="viec-lam-phu-yen" class="a85zez1"><span>Việc Làm Phú Yên</span></a>
-                        </li>
-                        <li class="col-sm-4 l193bxy7" itemscope="" itemType="http://schema.org/ListItem" itemProp="itemListElement">
-                            <meta itemProp="position" content="25"/>
-                            <a itemProp="url" href="viec-lam-hai-phong" class="a85zez1"><span>Việc làm Hải Phòng</span></a>
-                        </li>
-                        <li class="col-sm-4 l193bxy7" itemscope="" itemType="http://schema.org/ListItem" itemProp="itemListElement">
-                            <meta itemProp="position" content="26"/>
-                            <a itemProp="url" href="viec-lam-da-nang" class="a85zez1"><span>Việc làm Đà Nẵng</span></a>
-                        </li>
-                        <li class="col-sm-4 l193bxy7" itemscope="" itemType="http://schema.org/ListItem" itemProp="itemListElement">
-                            <meta itemProp="position" content="27"/>
-                            <a itemProp="url" href="viec-lam-gia-lai" class="a85zez1"><span>Việc Làm Gia Lai</span></a>
-                        </li>
-                        <li class="col-sm-4 l193bxy7" itemscope="" itemType="http://schema.org/ListItem" itemProp="itemListElement">
-                            <meta itemProp="position" content="28"/>
-                            <a itemProp="url" href="viec-lam-ha-nam" class="a85zez1"><span>Việc Làm Hà Nam</span></a>
-                        </li>
-                        <li class="col-sm-4 l193bxy7" itemscope="" itemType="http://schema.org/ListItem" itemProp="itemListElement">
-                            <meta itemProp="position" content="29"/>
-                            <a itemProp="url" href="viec-lam-quang-ngai" class="a85zez1"><span>Việc Làm Quảng Ngãi</span></a>
-                        </li>
-                        <li class="col-sm-4 l193bxy7" itemscope="" itemType="http://schema.org/ListItem" itemProp="itemListElement">
-                            <meta itemProp="position" content="30"/>
-                            <a itemProp="url" href="viec-lam-khanh-hoa" class="a85zez1"><span>Việc Làm Khánh Hòa</span></a>
-                        </li>
-                        <li class="col-sm-4 l193bxy7" itemscope="" itemType="http://schema.org/ListItem" itemProp="itemListElement">
-                            <meta itemProp="position" content="31"/>
-                            <a itemProp="url" href="viec-lam-thua-thien-hue" class="a85zez1"><span>Việc Làm Huế</span></a>
-                        </li>
-                        <li class="col-sm-4 l193bxy7" itemscope="" itemType="http://schema.org/ListItem" itemProp="itemListElement">
-                            <meta itemProp="position" content="32"/>
-                            <a itemProp="url" href="viec-lam-ha-tinh" class="a85zez1"><span>Việc Làm Hà Tĩnh</span></a>
-                        </li>
-                        <li class="col-sm-4 l193bxy7" itemscope="" itemType="http://schema.org/ListItem" itemProp="itemListElement">
-                            <meta itemProp="position" content="33"/>
-                            <a itemProp="url" href="viec-lam-tp-ho-chi-minh" class="a85zez1"><span>Tìm việc làm TPHCM</span></a>
-                        </li>
-                        <li class="col-sm-4 l193bxy7" itemscope="" itemType="http://schema.org/ListItem" itemProp="itemListElement">
-                            <meta itemProp="position" content="34"/>
-                            <a itemProp="url" href="viec-lam-quang-nam" class="a85zez1"><span>Việc Làm Quảng Nam</span></a>
-                        </li>
-                        <li class="col-sm-4 l193bxy7" itemscope="" itemType="http://schema.org/ListItem" itemProp="itemListElement">
-                            <meta itemProp="position" content="35"/>
-                            <a itemProp="url" href="viec-lam-binh-duong" class="a85zez1"><span>Việc làm Bình Dương</span></a>
-                        </li>
-                        <li class="col-sm-4 l193bxy7" itemscope="" itemType="http://schema.org/ListItem" itemProp="itemListElement">
-                            <meta itemProp="position" content="36"/>
-                            <a itemProp="url" href="viec-lam-ha-noi" class="a85zez1"><span>Việc làm Hà Nội</span></a>
-                        </li> -->
+                    <ul class="u1uy6a9l">
+                      
                     </ul>
                 </div>
             </div>
