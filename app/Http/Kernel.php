@@ -35,6 +35,7 @@ class Kernel extends HttpKernel
             \Illuminate\View\Middleware\ShareErrorsFromSession::class,
             \App\Http\Middleware\VerifyCsrfToken::class,
             \Illuminate\Routing\Middleware\SubstituteBindings::class,
+            \App\Http\Middleware\blockip::class,
         ],
 
         'api' => [
@@ -64,6 +65,7 @@ class Kernel extends HttpKernel
         'checklogin' => \App\Http\Middleware\CheckLogin::class,
         'checkad' => \App\Http\Middleware\checkad::class,
         'Checkemploy' => \App\Http\Middleware\Checkemploy::class,
+        'blockip' => \App\Http\Middleware\blockip::class,
     ];
 
     /**
