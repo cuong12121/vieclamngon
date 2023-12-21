@@ -24,7 +24,7 @@ class blockip
         // Kiểm tra nếu địa chỉ IP của người dùng không phải là địa chỉ IP được phép
         if ($userIP !== $allowedIP) {
            
-           return abort('403')
+           return abort('403');
         }
          return $next($request);
 
