@@ -8,7 +8,7 @@
         <link rel="stylesheet" href="https://static.chotot.com/storage/APP_WRAPPER/v4/4.3.2/header.css"/>
         <link rel="stylesheet" href="https://static.chotot.com/storage/APP_WRAPPER/v4/4.3.2/footer.css"/>
 
-         <base href="https://www.vieclamtot.com/">
+         <!-- <base href="https://www.vieclamtot.com/"> -->
 
          <meta name="csrf-token" content="{{ csrf_token() }}">
 
