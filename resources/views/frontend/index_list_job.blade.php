@@ -838,7 +838,7 @@
                                         </div>
                                         <div class="AdItem_caption__xhJJ_ AdItem_threeline__0ngV1">
                                             <div class="commonStyle_adTitleGrid__xuGEz commonStyle_adTitleBold__y3Ajz commonStyle_adTitleBlog__b_IZv">{{ $posts->title }}</div>
-                                            <div class="AdItem_description__8V6RR">Đăng ký chạy ShopeeFood giao đồ ăn giúp tài xế có giờ làm việc tự do và thu nhập tốt. Cùng Việc Làm Tốt tìm hiểu cách đăng ký ngay!</div>
+                                            <div class="AdItem_description__8V6RR"></div>
                                             <div class="AdItem_conditionWrapper__lhe5y"><span class="AdItem_condition__K3TWV"></span></div>
                                             <div class="AdItem_wrapperPrice__o2r4x"><span class="AdItem_price__AVaJF"></span></div>
                                             <div class="AdItem_wrapperDate__lfL36">1 năm trước</div>
